@@ -9,6 +9,7 @@ c.pack()
 background = PhotoImage(file='Logo.gif')
 
 image = c.create_image(-350,150, image = background)
+appear_on_top = c.create_oval(100,100,150,150,fill='red')
 
 def move_image(event):
     if event.keysym == 'Up':
