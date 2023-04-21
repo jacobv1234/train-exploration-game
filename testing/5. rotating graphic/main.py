@@ -20,7 +20,7 @@ start_map = 'map'
 area = Map(start_map, c)
 
 # train
-train = Train(screen_width / 2, screen_height / 2, 0, c)
+train = Train(screen_width / 2, screen_height / 2, 0, c, skin='train')
 
 
 # loop

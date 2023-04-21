@@ -1,3 +1,5 @@
+from tkinter import PhotoImage
+
 # create train
 class Train():
     directions = ( #(x,y)
@@ -19,12 +21,15 @@ class Train():
     (-1,-2) #15 up-up-left
     )
 
-    def __init__(self, startx, starty, startdir, c):
+    def __init__(self, startx, starty, startdir, c, skin):
         self.x = startx
         self.y = starty
         self.direction = startdir
         self.speed = 0
-        self.object = c.create_rectangle(startx-10, starty-10, startx+10, starty+10, outline='black')
+        self.graphics = []
+        for i in range(16):
+            self.graphics.append(PhotoImage(file=f'./graphics/{skin}{i}.png'))
+        self.object = c.create_image(startx, starty, image = self.graphics[startdir], anchor = 'center')
         c.bind_all('<Left>', self.turn_left)
         c.bind_all('<Right>', self.turn_right)
         c.bind_all('<Up>', self.speed_up)
@@ -52,6 +57,7 @@ class Train():
 
     def move_train(self, c):
         dir_vect = self.directions[self.direction]
+        c.itemconfig(self.object, image = self.graphics[self.direction])
         c.move(self.object, dir_vect[0] * self.speed, dir_vect[1] * self.speed)
         c.xview_scroll(dir_vect[0] * self.speed, 'units')
         c.yview_scroll(dir_vect[1] * self.speed, 'units')
