@@ -1,17 +1,6 @@
-from tkinter import *
-from time import sleep
-
-window = Tk()
-
-screen_width = window.winfo_screenwidth() - 10
-screen_height = window.winfo_screenheight() - 75
-
-window.state('zoomed')
-
-c = Canvas(window, width = screen_width, height = screen_height, bg = 'white')
-c.pack()
-
-directions = ( #(x,y)
+# create train
+class Train():
+    directions = ( #(x,y)
     (0,-2), #0, up
     (1,-2), #1, up-up-right
     (2,-2), #2, up-right
@@ -28,11 +17,9 @@ directions = ( #(x,y)
     (-2,-1),#13 up-left-left
     (-2,-2),#14 up-left
     (-1,-2) #15 up-up-left
-)
+    )
 
-# create train
-class Train():
-    def __init__(self, startx, starty, startdir, c = Canvas()):
+    def __init__(self, startx, starty, startdir, c):
         self.x = startx
         self.y = starty
         self.direction = startdir
@@ -63,15 +50,7 @@ class Train():
         elif self.speed == 4:
             self.speed = 0
 
-    def move_train(self, c = Canvas()):
-        dir_vect = directions[self.direction]
+    def move_train(self, c):
+        dir_vect = self.directions[self.direction]
         c.move(self.object, dir_vect[0] * self.speed, dir_vect[1] * self.speed)
         
-
-
-train = Train(screen_width / 2, screen_height / 2, 0, c)
-
-while True:
-    train.move_train(c)
-    window.update()
-    sleep(0.08)
