@@ -1,0 +1,9 @@
+{
+    "lines": [
+        "main",
+        "siding"
+    ],
+
+    "start": [80, 400, 0],
+    "start_line": "main"
+}
