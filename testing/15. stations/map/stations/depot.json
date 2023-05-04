@@ -1,0 +1,8 @@
+{
+    "name": "depot",
+    "position": [1120,-40],
+    "exits": {
+        "eastbound": 4,
+        "westbound": 12
+    }
+}
