@@ -7,6 +7,7 @@ from lib.train import Train
 from lib.speedtracker import SpeedTracker
 from lib.junction_choice import JunctionChoice
 from lib.space_to_enter import PressSpaceToEnter
+from lib.station_display import StationDisplay
 
 window = Tk()
 
@@ -16,7 +17,7 @@ screen_height = window.winfo_screenheight() - 75
 window.state('zoomed')
 
 c = Canvas(window, width = screen_width, height = screen_height, bg = 'white', xscrollincrement=1, yscrollincrement=1)
-c.place(x=3,y=0)
+c.place(x=4,y=0)
 
 # create the map
 start_map = 'map'
@@ -36,11 +37,19 @@ c.yview_scroll(area.start[1] - (round(screen_height / 2)), 'units')
 # initialise certain variables
 junc = False
 press_space = False
+space_pressed = False
+in_station = False
+
+# functions that work better in main than in lib.helper
+def pressed_space(event):
+    global space_pressed
+    space_pressed = True    
 
 # loop
 while True:
     train.move_train(c)
 
+    # check collisions with objects
     corner = area.check_corners(train.x, train.y, train.line)
     if corner != 0:
         train.corner(corner)
@@ -61,14 +70,52 @@ while True:
         chooser = JunctionChoice(junction,window,screen_width)
         junc = junction
     
+
+    # station entry
     station = area.check_stations(train.x, train.y, train.line)
     if station != 0 and train.speed == 0 and not press_space:
         press_space = PressSpaceToEnter(window, screen_width, screen_height)
-        #c.bind_all('<space>', enter_station)
-    if train.speed != 0 and press_space:
+        c.bind_all('<space>', pressed_space)
+    elif train.speed != 0 and press_space:
         press_space.remove()
+        c.unbind_all('<space>')
         del press_space
         press_space = False
+    
+    if space_pressed and not in_station:
+        space_pressed = False
+        train.disable_speed_controls(c)
+        in_station = StationDisplay(window, screen_width, screen_height, station)
+    
+    # handle station choices
+    elif space_pressed and in_station:
+        space_pressed = False
+        result = in_station.select_current()
+        if result[0] == 'exit':
+            # exit and move the train
+            # dir
+            train.direction = station.exits[result[1]]
+            # coords
+            current_x = train.x
+            current_y = train.y
+            train.x = station.pos[0]
+            train.y = station.pos[1]
+            # camera
+            scroll_x = train.x - current_x
+            scroll_y = train.y - current_y
+            c.xview_scroll(scroll_x, 'units')
+            c.yview_scroll(scroll_y, 'units')
+
+            # object
+            c.move(train.object,scroll_x, scroll_y)
+
+            # exit the menu
+            in_station.close()
+            del in_station
+            in_station = False
+            train.enable_speed_controls(c)
+
+
 
     # update HUD
     match train.speed:
@@ -85,6 +132,9 @@ while True:
     try:
         chooser.update()
     except: pass
+
+    if in_station:
+        in_station.update_cursor()
 
     window.update()
     sleep(0.015)

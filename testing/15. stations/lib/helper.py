@@ -1,5 +1,6 @@
-# not an object
 # contains helper functions
+
+from tkinter import *
 
 # returns the opposite direction
 def opp_dir(dir):

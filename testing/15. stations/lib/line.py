@@ -8,8 +8,9 @@ class Line():
         with open(f'./{map_name}/lines/{line_name}.json', 'r') as f:
             line_data = loads(f.read().strip('\n'))
 
+        self.segments = []
         for segment in line_data['segments']:
-            canvas.create_line(segment[0], segment[1], segment[2], segment[3], fill=line_data['colour'])
+            self.segments.append(canvas.create_line(segment[0], segment[1], segment[2], segment[3], fill=line_data['colour']))
         
         self.corners = line_data['corners']
 
@@ -40,6 +41,6 @@ class Line():
     def check_stations(self, x, y):
         for station in self.stations:
             pos = station.pos
-            if x in range(pos[0]-16, pos[0]+16) and y in range(pos[1]-16, pos[1]+16):
+            if x in range(pos[0]-12, pos[0]+12) and y in range(pos[1]-12, pos[1]+12):
                 return station
         return 0
