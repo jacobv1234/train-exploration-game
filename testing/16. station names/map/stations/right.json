@@ -1,0 +1,14 @@
+{
+    "name": "Right",
+    "position": [1200,264],
+    "exits": {
+        "northbound": 0,
+        "westbound": 12
+    },
+    "map_text": [{
+        "offset": [20,20],
+        "text": "Right",
+        "font": "Arial 10",
+        "anchor": "nw"
+    }]
+}
