@@ -1,0 +1,13 @@
+{
+    "name": "Depot",
+    "position": [1120,-40],
+    "exits": {
+        "westbound": 12
+    },
+    "map_text": [{
+        "offset": [0,-30],
+        "text": "Depot",
+        "font": "Arial 10",
+        "anchor": "s"
+    }]
+}
