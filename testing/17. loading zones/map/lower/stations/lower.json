@@ -1,0 +1,13 @@
+{
+    "name": "Lower",
+    "position": [480,232],
+    "exits": {
+        "westbound": 12
+    },
+    "map_text": [{
+        "offset": [0,-30],
+        "text": "Lower",
+        "font": "Arial 10",
+        "anchor": "s"
+    }]
+}
