@@ -8,6 +8,7 @@ from lib.speedtracker import SpeedTracker
 from lib.junction_choice import JunctionChoice
 from lib.space_to_enter import PressSpaceToEnter
 from lib.station_display import StationDisplay
+from lib.mapnamedisplay import MapNameDisplay
 
 window = Tk()
 
@@ -40,6 +41,7 @@ press_space = False
 space_pressed = False
 in_station = False
 mapnamecounter = -1
+mapnamedisplay = False
 
 # functions that work better in main than in lib.helper
 def pressed_space(event):
@@ -47,11 +49,12 @@ def pressed_space(event):
     space_pressed = True
 
 def HandleMapNameCounter():
-    global mapnamecounter
+    global mapnamecounter, mapnamedisplay
     if mapnamecounter >= 0:
         mapnamecounter -= 1
         if mapnamecounter == 0:
-            pass
+            mapnamedisplay.remove()
+            mapnamedisplay = False
 
 
 # loop
@@ -102,6 +105,10 @@ while True:
         c.tag_raise(train.object)
         # line
         train.line = lz['new_line']
+
+        # name popup
+        mapnamedisplay = MapNameDisplay(area.name, area.size, window, screen_height)
+        mapnamecounter = 45
     
 
     # station entry
@@ -169,6 +176,7 @@ while True:
     if in_station:
         in_station.update_cursor()
 
+    HandleMapNameCounter()
     window.update()
     sleep(0.015)
-    print(train.x, train.y, train.line)
+    

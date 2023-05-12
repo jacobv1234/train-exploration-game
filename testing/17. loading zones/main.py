@@ -162,4 +162,3 @@ while True:
 
     window.update()
     sleep(0.015)
-    print(train.x, train.y, train.line)
