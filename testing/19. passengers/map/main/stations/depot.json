@@ -12,7 +12,7 @@
     }],
 
     "passengers": {
-        "chance_of_any" : 50,
+        "chance_of_any" : 65,
         "options": [
             {
                 "chance": 5,

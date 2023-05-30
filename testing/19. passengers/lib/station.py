@@ -32,5 +32,5 @@ class Station:
                     dest_choice.append(i)
             
             decision = choice(dest_choice)
-            return decision
+            return p['options'][decision]
         return 0

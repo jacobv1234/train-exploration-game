@@ -2,6 +2,7 @@ from tkinter import *
 from time import sleep
 
 # import objects
+from lib.helper import Popup
 from lib.map import Map
 from lib.train import Train
 from lib.speedtracker import SpeedTracker
@@ -9,6 +10,7 @@ from lib.junction_choice import JunctionChoice
 from lib.space_to_enter import PressSpaceToEnter
 from lib.station_display import StationDisplay
 from lib.mapnamedisplay import MapNameDisplay
+from lib.passengers import Passengers
 
 window = Tk()
 
@@ -42,6 +44,13 @@ space_pressed = False
 in_station = False
 mapnamecounter = -1
 mapnamedisplay = False
+popup = False
+
+points = 0
+
+# passenger display
+passengers = Passengers(window, screen_height)
+
 
 # functions that work better in main than in lib.helper
 def pressed_space(event):
@@ -59,79 +68,93 @@ def HandleMapNameCounter():
 
 # loop
 while True:
-    train.move_train(c)
+    if not in_station:
+        train.move_train(c)
 
-    # check collisions with objects
-    corner = area.check_corners(train.x, train.y, train.line)
-    if corner != 0:
-        train.corner(corner)
+        # check collisions with objects
+        corner = area.check_corners(train.x, train.y, train.line)
+        if corner != 0:
+            train.corner(corner)
 
-    if junc != False:
-        if junc['coords'][0] == train.x and junc['coords'][1] == train.y:
-            train.junction(junc, chooser.options[chooser.choice])
-            junc = False
-            chooser.close()
-            del chooser
+        if junc != False:
+            if junc['coords'][0] == train.x and junc['coords'][1] == train.y:
+                train.junction(junc, chooser.options[chooser.choice])
+                junc = False
+                chooser.close()
+                del chooser
+        
+        stop = area.check_stops(train.x,train.y,train.line)
+        if stop != 0:
+            train.stop(stop, c)
+
+        junction = area.check_j_approach(train.x,train.y,train.direction, train.line)
+        if junction != 0:
+            chooser = JunctionChoice(junction,window,screen_width)
+            junc = junction
+
+        # loading zones
+        lz = area.check_lz(train.x, train.y, train.direction)
+        if lz != 0:
+            area.unload(c)
+            area = Map(lz['map'], c)
+            # move train and camera
+            # dir
+            train.direction = lz['new_dir']
+            # coords
+            current_x = train.x
+            current_y = train.y
+            train.x = lz['new_pos'][0]
+            train.y = lz['new_pos'][1]
+            # camera
+            scroll_x = train.x - current_x
+            scroll_y = train.y - current_y
+            c.xview_scroll(scroll_x, 'units')
+            c.yview_scroll(scroll_y, 'units')
+            # object
+            c.move(train.object,scroll_x, scroll_y)
+            c.tag_raise(train.object)
+            # line
+            train.line = lz['new_line']
+
+            # name popup
+            mapnamedisplay = MapNameDisplay(area.name, area.size, window, screen_height)
+            mapnamecounter = 45
     
-    stop = area.check_stops(train.x,train.y,train.line)
-    if stop != 0:
-        train.stop(stop, c)
 
-    junction = area.check_j_approach(train.x,train.y,train.direction, train.line)
-    if junction != 0:
-        chooser = JunctionChoice(junction,window,screen_width)
-        junc = junction
+        # station entry
+        station = area.check_stations(train.x, train.y, train.line)
+        if station != 0 and train.speed == 0 and not press_space:
+            press_space = PressSpaceToEnter(window, screen_width, screen_height)
+            c.bind_all('<space>', pressed_space)
+        elif train.speed != 0 and press_space:
+            press_space.remove()
+            c.unbind_all('<space>')
+            del press_space
+            press_space = False
+        
+        # initialise the station menu (in_station)
+        if space_pressed:
+            space_pressed = False
+            train.disable_speed_controls(c)
 
-    # loading zones
-    lz = area.check_lz(train.x, train.y, train.direction)
-    if lz != 0:
-        area.unload(c)
-        area = Map(lz['map'], c)
-        # move train and camera
-        # dir
-        train.direction = lz['new_dir']
-        # coords
-        current_x = train.x
-        current_y = train.y
-        train.x = lz['new_pos'][0]
-        train.y = lz['new_pos'][1]
-        # camera
-        scroll_x = train.x - current_x
-        scroll_y = train.y - current_y
-        c.xview_scroll(scroll_x, 'units')
-        c.yview_scroll(scroll_y, 'units')
-        # object
-        c.move(train.object,scroll_x, scroll_y)
-        c.tag_raise(train.object)
-        # line
-        train.line = lz['new_line']
+            points_obtained = passengers.remove(f'{area.internal_name}/{station.name}')
+            if points_obtained > 0:
+                points += points_obtained
+                plural = 's'
+                if points_obtained == 1:
+                    plural = ''
+            
+            in_station = StationDisplay(window, screen_width, screen_height, station, points) 
+            
+            if points_obtained > 0:
+                popup = Popup(window, screen_width, f'Passenger{plural} Delivered!', f'You got {points_obtained} point{plural}!', 100)
 
-        # name popup
-        mapnamedisplay = MapNameDisplay(area.name, area.size, window, screen_height)
-        mapnamecounter = 45
-    
-
-    # station entry
-    station = area.check_stations(train.x, train.y, train.line)
-    if station != 0 and train.speed == 0 and not press_space:
-        press_space = PressSpaceToEnter(window, screen_width, screen_height)
-        c.bind_all('<space>', pressed_space)
-    elif train.speed != 0 and press_space:
-        press_space.remove()
-        c.unbind_all('<space>')
-        del press_space
-        press_space = False
-    
-    if space_pressed and not in_station:
-        space_pressed = False
-        train.disable_speed_controls(c)
-        in_station = StationDisplay(window, screen_width, screen_height, station)
     
     # handle station choices
     elif space_pressed and in_station:
         space_pressed = False
         result = in_station.select_current()
-        if result[0] == 'exit':
+        if result[0] == 1:
             # exit and move the train
             # dir
             train.direction = station.exits[result[1]]
@@ -154,6 +177,14 @@ while True:
             del in_station
             in_station = False
             train.enable_speed_controls(c)
+        
+        elif result[0] == 0:
+            if result[1] != 0:
+                in_station.passenger = passengers.add(result[1])
+            else:
+                in_station.passenger = 1
+            in_station.change_tab()
+
 
 
 
@@ -174,9 +205,17 @@ while True:
     except: pass
 
     if in_station:
-        in_station.update_cursor()
+        try:
+            in_station.update_cursor()
+        except:
+            pass
+    
+    if popup:
+        timer = popup.countdown()
+        if timer == 0:
+            popup = False
 
     HandleMapNameCounter()
     window.update()
-    sleep(0.015)
+    sleep(0.01)
     

@@ -20,6 +20,8 @@ class Map():
 
         self.name = manifest['display_name']
         self.size = manifest['fontsize']
+
+        self.internal_name = name
     
     def check_corners(self, x, y, line):
         return self.lines[line].check_corners(x,y)

@@ -31,6 +31,7 @@ class Train():
         self.speedup_2 = False
         self.line = start_line
         self.graphics = []
+
         for i in range(16):
             self.graphics.append(PhotoImage(file=f'./graphics/{skin}{i}.png'))
         self.object = c.create_image(startx, starty, image = self.graphics[startdir], anchor = 'center')
