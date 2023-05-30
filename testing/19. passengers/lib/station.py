@@ -27,7 +27,7 @@ class Station:
         if randint(1,100) <= p['chance_of_any']:
             dest_choice = []
             for i in range(len(p['options'])):
-                chance = p['options'][i]
+                chance = p['options'][i]['chance']
                 for j in range(chance):
                     dest_choice.append(i)
             

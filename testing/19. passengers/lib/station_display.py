@@ -9,6 +9,8 @@ class StationDisplay:
         self.c.create_line(0,80,screen_width,80, fill='black')
         self.c.create_line(0,110,screen_width,110,fill='black')
 
+        self.passenger = station.generate_passenger()
+
         self.page_contents = []
         self.possible_cursor_positions = []
         self.space = screen_height - 110
@@ -17,8 +19,8 @@ class StationDisplay:
         self.station = station
 
         self.options = []
-        self.page = 'exit'
-        self.assemble_exit_page()
+        self.page = 'passenger'
+        self.assemble_passenger_page()
         self.cursor_graphic = PhotoImage(file='./graphics/train4.png').zoom(3)
         self.cursor_pos = 0
         self.cursor = self.c.create_image(self.width/4, self.possible_cursor_positions[0], image = self.cursor_graphic, anchor='center')
@@ -38,7 +40,8 @@ class StationDisplay:
     
 
     def assemble_passenger_page(self):
-        pass
+        if self.passenger == 0:
+            self.page_contents.append(self.c.create_text(self.width/2, (self.height-110)/2, fill='black', font='Arial 20', text='There are currently no passengers at this station.', width=self.width - 100, anchor='center'))
 
     
     def move_cursor_up(self, event):
