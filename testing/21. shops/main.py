@@ -223,5 +223,4 @@ while True:
 
     HandleMapNameCounter()
     window.update()
-    sleep(0.01)
-    
+    sleep(0.005)

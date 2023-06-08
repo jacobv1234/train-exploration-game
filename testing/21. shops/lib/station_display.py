@@ -17,6 +17,8 @@ class StationDisplay:
 
         self.passenger = station.generate_passenger(unlocked_lines)
 
+        self.unlocked = unlocked_lines
+
         self.page_contents = []
         self.possible_cursor_positions = []
         self.space = screen_height - 110
