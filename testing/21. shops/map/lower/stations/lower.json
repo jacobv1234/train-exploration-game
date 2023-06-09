@@ -37,7 +37,17 @@
                 "unlocked": [],
                 "not": []
             },
-            "unlock": ["main/main_right"]
+            "unlock": ["main/main_right"],
+            "unique_name": "lower/Lower/right"
+        },
+        "gneurshk": {
+            "cost":2,
+            "requirements": {
+                "unlocked":["main/main_right"],
+                "not": []
+            },
+            "unlock":["gneurshk"],
+            "unique_name": "gneurshk"
         } 
     }
 }

@@ -2,7 +2,7 @@ from tkinter import *
 from time import sleep
 
 # import objects
-from lib.helper import Popup, get_unlocked_lines
+from lib.helper import Popup, get_unlocked_lines, get_bought_items
 from lib.map import Map
 from lib.train import Train
 from lib.speedtracker import SpeedTracker
@@ -27,6 +27,7 @@ c.place(x=4,y=0)
 # create the map
 start_map = 'main'
 unlocked_lines = get_unlocked_lines()
+bought = get_bought_items()
 # called area cause map is a function
 area = Map(start_map, c, unlocked_lines)
  
@@ -148,9 +149,9 @@ while True:
                     plural = ''
             
             if station.shop:
-                in_station = ShopStation(window, screen_width, screen_height, station, points, unlocked_lines)
+                in_station = ShopStation(window, screen_width, screen_height, station, points, unlocked_lines, bought)
             else:
-                in_station = StationDisplay(window, screen_width, screen_height, station, points, unlocked_lines) 
+                in_station = StationDisplay(window, screen_width, screen_height, station, points, unlocked_lines, bought) 
             
             if points_obtained > 0:
                 popup = Popup(window, screen_width, f'Passenger{plural} Delivered!', f'You got {points_obtained} point{plural}!', 100)
@@ -191,6 +192,38 @@ while True:
                 in_station.passenger = 1
             in_station.change_tab()
 
+        elif result[0] == 'Shop':
+            purchase = in_station.station.shop[result[1]]
+            if purchase['cost'] > points:
+                try:
+                    popup.c.destroy()
+                except:
+                    pass
+                popup = Popup(window, screen_width, f'Too expensive!', f'You can\'t afford that...', 100)
+            
+            else:
+                # take points
+                points -= purchase['cost']
+
+                # add to lists
+                bought.append(purchase['unique_name'])
+                [unlocked_lines.append(section) for section in purchase['unlock'] if section not in unlocked_lines]
+
+                # save
+                with open('savedata/bought.txt', 'w') as f:
+                    [f.write(f'{obj}\n') for obj in bought]
+                with open('savedata/unlocked_lines.txt', 'w') as f:
+                    [f.write(f'{obj}\n') for obj in unlocked_lines]
+                
+                # reload map and station screen
+                area.unload(c)
+                area = Map(area.internal_name, c, unlocked_lines)
+
+                in_station.close()
+                in_station = ShopStation(window, screen_width, screen_height, station, points, unlocked_lines, bought)
+
+                # train layering
+                c.tag_raise(train.object)
 
 
 

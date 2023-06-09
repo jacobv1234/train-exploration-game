@@ -3,7 +3,7 @@ from lib.station import Station
 
 class StationDisplay:
     tabs = ['Passengers', 'Exit']
-    def __init__(self, window: Tk, screen_width:int, screen_height:int, station: Station, points: int, unlocked_lines: list):
+    def __init__(self, window: Tk, screen_width:int, screen_height:int, station: Station, points: int, unlocked_lines: list, bought:list):
         self.c = Canvas(window, width=screen_width, height=screen_height, bg='white')
         self.c.place(x=4,y=0)
         self.c.create_text(20,10,fill='black', font='Arial 40', text=f'{station.name} Station', anchor='nw')
@@ -18,6 +18,7 @@ class StationDisplay:
         self.passenger = station.generate_passenger(unlocked_lines)
 
         self.unlocked = unlocked_lines
+        self.bought = bought
 
         self.page_contents = []
         self.possible_cursor_positions = []

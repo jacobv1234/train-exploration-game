@@ -16,6 +16,11 @@ def get_unlocked_lines():
         unlocked_lines = [line[:-1] for line in f.readlines()]
     return unlocked_lines
 
+def get_bought_items():
+    with open('savedata/bought.txt', 'r') as f:
+        bought = [line[:-1] for line in f.readlines()]
+    return bought
+
 
 # creates a popup message in the top right, with
 # a title, message, and number of frames until removed
