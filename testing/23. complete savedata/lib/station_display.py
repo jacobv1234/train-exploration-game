@@ -29,6 +29,7 @@ class StationDisplay:
 
         self.cursor_graphic = PhotoImage(file='./graphics/train4.png').zoom(3)
         self.cursor_pos = 0
+        self.cursor = False
 
         self.options = []
         self.page = 0
@@ -49,9 +50,9 @@ class StationDisplay:
             self.page_contents.append(self.c.create_text((self.width/5)*4, location, fill='black', font='Arial 30', text=f'Exit {exit_name}', anchor='e'))
             self.possible_cursor_positions.append(location)
             self.options.append(exit_name)
-            self.cursor = self.c.create_image(self.width/4, self.possible_cursor_positions[0], image = self.cursor_graphic, anchor='center')
-            self.c.bind_all('<Up>',self.move_cursor_up)
-            self.c.bind_all('<Down>', self.move_cursor_down)
+        self.cursor = self.c.create_image(self.width/4, self.possible_cursor_positions[0], image = self.cursor_graphic, anchor='center')
+        self.c.bind_all('<Up>',self.move_cursor_up)
+        self.c.bind_all('<Down>', self.move_cursor_down)
     
 
     def assemble_passenger_page(self):
@@ -127,12 +128,11 @@ self.c.create_text(5*self.width/8, (5*(self.height-110)/6)+125, fill='black', fo
         self.options = []
 
     def change_tab(self):
-        try:
+        if self.cursor:
+            self.c.delete(self.cursor)
+            self.cursor = False
             self.c.unbind_all('<Up>')
             self.c.unbind_all('<Down>')
-            self.c.delete(self.cursor)
-        except:
-            pass
         self.unload_page()
         self.cursor_pos = 0
         self.options = []

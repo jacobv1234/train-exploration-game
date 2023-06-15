@@ -251,11 +251,9 @@ while True:
     except: pass
 
     if in_station:
-        try:
+        if in_station.cursor:
             in_station.update_cursor()
-        except:
-            pass
-    
+
     if popup:
         timer = popup.countdown()
         if timer == 0:

@@ -1,6 +1,6 @@
-1120
--40
+1200
+264
 12
 main
-siding
-0
+main_right
+1
