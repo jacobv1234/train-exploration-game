@@ -11,18 +11,18 @@ def test_requirements(req, unlocked):
     return all([line in unlocked for line in req['unlocked']]) and not any([line in unlocked for line in req['not']])
 
 # get savedata
-def get_unlocked_lines():
-    with open('savedata/unlocked_lines.txt', 'r') as f:
+def get_unlocked_lines(savepath):
+    with open(f'{savepath}/unlocked_lines.txt', 'r') as f:
         unlocked_lines = [line[:-1] for line in f.readlines()]
     return unlocked_lines
 
-def get_bought_items():
-    with open('savedata/bought.txt', 'r') as f:
+def get_bought_items(savepath):
+    with open(f'{savepath}/bought.txt', 'r') as f:
         bought = [line[:-1] for line in f.readlines()]
     return bought
 
-def get_pos_save():
-    with open('savedata/pos.txt','r') as f:
+def get_pos_save(savepath):
+    with open(f'{savepath}/pos.txt','r') as f:
         values = tuple([val[:-1] for val in f.readlines()])
     return values
 

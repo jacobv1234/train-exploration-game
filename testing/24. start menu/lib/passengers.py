@@ -2,7 +2,7 @@ from tkinter import *
 from json import loads, dumps
 
 class Passengers:
-    def __init__(self, window, height):
+    def __init__(self, window, height, savepath):
         self.c = Canvas(window, width=150,height=300,bg='white')
         self.c.place(x=0, y=(height/2)-150)
         self.c.create_rectangle(2,2,150,50,outline='black', fill='white')
@@ -11,7 +11,7 @@ class Passengers:
         self.passengers = []
         self.objects = []
 
-        with open('savedata/passengers.json', 'r') as f:
+        with open(f'{savepath}/passengers.json', 'r') as f:
             p = loads(f.read())
         for passenger in p:
             self.add(passenger)

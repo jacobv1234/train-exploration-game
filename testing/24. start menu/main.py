@@ -12,6 +12,7 @@ from lib.station_display import StationDisplay
 from lib.mapnamedisplay import MapNameDisplay
 from lib.passengers import Passengers
 from lib.station_shop import ShopStation
+from lib.homepage import Homepage
 
 
 window = Tk()
@@ -23,17 +24,31 @@ window.state('zoomed')
 
 
 # homepage
-
-
+save_path = 'savedata'
+homepage = Homepage(window, screen_width, screen_height)
+while True:
+    sleep(0.017)
+    window.update()
+    homepage.update_cursor()
+    if homepage.space_pressed:
+        homepage.space_pressed = False
+        choice = homepage.get_choice()
+        if choice == 'Continue':
+            break
+        elif choice == 'New Game':
+            continue
+            
+homepage.remove()
+del homepage
 
 
 c = Canvas(window, width = screen_width, height = screen_height, bg = 'white', xscrollincrement=1, yscrollincrement=1)
 c.place(x=4,y=0)
 
 # get savedata
-unlocked_lines = get_unlocked_lines()
-bought = get_bought_items()
-startx, starty, startdir, start_map, start_line, points = get_pos_save()
+unlocked_lines = get_unlocked_lines(save_path)
+bought = get_bought_items(save_path)
+startx, starty, startdir, start_map, start_line, points = get_pos_save(save_path)
 points = int(points)
 
 # called area cause map is a function
@@ -60,7 +75,7 @@ popup = False
 
 
 # passenger display
-passengers = Passengers(window, screen_height)
+passengers = Passengers(window, screen_height, save_path)
 
 
 # functions that work better in main than in lib.helper
