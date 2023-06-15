@@ -1,0 +1,6 @@
+1200
+264
+12
+main
+main_right
+1
