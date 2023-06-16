@@ -1,0 +1,25 @@
+{
+    "lines": [
+        "main_left",
+        "main_right",
+        "siding",
+        "warp"
+    ],
+
+    "start": [1120,-40, 12],
+    "start_line": "siding",
+
+    "loadingzones": [
+        {
+            "coords": [808,800],
+            "dir": 8,
+            "map": "lower",
+            "new_pos": [0,0],
+            "new_dir": 8,
+            "new_line": "thingy"
+        }
+    ],
+
+    "display_name": "TestMap Central",
+    "fontsize": 20
+}

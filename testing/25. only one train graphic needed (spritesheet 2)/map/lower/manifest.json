@@ -1,0 +1,22 @@
+{
+    "lines": [
+        "thingy"
+    ],
+
+    "start": [0,0,8],
+    "start_line": "thingy",
+
+    "loadingzones": [
+        {
+            "coords": [0,0],
+            "dir": 0,
+            "map": "main",
+            "new_pos": [808,800],
+            "new_dir": 0,
+            "new_line": "warp"
+        }
+    ],
+
+    "display_name": "TestMap South",
+    "fontsize": 20
+}
