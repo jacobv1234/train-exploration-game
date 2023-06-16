@@ -1,6 +1,6 @@
 1200
 264
-12
+0
 main
 main_right
-1
+7

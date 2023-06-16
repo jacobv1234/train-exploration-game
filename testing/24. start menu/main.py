@@ -2,7 +2,7 @@ from tkinter import *
 from time import sleep, perf_counter
 
 # import objects
-from lib.helper import Popup, get_unlocked_lines, get_bought_items, get_pos_save, save_pos
+from lib.helper import Popup, get_unlocked_lines, get_bought_items, get_pos_save, save_pos, get_map_manifest
 from lib.map import Map
 from lib.train import Train
 from lib.speedtracker import SpeedTracker
@@ -22,6 +22,8 @@ screen_height = window.winfo_screenheight() - 75
 
 window.state('zoomed')
 
+# load map manifest for premade saves
+map_manifest = get_map_manifest()
 
 # homepage
 save_path = 'savedata'
@@ -36,8 +38,14 @@ while True:
         if choice == 'Continue':
             break
         elif choice == 'New Game':
-            continue
-            
+            homepage.save_selection(map_manifest, screen_width, screen_height)
+        elif choice == 'Back':
+            homepage.remove()
+            del homepage
+            homepage = Homepage(window, screen_width, screen_height)
+        else:
+            save_path = f'map/premade_saves/{choice}'
+            break
 homepage.remove()
 del homepage
 

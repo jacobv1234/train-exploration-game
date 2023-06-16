@@ -1,6 +1,7 @@
 # contains helper functions
 
 from tkinter import *
+from json import loads
 
 # returns the opposite direction
 def opp_dir(dir):
@@ -26,10 +27,18 @@ def get_pos_save(savepath):
         values = tuple([val[:-1] for val in f.readlines()])
     return values
 
+
+# save pos.txt
 def save_pos(x: int, y: int, dir: int, map: str, line: str, points: int):
     values = [str(val) + '\n' for val in [x,y,dir,map,line,points]]
     with open('savedata/pos.txt','w') as f:
         f.writelines(values)
+
+# load whole map manifest.json
+def get_map_manifest():
+    with open('map/manifest.json') as f:
+        data = loads(f.read())
+    return data
 
 
 # creates a popup message in the top right, with
