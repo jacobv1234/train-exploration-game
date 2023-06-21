@@ -3,7 +3,7 @@ from lib.station import Station
 
 class StationDisplay:
     tabs = ['Passengers', 'Exit']
-    def __init__(self, window: Tk, screen_width:int, screen_height:int, station: Station, points: int, unlocked_lines: list, bought:list):
+    def __init__(self, window: Tk, screen_width:int, screen_height:int, station: Station, points: int, unlocked_lines: list, bought:list, skin: str):
         self.c = Canvas(window, width=screen_width, height=screen_height, bg='white')
         self.c.place(x=4,y=0)
         self.c.create_text(20,10,fill='black', font='Arial 40', text=f'{station.name} Station', anchor='nw')
@@ -27,7 +27,7 @@ class StationDisplay:
         self.height = screen_height
         self.station = station
 
-        self.cursor_graphic = PhotoImage(file='./graphics/train4.png').zoom(3)
+        self.cursor_graphic = PhotoImage(file=f'./skins/{skin}.png').zoom(3)
         self.cursor_pos = 0
         self.cursor = False
 

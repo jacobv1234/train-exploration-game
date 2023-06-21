@@ -1,7 +1,6 @@
 from lib.station_display import StationDisplay
-from lib.station import Station
 from tkinter import *
-from lib.helper import test_requirements, get_unlocked_lines
+from lib.helper import test_requirements
 
 # version of station display with a shop
 class ShopStation(StationDisplay):

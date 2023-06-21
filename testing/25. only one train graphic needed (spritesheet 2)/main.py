@@ -197,9 +197,9 @@ while True:
                     plural = ''
 
             if station.shop:
-                in_station = ShopStation(window, screen_width, screen_height, station, points, unlocked_lines, bought)
+                in_station = ShopStation(window, screen_width, screen_height, station, points, unlocked_lines, bought, skin)
             else:
-                in_station = StationDisplay(window, screen_width, screen_height, station, points, unlocked_lines, bought) 
+                in_station = StationDisplay(window, screen_width, screen_height, station, points, unlocked_lines, bought, skin) 
             
             if points_obtained > 0:
                 popup = Popup(window, screen_width, f'Passenger{plural} Delivered!', f'You got {points_obtained} point{plural}!', 100)
@@ -273,7 +273,7 @@ while True:
                 area = Map(area.internal_name, c, unlocked_lines)
 
                 in_station.close()
-                in_station = ShopStation(window, screen_width, screen_height, station, points, unlocked_lines, bought)
+                in_station = ShopStation(window, screen_width, screen_height, station, points, unlocked_lines, bought, skin)
                 
                 # train layering
                 c.tag_raise(train.object)
