@@ -96,6 +96,7 @@ def create_object(event):
     add_to_existing_line = input('''
 1) Add object to existing line
 2) Create new line
+3) Get coords of a spot
 >>> ''')
     if int(add_to_existing_line) == 1:
         line = input('''
@@ -290,6 +291,9 @@ Choose object to add to {line}
         map_manifest['lines'].append(name)
         with open(f'map/{map_name}/manifest.json','w') as f:
             f.write(dumps(map_manifest, indent=4))
+    
+    elif int(add_to_existing_line) == 3:
+        print(get_coordinates())
 
 
                 
