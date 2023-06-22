@@ -27,6 +27,7 @@ window.state('zoomed')
 c = Canvas(window, width = screen_width, height = screen_height, bg = 'white', xscrollincrement=1, yscrollincrement=1)
 c.place(x=4,y=0)
 
+
 area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']])
 
 x = -1
@@ -128,34 +129,58 @@ Choose object to add to {line}
                         x2=x1
                     case 1:
                         y2 = y1-(2*abs(x2-x1))
+                        if x2 % 8 == 4:
+                            x2 += 4
+                            y2 -= 8
                     case 2:
                         y2 = y1-abs(x2-x1)
                     case 3:
                         y2 = y1-(abs(x2-x1)/2)
+                        if y2 % 8 == 4:
+                            y2 -= 4
+                            x2 += 8
                     case 4:
                         y2=y1
                     case 5:
                         y2 = y1-(-abs(x2-x1)/2)
+                        if y2 % 8 == 4:
+                            y2 += 4
+                            x2 += 8
                     case 6:
                         y2 = y1+abs(x2-x1)
                     case 7:
                         y2 = y1-(-2*abs(x2-x1))
+                        if x2 % 8 == 4:
+                            x2 += 4
+                            y2 += 8
                     case 8:
                         x2=x1
                     case 9:
                         y2 = y1+(2*abs(x2-x1))
+                        if x2 % 8 == 4:
+                            x2 -= 4
+                            y2 += 8
                     case 10:
                         y2 = y1+abs(x2-x1)
                     case 11:
                         y2 = y1+(abs(x2-x1)/2)
+                        if y2 % 8 == 4:
+                            y2 += 4
+                            x2 -= 8
                     case 12:
                         y2=y1
                     case 13:
                         y2 = y1+(abs(x2-x1)/2)
+                        if y2 % 8 == 4:
+                            y2 -= 4
+                            x2 -= 8
                     case 14:
                         y2 = y1-abs(x2-x1)
                     case 15:
                         y2 = y1-(2*abs(x2-x1))
+                        if x2 % 8 == 4:
+                            x2 -= 4
+                            y2 -= 8
 
                 line_data['segments'].append([x1,y1,x2,y2])
             
@@ -295,8 +320,15 @@ Choose object to add to {line}
     elif int(add_to_existing_line) == 3:
         print(get_coordinates())
 
+selected_spot = c.create_oval(0,0,2,2,fill='black')
 
-                
+def move_cursor(event):
+    x, y = c.canvasx(event.x), c.canvasy(event.y)
+    x = x//8 * 8
+    y = y//8 * 8
+    c.coords(selected_spot,x-1,y-1,x+1,y+1)
+
+c.bind_all('<Motion>', move_cursor)
 
 c.bind_all('<space>', create_object)
 

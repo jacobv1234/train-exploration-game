@@ -1,0 +1,31 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            920.0,
+            496.0,
+            2128.0,
+            496.0
+        ]
+    ],
+    "corners": [
+        [
+            2128.0,
+            496.0,
+            3,
+            12,
+            "Cromer"
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [
+        [
+            920.0,
+            496.0,
+            4
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": []
+}

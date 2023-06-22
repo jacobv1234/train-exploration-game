@@ -1,0 +1,12 @@
+{
+    "Name": "UK Map",
+    "Saves": {
+        "New Game": {
+            "path": "New game",
+            "desc": "Start a fresh new savefile. Unlock tracks by delivering passengers."
+        }
+    },
+    "Parts": [
+        "EastAnglia"
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            2128.0,
+            496.0,
+            2240.0,
+            440.0
+        ],
+        [
+            2240.0,
+            440.0,
+            2600.0,
+            440.0
+        ]
+    ],
+    "corners": [
+        [
+            2240.0,
+            440.0,
+            4,
+            11
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Cromer-Norwich"
+                ]
+            },
+            "corner": [
+                2128.0,
+                496.0,
+                12,
+                3,
+                "Sheringham-CromerJunc"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Cromer-Norwich"
+                ],
+                "not": []
+            },
+            "coords": [
+                2128.0,
+                496.0
+            ],
+            "approach": {
+                "coords": [
+                    2512.0,
+                    440.0
+                ],
+                "direction": 12,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Cromer-Norwich",
+                "direction": 10
+            },
+            "right": {
+                "line": "Sheringham-CromerJunc",
+                "direction": 12
+            }
+        }
+    ],
+    "stations": []
+}

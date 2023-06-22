@@ -1,0 +1,16 @@
+{
+    "lines": [
+        "Sheringham-CromerJunc",
+        "Cromer-Norwich",
+        "Cromer"
+    ],
+    "start": [
+        1120,
+        -40,
+        12
+    ],
+    "start_line": "siding",
+    "loadingzones": [],
+    "display_name": "East Anglia",
+    "fontsize": 20
+}
