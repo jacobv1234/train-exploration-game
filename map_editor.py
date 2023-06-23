@@ -99,6 +99,7 @@ def create_object(event):
 2) Create new line
 3) Get coords of a spot
 4) Create station
+5) Station settings
 >>> ''')
     if int(add_to_existing_line) == 1:
         line = input('''
@@ -324,10 +325,103 @@ Choose object to add to {line}
     
     elif int(add_to_existing_line) == 4:
         name = input('Enter name: ')
+        x, y = get_coordinates()
+        station_data = {
+            "name": name,
+            "position": [x,y],
+            "exits": {},
+            "map_text": [],
+            "passengers": {
+                "chance_of_any": int(input('Chance of any passengers appearing: ')),
+                "options": []
+            },
+            "shop": False
+        }
+
+        while True:
+            name = input('Exit name (eg. westbound): ')
+            if name == '':
+                break
+            dir = int(input('Direction: '))
+            station_data['exits'][name] = dir
         
+        print('''Station created.
+Control map text, passengers, and shop via the JSON.
+Create a station object to assign to a line.''')
+        
+        with open(f'map/{map_name}/stations/{station_data["name"]}.json','w') as f:
+            f.write(dumps(station_data, indent=4))
 
 
+        area.unload(c)
+        del area
+        area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']])
+    
 
+    elif int(add_to_existing_line) == 5:
+        station_name = input('Station to edit: ')
+        with open(f'map/{map_name}/stations/{station_name}.json', 'r') as f:
+            station_data = loads(f.read())
+        mode = int(input('''Pick one:
+1) Add a passenger
+2) Add text to the map
+3) Add a shop item
+>>> '''))
+        match mode:
+            case 1:
+                chance = int(input('Relative chance of appearing: '))
+                points = int(input('Reward: '))
+                destination = input('Destination (mapname/station): ')
+                line = input('Destination line (mapname/line): ')
+                station_data['passengers']['options'].append({
+                    'chance': chance,
+                    'station': destination,
+                    'line': line,
+                    'reward': points
+                })
+            
+            case 2:
+                print('Coords for the text object')
+                x,y = get_coordinates()
+                dx,dy = x - station_data['position'][0], y - station_data['position'][1]
+                text = input('Text: ')
+                font = input('Font: ')
+                anchor = input('Anchor: ')
+                station_data['map_text'].append({
+                    "offset": [dx,dy],
+                    "text": text,
+                    "font": font,
+                    "anchor": anchor
+                })
+            
+            case 3:
+                if not station_data['shop']:
+                    station_data['shop'] = {}
+                
+                name = input('Item name: ')
+                price = int(input('Cost: '))
+                req = choose_requirements()
+                unlock = []
+                while True:
+                    get = input('Unlocks line (map_name/line): ')
+                    if get == '':
+                        break
+                    unlock.append(get)
+                
+                station_data['shop'][name] = {
+                    "cost": price,
+                    "requirements": req,
+                    "unlock": unlock,
+                    "unique_name": f'{map_name}/{station_name}/{name}'
+                }
+
+        
+        with open(f'map/{map_name}/stations/{station_data["name"]}.json','w') as f:
+            f.write(dumps(station_data, indent=4))
+
+        area.unload(c)
+        del area
+        area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']])
 
 
 w1 = Tk()

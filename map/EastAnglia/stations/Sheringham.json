@@ -1,0 +1,13 @@
+{
+    "name": "Sheringham",
+    "position": [
+        920.0,
+        496.0
+    ],
+    "exits": {
+        "eastbound": 4
+    },
+    "map_text": [],
+    "passengers": {},
+    "shop": false
+}

@@ -27,5 +27,7 @@
     ],
     "conditional_stops": [],
     "junctions": [],
-    "stations": []
+    "stations": [
+        "Sheringham"
+    ]
 }
