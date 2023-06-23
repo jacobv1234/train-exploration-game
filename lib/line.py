@@ -10,8 +10,10 @@ class Line():
             line_data = loads(f.read().strip('\n'))
 
         self.segments = []
-        for segment in line_data['segments']:
-            self.segments.append(canvas.create_line(segment[0], segment[1], segment[2], segment[3], fill=line_data['colour']))
+        self.seg_coords = line_data['segments']
+        self.col = line_data['colour']
+        for segment in self.seg_coords:
+            self.segments.append(canvas.create_line(segment[0], segment[1], segment[2], segment[3], fill=self.col))
         
         self.corners = line_data['corners']
 

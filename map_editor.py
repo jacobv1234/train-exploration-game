@@ -98,6 +98,7 @@ def create_object(event):
 1) Add object to existing line
 2) Create new line
 3) Get coords of a spot
+4) Create station
 >>> ''')
     if int(add_to_existing_line) == 1:
         line = input('''
@@ -183,6 +184,7 @@ Choose object to add to {line}
                             y2 -= 8
 
                 line_data['segments'].append([x1,y1,x2,y2])
+                c1.create_line(x1/8,y1/8,x2/8,y2/8, fill=line_data['colour'])
             
             case 2:
                 x1, y1 = get_coordinates()
@@ -319,19 +321,83 @@ Choose object to add to {line}
     
     elif int(add_to_existing_line) == 3:
         print(get_coordinates())
+    
+    elif int(add_to_existing_line) == 4:
+        name = input('Enter name: ')
+        
+
+
+
+
+
+w1 = Tk()
+c1 = Canvas(w1, width=screen_width,height=screen_height, bg='white', xscrollincrement=1, yscrollincrement=1)
+c1.pack()
+
+# zoomed out window
+for line in map_manifest['lines']:
+    line_obj = area.lines[line]
+    for segment in line_obj.seg_coords:
+        c1.create_line(segment[0]/8,segment[1]/8,segment[2]/8,segment[3]/8,fill=line_obj.col)
+
+
+
 
 selected_spot = c.create_oval(0,0,2,2,fill='black')
+small_selected = c1.create_oval(0,0,2,2,fill='black')
 
 def move_cursor(event):
     x, y = c.canvasx(event.x), c.canvasy(event.y)
     x = x//8 * 8
     y = y//8 * 8
     c.coords(selected_spot,x-1,y-1,x+1,y+1)
+    x /= 8
+    y /= 8
+    c1.coords(small_selected,x-1,y-1,x+1,y+1)
+def move_cursor_small(event):
+    x, y = c1.canvasx(event.x), c1.canvasy(event.y)
+    c1.coords(small_selected,x-1,y-1,x+1,y+1)
+    x *= 8
+    y *= 8
+    c.coords(selected_spot,x-1,y-1,x+1,y+1)
+
+
+# screen scroll functions
+def scroll_left_1(event):
+    c1.xview_scroll(-40,'units')
+def scroll_right_1(event):
+    c1.xview_scroll(40,'units')
+def scroll_up_1(event):
+    c1.yview_scroll(-40,'units')
+def scroll_down_1(event):
+    c1.yview_scroll(40,'units')
+c1.bind_all('<Left>', scroll_left_1)
+c1.bind_all('<Right>', scroll_right_1)
+c1.bind_all('<Up>', scroll_up_1)
+c1.bind_all('<Down>', scroll_down_1)
+
+
+# click on w1 to go to respective spot in window
+def scroll_snap(event: Event):
+    x, y = c1.canvasx(event.x), c1.canvasy(event.y)
+    x, y = x*8, y*8
+    c.xview_moveto(0.0)
+    c.yview_moveto(0.0)
+    c.xview_scroll(int(x)-round(screen_width/2), 'units')
+    c.yview_scroll(int(y)-round(screen_height/2), 'units')
+    
+c1.bind_all('<Button-1>', scroll_snap)
+
 
 c.bind_all('<Motion>', move_cursor)
+c1.bind_all('<Motion>', move_cursor_small)
+
+
 
 c.bind_all('<space>', create_object)
+
 
 while True:
     sleep(0.017)
     window.update()
+    w1.update()

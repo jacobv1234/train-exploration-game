@@ -1,0 +1,34 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            1840.0,
+            3408.0,
+            1208.0,
+            3408.0
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Norwich-Brundall",
+                    "EastAnglia/Norwich-SouthExit"
+                ]
+            },
+            "corner": [
+                1840.0,
+                3408.0,
+                2,
+                12,
+                "Cromer-Norwich"
+            ]
+        }
+    ],
+    "stops": [[1208,3408,4]],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": []
+}

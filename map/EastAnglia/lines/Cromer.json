@@ -39,7 +39,13 @@
             ]
         }
     ],
-    "stops": [],
+    "stops": [
+        [
+            2600.0,
+            440.0,
+            12
+        ]
+    ],
     "conditional_stops": [],
     "junctions": [
         {

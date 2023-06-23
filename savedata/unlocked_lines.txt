@@ -1,5 +1,1 @@
-main/main_left
-main/siding
-main/warp
-lower/thingy
-main/main_right
+EastAnglia/Sheringham-CromerJunc
