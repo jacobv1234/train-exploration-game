@@ -1,11 +1,12 @@
 {
-    "name": "Sheringham",
+    "name": "West Runton",
     "position": [
-        920.0,
+        1416.0,
         496.0
     ],
     "exits": {
-        "eastbound": 4
+        "eastbound": 4,
+        "westbound": 12
     },
     "map_text": [
         {
@@ -13,24 +14,24 @@
                 0.0,
                 -32.0
             ],
-            "text": "Sheringham",
+            "text": "West Runton",
             "font": "Arial 10",
             "anchor": "center"
         }
     ],
     "passengers": {
-        "chance_of_any": 75,
+        "chance_of_any": 40,
         "options": [
+            {
+                "chance": 2,
+                "station": "EastAnglia/Sheringham",
+                "line": "EastAnglia/Sheringham-CromerJunc",
+                "reward": 1
+            },
             {
                 "chance": 3,
                 "station": "EastAnglia/Cromer",
                 "line": "EastAnglia/Cromer",
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "EastAnglia/West Runton",
-                "line": "EastAnglia/Sheringham-CromerJunc",
                 "reward": 1
             }
         ]

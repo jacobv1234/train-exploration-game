@@ -81,5 +81,7 @@
             }
         }
     ],
-    "stations": []
+    "stations": [
+        "Cromer"
+    ]
 }

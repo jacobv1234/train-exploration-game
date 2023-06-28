@@ -1,11 +1,11 @@
 {
-    "name": "Sheringham",
+    "name": "Cromer",
     "position": [
-        920.0,
-        496.0
+        2600.0,
+        440.0
     ],
     "exits": {
-        "eastbound": 4
+        "westbound": 12
     },
     "map_text": [
         {
@@ -13,23 +13,23 @@
                 0.0,
                 -32.0
             ],
-            "text": "Sheringham",
+            "text": "Cromer",
             "font": "Arial 10",
             "anchor": "center"
         }
     ],
     "passengers": {
-        "chance_of_any": 75,
+        "chance_of_any": 80,
         "options": [
-            {
-                "chance": 3,
-                "station": "EastAnglia/Cromer",
-                "line": "EastAnglia/Cromer",
-                "reward": 1
-            },
             {
                 "chance": 1,
                 "station": "EastAnglia/West Runton",
+                "line": "EastAnglia/Sheringham-CromerJunc",
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Sheringham",
                 "line": "EastAnglia/Sheringham-CromerJunc",
                 "reward": 1
             }
