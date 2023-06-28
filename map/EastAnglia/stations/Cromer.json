@@ -1,8 +1,8 @@
 {
     "name": "Cromer",
     "position": [
-        2600.0,
-        440.0
+        2600,
+        440
     ],
     "exits": {
         "westbound": 12
@@ -35,5 +35,18 @@
             }
         ]
     },
-    "shop": false
+    "shop": {
+        "To Norwich": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "unlock": [
+                "EastAnglia/Cromer-Norwich",
+                "EastAnglia/Norwich"
+            ],
+            "unique_name": "EastAnglia/Cromer/To Norwich"
+        }
+    }
 }

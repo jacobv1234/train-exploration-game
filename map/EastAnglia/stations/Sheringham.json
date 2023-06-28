@@ -1,8 +1,8 @@
 {
     "name": "Sheringham",
     "position": [
-        920.0,
-        496.0
+        920,
+        496
     ],
     "exits": {
         "eastbound": 4

@@ -51,7 +51,7 @@ def get_coordinates():
     x = x //8 * 8
     y = y //8 * 8
 
-    return x, y
+    return int(x), int(y)
 
 
 def choose_requirements():

@@ -1,8 +1,8 @@
 {
     "name": "West Runton",
     "position": [
-        1416.0,
-        496.0
+        1416,
+        496
     ],
     "exits": {
         "eastbound": 4,
