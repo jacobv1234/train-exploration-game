@@ -29,5 +29,5 @@ self.c.create_text(self.width*3/4, pos, fill='black', font='Arial 14', text=shop
         
         else:
             self.page_contents.append(
-                self.c.create_text(self.width/2, ((self.height-110)/2)+110, fill='black', font='Arial 18', text='There\'s nothing left in the shop!', anchor='center')
+                self.c.create_text(self.width/2, ((self.height-110)/2)+110, fill='black', font='Arial 18', text='There\'s nothing currently available in this shop!', anchor='center')
             )

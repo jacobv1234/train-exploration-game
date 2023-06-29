@@ -1,0 +1,25 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            4960,
+            4568,
+            5352,
+            4960
+        ]
+    ],
+    "corners": [
+        [
+            4960,
+            4568,
+            6,
+            14,
+            "Buckenham"
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": []
+}

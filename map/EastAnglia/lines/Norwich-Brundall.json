@@ -1,0 +1,118 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            1840,
+            3408,
+            2736,
+            3408
+        ],
+        [
+            2736,
+            3408,
+            3056,
+            3568.0
+        ],
+        [
+            3056,
+            3568,
+            3920,
+            3568
+        ]
+    ],
+    "corners": [
+        [
+            1840,
+            3408,
+            4,
+            12,
+            "Norwich"
+        ],
+        [
+            2736,
+            3408,
+            5,
+            12
+        ],
+        [
+            3056,
+            3568,
+            13,
+            4
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Buckenham"
+                ],
+                "not": [
+                    "EastAnglia/Acle"
+                ]
+            },
+            "corner": [
+                3920,
+                3568,
+                12,
+                5,
+                "Buckenham"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Acle"
+                ],
+                "not": [
+                    "EastAnglia/Buckenham"
+                ]
+            },
+            "corner": [
+                3920,
+                3568,
+                4,
+                12,
+                "Acle"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Acle",
+                    "EastAnglia/Buckenham"
+                ],
+                "not": []
+            },
+            "coords": [
+                3920,
+                3568
+            ],
+            "approach": {
+                "coords": [
+                    3112,
+                    3568
+                ],
+                "direction": 4,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Acle",
+                "direction": 4
+            },
+            "right": {
+                "line": "Buckenham",
+                "direction": 5
+            }
+        }
+    ],
+    "stations": []
+}

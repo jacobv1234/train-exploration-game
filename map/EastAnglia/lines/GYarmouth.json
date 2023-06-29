@@ -1,0 +1,92 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            5720,
+            3568,
+            6184,
+            3568
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Acle"
+                ],
+                "not": [
+                    "EastAnglia/Berney Arms"
+                ]
+            },
+            "corner": [
+                5720,
+                3568,
+                4,
+                12,
+                "Acle"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Berney Arms"
+                ],
+                "not": [
+                    "EastAnglia/Acle"
+                ]
+            },
+            "corner": [
+                5720,
+                3568,
+                4,
+                10,
+                "Berney Arms"
+            ]
+        }
+    ],
+    "stops": [
+        [
+            6184,
+            3568,
+            12
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Berney Arms",
+                    "EastAnglia/Acle"
+                ],
+                "not": []
+            },
+            "coords": [
+                5720,
+                3568
+            ],
+            "approach": {
+                "coords": [
+                    6144,
+                    3568
+                ],
+                "direction": 12,
+                "options": [
+                    "left",
+                    "straight"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Berney Arms",
+                "direction": 10
+            },
+            "straight": {
+                "line": "Acle",
+                "direction": 12
+            }
+        }
+    ],
+    "stations": []
+}

@@ -1,0 +1,106 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            3920,
+            3568,
+            4000,
+            3608.0
+        ],
+        [
+            4000,
+            3608,
+            4960,
+            4568
+        ]
+    ],
+    "corners": [
+        [
+            3920,
+            3568,
+            12,
+            5,
+            "Norwich-Brundall"
+        ],
+        [
+            4000,
+            3608,
+            6,
+            13
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Lowestoft-N"
+                ],
+                "not": [
+                    "EastAnglia/Berney Arms"
+                ]
+            },
+            "corner": [
+                4960,
+                4568,
+                14,
+                6,
+                "Lowestoft-N"
+            ]
+        },
+        {
+            "requirements": {
+                "not": [
+                    "EastAnglia/Lowestoft-N"
+                ],
+                "unlocked": [
+                    "EastAnglia/Berney Arms"
+                ]
+            },
+            "corner": [
+                4960,
+                4568,
+                14,
+                5,
+                "Berney Arms"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Berney Arms",
+                    "EastAnglia/Lowestoft-N"
+                ],
+                "not": []
+            },
+            "coords": [
+                4960,
+                4568
+            ],
+            "approach": {
+                "coords": [
+                    4720,
+                    4328
+                ],
+                "direction": 6,
+                "options": [
+                    "left",
+                    "straight"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Berney Arms",
+                "direction": 5
+            },
+            "straight": {
+                "line": "Lowestoft-N",
+                "direction": 6
+            }
+        }
+    ],
+    "stations": []
+}

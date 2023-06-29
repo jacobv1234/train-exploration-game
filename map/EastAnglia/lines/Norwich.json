@@ -35,7 +35,42 @@
         ]
     ],
     "conditional_stops": [],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Norwich-Brundall"
+                ],
+                "not": [
+                    "EastAnglia/NorwichSouth"
+                ]
+            },
+            "coords": [
+                1840,
+                3408
+            ],
+            "approach": {
+                "coords": [
+                    1360,
+                    3408
+                ],
+                "direction": 4,
+                "options": [
+                    "left",
+                    "straight"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Cromer-Norwich",
+                "direction": 2
+            },
+            "straight": {
+                "line": "Norwich-Brundall",
+                "direction": 4
+            }
+        }
+    ],
     "stations": [
         "Norwich"
     ]

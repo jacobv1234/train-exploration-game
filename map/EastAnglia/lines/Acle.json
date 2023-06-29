@@ -1,0 +1,32 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            3920,
+            3568,
+            5720,
+            3568
+        ]
+    ],
+    "corners": [
+        [
+            3920,
+            3568,
+            4,
+            12,
+            "Norwich-Brundall"
+        ],
+        [
+            5720,
+            3568,
+            4,
+            12,
+            "GYarmouth"
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": []
+}
