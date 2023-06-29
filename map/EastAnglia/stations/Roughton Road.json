@@ -1,41 +1,30 @@
 {
-    "name": "Sheringham",
+    "name": "Roughton Road",
     "position": [
-        920,
-        496
+        2152,
+        656
     ],
     "exits": {
-        "eastbound": 4
+        "eastbound": 5,
+        "westbound": 13
     },
     "map_text": [
         {
             "offset": [
-                0.0,
-                -32.0
+                -24,
+                -32
             ],
-            "text": "Sheringham",
+            "text": "Roughton Rd",
             "font": "Arial 10",
-            "anchor": "center"
+            "anchor": "w"
         }
     ],
     "passengers": {
-        "chance_of_any": 75,
+        "chance_of_any": 30,
         "options": [
             {
-                "chance": 3,
-                "station": "EastAnglia/Cromer",
-                "line": "EastAnglia/Cromer",
-                "reward": 1
-            },
-            {
                 "chance": 1,
-                "station": "EastAnglia/West Runton",
-                "line": "EastAnglia/Sheringham-CromerJunc",
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "EastAnglia/Roughton Road",
+                "station": "EastAnglia/Gunton",
                 "line": "EastAnglia/Cromer-Norwich",
                 "reward": 1
             },
@@ -46,8 +35,14 @@
                 "reward": 1
             },
             {
-                "chance": 2,
+                "chance": 1,
                 "station": "EastAnglia/Hoveton & Wroxham",
+                "line": "EastAnglia/Cromer-Norwich",
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Worstead",
                 "line": "EastAnglia/Cromer-Norwich",
                 "reward": 1
             },
@@ -55,6 +50,12 @@
                 "chance": 3,
                 "station": "EastAnglia/Norwich",
                 "line": "EastAnglia/Norwich",
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/West Runton",
+                "line": "EastAnglia/Sheringham-CromerJunc",
                 "reward": 1
             }
         ]

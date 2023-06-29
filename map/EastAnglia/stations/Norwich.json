@@ -1,0 +1,74 @@
+{
+    "name": "Norwich",
+    "position": [
+        1208,
+        3408
+    ],
+    "exits": {
+        "eastbound": 4
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -32
+            ],
+            "text": "Norwich",
+            "font": "Arial 10",
+            "anchor": "center"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 80,
+        "options": [
+        {
+            "chance": 1,
+            "station": "EastAnglia/Roughton Road",
+            "line": "EastAnglia/Cromer-Norwich",
+            "reward": 1
+        },
+        {
+            "chance": 1,
+            "station": "EastAnglia/Gunton",
+            "line": "EastAnglia/Cromer-Norwich",
+            "reward": 1
+        },
+        {
+            "chance": 2,
+            "station": "EastAnglia/North Walsham",
+            "line": "EastAnglia/Cromer-Norwich",
+            "reward": 1
+        },
+        {
+            "chance": 1,
+            "station": "EastAnglia/Hoveton & Wroxham",
+            "line": "EastAnglia/Cromer-Norwich",
+            "reward": 1
+        },
+        {
+            "chance": 1,
+            "station": "EastAnglia/Worstead",
+            "line": "EastAnglia/Cromer-Norwich",
+            "reward": 1
+        },
+        {
+            "chance": 1,
+            "station": "EastAnglia/Salhouse",
+            "line": "EastAnglia/Cromer-Norwich",
+            "reward": 1
+        },
+        {
+            "chance": 3,
+            "station": "EastAnglia/Cromer",
+            "line": "EastAnglia/Cromer",
+            "reward": 1
+        },
+        {
+            "chance": 2,
+            "station": "EastAnglia/Sheringham",
+            "line": "EastAnglia/Sheringham-CromerJunc",
+            "reward": 1
+        }]
+    },
+    "shop": false
+}

@@ -1,0 +1,63 @@
+{
+    "name": "Worstead",
+    "position": [
+        2384,
+        2408
+    ],
+    "exits": {
+        "northbound": 0,
+        "southbound": 8
+    },
+    "map_text": [
+        {
+            "offset": [
+                24,
+                0
+            ],
+            "text": "Worstead",
+            "font": "Arial 10",
+            "anchor": "w"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 50,
+        "options": [
+        {
+            "chance": 1,
+            "station": "EastAnglia/Roughton Road",
+            "line": "EastAnglia/Cromer-Norwich",
+            "reward": 1
+        },
+        {
+            "chance": 2,
+            "station": "EastAnglia/North Walsham",
+            "line": "EastAnglia/Cromer-Norwich",
+            "reward": 1
+        },
+        {
+            "chance": 2,
+            "station": "EastAnglia/Hoveton & Wroxham",
+            "line": "EastAnglia/Cromer-Norwich",
+            "reward": 1
+        },
+        {
+            "chance": 3,
+            "station": "EastAnglia/Norwich",
+            "line": "EastAnglia/Norwich",
+            "reward": 1
+        },
+        {
+            "chance": 2,
+            "station": "EastAnglia/Cromer",
+            "line": "EastAnglia/Cromer",
+            "reward": 1
+        },
+        {
+            "chance": 2,
+            "station": "EastAnglia/Sheringham",
+            "line": "EastAnglia/Sheringham-CromerJunc",
+            "reward": 1
+        }]
+    },
+    "shop": false
+}

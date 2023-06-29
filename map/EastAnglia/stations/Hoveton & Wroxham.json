@@ -1,0 +1,78 @@
+{
+    "name": "Hoveton & Wroxham",
+    "position": [
+        2384,
+        2072
+    ],
+    "exits": {
+        "northbound": 0,
+        "southbound": 8
+    },
+    "map_text": [
+        {
+            "offset": [
+                24,
+                0
+            ],
+            "text": "Hoveton",
+            "font": "Arial 10",
+            "anchor": "sw"
+        },
+        {
+            "offset": [
+                24,
+                0
+            ],
+            "text": "& Wroxham",
+            "font": "Arial 10",
+            "anchor": "nw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 60,
+        "options": [
+        {
+            "chance": 1,
+            "station": "EastAnglia/Roughton Road",
+            "line": "EastAnglia/Cromer-Norwich",
+            "reward": 1
+        },
+        {
+            "chance": 1,
+            "station": "EastAnglia/Gunton",
+            "line": "EastAnglia/Cromer-Norwich",
+            "reward": 1
+        },
+        {
+            "chance": 2,
+            "station": "EastAnglia/North Walsham",
+            "line": "EastAnglia/Cromer-Norwich",
+            "reward": 1
+        },
+        {
+            "chance": 1,
+            "station": "EastAnglia/Worstead",
+            "line": "EastAnglia/Cromer-Norwich",
+            "reward": 1
+        },
+        {
+            "chance": 1,
+            "station": "EastAnglia/Salhouse",
+            "line": "EastAnglia/Cromer-Norwich",
+            "reward": 1
+        },
+        {
+            "chance": 3,
+            "station": "EastAnglia/Norwich",
+            "line": "EastAnglia/Norwich",
+            "reward": 1
+        },
+        {
+            "chance": 2,
+            "station": "EastAnglia/Cromer",
+            "line": "EastAnglia/Cromer",
+            "reward": 1
+        }]
+    },
+    "shop": false
+}

@@ -27,8 +27,16 @@
             ]
         }
     ],
-    "stops": [[1208,3408,4]],
+    "stops": [
+        [
+            1208,
+            3408,
+            4
+        ]
+    ],
     "conditional_stops": [],
     "junctions": [],
-    "stations": []
+    "stations": [
+        "Norwich"
+    ]
 }

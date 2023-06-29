@@ -33,6 +33,18 @@
                 "station": "EastAnglia/Cromer",
                 "line": "EastAnglia/Cromer",
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/North Walsham",
+                "line": "EastAnglia/Cromer-Norwich",
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Norwich",
+                "line": "EastAnglia/Norwich",
+                "reward": 1
             }
         ]
     },

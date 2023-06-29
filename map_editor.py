@@ -291,6 +291,13 @@ Choose object to add to {line}
                 print()
                 station = input('Choose a station to add to this line: ')
                 line_data['stations'].append(station)
+
+                with open(f'map/{map_name}/stations/{station}.json','r') as f:
+                    station_data = loads(f.read())
+                
+                x,y = tuple([pos//8 for pos in station_data['position']])
+
+                c1.create_oval(x-2,y-2,x+2,y+2,fill='',outline='black')
             
         
         with open(f'map/{map_name}/lines/{line}.json','w') as f:
@@ -433,6 +440,10 @@ for line in map_manifest['lines']:
     line_obj = area.lines[line]
     for segment in line_obj.seg_coords:
         c1.create_line(segment[0]/8,segment[1]/8,segment[2]/8,segment[3]/8,fill=line_obj.col)
+
+    for station in line_obj.stations:
+        x, y = tuple([pos//8 for pos in station.pos])
+        c1.create_oval(x-2,y-2,x+2,y+2,fill='',outline='black')
 
 
 
