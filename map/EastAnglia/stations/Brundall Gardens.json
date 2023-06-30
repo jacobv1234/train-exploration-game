@@ -1,0 +1,27 @@
+{
+    "name": "Brundall Gardens",
+    "position": [
+        2528,
+        3408
+    ],
+    "exits": {
+        "eastbound": 4,
+        "westbound": 12
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -32
+            ],
+            "text": "Brundall Gardens",
+            "font": "Arial 10",
+            "anchor": "center"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 50,
+        "options": []
+    },
+    "shop": false
+}

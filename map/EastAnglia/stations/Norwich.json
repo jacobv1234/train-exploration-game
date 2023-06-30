@@ -19,56 +19,89 @@
         }
     ],
     "passengers": {
-        "chance_of_any": 80,
+        "chance_of_any": 90,
         "options": [
-        {
-            "chance": 1,
-            "station": "EastAnglia/Roughton Road",
-            "line": "EastAnglia/Cromer-Norwich",
-            "reward": 1
-        },
-        {
-            "chance": 1,
-            "station": "EastAnglia/Gunton",
-            "line": "EastAnglia/Cromer-Norwich",
-            "reward": 1
-        },
-        {
-            "chance": 2,
-            "station": "EastAnglia/North Walsham",
-            "line": "EastAnglia/Cromer-Norwich",
-            "reward": 1
-        },
-        {
-            "chance": 1,
-            "station": "EastAnglia/Hoveton & Wroxham",
-            "line": "EastAnglia/Cromer-Norwich",
-            "reward": 1
-        },
-        {
-            "chance": 1,
-            "station": "EastAnglia/Worstead",
-            "line": "EastAnglia/Cromer-Norwich",
-            "reward": 1
-        },
-        {
-            "chance": 1,
-            "station": "EastAnglia/Salhouse",
-            "line": "EastAnglia/Cromer-Norwich",
-            "reward": 1
-        },
-        {
-            "chance": 3,
-            "station": "EastAnglia/Cromer",
-            "line": "EastAnglia/Cromer",
-            "reward": 1
-        },
-        {
-            "chance": 2,
-            "station": "EastAnglia/Sheringham",
-            "line": "EastAnglia/Sheringham-CromerJunc",
-            "reward": 1
-        }]
+            {
+                "chance": 1,
+                "station": "EastAnglia/Roughton Road",
+                "line": "EastAnglia/Cromer-Norwich",
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Gunton",
+                "line": "EastAnglia/Cromer-Norwich",
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/North Walsham",
+                "line": "EastAnglia/Cromer-Norwich",
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Hoveton & Wroxham",
+                "line": "EastAnglia/Cromer-Norwich",
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Worstead",
+                "line": "EastAnglia/Cromer-Norwich",
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Salhouse",
+                "line": "EastAnglia/Cromer-Norwich",
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Cromer",
+                "line": "EastAnglia/Cromer",
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Sheringham",
+                "line": "EastAnglia/Sheringham-CromerJunc",
+                "reward": 1
+            }
+        ]
     },
-    "shop": false
+    "shop": {
+        "To Great Yarmouth": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/GYarmouth"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Norwich-Brundall",
+                "EastAnglia/Acle",
+                "EastAnglia/GYarmouth"
+            ],
+            "unique_name": "EastAnglia/Norwich/To Great Yarmouth"
+        },
+        "To Lowestoft": {
+            "cost": 3,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Lowestoft-N"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Norwich-Brundall",
+                "EastAnglia/Buckenham",
+                "EastAnglia/Lowestoft-N",
+                "EastAnglia/Lowestoft"
+            ],
+            "unique_name": "EastAnglia/Norwich/To Lowestoft"
+        }
+    }
 }

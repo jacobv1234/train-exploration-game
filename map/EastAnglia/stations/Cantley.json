@@ -1,0 +1,27 @@
+{
+    "name": "Cantley",
+    "position": [
+        4376,
+        3984
+    ],
+    "exits": {
+        "eastbound": 6,
+        "westbound": 14
+    },
+    "map_text": [
+        {
+            "offset": [
+                -16,
+                8
+            ],
+            "text": "Cantley",
+            "font": "Arial 10",
+            "anchor": "ne"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 70,
+        "options": []
+    },
+    "shop": false
+}

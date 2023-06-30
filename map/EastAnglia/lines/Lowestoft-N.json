@@ -6,6 +6,12 @@
             4568,
             5352,
             4960
+        ],
+        [
+            5352,
+            4960,
+            5512,
+            5040.0
         ]
     ],
     "corners": [
@@ -15,11 +21,28 @@
             6,
             14,
             "Buckenham"
+        ],
+        [
+            5352,
+            4960,
+            14,
+            5
+        ],
+        [
+            5512,
+            5040,
+            13,
+            4,
+            "Lowestoft"
         ]
     ],
     "conditional_corners": [],
     "stops": [],
     "conditional_stops": [],
     "junctions": [],
-    "stations": []
+    "stations": [
+        "Haddiscoe",
+        "Somerleyton",
+        "Oulton Broad North"
+    ]
 }

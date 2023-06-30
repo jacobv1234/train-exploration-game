@@ -1,0 +1,36 @@
+{
+    "name": "Berney Arms",
+    "position": [
+        5448,
+        4064
+    ],
+    "exits": {
+        "eastbound": 1,
+        "westbound": 9
+    },
+    "map_text": [
+        {
+            "offset": [
+                -16,
+                -8
+            ],
+            "text": "Berney",
+            "font": "Arial 10",
+            "anchor": "se"
+        },
+        {
+            "offset": [
+                16,
+                8
+            ],
+            "text": "Arms",
+            "font": "Arial 10",
+            "anchor": "nw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 15,
+        "options": []
+    },
+    "shop": false
+}

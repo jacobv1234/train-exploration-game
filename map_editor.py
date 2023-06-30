@@ -116,7 +116,6 @@ Choose object to add to {line}
 4) Junction
 5) Stop
 6) Conditional Stop
-7) Station
 
 >>> ''')
         
@@ -287,18 +286,6 @@ Choose object to add to {line}
                     'stop': [x1,y1,dir]
                 })
             
-            case 7:
-                print()
-                station = input('Choose a station to add to this line: ')
-                line_data['stations'].append(station)
-
-                with open(f'map/{map_name}/stations/{station}.json','r') as f:
-                    station_data = loads(f.read())
-                
-                x,y = tuple([pos//8 for pos in station_data['position']])
-
-                c1.create_oval(x-2,y-2,x+2,y+2,fill='',outline='black')
-            
         
         with open(f'map/{map_name}/lines/{line}.json','w') as f:
             f.write(dumps(line_data, indent=4))
@@ -331,10 +318,10 @@ Choose object to add to {line}
         print(get_coordinates())
     
     elif int(add_to_existing_line) == 4:
-        name = input('Enter name: ')
+        station_name = input('Enter name: ')
         x, y = get_coordinates()
         station_data = {
-            "name": name,
+            "name": station_name,
             "position": [x,y],
             "exits": {},
             "map_text": [],
@@ -352,12 +339,29 @@ Choose object to add to {line}
             dir = int(input('Direction: '))
             station_data['exits'][name] = dir
         
+
+        line_name = input('Add to line: ')
+
+        with open(f'map/{map_name}/lines/{line_name}.json','r') as f:
+            line_data = loads(f.read())
+        
+        line_data['stations'].append(station_name)
+
+        with open(f'map/{map_name}/lines/{line_name}.json','w') as f:
+            f.write(dumps(line_data, indent=4))
+
+
         print('''Station created.
 Control map text, passengers, and shop via the JSON.
-Create a station object to assign to a line.''')
+''')
         
         with open(f'map/{map_name}/stations/{station_data["name"]}.json','w') as f:
             f.write(dumps(station_data, indent=4))
+        
+        x//=8
+        y//=8
+
+        c1.create_oval(x-2,y-2,x+2,y+2,fill='',outline='black')
 
 
         area.unload(c)

@@ -88,5 +88,7 @@
     "stops": [],
     "conditional_stops": [],
     "junctions": [],
-    "stations": []
+    "stations": [
+        "Berney Arms"
+    ]
 }

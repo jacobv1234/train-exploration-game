@@ -114,5 +114,8 @@
             }
         }
     ],
-    "stations": []
+    "stations": [
+        "Brundall Gardens",
+        "Brundall"
+    ]
 }

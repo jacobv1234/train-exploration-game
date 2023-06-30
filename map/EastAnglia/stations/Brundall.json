@@ -1,0 +1,27 @@
+{
+    "name": "Brundall",
+    "position": [
+        2848,
+        3464
+    ],
+    "exits": {
+        "eastbound": 5,
+        "westbound": 13
+    },
+    "map_text": [
+        {
+            "offset": [
+                -16,
+                -24
+            ],
+            "text": "Brundall",
+            "font": "Arial 10",
+            "anchor": "sw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 60,
+        "options": []
+    },
+    "shop": false
+}

@@ -88,5 +88,7 @@
             }
         }
     ],
-    "stations": []
+    "stations": [
+        "Great Yarmouth"
+    ]
 }

@@ -1,0 +1,27 @@
+{
+    "name": "Oulton Broad North",
+    "position": [
+        5448,
+        5008
+    ],
+    "exits": {
+        "eastbound": 13,
+        "westbound": 5
+    },
+    "map_text": [
+        {
+            "offset": [
+                -16,
+                8
+            ],
+            "text": "Oulton Broad N",
+            "font": "Arial 10",
+            "anchor": "ne"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 40,
+        "options": []
+    },
+    "shop": false
+}

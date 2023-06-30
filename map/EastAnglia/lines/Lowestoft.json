@@ -1,0 +1,43 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            5512,
+            5040,
+            5928,
+            5040
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Lowestoft-N"
+                ],
+                "not": [
+                    "EastAnglia/Lowestoft-S"
+                ]
+            },
+            "corner": [
+                5512,
+                5040,
+                13,
+                4,
+                "Lowestoft-N"
+            ]
+        }
+    ],
+    "stops": [
+        [
+            5928,
+            5040,
+            12
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Lowestoft"
+    ]
+}

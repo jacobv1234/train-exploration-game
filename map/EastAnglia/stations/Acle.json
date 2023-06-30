@@ -1,0 +1,27 @@
+{
+    "name": "Acle",
+    "position": [
+        5128,
+        3568
+    ],
+    "exits": {
+        "eastbound": 4,
+        "westbound": 12
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -32
+            ],
+            "text": "Acle",
+            "font": "Arial 10",
+            "anchor": "center"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 65,
+        "options": []
+    },
+    "shop": false
+}

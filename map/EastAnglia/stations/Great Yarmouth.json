@@ -1,0 +1,35 @@
+{
+    "name": "Great Yarmouth",
+    "position": [
+        6184,
+        3568
+    ],
+    "exits": {
+        "westbound": 12
+    },
+    "map_text": [
+        {
+            "offset": [
+                24,
+                0
+            ],
+            "text": "Great",
+            "font": "Arial 10",
+            "anchor": "sw"
+        },
+        {
+            "offset": [
+                24,
+                0
+            ],
+            "text": "Yarmouth",
+            "font": "Arial 10",
+            "anchor": "nw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 80,
+        "options": []
+    },
+    "shop": false
+}

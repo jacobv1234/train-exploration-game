@@ -1,0 +1,27 @@
+{
+    "name": "Somerleyton",
+    "position": [
+        5256,
+        4864
+    ],
+    "exits": {
+        "eastbound": 14,
+        "westbound": 6
+    },
+    "map_text": [
+        {
+            "offset": [
+                -16,
+                8
+            ],
+            "text": "Somerleyton",
+            "font": "Arial 10",
+            "anchor": "ne"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 60,
+        "options": []
+    },
+    "shop": false
+}

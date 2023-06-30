@@ -1,0 +1,27 @@
+{
+    "name": "Buckenham",
+    "position": [
+        4096,
+        3704
+    ],
+    "exits": {
+        "eastbound": 6,
+        "westbound": 14
+    },
+    "map_text": [
+        {
+            "offset": [
+                -16,
+                8
+            ],
+            "text": "Buckenham",
+            "font": "Arial 10",
+            "anchor": "ne"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 65,
+        "options": []
+    },
+    "shop": false
+}

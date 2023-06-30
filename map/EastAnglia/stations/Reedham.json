@@ -1,0 +1,27 @@
+{
+    "name": "Reedham",
+    "position": [
+        4680,
+        4288
+    ],
+    "exits": {
+        "westbound": 14,
+        "eastbound": 6
+    },
+    "map_text": [
+        {
+            "offset": [
+                -16,
+                8
+            ],
+            "text": "Reedham",
+            "font": "Arial 10",
+            "anchor": "ne"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 70,
+        "options": []
+    },
+    "shop": false
+}

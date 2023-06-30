@@ -1,0 +1,27 @@
+{
+    "name": "Haddiscoe",
+    "position": [
+        5056,
+        4664
+    ],
+    "exits": {
+        "eastbound": 6,
+        "westbound": 14
+    },
+    "map_text": [
+        {
+            "offset": [
+                -16,
+                8
+            ],
+            "text": "Haddiscoe",
+            "font": "Arial 10",
+            "anchor": "ne"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 55,
+        "options": []
+    },
+    "shop": false
+}
