@@ -138,9 +138,10 @@ while True:
         train.move_train(c)
 
         # check collisions with objects
-        corner = area.check_corners(train.x, train.y, train.line)
-        if corner != 0:
-            train.corner(corner)
+        if train.speed != 0:
+            corner = area.check_corners(train.x, train.y, train.line)
+            if corner != 0:
+                train.corner(corner)
 
         if junc != False:
             if junc['coords'][0] == train.x and junc['coords'][1] == train.y:
@@ -318,6 +319,8 @@ while True:
         timer = popup.countdown()
         if timer == 0:
             popup = False
+        
+    train.update_last_positions()
 
     HandleMapNameCounter()
     window.update()

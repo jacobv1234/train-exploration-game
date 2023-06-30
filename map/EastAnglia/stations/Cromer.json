@@ -56,6 +56,12 @@
                 "station": "EastAnglia/Norwich",
                 "line": "EastAnglia/Norwich",
                 "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Great Yarmouth",
+                "line": "EastAnglia/GYarmouth",
+                "reward": 2
             }
         ]
     },

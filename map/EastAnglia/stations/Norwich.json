@@ -68,6 +68,66 @@
                 "station": "EastAnglia/Sheringham",
                 "line": "EastAnglia/Sheringham-CromerJunc",
                 "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Brundall Gardens",
+                "line": "EastAnglia/Norwich-Brundall",
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Brundall",
+                "line": "EastAnglia/Norwich-Brundall",
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Lingwood",
+                "line": "EastAnglia/Acle",
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Acle",
+                "line": "EastAnglia/Acle",
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Great Yarmouth",
+                "line": "EastAnglia/GYarmouth",
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Reedham",
+                "line": "EastAnglia/Buckenham",
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Haddiscoe",
+                "line": "EastAnglia/Lowestoft-N",
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Somerleyton",
+                "line": "EastAnglia/Lowestoft-N",
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Oulton Broad North",
+                "line": "EastAnglia/Lowestoft-N",
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Lowestoft",
+                "line": "EastAnglia/Lowestoft",
+                "reward": 1
             }
         ]
     },
@@ -102,6 +162,22 @@
                 "EastAnglia/Lowestoft"
             ],
             "unique_name": "EastAnglia/Norwich/To Lowestoft"
+        },
+        "Berney Arms": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/GYarmouth",
+                    "EastAnglia/Buckenham"
+                ],
+                "not": [
+                    "EastAnglia/Berney Arms"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Berney Arms"
+            ],
+            "unique_name": "EastAnglia/Norwich/Berney Arms"
         }
     }
 }

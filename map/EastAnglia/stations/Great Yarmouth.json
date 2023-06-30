@@ -29,7 +29,71 @@
     ],
     "passengers": {
         "chance_of_any": 80,
-        "options": []
+        "options": [{
+            "chance": 3,
+            "station": "EastAnglia/Norwich",
+            "line": "EastAnglia/Norwich",
+            "reward": 1
+        },
+        {
+            "chance": 1,
+            "station": "EastAnglia/Brundall Gardens",
+            "line": "EastAnglia/Norwich-Brundall",
+            "reward": 1
+        },
+        {
+            "chance": 2,
+            "station": "EastAnglia/Brundall",
+            "line": "EastAnglia/Norwich-Brundall",
+            "reward": 1
+        },
+        {
+            "chance": 2,
+            "station": "EastAnglia/Lingwood",
+            "line": "EastAnglia/Acle",
+            "reward": 1
+        },
+        {
+            "chance": 2,
+            "station": "EastAnglia/Acle",
+            "line": "EastAnglia/Acle",
+            "reward": 1
+        },
+        {
+            "chance": 1,
+            "station": "EastAnglia/Buckenham",
+            "line": "EastAnglia/Buckenham",
+            "reward": 1
+        },
+        {
+            "chance": 1,
+            "station": "EastAnglia/Cantley",
+            "line": "EastAnglia/Buckenham",
+            "reward": 1
+        },
+        {
+            "chance": 1,
+            "station": "EastAnglia/Reedham",
+            "line": "EastAnglia/Buckenham",
+            "reward": 1
+        }]
     },
-    "shop": false
+    "shop": {
+        "Berney Arms": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/GYarmouth",
+                    "EastAnglia/Buckenham"
+                ],
+                "not": [
+                    "EastAnglia/Berney Arms"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Berney Arms"
+            ],
+            "unique_name": "EastAnglia/Great Yarmouth/Berney Arms"
+        }
+    }
 }

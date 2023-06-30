@@ -21,7 +21,48 @@
     ],
     "passengers": {
         "chance_of_any": 65,
-        "options": []
+        "options": [{
+            "chance": 3,
+            "station": "EastAnglia/Norwich",
+            "line": "EastAnglia/Norwich",
+            "reward": 1
+        },
+        {
+            "chance": 1,
+            "station": "EastAnglia/Brundall Gardens",
+            "line": "EastAnglia/Norwich-Brundall",
+            "reward": 1
+        },
+        {
+            "chance": 2,
+            "station": "EastAnglia/Brundall",
+            "line": "EastAnglia/Norwich-Brundall",
+            "reward": 1
+        },
+        {
+            "chance": 1,
+            "station": "EastAnglia/Cantley",
+            "line": "EastAnglia/Buckenham",
+            "reward": 1
+        },
+        {
+            "chance": 1,
+            "station": "EastAnglia/Reedham",
+            "line": "EastAnglia/Buckenham",
+            "reward": 1
+        },
+        {
+            "chance": 2,
+            "station": "EastAnglia/Somerleyton",
+            "line": "EastAnglia/Lowestoft-N",
+            "reward": 1
+        },
+        {
+            "chance": 3,
+            "station": "EastAnglia/Lowestoft",
+            "line": "EastAnglia/Lowestoft",
+            "reward": 1
+        }]
     },
     "shop": false
 }
