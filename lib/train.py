@@ -35,10 +35,6 @@ class Train():
         c.bind_all('<Up>', self.speed_up)
         c.bind_all('<Down>', self.slow_down)
 
-        self.last_positions = []
-        for i in range(42):
-            self.last_positions.append((startx,starty,startdir))
-
         
     
     def speed_up(self, event):
@@ -110,7 +106,3 @@ class Train():
         if outcome != 'continue':
             self.line = outcome['line']
             self.direction = outcome['direction']
-        
-    def update_last_positions(self):
-        self.last_positions.pop(0)
-        self.last_positions.append((self.x,self.y, self.direction))

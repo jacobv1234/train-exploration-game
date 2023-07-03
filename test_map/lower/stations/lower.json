@@ -1,18 +1,32 @@
 {
     "name": "Lower",
-    "position": [480,232],
+    "position": [
+        480,
+        232
+    ],
     "exits": {
-        "westbound": 12
+        "westbound": 12,
+        "eastbound": {
+            "requirements": {
+                "unlocked": ["lower/extension"],
+                "not": []
+            },
+            "direction": 4
+        }
     },
-    "map_text": [{
-        "offset": [0,-30],
-        "text": "Lower",
-        "font": "Arial 10",
-        "anchor": "s"
-    }],
-
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -30
+            ],
+            "text": "Lower",
+            "font": "Arial 10",
+            "anchor": "s"
+        }
+    ],
     "passengers": {
-        "chance_of_any" : 50,
+        "chance_of_any": 50,
         "options": [
             {
                 "chance": 5,
@@ -28,8 +42,6 @@
             }
         ]
     },
-
-
     "shop": {
         "Right track and station": {
             "cost": 2,
@@ -37,8 +49,21 @@
                 "unlocked": [],
                 "not": []
             },
-            "unlock": ["main/main_right"],
+            "unlock": [
+                "main/main_right"
+            ],
             "unique_name": "lower/Lower/right"
+        },
+        "FREEDOM": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "unlock": [
+                "lower/extension"
+            ],
+            "unique_name": "lower/lower/FREEDOM"
         }
     }
 }

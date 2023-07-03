@@ -319,8 +319,7 @@ while True:
         timer = popup.countdown()
         if timer == 0:
             popup = False
-        
-    train.update_last_positions()
+
 
     HandleMapNameCounter()
     window.update()

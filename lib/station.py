@@ -1,14 +1,24 @@
 from tkinter import *
 from json import loads
 from random import randint, choice
+from lib.helper import test_requirements
 
 class Station:
-    def __init__(self, name: str, c: Canvas, map_name: str):
+    def __init__(self, name: str, c: Canvas, map_name: str, unlocked_lines: list):
         with open(f'map/{map_name}/stations/{name}.json', 'r') as f:
             s = loads(f.read().strip('\n'))
         self.name = s['name']
         self.pos = s['position']
-        self.exits = s['exits']
+        exits = s['exits']
+        self.exits = {}
+
+        for exit in list(exits.keys()):
+            if str(type(exits[exit])) == '<class \'int\'>':
+                self.exits[exit] = exits[exit]
+            else:
+                if test_requirements(exits[exit]['requirements'], unlocked_lines):
+                    self.exits[exit] = exits[exit]['direction']
+
         self.shop = s['shop']
         self.col = 'white'
         if self.shop:

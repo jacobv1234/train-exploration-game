@@ -337,7 +337,11 @@ Choose object to add to {line}
             if name == '':
                 break
             dir = int(input('Direction: '))
-            station_data['exits'][name] = dir
+            req = choose_requirements()
+            station_data['exits'][name] = {
+                'direction': dir,
+                'requirements': req
+            }
         
 
         line_name = input('Add to line: ')

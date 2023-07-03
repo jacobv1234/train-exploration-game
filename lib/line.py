@@ -33,7 +33,7 @@ class Line():
 
         self.junctions = [junc for junc in line_data['junctions'] if test_requirements(junc['requirements'], unlocked_lines)]
 
-        self.stations = [Station(name, canvas, map_name) for name in line_data['stations']]
+        self.stations = [Station(name, canvas, map_name, unlocked_lines) for name in line_data['stations']]
     
     def check_corners(self, x,y):
         for corner in self.corners:
