@@ -1,8 +1,61 @@
 {
     "colour": "black",
-    "segments": [],
-    "corners": [],
-    "conditional_corners": [],
+    "segments": [
+        [
+            1840,
+            3408,
+            1984,
+            3552
+        ],
+        [
+            1984,
+            3552,
+            2024,
+            3632
+        ],
+        [
+            2024,
+            3632,
+            2024,
+            3760
+        ]
+    ],
+    "corners": [
+        [
+            1840,
+            3408,
+            6,
+            12,
+            "Norwich"
+        ],
+        [
+            1984,
+            3552,
+            14,
+            7
+        ],
+        [
+            2024,
+            3632,
+            15,
+            8
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "corner": [
+                2024,
+                3760,
+                0,
+                8,
+                "Diss"
+            ]
+        }
+    ],
     "stops": [],
     "conditional_stops": [],
     "junctions": [],

@@ -1,0 +1,44 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            2024,
+            3760,
+            2024,
+            5680
+        ],
+        [
+            2024,
+            5680,
+            2096,
+            5824
+        ]
+    ],
+    "corners": [
+        [
+            2024,
+            3760,
+            0,
+            8,
+            "NorwichSouth"
+        ],
+        [
+            2024,
+            5680,
+            0,
+            7
+        ],
+        [
+            2096,
+            5824,
+            15,
+            6,
+            "Stowmarket"
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": []
+}

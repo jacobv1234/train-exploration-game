@@ -183,7 +183,7 @@ Choose object to add to {line}
                             x2 -= 4
                             y2 -= 8
 
-                line_data['segments'].append([x1,y1,x2,y2])
+                line_data['segments'].append([x1,y1,x2,int(y2)])
                 c1.create_line(x1/8,y1/8,x2/8,y2/8, fill=line_data['colour'])
             
             case 2:
@@ -338,9 +338,11 @@ Choose object to add to {line}
                 break
             dir = int(input('Direction: '))
             req = choose_requirements()
+            line = input('Line: ')
             station_data['exits'][name] = {
                 'direction': dir,
-                'requirements': req
+                'requirements': req,
+                'line': line
             }
         
 

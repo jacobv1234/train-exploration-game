@@ -26,6 +26,23 @@
                 4,
                 "Lowestoft-N"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Lowestoft-S"
+                ],
+                "not": [
+                    "EastAnglia/Lowestoft-N"
+                ]
+            },
+            "corner": [
+                5512,
+                5040,
+                4,
+                11,
+                "Lowestoft-S"
+            ]
         }
     ],
     "stops": [
@@ -36,7 +53,41 @@
         ]
     ],
     "conditional_stops": [],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Lowestoft-N",
+                    "EastAnglia/Lowestoft-S"
+                ],
+                "not": []
+            },
+            "coords": [
+                5512,
+                5040
+            ],
+            "approach": {
+                "coords": [
+                    5864,
+                    5040
+                ],
+                "direction": 12,
+                "options": [
+                    "left",
+                    "right"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Lowestoft-S",
+                "direction": 11
+            },
+            "right": {
+                "line": "Lowestoft-N",
+                "direction": 13
+            }
+        }
+    ],
     "stations": [
         "Lowestoft"
     ]

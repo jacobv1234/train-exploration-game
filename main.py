@@ -227,7 +227,12 @@ while True:
         if result[0] == 'Exit':
             # exit and move the train
             # dir
-            train.direction = station.exits[result[1]]
+            out = station.exits[result[1]]
+            if str(type(out)) == "<class 'int'>":
+                train.direction = out
+            else:
+                train.direction = out[0]
+                train.line = out[1]
             # coords
             current_x = train.x
             current_y = train.y

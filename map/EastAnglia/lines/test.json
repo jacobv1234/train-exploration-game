@@ -1,0 +1,23 @@
+{
+    "colour": "red",
+    "segments": [
+        [
+            2024,
+            3760,
+            1752,
+            3896.0
+        ],
+        [
+            2096,
+            5824,
+            1992,
+            5720
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": []
+}

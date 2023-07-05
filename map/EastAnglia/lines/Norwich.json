@@ -51,7 +51,7 @@
             ],
             "approach": {
                 "coords": [
-                    1360,
+                    1320,
                     3408
                 ],
                 "direction": 4,
@@ -68,6 +68,78 @@
             "straight": {
                 "line": "Norwich-Brundall",
                 "direction": 4
+            }
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/NorwichSouth"
+                ],
+                "not": [
+                    "EastAnglia/Norwich-Brundall"
+                ]
+            },
+            "coords": [
+                1840,
+                3408
+            ],
+            "approach": {
+                "coords": [
+                    1320,
+                    3408
+                ],
+                "direction": 4,
+                "options": [
+                    "left",
+                    "right"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Cromer-Norwich",
+                "direction": 2
+            },
+            "right": {
+                "line": "NorwichSouth",
+                "direction": 6
+            }
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Norwich-Brundall",
+                    "EastAnglia/NorwichSouth"
+                ],
+                "not": []
+            },
+            "coords": [
+                1840,
+                3408
+            ],
+            "approach": {
+                "coords": [
+                    1320,
+                    3408
+                ],
+                "direction": 4,
+                "options": [
+                    "left",
+                    "straight",
+                    "right"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Cromer-Norwich",
+                "direction": 2
+            },
+            "straight": {
+                "line": "Norwich-Brundall",
+                "direction": 4
+            },
+            "right": {
+                "line": "NorwichSouth",
+                "direction": 6
             }
         }
     ],

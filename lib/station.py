@@ -17,7 +17,9 @@ class Station:
                 self.exits[exit] = exits[exit]
             else:
                 if test_requirements(exits[exit]['requirements'], unlocked_lines):
-                    self.exits[exit] = exits[exit]['direction']
+                    self.exits[exit] = [exits[exit]['direction']]
+                    if 'line' in list(exit.keys()):
+                        self.exits[exit].append(exits[exit['line']])
 
         self.shop = s['shop']
         self.col = 'white'

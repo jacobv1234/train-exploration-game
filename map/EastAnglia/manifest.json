@@ -11,7 +11,13 @@
         "GYarmouth",
         "Lowestoft-N",
         "Lowestoft",
-        "NorwichSouth"
+        "NorwichSouth",
+        "test",
+        "Diss",
+        "Stowmarket",
+        "Ipswich-N",
+        "Westerfield",
+        "Lowestoft-S"
     ],
     "start": [
         1120,

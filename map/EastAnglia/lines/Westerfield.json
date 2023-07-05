@@ -1,0 +1,79 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            2968,
+            6600,
+            2992,
+            6552
+        ],
+        [
+            2992,
+            6552,
+            3024,
+            6520
+        ],
+        [
+            3024,
+            6520,
+            3072,
+            6496.0
+        ],
+        [
+            3072,
+            6496,
+            3712,
+            6496
+        ]
+    ],
+    "corners": [
+        [
+            2968,
+            6600,
+            1,
+            8,
+            "Ipswich-N"
+        ],
+        [
+            2992,
+            6552,
+            2,
+            9
+        ],
+        [
+            3024,
+            6520,
+            3,
+            10
+        ],
+        [
+            3072,
+            6496,
+            13,
+            4
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Lowestoft-S"
+                ],
+                "not": [
+                    "EastAnglia/Felixstowe"
+                ]
+            },
+            "corner": [
+                3712,
+                6496,
+                3,
+                12,
+                "Lowestoft-S"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": []
+}

@@ -1,0 +1,100 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            2968,
+            6600,
+            2968,
+            6912
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Stowmarket"
+                ],
+                "not": [
+                    "EastAnglia/Westerfield"
+                ]
+            },
+            "corner": [
+                2968,
+                6600,
+                15,
+                7,
+                "Stowmarket"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Westerfield"
+                ],
+                "not": [
+                    "EastAnglia/Stowmarket"
+                ]
+            },
+            "corner": [
+                2968,
+                6600,
+                1,
+                8,
+                "Westerfield"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Ipswich-S"
+                ]
+            },
+            "stop": [
+                2968,
+                6912,
+                0
+            ]
+        }
+    ],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Westerfield",
+                    "EastAnglia/Stowmarket"
+                ],
+                "not": []
+            },
+            "coords": [
+                2968,
+                6600
+            ],
+            "approach": {
+                "coords": [
+                    2968,
+                    6864
+                ],
+                "direction": 0,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Stowmarket",
+                "direction": 15
+            },
+            "right": {
+                "line": "Westerfield",
+                "direction": 1
+            }
+        }
+    ],
+    "stations": []
+}
