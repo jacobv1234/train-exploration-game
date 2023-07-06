@@ -71,5 +71,8 @@
     "stops": [],
     "conditional_stops": [],
     "junctions": [],
-    "stations": []
+    "stations": [
+        "Stowmarket",
+        "Needham Market"
+    ]
 }

@@ -128,6 +128,27 @@
                 "station": "EastAnglia/Lowestoft",
                 "line": "EastAnglia/Lowestoft",
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Diss",
+                "line": "EastAnglia/Diss",
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Stowmarket",
+                "line": "EastAnglia/Stowmarket",
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Ipswich",
+                "line": [
+                    "EastAnglia/Ipswich-N",
+                    "EastAnglia/Ipswich-S"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -178,6 +199,20 @@
                 "EastAnglia/Berney Arms"
             ],
             "unique_name": "EastAnglia/Norwich/Berney Arms"
+        },
+        "To Ipswich": {
+            "cost": 3,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "unlock": [
+                "EastAnglia/NorwichSouth",
+                "EastAnglia/Diss",
+                "EastAnglia/Stowmarket",
+                "EastAnglia/Ipswich-N"
+            ],
+            "unique_name": "EastAnglia/Norwich/To Ipswich"
         }
     }
 }

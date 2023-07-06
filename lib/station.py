@@ -18,13 +18,13 @@ class Station:
             else:
                 if test_requirements(exits[exit]['requirements'], unlocked_lines):
                     self.exits[exit] = [exits[exit]['direction']]
-                    if 'line' in list(exit.keys()):
-                        self.exits[exit].append(exits[exit['line']])
+                    if 'line' in list(exits[exit].keys()):
+                        self.exits[exit].append(exits[exit]['line'])
 
         self.shop = s['shop']
         self.col = 'white'
         if self.shop:
-            self.col='red'
+            self.col='lightgrey'
         self.object = c.create_oval(self.pos[0]-15, self.pos[1]-15, self.pos[0]+15,self.pos[1]+15,fill=self.col,outline='black')
         self.object_inner = c.create_oval(self.pos[0]-5, self.pos[1]-5, self.pos[0]+5,self.pos[1]+5,fill='white',outline='#333333')
         self.texts = []
@@ -45,7 +45,14 @@ class Station:
         if randint(1,100) <= p['chance_of_any']:
             dest_choice = []
             for i in range(len(p['options'])):
+                valid = False
                 if p['options'][i]['line'] in unlocked:
+                    valid = True
+                elif str(type(p['options'][i]['line'])) == '<class \'list\'>':
+                    if any([option in unlocked for option in p['options'][i]['line']]):
+                        valid = True
+                
+                if valid:
                     chance = p['options'][i]['chance']
                     for j in range(chance):
                         dest_choice.append(i)

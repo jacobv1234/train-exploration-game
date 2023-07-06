@@ -96,5 +96,7 @@
             }
         }
     ],
-    "stations": []
+    "stations": [
+        "Ipswich"
+    ]
 }

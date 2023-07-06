@@ -1,0 +1,57 @@
+{
+    "name": "Diss",
+    "position": [
+        2024,
+        4696
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": ""
+        },
+        "southbound": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": ""
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                24,
+                0
+            ],
+            "text": "Diss",
+            "font": "Arial 10",
+            "anchor": "w"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 70,
+        "options": [
+            {
+                "chance": 3,
+                "station": "EastAnglia/Norwich",
+                "line": "EastAnglia/Norwich",
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Ipswich",
+                "line": [
+                    "EastAnglia/Ipswich-N",
+                    "EastAnglia/Ipswich-S"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

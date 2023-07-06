@@ -1,0 +1,75 @@
+{
+    "name": "Derby Road",
+    "position": [
+        3952,
+        6616
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 5,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": ""
+        },
+        "westbound": {
+            "direction": 13,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": ""
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                16,
+                -8
+            ],
+            "text": "Derby Road",
+            "font": "Arial 10",
+            "anchor": "sw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 45,
+        "options": [
+            {
+                "chance": 3,
+                "station": "EastAnglia/Ipswich",
+                "line": [
+                    "EastAnglia/Ipswich-N",
+                    "EastAnglia/Ipswich-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Westerfield",
+                "line": [
+                    "EastAnglia/Westerfield"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Trimley",
+                "line": [
+                    "EastAnglia/Felixstowe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Felixstowe",
+                "line": [
+                    "EastAnglia/Felixstowe"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

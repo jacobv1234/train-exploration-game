@@ -1,0 +1,131 @@
+{
+    "name": "Melton",
+    "position": [
+        4056,
+        6184
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": ""
+        },
+        "westbound": {
+            "direction": 10,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": ""
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -16,
+                -8
+            ],
+            "text": "Melton",
+            "font": "Arial 10",
+            "anchor": "se"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 60,
+        "options": [
+            {
+                "chance": 3,
+                "station": "EastAnglia/Ipswich",
+                "line": [
+                    "EastAnglia/Ipswich-N",
+                    "EastAnglia/Ipswich-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Westerfield",
+                "line": [
+                    "EastAnglia/Westerfield"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Lowestoft",
+                "line": [
+                    "EastAnglia/Lowestoft"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Oulton Broad South",
+                "line": [
+                    "EastAnglia/Lowestoft-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Beccles",
+                "line": [
+                    "EastAnglia/Lowestoft-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Brampton",
+                "line": [
+                    "EastAnglia/Lowestoft-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Halesworth",
+                "line": [
+                    "EastAnglia/Lowestoft-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Darsham",
+                "line": [
+                    "EastAnglia/Lowestoft-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Saxmundham",
+                "line": [
+                    "EastAnglia/Lowestoft-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Wickham Market",
+                "line": [
+                    "EastAnglia/Lowestoft-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Woodbridge",
+                "line": [
+                    "EastAnglia/Lowestoft-S"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

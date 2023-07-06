@@ -1,17 +1,27 @@
 from json import loads
 from lib.line import Line
+from tkinter import *
 
 class Map():
-    def __init__(self, name, canvas, unlocked_lines):
+    def __init__(self, name: str, canvas: Canvas, unlocked_lines: list[str]):
         # load the manifest file
         with open(f'./map/{name}/manifest.json', 'r') as f:
             manifest = loads(f.read().strip('\n'))
         
+        # create water
+        if manifest['water']:
+            self.water = canvas.create_polygon(tuple(manifest['water']), fill='lightblue', outline='')
+        else:
+            self.water = canvas.create_line(-100,-100,-99,-100, fill='white')
+
         # load each line
+        created_stations = []
         self.lines = {}
         for line in manifest['lines']:
             if f'{name}/{line}' in unlocked_lines:
-                line_object = Line(name, line, canvas, unlocked_lines)
+                line_object = Line(name, line, canvas, unlocked_lines, created_stations)
+                created_stations = line_object.created_stations[:]
+                line_object.clear_created_stations()
                 self.lines[line_object.name] = line_object
         
         self.start = manifest['start']
@@ -23,7 +33,8 @@ class Map():
         self.size = manifest['fontsize']
 
         self.internal_name = name
-    
+
+
     def check_corners(self, x, y, line):
         return self.lines[line].check_corners(x,y)
     
@@ -40,6 +51,7 @@ class Map():
         keys = self.lines.keys()
         for line in keys:
             self.lines[line].unload(c)
+        c.delete(self.water)
     
     def check_lz(self, x, y, dir):
         for lz in self.lz:

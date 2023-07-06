@@ -1,11 +1,30 @@
 {
-    "name": "Lowestoft",
+    "name": "Ipswich",
     "position": [
-        5928,
-        5040
+        2968,
+        6912
     ],
     "exits": {
-        "westbound": 12
+        "northbound": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Ipswich-N"
+                ],
+                "not": []
+            },
+            "line": "Ipswich-N"
+        },
+        "southbound": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Ipswich-S"
+                ],
+                "not": []
+            },
+            "line": "Ipswich-S"
+        }
     },
     "map_text": [
         {
@@ -13,7 +32,7 @@
                 24,
                 0
             ],
-            "text": "Lowestoft",
+            "text": "Ipswich",
             "font": "Arial 10",
             "anchor": "w"
         }
@@ -28,48 +47,21 @@
                 "reward": 1
             },
             {
-                "chance": 1,
-                "station": "EastAnglia/Brundall Gardens",
-                "line": "EastAnglia/Norwich-Brundall",
-                "reward": 1
-            },
-            {
                 "chance": 2,
-                "station": "EastAnglia/Buckenham",
-                "line": "EastAnglia/Buckenham",
+                "station": "EastAnglia/Diss",
+                "line": "EastAnglia/Diss",
                 "reward": 1
             },
             {
                 "chance": 1,
-                "station": "EastAnglia/Reedham",
-                "line": "EastAnglia/Buckenham",
+                "station": "EastAnglia/Stowmarket",
+                "line": "EastAnglia/Stowmarket",
                 "reward": 1
             },
             {
                 "chance": 1,
-                "station": "EastAnglia/Haddiscoe",
-                "line": "EastAnglia/Lowestoft-N",
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "EastAnglia/Somerleyton",
-                "line": "EastAnglia/Lowestoft-N",
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "EastAnglia/Oulton Broad North",
-                "line": "EastAnglia/Lowestoft-N",
-                "reward": 1
-            },
-            {
-                "chance": 3,
-                "station": "EastAnglia/Ipswich",
-                "line": [
-                    "EastAnglia/Ipswich-N",
-                    "EastAnglia/Ipswich-S"
-                ],
+                "station": "EastAnglia/Needham Market",
+                "line": "EastAnglia/Stowmarket",
                 "reward": 1
             },
             {
@@ -77,6 +69,38 @@
                 "station": "EastAnglia/Westerfield",
                 "line": [
                     "EastAnglia/Westerfield"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Derby Road",
+                "line": [
+                    "EastAnglia/Felixstowe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Trimley",
+                "line": [
+                    "EastAnglia/Felixstowe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Felixstowe",
+                "line": [
+                    "EastAnglia/Felixstowe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Lowestoft",
+                "line": [
+                    "EastAnglia/Lowestoft"
                 ],
                 "reward": 1
             },
@@ -159,27 +183,44 @@
             "cost": 2,
             "requirements": {
                 "unlocked": [],
-                "not": ["EastAnglia/Lowestoft-N"]
+                "not": [
+                    "EastAnglia/Diss"
+                ]
             },
             "unlock": [
-                "EastAnglia/Lowestoft-N",
-                "EastAnglia/Buckenham",
-                "EastAnglia/Norwich-Brundall"
+                "EastAnglia/Ipswich-N",
+                "EastAnglia/Stowmarket",
+                "EastAnglia/Diss",
+                "EastAnglia/NorwichSouth"
             ],
-            "unique_name": "EastAnglia/Lowestoft/To Norwich"
+            "unique_name": "EastAnglia/Ipswich/To Norwich"
         },
-        "To Ipswich": {
+        "To Lowestoft": {
             "cost": 2,
             "requirements": {
                 "unlocked": [],
-                "not": ["EastAnglia/Lowestoft-S"]
+                "not": []
             },
             "unlock": [
-                "EastAnglia/Lowestoft-S",
+                "EastAnglia/Ipswich-N",
                 "EastAnglia/Westerfield",
-                "EastAnglia/Ipswich-N"
+                "EastAnglia/Lowestoft-S",
+                "EastAnglia/Lowestoft"
             ],
-            "unique_name": "EastAnglia/Lowestoft/To Ipswich"
+            "unique_name": "EastAnglia/Ipswich/To Lowestoft"
+        },
+        "To Felixstowe": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "unlock": [
+                "EastAnglia/Ipswich-N",
+                "EastAnglia/Westerfield",
+                "EastAnglia/Felixstowe"
+            ],
+            "unique_name": "EastAnglia/Ipswich/To Felixstowe"
         }
     }
 }

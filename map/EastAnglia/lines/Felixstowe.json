@@ -1,0 +1,47 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            3712,
+            6496,
+            4944,
+            7112
+        ],
+        [
+            4944,
+            7112,
+            5696,
+            7112
+        ]
+    ],
+    "corners": [
+        [
+            3712,
+            6496,
+            12,
+            5,
+            "Westerfield"
+        ],
+        [
+            4944,
+            7112,
+            13,
+            4
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [
+        [
+            5696,
+            7112,
+            12
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Derby Road",
+        "Trimley",
+        "Felixstowe"
+    ]
+}

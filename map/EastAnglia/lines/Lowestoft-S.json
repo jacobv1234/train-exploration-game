@@ -52,5 +52,15 @@
     "stops": [],
     "conditional_stops": [],
     "junctions": [],
-    "stations": []
+    "stations": [
+        "Oulton Broad South",
+        "Darsham",
+        "Saxmundham",
+        "Halesworth",
+        "Brampton",
+        "Beccles",
+        "Wickham Market",
+        "Melton",
+        "Woodbridge"
+    ]
 }

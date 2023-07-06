@@ -1,0 +1,67 @@
+{
+    "name": "Felixstowe",
+    "position": [
+        5696,
+        7112
+    ],
+    "exits": {
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": ""
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                24,
+                0
+            ],
+            "text": "Felixstowe",
+            "font": "Arial 10",
+            "anchor": "w"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 80,
+        "options": [
+            {
+                "chance": 3,
+                "station": "EastAnglia/Ipswich",
+                "line": [
+                    "EastAnglia/Ipswich-N",
+                    "EastAnglia/Ipswich-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Westerfield",
+                "line": [
+                    "EastAnglia/Westerfield"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Derby Road",
+                "line": [
+                    "EastAnglia/Felixstowe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Trimley",
+                "line": [
+                    "EastAnglia/Felixstowe"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

@@ -49,8 +49,8 @@
         [
             3072,
             6496,
-            13,
-            4
+            4,
+            11
         ]
     ],
     "conditional_corners": [
@@ -70,10 +70,63 @@
                 12,
                 "Lowestoft-S"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Felixstowe"
+                ],
+                "not": [
+                    "EastAnglia/Lowestoft-S"
+                ]
+            },
+            "corner": [
+                3712,
+                6496,
+                5,
+                12,
+                "Felixstowe"
+            ]
         }
     ],
     "stops": [],
     "conditional_stops": [],
-    "junctions": [],
-    "stations": []
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Lowestoft-S",
+                    "EastAnglia/Felixstowe"
+                ],
+                "not": []
+            },
+            "coords": [
+                3712,
+                6496
+            ],
+            "approach": {
+                "coords": [
+                    3424,
+                    6496
+                ],
+                "direction": 4,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Lowestoft-S",
+                "direction": 3
+            },
+            "right": {
+                "line": "Felixstowe",
+                "direction": 5
+            }
+        }
+    ],
+    "stations": [
+        "Westerfield"
+    ]
 }

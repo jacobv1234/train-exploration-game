@@ -3,7 +3,7 @@ from lib.station import Station
 from lib.helper import test_requirements
 
 class Line():
-    def __init__(self, map_name, line_name, canvas, unlocked_lines):
+    def __init__(self, map_name, line_name, canvas, unlocked_lines, created_stations):
         self.name = line_name
         
         with open(f'./map/{map_name}/lines/{line_name}.json', 'r') as f:
@@ -16,6 +16,8 @@ class Line():
             self.segments.append(canvas.create_line(segment[0], segment[1], segment[2], segment[3], fill=self.col))
         
         self.corners = line_data['corners']
+
+        self.created_stations = []
 
         # conditional corners
         cond_corner = line_data['conditional_corners']
@@ -33,7 +35,9 @@ class Line():
 
         self.junctions = [junc for junc in line_data['junctions'] if test_requirements(junc['requirements'], unlocked_lines)]
 
-        self.stations = [Station(name, canvas, map_name, unlocked_lines) for name in line_data['stations']]
+        self.stations = [Station(name, canvas, map_name, unlocked_lines) for name in line_data['stations'] if f'{map_name}/{name}' not in created_stations]
+
+        [self.created_stations.append(f'{map_name}/{station.name}') for station in self.stations]
     
     def check_corners(self, x,y):
         for corner in self.corners:
@@ -65,3 +69,6 @@ class Line():
             c.delete(self.segments[i])
         for i in range(len(self.stations)-1,-1,-1):
             self.stations[i].unload(c)
+    
+    def clear_created_stations(self):
+        del self.created_stations

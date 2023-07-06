@@ -1,0 +1,78 @@
+{
+    "name": "Needham Market",
+    "position": [
+        2632,
+        6360
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 14,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": ""
+        },
+        "southbound": {
+            "direction": 5,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": ""
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                16,
+                -8
+            ],
+            "text": "Market",
+            "font": "Arial 10",
+            "anchor": "sw"
+        },
+        {
+            "offset": [
+                16,
+                -24
+            ],
+            "text": "Needham",
+            "font": "Arial 10",
+            "anchor": "sw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 60,
+        "options": [
+            {
+                "chance": 3,
+                "station": "EastAnglia/Norwich",
+                "line": "EastAnglia/Norwich",
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Diss",
+                "line": "EastAnglia/Diss",
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Stowmarket",
+                "line": "EastAnglia/Stowmarket",
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Ipswich",
+                "line": [
+                    "EastAnglia/Ipswich-N",
+                    "EastAnglia/Ipswich-S"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

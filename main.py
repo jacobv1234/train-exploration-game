@@ -28,6 +28,7 @@ from lib.passengers import Passengers
 from lib.station_shop import ShopStation
 from lib.homepage import Homepage
 from lib.skin_select import SkinSelect
+from lib.zoomed_map import ZoomedMap
 
 
 window = Tk()
@@ -111,6 +112,7 @@ in_station = False
 mapnamecounter = -1
 mapnamedisplay = False
 popup = False
+zoomed_map = False
 
 
 # passenger display
@@ -129,6 +131,24 @@ def HandleMapNameCounter():
         if mapnamecounter == 0:
             mapnamedisplay.remove()
             mapnamedisplay = False
+
+def openMap(event):
+    global zoomed_map
+    train.disable_speed_controls(c)
+    train.speed = 0
+    zoomed_map = ZoomedMap(window, screen_width, screen_height, area, train.x, train.y)
+    c.unbind_all('<m>')
+    c.bind_all('<m>', closeMap)
+
+def closeMap(event):
+    global zoomed_map
+    zoomed_map.close()
+    zoomed_map = False
+    train.enable_speed_controls(c)
+    c.unbind_all('<m>')
+    c.bind_all('<m>', openMap)
+
+c.bind_all('<m>', openMap)
 
 
 # loop
@@ -151,7 +171,7 @@ while True:
                 del chooser
         
         stop = area.check_stops(train.x,train.y,train.line)
-        if stop != 0:
+        if stop != 0 and not zoomed_map:
             train.stop(stop, c)
 
         junction = area.check_j_approach(train.x,train.y,train.direction, train.line)
@@ -232,7 +252,8 @@ while True:
                 train.direction = out
             else:
                 train.direction = out[0]
-                train.line = out[1]
+                if out[1] != '':
+                    train.line = out[1]
             # coords
             current_x = train.x
             current_y = train.y

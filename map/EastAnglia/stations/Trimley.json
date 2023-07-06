@@ -1,0 +1,75 @@
+{
+    "name": "Trimley",
+    "position": [
+        4656,
+        6968
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 5,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": ""
+        },
+        "westbound": {
+            "direction": 13,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": ""
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                16,
+                -8
+            ],
+            "text": "Trimley",
+            "font": "Arial 10",
+            "anchor": "sw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 60,
+        "options": [
+            {
+                "chance": 3,
+                "station": "EastAnglia/Ipswich",
+                "line": [
+                    "EastAnglia/Ipswich-N",
+                    "EastAnglia/Ipswich-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Westerfield",
+                "line": [
+                    "EastAnglia/Westerfield"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Derby Road",
+                "line": [
+                    "EastAnglia/Felixstowe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Felixstowe",
+                "line": [
+                    "EastAnglia/Felixstowe"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

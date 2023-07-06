@@ -38,12 +38,24 @@ def get_mouse_pos(event: Event):
     x, y = c.canvasx(event.x), c.canvasy(event.y)
     chosen = True
 
+pressed_space = False
+def space_pressed(event):
+    global pressed_space
+    pressed_space = True
+
 # get mouse coords
-def get_coordinates():
-    global chosen, x, y
+def get_coordinates(space_cancel = False):
+    global chosen, x, y, pressed_space
+    if space_cancel:
+        c.bind_all('<c>', space_pressed)
     print('Choose a coordinate')
     c.bind_all('<Button-1>', get_mouse_pos)
     while not chosen:
+        if pressed_space:
+            c.unbind_all('<c>')
+            pressed_space = False
+            c.unbind_all('<Button-1>')
+            return 'c', 'c'
         sleep(0.017)
         window.update()
     c.unbind_all('<Button-1>')
@@ -100,6 +112,7 @@ def create_object(event):
 3) Get coords of a spot
 4) Create station
 5) Station settings
+6) WATER
 >>> ''')
     if int(add_to_existing_line) == 1:
         line = input('''
@@ -380,7 +393,7 @@ Control map text, passengers, and shop via the JSON.
         with open(f'map/{map_name}/stations/{station_name}.json', 'r') as f:
             station_data = loads(f.read())
         mode = int(input('''Pick one:
-1) Add a passenger
+1) Add passengers to this station
 2) Add text to the map
 3) Add a shop item
 >>> '''))
@@ -388,14 +401,29 @@ Control map text, passengers, and shop via the JSON.
             case 1:
                 chance = int(input('Relative chance of appearing: '))
                 points = int(input('Reward: '))
-                destination = input('Destination (mapname/station): ')
-                line = input('Destination line (mapname/line): ')
-                station_data['passengers']['options'].append({
+                lines = []
+                while True:
+                    line = input('This station is on line (mapname/line): ')
+                    if line == '':
+                        break
+                    lines.append(line)
+                passenger = {
                     'chance': chance,
-                    'station': destination,
-                    'line': line,
+                    'station': f'{map_name}/{station_name}',
+                    'line': lines,
                     'reward': points
-                })
+                }
+                while True:
+                    start = input('Station from (mapname/name): ')
+                    if start == '':
+                        break
+                    start = start.split('/')
+                    with open(f'map/{start[0]}/stations/{start[1]}.json','r') as f:
+                        data = loads(f.read())
+                    data['passengers']['options'].append(passenger)
+                    with open(f'map/{start[0]}/stations/{start[1]}.json','w') as f:
+                        f.write(dumps(data, indent=4))
+                    print('Added.')
             
             case 2:
                 print('Coords for the text object')
@@ -439,6 +467,21 @@ Control map text, passengers, and shop via the JSON.
         area.unload(c)
         del area
         area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']])
+
+    elif int(add_to_existing_line) == 6:
+        coords = []
+        water = c.create_line(-100,-100,-99,-100, fill='white')
+        while True:
+            x,y = get_coordinates(space_cancel=True)
+            if x == 'c':
+                break
+            coords.extend([x,y])
+            c.delete(water)
+            water = c.create_polygon(tuple(coords), fill='', outline='lightblue')
+            
+        map_manifest['water'] = coords[:]
+        with open(f'map/{map_name}/manifest.json','w') as f:
+            f.write(dumps(map_manifest, indent=4))
 
 
 w1 = Tk()

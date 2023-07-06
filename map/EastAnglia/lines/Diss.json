@@ -40,5 +40,7 @@
     "stops": [],
     "conditional_stops": [],
     "junctions": [],
-    "stations": []
+    "stations": [
+        "Diss"
+    ]
 }
