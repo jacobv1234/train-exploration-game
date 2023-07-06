@@ -5,7 +5,8 @@ class Homepage:
     def __init__(self, window, width, height, skin):
         self.c = Canvas(window, width=width, height=height, bg='white')
         self.c.place(x=4,y=0)
-        self.name = self.c.create_text(width/2, height/3, fill='black', font='Arial 30', text='Unnamed Train Game', anchor='center')
+        self.name = self.c.create_text(width/2, height/3, fill='black', font='Arial 30', text='Untitled Train Game', anchor='center')
+        self.author = self.c.create_text(width/2, (height/3)+30, fill='black', font='Arial 10', text='By Jacob Vincent', anchor='center')
 
         self.newgame = self.c.create_text((width/2)+5, (2*height/3)-15, fill='black', font='Arial 20', text='New Game', anchor='w')
         self.cont_text = self.c.create_text((width/2)+5, (2*height/3)+10, fill='black', font='Arial 20', text='Continue', anchor='w')
@@ -50,7 +51,7 @@ class Homepage:
 
     
     def save_selection(self, map_manifest, width, height):
-        self.c.delete(self.name, self.newgame, self.cont_text, self.cursor)
+        self.c.delete(self.name, self.newgame, self.cont_text, self.cursor, self.author)
 
         names = list(map_manifest['Saves'].keys())
 

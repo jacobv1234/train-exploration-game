@@ -33,6 +33,9 @@ from lib.zoomed_map import ZoomedMap
 
 window = Tk()
 
+window.iconbitmap('icon.ico')
+window.title('Untitled Train Game')
+
 screen_width = window.winfo_screenwidth() - 10
 screen_height = window.winfo_screenheight() - 75
 
