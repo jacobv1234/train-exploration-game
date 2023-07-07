@@ -4,6 +4,10 @@
         "New Game": {
             "path": "New game",
             "desc": "Start a fresh new savefile. Unlock tracks by delivering passengers."
+        },
+        "Unlock Everything": {
+            "path": "100%",
+            "desc": "Start with all tracks unlocked. Explore as you like!"
         }
     },
     "Parts": [

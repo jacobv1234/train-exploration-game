@@ -226,6 +226,7 @@ while True:
         if space_pressed:
             space_pressed = False
             train.disable_speed_controls(c)
+            c.unbind_all('<m>')
 
             points_obtained = passengers.remove(f'{area.internal_name}/{station.name}')
             if points_obtained > 0:
@@ -287,6 +288,7 @@ while True:
             del in_station
             in_station = False
             train.enable_speed_controls(c)
+            c.bind_all('<m>', openMap)
         
         elif result[0] == 'Passengers':
             if result[1] != 0:

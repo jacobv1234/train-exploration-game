@@ -8,8 +8,8 @@ class Homepage:
         self.name = self.c.create_text(width/2, height/3, fill='black', font='Arial 30', text='Untitled Train Game', anchor='center')
         self.author = self.c.create_text(width/2, (height/3)+30, fill='black', font='Arial 10', text='By Jacob Vincent', anchor='center')
 
-        self.newgame = self.c.create_text((width/2)+5, (2*height/3)-15, fill='black', font='Arial 20', text='New Game', anchor='w')
-        self.cont_text = self.c.create_text((width/2)+5, (2*height/3)+10, fill='black', font='Arial 20', text='Continue', anchor='w')
+        self.newgame = self.c.create_text((width/2)-15, (2*height/3)-15, fill='black', font='Arial 20', text='New Game', anchor='w')
+        self.cont_text = self.c.create_text((width/2)-15, (2*height/3)+10, fill='black', font='Arial 20', text='Continue', anchor='w')
 
         self.cursor_positions = [(2*height/3)-15, (2*height/3)+10]
         self.selected = 0
@@ -19,7 +19,7 @@ class Homepage:
         self.c.bind_all('<space>', self.press_space)
 
         self.cursor_image = PhotoImage(file=f'./skins/{skin}.png')
-        self.cursor = self.c.create_image((width/2)-15, (2*height/3)-15, anchor='e', image=self.cursor_image)
+        self.cursor = self.c.create_image((width/2)-35, (2*height/3)-15, anchor='e', image=self.cursor_image)
         self.c.bind_all('<Up>', self.move_cursor_up)
         self.c.bind_all('<Down>', self.move_cursor_down)
 

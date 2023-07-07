@@ -1,0 +1,7 @@
+EastAnglia/Cromer/To Norwich
+EastAnglia/Norwich/To Great Yarmouth
+EastAnglia/Norwich/To Lowestoft
+EastAnglia/Great Yarmouth/Berney Arms
+EastAnglia/Norwich/To Ipswich
+EastAnglia/Ipswich/To Lowestoft
+EastAnglia/Ipswich/To Felixstowe
