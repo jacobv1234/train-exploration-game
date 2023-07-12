@@ -60,7 +60,7 @@ class Line():
     def check_stations(self, x, y):
         for station in self.stations:
             pos = station.pos
-            if x in range(pos[0]-12, pos[0]+12) and y in range(pos[1]-12, pos[1]+12):
+            if x in range(pos[0]-30, pos[0]+30) and y in range(pos[1]-30, pos[1]+30):
                 return station
         return 0
     

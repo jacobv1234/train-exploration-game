@@ -50,10 +50,12 @@ skin = 'yellow'
 # homepage
 save_path = 'savedata'
 homepage = Homepage(window, screen_width, screen_height, skin)
+choice = ''
 while True:
     sleep(0.017)
     window.update()
-    homepage.update_cursor()
+    if choice != 'How to Play':
+        homepage.update_cursor()
     if homepage.space_pressed:
         homepage.space_pressed = False
         choice = homepage.get_choice()
@@ -65,6 +67,8 @@ while True:
             homepage.remove()
             del homepage
             homepage = Homepage(window, screen_width, screen_height, skin)
+        elif choice == 'How to Play':
+            homepage.go_to_how_to_play()
         else:
             save_path = f'map/premade_saves/{choice}'
             break
@@ -142,6 +146,7 @@ def openMap(event):
     zoomed_map = ZoomedMap(window, screen_width, screen_height, area, train.x, train.y)
     c.unbind_all('<m>')
     c.bind_all('<m>', closeMap)
+    c.unbind_all('<space>')
 
 def closeMap(event):
     global zoomed_map
@@ -150,6 +155,7 @@ def closeMap(event):
     train.enable_speed_controls(c)
     c.unbind_all('<m>')
     c.bind_all('<m>', openMap)
+    c.bind_all('<space>', pressed_space)
 
 c.bind_all('<m>', openMap)
 

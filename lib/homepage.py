@@ -5,25 +5,9 @@ class Homepage:
     def __init__(self, window, width, height, skin):
         self.c = Canvas(window, width=width, height=height, bg='white')
         self.c.place(x=4,y=0)
-        self.name = self.c.create_text(width/2, height/3, fill='black', font='Arial 30', text='Untitled Train Game', anchor='center')
-        self.author = self.c.create_text(width/2, (height/3)+30, fill='black', font='Arial 10', text='By Jacob Vincent', anchor='center')
-
-        self.newgame = self.c.create_text((width/2)-15, (2*height/3)-15, fill='black', font='Arial 20', text='New Game', anchor='w')
-        self.cont_text = self.c.create_text((width/2)-15, (2*height/3)+10, fill='black', font='Arial 20', text='Continue', anchor='w')
-
-        self.cursor_positions = [(2*height/3)-15, (2*height/3)+10]
-        self.selected = 0
-        self.options = ['New Game', 'Continue']
-
-        self.space_pressed = False
-        self.c.bind_all('<space>', self.press_space)
-
-        self.cursor_image = PhotoImage(file=f'./skins/{skin}.png')
-        self.cursor = self.c.create_image((width/2)-35, (2*height/3)-15, anchor='e', image=self.cursor_image)
-        self.c.bind_all('<Up>', self.move_cursor_up)
-        self.c.bind_all('<Down>', self.move_cursor_down)
-
-        
+        self.create_homepage(width,height,skin)
+        self.width = width
+        self.height = height
 
     def press_space(self, event):
         self.space_pressed = True
@@ -51,7 +35,7 @@ class Homepage:
 
     
     def save_selection(self, map_manifest, width, height):
-        self.c.delete(self.name, self.newgame, self.cont_text, self.cursor, self.author)
+        self.c.delete(self.name, self.newgame, self.cont_text, self.cursor, self.author, self.howtoplay)
 
         names = list(map_manifest['Saves'].keys())
 
@@ -81,3 +65,37 @@ class Homepage:
         
         self.cursor_image.zoom(2)
         self.cursor = self.c.create_image((width/4), self.cursor_positions[0], anchor='center', image=self.cursor_image)
+    
+    def create_homepage(self, width, height, skin):
+        self.name = self.c.create_text(width/2, height/3, fill='black', font='Arial 30', text='Untitled Train Game', anchor='center')
+        self.author = self.c.create_text(width/2, (height/3)+30, fill='black', font='Arial 10', text='By Jacob Vincent', anchor='center')
+
+        self.newgame = self.c.create_text((width/2)-15, (2*height/3)-15, fill='black', font='Arial 20', text='New Game', anchor='w')
+        self.cont_text = self.c.create_text((width/2)-15, (2*height/3)+10, fill='black', font='Arial 20', text='Continue', anchor='w')
+        self.howtoplay = self.c.create_text((width/2)-15, (2*height/3)+35, fill='black', font='Arial 20', text='How to Play', anchor='w')
+
+        self.cursor_positions = [(2*height/3)-15, (2*height/3)+10, (2*height/3)+35]
+        self.selected = 0
+        self.options = ['New Game', 'Continue', 'How to Play']
+
+        self.space_pressed = False
+        self.c.bind_all('<space>', self.press_space)
+
+        self.cursor_image = PhotoImage(file=f'./skins/{skin}.png')
+        self.cursor = self.c.create_image((width/2)-35, (2*height/3)-15, anchor='e', image=self.cursor_image)
+        self.c.bind_all('<Up>', self.move_cursor_up)
+        self.c.bind_all('<Down>', self.move_cursor_down)
+
+    
+    def go_to_how_to_play(self):
+        self.c.delete(self.name, self.newgame, self.cont_text, self.cursor, self.author, self.howtoplay)
+
+        self.c.create_text(self.width/2, 10, fill='black', font='Arial 25', text='How to Play',anchor='n')
+
+        with open('./howtoplay.txt','r') as f:
+            text = f.read()
+
+        self.c.create_text(self.width/2, self.height/2, fill='black',font='Arial 15', text=text, width=4*self.width/5, anchor='center', justify='center')
+
+        self.options = ['Back']
+        self.selected = 0

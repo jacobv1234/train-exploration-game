@@ -1,0 +1,26 @@
+BASIC CONTROLS
+Use the Up and Down arrows to change your speed.
+There are 4 different speed options - one of which is stopped.
+When approaching a junction, you will see the possible directions appear at the top.
+Use the Left and Right arrows to choose a direction.
+
+
+STATIONS
+Press Space when stopped at a station to enter.
+In here, you can get passengers, purchase new lines (at grey stations only), and exit in any direction.
+Use the Up and Down arrows to select within a page, and use the Left and Right arrows to move between them.
+Space to select the current choice (indicated by your train pointing to it)
+
+
+MAP
+While exploring, press M to open up the Map.
+From here you can see the whole area around you.
+The red circle represents you, and the black dots are stations.
+Use the arrows to scroll, and hover over a station with the mouse to view its name.
+
+
+The game autosaves every time you exit a station.
+
+
+
+PRESS SPACE TO RETURN TO THE MAIN MENU

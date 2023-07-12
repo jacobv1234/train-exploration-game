@@ -59,7 +59,7 @@ class ZoomedMap:
     def track_motion(self, event: Event):
         x,y = self.c.canvasx(event.x), self.c.canvasy(event.y)
         for station in self.stations:
-            if int(x) in range(station[0]-2, station[0]+3) and int(y) in range(station[1]-2, station[1]+3):
+            if int(x) in range(station[0]-4, station[0]+5) and int(y) in range(station[1]-4, station[1]+5):
                 self.c.itemconfig(self.station_name_popup, text=station[2])
                 break
             else:
