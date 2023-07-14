@@ -3,11 +3,15 @@ from lib.map import Map
 
 
 class ZoomedMap:
-    def __init__(self, window: Tk, width: int, height: int, map: Map, train_x: int, train_y: int):
+    def __init__(self, window: Tk, width: int, height: int, map: Map, train_x: int, train_y: int, water_coords: list):
         self.c = Canvas(window, width=width, height=height, bg='white', xscrollincrement=1, yscrollincrement=1)
         self.c.place(x=4,y=0)
         self.station_name_popup = self.c.create_text(width/2,50,fill='black', font='Arial 20', text='', anchor='n')
         self.stations = []
+
+        water_coords = [coord // 8 for coord in water_coords]
+        self.c.create_polygon(water_coords, fill='lightblue', outline='')
+
         for line_name in list(map.lines.keys()):
             line = map.lines[line_name]
             col = line.col

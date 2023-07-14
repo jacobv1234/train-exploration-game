@@ -33,6 +33,7 @@ class Map():
         self.size = manifest['fontsize']
 
         self.internal_name = name
+        self.water_coords = manifest['water']
 
 
     def check_corners(self, x, y, line):
