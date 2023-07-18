@@ -89,7 +89,7 @@ skin_selector.remove()
 del skin_selector
 
 
-c = Canvas(window, width = screen_width, height = screen_height, bg = 'white', xscrollincrement=1, yscrollincrement=1)
+c = Canvas(window, width = screen_width, height = screen_height, bg = 'lightblue', xscrollincrement=1, yscrollincrement=1)
 c.place(x=4,y=0)
 
 # get savedata

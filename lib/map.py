@@ -10,7 +10,7 @@ class Map():
         
         # create water
         if manifest['water']:
-            self.water = canvas.create_polygon(tuple(manifest['water']), fill='lightblue', outline='')
+            self.water = canvas.create_polygon(tuple(manifest['water']), fill='white', outline='')
         else:
             self.water = canvas.create_line(-100,-100,-99,-100, fill='white')
 

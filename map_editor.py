@@ -24,7 +24,7 @@ screen_width = window.winfo_screenwidth() - 10
 screen_height = window.winfo_screenheight() - 75
 window.state('zoomed')
 
-c = Canvas(window, width = screen_width, height = screen_height, bg = 'white', xscrollincrement=1, yscrollincrement=1)
+c = Canvas(window, width = screen_width, height = screen_height, bg = 'lightblue', xscrollincrement=1, yscrollincrement=1)
 c.place(x=4,y=0)
 
 
@@ -35,7 +35,7 @@ y = -1
 chosen = False
 def get_mouse_pos(event: Event):
     global x, y, chosen
-    x, y = c.canvasx(event.x), c.canvasy(event.y)
+    x, y = event.x, event.y
     chosen = True
 
 pressed_space = False
@@ -44,24 +44,27 @@ def space_pressed(event):
     pressed_space = True
 
 # get mouse coords
-def get_coordinates(space_cancel = False):
+def get_coordinates(space_cancel = False, screen = c, div_value = 8):
     global chosen, x, y, pressed_space
     if space_cancel:
-        c.bind_all('<c>', space_pressed)
+        screen.bind_all('<c>', space_pressed)
     print('Choose a coordinate')
-    c.bind_all('<Button-1>', get_mouse_pos)
+    screen.bind_all('<Button-1>', get_mouse_pos)
     while not chosen:
         if pressed_space:
-            c.unbind_all('<c>')
+            screen.unbind_all('<c>')
             pressed_space = False
-            c.unbind_all('<Button-1>')
+            screen.unbind_all('<Button-1>')
             return 'c', 'c'
         sleep(0.017)
         window.update()
-    c.unbind_all('<Button-1>')
+    screen.unbind_all('<Button-1>')
     chosen = False
-    x = x //8 * 8
-    y = y //8 * 8
+    x = screen.canvasx(x)
+    y = screen.canvasy(y)
+
+    x = x //div_value * div_value
+    y = y //div_value * div_value
 
     return int(x), int(y)
 
@@ -469,24 +472,32 @@ Control map text, passengers, and shop via the JSON.
         area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']])
 
     elif int(add_to_existing_line) == 6:
+        global land
         coords = []
-        water = c.create_line(-100,-100,-99,-100, fill='white')
+        c1.delete(land)
+        land = c1.create_line(-100,-100,-99,-100, fill='white')
         while True:
-            x,y = get_coordinates(space_cancel=True)
+            x,y = get_coordinates(space_cancel=True, screen=c1, div_value=1)
             if x == 'c':
                 break
             coords.extend([x,y])
-            c.delete(water)
-            water = c.create_polygon(tuple(coords), fill='', outline='lightblue')
+            c1.delete(land)
+            land = c1.create_polygon(tuple(coords), fill='', outline='white')
             
-        map_manifest['water'] = coords[:]
+        map_manifest['water'] = [coord*8 for coord in coords]
+        area.unload(c)
         with open(f'map/{map_name}/manifest.json','w') as f:
             f.write(dumps(map_manifest, indent=4))
+        print('done')
+        area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']])
 
 
 w1 = Tk()
-c1 = Canvas(w1, width=screen_width,height=screen_height, bg='white', xscrollincrement=1, yscrollincrement=1)
+c1 = Canvas(w1, width=screen_width,height=screen_height, bg='lightblue', xscrollincrement=1, yscrollincrement=1)
 c1.pack()
+
+coords = tuple([i//8 for i in area.water_coords])
+land = c1.create_polygon(coords, fill='white', outline='')
 
 # zoomed out window
 for line in map_manifest['lines']:
