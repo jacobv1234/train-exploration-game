@@ -27,7 +27,6 @@ window.state('zoomed')
 c = Canvas(window, width = screen_width, height = screen_height, bg = 'lightblue', xscrollincrement=1, yscrollincrement=1)
 c.place(x=4,y=0)
 
-
 area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']])
 
 x = -1
@@ -116,6 +115,7 @@ def create_object(event):
 4) Create station
 5) Station settings
 6) WATER
+7) Screen scroll limits
 >>> ''')
     if int(add_to_existing_line) == 1:
         line = input('''
@@ -309,6 +309,7 @@ Choose object to add to {line}
         area.unload(c)
         del area
         area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']])
+        print('done')
     
 
     elif int(add_to_existing_line) == 2:
@@ -329,6 +330,7 @@ Choose object to add to {line}
         map_manifest['lines'].append(name)
         with open(f'map/{map_name}/manifest.json','w') as f:
             f.write(dumps(map_manifest, indent=4))
+        print('done')
     
     elif int(add_to_existing_line) == 3:
         print(get_coordinates())
@@ -389,6 +391,7 @@ Control map text, passengers, and shop via the JSON.
         area.unload(c)
         del area
         area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']])
+        print('done')
     
 
     elif int(add_to_existing_line) == 5:
@@ -470,6 +473,7 @@ Control map text, passengers, and shop via the JSON.
         area.unload(c)
         del area
         area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']])
+        print('done')
 
     elif int(add_to_existing_line) == 6:
         global land
@@ -491,6 +495,26 @@ Control map text, passengers, and shop via the JSON.
         print('done')
         area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']])
 
+    elif int(add_to_existing_line) == 7:
+        print('Top-Left:')
+        left,top = get_coordinates(screen = c1, div_value=1)
+        print('Bottom-Right:')
+        right,bottom = get_coordinates(screen = c1, div_value=1)
+
+        map_manifest['scroll_bounds'] = {
+            'left':left,
+            'right':right,
+            'top':top,
+            'bottom':bottom
+        }
+
+        with open(f'map/{map_name}/manifest.json','w') as f:
+            f.write(dumps(map_manifest, indent=4))
+        print('done')
+        c1.delete(border)
+        border = c1.create_rectangle(left,top,right,bottom, outline='red', fill='')
+
+
 
 w1 = Tk()
 c1 = Canvas(w1, width=screen_width,height=screen_height, bg='lightblue', xscrollincrement=1, yscrollincrement=1)
@@ -498,6 +522,7 @@ c1.pack()
 
 coords = tuple([i//8 for i in area.water_coords])
 land = c1.create_polygon(coords, fill='white', outline='')
+border = c1.create_rectangle(map_manifest['scroll_bounds']['left'],map_manifest['scroll_bounds']['top'],map_manifest['scroll_bounds']['right'],map_manifest['scroll_bounds']['bottom'], fill='', outline='red')
 
 # zoomed out window
 for line in map_manifest['lines']:

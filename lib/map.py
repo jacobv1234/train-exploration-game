@@ -35,6 +35,8 @@ class Map():
         self.internal_name = name
         self.water_coords = manifest['water']
 
+        self.scroll_boundary = manifest['scroll_bounds']
+
 
     def check_corners(self, x, y, line):
         return self.lines[line].check_corners(x,y)

@@ -3,11 +3,12 @@ from lib.map import Map
 
 
 class ZoomedMap:
-    def __init__(self, window: Tk, width: int, height: int, map: Map, train_x: int, train_y: int, water_coords: list):
+    def __init__(self, window: Tk, width: int, height: int, map: Map, train_x: int, train_y: int, water_coords: list, scroll: dict):
         self.c = Canvas(window, width=width, height=height, bg='lightblue', xscrollincrement=1, yscrollincrement=1)
         self.c.place(x=4,y=0)
         self.station_name_popup = self.c.create_text(width/2,50,fill='black', font='Arial 20', text='', anchor='n')
         self.stations = []
+        self.limits = scroll
 
         water_coords = [coord // 8 for coord in water_coords]
         self.c.create_polygon(water_coords, fill='white', outline='')
@@ -36,22 +37,39 @@ class ZoomedMap:
         self.c.yview_scroll(train_y//8, 'units')
         self.c.move(self.station_name_popup,-width//2,-height//2)
         self.c.move(self.station_name_popup,train_x//8,train_y//8)
+
+        self.screen_left = (train_x // 8) - (width//2)
+        self.screen_right = (train_x // 8) + (width//2)
+        self.screen_top = (train_x // 8) - (height//2)
+        self.screen_bottom = (train_x // 8) + (height//2)
     
     def scroll_left(self,event):
-        self.c.xview_scroll(-40, 'units')
-        self.c.move(self.station_name_popup,-40,0)
+        if self.screen_left > self.limits['left']:
+            self.c.xview_scroll(-40, 'units')
+            self.c.move(self.station_name_popup,-40,0)
+            self.screen_left -= 40
+            self.screen_right -= 40
     
     def scroll_right(self,event):
-        self.c.xview_scroll(40,'units')
-        self.c.move(self.station_name_popup,40,0)
+        if self.screen_right < self.limits['right']:
+            self.c.xview_scroll(40,'units')
+            self.c.move(self.station_name_popup,40,0)
+            self.screen_left += 40
+            self.screen_right += 40
     
     def scroll_up(self,event):
-        self.c.yview_scroll(-40, 'units')
-        self.c.move(self.station_name_popup,0,-40)
+        if self.screen_top > self.limits['top']:
+            self.c.yview_scroll(-40, 'units')
+            self.c.move(self.station_name_popup,0,-40)
+            self.screen_top -= 40
+            self.screen_bottom -= 40
     
     def scroll_down(self,event):
-        self.c.yview_scroll(40,'units')
-        self.c.move(self.station_name_popup,0,40)
+        if self.screen_bottom < self.limits['bottom']:
+            self.c.yview_scroll(40,'units')
+            self.c.move(self.station_name_popup,0,40)
+            self.screen_top += 40
+            self.screen_bottom += 40
     
     def close(self):
         self.c.unbind_all('<Left>')
