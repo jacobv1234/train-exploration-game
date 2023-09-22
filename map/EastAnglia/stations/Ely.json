@@ -111,6 +111,38 @@
                     "EastAnglia/Norwich-Ely"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Littleport",
+                "line": [
+                    "EastAnglia/KingsLynn"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Downham Market",
+                "line": [
+                    "EastAnglia/KingsLynn"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Watlington",
+                "line": [
+                    "EastAnglia/KingsLynn"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Kings Lynn",
+                "line": [
+                    "EastAnglia/KingsLynn"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -129,6 +161,20 @@
                 "EastAnglia/NorwichSouth"
             ],
             "unique_name": "EastAnglia/Ely/To Norwich"
+        },
+        "To King's Lynn": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Kings Lynn"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/KingsLynn",
+                "EastAnglia/ElyNorth"
+            ],
+            "unique_name": "EastAnglia/Ely/To King's Lynn"
         }
     }
 }

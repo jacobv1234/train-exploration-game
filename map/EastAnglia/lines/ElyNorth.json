@@ -27,6 +27,24 @@
                 8,
                 "Norwich-Ely"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/KingsLynn"
+                ],
+                "not": [
+                    "EastAnglia/Norwich-Ely",
+                    "EastAnglia/ElyExit"
+                ]
+            },
+            "corner": [
+                -1304,
+                4536,
+                0,
+                8,
+                "KingsLynn"
+            ]
         }
     ],
     "stops": [],
@@ -45,7 +63,43 @@
             ]
         }
     ],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Norwich-Ely",
+                    "EastAnglia/KingsLynn"
+                ],
+                "not": [
+                    "EastAnglia/ElyExit"
+                ]
+            },
+            "coords": [
+                -1304,
+                4536
+            ],
+            "approach": {
+                "coords": [
+                    -1304,
+                    4880
+                ],
+                "direction": 0,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "KingsLynn",
+                "direction": 0
+            },
+            "right": {
+                "line": "Norwich-Ely",
+                "direction": 3
+            }
+        }
+    ],
     "stations": [
         "Ely"
     ]

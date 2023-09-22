@@ -18,3 +18,4 @@ EastAnglia/Ipswich-N
 EastAnglia/Lowestoft-S
 EastAnglia/Westerfield
 EastAnglia/Felixstowe
+EastAnglia/KingsLynn

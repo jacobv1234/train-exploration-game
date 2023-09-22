@@ -1,0 +1,67 @@
+{
+    "name": "Kings Lynn",
+    "position": [
+        -1584,
+        2248
+    ],
+    "exits": {
+        "southbound": {
+            "direction": 7,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "KingsLynn"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -24
+            ],
+            "text": "King's Lynn",
+            "font": "Arial 10",
+            "anchor": "s"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 85,
+        "options": [
+            {
+                "chance": 3,
+                "station": "EastAnglia/Ely",
+                "line": [
+                    "EastAnglia/ElyNorth",
+                    "EastAnglia/ElySouth"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Littleport",
+                "line": [
+                    "EastAnglia/KingsLynn"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Downham Market",
+                "line": [
+                    "EastAnglia/KingsLynn"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Watlington",
+                "line": [
+                    "EastAnglia/KingsLynn"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

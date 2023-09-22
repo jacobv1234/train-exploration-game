@@ -1,0 +1,75 @@
+{
+    "name": "Watlington",
+    "position": [
+        -1304,
+        2808
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 15,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "KingsLynn"
+        },
+        "southbound": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "KingsLynn"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                24,
+                0
+            ],
+            "text": "Watlington",
+            "font": "Arial 10",
+            "anchor": "w"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 45,
+        "options": [
+            {
+                "chance": 3,
+                "station": "EastAnglia/Ely",
+                "line": [
+                    "EastAnglia/ElyNorth",
+                    "EastAnglia/ElySouth"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Littleport",
+                "line": [
+                    "EastAnglia/KingsLynn"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Downham Market",
+                "line": [
+                    "EastAnglia/KingsLynn"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Kings Lynn",
+                "line": [
+                    "EastAnglia/KingsLynn"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

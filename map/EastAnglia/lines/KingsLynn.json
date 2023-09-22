@@ -1,0 +1,48 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            -1304,
+            4536,
+            -1304,
+            2808
+        ],
+        [
+            -1304,
+            2808,
+            -1584,
+            2248
+        ]
+    ],
+    "corners": [
+        [
+            -1304,
+            4536,
+            0,
+            8,
+            "ElyNorth"
+        ],
+        [
+            -1304,
+            2808,
+            15,
+            8
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [
+        [
+            -1584,
+            2248,
+            7
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Kings Lynn",
+        "Littleport",
+        "Downham Market",
+        "Watlington"
+    ]
+}
