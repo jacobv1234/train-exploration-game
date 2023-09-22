@@ -149,6 +149,87 @@
                     "EastAnglia/Ipswich-S"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Wymondham",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Spooner Row",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Attleborough",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Eccles Road",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Harling Road",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Thetford",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Brandon",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Lakenheath",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Shippea Hill",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Ely",
+                "line": [
+                    "EastAnglia/ElyNorth",
+                    "EastAnglia/ElySouth"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -213,6 +294,19 @@
                 "EastAnglia/Ipswich-N"
             ],
             "unique_name": "EastAnglia/Norwich/To Ipswich"
+        },
+        "To Ely": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "unlock": [
+                "EastAnglia/NorwichSouth",
+                "EastAnglia/Norwich-Ely",
+                "EastAnglia/ElyNorth"
+            ],
+            "unique_name": "EastAnglia/Norwich/To Ely"
         }
     }
 }

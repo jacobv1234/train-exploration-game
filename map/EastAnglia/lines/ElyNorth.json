@@ -1,0 +1,52 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            -1304,
+            4536,
+            -1304,
+            4928
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "not": [
+                    "EastAnglia/ElyExit",
+                    "EastAnglia/KingsLynn"
+                ]
+            },
+            "corner": [
+                -1304,
+                4536,
+                3,
+                8,
+                "Norwich-Ely"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/ElySouth"
+                ]
+            },
+            "stop": [
+                -1304,
+                4928,
+                0
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "Ely"
+    ]
+}

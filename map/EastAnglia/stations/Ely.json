@@ -1,0 +1,134 @@
+{
+    "name": "Ely",
+    "position": [
+        -1304,
+        4928
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/ElyNorth"
+                ],
+                "not": []
+            },
+            "line": "ElyNorth"
+        },
+        "southbound": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/ElySouth"
+                ],
+                "not": []
+            },
+            "line": "ElySouth#"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                24,
+                0
+            ],
+            "text": "Ely",
+            "font": "Arial 10",
+            "anchor": "w"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 90,
+        "options": [
+            {
+                "chance": 2,
+                "station": "EastAnglia/Wymondham",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Norwich",
+                "line": [
+                    "EastAnglia/Norwich"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Attleborough",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Eccles Road",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Harling Road",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Thetford",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Brandon",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Lakenheath",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Shippea Hill",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": {
+        "To Norwich": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Norwich-Ely"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/ElyNorth",
+                "EastAnglia/Norwich-Ely",
+                "EastAnglia/NorwichSouth"
+            ],
+            "unique_name": "EastAnglia/Ely/To Norwich"
+        }
+    }
+}

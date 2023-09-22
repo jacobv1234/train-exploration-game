@@ -1,0 +1,83 @@
+{
+    "name": "Lakenheath",
+    "position": [
+        -792,
+        4280
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 3,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Norwich-Ely"
+        },
+        "westbound": {
+            "direction": 11,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Norwich-Ely"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                16,
+                16
+            ],
+            "text": "Lakenheath",
+            "font": "Arial 10",
+            "anchor": "nw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 15,
+        "options": [
+            {
+                "chance": 4,
+                "station": "EastAnglia/Norwich",
+                "line": [
+                    "EastAnglia/Norwich"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Attleborough",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Thetford",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Brandon",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Ely",
+                "line": [
+                    "EastAnglia/ElyNorth",
+                    "EastAnglia/ElySouth"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

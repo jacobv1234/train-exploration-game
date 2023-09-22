@@ -18,7 +18,9 @@
         "Ipswich-N",
         "Westerfield",
         "Lowestoft-S",
-        "Felixstowe"
+        "Felixstowe",
+        "Norwich-Ely",
+        "ElyNorth"
     ],
     "start": [
         1120,

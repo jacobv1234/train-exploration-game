@@ -44,8 +44,12 @@
     "conditional_corners": [
         {
             "requirements": {
-                "unlocked": [],
-                "not": []
+                "unlocked": [
+                    "EastAnglia/Diss"
+                ],
+                "not": [
+                    "EastAnglia/Norwich-Ely"
+                ]
             },
             "corner": [
                 2024,
@@ -54,10 +58,61 @@
                 8,
                 "Diss"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "not": [
+                    "EastAnglia/Diss"
+                ]
+            },
+            "corner": [
+                2024,
+                3760,
+                0,
+                11,
+                "Norwich-Ely"
+            ]
         }
     ],
     "stops": [],
     "conditional_stops": [],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Diss",
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "not": []
+            },
+            "coords": [
+                2024,
+                3760
+            ],
+            "approach": {
+                "coords": [
+                    1872,
+                    3440
+                ],
+                "direction": 6,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Diss",
+                "direction": 8
+            },
+            "right": {
+                "line": "Norwich-Ely",
+                "direction": 11
+            }
+        }
+    ],
     "stations": []
 }

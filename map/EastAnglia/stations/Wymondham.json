@@ -1,0 +1,91 @@
+{
+    "name": "Wymondham",
+    "position": [
+        1688,
+        3928
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 3,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Norwich-Ely"
+        },
+        "westbound": {
+            "direction": 11,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Norwich-Ely"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                8,
+                16
+            ],
+            "text": "Wymondham",
+            "font": "Arial 10",
+            "anchor": "nw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 70,
+        "options": [
+            {
+                "chance": 4,
+                "station": "EastAnglia/Norwich",
+                "line": [
+                    "EastAnglia/Norwich"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Spooner Row",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Attleborough",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Eccles Road",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Harling Road",
+                "line": [
+                    "EastAnglia/Norwich-Ely"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Ely",
+                "line": [
+                    "EastAnglia/ElyNorth",
+                    "EastAnglia/ElySouth"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

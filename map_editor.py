@@ -45,6 +45,8 @@ def space_pressed(event):
 # get mouse coords
 def get_coordinates(space_cancel = False, screen = c, div_value = 8):
     global chosen, x, y, pressed_space
+    c.bind_all('<Motion>', move_cursor)
+    c1.bind_all('<Motion>', move_cursor_small)
     if space_cancel:
         screen.bind_all('<c>', space_pressed)
     print('Choose a coordinate')
@@ -57,6 +59,7 @@ def get_coordinates(space_cancel = False, screen = c, div_value = 8):
             return 'c', 'c'
         sleep(0.017)
         window.update()
+        w1.update()
     screen.unbind_all('<Button-1>')
     chosen = False
     x = screen.canvasx(x)
@@ -514,6 +517,8 @@ Control map text, passengers, and shop via the JSON.
         c1.delete(border)
         border = c1.create_rectangle(left,top,right,bottom, outline='red', fill='')
 
+    c.tag_raise(selected_spot)
+    c1.tag_raise(small_selected)
 
 
 w1 = Tk()

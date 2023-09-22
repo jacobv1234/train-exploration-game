@@ -2,6 +2,9 @@ EastAnglia/Sheringham-CromerJunc
 EastAnglia/Cromer
 EastAnglia/Cromer-Norwich
 EastAnglia/Norwich
+EastAnglia/NorwichSouth
+EastAnglia/Norwich-Ely
+EastAnglia/ElyNorth
 EastAnglia/Norwich-Brundall
 EastAnglia/Acle
 EastAnglia/GYarmouth
@@ -9,10 +12,9 @@ EastAnglia/Buckenham
 EastAnglia/Lowestoft-N
 EastAnglia/Lowestoft
 EastAnglia/Berney Arms
-EastAnglia/NorwichSouth
 EastAnglia/Diss
 EastAnglia/Stowmarket
 EastAnglia/Ipswich-N
-EastAnglia/Westerfield
 EastAnglia/Lowestoft-S
+EastAnglia/Westerfield
 EastAnglia/Felixstowe
