@@ -35,7 +35,74 @@
     ],
     "passengers": {
         "chance_of_any": 50,
-        "options": []
+        "options": [
+            {
+                "chance": 1,
+                "station": "EastAnglia/Needham Market",
+                "line": [
+                    "EastAnglia/Stowmarket"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Ipswich",
+                "line": [
+                    "EastAnglia/Ipswich-N",
+                    "EastAnglia/Ipswich-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Stowmarket",
+                "line": [
+                    "EastAnglia/Stowmarket"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Thurston",
+                "line": [
+                    "EastAnglia/Bury"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Bury St Edmunds",
+                "line": [
+                    "EastAnglia/Bury"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Kennett",
+                "line": [
+                    "EastAnglia/Bury"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Soham",
+                "line": [
+                    "EastAnglia/Soham"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Ely",
+                "line": [
+                    "EastAnglia/ElySouth",
+                    "EastAnglia/ElyNorth"
+                ],
+                "reward": 1
+            }
+        ]
     },
     "shop": false
 }

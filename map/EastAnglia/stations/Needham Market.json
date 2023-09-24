@@ -71,6 +71,38 @@
                     "EastAnglia/Ipswich-S"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Elmswell",
+                "line": [
+                    "EastAnglia/Bury"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Thurston",
+                "line": [
+                    "EastAnglia/Bury"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Bury St Edmunds",
+                "line": [
+                    "EastAnglia/Bury"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Kennett",
+                "line": [
+                    "EastAnglia/Bury"
+                ],
+                "reward": 1
             }
         ]
     },

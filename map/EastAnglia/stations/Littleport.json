@@ -68,6 +68,14 @@
                     "EastAnglia/KingsLynn"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Soham",
+                "line": [
+                    "EastAnglia/Soham"
+                ],
+                "reward": 1
             }
         ]
     },
