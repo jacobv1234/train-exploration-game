@@ -15,6 +15,9 @@ class Line():
         for segment in self.seg_coords:
             self.segments.append(canvas.create_line(segment[0], segment[1], segment[2], segment[3], fill=self.col))
         
+        for segment in self.seg_coords:
+            canvas.tag_lower(segment)
+        
         self.corners = line_data['corners']
 
         self.created_stations = []

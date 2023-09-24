@@ -37,6 +37,11 @@ class Map():
 
         self.scroll_boundary = manifest['scroll_bounds']
 
+        for line in list(self.lines.keys()):
+            for segment in self.lines[line].segments:
+                canvas.tag_lower(segment)
+        canvas.tag_lower(self.water)
+
 
     def check_corners(self, x, y, line):
         return self.lines[line].check_corners(x,y)
