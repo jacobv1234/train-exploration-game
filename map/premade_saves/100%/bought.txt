@@ -7,3 +7,4 @@ EastAnglia/Norwich/To Ipswich
 EastAnglia/Lowestoft/To Ipswich
 EastAnglia/Ipswich/To Felixstowe
 EastAnglia/Ely/To King's Lynn
+EastAnglia/Ely/To Ipswich

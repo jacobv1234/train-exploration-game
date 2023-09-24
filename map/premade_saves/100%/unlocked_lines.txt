@@ -19,3 +19,6 @@ EastAnglia/Lowestoft-S
 EastAnglia/Westerfield
 EastAnglia/Felixstowe
 EastAnglia/KingsLynn
+EastAnglia/ElySouth
+EastAnglia/Soham
+EastAnglia/Bury
