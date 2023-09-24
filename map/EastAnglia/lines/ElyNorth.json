@@ -45,6 +45,21 @@
                 8,
                 "KingsLynn"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/ElySouth"
+                ],
+                "not": []
+            },
+            "corner": [
+                -1304,
+                4928,
+                0,
+                8,
+                "ElySouth"
+            ]
         }
     ],
     "stops": [],

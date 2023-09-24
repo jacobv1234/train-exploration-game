@@ -57,7 +57,9 @@
         {
             "requirements": {
                 "unlocked": [],
-                "not": []
+                "not": [
+                    "EastAnglia/Bury"
+                ]
             },
             "corner": [
                 2096,
@@ -66,11 +68,62 @@
                 6,
                 "Diss"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Bury"
+                ],
+                "not": [
+                    "EastAnglia/Diss"
+                ]
+            },
+            "corner": [
+                2096,
+                5824,
+                13,
+                6,
+                "Bury"
+            ]
         }
     ],
     "stops": [],
     "conditional_stops": [],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Diss",
+                    "EastAnglia/Bury"
+                ],
+                "not": []
+            },
+            "coords": [
+                2096,
+                5824
+            ],
+            "approach": {
+                "coords": [
+                    2248,
+                    5976
+                ],
+                "direction": 14,
+                "options": [
+                    "left",
+                    "right"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Bury",
+                "direction": 13
+            },
+            "right": {
+                "line": "Diss",
+                "direction": 15
+            }
+        }
+    ],
     "stations": [
         "Stowmarket",
         "Needham Market"

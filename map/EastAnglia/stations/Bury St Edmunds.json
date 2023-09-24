@@ -1,0 +1,50 @@
+{
+    "name": "Bury St Edmunds",
+    "position": [
+        248,
+        5760
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Bury"
+        },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Bury"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -24
+            ],
+            "text": "St Edmunds",
+            "font": "Arial 10",
+            "anchor": "s"
+        },
+        {
+            "offset": [
+                0,
+                -48
+            ],
+            "text": "Bury",
+            "font": "Arial 10",
+            "anchor": "center"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 75,
+        "options": []
+    },
+    "shop": false
+}

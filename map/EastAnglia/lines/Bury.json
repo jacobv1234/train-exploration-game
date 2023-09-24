@@ -1,0 +1,60 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            2096,
+            5824,
+            1968,
+            5760
+        ],
+        [
+            1968,
+            5760,
+            -888,
+            5760
+        ]
+    ],
+    "corners": [
+        [
+            2096,
+            5824,
+            13,
+            6,
+            "Stowmarket"
+        ],
+        [
+            1968,
+            5760,
+            12,
+            5
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Soham"
+                ],
+                "not": [
+                    "EastAnglia/Newmarket"
+                ]
+            },
+            "corner": [
+                -888,
+                5760,
+                14,
+                4,
+                "Soham"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Kennett",
+        "Bury St Edmunds",
+        "Thurston",
+        "Elmswell"
+    ]
+}

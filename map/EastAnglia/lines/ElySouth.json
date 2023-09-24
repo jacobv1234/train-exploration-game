@@ -1,0 +1,64 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            -1304,
+            4928,
+            -1304,
+            5344
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/ElyNorth"
+                ],
+                "not": []
+            },
+            "corner": [
+                -1304,
+                4928,
+                0,
+                8,
+                "ElyNorth"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Soham"
+                ],
+                "not": [
+                    "EastAnglia/Waterbeach"
+                ]
+            },
+            "corner": [
+                -1304,
+                5344,
+                0,
+                6,
+                "Soham"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/ElyNorth"
+                ]
+            },
+            "stop": [
+                -1304,
+                4928,
+                8
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": []
+}

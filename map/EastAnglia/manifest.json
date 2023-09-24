@@ -21,7 +21,10 @@
         "Felixstowe",
         "Norwich-Ely",
         "ElyNorth",
-        "KingsLynn"
+        "KingsLynn",
+        "ElySouth",
+        "Bury",
+        "Soham"
     ],
     "start": [
         1120,
