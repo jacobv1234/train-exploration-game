@@ -219,7 +219,7 @@ while True:
 
         # station entry
         station = area.check_stations(train.x, train.y, train.line)
-        if station != 0 and train.speed == 0 and not press_space:
+        if station != 0 and train.speed == 0 and not press_space and not zoomed_map:
             press_space = PressSpaceToEnter(window, screen_width, screen_height)
             c.bind_all('<space>', pressed_space)
         elif train.speed != 0 and press_space:
