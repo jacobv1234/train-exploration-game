@@ -2,23 +2,26 @@ EastAnglia/Sheringham-CromerJunc
 EastAnglia/Cromer
 EastAnglia/Cromer-Norwich
 EastAnglia/Norwich
-EastAnglia/NorwichSouth
-EastAnglia/Norwich-Ely
-EastAnglia/ElyNorth
 EastAnglia/Norwich-Brundall
-EastAnglia/Acle
-EastAnglia/GYarmouth
 EastAnglia/Buckenham
 EastAnglia/Lowestoft-N
 EastAnglia/Lowestoft
-EastAnglia/Berney Arms
+EastAnglia/NorwichSouth
 EastAnglia/Diss
 EastAnglia/Stowmarket
 EastAnglia/Ipswich-N
 EastAnglia/Lowestoft-S
 EastAnglia/Westerfield
-EastAnglia/Felixstowe
-EastAnglia/KingsLynn
-EastAnglia/ElySouth
-EastAnglia/Soham
+EastAnglia/Newmarket
 EastAnglia/Bury
+EastAnglia/Cambridge-N
+EastAnglia/Soham
+EastAnglia/ElySouth
+EastAnglia/Waterbeach
+EastAnglia/Acle
+EastAnglia/GYarmouth
+EastAnglia/Felixstowe
+EastAnglia/Norwich-Ely
+EastAnglia/ElyNorth
+EastAnglia/Berney Arms
+EastAnglia/KingsLynn

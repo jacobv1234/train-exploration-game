@@ -1,10 +1,12 @@
 EastAnglia/Cromer/To Norwich
-EastAnglia/Norwich/To Ely
-EastAnglia/Norwich/To Great Yarmouth
 EastAnglia/Norwich/To Lowestoft
-EastAnglia/Norwich/Berney Arms
 EastAnglia/Norwich/To Ipswich
 EastAnglia/Lowestoft/To Ipswich
+EastAnglia/Ipswich/To Cambridge
+EastAnglia/Ipswich/To Ely
+EastAnglia/Cambridge/To Ely
+EastAnglia/Norwich/To Great Yarmouth
 EastAnglia/Ipswich/To Felixstowe
+EastAnglia/Norwich/To Ely
+EastAnglia/Great Yarmouth/Berney Arms
 EastAnglia/Ely/To King's Lynn
-EastAnglia/Ely/To Ipswich
