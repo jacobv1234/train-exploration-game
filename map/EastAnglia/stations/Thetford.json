@@ -108,6 +108,15 @@
                     "EastAnglia/Bury"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Cambridge",
+                "line": [
+                    "EastAnglia/Cambridge-N",
+                    "EastAnglia/Cambridge-S"
+                ],
+                "reward": 1
             }
         ]
     },

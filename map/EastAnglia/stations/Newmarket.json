@@ -1,64 +1,64 @@
 {
-    "name": "Shippea Hill",
+    "name": "Newmarket",
     "position": [
-        -1096,
-        4432
+        -1016,
+        5888
     ],
     "exits": {
         "eastbound": {
-            "direction": 3,
+            "direction": 2,
             "requirements": {
                 "unlocked": [],
                 "not": []
             },
-            "line": "Norwich-Ely"
+            "line": "Newmarket"
         },
         "westbound": {
-            "direction": 11,
+            "direction": 10,
             "requirements": {
                 "unlocked": [],
                 "not": []
             },
-            "line": "Norwich-Ely"
+            "line": "Newmarket"
         }
     },
     "map_text": [
         {
             "offset": [
                 16,
-                16
+                8
             ],
-            "text": "Shippea Hill",
+            "text": "Newmarket",
             "font": "Arial 10",
             "anchor": "nw"
         }
     ],
     "passengers": {
-        "chance_of_any": 5,
+        "chance_of_any": 70,
         "options": [
-            {
-                "chance": 4,
-                "station": "EastAnglia/Norwich",
-                "line": [
-                    "EastAnglia/Norwich"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 3,
-                "station": "EastAnglia/Ely",
-                "line": [
-                    "EastAnglia/ElyNorth",
-                    "EastAnglia/ElySouth"
-                ],
-                "reward": 1
-            },
             {
                 "chance": 3,
                 "station": "EastAnglia/Cambridge",
                 "line": [
                     "EastAnglia/Cambridge-N",
                     "EastAnglia/Cambridge-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Dullingham",
+                "line": [
+                    "EastAnglia/Newmarket"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Ipswich",
+                "line": [
+                    "EastAnglia/Ipswich-N",
+                    "EastAnglia/Ipswich-S"
                 ],
                 "reward": 1
             }

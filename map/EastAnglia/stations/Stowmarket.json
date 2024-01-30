@@ -94,6 +94,22 @@
                     "EastAnglia/Bury"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Dullingham",
+                "line": [
+                    "EastAnglia/Newmarket"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Newmarket",
+                "line": [
+                    "EastAnglia/Newmarket"
+                ],
+                "reward": 1
             }
         ]
     },

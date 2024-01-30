@@ -232,6 +232,31 @@
                     "EastAnglia/Soham"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Cambridge",
+                "line": [
+                    "EastAnglia/Cambridge-N",
+                    "EastAnglia/Cambridge-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Dullingham",
+                "line": [
+                    "EastAnglia/Newmarket"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Newmarket",
+                "line": [
+                    "EastAnglia/Newmarket"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -297,6 +322,23 @@
                 "EastAnglia/ElySouth"
             ],
             "unique_name": "EastAnglia/Ipswich/To Ely"
+        },
+        "To Cambridge": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Newmarket"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Newmarket",
+                "EastAnglia/Stowmarket",
+                "EastAnglia/Bury",
+                "EastAnglia/Ipswich-N",
+                "EastAnglia/Cambridge-N"
+            ],
+            "unique_name": "EastAnglia/Ipswich/To Cambridge"
         }
     }
 }

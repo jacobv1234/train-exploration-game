@@ -1,0 +1,137 @@
+{
+    "name": "Cambridge",
+    "position": [
+        -1488,
+        6832
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Cambridge-N"
+                ],
+                "not": []
+            },
+            "line": "Cambridge-N"
+        },
+        "southbound": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Cambridge-S"
+                ],
+                "not": []
+            },
+            "line": "Cambridge-S"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -24,
+                0
+            ],
+            "text": "Cambridge",
+            "font": "Arial 10",
+            "anchor": "e"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 85,
+        "options": [
+            {
+                "chance": 1,
+                "station": "EastAnglia/Cambridge North",
+                "line": [
+                    "EastAnglia/Waterbeach"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Waterbeach",
+                "line": [
+                    "EastAnglia/Waterbeach"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Dullingham",
+                "line": [
+                    "EastAnglia/Newmarket"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Newmarket",
+                "line": [
+                    "EastAnglia/Newmarket"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Ely",
+                "line": [
+                    "EastAnglia/ElyNorth",
+                    "EastAnglia/ElySouth"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Ipswich",
+                "line": [
+                    "EastAnglia/Ipswich-N",
+                    "EastAnglia/Ipswich-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Norwich",
+                "line": [
+                    "EastAnglia/Norwich"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": {
+        "To Ely": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Waterbeach"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Waterbeach",
+                "EastAnglia/Cambridge-N",
+                "EastAnglia/ElySouth"
+            ],
+            "unique_name": "EastAnglia/Cambridge/To Ely"
+        },
+        "To Ipswich": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Newmarket"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Cambridge-N",
+                "EastAnglia/Newmarket",
+                "EastAnglia/Bury",
+                "EastAnglia/Stowmarket",
+                "EastAnglia/Ipswich-N"
+            ],
+            "unique_name": "EastAnglia/Cambridge/To Ipswich"
+        }
+    }
+}

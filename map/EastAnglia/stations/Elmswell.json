@@ -101,6 +101,14 @@
                     "EastAnglia/ElyNorth"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Newmarket",
+                "line": [
+                    "EastAnglia/Newmarket"
+                ],
+                "reward": 1
             }
         ]
     },

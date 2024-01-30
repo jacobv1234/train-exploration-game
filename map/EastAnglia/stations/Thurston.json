@@ -92,6 +92,23 @@
                     "EastAnglia/Soham"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Cambridge",
+                "line": [
+                    "EastAnglia/Cambridge-N",
+                    "EastAnglia/Cambridge-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Newmarket",
+                "line": [
+                    "EastAnglia/Newmarket"
+                ],
+                "reward": 1
             }
         ]
     },

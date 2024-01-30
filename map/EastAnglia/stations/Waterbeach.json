@@ -1,43 +1,60 @@
 {
-    "name": "Watlington",
+    "name": "Waterbeach",
     "position": [
-        -1304,
-        2808
+        -1392,
+        5680
     ],
     "exits": {
         "northbound": {
-            "direction": 15,
+            "direction": 1,
             "requirements": {
                 "unlocked": [],
                 "not": []
             },
-            "line": "KingsLynn"
+            "line": "Waterbeach"
         },
         "southbound": {
-            "direction": 8,
+            "direction": 9,
             "requirements": {
                 "unlocked": [],
                 "not": []
             },
-            "line": "KingsLynn"
+            "line": "Waterbeach"
         }
     },
     "map_text": [
         {
             "offset": [
-                24,
-                0
+                -16,
+                -8
             ],
-            "text": "Watlington",
+            "text": "Waterbeach",
             "font": "Arial 10",
-            "anchor": "w"
+            "anchor": "se"
         }
     ],
     "passengers": {
-        "chance_of_any": 45,
+        "chance_of_any": 56,
         "options": [
             {
                 "chance": 3,
+                "station": "EastAnglia/Cambridge",
+                "line": [
+                    "EastAnglia/Cambridge-N",
+                    "EastAnglia/Cambridge-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Cambridge North",
+                "line": [
+                    "EastAnglia/Waterbeach"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
                 "station": "EastAnglia/Ely",
                 "line": [
                     "EastAnglia/ElyNorth",
@@ -46,35 +63,10 @@
                 "reward": 1
             },
             {
-                "chance": 1,
-                "station": "EastAnglia/Littleport",
-                "line": [
-                    "EastAnglia/KingsLynn"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "EastAnglia/Downham Market",
-                "line": [
-                    "EastAnglia/KingsLynn"
-                ],
-                "reward": 1
-            },
-            {
                 "chance": 3,
-                "station": "EastAnglia/Kings Lynn",
+                "station": "EastAnglia/Norwich",
                 "line": [
-                    "EastAnglia/KingsLynn"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 3,
-                "station": "EastAnglia/Cambridge",
-                "line": [
-                    "EastAnglia/Cambridge-N",
-                    "EastAnglia/Cambridge-S"
+                    "EastAnglia/Norwich"
                 ],
                 "reward": 1
             }

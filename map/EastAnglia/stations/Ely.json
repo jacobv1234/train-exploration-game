@@ -208,6 +208,31 @@
                     "EastAnglia/Soham"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Cambridge",
+                "line": [
+                    "EastAnglia/Cambridge-N",
+                    "EastAnglia/Cambridge-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Cambridge North",
+                "line": [
+                    "EastAnglia/Waterbeach"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Waterbeach",
+                "line": [
+                    "EastAnglia/Waterbeach"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -257,6 +282,21 @@
                 "EastAnglia/ElySouth"
             ],
             "unique_name": "EastAnglia/Ely/To Ipswich"
+        },
+        "To Cambridge": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Waterbeach"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Waterbeach",
+                "EastAnglia/Cambridge-N",
+                "EastAnglia/ElySouth"
+            ],
+            "unique_name": "EastAnglia/Ely/To Cambridge"
         }
     }
 }
