@@ -1,0 +1,59 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            -1304,
+            5504,
+            -1488,
+            5872
+        ],
+        [
+            -1488,
+            6264,
+            -1488,
+            5872
+        ],
+        [
+            -1304,
+            5504,
+            -1304,
+            5344
+        ]
+    ],
+    "corners": [
+        [
+            -1488,
+            6264,
+            0,
+            8,
+            "Cambridge-N"
+        ],
+        [
+            -1488,
+            5872,
+            1,
+            8
+        ],
+        [
+            -1304,
+            5504,
+            0,
+            9
+        ],
+        [
+            -1304,
+            5344,
+            0,
+            8,
+            "ElySouth"
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Cambridge North",
+        "Waterbeach"
+    ]
+}

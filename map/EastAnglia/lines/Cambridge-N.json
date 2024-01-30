@@ -2,10 +2,10 @@
     "colour": "black",
     "segments": [
         [
-            -1304,
-            4928,
-            -1304,
-            5344
+            -1488,
+            6264,
+            -1488,
+            6832
         ]
     ],
     "corners": [],
@@ -13,47 +13,32 @@
         {
             "requirements": {
                 "unlocked": [
-                    "EastAnglia/ElyNorth"
+                    "EastAnglia/Newmarket"
                 ],
-                "not": []
+                "not": [
+                    "EastAnglia/Waterbeach"
+                ]
             },
             "corner": [
-                -1304,
-                4928,
-                0,
+                -1488,
+                6264,
+                2,
                 8,
-                "ElyNorth"
+                "Newmarket"
             ]
         },
         {
             "requirements": {
                 "unlocked": [
-                    "EastAnglia/Soham"
+                    "EastAnglia/Waterbeach"
                 ],
                 "not": [
-                    "EastAnglia/Waterbeach"
+                    "EastAnglia/Newmarket"
                 ]
             },
             "corner": [
-                -1304,
-                5344,
-                0,
-                6,
-                "Soham"
-            ]
-        },
-        {
-            "requirements": {
-                "not": [
-                    "EastAnglia/Soham"
-                ],
-                "unlocked": [
-                    "EastAnglia/Waterbeach"
-                ]
-            },
-            "corner": [
-                -1304,
-                5344,
+                -1488,
+                6264,
                 0,
                 8,
                 "Waterbeach"
@@ -66,13 +51,13 @@
             "requirements": {
                 "unlocked": [],
                 "not": [
-                    "EastAnglia/ElyNorth"
+                    "EastAnglia/Cambridge-S"
                 ]
             },
             "stop": [
-                -1304,
-                4928,
-                8
+                -1488,
+                6832,
+                0
             ]
         }
     ],
@@ -81,37 +66,37 @@
             "requirements": {
                 "unlocked": [
                     "EastAnglia/Waterbeach",
-                    "EastAnglia/Soham"
+                    "EastAnglia/Newmarket"
                 ],
                 "not": []
             },
             "coords": [
-                -1304,
-                5344
+                -1488,
+                6264
             ],
             "approach": {
                 "coords": [
-                    -1304,
-                    5024
+                    -1488,
+                    6680
                 ],
-                "direction": 8,
+                "direction": 0,
                 "options": [
-                    "left",
-                    "straight"
+                    "straight",
+                    "right"
                 ],
-                "default": 1
-            },
-            "left": {
-                "line": "Soham",
-                "direction": 6
+                "default": 0
             },
             "straight": {
                 "line": "Waterbeach",
-                "direction": 8
+                "direction": 0
+            },
+            "right": {
+                "line": "Newmarket",
+                "direction": 2
             }
         }
     ],
     "stations": [
-        "Ely"
+        "Cambridge"
     ]
 }

@@ -46,11 +46,62 @@
                 4,
                 "Soham"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Newmarket"
+                ],
+                "not": [
+                    "EastAnglia/Soham"
+                ]
+            },
+            "corner": [
+                -888,
+                5760,
+                10,
+                4,
+                "Newmarket"
+            ]
         }
     ],
     "stops": [],
     "conditional_stops": [],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Soham",
+                    "EastAnglia/Newmarket"
+                ],
+                "not": []
+            },
+            "coords": [
+                -888,
+                5760
+            ],
+            "approach": {
+                "coords": [
+                    -480,
+                    5760
+                ],
+                "direction": 12,
+                "options": [
+                    "left",
+                    "right"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Newmarket",
+                "direction": 10
+            },
+            "right": {
+                "line": "Soham",
+                "direction": 14
+            }
+        }
+    ],
     "stations": [
         "Kennett",
         "Bury St Edmunds",
