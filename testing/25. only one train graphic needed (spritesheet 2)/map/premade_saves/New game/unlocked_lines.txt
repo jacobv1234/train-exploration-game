@@ -1,4 +1,0 @@
-main/main_left
-main/siding
-main/warp
-lower/thingy

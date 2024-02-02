@@ -1,8 +1,0 @@
-{
-    "name": "Right",
-    "position": [1200,264],
-    "exits": {
-        "northbound": 0,
-        "westbound": 12
-    }
-}

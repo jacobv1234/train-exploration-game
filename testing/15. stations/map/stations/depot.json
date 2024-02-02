@@ -1,7 +1,0 @@
-{
-    "name": "Depot",
-    "position": [1120,-40],
-    "exits": {
-        "westbound": 12
-    }
-}

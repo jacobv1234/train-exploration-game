@@ -1,6 +1,0 @@
-1200
-264
-0
-main
-main_right
-7
