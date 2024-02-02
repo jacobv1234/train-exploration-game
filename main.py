@@ -32,6 +32,11 @@ from lib.zoomed_map import ZoomedMap
 
 
 window = Tk()
+game_running = True
+def close_program():
+    global game_running
+    game_running = False
+window.protocol("WM_DELETE_WINDOW", close_program)
 
 window.iconbitmap('icon.ico')
 window.title('Untitled Train Game')
@@ -51,7 +56,7 @@ skin = 'yellow'
 save_path = 'savedata'
 homepage = Homepage(window, screen_width, screen_height, skin)
 choice = ''
-while True:
+while game_running:
     sleep(0.017)
     window.update()
     if choice != 'How to Play':
@@ -78,7 +83,7 @@ del homepage
 
 # skin selection
 skin_selector = SkinSelect(window, screen_width, screen_height)
-while True:
+while game_running:
     sleep(0.017)
     window.update()
     if skin_selector.space_pressed:
@@ -161,7 +166,7 @@ c.bind_all('<m>', openMap)
 
 
 # loop
-while True:
+while game_running:
     start = perf_counter()
     if not in_station:
         train.move_train(c)
