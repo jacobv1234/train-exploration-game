@@ -1,0 +1,12 @@
+{
+    "Name": "Main Menu",
+    "Saves": {
+        "New Game": {
+            "path": "temp",
+            "desc": "temp"
+        }
+    },
+    "Parts": [
+        "map"
+    ]
+}

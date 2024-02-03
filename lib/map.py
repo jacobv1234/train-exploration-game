@@ -3,9 +3,13 @@ from lib.line import Line
 from tkinter import *
 
 class Map():
-    def __init__(self, name: str, canvas: Canvas, unlocked_lines: list[str]):
+    def __init__(self, name: str, canvas: Canvas, unlocked_lines: list[str], menu = False):
         # load the manifest file
-        with open(f'./map/{name}/manifest.json', 'r') as f:
+        if menu:
+            folder = 'menu-map'
+        else:
+            folder = 'map'
+        with open(f'./{folder}/{name}/manifest.json', 'r') as f:
             manifest = loads(f.read().strip('\n'))
         
         # create water
@@ -19,7 +23,7 @@ class Map():
         self.lines = {}
         for line in manifest['lines']:
             if f'{name}/{line}' in unlocked_lines:
-                line_object = Line(name, line, canvas, unlocked_lines, created_stations)
+                line_object = Line(name, line, canvas, unlocked_lines, created_stations,folder)
                 created_stations = line_object.created_stations[:]
                 line_object.clear_created_stations()
                 self.lines[line_object.name] = line_object

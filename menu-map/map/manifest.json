@@ -1,0 +1,22 @@
+{
+    "lines": [
+        "yellow",
+        "purple"
+    ],
+    "start": [
+        0,
+        0,
+        0
+    ],
+    "start_line": "yellow",
+    "loadingzones": [],
+    "display_name": "Main Menu",
+    "fontsize": 20,
+    "water": false,
+    "scroll_bounds": {
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "bottom": 0
+    }
+}

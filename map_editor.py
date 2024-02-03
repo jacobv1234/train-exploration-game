@@ -190,7 +190,7 @@ Choose object to add to {line}
                     case 12:
                         y2=y1
                     case 13:
-                        y2 = y1+(abs(x2-x1)/2)
+                        y2 = y1-(abs(x2-x1)/2)
                         if y2 % 8 == 4:
                             y2 -= 4
                             x2 -= 8
@@ -525,9 +525,13 @@ w1 = Tk()
 c1 = Canvas(w1, width=screen_width,height=screen_height, bg='lightblue', xscrollincrement=1, yscrollincrement=1)
 c1.pack()
 
-coords = tuple([i//8 for i in area.water_coords])
-land = c1.create_polygon(coords, fill='white', outline='')
-border = c1.create_rectangle(map_manifest['scroll_bounds']['left'],map_manifest['scroll_bounds']['top'],map_manifest['scroll_bounds']['right'],map_manifest['scroll_bounds']['bottom'], fill='', outline='red')
+if area.water_coords:
+    coords = tuple([i//8 for i in area.water_coords])
+    land = c1.create_polygon(coords, fill='white', outline='')
+    border = c1.create_rectangle(map_manifest['scroll_bounds']['left'],map_manifest['scroll_bounds']['top'],map_manifest['scroll_bounds']['right'],map_manifest['scroll_bounds']['bottom'], fill='', outline='red')
+else:
+    c1.configure(bg='white')
+    c.configure(bg='white')
 
 # zoomed out window
 for line in map_manifest['lines']:

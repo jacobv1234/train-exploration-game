@@ -1,5 +1,7 @@
 from tkinter import *
 from json import loads
+from lib.map import Map
+from lib.menu_train import MenuTrain
 
 class Homepage:
     def __init__(self, window, width, height, skin):
@@ -67,6 +69,15 @@ class Homepage:
         self.cursor = self.c.create_image((width/4), self.cursor_positions[0], anchor='center', image=self.cursor_image)
     
     def create_homepage(self, width, height, skin):
+        # trains
+        self.menu_map = Map('map', self.c, ['map/yellow','map/purple'], True)
+        self.trains = [
+            MenuTrain(104,232,4,'yellow',self.c, 'yellow'),
+            MenuTrain(1112,864,0,'purple',self.c,'red')
+        ]
+
+
+        # menu
         self.name = self.c.create_text(width/2, height/3, fill='black', font='Arial 30', text='Untitled Train Game', anchor='center')
         self.author = self.c.create_text(width/2, (height/3)+30, fill='black', font='Arial 10', text='By Jacob Vincent', anchor='center')
 
@@ -99,3 +110,10 @@ class Homepage:
 
         self.options = ['Back']
         self.selected = 0
+
+    def move_trains(self):
+        for train in self.trains:
+            train.move_train(self.c)
+            corner = self.menu_map.check_corners(train.x,train.y,train.line)
+            if corner != 0:
+                train.corner(corner)

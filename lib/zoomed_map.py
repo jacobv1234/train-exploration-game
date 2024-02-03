@@ -40,8 +40,9 @@ class ZoomedMap:
 
         self.screen_left = (train_x // 8) - (width//2)
         self.screen_right = (train_x // 8) + (width//2)
-        self.screen_top = (train_x // 8) - (height//2)
-        self.screen_bottom = (train_x // 8) + (height//2)
+        self.screen_top = (train_y // 8) - (height//2)
+        self.screen_bottom = (train_y // 8) + (height//2)
+
     
     def scroll_left(self,event):
         if self.screen_left > self.limits['left']:
@@ -49,14 +50,14 @@ class ZoomedMap:
             self.c.move(self.station_name_popup,-40,0)
             self.screen_left -= 40
             self.screen_right -= 40
-    
+        
     def scroll_right(self,event):
         if self.screen_right < self.limits['right']:
             self.c.xview_scroll(40,'units')
             self.c.move(self.station_name_popup,40,0)
             self.screen_left += 40
             self.screen_right += 40
-    
+
     def scroll_up(self,event):
         if self.screen_top > self.limits['top']:
             self.c.yview_scroll(-40, 'units')
@@ -76,6 +77,7 @@ class ZoomedMap:
         self.c.unbind_all('<Right>')
         self.c.unbind_all('<Up>')
         self.c.unbind_all('<Down>')
+        self.c.unbind_all('<Motion>')
         self.c.destroy()
 
     def track_motion(self, event: Event):

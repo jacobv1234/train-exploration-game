@@ -3,10 +3,10 @@ from lib.station import Station
 from lib.helper import test_requirements
 
 class Line():
-    def __init__(self, map_name, line_name, canvas, unlocked_lines, created_stations):
+    def __init__(self, map_name, line_name, canvas, unlocked_lines, created_stations, folder):
         self.name = line_name
         
-        with open(f'./map/{map_name}/lines/{line_name}.json', 'r') as f:
+        with open(f'./{folder}/{map_name}/lines/{line_name}.json', 'r') as f:
             line_data = loads(f.read().strip('\n'))
 
         self.segments = []
