@@ -1,0 +1,43 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            -1312,
+            9056,
+            -912,
+            9056
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Stansted-N"
+                ],
+                "not": [
+                    "EastAnglia/Stansted-S"
+                ]
+            },
+            "corner": [
+                -1312,
+                9056,
+                13,
+                4,
+                "Stansted-N"
+            ]
+        }
+    ],
+    "stops": [
+        [
+            -912,
+            9056,
+            12
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Stansted Airport"
+    ]
+}

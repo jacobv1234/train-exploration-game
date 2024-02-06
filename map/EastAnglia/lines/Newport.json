@@ -1,0 +1,50 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            -1488,
+            7256,
+            -1488,
+            8888
+        ]
+    ],
+    "corners": [
+        [
+            -1488,
+            7256,
+            0,
+            8,
+            "Cambridge-S"
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Stansted-N"
+                ],
+                "not": [
+                    "EastAnglia/Stansted-Bypass"
+                ]
+            },
+            "corner": [
+                -1488,
+                8888,
+                0,
+                7,
+                "Stansted-N"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Shelford",
+        "Elsenham",
+        "Whittlesford Parkway",
+        "Newport",
+        "Audley End",
+        "Great Chesterford"
+    ]
+}
