@@ -3,6 +3,8 @@ from time import sleep, perf_counter
 
 
 # third party modules
+# try-except no longer needed due to pyinstaller
+# keep it in anyway for development purposes
 try:
     from PIL import Image
 except ModuleNotFoundError:

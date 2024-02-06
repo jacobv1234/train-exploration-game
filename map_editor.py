@@ -433,6 +433,23 @@ Control map text, passengers, and shop via the JSON.
                     with open(f'map/{start[0]}/stations/{start[1]}.json','w') as f:
                         f.write(dumps(data, indent=4))
                     print('Added.')
+
+                    # return journey
+                    return_chance = int(input(f'Chance of going from {station_name} back to {start[1]} (0 to skip): '))
+                    if return_chance != 0:
+                        return_lines = []
+                        while True:
+                            line = input('This station is on line (mapname/line): ')
+                            if line == '':
+                                break
+                            return_lines.append(line)
+                        return_passenger = {
+                            'chance': return_chance,
+                            'station': f'{start[0]}/{start[1]}',
+                            'line': return_lines,
+                            'reward': points
+                        }
+                        station_data['passengers']['options'].append(return_passenger)
             
             case 2:
                 print('Coords for the text object')
@@ -481,6 +498,7 @@ Control map text, passengers, and shop via the JSON.
     elif int(add_to_existing_line) == 6:
         global land
         coords = []
+        old_land = c1.create_polygon([coord / 8 for coord in map_manifest['water']],fill='', outline='black')
         c1.delete(land)
         land = c1.create_line(-100,-100,-99,-100, fill='white')
         while True:
@@ -495,6 +513,7 @@ Control map text, passengers, and shop via the JSON.
         area.unload(c)
         with open(f'map/{map_name}/manifest.json','w') as f:
             f.write(dumps(map_manifest, indent=4))
+        c1.delete(old_land)
         print('done')
         area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']])
 
@@ -514,6 +533,7 @@ Control map text, passengers, and shop via the JSON.
         with open(f'map/{map_name}/manifest.json','w') as f:
             f.write(dumps(map_manifest, indent=4))
         print('done')
+        global border
         c1.delete(border)
         border = c1.create_rectangle(left,top,right,bottom, outline='red', fill='')
 
