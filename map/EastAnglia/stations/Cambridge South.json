@@ -1,8 +1,8 @@
 {
-    "name": "Cambridge North",
+    "name": "Cambridge South",
     "position": [
         -1488,
-        6184
+        7112
     ],
     "exits": {
         "northbound": {
@@ -11,7 +11,7 @@
                 "unlocked": [],
                 "not": []
             },
-            "line": "Waterbeach"
+            "line": "Cambridge-S"
         },
         "southbound": {
             "direction": 8,
@@ -19,7 +19,7 @@
                 "unlocked": [],
                 "not": []
             },
-            "line": "Waterbeach"
+            "line": "Cambridge-S"
         }
     },
     "map_text": [
@@ -37,17 +37,39 @@
                 -24,
                 0
             ],
-            "text": "North",
+            "text": "South",
             "font": "Arial 10",
             "anchor": "ne"
         }
     ],
     "passengers": {
-        "chance_of_any": 65,
+        "chance_of_any": 60,
         "options": [
             {
+                "chance": 1,
+                "station": 
+                    "EastAnglia/Shelford"
+                ,
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": 
+                    "EastAnglia/Whittlesford Parkway"
+                ,
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
                 "chance": 3,
-                "station": "EastAnglia/Cambridge",
+                "station": 
+                    "EastAngliaCambridge"
+                ,
                 "line": [
                     "EastAnglia/Cambridge-N",
                     "EastAnglia/Cambridge-S"
@@ -56,26 +78,11 @@
             },
             {
                 "chance": 2,
-                "station": "EastAnglia/Waterbeach",
+                "station": 
+                    "EastAnglia/Cambridge North"
+                ,
                 "line": [
                     "EastAnglia/Waterbeach"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "EastAnglia/Ely",
-                "line": [
-                    "EastAnglia/ElyNorth",
-                    "EastAnglia/ElySouth"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "EastAnglia/Cambridge South",
-                "line": [
-                    "EastAnglia/Cambridge-S"
                 ],
                 "reward": 1
             }

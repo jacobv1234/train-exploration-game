@@ -233,6 +233,14 @@
                     "EastAnglia/Waterbeach"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Stansted Airport",
+                "line": [
+                    "EastAnglia/Stansted"
+                ],
+                "reward": 2
             }
         ]
     },

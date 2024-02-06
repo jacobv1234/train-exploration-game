@@ -1,8 +1,8 @@
 {
-    "name": "Cambridge North",
+    "name": "Audley End",
     "position": [
         -1488,
-        6184
+        8136
     ],
     "exits": {
         "northbound": {
@@ -11,7 +11,7 @@
                 "unlocked": [],
                 "not": []
             },
-            "line": "Waterbeach"
+            "line": "Newport"
         },
         "southbound": {
             "direction": 8,
@@ -19,62 +19,77 @@
                 "unlocked": [],
                 "not": []
             },
-            "line": "Waterbeach"
+            "line": "Newport"
         }
     },
     "map_text": [
         {
             "offset": [
-                -24,
+                24,
                 0
             ],
-            "text": "Cambridge",
+            "text": "Audley",
             "font": "Arial 10",
-            "anchor": "se"
+            "anchor": "sw"
         },
         {
             "offset": [
-                -24,
+                24,
                 0
             ],
-            "text": "North",
+            "text": "End",
             "font": "Arial 10",
-            "anchor": "ne"
+            "anchor": "nw"
         }
     ],
     "passengers": {
-        "chance_of_any": 65,
+        "chance_of_any": 55,
         "options": [
             {
-                "chance": 3,
-                "station": "EastAnglia/Cambridge",
+                "chance": 1,
+                "station": "EastAnglia/Whittlesford Parkway",
                 "line": [
-                    "EastAnglia/Cambridge-N",
-                    "EastAnglia/Cambridge-S"
+                    "EastAnglia/Newport"
                 ],
                 "reward": 1
             },
             {
                 "chance": 2,
-                "station": "EastAnglia/Waterbeach",
+                "station": "EastAnglia/Great Chesterford",
                 "line": [
-                    "EastAnglia/Waterbeach"
+                    "EastAnglia/Newport"
                 ],
                 "reward": 1
             },
             {
                 "chance": 2,
-                "station": "EastAnglia/Ely",
+                "station": "EastAnglia/Newport",
                 "line": [
-                    "EastAnglia/ElyNorth",
-                    "EastAnglia/ElySouth"
+                    "EastAnglia/Newport"
                 ],
                 "reward": 1
             },
             {
                 "chance": 1,
-                "station": "EastAnglia/Cambridge South",
+                "station": "EastAnglia/Elsenham",
                 "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Stansted Airport",
+                "line": [
+                    "EastAnglia/Stansted"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Cambridge",
+                "line": [
+                    "EastAnglia/Cambridge-N",
                     "EastAnglia/Cambridge-S"
                 ],
                 "reward": 1

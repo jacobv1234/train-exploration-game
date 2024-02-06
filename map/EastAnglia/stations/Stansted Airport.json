@@ -1,0 +1,134 @@
+{
+    "name": "Stansted Airport",
+    "position": [
+        -912,
+        9056
+    ],
+    "exits": {
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Stansted"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                24,
+                0
+            ],
+            "text": "Stansted Airport",
+            "font": "Arial 10",
+            "anchor": "w"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 95,
+        "options": [
+            {
+                "chance": 1,
+                "station": "EastAnglia/Shelford",
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Whittlesford Parkway",
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Great Chesterford",
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Audley End",
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Newport",
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Elsenham",
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Cambridge",
+                "line": [
+                    "EastAnglia/Cambridge-N",
+                    "EastAnglia/Cambridge-S"
+                ],
+                "reward": 2
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Ely",
+                "line": [
+                    "EastAnglia/ElyNorth",
+                    "EastAnglia/ElySouth"
+                ],
+                "reward": 2
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Ipswich",
+                "line": [
+                    "EastAnglia/Ipswich-N",
+                    "EastAnglia/Ipswich-S"
+                ],
+                "reward": 2
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Norwich",
+                "line": [
+                    "EastAnglia/Norwich"
+                ],
+                "reward": 2
+            }
+        ]
+    },
+    "shop": {
+        "To Cambridge": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Newport"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Stansted",
+                "EastAnglia/Stansted-N",
+                "EastAnglia/Cambridge-S",
+                "EastAnglia/Newport"
+            ],
+            "unique_name": "EastAnglia/Stansted Airport/To Cambridge"
+        }
+    }
+}

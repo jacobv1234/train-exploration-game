@@ -1,0 +1,107 @@
+{
+    "name": "Newport",
+    "position": [
+        -1488,
+        8384
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Newport"
+        },
+        "southbound": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Newport"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                24,
+                0
+            ],
+            "text": "Newport",
+            "font": "Arial 10",
+            "anchor": "w"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 75,
+        "options": [
+            {
+                "chance": 1,
+                "station": "EastAnglia/Shelford",
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Whittlesford Parkway",
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Great Chesterford",
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Great Chesterford",
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Audley End",
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Elsenham",
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Cambridge",
+                "line": [
+                    "EastAnglia/Cambridge-N",
+                    "EastAnglia/Cambridge-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Stansted Airport",
+                "line": [
+                    "EastAnglia/Stansted"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

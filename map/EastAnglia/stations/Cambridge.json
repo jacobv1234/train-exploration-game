@@ -97,6 +97,70 @@
                     "EastAnglia/Norwich"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Cambridge South",
+                "line": [
+                    "EastAnglia/Cambridge-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Shelford",
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Whittlesford Parkway",
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Great Chesterford",
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Audley End",
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Newport",
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Elsenham",
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Stansted Airport",
+                "line": [
+                    "EastAnglia/Stansted"
+                ],
+                "reward": 2
             }
         ]
     },
@@ -132,6 +196,22 @@
                 "EastAnglia/Ipswich-N"
             ],
             "unique_name": "EastAnglia/Cambridge/To Ipswich"
+        },
+        "To Stansted Airport": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Newport"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Newport",
+                "EastAnglia/Cambridge-S",
+                "EastAnglia/Stansted-N",
+                "EastAnglia/Stansted"
+            ],
+            "unique_name": "EastAnglia/Cambridge/To Stansted Airport"
         }
     }
 }
