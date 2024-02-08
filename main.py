@@ -67,8 +67,12 @@ while game_running:
         homepage.space_pressed = False
         choice = homepage.get_choice()
         if choice == 'Continue':
-            break
-        elif choice == 'New Game':
+            # valid existing save
+            if len(get_pos_save(save_path)) == 6:
+                break
+            else:
+                choice = 'New Game'
+        if choice == 'New Game':
             homepage.save_selection(map_manifest, screen_width, screen_height)
         elif choice == 'Back':
             homepage.remove()
@@ -103,7 +107,10 @@ c.place(x=4,y=0)
 # get savedata
 unlocked_lines = get_unlocked_lines(save_path)
 bought = get_bought_items(save_path)
-startx, starty, startdir, start_map, start_line, points = get_pos_save(save_path)
+try:
+    startx, starty, startdir, start_map, start_line, points = get_pos_save(save_path)
+except ValueError:
+    exit()
 points = int(points)
 
 # called area cause map is a function

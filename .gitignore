@@ -1,2 +1,5 @@
 __pycache__
-savedata
+/savedata/bought.txt
+/savedata/passengers.json
+/savedata/pos.txt
+/savedata/unlocked_lines.txt
