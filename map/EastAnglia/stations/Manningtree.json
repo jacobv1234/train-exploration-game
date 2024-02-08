@@ -1,0 +1,92 @@
+{
+    "name": "Manningtree",
+    "position": [
+        2664,
+        8224
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 1,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Manningtree"
+        },
+        "southbound": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Manningtree"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -24,
+                -8
+            ],
+            "text": "Manningtree",
+            "font": "Arial 10",
+            "anchor": "se"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 65,
+        "options": [
+            {
+                "chance": 3,
+                "station": "EastAnglia/Colchester",
+                "line": [
+                    "EastAnglia/Colchester-S",
+                    "EastAnglia/Colchester-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Norwich",
+                "line": [
+                    "EastAnglia/Norwich"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Diss",
+                "line": [
+                    "EastAnglia/Diss"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Ipswich",
+                "line": [
+                    "EastAnglia/Ipswich-N",
+                    "EastAnglia/Ipswich-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Felixstowe",
+                "line": [
+                    "EastAnglia/Felixstowe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Stowmarket",
+                "line": [
+                    "EastAnglia/Stowmarket"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

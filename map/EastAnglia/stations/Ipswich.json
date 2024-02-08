@@ -265,6 +265,23 @@
                     "EastAnglia/Stansted"
                 ],
                 "reward": 2
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Colchester",
+                "line": [
+                    "EastAnglia/Colchester-S",
+                    "EastAnglia/Colchester-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Manningtree",
+                "line": [
+                    "EastAnglia/Manningtree"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -347,6 +364,22 @@
                 "EastAnglia/Cambridge-N"
             ],
             "unique_name": "EastAnglia/Ipswich/To Cambridge"
+        },
+        "To Colchester": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Manningtree-N"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Manningtree-N",
+                "EastAnglia/Manningtree",
+                "EastAnglia/Colchester-N",
+                "EastAnglia/Ipswich-S"
+            ],
+            "unique_name": "EastAnglia/Ipswich/To Colchester"
         }
     }
 }

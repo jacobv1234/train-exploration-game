@@ -1,0 +1,32 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            2968,
+            7616,
+            2792,
+            7968
+        ]
+    ],
+    "corners": [
+        [
+            2968,
+            7616,
+            0,
+            9,
+            "Ipswich-S"
+        ],
+        [
+            2792,
+            7968,
+            1,
+            9,
+            "Manningtree"
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": []
+}

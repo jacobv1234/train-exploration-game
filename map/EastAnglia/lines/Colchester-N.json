@@ -1,0 +1,51 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            2416,
+            9096,
+            2176,
+            9336
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Manningtree"
+                ],
+                "not": [
+                    "EastAnglia/Colchester-E"
+                ]
+            },
+            "corner": [
+                2416,
+                9096,
+                1,
+                10,
+                "Manningtree"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Colchester-S"
+                ]
+            },
+            "stop": [
+                2176,
+                9336,
+                2
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "Colchester"
+    ]
+}

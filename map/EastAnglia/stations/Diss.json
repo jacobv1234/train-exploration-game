@@ -50,6 +50,23 @@
                     "EastAnglia/Ipswich-S"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Colchester",
+                "line": [
+                    "EastAnglia/Colchester-S",
+                    "EastAnglia/Colchester-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Manningtree",
+                "line": [
+                    "EastAnglia/Manningtree"
+                ],
+                "reward": 1
             }
         ]
     },

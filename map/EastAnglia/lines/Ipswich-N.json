@@ -43,6 +43,21 @@
                 8,
                 "Westerfield"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Ipswich-S"
+                ],
+                "not": []
+            },
+            "corner": [
+                2968,
+                6912,
+                0,
+                8,
+                "Ipswich-S"
+            ]
         }
     ],
     "stops": [],

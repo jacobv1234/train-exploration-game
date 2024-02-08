@@ -110,6 +110,14 @@
                     "EastAnglia/Newmarket"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Manningtree",
+                "line": [
+                    "EastAnglia/Manningtree"
+                ],
+                "reward": 1
             }
         ]
     },

@@ -29,3 +29,7 @@ EastAnglia/KingsLynn
 EastAnglia/Newport
 EastAnglia/Stansted
 EastAnglia/Stansted-N
+EastAnglia/Manningtree
+EastAnglia/Manningtree-N
+EastAnglia/Ipswich-S
+EastAnglia/Colchester-N

@@ -31,7 +31,11 @@
         "Cambridge-S",
         "Newport",
         "Stansted-N",
-        "Stansted"
+        "Stansted",
+        "Ipswich-S",
+        "Manningtree-N",
+        "Manningtree",
+        "Colchester-N"
     ],
     "start": [
         1120,

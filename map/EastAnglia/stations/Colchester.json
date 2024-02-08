@@ -1,0 +1,104 @@
+{
+    "name": "Colchester",
+    "position": [
+        2176,
+        9336
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 2,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Colchester-N"
+                ],
+                "not": []
+            },
+            "line": "Colchester-N"
+        },
+        "southbound": {
+            "direction": 10,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Colchester-S"
+                ],
+                "not": []
+            },
+            "line": "Colchester-S"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -16,
+                -16
+            ],
+            "text": "Colchester",
+            "font": "Arial 10",
+            "anchor": "se"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 85,
+        "options": [
+            {
+                "chance": 2,
+                "station": "EastAnglia/Manningtree",
+                "line": [
+                    "EastAnglia/Manningtree"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Ipswich",
+                "line": [
+                    "EastAnglia/Ipswich-N",
+                    "EastAnglia/Ipswich-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Diss",
+                "line": [
+                    "EastAnglia/Diss"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Norwich",
+                "line": [
+                    "EastAnglia/Norwich"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Felixstowe",
+                "line": [
+                    "EastAnglia/Felixstowe"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": {
+        "To Ipswich": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Manningtree-N"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Manningtree-N",
+                "EastAnglia/Manningtree",
+                "EastAnglia/Colchester-N",
+                "EastAnglia/Ipswich-S"
+            ],
+            "unique_name": "EastAnglia/Colchester/To Ipswich"
+        }
+    }
+}
