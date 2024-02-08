@@ -405,6 +405,7 @@ Control map text, passengers, and shop via the JSON.
 1) Add passengers to this station
 2) Add text to the map
 3) Add a shop item
+4) Add a station badge
 >>> '''))
         match mode:
             case 1:
@@ -485,6 +486,17 @@ Control map text, passengers, and shop via the JSON.
                     "unlock": unlock,
                     "unique_name": f'{map_name}/{station_name}/{name}'
                 }
+            case 4:
+                print('Coords for the badge')
+                x,y = get_coordinates()
+                dx,dy = x - station_data['position'][0], y - station_data['position'][1]
+                badge = input('Badge: ')
+                anchor = input('Anchor: ')
+                station_data['map_text'].append({
+                    "offset": [dx,dy],
+                    "badge": badge,
+                    "anchor": anchor
+                })
 
         
         with open(f'map/{map_name}/stations/{station_data["name"]}.json','w') as f:

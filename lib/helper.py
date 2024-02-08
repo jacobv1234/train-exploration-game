@@ -70,3 +70,8 @@ def get_train_graphics(skin):
             results.append(ImageTk.PhotoImage(im.rotate(angle, Image.Resampling.BILINEAR)))
     
     return results
+
+# get a station badge image
+def get_badge(name):
+    with Image.open(f'./badges/{name}.png') as im:
+        return ImageTk.PhotoImage(im)

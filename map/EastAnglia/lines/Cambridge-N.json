@@ -43,6 +43,21 @@
                 8,
                 "Waterbeach"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Cambridge-S"
+                ],
+                "not": []
+            },
+            "corner": [
+                -1488,
+                6832,
+                0,
+                8,
+                "Cambridge-S"
+            ]
         }
     ],
     "stops": [],

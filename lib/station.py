@@ -1,7 +1,7 @@
 from tkinter import *
 from json import loads
 from random import randint, choice
-from lib.helper import test_requirements
+from lib.helper import test_requirements, get_badge
 
 class Station:
     def __init__(self, name: str, c: Canvas, map_name: str, unlocked_lines: list):
@@ -28,10 +28,15 @@ class Station:
         self.object = c.create_oval(self.pos[0]-15, self.pos[1]-15, self.pos[0]+15,self.pos[1]+15,fill=self.col,outline='black')
         self.object_inner = c.create_oval(self.pos[0]-5, self.pos[1]-5, self.pos[0]+5,self.pos[1]+5,fill='white',outline='#333333')
         self.texts = []
+        self.badges = []
         self.passenger_rules = s['passengers']
         for text in s['map_text']:
-            self.texts.append(c.create_text(self.pos[0] + text['offset'][0], self.pos[1] + text['offset'][1], fill='black', font=text['font'], text=text['text'], anchor=text['anchor']))
-
+            if 'text' in list(text.keys()):
+                self.texts.append(c.create_text(self.pos[0] + text['offset'][0], self.pos[1] + text['offset'][1], fill='black', font=text['font'], text=text['text'], anchor=text['anchor']))
+            else:
+                badge_img = get_badge(text['badge'])
+                self.badges.append(badge_img)
+                self.texts.append(c.create_image(self.pos[0] + text['offset'][0], self.pos[1] + text['offset'][1],image=self.badges[-1], anchor=text['anchor']))
 
 
     def unload(self, c: Canvas):
