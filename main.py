@@ -100,45 +100,42 @@ while game_running:
 skin_selector.remove()
 del skin_selector
 
+if game_running:
+    c = Canvas(window, width = screen_width, height = screen_height, bg = 'lightblue', xscrollincrement=1, yscrollincrement=1)
+    c.place(x=4,y=0)
 
-c = Canvas(window, width = screen_width, height = screen_height, bg = 'lightblue', xscrollincrement=1, yscrollincrement=1)
-c.place(x=4,y=0)
-
-# get savedata
-unlocked_lines = get_unlocked_lines(save_path)
-bought = get_bought_items(save_path)
-try:
+    # get savedata
+    unlocked_lines = get_unlocked_lines(save_path)
+    bought = get_bought_items(save_path)
     startx, starty, startdir, start_map, start_line, points = get_pos_save(save_path)
-except ValueError:
-    exit()
-points = int(points)
+    points = int(points)
 
-# called area cause map is a function
-area = Map(start_map, c, unlocked_lines)
- 
-# hud
-speedtracker = SpeedTracker(window,screen_width,screen_height)
+    # called area cause map is a function
+    area = Map(start_map, c, unlocked_lines)
+    
+    # hud
+    speedtracker = SpeedTracker(window,screen_width,screen_height)
 
-# train
-train = Train(int(startx), int(starty), int(startdir), start_line, c, skin)
+    # train
+    train = Train(int(startx), int(starty), int(startdir), start_line, c, skin)
 
-# center on screen
-c.xview_scroll(int(startx) - (round(screen_width / 2)), 'units')
-c.yview_scroll(int(starty) - (round(screen_height / 2)), 'units')
+    # center on screen
+    c.xview_scroll(int(startx) - (round(screen_width / 2)), 'units')
+    c.yview_scroll(int(starty) - (round(screen_height / 2)), 'units')
 
-# initialise certain variables
-junc = False
-press_space = False
-space_pressed = False
-in_station = False
-mapnamecounter = -1
-mapnamedisplay = False
-popup = False
-zoomed_map = False
+    # initialise certain variables
+    junc = False
+    press_space = False
+    space_pressed = False
+    in_station = False
+    mapnamecounter = -1
+    mapnamedisplay = False
+    popup = False
+    zoomed_map = False
 
 
-# passenger display
-passengers = Passengers(window, screen_height, save_path)
+    # passenger display
+    passengers = Passengers(window, screen_height, save_path)
 
 
 # functions that work better in main than in lib.helper
@@ -172,7 +169,8 @@ def closeMap(event):
     c.bind_all('<m>', openMap)
     c.bind_all('<space>', pressed_space)
 
-c.bind_all('<m>', openMap)
+if game_running:
+    c.bind_all('<m>', openMap)
 
 
 # loop
