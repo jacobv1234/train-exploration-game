@@ -83,7 +83,6 @@ while game_running:
         else:
             save_path = f'map/premade_saves/{choice}'
             break
-    homepage.move_trains()
 homepage.remove()
 del homepage
 

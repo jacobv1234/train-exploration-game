@@ -3,12 +3,9 @@ from lib.line import Line
 from tkinter import *
 
 class Map():
-    def __init__(self, name: str, canvas: Canvas, unlocked_lines: list[str], menu = False):
+    def __init__(self, name: str, canvas: Canvas, unlocked_lines: list[str]):
         # load the manifest file
-        if menu:
-            folder = 'menu-map'
-        else:
-            folder = 'map'
+        folder = 'map'
         with open(f'./{folder}/{name}/manifest.json', 'r') as f:
             manifest = loads(f.read().strip('\n'))
         
