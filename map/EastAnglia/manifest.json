@@ -35,7 +35,10 @@
         "Ipswich-S",
         "Manningtree-N",
         "Manningtree",
-        "Colchester-N"
+        "Colchester-N",
+        "Manningtree-Bypass",
+        "Manningtree-E",
+        "Harwich"
     ],
     "start": [
         1120,

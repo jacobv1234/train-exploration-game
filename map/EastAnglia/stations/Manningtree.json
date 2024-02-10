@@ -85,6 +85,46 @@
                     "EastAnglia/Stowmarket"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Mistley",
+                "line": [
+                    "EastAnglia/Harwich"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Wrabness",
+                "line": [
+                    "EastAnglia/Harwich"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Harwich International",
+                "line": [
+                    "EastAnglia/Harwich"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Dovercourt",
+                "line": [
+                    "EastAnglia/Harwich"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Harwich Town",
+                "line": [
+                    "EastAnglia/Harwich"
+                ],
+                "reward": 1
             }
         ]
     },

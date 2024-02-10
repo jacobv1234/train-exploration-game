@@ -75,21 +75,24 @@ def choose_requirements():
     print()
     print('REQUIREMENTS - NEED TO BE UNLOCKED')
     print('Write as format: \'map_name/line_name\'')
+    print('Skip map_name to choose current map')
     req = []
     while True:
         add = input('>>> ')
         if add == '':
             break
-        else:
-            req.append(add)
+        if '/' not in add:
+            add = map_name + '/' + add
+        req.append(add)
     no = []
     print('REQUIREMENTS - MUST NOT BE UNLOCKED')
     while True:
         add = input('>>> ')
         if add == '':
             break
-        else:
-            no.append(add)
+        if '/' not in add:
+            add = map_name + '/' + add
+        no.append(add)
     
     return {"unlocked": req, "not": no}
 
@@ -416,6 +419,8 @@ Control map text, passengers, and shop via the JSON.
                     line = input('This station is on line (mapname/line): ')
                     if line == '':
                         break
+                    if '/' not in line:
+                        line = map_name + '/' + line
                     lines.append(line)
                 passenger = {
                     'chance': chance,
@@ -427,13 +432,19 @@ Control map text, passengers, and shop via the JSON.
                     start = input('Station from (mapname/name): ')
                     if start == '':
                         break
+                    if '/' not in start:
+                        start = map_name + '/' + start
                     start = start.split('/')
-                    with open(f'map/{start[0]}/stations/{start[1]}.json','r') as f:
-                        data = loads(f.read())
-                    data['passengers']['options'].append(passenger)
-                    with open(f'map/{start[0]}/stations/{start[1]}.json','w') as f:
-                        f.write(dumps(data, indent=4))
-                    print('Added.')
+                    try:
+                        with open(f'map/{start[0]}/stations/{start[1]}.json','r') as f:
+                            data = loads(f.read())
+                        data['passengers']['options'].append(passenger)
+                        with open(f'map/{start[0]}/stations/{start[1]}.json','w') as f:
+                            f.write(dumps(data, indent=4))
+                        print('Added.')
+                    except FileNotFoundError:
+                        print('Station does not exist')
+                        continue
 
                     # return journey
                     return_chance = int(input(f'Chance of going from {station_name} back to {start[1]} (0 to skip): '))
@@ -443,6 +454,8 @@ Control map text, passengers, and shop via the JSON.
                             line = input('This station is on line (mapname/line): ')
                             if line == '':
                                 break
+                            if '/' not in line:
+                                line = map_name + '/' + line
                             return_lines.append(line)
                         return_passenger = {
                             'chance': return_chance,
@@ -478,6 +491,8 @@ Control map text, passengers, and shop via the JSON.
                     get = input('Unlocks line (map_name/line): ')
                     if get == '':
                         break
+                    if '/' not in get:
+                        get = map_name + '/' + get
                     unlock.append(get)
                 
                 station_data['shop'][name] = {

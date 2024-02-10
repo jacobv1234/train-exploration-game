@@ -1,0 +1,44 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            2792,
+            7968,
+            2856,
+            7904
+        ],
+        [
+            3128,
+            7768,
+            2856,
+            7904
+        ]
+    ],
+    "corners": [
+        [
+            2856,
+            7904,
+            3,
+            10
+        ],
+        [
+            2792,
+            7968,
+            2,
+            9,
+            "Manningtree"
+        ],
+        [
+            3128,
+            7768,
+            4,
+            11,
+            "Harwich"
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": []
+}

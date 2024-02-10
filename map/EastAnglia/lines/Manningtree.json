@@ -58,11 +58,62 @@
                 9,
                 "Manningtree-N"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Manningtree-E"
+                ],
+                "not": [
+                    "EastAnglia/Manningtree-N"
+                ]
+            },
+            "corner": [
+                2800,
+                7968,
+                2,
+                9,
+                "Manningtree-E"
+            ]
         }
     ],
     "stops": [],
     "conditional_stops": [],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Manningtree-N",
+                    "EastAnglia/Manningtree-E"
+                ],
+                "not": []
+            },
+            "coords": [
+                2792,
+                7968
+            ],
+            "approach": {
+                "coords": [
+                    2696,
+                    8160
+                ],
+                "direction": 1,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Manningtree-N",
+                "direction": 1
+            },
+            "right": {
+                "line": "Manningtree-E",
+                "direction": 2
+            }
+        }
+    ],
     "stations": [
         "Manningtree"
     ]

@@ -33,3 +33,6 @@ EastAnglia/Manningtree
 EastAnglia/Manningtree-N
 EastAnglia/Ipswich-S
 EastAnglia/Colchester-N
+EastAnglia/Manningtree-E
+EastAnglia/Manningtree-Bypass
+EastAnglia/Harwich

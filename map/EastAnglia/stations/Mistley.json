@@ -1,0 +1,100 @@
+{
+    "name": "Mistley",
+    "position": [
+        3520,
+        7768
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Harwich"
+        },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Harwich"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                24
+            ],
+            "text": "Mistley",
+            "font": "Arial 10",
+            "anchor": "n"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 60,
+        "options": [
+            {
+                "chance": 1,
+                "station": "EastAnglia/Wrabness",
+                "line": [
+                    "EastAnglia/Harwich"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Harwich International",
+                "line": [
+                    "EastAnglia/Harwich"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Dovercourt",
+                "line": [
+                    "EastAnglia/Harwich"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Harwich Town",
+                "line": [
+                    "EastAnglia/Harwich"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Manningtree",
+                "line": [
+                    "EastAnglia/Manningtree"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Colchester",
+                "line": [
+                    "EastAnglia/Colchester-N",
+                    "EastAnglia/Colchester-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Ipswich",
+                "line": [
+                    "EastAnglia/Ipswich-N",
+                    "EastAnglia/Ipswich-S"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

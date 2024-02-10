@@ -41,6 +41,23 @@
                 9,
                 "Manningtree-N"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Manningtree-Bypass"
+                ],
+                "not": [
+                    "EastAnglia/Manningtree-N"
+                ]
+            },
+            "corner": [
+                2968,
+                7616,
+                0,
+                7,
+                "Manningtree-Bypass"
+            ]
         }
     ],
     "stops": [],
@@ -59,6 +76,42 @@
             ]
         }
     ],
-    "junctions": [],
-    "stations": ["Ipswich"]
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Manningtree-Bypass",
+                    "EastAnglia/Manningtree-N"
+                ],
+                "not": []
+            },
+            "coords": [
+                2968,
+                7616
+            ],
+            "approach": {
+                "coords": [
+                    2968,
+                    7144
+                ],
+                "direction": 8,
+                "options": [
+                    "left",
+                    "right"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Manningtree-Bypass",
+                "direction": 7
+            },
+            "right": {
+                "line": "Manningtree-N",
+                "direction": 9
+            }
+        }
+    ],
+    "stations": [
+        "Ipswich"
+    ]
 }

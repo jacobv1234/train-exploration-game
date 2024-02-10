@@ -282,6 +282,46 @@
                     "EastAnglia/Manningtree"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Mistley",
+                "line": [
+                    "EastAnglia/Harwich"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Wrabness",
+                "line": [
+                    "EastAnglia/Harwich"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Harwich International",
+                "line": [
+                    "EastAnglia/Harwich"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Dovercourt",
+                "line": [
+                    "EastAnglia/Harwich"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Harwich Town",
+                "line": [
+                    "EastAnglia/Harwich"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -322,7 +362,7 @@
             "cost": 1,
             "requirements": {
                 "unlocked": [],
-                "not": []
+                "not": ["EastAnglia/Felixstowe"]
             },
             "unlock": [
                 "EastAnglia/Ipswich-N",
@@ -380,6 +420,22 @@
                 "EastAnglia/Ipswich-S"
             ],
             "unique_name": "EastAnglia/Ipswich/To Colchester"
+        },
+        "To Harwich": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Harwich"
+                ],
+                "not": [
+                    "EastAnglia/Manningtree-Bypass"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Manningtree-Bypass",
+                "EastAnglia/Ipswich-S"
+            ],
+            "unique_name": "EastAnglia/Ipswich/To Harwich"
         }
     }
 }

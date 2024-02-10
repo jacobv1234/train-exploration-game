@@ -80,6 +80,46 @@
                     "EastAnglia/Felixstowe"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Mistley",
+                "line": [
+                    "EastAnglia/Harwich"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Wrabness",
+                "line": [
+                    "EastAnglia/Harwich"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Harwich International",
+                "line": [
+                    "EastAnglia/Harwich"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Dovercourt",
+                "line": [
+                    "EastAnglia/Harwich"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Harwich Town",
+                "line": [
+                    "EastAnglia/Harwich"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -99,6 +139,22 @@
                 "EastAnglia/Ipswich-S"
             ],
             "unique_name": "EastAnglia/Colchester/To Ipswich"
+        },
+        "To Harwich": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Manningtree-E"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Colchester-N",
+                "EastAnglia/Manningtree",
+                "EastAnglia/Manningtree-E",
+                "EastAnglia/Harwich"
+            ],
+            "unique_name": "EastAnglia/Colchester/To Harwich"
         }
     }
 }

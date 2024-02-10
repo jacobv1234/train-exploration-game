@@ -1,0 +1,98 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            3128,
+            7768,
+            5616,
+            7768
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Manningtree-E"
+                ],
+                "not": [
+                    "EastAnglia/Manningtree-Bypass"
+                ]
+            },
+            "corner": [
+                3128,
+                7768,
+                11,
+                4,
+                "Manningtree-E"
+            ]
+        },
+        {
+            "requirements": {
+                "not": [
+                    "EastAnglia/Manningtree-E"
+                ],
+                "unlocked": [
+                    "EastAnglia/Manningtree-Bypass"
+                ]
+            },
+            "corner": [
+                3128,
+                7768,
+                13,
+                4,
+                "Manningtree-Bypass"
+            ]
+        }
+    ],
+    "stops": [
+        [
+            5616,
+            7768,
+            12
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Manningtree-E",
+                    "EastAnglia/Manningtree-Bypass"
+                ],
+                "not": []
+            },
+            "coords": [
+                3128,
+                7768
+            ],
+            "approach": {
+                "coords": [
+                    3448,
+                    7768
+                ],
+                "direction": 12,
+                "options": [
+                    "left",
+                    "right"
+                ],
+                "default": 0
+            },
+            "left": {
+                "line": "Manningtree-E",
+                "direction": 11
+            },
+            "right": {
+                "line": "Manningtree-Bypass",
+                "direction": 13
+            }
+        }
+    ],
+    "stations": [
+        "Mistley",
+        "Harwich Town",
+        "Harwich International",
+        "Wrabness",
+        "Dovercourt"
+    ]
+}
