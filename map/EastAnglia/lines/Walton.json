@@ -1,0 +1,59 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            4848,
+            9040,
+            5048,
+            9040
+        ],
+        [
+            5048,
+            9040,
+            5416,
+            8856
+        ],
+        [
+            5416,
+            8856,
+            5656,
+            8856
+        ]
+    ],
+    "corners": [
+        [
+            4848,
+            9040,
+            4,
+            12,
+            "Hythe"
+        ],
+        [
+            5048,
+            9040,
+            3,
+            12
+        ],
+        [
+            5416,
+            8856,
+            4,
+            11
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [
+        [
+            5656,
+            8856,
+            12
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Walton-on-the-Naze",
+        "Kirby Cross",
+        "Frinton-on-Sea"
+    ]
+}

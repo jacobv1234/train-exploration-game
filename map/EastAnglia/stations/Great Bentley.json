@@ -1,0 +1,41 @@
+{
+    "name": "Great Bentley",
+    "position": [
+        4024,
+        9040
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Hythe"
+        },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Hythe"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -24
+            ],
+            "text": "Great Bentley",
+            "font": "Arial 10",
+            "anchor": "s"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 60,
+        "options": []
+    },
+    "shop": false
+}

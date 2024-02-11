@@ -1,0 +1,94 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            2840,
+            9208,
+            2840,
+            9576
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/CTown-W"
+                ],
+                "not": [
+                    "EastAnglia/CTown-E"
+                ]
+            },
+            "corner": [
+                2840,
+                9208,
+                15,
+                8,
+                "CTown-W"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/CTown-E"
+                ],
+                "not": [
+                    "EastAnglia/CTown-W"
+                ]
+            },
+            "corner": [
+                2840,
+                9208,
+                1,
+                8,
+                "CTown-E"
+            ]
+        }
+    ],
+    "stops": [
+        [
+            2840,
+            9576,
+            0
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/CTown-E",
+                    "EastAnglia/CTown-W"
+                ],
+                "not": []
+            },
+            "coords": [
+                2840,
+                9208
+            ],
+            "approach": {
+                "coords": [
+                    2840,
+                    9512
+                ],
+                "direction": 0,
+                "options": [
+                    "left",
+                    "right"
+                ],
+                "default": 0
+            },
+            "left": {
+                "line": "CTown-E",
+                "direction": 15
+            },
+            "right": {
+                "line": "CTown-W",
+                "direction": 1
+            }
+        }
+    ],
+    "stations": [
+        "Colchester Town"
+    ]
+}

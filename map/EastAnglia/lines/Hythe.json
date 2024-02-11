@@ -1,0 +1,160 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            3000,
+            9040,
+            4848,
+            9040
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/CTown-Bypass"
+                ],
+                "not": [
+                    "EastAnglia/CTown-E"
+                ]
+            },
+            "corner": [
+                3000,
+                9040,
+                4,
+                12,
+                "CTown-Bypass"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/CTown-E"
+                ],
+                "not": [
+                    "EastAnglia/CTown-Bypass"
+                ]
+            },
+            "corner": [
+                3000,
+                9040,
+                4,
+                11,
+                "CTown-E"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Clacton"
+                ],
+                "not": [
+                    "EastAnglia/Walton"
+                ]
+            },
+            "corner": [
+                4848,
+                9040,
+                5,
+                12,
+                "Clacton"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Walton"
+                ],
+                "not": [
+                    "EastAnglia/Clacton"
+                ]
+            },
+            "corner": [
+                4848,
+                9040,
+                4,
+                12,
+                "Walton"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/CTown-E",
+                    "EastAnglia/CTown-Bypass"
+                ],
+                "not": []
+            },
+            "coords": [
+                3000,
+                9040
+            ],
+            "approach": {
+                "coords": [
+                    3208,
+                    9040
+                ],
+                "direction": 12,
+                "options": [
+                    "left",
+                    "straight"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "CTown-E",
+                "direction": 11
+            },
+            "straight": {
+                "line": "CTown-Bypass",
+                "direction": 12
+            }
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Clacton",
+                    "EastAnglia/Walton"
+                ],
+                "not": []
+            },
+            "coords": [
+                4848,
+                9040
+            ],
+            "approach": {
+                "coords": [
+                    4592,
+                    9040
+                ],
+                "direction": 4,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Walton",
+                "direction": 4
+            },
+            "right": {
+                "line": "Clacton",
+                "direction": 5
+            }
+        }
+    ],
+    "stations": [
+        "Hythe",
+        "Thorpe-le-Soken",
+        "Wivenhoe",
+        "Alresford",
+        "Great Bentley",
+        "Weeley"
+    ]
+}

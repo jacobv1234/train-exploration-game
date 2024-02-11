@@ -1,0 +1,32 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            2680,
+            9040,
+            3000,
+            9040
+        ]
+    ],
+    "corners": [
+        [
+            2680,
+            9040,
+            4,
+            12,
+            "Colchester-E"
+        ],
+        [
+            3000,
+            9040,
+            4,
+            12,
+            "Hythe"
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": []
+}

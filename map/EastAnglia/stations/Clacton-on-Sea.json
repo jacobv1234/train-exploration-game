@@ -1,0 +1,33 @@
+{
+    "name": "Clacton-on-Sea",
+    "position": [
+        5112,
+        9472
+    ],
+    "exits": {
+        "westbound": {
+            "direction": 15,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Clacton"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                24,
+                0
+            ],
+            "text": "Clacton-on-Sea",
+            "font": "Arial 10",
+            "anchor": "w"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 80,
+        "options": []
+    },
+    "shop": false
+}

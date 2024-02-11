@@ -1,0 +1,106 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            2416,
+            9096,
+            2528,
+            9040
+        ],
+        [
+            2528,
+            9040,
+            2680,
+            9040
+        ]
+    ],
+    "corners": [
+        [
+            2416,
+            9096,
+            3,
+            10,
+            "Colchester-N"
+        ],
+        [
+            2528,
+            9040,
+            4,
+            11
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/CTown-W"
+                ],
+                "not": [
+                    "EastAnglia/CTown-Bypass"
+                ]
+            },
+            "corner": [
+                2680,
+                9040,
+                12,
+                5,
+                "CTown-W"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/CTown-Bypass"
+                ],
+                "not": [
+                    "EastAnglia/CTown-W"
+                ]
+            },
+            "corner": [
+                2680,
+                9040,
+                0,
+                12,
+                "CTown-W"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/CTown-W",
+                    "EastAnglia/CTown-Bypass"
+                ],
+                "not": []
+            },
+            "coords": [
+                2680,
+                9040
+            ],
+            "approach": {
+                "coords": [
+                    2448,
+                    9080
+                ],
+                "direction": 3,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "CTown-Bypass",
+                "direction": 4
+            },
+            "right": {
+                "line": "CTown-W",
+                "direction": 5
+            }
+        }
+    ],
+    "stations": []
+}

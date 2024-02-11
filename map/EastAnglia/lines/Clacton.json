@@ -1,0 +1,45 @@
+{
+    "colour": "black",
+    "segments": [
+        [
+            4848,
+            9040,
+            4912,
+            9072
+        ],
+        [
+            4912,
+            9072,
+            5112,
+            9472
+        ]
+    ],
+    "corners": [
+        [
+            4848,
+            9040,
+            5,
+            12,
+            "Hythe"
+        ],
+        [
+            4912,
+            9072,
+            13,
+            7
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [
+        [
+            5112,
+            9472,
+            15
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Clacton-on-Sea"
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "name": "Frinton-on-Sea",
+    "position": [
+        5416,
+        8856
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Walton"
+        },
+        "westbound": {
+            "direction": 11,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Walton"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -24
+            ],
+            "text": "Frinton-on-Sea",
+            "font": "Arial 10",
+            "anchor": "se"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 50,
+        "options": []
+    },
+    "shop": false
+}

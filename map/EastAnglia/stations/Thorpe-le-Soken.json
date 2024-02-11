@@ -1,0 +1,41 @@
+{
+    "name": "Thorpe-le-Soken",
+    "position": [
+        4552,
+        9040
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Hythe"
+        },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Hythe"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -24
+            ],
+            "text": "Thorpe-le-Soken",
+            "font": "Arial 10",
+            "anchor": "s"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 75,
+        "options": []
+    },
+    "shop": false
+}

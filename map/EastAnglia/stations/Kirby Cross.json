@@ -1,0 +1,41 @@
+{
+    "name": "Kirby Cross",
+    "position": [
+        5048,
+        9040
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 3,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Walton"
+        },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Walton"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -8,
+                -32
+            ],
+            "text": "Kirby Cross",
+            "font": "Arial 10",
+            "anchor": "center"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 60,
+        "options": []
+    },
+    "shop": false
+}

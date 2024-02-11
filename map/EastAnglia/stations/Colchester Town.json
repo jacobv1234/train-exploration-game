@@ -1,0 +1,42 @@
+{
+    "name": "Colchester Town",
+    "position": [
+        2840,
+        9576
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "CTown"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                24
+            ],
+            "text": "Colchester",
+            "font": "Arial 10",
+            "anchor": "n"
+        },
+        {
+            "offset": [
+                0,
+                40
+            ],
+            "text": "Town",
+            "font": "Arial 10",
+            "anchor": "n"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 40,
+        "options": []
+    },
+    "shop": false
+}

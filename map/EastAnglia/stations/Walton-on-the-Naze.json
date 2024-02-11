@@ -1,0 +1,33 @@
+{
+    "name": "Walton-on-the-Naze",
+    "position": [
+        5656,
+        8856
+    ],
+    "exits": {
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Walton"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                40,
+                -24
+            ],
+            "text": "Walton-on-the-Naze",
+            "font": "Arial 10",
+            "anchor": "se"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 75,
+        "options": []
+    },
+    "shop": false
+}

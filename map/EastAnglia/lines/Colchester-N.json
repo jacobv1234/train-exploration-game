@@ -26,6 +26,23 @@
                 10,
                 "Manningtree"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Colchester-E"
+                ],
+                "not": [
+                    "EastAnglia/Manningtree"
+                ]
+            },
+            "corner": [
+                2416,
+                9096,
+                3,
+                10,
+                "Colchester-E"
+            ]
         }
     ],
     "stops": [],
@@ -44,7 +61,41 @@
             ]
         }
     ],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Colchester-E",
+                    "EastAnglia/Manningtree"
+                ],
+                "not": []
+            },
+            "coords": [
+                2416,
+                9096
+            ],
+            "approach": {
+                "coords": [
+                    2224,
+                    9288
+                ],
+                "direction": 2,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Manningtree",
+                "direction": 1
+            },
+            "right": {
+                "line": "Colchester-E",
+                "direction": 3
+            }
+        }
+    ],
     "stations": [
         "Colchester"
     ]

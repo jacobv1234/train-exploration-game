@@ -38,7 +38,15 @@
         "Colchester-N",
         "Manningtree-Bypass",
         "Manningtree-E",
-        "Harwich"
+        "Harwich",
+        "Colchester-E",
+        "CTown-W",
+        "CTown",
+        "CTown-E",
+        "CTown-Bypass",
+        "Hythe",
+        "Clacton",
+        "Walton"
     ],
     "start": [
         1120,
