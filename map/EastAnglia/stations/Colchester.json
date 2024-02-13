@@ -120,6 +120,94 @@
                     "EastAnglia/Harwich"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Walton-on-the-Naze",
+                "line": [
+                    "EastAnglia/Walton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Frinton-on-Sea",
+                "line": [
+                    "EastAnglia/Walton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Kirby Cross",
+                "line": [
+                    "EastAnglia/Walton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Clacton-on-Sea",
+                "line": [
+                    "EastAnglia/Clacton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Thorpe-le-Soken",
+                "line": [
+                    "EastAnglia/Hythe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Weeley",
+                "line": [
+                    "EastAnglia/Hythe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Great Bentley",
+                "line": [
+                    "EastAnglia/Hythe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Alresford",
+                "line": [
+                    "EastAnglia/Hythe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Wivenhoe",
+                "line": [
+                    "EastAnglia/Hythe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Hythe",
+                "line": [
+                    "EastAnglia/Hythe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Colchester Town",
+                "line": [
+                    "EastAnglia/CTown"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -155,6 +243,57 @@
                 "EastAnglia/Harwich"
             ],
             "unique_name": "EastAnglia/Colchester/To Harwich"
+        },
+        "To Walton-on-the-Naze": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Walton"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Colchester-N",
+                "EastAnglia/Colchester-E",
+                "EastAnglia/CTown-Bypass",
+                "EastAnglia/Hythe",
+                "EastAnglia/Walton"
+            ],
+            "unique_name": "EastAnglia/Colchester/To Walton-on-the-Naze"
+        },
+        "To Clacton-on-Sea": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Clacton"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Colchester-N",
+                "EastAnglia/Colchester-E",
+                "EastAnglia/CTown-Bypass",
+                "EastAnglia/Hythe",
+                "EastAnglia/Clacton"
+            ],
+            "unique_name": "EastAnglia/Colchester/To Clacton-on-Sea"
+        },
+        "To Colchester Town": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Hythe"
+                ],
+                "not": [
+                    "EastAnglia/CTown"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/CTown",
+                "EastAnglia/CTown-E",
+                "EastAnglia/CTown-W"
+            ],
+            "unique_name": "EastAnglia/Colchester/To Colchester Town"
         }
     }
 }

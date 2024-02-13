@@ -27,7 +27,73 @@
     ],
     "passengers": {
         "chance_of_any": 80,
-        "options": []
+        "options": [
+            {
+                "chance": 2,
+                "station": "EastAnglia/Thorpe-le-Soken",
+                "line": [
+                    "EastAnglia/Hythe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Weeley",
+                "line": [
+                    "EastAnglia/Hythe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Great Bentley",
+                "line": [
+                    "EastAnglia/Hythe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Alresford",
+                "line": [
+                    "EastAnglia/Hythe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Wivenhoe",
+                "line": [
+                    "EastAnglia/Hythe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Hythe",
+                "line": [
+                    "EastAnglia/Hythe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Colchester Town",
+                "line": [
+                    "EastAnglia/CTown"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Colchester",
+                "line": [
+                    "EastAnglia/Colchester-N",
+                    "EastAnglia/Colchester-S"
+                ],
+                "reward": 1
+            }
+        ]
     },
     "shop": false
 }

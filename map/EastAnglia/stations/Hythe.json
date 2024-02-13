@@ -35,7 +35,97 @@
     ],
     "passengers": {
         "chance_of_any": 75,
-        "options": []
+        "options": [
+            {
+                "chance": 3,
+                "station": "EastAnglia/Walton-on-the-Naze",
+                "line": [
+                    "EastAnglia/Walton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Frinton-on-Sea",
+                "line": [
+                    "EastAnglia/Walton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Kirby Cross",
+                "line": [
+                    "EastAnglia/Walton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Clacton-on-Sea",
+                "line": [
+                    "EastAnglia/Clacton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Thorpe-le-Soken",
+                "line": [
+                    "EastAnglia/Hythe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Weeley",
+                "line": [
+                    "EastAnglia/Hythe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Great Bentley",
+                "line": [
+                    "EastAnglia/Hythe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Alresford",
+                "line": [
+                    "EastAnglia/Hythe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Wivenhoe",
+                "line": [
+                    "EastAnglia/Hythe"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Colchester Town",
+                "line": [
+                    "EastAnglia/CTown"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Colchester",
+                "line": [
+                    "EastAnglia/Colchester-N",
+                    "EastAnglia/Colchester-S"
+                ],
+                "reward": 1
+            }
+        ]
     },
     "shop": false
 }
