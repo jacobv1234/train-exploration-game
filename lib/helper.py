@@ -75,3 +75,59 @@ def get_train_graphics(skin):
 def get_badge(name):
     with Image.open(f'./badges/{name}.png') as im:
         return ImageTk.PhotoImage(im)
+
+
+def get_direction(segment):
+    x1,y1,x2,y2 = tuple(segment)
+    if x1 == x2:
+        return 0
+    gradient = (y1-y2)/(x1-x2)
+    match gradient:
+        case 2:
+            return 1
+        case 1:
+            return 2
+        case 0.5:
+            return 3
+        case 0:
+            return 4
+        case -0.5:
+            return 5
+        case -1:
+            return 6
+        case -2:
+            return 7
+
+
+
+def get_line_poly_coords(segment):
+    direction = get_direction(segment)
+    x1,y1,x2,y2 = tuple(segment)
+    x_offset = 0
+    y_offset = 0
+    match direction:
+        case 0:
+            x_offset = 4
+        case 4:
+            y_offset = 4
+        case 6:
+            x_offset = 2.8284
+            y_offset = 2.8284
+        case 2:
+            x_offset = 2.8284
+            y_offset = -2.8284
+        case 7:
+            x_offset = 3.5776
+            y_offset = 1.789
+        case 1:
+            x_offset = 3.5776
+            y_offset = -1.789
+        case 3:
+            x_offset = 1.789
+            y_offset = -3.5776
+        case 5:
+            x_offset = 1.789
+            y_offset = 3.5776
+            
+    return [x1+x_offset, y1+y_offset, x1-x_offset, y1-y_offset,
+            x2-x_offset, y2-y_offset, x2+x_offset, y2+y_offset]
