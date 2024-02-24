@@ -1,0 +1,83 @@
+{
+    "name": "Marks Tey",
+    "position": [
+        1968,
+        9624
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 1,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Colchester-S"
+        },
+        "southbound": {
+            "direction": 9,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Colchester-S"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                16,
+                8
+            ],
+            "text": "Marks Tey",
+            "font": "Arial 10",
+            "anchor": "nw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 55,
+        "options": [
+            {
+                "chance": 2,
+                "station": "EastAnglia/Sudbury",
+                "line": [
+                    "EastAnglia/Sudbury"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Bures",
+                "line": [
+                    "EastAnglia/Sudbury"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Chappel & Wakes Colne",
+                "line": [
+                    "EastAnglia/Sudbury"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Colchester",
+                "line": [
+                    "EastAnglia/Colchester-N",
+                    "EastAnglia/Colchester-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Colchester Town",
+                "line": [
+                    "EastAnglia/CTown"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

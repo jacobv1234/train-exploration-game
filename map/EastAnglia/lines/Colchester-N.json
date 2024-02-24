@@ -43,6 +43,21 @@
                 10,
                 "Colchester-E"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Colchester-S"
+                ],
+                "not": []
+            },
+            "corner": [
+                2176,
+                9336,
+                2,
+                10,
+                "Colchester-S"
+            ]
         }
     ],
     "stops": [],

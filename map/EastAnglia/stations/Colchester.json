@@ -208,6 +208,38 @@
                     "EastAnglia/CTown"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Sudbury",
+                "line": [
+                    "EastAnglia/Sudbury"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Bures",
+                "line": [
+                    "EastAnglia/Sudbury"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Chappel & Wakes Colne",
+                "line": [
+                    "EastAnglia/Sudbury"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Marks Tey",
+                "line": [
+                    "EastAnglia/Colchester-S"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -294,6 +326,20 @@
                 "EastAnglia/CTown-W"
             ],
             "unique_name": "EastAnglia/Colchester/To Colchester Town"
+        },
+        "To Sudbury": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Sudbury"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Sudbury",
+                "EastAnglia/Colchester-S"
+            ],
+            "unique_name": "EastAnglia/Colchester/To Sudbury"
         }
     }
 }

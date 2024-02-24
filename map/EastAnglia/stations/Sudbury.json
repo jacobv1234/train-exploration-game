@@ -1,0 +1,75 @@
+{
+    "name": "Sudbury",
+    "position": [
+        968,
+        9144
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 6,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Sudbury"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -24
+            ],
+            "text": "Sudbury",
+            "font": "Arial 10",
+            "anchor": "s"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 80,
+        "options": [
+            {
+                "chance": 1,
+                "station": "EastAnglia/Bures",
+                "line": [
+                    "EastAnglia/Sudbury"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Chappel & Wakes Colne",
+                "line": [
+                    "EastAnglia/Sudbury"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Marks Tey",
+                "line": [
+                    "EastAnglia/Colchester-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Colchester",
+                "line": [
+                    "EastAnglia/Colchester-N",
+                    "EastAnglia/Colchester-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Colchester Town",
+                "line": [
+                    "EastAnglia/CTown"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

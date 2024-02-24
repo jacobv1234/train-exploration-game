@@ -1,0 +1,85 @@
+{
+    "colour": "grey",
+    "segments": [
+        [
+            2176,
+            9336,
+            2048,
+            9464
+        ],
+        [
+            2048,
+            9464,
+            1968,
+            9624
+        ],
+        [
+            1968,
+            9624,
+            1872,
+            9816
+        ]
+    ],
+    "corners": [
+        [
+            2048,
+            9464,
+            2,
+            9
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Colchester-N"
+                ],
+                "not": []
+            },
+            "corner": [
+                2176,
+                9336,
+                10,
+                2,
+                "Colchester-N"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Sudbury"
+                ],
+                "not": [
+                    "EastAnglia/Kelvedon"
+                ]
+            },
+            "corner": [
+                1872,
+                9816,
+                2,
+                11,
+                "Sudbury"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Colchester-N"
+                ]
+            },
+            "stop": [
+                2176,
+                9336,
+                10
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "Marks Tey"
+    ]
+}
