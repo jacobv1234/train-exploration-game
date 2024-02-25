@@ -36,3 +36,13 @@ EastAnglia/Colchester-N
 EastAnglia/Manningtree-E
 EastAnglia/Manningtree-Bypass
 EastAnglia/Harwich
+EastAnglia/Colchester-E
+EastAnglia/CTown
+EastAnglia/CTown-Bypass
+EastAnglia/CTown-W
+EastAnglia/CTown-E
+EastAnglia/Hythe
+EastAnglia/Clacton
+EastAnglia/Walton
+EastAnglia/Colchester-S
+EastAnglia/Sudbury
