@@ -1,0 +1,41 @@
+{
+    "name": "Kelvedon",
+    "position": [
+        1720,
+        10120
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 1,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Kelvedon"
+        },
+        "southbound": {
+            "direction": 10,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Kelvedon"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                16,
+                16
+            ],
+            "text": "Kelvedon",
+            "font": "Arial 10",
+            "anchor": "nw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 60,
+        "options": []
+    },
+    "shop": false
+}

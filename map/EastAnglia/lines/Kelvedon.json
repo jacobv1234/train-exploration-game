@@ -1,0 +1,46 @@
+{
+    "colour": "grey",
+    "segments": [
+        [
+            1872,
+            9816,
+            1720,
+            10120
+        ],
+        [
+            1720,
+            10120,
+            1512,
+            10328
+        ]
+    ],
+    "corners": [
+        [
+            1872,
+            9816,
+            9,
+            1,
+            "Colchester-S"
+        ],
+        [
+            1720,
+            10120,
+            1,
+            10
+        ],
+        [
+            1512,
+            10328,
+            2,
+            10,
+            "Chelmsford"
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Kelvedon"
+    ]
+}

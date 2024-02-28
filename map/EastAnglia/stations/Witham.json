@@ -1,0 +1,41 @@
+{
+    "name": "Witham",
+    "position": [
+        1384,
+        10456
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Chelmsford"
+        },
+        "southbound": {
+            "direction": 10,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Chelmsford"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                16,
+                16
+            ],
+            "text": "Witham",
+            "font": "Arial 10",
+            "anchor": "nw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 70,
+        "options": []
+    },
+    "shop": false
+}

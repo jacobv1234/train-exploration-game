@@ -1,0 +1,48 @@
+{
+    "colour": "grey",
+    "segments": [
+        [
+            1512,
+            10328,
+            360,
+            11480
+        ]
+    ],
+    "corners": [
+        [
+            360,
+            11480,
+            2,
+            10,
+            "Shenfield-N"
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Kelvedon"
+                ],
+                "not": [
+                    "EastAnglia/Braintree"
+                ]
+            },
+            "corner": [
+                1512,
+                10328,
+                2,
+                10,
+                "Kelvedon"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Ingatestone",
+        "Witham",
+        "Chelmsford",
+        "Hatfield Peverel"
+    ]
+}

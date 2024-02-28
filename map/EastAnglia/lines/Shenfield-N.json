@@ -1,0 +1,53 @@
+{
+    "colour": "grey",
+    "segments": [
+        [
+            360,
+            11480,
+            144,
+            11696
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Chelmsford"
+                ],
+                "not": [
+                    "EastAnglia/Billericay"
+                ]
+            },
+            "corner": [
+                360,
+                11480,
+                2,
+                10,
+                "Chelmsford"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Shenfield-N"
+                ],
+                "not": [
+                    "EastAnglia/Romford"
+                ]
+            },
+            "stop": [
+                144,
+                11696,
+                2
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "Shenfield"
+    ]
+}

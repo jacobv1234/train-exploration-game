@@ -1,0 +1,41 @@
+{
+    "name": "Chelmsford",
+    "position": [
+        768,
+        11072
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Chelmsford"
+        },
+        "westbound": {
+            "direction": 10,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Chelmsford"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                16,
+                16
+            ],
+            "text": "Chelmsford",
+            "font": "Arial 10",
+            "anchor": "nw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 75,
+        "options": []
+    },
+    "shop": false
+}

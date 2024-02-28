@@ -60,6 +60,23 @@
                 11,
                 "Sudbury"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Kelvedon"
+                ],
+                "not": [
+                    "EastAnglia/Sudbury"
+                ]
+            },
+            "corner": [
+                1872,
+                9816,
+                1,
+                9,
+                "Kelvedon"
+            ]
         }
     ],
     "stops": [],
@@ -78,7 +95,41 @@
             ]
         }
     ],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Sudbury",
+                    "EastAnglia/Kelvedon"
+                ],
+                "not": []
+            },
+            "coords": [
+                1872,
+                9816
+            ],
+            "approach": {
+                "coords": [
+                    1944,
+                    9672
+                ],
+                "direction": 9,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Kelvedon",
+                "direction": 9
+            },
+            "right": {
+                "line": "Sudbury",
+                "direction": 10
+            }
+        }
+    ],
     "stations": [
         "Marks Tey"
     ]
