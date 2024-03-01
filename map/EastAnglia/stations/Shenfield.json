@@ -39,7 +39,99 @@
     ],
     "passengers": {
         "chance_of_any": 80,
-        "options": []
+        "options": [
+            {
+                "chance": 1,
+                "station": "EastAnglia/Ingatestone",
+                "line": [
+                    "EastAnglia/Chelmsford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Chelmsford",
+                "line": [
+                    "EastAnglia/Chelmsford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Hatfield Peverel",
+                "line": [
+                    "EastAnglia/Chelmsford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Witham",
+                "line": [
+                    "EastAnglia/Chelmsford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Kelvedon",
+                "line": [
+                    "EastAnglia/Kelvedon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Marks Tey",
+                "line": [
+                    "EastAnglia/Colchester-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Colchester",
+                "line": [
+                    "EastAnglia/Colchester-N",
+                    "EastAnglia/Colchester-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Colchester Town",
+                "line": [
+                    "EastAnglia/CTown"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Ipswich",
+                "line": [
+                    "EastAnglia/Ipswich-N",
+                    "EastAnglia/Ipswich-S"
+                ],
+                "reward": 1
+            }
+        ]
     },
-    "shop": false
+    "shop": {
+        "To Colchester": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Kelvedon"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Shenfield-N",
+                "EastAnglia/Chelmsford",
+                "EastAnglia/Kelvedon",
+                "EastAnglia/Colchester-S"
+            ],
+            "unique_name": "EastAnglia/Shenfield/To Colchester"
+        }
+    }
 }

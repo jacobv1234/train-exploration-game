@@ -322,6 +322,15 @@
                     "EastAnglia/Harwich"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Shenfield",
+                "line": [
+                    "EastAnglia/Shenfield-N",
+                    "EastAnglia/Romford"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -362,7 +371,9 @@
             "cost": 1,
             "requirements": {
                 "unlocked": [],
-                "not": ["EastAnglia/Felixstowe"]
+                "not": [
+                    "EastAnglia/Felixstowe"
+                ]
             },
             "unlock": [
                 "EastAnglia/Ipswich-N",

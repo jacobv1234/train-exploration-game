@@ -46,3 +46,6 @@ EastAnglia/Clacton
 EastAnglia/Walton
 EastAnglia/Colchester-S
 EastAnglia/Sudbury
+EastAnglia/Kelvedon
+EastAnglia/Chelmsford
+EastAnglia/Shenfield-N
