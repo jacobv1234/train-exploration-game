@@ -79,11 +79,11 @@
                 "default": 0
             },
             "left": {
-                "line": "CTown-E",
+                "line": "CTown-W",
                 "direction": 15
             },
             "right": {
-                "line": "CTown-W",
+                "line": "CTown-E",
                 "direction": 1
             }
         }
