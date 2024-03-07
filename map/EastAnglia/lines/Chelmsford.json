@@ -34,11 +34,62 @@
                 10,
                 "Kelvedon"
             ]
+        },
+        {
+            "requirements": {
+                "not": [
+                    "EastAnglia/Kelvedon"
+                ],
+                "unlocked": [
+                    "EastAnglia/Braintree"
+                ]
+            },
+            "corner": [
+                1512,
+                10328,
+                1,
+                10,
+                "Braintree"
+            ]
         }
     ],
     "stops": [],
     "conditional_stops": [],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Kelvedon",
+                    "EastAnglia/Braintree"
+                ],
+                "not": []
+            },
+            "coords": [
+                1512,
+                10328
+            ],
+            "approach": {
+                "coords": [
+                    1416,
+                    10424
+                ],
+                "direction": 2,
+                "options": [
+                    "left",
+                    "straight"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Braintree",
+                "direction": 1
+            },
+            "straight": {
+                "line": "Kelvedon",
+                "direction": 2
+            }
+        }
+    ],
     "stations": [
         "Ingatestone",
         "Witham",

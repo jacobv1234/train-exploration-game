@@ -1,0 +1,41 @@
+{
+    "name": "Cressing",
+    "position": [
+        1200,
+        9872
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 14,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Braintree"
+        },
+        "southbound": {
+            "direction": 6,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Braintree"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                16,
+                -16
+            ],
+            "text": "Cressing",
+            "font": "Arial 10",
+            "anchor": "sw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 65,
+        "options": []
+    },
+    "shop": false
+}

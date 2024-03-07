@@ -1,0 +1,33 @@
+{
+    "name": "Braintree",
+    "position": [
+        712,
+        9384
+    ],
+    "exits": {
+        "southbound": {
+            "direction": 6,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Braintree"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -24
+            ],
+            "text": "Braintree",
+            "font": "Arial 10",
+            "anchor": "s"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 80,
+        "options": []
+    },
+    "shop": false
+}

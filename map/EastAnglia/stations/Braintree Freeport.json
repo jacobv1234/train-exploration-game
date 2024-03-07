@@ -1,0 +1,41 @@
+{
+    "name": "Braintree Freeport",
+    "position": [
+        944,
+        9616
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 14,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Braintree"
+        },
+        "southbound": {
+            "direction": 6,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Braintree"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                16,
+                -16
+            ],
+            "text": "Braintree Freeport",
+            "font": "Arial 10",
+            "anchor": "sw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 70,
+        "options": []
+    },
+    "shop": false
+}
