@@ -101,6 +101,38 @@
                     "EastAnglia/CTown"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Braintree",
+                "line": [
+                    "EastAnglia/Braintree"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Braintree Freeport",
+                "line": [
+                    "EastAnglia/Braintree"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Cressing",
+                "line": [
+                    "EastAnglia/Braintree"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/White Notley",
+                "line": [
+                    "EastAnglia/Braintree"
+                ],
+                "reward": 1
             }
         ]
     },

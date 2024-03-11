@@ -113,6 +113,38 @@
                     "EastAnglia/Ipswich-S"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Braintree",
+                "line": [
+                    "EastAnglia/Braintree"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Braintree Freeport",
+                "line": [
+                    "EastAnglia/Braintree"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Cressing",
+                "line": [
+                    "EastAnglia/Braintree"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/White Notley",
+                "line": [
+                    "EastAnglia/Braintree"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -132,6 +164,21 @@
                 "EastAnglia/Colchester-S"
             ],
             "unique_name": "EastAnglia/Shenfield/To Colchester"
+        },
+        "To Braintree": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Braintree"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Shenfield-N",
+                "EastAnglia/Chelmsford",
+                "EastAnglia/Braintree"
+            ],
+            "unique_name": "EastAnglia/Shenfield/To Braintree"
         }
     }
 }

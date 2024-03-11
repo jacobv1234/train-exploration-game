@@ -35,7 +35,73 @@
     ],
     "passengers": {
         "chance_of_any": 65,
-        "options": []
+        "options": [
+            {
+                "chance": 2,
+                "station": "EastAnglia/Braintree",
+                "line": [
+                    "EastAnglia/Braintree"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Braintree Freeport",
+                "line": [
+                    "EastAnglia/Braintree"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/White Notley",
+                "line": [
+                    "EastAnglia/Braintree"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Witham",
+                "line": [
+                    "EastAnglia/Chelmsford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Hatfield Peverel",
+                "line": [
+                    "EastAnglia/Chelmsford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Chelmsford",
+                "line": [
+                    "EastAnglia/Chelmsford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Ingatestone",
+                "line": [
+                    "EastAnglia/Chelmsford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Shenfield",
+                "line": [
+                    "EastAnglia/Shenfield-N",
+                    "EastAnglia/Romford"
+                ],
+                "reward": 1
+            }
+        ]
     },
     "shop": false
 }
