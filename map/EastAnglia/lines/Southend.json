@@ -1,0 +1,62 @@
+{
+    "colour": "grey",
+    "segments": [
+        [
+            2256,
+            11560,
+            2608,
+            11736
+        ],
+        [
+            2608,
+            11736,
+            3264,
+            12392
+        ],
+        [
+            3264,
+            12392,
+            3696,
+            13256
+        ]
+    ],
+    "corners": [
+        [
+            2256,
+            11560,
+            5,
+            13,
+            "Wickford"
+        ],
+        [
+            2608,
+            11736,
+            6,
+            13
+        ],
+        [
+            3264,
+            12392,
+            7,
+            14
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [
+        [
+            3696,
+            13256,
+            15
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Southend Victoria",
+        "Rayleigh",
+        "Hockley",
+        "Rochford",
+        "Southend Airport",
+        "Prittlewell"
+    ]
+}

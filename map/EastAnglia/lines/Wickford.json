@@ -1,0 +1,121 @@
+{
+    "colour": "grey",
+    "segments": [
+        [
+            360,
+            11480,
+            488,
+            11416
+        ],
+        [
+            488,
+            11416,
+            1968,
+            11416
+        ],
+        [
+            1968,
+            11416,
+            2256,
+            11560
+        ]
+    ],
+    "corners": [
+        [
+            360,
+            11480,
+            3,
+            10,
+            "Shenfield-N"
+        ],
+        [
+            488,
+            11416,
+            4,
+            11
+        ],
+        [
+            1968,
+            11416,
+            12,
+            5
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Southminster"
+                ],
+                "not": [
+                    "EastAnglia/Southend"
+                ]
+            },
+            "corner": [
+                2256,
+                11560,
+                13,
+                4,
+                "Southminster"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Southend"
+                ],
+                "not": [
+                    "EastAnglia/Southminster"
+                ]
+            },
+            "corner": [
+                2256,
+                11560,
+                5,
+                13,
+                "Southend"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Southend",
+                    "EastAnglia/Southminster"
+                ],
+                "not": []
+            },
+            "coords": [
+                2256,
+                11560
+            ],
+            "approach": {
+                "coords": [
+                    2000,
+                    11432
+                ],
+                "direction": 5,
+                "options": [
+                    "left",
+                    "straight"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Southminster",
+                "direction": 4
+            },
+            "straight": {
+                "line": "Southend",
+                "direction": 5
+            }
+        }
+    ],
+    "stations": [
+        "Billericay",
+        "Wickford"
+    ]
+}

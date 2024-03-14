@@ -1,0 +1,41 @@
+{
+    "name": "Prittlewell",
+    "position": [
+        3560,
+        12984
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 15,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Southend"
+        },
+        "southbound": {
+            "direction": 7,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Southend"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                16,
+                -16
+            ],
+            "text": "Prittlewell",
+            "font": "Arial 10",
+            "anchor": "sw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 50,
+        "options": []
+    },
+    "shop": false
+}

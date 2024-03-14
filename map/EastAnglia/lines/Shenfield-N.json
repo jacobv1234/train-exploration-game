@@ -26,6 +26,23 @@
                 10,
                 "Chelmsford"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Wickford"
+                ],
+                "not": [
+                    "EastAnglia/Chelmsford"
+                ]
+            },
+            "corner": [
+                360,
+                11480,
+                3,
+                10,
+                "Wickford"
+            ]
         }
     ],
     "stops": [],
@@ -46,7 +63,41 @@
             ]
         }
     ],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Wickford",
+                    "EastAnglia/Chelmsford"
+                ],
+                "not": []
+            },
+            "coords": [
+                360,
+                11480
+            ],
+            "approach": {
+                "coords": [
+                    176,
+                    11664
+                ],
+                "direction": 2,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Chelmsford",
+                "direction": 2
+            },
+            "right": {
+                "line": "Wickford",
+                "direction": 3
+            }
+        }
+    ],
     "stations": [
         "Shenfield"
     ]

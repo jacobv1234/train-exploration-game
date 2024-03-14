@@ -1,0 +1,41 @@
+{
+    "name": "Rochford",
+    "position": [
+        3264,
+        12392
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 14,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Southend"
+        },
+        "southbound": {
+            "direction": 7,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Southend"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                16,
+                -16
+            ],
+            "text": "Rochford",
+            "font": "Arial 10",
+            "anchor": "sw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 60,
+        "options": []
+    },
+    "shop": false
+}
