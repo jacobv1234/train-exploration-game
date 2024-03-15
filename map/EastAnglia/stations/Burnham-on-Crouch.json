@@ -1,86 +1,78 @@
 {
-    "name": "Southend Airport",
+    "name": "Burnham-on-Crouch",
     "position": [
-        3432,
-        12728
+        4120,
+        10872
     ],
     "exits": {
-        "northbound": {
-            "direction": 15,
+        "eastbound": {
+            "direction": 3,
             "requirements": {
                 "unlocked": [],
                 "not": []
             },
-            "line": "Southend"
+            "line": "Southminster"
         },
-        "southbound": {
-            "direction": 7,
+        "westbound": {
+            "direction": 11,
             "requirements": {
                 "unlocked": [],
                 "not": []
             },
-            "line": "Southend"
+            "line": "Southminster"
         }
     },
     "map_text": [
         {
             "offset": [
-                16,
+                -16,
                 -16
             ],
-            "text": "Southend Airport",
+            "text": "Burnham-on-Crouch",
             "font": "Arial 10",
-            "anchor": "sw"
-        },
-        {
-            "offset": [
-                128,
-                -24
-            ],
-            "badge": "airport",
-            "anchor": "center"
+            "anchor": "se"
         }
     ],
     "passengers": {
-        "chance_of_any": 80,
+        "chance_of_any": 65,
         "options": [
             {
-                "chance": 3,
-                "station": "EastAnglia/Southend Victoria",
+                "chance": 2,
+                "station": "EastAnglia/Southminster",
                 "line": [
-                    "EastAnglia/Southend"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "EastAnglia/Prittlewell",
-                "line": [
-                    "EastAnglia/Southend"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "EastAnglia/Rochford",
-                "line": [
-                    "EastAnglia/Southend"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "EastAnglia/Hockley",
-                "line": [
-                    "EastAnglia/Southend"
+                    "EastAnglia/Southminster"
                 ],
                 "reward": 1
             },
             {
                 "chance": 2,
-                "station": "EastAnglia/Rayleigh",
+                "station": "EastAnglia/Althorne",
                 "line": [
-                    "EastAnglia/Southend"
+                    "EastAnglia/Southminster"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/North Fambridge",
+                "line": [
+                    "EastAnglia/Southminster"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/South Woodham Ferrers",
+                "line": [
+                    "EastAnglia/Southminster"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Battlesbridge",
+                "line": [
+                    "EastAnglia/Southminster"
                 ],
                 "reward": 1
             },

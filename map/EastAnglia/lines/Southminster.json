@@ -39,5 +39,12 @@
     ],
     "conditional_stops": [],
     "junctions": [],
-    "stations": []
+    "stations": [
+        "Southminster",
+        "Battlesbridge",
+        "South Woodham Ferrers",
+        "Althorne",
+        "North Fambridge",
+        "Burnham-on-Crouch"
+    ]
 }

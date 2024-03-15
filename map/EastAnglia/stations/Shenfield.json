@@ -145,6 +145,118 @@
                     "EastAnglia/Braintree"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Southend Victoria",
+                "line": [
+                    "EastAnglia/Southend"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Prittlewell",
+                "line": [
+                    "EastAnglia/Southend"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Southend Airport",
+                "line": [
+                    "EastAnglia/Southend"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Rochford",
+                "line": [
+                    "EastAnglia/Southend"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Hockley",
+                "line": [
+                    "EastAnglia/Southend"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Rayleigh",
+                "line": [
+                    "EastAnglia/Southend"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Southminster",
+                "line": [
+                    "EastAnglia/Southminster"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Burnham-on-Crouch",
+                "line": [
+                    "EastAnglia/Southminster"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Althorne",
+                "line": [
+                    "EastAnglia/Southminster"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/North Fambridge",
+                "line": [
+                    "EastAnglia/Southminster"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/South Woodham Ferrers",
+                "line": [
+                    "EastAnglia/Southminster"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Battlesbridge",
+                "line": [
+                    "EastAnglia/Southminster"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Wickford",
+                "line": [
+                    "EastAnglia/Wickford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Billericay",
+                "line": [
+                    "EastAnglia/Wickford"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -179,6 +291,38 @@
                 "EastAnglia/Braintree"
             ],
             "unique_name": "EastAnglia/Shenfield/To Braintree"
+        },
+        "To Southend": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Southend"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Southend-N",
+                "EastAnglia/Wickford",
+                "EastAnglia/Southend"
+            ],
+            "unique_name": "EastAnglia/Shenfield/To Southend"
+        },
+        "To Southminster": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Billericay"
+                ],
+                "not": [
+                    "EastAnglia/Southminster"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Shenfield-N",
+                "EastAnglia/Wickford",
+                "EastAnglia/Southminster"
+            ],
+            "unique_name": "EastAnglia/Shenfield/To Southminster"
         }
     }
 }

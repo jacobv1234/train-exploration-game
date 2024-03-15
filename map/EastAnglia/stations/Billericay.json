@@ -35,7 +35,121 @@
     ],
     "passengers": {
         "chance_of_any": 75,
-        "options": []
+        "options": [
+            {
+                "chance": 3,
+                "station": "EastAnglia/Southend Victoria",
+                "line": [
+                    "EastAnglia/Southend"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Prittlewell",
+                "line": [
+                    "EastAnglia/Southend"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Southend Airport",
+                "line": [
+                    "EastAnglia/Southend"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Rochford",
+                "line": [
+                    "EastAnglia/Southend"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Hockley",
+                "line": [
+                    "EastAnglia/Southend"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Rayleigh",
+                "line": [
+                    "EastAnglia/Southend"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Southminster",
+                "line": [
+                    "EastAnglia/Southminster"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Burnham-on-Crouch",
+                "line": [
+                    "EastAnglia/Southminster"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Althorne",
+                "line": [
+                    "EastAnglia/Southminster"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/North Fambridge",
+                "line": [
+                    "EastAnglia/Southminster"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/South Woodham Ferrers",
+                "line": [
+                    "EastAnglia/Southminster"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Battlesbridge",
+                "line": [
+                    "EastAnglia/Southminster"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Wickford",
+                "line": [
+                    "EastAnglia/Wickford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Shenfield",
+                "line": [
+                    "EastAnglia/Shenfield-N",
+                    "EastAnglia/Romford"
+                ],
+                "reward": 1
+            }
+        ]
     },
     "shop": false
 }
