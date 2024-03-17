@@ -1,0 +1,69 @@
+{
+    "colour": "grey",
+    "segments": [
+        [
+            144,
+            11696,
+            -720,
+            12560
+        ],
+        [
+            -720,
+            12560,
+            -2480,
+            13440
+        ]
+    ],
+    "corners": [
+        [
+            -720,
+            12560,
+            2,
+            11
+        ],
+        [
+            -2480,
+            13440,
+            3,
+            11,
+            "Stratford-E"
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Shenfield-N"
+                ],
+                "not": []
+            },
+            "corner": [
+                144,
+                11696,
+                10,
+                2,
+                "Shenfield-N"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Shenfield-N"
+                ]
+            },
+            "stop": [
+                144,
+                11696,
+                10
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "Shenfield"
+    ]
+}

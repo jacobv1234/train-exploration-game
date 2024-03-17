@@ -43,6 +43,21 @@
                 10,
                 "Wickford"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Romford"
+                ],
+                "not": []
+            },
+            "corner": [
+                144,
+                11696,
+                2,
+                10,
+                "Romford"
+            ]
         }
     ],
     "stops": [],

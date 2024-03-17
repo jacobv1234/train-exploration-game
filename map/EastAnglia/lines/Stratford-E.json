@@ -1,0 +1,35 @@
+{
+    "colour": "grey",
+    "segments": [
+        [
+            -2480,
+            13440,
+            -2912,
+            13656
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Romford"
+                ],
+                "not": [
+                    "EastAnglia/Barking-W"
+                ]
+            },
+            "corner": [
+                -2480,
+                13440,
+                3,
+                11,
+                "Romford"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": []
+}

@@ -1,0 +1,50 @@
+{
+    "colour": "grey",
+    "segments": [
+        [
+            -2912,
+            13656,
+            -3680,
+            14040
+        ]
+    ],
+    "corners": [
+        [
+            -2912,
+            13656,
+            3,
+            11,
+            "Stratford"
+        ],
+        [
+            -3680,
+            14040,
+            3,
+            11,
+            "Liverpool St"
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Stratford-E"
+                ],
+                "not": [
+                    "EastAnglia/Lea Bridge"
+                ]
+            },
+            "corner": [
+                -2912,
+                13656,
+                3,
+                11,
+                "Stratford-E"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": []
+}
