@@ -1,0 +1,25 @@
+{
+    "colour": "grey",
+    "segments": [
+        [
+            -1312,
+            9056,
+            -1648,
+            9224
+        ]
+    ],
+    "corners": [
+        [
+            -1312,
+            9056,
+            4,
+            11,
+            "Stansted"
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": []
+}

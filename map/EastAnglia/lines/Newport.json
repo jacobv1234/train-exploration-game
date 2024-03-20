@@ -34,11 +34,62 @@
                 7,
                 "Stansted-N"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Stansted-Bypass"
+                ],
+                "not": [
+                    "EastAnglia/Stansted-N"
+                ]
+            },
+            "corner": [
+                -1488,
+                8888,
+                0,
+                8,
+                "Stansted-Bypass"
+            ]
         }
     ],
     "stops": [],
     "conditional_stops": [],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Stansted-N",
+                    "EastAnglia/Stansted-Bypass"
+                ],
+                "not": []
+            },
+            "coords": [
+                -1488,
+                8888
+            ],
+            "approach": {
+                "coords": [
+                    -1488,
+                    8680
+                ],
+                "direction": 8,
+                "options": [
+                    "left",
+                    "straight"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Stansted-N",
+                "direction": 7
+            },
+            "straight": {
+                "line": "Stansted-Bypass",
+                "direction": 8
+            }
+        }
+    ],
     "stations": [
         "Shelford",
         "Elsenham",

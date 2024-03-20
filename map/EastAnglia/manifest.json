@@ -59,7 +59,9 @@
         "Romford",
         "Stratford-E",
         "Stratford",
-        "Liverpool St"
+        "Liverpool St",
+        "Stansted-S",
+        "Stansted-Bypass"
     ],
     "start": [
         1120,

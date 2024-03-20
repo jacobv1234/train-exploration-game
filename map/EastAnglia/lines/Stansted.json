@@ -26,6 +26,23 @@
                 4,
                 "Stansted-N"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Stansted-S"
+                ],
+                "not": [
+                    "EastAnglia/Stansted-N"
+                ]
+            },
+            "corner": [
+                -1312,
+                9056,
+                4,
+                11,
+                "Stansted-S"
+            ]
         }
     ],
     "stops": [
@@ -36,7 +53,41 @@
         ]
     ],
     "conditional_stops": [],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Stansted-N",
+                    "EastAnglia/Stansted-S"
+                ],
+                "not": []
+            },
+            "coords": [
+                -1312,
+                9056
+            ],
+            "approach": {
+                "coords": [
+                    -1048,
+                    9056
+                ],
+                "direction": 12,
+                "options": [
+                    "left",
+                    "right"
+                ],
+                "default": 0
+            },
+            "left": {
+                "line": "Stansted-S",
+                "direction": 11
+            },
+            "right": {
+                "line": "Stansted-N",
+                "direction": 13
+            }
+        }
+    ],
     "stations": [
         "Stansted Airport"
     ]
