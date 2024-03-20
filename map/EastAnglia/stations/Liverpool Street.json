@@ -1,0 +1,190 @@
+{
+    "name": "Liverpool Street",
+    "position": [
+        -3984,
+        14504
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Liverpool St"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                24
+            ],
+            "text": "Liverpool Street",
+            "font": "Arial 10",
+            "anchor": "n"
+        },
+        {
+            "offset": [
+                0,
+                56
+            ],
+            "badge": "TFL",
+            "anchor": "center"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 98,
+        "options": [
+            {
+                "chance": 2,
+                "station": "EastAnglia/Romford",
+                "line": [
+                    "EastAnglia/Romford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Stratford",
+                "line": [
+                    "EastAnglia/Stratford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Stansted Airport",
+                "line": [
+                    "EastAnglia/Stansted"
+                ],
+                "reward": 2
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Southend Victoria",
+                "line": [
+                    "EastAnglia/Southend"
+                ],
+                "reward": 2
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Southend Airport",
+                "line": [
+                    "EastAnglia/Southend"
+                ],
+                "reward": 2
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Southminster",
+                "line": [
+                    "EastAnglia/Southminster"
+                ],
+                "reward": 2
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Chelmsford",
+                "line": [
+                    "EastAnglia/Chelmsford"
+                ],
+                "reward": 2
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Braintree",
+                "line": [
+                    "EastAnglia/Braintree"
+                ],
+                "reward": 2
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Colchester",
+                "line": [
+                    "EastAnglia/Colchester-N",
+                    "EastAnglia/Colchester-S"
+                ],
+                "reward": 2
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Clacton-on-Sea",
+                "line": [
+                    "EastAnglia/Clacton"
+                ],
+                "reward": 2
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Walton-on-the-Naze",
+                "line": [
+                    "EastAnglia/Walton"
+                ],
+                "reward": 2
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Harwich Town",
+                "line": [
+                    "EastAnglia/Harwich"
+                ],
+                "reward": 2
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Ipswich",
+                "line": [
+                    "EastAnglia/Ipswich-N",
+                    "EastAnglia/Ipswich-S"
+                ],
+                "reward": 2
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Norwich",
+                "line": [
+                    "EastAnglia/Norwich"
+                ],
+                "reward": 2
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Cambridge",
+                "line": [
+                    "EastAnglia/Cambridge-N",
+                    "EastAnglia/Cambridge-S"
+                ],
+                "reward": 2
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Ely",
+                "line": [
+                    "EastAnglia/Ely"
+                ],
+                "reward": 2
+            }
+        ]
+    },
+    "shop": {
+        "To Shenfield": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Romford"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Liverpool St",
+                "EastAnglia/Stratford",
+                "EastAnglia/Stratford-E",
+                "EastAnglia/Romford"
+            ],
+            "unique_name": "EastAnglia/Liverpool Street/To Shenfield"
+        }
+    }
+}

@@ -241,6 +241,14 @@
                     "EastAnglia/Stansted"
                 ],
                 "reward": 2
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Liverpool Street",
+                "line": [
+                    "EastAnglia/Liverpool St"
+                ],
+                "reward": 2
             }
         ]
     },

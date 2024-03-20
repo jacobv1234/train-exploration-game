@@ -74,5 +74,7 @@
     ],
     "conditional_stops": [],
     "junctions": [],
-    "stations": []
+    "stations": [
+        "Liverpool Street"
+    ]
 }

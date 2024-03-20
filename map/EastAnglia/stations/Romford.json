@@ -1,0 +1,67 @@
+{
+    "name": "Romford",
+    "position": [
+        -720,
+        12560
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Romford"
+        },
+        "westbound": {
+            "direction": 11,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Romford"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                16,
+                16
+            ],
+            "text": "Romford",
+            "font": "Arial 10",
+            "anchor": "nw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 70,
+        "options": [
+            {
+                "chance": 2,
+                "station": "EastAnglia/Stratford",
+                "line": [
+                    "EastAnglia/Stratford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Liverpool Street",
+                "line": [
+                    "EastAnglia/Liverpool St"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Shenfield",
+                "line": [
+                    "EastAnglia/Shenfield-N",
+                    "EastAnglia/Romford"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

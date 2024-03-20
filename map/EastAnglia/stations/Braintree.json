@@ -92,6 +92,14 @@
                     "EastAnglia/Romford"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Liverpool Street",
+                "line": [
+                    "EastAnglia/Liverpool St"
+                ],
+                "reward": 2
             }
         ]
     },

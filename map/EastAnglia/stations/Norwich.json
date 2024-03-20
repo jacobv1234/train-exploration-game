@@ -272,6 +272,14 @@
                     "EastAnglia/Manningtree"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Liverpool Street",
+                "line": [
+                    "EastAnglia/Liverpool St"
+                ],
+                "reward": 2
             }
         ]
     },
@@ -327,7 +335,9 @@
             "cost": 3,
             "requirements": {
                 "unlocked": [],
-                "not": ["EastAnglia/Diss"]
+                "not": [
+                    "EastAnglia/Diss"
+                ]
             },
             "unlock": [
                 "EastAnglia/NorwichSouth",
@@ -341,7 +351,9 @@
             "cost": 2,
             "requirements": {
                 "unlocked": [],
-                "not": ["EastAnglia/Norwich-Ely"]
+                "not": [
+                    "EastAnglia/Norwich-Ely"
+                ]
             },
             "unlock": [
                 "EastAnglia/NorwichSouth",

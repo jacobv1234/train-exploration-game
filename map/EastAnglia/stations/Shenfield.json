@@ -257,6 +257,22 @@
                     "EastAnglia/Wickford"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Romford",
+                "line": [
+                    "EastAnglia/Romford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Stratford",
+                "line": [
+                    "EastAnglia/Stratford"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -323,6 +339,22 @@
                 "EastAnglia/Southminster"
             ],
             "unique_name": "EastAnglia/Shenfield/To Southminster"
+        },
+        "To Liverpool Street": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Romford"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Romford",
+                "EastAnglia/Stratford-E",
+                "EastAnglia/Stratford",
+                "EastAnglia/Liverpool St"
+            ],
+            "unique_name": "EastAnglia/Shenfield/To Liverpool Street"
         }
     }
 }

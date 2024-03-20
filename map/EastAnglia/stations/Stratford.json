@@ -1,0 +1,67 @@
+{
+    "name": "Stratford",
+    "position": [
+        -3264,
+        13832
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 3,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Stratford"
+        },
+        "westbound": {
+            "direction": 11,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Stratford"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                8,
+                16
+            ],
+            "text": "Stratford",
+            "font": "Arial 10",
+            "anchor": "nw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 85,
+        "options": [
+            {
+                "chance": 2,
+                "station": "EastAnglia/Romford",
+                "line": [
+                    "EastAnglia/Romford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Shenfield",
+                "line": [
+                    "EastAnglia/Shenfield-N",
+                    "EastAnglia/Romford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Liverpool Street",
+                "line": [
+                    "EastAnglia/Liverpool St"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}
