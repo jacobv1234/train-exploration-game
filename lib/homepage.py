@@ -37,7 +37,7 @@ class Homepage:
 
     
     def save_selection(self, map_manifest, width, height):
-        self.c.delete(self.name, self.newgame, self.cont_text, self.cursor, self.author, self.howtoplay)
+        self.c.delete(self.logo, self.newgame, self.cont_text, self.cursor, self.howtoplay)
 
         names = list(map_manifest['Saves'].keys())
 
@@ -75,9 +75,11 @@ class Homepage:
             self.background = ImageTk.PhotoImage(im)
         self.c.create_image(0,0,image=self.background,anchor='nw')
 
-        # menu
-        self.name = self.c.create_text(width/2, height/3, fill='black', font='Arial 30', text='Untitled Train Game', anchor='center')
-        self.author = self.c.create_text(width/2, (height/3)+30, fill='black', font='Arial 10', text='By Jacob Vincent', anchor='center')
+        # logo
+        with Image.open('logo.png') as im:
+            im = im.resize([672,250])
+            self.logo_img = ImageTk.PhotoImage(im)
+        self.logo = self.c.create_image(width/2,height/2 - 100,image=self.logo_img,anchor='center')
 
         self.newgame = self.c.create_text((width/2)-15, (2*height/3)-15, fill='black', font='Arial 20', text='New Game', anchor='w')
         self.cont_text = self.c.create_text((width/2)-15, (2*height/3)+10, fill='black', font='Arial 20', text='Continue', anchor='w')
@@ -97,7 +99,7 @@ class Homepage:
 
     
     def go_to_how_to_play(self):
-        self.c.delete(self.name, self.newgame, self.cont_text, self.cursor, self.author, self.howtoplay)
+        self.c.delete(self.logo, self.newgame, self.cont_text, self.cursor, self.howtoplay)
 
         self.c.create_text(self.width/2, 10, fill='black', font='Arial 25', text='How to Play',anchor='n')
 
