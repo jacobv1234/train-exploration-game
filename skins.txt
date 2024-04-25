@@ -1,3 +1,10 @@
-yellow
-purple
-red
+Classic - Yellow
+Classic - Red
+Classic - Purple
+Classic - Green
+Classic - White
+TFL - Standard
+TFL - Overground
+TFL - DLR
+TFL - Elizabeth
+TFL - Tramlink

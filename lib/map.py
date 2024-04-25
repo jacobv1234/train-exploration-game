@@ -24,9 +24,6 @@ class Map():
                 created_stations = line_object.created_stations[:]
                 line_object.clear_created_stations()
                 self.lines[line_object.name] = line_object
-        
-        self.start = manifest['start']
-        self.start_line = manifest['start_line']
 
         self.lz = manifest['loadingzones']
 

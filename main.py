@@ -52,7 +52,7 @@ window.state('zoomed')
 map_manifest = get_map_manifest()
 
 
-skin = 'yellow'
+skin = 'Classic - Yellow'
 
 # homepage
 save_path = 'savedata'
@@ -99,6 +99,7 @@ while game_running:
 skin_selector.remove()
 del skin_selector
 
+# within if to avoid crash when closed
 if game_running:
     c = Canvas(window, width = screen_width, height = screen_height, bg = 'lightblue', xscrollincrement=1, yscrollincrement=1)
     c.place(x=4,y=0)
