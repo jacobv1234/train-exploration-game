@@ -1,0 +1,41 @@
+{
+    "name": "Hackney Downs",
+    "position": [
+        -3608,
+        13592
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Hackney"
+        },
+        "southbound": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Hackney"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -24,
+                0
+            ],
+            "text": "Hackney Downs",
+            "font": "Arial 10",
+            "anchor": "e"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 70,
+        "options": []
+    },
+    "shop": false
+}

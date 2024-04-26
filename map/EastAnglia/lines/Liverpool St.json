@@ -63,6 +63,23 @@
                 11,
                 "Stratford"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Hackney"
+                ],
+                "not": [
+                    "EastAnglia/Stratford"
+                ]
+            },
+            "corner": [
+                -3680,
+                14040,
+                1,
+                11,
+                "Hackney"
+            ]
         }
     ],
     "stops": [
@@ -73,7 +90,41 @@
         ]
     ],
     "conditional_stops": [],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Stratford",
+                    "EastAnglia/Hackney"
+                ],
+                "not": []
+            },
+            "coords": [
+                -3680,
+                14040
+            ],
+            "approach": {
+                "coords": [
+                    -3952,
+                    14280
+                ],
+                "direction": 1,
+                "options": [
+                    "left",
+                    "straight"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Hackney",
+                "direction": 1
+            },
+            "straight": {
+                "line": "Stratford",
+                "direction": 3
+            }
+        }
+    ],
     "stations": [
         "Liverpool Street"
     ]

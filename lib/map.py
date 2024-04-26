@@ -1,5 +1,6 @@
 from json import loads
 from lib.line import Line
+from lib.decoline import DecoLine
 from tkinter import *
 
 class Map():
@@ -20,9 +21,16 @@ class Map():
         self.lines = {}
         for line in manifest['lines']:
             if f'{name}/{line}' in unlocked_lines:
-                line_object = Line(name, line, canvas, unlocked_lines, created_stations,folder)
-                created_stations = line_object.created_stations[:]
-                line_object.clear_created_stations()
+                # cosmetic line split
+                if line[0] != '_':
+                    line_object = Line(name, line, canvas, unlocked_lines, created_stations, folder)
+                    created_stations = line_object.created_stations[:]
+                    line_object.clear_created_stations()
+                else:
+                    line_object = DecoLine(name, line, canvas, unlocked_lines, folder)
+                    if line_object.name == 0:
+                        continue
+
                 self.lines[line_object.name] = line_object
 
         self.lz = manifest['loadingzones']

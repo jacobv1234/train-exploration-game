@@ -1,0 +1,39 @@
+{
+    "colour": "grey",
+    "segments": [
+        [
+            -3608,
+            13304,
+            -3584,
+            13256
+        ],
+        [
+            -3584,
+            13256,
+            -3280,
+            12952
+        ]
+    ],
+    "corners": [
+        [
+            -3608,
+            13304,
+            1,
+            8,
+            "Hackney"
+        ],
+        [
+            -3584,
+            13256,
+            2,
+            9
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Clapton"
+    ]
+}

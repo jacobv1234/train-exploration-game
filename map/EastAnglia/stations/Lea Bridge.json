@@ -1,0 +1,41 @@
+{
+    "name": "Lea Bridge",
+    "position": [
+        -2960,
+        13272
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 14,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Lea Bridge"
+        },
+        "southbound": {
+            "direction": 6,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Lea Bridge"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                16,
+                -16
+            ],
+            "text": "Lea Bridge",
+            "font": "Arial 10",
+            "anchor": "sw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 60,
+        "options": []
+    },
+    "shop": false
+}

@@ -61,7 +61,10 @@
         "Stratford",
         "Liverpool St",
         "Stansted-S",
-        "Stansted-Bypass"
+        "Stansted-Bypass",
+        "Hackney",
+        "Clapton",
+        "Lea Bridge"
     ],
     "loadingzones": [],
     "display_name": "East Anglia",

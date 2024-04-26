@@ -1,0 +1,57 @@
+{
+    "colour": "grey",
+    "segments": [
+        [
+            -3680,
+            14040,
+            -3608,
+            13896
+        ],
+        [
+            -3608,
+            13896,
+            -3608,
+            13304
+        ]
+    ],
+    "corners": [
+        [
+            -3680,
+            14040,
+            1,
+            11,
+            "Liverpool St"
+        ],
+        [
+            -3608,
+            13896,
+            0,
+            9
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Clapton"
+                ],
+                "not": [
+                    "EastAnglia/Seven Sisters"
+                ]
+            },
+            "corner": [
+                -3608,
+                13304,
+                1,
+                8,
+                "Clapton"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Hackney Downs"
+    ]
+}
