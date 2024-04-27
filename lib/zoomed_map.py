@@ -43,6 +43,9 @@ class ZoomedMap:
         self.screen_top = (train_y // 8) - (height//2)
         self.screen_bottom = (train_y // 8) + (height//2)
 
+        # scroll to be within limits
+        self.scroll_into_bounds()
+
     
     def scroll_left(self,event):
         if self.screen_left > self.limits['left']:
@@ -88,3 +91,33 @@ class ZoomedMap:
                 break
             else:
                 self.c.itemconfig(self.station_name_popup, text='')
+    
+    def scroll_into_bounds(self):
+        if self.screen_left < self.limits['left']:
+            difference = self.limits['left'] - self.screen_left 
+            self.c.xview_scroll(difference, 'units')
+            self.c.move(self.station_name_popup,difference,0)
+            self.screen_left += difference
+            self.screen_right += difference
+
+        elif self.screen_right > self.limits['right']:
+            difference = self.limits['right'] - self.screen_right
+            self.c.xview_scroll(difference, 'units')
+            self.c.move(self.station_name_popup,difference,0)
+            self.screen_left += difference
+            self.screen_right += difference
+        
+
+        if self.screen_bottom > self.limits['bottom']:
+            difference = self.limits['bottom'] - self.screen_bottom
+            self.c.yview_scroll(difference,'units')
+            self.c.move(self.station_name_popup,0,difference)
+            self.screen_top += difference
+            self.screen_bottom += difference
+
+        elif self.screen_top < self.limits['top']:
+            difference = self.limits['top'] - self.screen_top
+            self.c.yview_scroll(difference,'units')
+            self.c.move(self.station_name_popup,0,difference)
+            self.screen_top += difference
+            self.screen_bottom += difference
