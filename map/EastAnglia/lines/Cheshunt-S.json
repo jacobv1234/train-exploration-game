@@ -1,0 +1,51 @@
+{
+    "colour": "grey",
+    "segments": [
+        [
+            -3280,
+            10616,
+            -3280,
+            10424
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Tottenham"
+                ],
+                "not": [
+                    "EastAnglia/Seven Sisters"
+                ]
+            },
+            "corner": [
+                -3280,
+                10616,
+                0,
+                8,
+                "Tottenham"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Cheshunt-S"
+                ],
+                "not": [
+                    "EastAnglia/Cheshunt-N"
+                ]
+            },
+            "stop": [
+                -3280,
+                10424,
+                8
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": []
+}

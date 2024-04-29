@@ -64,7 +64,9 @@
         "Stansted-Bypass",
         "Hackney",
         "Clapton",
-        "Lea Bridge"
+        "Lea Bridge",
+        "Tottenham",
+        "Cheshunt-S"
     ],
     "loadingzones": [],
     "display_name": "East Anglia",

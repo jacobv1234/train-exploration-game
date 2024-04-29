@@ -79,7 +79,7 @@
         }]
     },
     "shop": {
-        "Berney Arms": {
+        "Norwich via Berney Arms": {
             "cost": 1,
             "requirements": {
                 "unlocked": [

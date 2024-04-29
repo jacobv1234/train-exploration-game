@@ -1,0 +1,60 @@
+{
+    "colour": "grey",
+    "segments": [
+        [
+            -3280,
+            10616,
+            -3280,
+            12952
+        ]
+    ],
+    "corners": [
+        [
+            -3280,
+            10616,
+            0,
+            8,
+            "Cheshunt-S"
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Clapton"
+                ],
+                "not": [
+                    "EastAnglia/Lea Bridge"
+                ]
+            },
+            "corner": [
+                -3280,
+                12952,
+                0,
+                10,
+                "Clapton"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Lea Bridge"
+                ],
+                "not": [
+                    "EastAnglia/Clapton"
+                ]
+            },
+            "corner": [
+                -3280,
+                12952,
+                0,
+                6,
+                "Lea Bridge"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": []
+}
