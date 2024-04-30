@@ -35,7 +35,32 @@
     ],
     "passengers": {
         "chance_of_any": 60,
-        "options": []
+        "options": [
+            {
+                "chance": 2,
+                "station": "EastAnglia/Stratford",
+                "line": [
+                    "EastAnglia/Stratford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Tottenham Hale",
+                "line": [
+                    "EastAnglia/Tottenham"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Liverpool Street",
+                "line": [
+                    "EastAnglia/Liverpool St"
+                ],
+                "reward": 1
+            }
+        ]
     },
     "shop": false
 }

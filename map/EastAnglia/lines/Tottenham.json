@@ -55,6 +55,48 @@
     ],
     "stops": [],
     "conditional_stops": [],
-    "junctions": [],
-    "stations": []
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Clapton",
+                    "EastAnglia/Lea Bridge"
+                ],
+                "not": []
+            },
+            "coords": [
+                -3280,
+                12952
+            ],
+            "approach": {
+                "coords": [
+                    -3280,
+                    12800
+                ],
+                "direction": 8,
+                "options": [
+                    "left",
+                    "right"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Lea Bridge",
+                "direction": 6
+            },
+            "right": {
+                "line": "Clapton",
+                "direction": 10
+            }
+        }
+    ],
+    "stations": [
+        "Tottenham Hale",
+        "Ponders End",
+        "Northumberland Park",
+        "Meridian Water",
+        "Waltham Cross",
+        "Brimsdown",
+        "Enfield Lock"
+    ]
 }

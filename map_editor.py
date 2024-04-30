@@ -122,6 +122,7 @@ def create_object(event):
 5) Station settings
 6) WATER
 7) Screen scroll limits
+8) Add passengers to a group of stations (only with 1 point rewards)
 >>> ''')
     if int(add_to_existing_line) == 1:
         line = input('''
@@ -563,6 +564,59 @@ Control map text, passengers, and shop via the JSON.
         global border
         c1.delete(border)
         border = c1.create_rectangle(left,top,right,bottom, outline='red', fill='')
+    
+    elif int(add_to_existing_line) == 8:
+        stations = []
+        chances = []
+        lines = []
+        while True:
+            station = input('Station (mapname/name): ')
+            if station == '':
+                break
+            if '/' not in station:
+                station = map_name + '/' + station
+            stations.append(station)
+
+            chance = int(input('Relative chance of appearing: '))
+            chances.append(chance)
+
+            return_lines = []
+            while True:
+                line = input('This station is on line (mapname/line): ')
+                if line == '':
+                    break
+                if '/' not in line:
+                    line = map_name + '/' + line
+                return_lines.append(line)
+            lines.append(return_lines)
+
+        for start in range(len(stations)):
+            for dest in range(len(stations)):
+                if start == dest:
+                    continue
+                
+                passenger = {
+                    'chance': chances[dest],
+                    'station': stations[dest],
+                    'line': lines[dest],
+                    'reward': 1
+                }
+
+                path = stations[start].split('/')
+
+                try:
+                    with open(f'map/{path[0]}/stations/{path[1]}.json','r') as f:
+                        data = loads(f.read())
+                    data['passengers']['options'].append(passenger)
+                    with open(f'map/{path[0]}/stations/{path[1]}.json','w') as f:
+                        f.write(dumps(data, indent=4))
+                    print('Added.')
+                except FileNotFoundError:
+                    print('Station does not exist')
+                    continue
+        
+        print('Finished.')
+
 
     c.tag_raise(selected_spot)
     c1.tag_raise(small_selected)

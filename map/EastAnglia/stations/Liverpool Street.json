@@ -166,6 +166,87 @@
                     "EastAnglia/Ely"
                 ],
                 "reward": 2
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Hackney Downs",
+                "line": [
+                    "EastAnglia/Hackney"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Tottenham Hale",
+                "line": [
+                    "EastAnglia/Tottenham"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Northumberland Park",
+                "line": [
+                    "EastAnglia/Tottenham"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Meridian Water",
+                "line": [
+                    "EastAnglia/Tottenham"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Ponders End",
+                "line": [
+                    "EastAnglia/Tottenham"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Brimsdown",
+                "line": [
+                    "EastAnglia/Tottenham"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Enfield Lock",
+                "line": [
+                    "EastAnglia/Tottenham"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Waltham Cross",
+                "line": [
+                    "EastAnglia/Tottenham"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Cheshunt",
+                "line": [
+                    "EastAnglia/Cheshunt-S",
+                    "EastAnglia/Cheshunt-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Lea Bridge",
+                "line": [
+                    "EastAnglia/Lea Bridge"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -185,6 +266,40 @@
                 "EastAnglia/Romford"
             ],
             "unique_name": "EastAnglia/Liverpool Street/To Shenfield"
+        },
+        "To Cheshunt": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Clapton"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Liverpool St",
+                "EastAnglia/Hackney",
+                "EastAnglia/Clapton",
+                "EastAnglia/Tottenham",
+                "EastAnglia/Cheshunt-S"
+            ],
+            "unique_name": "EastAnglia/Liverpool Street/To Cheshunt"
+        },
+        "Cheshunt via Lea Bridge": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Tottenham"
+                ],
+                "not": [
+                    "EastAnglia/Lea Bridge"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Liverpool St",
+                "EastAnglia/Stratford",
+                "EastAnglia/Lea Bridge"
+            ],
+            "unique_name": "EastAnglia/Liverpool Street/Cheshunt via Lea Bridge"
         }
     }
 }

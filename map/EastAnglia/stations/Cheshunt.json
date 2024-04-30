@@ -1,46 +1,58 @@
 {
-    "name": "Hackney Downs",
+    "name": "Cheshunt",
     "position": [
-        -3608,
-        13592
+        -3280,
+        10424
     ],
     "exits": {
         "northbound": {
             "direction": 0,
             "requirements": {
-                "unlocked": [],
+                "unlocked": [
+                    "EastAnglia/Cheshunt-N"
+                ],
                 "not": []
             },
-            "line": "Hackney"
+            "line": "Cheshunt-N"
         },
         "southbound": {
             "direction": 8,
             "requirements": {
-                "unlocked": [],
+                "unlocked": [
+                    "EastAnglia/Cheshunt-S"
+                ],
                 "not": []
             },
-            "line": "Hackney"
+            "line": "Cheshunt-S"
         }
     },
     "map_text": [
         {
             "offset": [
-                -24,
+                24,
                 0
             ],
-            "text": "Hackney Downs",
+            "text": "Cheshunt",
             "font": "Arial 10",
-            "anchor": "e"
+            "anchor": "w"
         }
     ],
     "passengers": {
-        "chance_of_any": 70,
+        "chance_of_any": 80,
         "options": [
             {
                 "chance": 3,
                 "station": "EastAnglia/Liverpool Street",
                 "line": [
                     "EastAnglia/Liverpool St"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Hackney Downs",
+                "line": [
+                    "EastAnglia/Hackney"
                 ],
                 "reward": 1
             },
@@ -99,17 +111,26 @@
                     "EastAnglia/Tottenham"
                 ],
                 "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "EastAnglia/Cheshunt",
-                "line": [
-                    "EastAnglia/Cheshunt-S",
-                    "EastAnglia/Cheshunt-N"
-                ],
-                "reward": 1
             }
         ]
     },
-    "shop": false
+    "shop": {
+        "To Liverpool St": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Clapton"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Liverpool St",
+                "EastAnglia/Hackney",
+                "EastAnglia/Clapton",
+                "EastAnglia/Tottenham",
+                "EastAnglia/Cheshunt-S"
+            ],
+            "unique_name": "EastAnglia/Cheshunt/To Liverpool St"
+        }
+    }
 }

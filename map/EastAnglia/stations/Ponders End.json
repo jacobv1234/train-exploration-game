@@ -1,8 +1,8 @@
 {
-    "name": "Hackney Downs",
+    "name": "Ponders End",
     "position": [
-        -3608,
-        13592
+        -3280,
+        11808
     ],
     "exits": {
         "northbound": {
@@ -11,7 +11,7 @@
                 "unlocked": [],
                 "not": []
             },
-            "line": "Hackney"
+            "line": "Tottenham"
         },
         "southbound": {
             "direction": 8,
@@ -19,28 +19,45 @@
                 "unlocked": [],
                 "not": []
             },
-            "line": "Hackney"
+            "line": "Tottenham"
         }
     },
     "map_text": [
         {
             "offset": [
-                -24,
+                24,
                 0
             ],
-            "text": "Hackney Downs",
+            "text": "Ponders",
             "font": "Arial 10",
-            "anchor": "e"
+            "anchor": "sw"
+        },
+        {
+            "offset": [
+                24,
+                0
+            ],
+            "text": "End",
+            "font": "Arial 10",
+            "anchor": "nw"
         }
     ],
     "passengers": {
-        "chance_of_any": 70,
+        "chance_of_any": 60,
         "options": [
             {
                 "chance": 3,
                 "station": "EastAnglia/Liverpool Street",
                 "line": [
                     "EastAnglia/Liverpool St"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Hackney Downs",
+                "line": [
+                    "EastAnglia/Hackney"
                 ],
                 "reward": 1
             },
@@ -63,14 +80,6 @@
             {
                 "chance": 1,
                 "station": "EastAnglia/Meridian Water",
-                "line": [
-                    "EastAnglia/Tottenham"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "EastAnglia/Ponders End",
                 "line": [
                     "EastAnglia/Tottenham"
                 ],

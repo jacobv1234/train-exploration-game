@@ -40,7 +40,5 @@
     "stops": [],
     "conditional_stops": [],
     "junctions": [],
-    "stations": [
-        "Clapton"
-    ]
+    "stations": []
 }

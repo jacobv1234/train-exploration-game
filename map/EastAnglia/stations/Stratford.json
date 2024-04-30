@@ -60,6 +60,14 @@
                     "EastAnglia/Liverpool St"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Lea Bridge",
+                "line": [
+                    "EastAnglia/Lea Bridge"
+                ],
+                "reward": 1
             }
         ]
     },
