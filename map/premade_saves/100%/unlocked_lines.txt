@@ -53,3 +53,9 @@ EastAnglia/Romford
 EastAnglia/Stratford-E
 EastAnglia/Stratford
 EastAnglia/Liverpool St
+EastAnglia/Hackney
+EastAnglia/Clapton
+EastAnglia/Lea Bridge
+EastAnglia/Seven Sisters
+EastAnglia/Tottenham
+EastAnglia/Cheshunt-S
