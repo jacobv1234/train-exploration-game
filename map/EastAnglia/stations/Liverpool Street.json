@@ -247,6 +247,22 @@
                     "EastAnglia/Lea Bridge"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Edmonton Green",
+                "line": [
+                    "EastAnglia/Seven Sisters"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Seven Sisters",
+                "line": [
+                    "EastAnglia/Seven Sisters"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -300,6 +316,24 @@
                 "EastAnglia/Lea Bridge"
             ],
             "unique_name": "EastAnglia/Liverpool Street/Cheshunt via Lea Bridge"
+        },
+        "Cheshunt via Seven Sisters": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Hackney"
+                ],
+                "not": [
+                    "EastAnglia/Seven Sisters"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Liverpool St",
+                "EastAnglia/Hackney",
+                "EastAnglia/Seven Sisters",
+                "EastAnglia/Cheshunt-S"
+            ],
+            "unique_name": "EastAnglia/Liverpool Street/Cheshunt via Seven Sisters"
         }
     }
 }

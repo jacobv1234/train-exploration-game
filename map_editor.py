@@ -607,6 +607,9 @@ Control map text, passengers, and shop via the JSON.
                 try:
                     with open(f'map/{path[0]}/stations/{path[1]}.json','r') as f:
                         data = loads(f.read())
+                    if stations[dest] in [option['station'] for option in data['passengers']['options']]:
+                        print('Skipped over existing combination.')
+                        continue
                     data['passengers']['options'].append(passenger)
                     with open(f'map/{path[0]}/stations/{path[1]}.json','w') as f:
                         f.write(dumps(data, indent=4))

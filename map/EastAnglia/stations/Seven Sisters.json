@@ -1,0 +1,84 @@
+{
+    "name": "Seven Sisters",
+    "position": [
+        -3608,
+        12760
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Seven Sisters"
+        },
+        "southbound": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Seven Sisters"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                24,
+                0
+            ],
+            "text": "Seven",
+            "font": "Arial 10",
+            "anchor": "sw"
+        },
+        {
+            "offset": [
+                24,
+                0
+            ],
+            "text": "Sisters",
+            "font": "Arial 10",
+            "anchor": "nw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 55,
+        "options": [
+            {
+                "chance": 2,
+                "station": "EastAnglia/Cheshunt",
+                "line": [
+                    "EastAnglia/Cheshunt-N",
+                    "EastAnglia/Cheshunt-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Edmonton Green",
+                "line": [
+                    "EastAnglia/Seven Sisters"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Hackney Downs",
+                "line": [
+                    "EastAnglia/Hackney"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Liverpool Street",
+                "line": [
+                    "EastAnglia/Liverpool St"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

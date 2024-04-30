@@ -108,6 +108,22 @@
                     "EastAnglia/Cheshunt-N"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Edmonton Green",
+                "line": [
+                    "EastAnglia/Seven Sisters"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Seven Sisters",
+                "line": [
+                    "EastAnglia/Seven Sisters"
+                ],
+                "reward": 1
             }
         ]
     },

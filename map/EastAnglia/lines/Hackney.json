@@ -46,11 +46,62 @@
                 8,
                 "Clapton"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Seven Sisters"
+                ],
+                "not": [
+                    "EastAnglia/Clapton"
+                ]
+            },
+            "corner": [
+                -3608,
+                13304,
+                0,
+                8,
+                "Seven Sisters"
+            ]
         }
     ],
     "stops": [],
     "conditional_stops": [],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Seven Sisters",
+                    "EastAnglia/Clapton"
+                ],
+                "not": []
+            },
+            "coords": [
+                -3608,
+                13304
+            ],
+            "approach": {
+                "coords": [
+                    -3608,
+                    13480
+                ],
+                "direction": 0,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Seven Sisters",
+                "direction": 0
+            },
+            "right": {
+                "line": "Clapton",
+                "direction": 1
+            }
+        }
+    ],
     "stations": [
         "Hackney Downs"
     ]

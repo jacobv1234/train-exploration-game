@@ -26,6 +26,23 @@
                 8,
                 "Tottenham"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Seven Sisters"
+                ],
+                "not": [
+                    "EastAnglia/Tottenham"
+                ]
+            },
+            "corner": [
+                -3280,
+                10616,
+                0,
+                9,
+                "Seven Sisters"
+            ]
         }
     ],
     "stops": [],
@@ -46,7 +63,41 @@
             ]
         }
     ],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Seven Sisters",
+                    "EastAnglia/Tottenham"
+                ],
+                "not": []
+            },
+            "coords": [
+                -3280,
+                10616
+            ],
+            "approach": {
+                "coords": [
+                    -3280,
+                    10472
+                ],
+                "direction": 8,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Tottenham",
+                "direction": 8
+            },
+            "right": {
+                "line": "Seven Sisters",
+                "direction": 9
+            }
+        }
+    ],
     "stations": [
         "Cheshunt"
     ]
