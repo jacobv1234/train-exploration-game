@@ -332,6 +332,7 @@ while game_running:
                 # add to lists
                 bought.append(purchase['unique_name'])
                 [unlocked_lines.append(section) for section in purchase['unlock'] if section not in unlocked_lines]
+                station.reload_exits(unlocked_lines)
                 
                 # reload map and station screen
                 area.unload(c)

@@ -17,15 +17,13 @@ class Map():
             self.water = canvas.create_line(-100,-100,-99,-100, fill='white')
 
         # load each line
-        created_stations = []
+        created_stations = {}
         self.lines = {}
         for line in manifest['lines']:
             if f'{name}/{line}' in unlocked_lines:
                 # cosmetic line split
                 if line[0] != '_':
                     line_object = Line(name, line, canvas, unlocked_lines, created_stations, folder)
-                    created_stations = line_object.created_stations[:]
-                    line_object.clear_created_stations()
                 else:
                     line_object = DecoLine(name, line, canvas, unlocked_lines, folder)
                     if line_object.name == 0:

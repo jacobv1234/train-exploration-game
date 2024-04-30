@@ -11,6 +11,7 @@ class Station:
         self.pos = s['position']
         exits = s['exits']
         self.exits = {}
+        self.map = map_name
 
         for exit in list(exits.keys()):
             if str(type(exits[exit])) == '<class \'int\'>':
@@ -65,3 +66,20 @@ class Station:
             decision = choice(dest_choice)
             return p['options'][decision]
         return 0
+
+    # used to fix the missing exit bug (buying a new path and not having the option to go that way immediately)
+    def reload_exits(self,unlocked_lines):
+
+        with open(f'map/{self.map}/stations/{self.name}.json', 'r') as f:
+            s = loads(f.read().strip('\n'))
+        
+        exits = s['exits']
+        self.exits = {}
+        for exit in list(exits.keys()):
+            if str(type(exits[exit])) == '<class \'int\'>':
+                self.exits[exit] = exits[exit]
+            else:
+                if test_requirements(exits[exit]['requirements'], unlocked_lines):
+                    self.exits[exit] = [exits[exit]['direction']]
+                    if 'line' in list(exits[exit].keys()):
+                        self.exits[exit].append(exits[exit]['line'])
