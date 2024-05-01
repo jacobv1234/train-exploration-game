@@ -1,0 +1,41 @@
+{
+    "name": "Sawbridgeworth",
+    "position": [
+        -2368,
+        9584
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 3,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Roydon"
+        },
+        "westbound": {
+            "direction": 11,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Roydon"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -16,
+                -8
+            ],
+            "text": "Sawbridgeworth",
+            "font": "Arial 10",
+            "anchor": "se"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 65,
+        "options": []
+    },
+    "shop": false
+}

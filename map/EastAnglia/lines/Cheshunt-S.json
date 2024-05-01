@@ -43,6 +43,21 @@
                 9,
                 "Seven Sisters"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Cheshunt-N"
+                ],
+                "not": []
+            },
+            "corner": [
+                -3280,
+                10424,
+                0,
+                8,
+                "Cheshunt-N"
+            ]
         }
     ],
     "stops": [],

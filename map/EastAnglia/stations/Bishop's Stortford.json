@@ -1,0 +1,50 @@
+{
+    "name": "Bishop's Stortford",
+    "position": [
+        -2128,
+        9464
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 3,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Roydon"
+        },
+        "westbound": {
+            "direction": 11,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Roydon"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -16,
+                -8
+            ],
+            "text": "Stortford",
+            "font": "Arial 10",
+            "anchor": "se"
+        },
+        {
+            "offset": [
+                -16,
+                -24
+            ],
+            "text": "Bishop's",
+            "font": "Arial 10",
+            "anchor": "se"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 70,
+        "options": []
+    },
+    "shop": false
+}

@@ -1,0 +1,50 @@
+{
+    "name": "Stansted Mountfitchet",
+    "position": [
+        -1888,
+        9344
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 3,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Roydon"
+        },
+        "westbound": {
+            "direction": 11,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Roydon"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -16,
+                -8
+            ],
+            "text": "Mountfitchet",
+            "font": "Arial 10",
+            "anchor": "se"
+        },
+        {
+            "offset": [
+                -16,
+                -24
+            ],
+            "text": "Stansted",
+            "font": "Arial 10",
+            "anchor": "se"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 60,
+        "options": []
+    },
+    "shop": false
+}

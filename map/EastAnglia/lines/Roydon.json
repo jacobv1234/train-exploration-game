@@ -1,0 +1,125 @@
+{
+    "colour": "grey",
+    "segments": [
+        [
+            -3256,
+            10056,
+            -3280,
+            10104
+        ],
+        [
+            -3200,
+            10000,
+            -3256,
+            10056
+        ],
+        [
+            -1648,
+            9224,
+            -3200,
+            10000
+        ]
+    ],
+    "corners": [
+        [
+            -3280,
+            10104,
+            1,
+            8,
+            "Cheshunt-N"
+        ],
+        [
+            -3256,
+            10056,
+            2,
+            9
+        ],
+        [
+            -3200,
+            10000,
+            3,
+            10
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Stansted-Bypass"
+                ],
+                "not": [
+                    "EastAnglia/Stansted-S"
+                ]
+            },
+            "corner": [
+                -1648,
+                9224,
+                2,
+                11,
+                "Stansted-Bypass"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Stansted-S"
+                ],
+                "not": [
+                    "EastAnglia/Stansted-Bypass"
+                ]
+            },
+            "corner": [
+                -1648,
+                9224,
+                3,
+                11,
+                "Stansted-S"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Stansted-S",
+                    "EastAnglia/Stansted-Bypass"
+                ],
+                "not": []
+            },
+            "coords": [
+                -1648,
+                9224
+            ],
+            "approach": {
+                "coords": [
+                    -1824,
+                    9312
+                ],
+                "direction": 3,
+                "options": [
+                    "left",
+                    "straight"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Stansted-Bypass",
+                "direction": 2
+            },
+            "straight": {
+                "line": "Stansted-S",
+                "direction": 3
+            }
+        }
+    ],
+    "stations": [
+        "Stansted Mountfitchet",
+        "Roydon",
+        "Sawbridgeworth",
+        "Bishop's Stortford",
+        "Harlow Mill",
+        "Harlow Town"
+    ]
+}

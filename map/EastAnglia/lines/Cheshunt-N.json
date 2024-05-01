@@ -1,0 +1,67 @@
+{
+    "colour": "grey",
+    "segments": [
+        [
+            -3280,
+            10424,
+            -3280,
+            10104
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Cheshunt-S"
+                ],
+                "not": []
+            },
+            "corner": [
+                -3280,
+                10424,
+                0,
+                8,
+                "Cheshunt-S"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Roydon"
+                ],
+                "not": [
+                    "EastAnglia/Hertford"
+                ]
+            },
+            "corner": [
+                -3280,
+                10104,
+                1,
+                8,
+                "Roydon"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Cheshunt-S"
+                ]
+            },
+            "stop": [
+                -3280,
+                10424,
+                0
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "Cheshunt",
+        "Broxbourne"
+    ]
+}
