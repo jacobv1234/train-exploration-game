@@ -60,3 +60,6 @@ EastAnglia/Lea Bridge
 EastAnglia/Seven Sisters
 EastAnglia/Tottenham
 EastAnglia/Cheshunt-S
+EastAnglia/Wickford
+EastAnglia/Southminster
+EastAnglia/Southend
