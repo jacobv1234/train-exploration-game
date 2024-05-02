@@ -69,7 +69,8 @@
         "Cheshunt-S",
         "Seven Sisters",
         "Cheshunt-N",
-        "Roydon"
+        "Roydon",
+        "Hertford"
     ],
     "loadingzones": [],
     "display_name": "East Anglia",
@@ -175,9 +176,9 @@
         -8872
     ],
     "scroll_bounds": {
-        "left": -593,
-        "right": 946,
-        "top": -514,
-        "bottom": 1910
+        "left": -594,
+        "right": 923,
+        "top": -313,
+        "bottom": 1925
     }
 }

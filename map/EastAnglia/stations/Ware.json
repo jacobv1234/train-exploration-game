@@ -1,0 +1,91 @@
+{
+    "name": "Ware",
+    "position": [
+        -4056,
+        9696
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 5,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Hertford"
+        },
+        "westbound": {
+            "direction": 13,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Hertford"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                16,
+                -8
+            ],
+            "text": "Ware",
+            "font": "Arial 10",
+            "anchor": "sw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 60,
+        "options": [
+            {
+                "chance": 3,
+                "station": "EastAnglia/Hertford East",
+                "line": [
+                    "EastAnglia/Hertford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/St Margarets",
+                "line": [
+                    "EastAnglia/Hertford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Rye House",
+                "line": [
+                    "EastAnglia/Hertford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Broxbourne",
+                "line": [
+                    "EastAnglia/Cheshunt-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Cheshunt",
+                "line": [
+                    "EastAnglia/Cheshunt-N",
+                    "EastAnglia/Cheshunt-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Liverpool Street",
+                "line": [
+                    "EastAnglia/Liverpool St"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

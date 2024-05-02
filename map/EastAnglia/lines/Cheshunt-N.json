@@ -41,6 +41,23 @@
                 8,
                 "Roydon"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Hertford"
+                ],
+                "not": [
+                    "EastAnglia/Roydon"
+                ]
+            },
+            "corner": [
+                -3280,
+                10104,
+                14,
+                8,
+                "Hertford"
+            ]
         }
     ],
     "stops": [],
@@ -59,7 +76,41 @@
             ]
         }
     ],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Roydon",
+                    "EastAnglia/Hertford"
+                ],
+                "not": []
+            },
+            "coords": [
+                -3280,
+                10104
+            ],
+            "approach": {
+                "coords": [
+                    -3280,
+                    10216
+                ],
+                "direction": 0,
+                "options": [
+                    "left",
+                    "right"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Hertford",
+                "direction": 14
+            },
+            "right": {
+                "line": "Roydon",
+                "direction": 1
+            }
+        }
+    ],
     "stations": [
         "Cheshunt",
         "Broxbourne"

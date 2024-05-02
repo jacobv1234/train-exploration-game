@@ -28,6 +28,11 @@ c = Canvas(window, width = screen_width, height = screen_height, bg = 'lightblue
 c.place(x=4,y=0)
 
 area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']])
+border_main = c.create_rectangle(area.scroll_boundary['left']*8,
+                                 area.scroll_boundary['top']*8,
+                                 area.scroll_boundary['right']*8,
+                                 area.scroll_boundary['bottom']*8,
+                                 fill='',outline='red')
 
 x = -1
 y = -1
@@ -623,7 +628,8 @@ Control map text, passengers, and shop via the JSON.
 
     c.tag_raise(selected_spot)
     c1.tag_raise(small_selected)
-
+    c.tag_raise(border_main)
+c.tag_raise(border_main)
 
 w1 = Tk()
 c1 = Canvas(w1, width=screen_width,height=screen_height, bg='lightblue', xscrollincrement=1, yscrollincrement=1)

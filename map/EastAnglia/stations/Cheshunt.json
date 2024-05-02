@@ -199,6 +199,38 @@
                     "EastAnglia/Cheshunt-N"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Hertford East",
+                "line": [
+                    "EastAnglia/Hertford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Ware",
+                "line": [
+                    "EastAnglia/Hertford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/St Margarets",
+                "line": [
+                    "EastAnglia/Hertford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Rye House",
+                "line": [
+                    "EastAnglia/Hertford"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -235,6 +267,20 @@
                 "EastAnglia/Stansted"
             ],
             "unique_name": "EastAnglia/Cheshunt/To Stansted Airport"
+        },
+        "To Hertford": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Hertford"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Cheshunt-N",
+                "EastAnglia/Hertford"
+            ],
+            "unique_name": "EastAnglia/Cheshunt/To Hertford"
         }
     }
 }
