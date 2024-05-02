@@ -44,7 +44,89 @@
     ],
     "passengers": {
         "chance_of_any": 50,
-        "options": []
+        "options": [
+            {
+                "chance": 2,
+                "station": "EastAnglia/Newport",
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Stansted Mountfitchet",
+                "line": [
+                    "EastAnglia/Roydon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Stansted Airport",
+                "line": [
+                    "EastAnglia/Stansted"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Bishop's Stortford",
+                "line": [
+                    "EastAnglia/Roydon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Sawbridgeworth",
+                "line": [
+                    "EastAnglia/Roydon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Harlow Town",
+                "line": [
+                    "EastAnglia/Roydon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Roydon",
+                "line": [
+                    "EastAnglia/Roydon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Broxbourne",
+                "line": [
+                    "EastAnglia/Cheshunt-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Cheshunt",
+                "line": [
+                    "EastAnglia/Cheshunt-N",
+                    "EastAnglia/Cheshunt-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Tottenham Hale",
+                "line": [
+                    "EastAnglia/Tottenham"
+                ],
+                "reward": 1
+            }
+        ]
     },
     "shop": false
 }

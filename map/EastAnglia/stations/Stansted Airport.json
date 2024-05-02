@@ -126,6 +126,79 @@
                     "EastAnglia/Liverpool St"
                 ],
                 "reward": 2
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Stansted Mountfitchet",
+                "line": [
+                    "EastAnglia/Roydon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Bishop's Stortford",
+                "line": [
+                    "EastAnglia/Roydon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Sawbridgeworth",
+                "line": [
+                    "EastAnglia/Roydon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Harlow Mill",
+                "line": [
+                    "EastAnglia/Roydon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Harlow Town",
+                "line": [
+                    "EastAnglia/Roydon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Roydon",
+                "line": [
+                    "EastAnglia/Roydon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Broxbourne",
+                "line": [
+                    "EastAnglia/Cheshunt-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Cheshunt",
+                "line": [
+                    "EastAnglia/Cheshunt-N",
+                    "EastAnglia/Cheshunt-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Tottenham Hale",
+                "line": [
+                    "EastAnglia/Tottenham"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -145,6 +218,36 @@
                 "EastAnglia/Newport"
             ],
             "unique_name": "EastAnglia/Stansted Airport/To Cambridge"
+        },
+        "To Cheshunt": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Roydon"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Stansted",
+                "EastAnglia/Stansted-S",
+                "EastAnglia/Roydon",
+                "EastAnglia/Cheshunt-N"
+            ],
+            "unique_name": "EastAnglia/Stansted Airport/To Cheshunt"
+        },
+        "Airport Bypass": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Stansted-N",
+                    "EastAnglia/Stansted-S"
+                ],
+                "not": []
+            },
+            "unlock": [
+                "EastAnglia/Stansted-Bypass"
+            ],
+            "unique_name": "EastAnglia/Stansted Airport/Airport Bypass"
         }
     }
 }

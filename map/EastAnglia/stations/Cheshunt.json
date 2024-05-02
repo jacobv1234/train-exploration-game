@@ -127,6 +127,78 @@
                     "EastAnglia/Seven Sisters"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Newport",
+                "line": [
+                    "EastAnglia/Newport"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Stansted Mountfitchet",
+                "line": [
+                    "EastAnglia/Roydon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Stansted Airport",
+                "line": [
+                    "EastAnglia/Stansted"
+                ],
+                "reward": 2
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Bishop's Stortford",
+                "line": [
+                    "EastAnglia/Roydon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Sawbridgeworth",
+                "line": [
+                    "EastAnglia/Roydon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Harlow Mill",
+                "line": [
+                    "EastAnglia/Roydon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Harlow Town",
+                "line": [
+                    "EastAnglia/Roydon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Roydon",
+                "line": [
+                    "EastAnglia/Roydon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Broxbourne",
+                "line": [
+                    "EastAnglia/Cheshunt-N"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -147,6 +219,22 @@
                 "EastAnglia/Cheshunt-S"
             ],
             "unique_name": "EastAnglia/Cheshunt/To Liverpool St"
+        },
+        "To Stansted Airport": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Roydon"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Cheshunt-N",
+                "EastAnglia/Roydon",
+                "EastAnglia/Stansted-S",
+                "EastAnglia/Stansted"
+            ],
+            "unique_name": "EastAnglia/Cheshunt/To Stansted Airport"
         }
     }
 }
