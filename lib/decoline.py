@@ -15,19 +15,23 @@ class DecoLine():
 
 
         self.segments = []
+
+        # this is so zoomed_map doesn't break
+        self.stations = []
+        
         self.seg_coords = line_data['segments']
         self.col = line_data['colour']
         for segment in self.seg_coords:
             #self.segments.append(canvas.create_line(segment[0], segment[1], segment[2], segment[3], fill=self.col))
             self.segments.append(canvas.create_polygon(get_line_poly_coords(segment), fill=self.col))
         
-        for segment in self.seg_coords:
-            canvas.tag_lower(segment)
         
         self.corners = line_data['corners']
         for corner in self.corners:
             self.segments.append(canvas.create_oval(corner[0]-4, corner[1]-4, corner[0]+3, corner[1]+3, fill=self.col,outline=self.col))
 
+        for segment in self.segments:
+            canvas.tag_lower(segment)
 
     
     def unload(self, c):

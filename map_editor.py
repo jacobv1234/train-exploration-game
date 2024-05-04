@@ -36,6 +36,7 @@ border_main = c.create_rectangle(area.scroll_boundary['left']*8,
 
 x = -1
 y = -1
+div_value = 8
 chosen = False
 def get_mouse_pos(event: Event):
     global x, y, chosen
@@ -118,7 +119,7 @@ c.bind_all('<Down>', scroll_down)
 
 # important thingy
 def create_object(event):
-    global area
+    global area, div_value
     add_to_existing_line = input('''
 1) Add object to existing line
 2) Create new line
@@ -135,8 +136,17 @@ Choose a line to add to: ''')
         
         with open(f'map/{map_name}/lines/{line}.json','r') as f:
             line_data = loads(f.read())
+        
+        if line[0] == '_':
+            object_choice = input(f'''
+Choose object to add to {line}
+1) Line segment
+2) Corner
 
-        object_choice = input(f'''
+>>> ''')
+
+        else:
+            object_choice = input(f'''
 Choose object to add to {line}
 1) Line segment
 2) Corner
@@ -146,13 +156,17 @@ Choose object to add to {line}
 6) Conditional Stop
 
 >>> ''')
+        if line[0] == '_':
+            div_value = 4
+        else:
+            div_value = 8
         
         match int(object_choice):
             case 1:
-                x1,y1 = get_coordinates()
+                x1,y1 = get_coordinates(div_value=div_value)
                 print(f'coords are ({x1},{y1})')
                 dir = int(input('Choose a direction: '))
-                x2, y2 = get_coordinates()
+                x2, y2 = get_coordinates(div_value=div_value)
                 match dir:
                     case 0:
                         x2=x1
@@ -215,7 +229,7 @@ Choose object to add to {line}
                 c1.create_line(x1/8,y1/8,x2/8,y2/8, fill=line_data['colour'])
             
             case 2:
-                x1, y1 = get_coordinates()
+                x1, y1 = get_coordinates(div_value=div_value)
                 print(x1, y1)
                 dir1 = int(input('Direction 1: '))
                 dir2 = int(input('Direction 2: '))
@@ -325,20 +339,30 @@ Choose object to add to {line}
     
 
     elif int(add_to_existing_line) == 2:
-        name = input('Enter a name: ')
+        name = input('Enter a name (start with _ for a decoline): ')
         col = input('Colour: ')
-        with open(f'map/{map_name}/lines/{name}.json','w') as f:
-            f.write(dumps({
-                'colour': col,
-                'segments': [],
-                'corners': [],
-                'conditional_corners':[],
-                "stops": [],
-                "conditional_stops": [],
-                'junctions': [],
-                'stations': []
-            }, indent=4))
-        
+        if name[0] == '_':
+            requirements = choose_requirements()
+            with open(f'map/{map_name}/lines/{name}.json','w') as f:
+                f.write(dumps({
+                    'colour': col,
+                    'requirements': requirements,
+                    'segments': [],
+                    'corners': []
+                }, indent=4))
+        else:
+            with open(f'map/{map_name}/lines/{name}.json','w') as f:
+                f.write(dumps({
+                    'colour': col,
+                    'segments': [],
+                    'corners': [],
+                    'conditional_corners':[],
+                    "stops": [],
+                    "conditional_stops": [],
+                    'junctions': [],
+                    'stations': []
+                }, indent=4))
+            
         map_manifest['lines'].append(name)
         with open(f'map/{map_name}/manifest.json','w') as f:
             f.write(dumps(map_manifest, indent=4))
@@ -629,6 +653,7 @@ Control map text, passengers, and shop via the JSON.
     c.tag_raise(selected_spot)
     c1.tag_raise(small_selected)
     c.tag_raise(border_main)
+    div_value = 8
 c.tag_raise(border_main)
 
 w1 = Tk()
@@ -660,12 +685,13 @@ selected_spot = c.create_oval(0,0,2,2,fill='black')
 small_selected = c1.create_oval(0,0,2,2,fill='black')
 
 def move_cursor(event):
+    global div_value
     x, y = c.canvasx(event.x), c.canvasy(event.y)
-    x = x//8 * 8
-    y = y//8 * 8
+    x = x//div_value * div_value
+    y = y//div_value * div_value
     c.coords(selected_spot,x-1,y-1,x+1,y+1)
-    x /= 8
-    y /= 8
+    x /= div_value
+    y /= div_value
     c1.coords(small_selected,x-1,y-1,x+1,y+1)
 def move_cursor_small(event):
     x, y = c1.canvasx(event.x), c1.canvasy(event.y)
