@@ -28,10 +28,10 @@ c = Canvas(window, width = screen_width, height = screen_height, bg = 'lightblue
 c.place(x=4,y=0)
 
 area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']])
-border_main = c.create_rectangle(area.scroll_boundary['left']*8,
-                                 area.scroll_boundary['top']*8,
-                                 area.scroll_boundary['right']*8,
-                                 area.scroll_boundary['bottom']*8,
+border_main = c.create_rectangle(area.scroll_boundary['left']*4,
+                                 area.scroll_boundary['top']*4,
+                                 area.scroll_boundary['right']*4,
+                                 area.scroll_boundary['bottom']*4,
                                  fill='',outline='red')
 
 x = -1
@@ -663,7 +663,7 @@ c1.pack()
 if area.water_coords:
     coords = tuple([i//8 for i in area.water_coords])
     land = c1.create_polygon(coords, fill='white', outline='')
-    border = c1.create_rectangle(map_manifest['scroll_bounds']['left'],map_manifest['scroll_bounds']['top'],map_manifest['scroll_bounds']['right'],map_manifest['scroll_bounds']['bottom'], fill='', outline='red')
+    border = c1.create_rectangle(map_manifest['scroll_bounds']['left']/2,map_manifest['scroll_bounds']['top']/2,map_manifest['scroll_bounds']['right']/2,map_manifest['scroll_bounds']['bottom']/2, fill='', outline='red')
 else:
     c1.configure(bg='white')
     c.configure(bg='white')

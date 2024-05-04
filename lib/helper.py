@@ -100,34 +100,40 @@ def get_direction(segment):
 
 
 
-def get_line_poly_coords(segment):
+def get_line_poly_coords(segment, radius = 4):
     direction = get_direction(segment)
     x1,y1,x2,y2 = tuple(segment)
     x_offset = 0
     y_offset = 0
     match direction:
         case 0:
-            x_offset = 4
+            x_offset = radius
         case 4:
-            y_offset = 4
+            y_offset = radius
         case 6:
-            x_offset = 2.8284
-            y_offset = 2.8284
+            x_offset = (2.8284 * radius) / 4
+            y_offset = (2.8284 * radius) / 4
+            if radius == 1:
+                x_offset = 0.5
+                y_offset = 0.5
         case 2:
-            x_offset = 2.8284
-            y_offset = -2.8284
+            x_offset = (2.8284 * radius) / 4
+            y_offset = (-2.8284 * radius) / 4
+            if radius == 1:
+                x_offset = 0.5
+                y_offset = -0.5
         case 7:
-            x_offset = 3.5776
-            y_offset = 1.789
+            x_offset = (3.5776 * radius) / 4
+            y_offset = (1.789 * radius) / 4
         case 1:
-            x_offset = 3.5776
-            y_offset = -1.789
+            x_offset = (3.5776 * radius) / 4
+            y_offset = (-1.789 * radius) / 4
         case 3:
-            x_offset = 1.789
-            y_offset = -3.5776
+            x_offset = (1.789 * radius) / 4
+            y_offset = (-3.5776 * radius) / 4
         case 5:
-            x_offset = 1.789
-            y_offset = 3.5776
+            x_offset = (1.789 * radius) / 4
+            y_offset = (3.5776 * radius) / 4
             
     return [x1+x_offset, y1+y_offset, x1-x_offset, y1-y_offset,
             x2-x_offset, y2-y_offset, x2+x_offset, y2+y_offset]

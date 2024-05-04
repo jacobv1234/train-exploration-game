@@ -1,14 +1,15 @@
 from tkinter import *
 from lib.map import Map
+from lib.helper import get_line_poly_coords
 
 
 class ZoomedMap:
     def __init__(self, window: Tk, width: int, height: int, map: Map, train_x: int, train_y: int, water_coords: list, scroll: dict):
         self.c = Canvas(window, width=width, height=height, bg='lightblue', xscrollincrement=1, yscrollincrement=1)
         self.c.place(x=4,y=0)
-        water_coords = [coord // 8 for coord in water_coords]
+        water_coords = [coord // 4 for coord in water_coords]
         self.c.create_polygon(water_coords, fill='white', outline='')
-        self.station_name_popup = self.c.create_text(width/2,50,fill='black', font='Arial 20', text='', anchor='n')
+        self.station_name_popup = self.c.create_text(width/2,50,fill='black', font='Arial 25', text='', anchor='n')
         self.stations = []
         self.limits = scroll
 
@@ -17,13 +18,14 @@ class ZoomedMap:
             line = map.lines[line_name]
             col = line.col
             for s in line.seg_coords:
-                self.c.create_line(s[0]//8,s[1]//8,s[2]//8,s[3]//8, fill=col)
+                s = [i / 4 for i in s]
+                self.c.create_polygon(get_line_poly_coords(s, radius=1), fill=col)
             
             for s in line.stations:
-                self.stations.append([s.pos[0]//8,s.pos[1]//8, s.name])
-                self.c.create_oval(s.pos[0]//8 - 2, s.pos[1]//8 - 2, s.pos[0]//8 + 2, s.pos[1]//8 + 2, outline='black')
+                self.stations.append([s.pos[0]//4,s.pos[1]//4, s.name])
+                self.c.create_oval(s.pos[0]//4 - 5, s.pos[1]//4 - 5, s.pos[0]//4 + 5, s.pos[1]//4 + 5, outline='black', fill='white')
         
-        self.c.create_oval(train_x//8 - 4,train_y//8 - 4,train_x//8 + 4,train_y//8 + 4,fill='', outline='red')
+        self.c.create_oval(train_x//4 - 10,train_y//4 - 10,train_x//4 + 10,train_y//4 + 10,fill='', outline='red')
         
         self.c.bind_all('<Left>', self.scroll_left)
         self.c.bind_all('<Right>', self.scroll_right)
@@ -33,15 +35,15 @@ class ZoomedMap:
 
         self.c.xview_scroll(-width//2,'units')
         self.c.yview_scroll(-height//2, 'units')
-        self.c.xview_scroll(train_x//8, 'units')
-        self.c.yview_scroll(train_y//8, 'units')
+        self.c.xview_scroll(train_x//4, 'units')
+        self.c.yview_scroll(train_y//4, 'units')
         self.c.move(self.station_name_popup,-width//2,-height//2)
-        self.c.move(self.station_name_popup,train_x//8,train_y//8)
+        self.c.move(self.station_name_popup,train_x//4,train_y//4)
 
-        self.screen_left = (train_x // 8) - (width//2)
-        self.screen_right = (train_x // 8) + (width//2)
-        self.screen_top = (train_y // 8) - (height//2)
-        self.screen_bottom = (train_y // 8) + (height//2)
+        self.screen_left = (train_x // 4) - (width//2)
+        self.screen_right = (train_x // 4) + (width//2)
+        self.screen_top = (train_y // 4) - (height//2)
+        self.screen_bottom = (train_y // 4) + (height//2)
 
         # scroll to be within limits
         self.scroll_into_bounds()
@@ -86,7 +88,7 @@ class ZoomedMap:
     def track_motion(self, event: Event):
         x,y = self.c.canvasx(event.x), self.c.canvasy(event.y)
         for station in self.stations:
-            if int(x) in range(station[0]-4, station[0]+5) and int(y) in range(station[1]-4, station[1]+5):
+            if int(x) in range(station[0]-12, station[0]+12) and int(y) in range(station[1]-12, station[1]+12):
                 self.c.itemconfig(self.station_name_popup, text=station[2])
                 break
             else:
