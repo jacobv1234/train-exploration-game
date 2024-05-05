@@ -34,10 +34,61 @@
                 11,
                 "Romford"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Barking-W"
+                ],
+                "not": [
+                    "EastAnglia/Romford"
+                ]
+            },
+            "corner": [
+                -2480,
+                13440,
+                4,
+                11,
+                "Barking-W"
+            ]
         }
     ],
     "stops": [],
     "conditional_stops": [],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Barking-W",
+                    "EastAnglia/Romford"
+                ],
+                "not": []
+            },
+            "coords": [
+                -2480,
+                13440
+            ],
+            "approach": {
+                "coords": [
+                    -2800,
+                    13600
+                ],
+                "direction": 3,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Romford",
+                "direction": 3
+            },
+            "right": {
+                "line": "Barking-W",
+                "direction": 4
+            }
+        }
+    ],
     "stations": []
 }

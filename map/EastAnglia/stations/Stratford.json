@@ -68,6 +68,15 @@
                     "EastAnglia/Lea Bridge"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Barking",
+                "line": [
+                    "EastAnglia/Barking",
+                    "EastAnglia/Barking-E"
+                ],
+                "reward": 1
             }
         ]
     },

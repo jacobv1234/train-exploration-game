@@ -1,7 +1,29 @@
 {
-    "colour": "grey",
-    "segments": [],
-    "corners": [],
+    "colour": "magenta3",
+    "segments": [
+        [
+            -2464,
+            13440,
+            -1880,
+            13440
+        ]
+    ],
+    "corners": [
+        [
+            -2480,
+            13440,
+            4,
+            11,
+            "Stratford-E"
+        ],
+        [
+            -1880,
+            13440,
+            12,
+            4,
+            "Barking"
+        ]
+    ],
     "conditional_corners": [],
     "stops": [],
     "conditional_stops": [],

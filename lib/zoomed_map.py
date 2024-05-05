@@ -48,6 +48,7 @@ class ZoomedMap:
         # scroll to be within limits
         self.scroll_into_bounds()
 
+        self.c.tag_raise(self.station_name_popup)
     
     def scroll_left(self,event):
         if self.screen_left > self.limits['left']:

@@ -1,0 +1,83 @@
+{
+    "name": "Barking",
+    "position": [
+        -1648,
+        13440
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Barking-E"
+                ],
+                "not": []
+            },
+            "line": "Barking-E"
+        },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Barking"
+                ],
+                "not": []
+            },
+            "line": "Barking"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -24
+            ],
+            "text": "Barking",
+            "font": "Arial 10",
+            "anchor": "s"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 80,
+        "options": [
+            {
+                "chance": 2,
+                "station": "EastAnglia/Stratford",
+                "line": [
+                    "EastAnglia/Stratford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Liverpool Street",
+                "line": [
+                    "EastAnglia/Liverpool St"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": {
+        "To Liverpool Street": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Stratford-E"
+                ],
+                "not": [
+                    "EastAnglia/Barking-W"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/_c2c-Liverpool St",
+                "EastAnglia/Barking",
+                "EastAnglia/Barking-W",
+                "EastAnglia/Stratford-E",
+                "EastAnglia/Stratford",
+                "EastAnglia/Liverpool St"
+            ],
+            "unique_name": "EastAnglia/Barking/To Liverpool Street"
+        }
+    }
+}

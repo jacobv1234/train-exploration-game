@@ -303,6 +303,15 @@
                     "EastAnglia/Cheshunt-N"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Barking",
+                "line": [
+                    "EastAnglia/Barking",
+                    "EastAnglia/Barking-E"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -374,6 +383,26 @@
                 "EastAnglia/Cheshunt-S"
             ],
             "unique_name": "EastAnglia/Liverpool Street/Cheshunt via Seven Sisters"
+        },
+        "To Barking (c2c)": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Stratford-E"
+                ],
+                "not": [
+                    "EastAnglia/Barking-W"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Liverpool St",
+                "EastAnglia/Stratford",
+                "EastAnglia/Stratford-E",
+                "EastAnglia/Barking-W",
+                "EastAnglia/Barking",
+                "EastAnglia/_c2c-Liverpool St"
+            ],
+            "unique_name": "EastAnglia/Liverpool Street/To Barking (c2c)"
         }
     }
 }
