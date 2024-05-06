@@ -8,7 +8,7 @@ class ZoomedMap:
         self.c = Canvas(window, width=width, height=height, bg='lightblue', xscrollincrement=1, yscrollincrement=1)
         self.c.place(x=4,y=0)
         water_coords = [coord // 4 for coord in water_coords]
-        self.c.create_polygon(water_coords, fill='white', outline='')
+        self.water = self.c.create_polygon(water_coords, fill='white', outline='')
         self.station_name_popup = self.c.create_text(width/2,50,fill='black', font='Arial 25', text='', anchor='n')
         self.stations = []
         self.limits = scroll
@@ -19,11 +19,13 @@ class ZoomedMap:
             col = line.col
             for s in line.seg_coords:
                 s = [i / 4 for i in s]
-                self.c.create_polygon(get_line_poly_coords(s, radius=1), fill=col)
+                obj = self.c.create_polygon(get_line_poly_coords(s, radius=1), fill=col)
+                self.c.tag_lower(obj)
             
-            for s in line.stations:
-                self.stations.append([s.pos[0]//4,s.pos[1]//4, s.name])
-                self.c.create_oval(s.pos[0]//4 - 5, s.pos[1]//4 - 5, s.pos[0]//4 + 5, s.pos[1]//4 + 5, outline='black', fill='white')
+            if line_name[0] != '_':
+                for s in line.stations:
+                    self.stations.append([s.pos[0]//4,s.pos[1]//4, s.name])
+                    self.c.create_oval(s.pos[0]//4 - 5, s.pos[1]//4 - 5, s.pos[0]//4 + 5, s.pos[1]//4 + 5, outline='black', fill='white')
         
         self.c.create_oval(train_x//4 - 10,train_y//4 - 10,train_x//4 + 10,train_y//4 + 10,fill='', outline='red')
         
@@ -49,6 +51,7 @@ class ZoomedMap:
         self.scroll_into_bounds()
 
         self.c.tag_raise(self.station_name_popup)
+        self.c.tag_lower(self.water)
     
     def scroll_left(self,event):
         if self.screen_left > self.limits['left']:
