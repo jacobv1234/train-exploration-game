@@ -55,6 +55,30 @@
                     "EastAnglia/Liverpool St"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/West Ham",
+                "line": [
+                    "EastAnglia/Fenchurch St"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Limehouse",
+                "line": [
+                    "EastAnglia/Fenchurch St"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Fenchurch Street",
+                "line": [
+                    "EastAnglia/Fenchurch St"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -78,6 +102,20 @@
                 "EastAnglia/Liverpool St"
             ],
             "unique_name": "EastAnglia/Barking/To Liverpool Street"
+        },
+        "To Fenchurch Street": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Fenchurch St"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Barking",
+                "EastAnglia/Fenchurch St"
+            ],
+            "unique_name": "EastAnglia/Barking/To Fenchurch Street"
         }
     }
 }

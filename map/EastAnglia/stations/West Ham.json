@@ -1,0 +1,67 @@
+{
+    "name": "West Ham",
+    "position": [
+        -2456,
+        14016
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Fenchurch St"
+        },
+        "westbound": {
+            "direction": 10,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Fenchurch St"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -16,
+                -8
+            ],
+            "text": "West Ham",
+            "font": "Arial 10",
+            "anchor": "se"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 70,
+        "options": [
+            {
+                "chance": 2,
+                "station": "EastAnglia/Barking",
+                "line": [
+                    "EastAnglia/Barking-E",
+                    "EastAnglia/Barking"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Limehouse",
+                "line": [
+                    "EastAnglia/Fenchurch St"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "EastAnglia/Fenchurch Street",
+                "line": [
+                    "EastAnglia/Fenchurch St"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

@@ -1,0 +1,93 @@
+{
+    "name": "Fenchurch Street",
+    "position": [
+        -3736,
+        14888
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 3,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Fenchurch St"
+                ],
+                "not": []
+            },
+            "line": "Fenchurch St"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -24,
+                0
+            ],
+            "text": "Fenchurch",
+            "font": "Arial 10",
+            "anchor": "se"
+        },
+        {
+            "offset": [
+                -24,
+                0
+            ],
+            "text": "Street",
+            "font": "Arial 10",
+            "anchor": "ne"
+        },
+        {
+            "offset": [
+                -88,
+                0
+            ],
+            "badge": "TFL",
+            "anchor": "e"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 80,
+        "options": [
+            {
+                "chance": 2,
+                "station": "EastAnglia/Barking",
+                "line": [
+                    "EastAnglia/Barking-E",
+                    "EastAnglia/Barking"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/West Ham",
+                "line": [
+                    "EastAnglia/Fenchurch St"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Limehouse",
+                "line": [
+                    "EastAnglia/Fenchurch St"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": {
+        "To Barking": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Fenchurch St"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Fenchurch St",
+                "EastAnglia/Barking"
+            ],
+            "unique_name": "EastAnglia/Fenchurch Street/To Barking"
+        }
+    }
+}

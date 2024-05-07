@@ -1,0 +1,41 @@
+{
+    "colour": "magenta3",
+    "segments": [
+        [
+            -1880,
+            13440,
+            -2920,
+            14480
+        ],
+        [
+            -2920,
+            14480,
+            -3736,
+            14888
+        ]
+    ],
+    "corners": [
+        [
+            -1880,
+            13440,
+            4,
+            10,
+            "Barking"
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [
+        [
+            -3736,
+            14888,
+            3
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Fenchurch Street",
+        "Limehouse",
+        "West Ham"
+    ]
+}

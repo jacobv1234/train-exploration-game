@@ -26,6 +26,23 @@
                 12,
                 "Barking-W"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Fenchurch St"
+                ],
+                "not": [
+                    "EastAnglia/Barking-W"
+                ]
+            },
+            "corner": [
+                -1880,
+                13440,
+                4,
+                10,
+                "Fenchurch St"
+            ]
         }
     ],
     "stops": [],
@@ -44,7 +61,41 @@
             ]
         }
     ],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Barking-W",
+                    "EastAnglia/Fenchurch St"
+                ],
+                "not": []
+            },
+            "coords": [
+                -1880,
+                13440
+            ],
+            "approach": {
+                "coords": [
+                    -1688,
+                    13440
+                ],
+                "direction": 12,
+                "options": [
+                    "left",
+                    "straight"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Fenchurch St",
+                "direction": 10
+            },
+            "straight": {
+                "line": "Barking-W",
+                "direction": 12
+            }
+        }
+    ],
     "stations": [
         "Barking"
     ]
