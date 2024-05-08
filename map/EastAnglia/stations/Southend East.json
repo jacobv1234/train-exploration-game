@@ -1,0 +1,50 @@
+{
+    "name": "Southend East",
+    "position": [
+        4024,
+        13440
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Shoeburyness"
+        },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Shoeburyness"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -24
+            ],
+            "text": "East",
+            "font": "Arial 10",
+            "anchor": "s"
+        },
+        {
+            "offset": [
+                0,
+                -40
+            ],
+            "text": "Southend",
+            "font": "Arial 10",
+            "anchor": "s"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 65,
+        "options": []
+    },
+    "shop": false
+}

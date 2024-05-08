@@ -1,0 +1,45 @@
+{
+    "colour": "magenta3",
+    "segments": [
+        [
+            -1416,
+            13440,
+            -464,
+            13440
+        ]
+    ],
+    "corners": [
+        [
+            -1416,
+            13440,
+            12,
+            4,
+            "Barking-E"
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Basildon"
+                ],
+                "not": [
+                    "EastAnglia/Ockendon"
+                ]
+            },
+            "corner": [
+                -464,
+                13440,
+                4,
+                12,
+                "Basildon"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Upminster"
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "colour": "magenta3",
+    "segments": [
+        [
+            -464,
+            13440,
+            2576,
+            13440
+        ]
+    ],
+    "corners": [
+        [
+            -464,
+            13440,
+            4,
+            12,
+            "Upminster"
+        ],
+        [
+            2576,
+            13440,
+            4,
+            12,
+            "Shoeburyness"
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Laindon",
+        "West Horndon",
+        "Basildon"
+    ]
+}

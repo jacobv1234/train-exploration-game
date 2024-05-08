@@ -1,0 +1,51 @@
+{
+    "colour": "magenta3",
+    "segments": [
+        [
+            2576,
+            13440,
+            4768,
+            13440
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Basildon"
+                ],
+                "not": [
+                    "EastAnglia/Grays"
+                ]
+            },
+            "corner": [
+                2576,
+                13440,
+                4,
+                12,
+                "Basildon"
+            ]
+        }
+    ],
+    "stops": [
+        [
+            4768,
+            13440,
+            12
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Shoeburyness",
+        "Southend Central",
+        "Southend East",
+        "Thorpe Bay",
+        "Leigh-on-Sea",
+        "Chalkwell",
+        "Westcliff",
+        "Pitsea",
+        "Benfleet"
+    ]
+}

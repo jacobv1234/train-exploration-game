@@ -43,6 +43,21 @@
                 10,
                 "Fenchurch St"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Barking-E"
+                ],
+                "not": []
+            },
+            "corner": [
+                -1648,
+                13440,
+                4,
+                12,
+                "Barking-E"
+            ]
         }
     ],
     "stops": [],

@@ -74,7 +74,11 @@
         "_c2c-Liverpool St",
         "Barking-W",
         "Barking",
-        "Fenchurch St"
+        "Fenchurch St",
+        "Barking-E",
+        "Upminster",
+        "Basildon",
+        "Shoeburyness"
     ],
     "loadingzones": [],
     "display_name": "East Anglia",

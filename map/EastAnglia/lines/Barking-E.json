@@ -1,0 +1,64 @@
+{
+    "colour": "magenta3",
+    "segments": [
+        [
+            -1416,
+            13440,
+            -1648,
+            13440
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Barking"
+                ],
+                "not": []
+            },
+            "corner": [
+                -1648,
+                13440,
+                12,
+                4,
+                "Barking"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Upminster"
+                ],
+                "not": [
+                    "EastAnglia/Purfleet"
+                ]
+            },
+            "corner": [
+                -1416,
+                13440,
+                4,
+                12,
+                "Upminster"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Barking"
+                ]
+            },
+            "stop": [
+                -1648,
+                13440,
+                4
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": []
+}
