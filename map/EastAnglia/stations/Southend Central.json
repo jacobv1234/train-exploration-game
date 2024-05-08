@@ -44,7 +44,121 @@
     ],
     "passengers": {
         "chance_of_any": 75,
-        "options": []
+        "options": [
+            {
+                "chance": 3,
+                "station": "EastAnglia/Fenchurch Street",
+                "line": [
+                    "EastAnglia/Fenchurch St"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Barking",
+                "line": [
+                    "EastAnglia/Barking",
+                    "EastAnglia/Barking-E"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Upminster",
+                "line": [
+                    "EastAnglia/Upminster"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/West Horndon",
+                "line": [
+                    "EastAnglia/Basildon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Laindon",
+                "line": [
+                    "EastAnglia/Basildon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Basildon",
+                "line": [
+                    "EastAnglia/Basildon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Pitsea",
+                "line": [
+                    "EastAnglia/Shoeburyness"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Benfleet",
+                "line": [
+                    "EastAnglia/Shoeburyness"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Leigh-on-Sea",
+                "line": [
+                    "EastAnglia/Shoeburyness"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Chalkwell",
+                "line": [
+                    "EastAnglia/Shoeburyness"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Westcliff",
+                "line": [
+                    "EastAnglia/Shoeburyness"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Southend East",
+                "line": [
+                    "EastAnglia/Shoeburyness"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Thorpe Bay",
+                "line": [
+                    "EastAnglia/Shoeburyness"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Shoeburyness",
+                "line": [
+                    "EastAnglia/Shoeburyness"
+                ],
+                "reward": 1
+            }
+        ]
     },
     "shop": false
 }

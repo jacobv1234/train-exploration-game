@@ -79,6 +79,110 @@
                     "EastAnglia/Fenchurch St"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Upminster",
+                "line": [
+                    "EastAnglia/Upminster"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/West Horndon",
+                "line": [
+                    "EastAnglia/Basildon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Laindon",
+                "line": [
+                    "EastAnglia/Basildon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Basildon",
+                "line": [
+                    "EastAnglia/Basildon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Pitsea",
+                "line": [
+                    "EastAnglia/Shoeburyness"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Benfleet",
+                "line": [
+                    "EastAnglia/Shoeburyness"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Leigh-on-Sea",
+                "line": [
+                    "EastAnglia/Shoeburyness"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Chalkwell",
+                "line": [
+                    "EastAnglia/Shoeburyness"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Westcliff",
+                "line": [
+                    "EastAnglia/Shoeburyness"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Southend Central",
+                "line": [
+                    "EastAnglia/Shoeburyness"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Southend East",
+                "line": [
+                    "EastAnglia/Shoeburyness"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Thorpe Bay",
+                "line": [
+                    "EastAnglia/Shoeburyness"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Shoeburyness",
+                "line": [
+                    "EastAnglia/Shoeburyness"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -116,6 +220,22 @@
                 "EastAnglia/Fenchurch St"
             ],
             "unique_name": "EastAnglia/Barking/To Fenchurch Street"
+        },
+        "To Shoeburyness": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Basildon"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Barking-E",
+                "EastAnglia/Upminster",
+                "EastAnglia/Basildon",
+                "EastAnglia/Shoeburyness"
+            ],
+            "unique_name": "EastAnglia/Barking/To Shoeburyness"
         }
     }
 }
