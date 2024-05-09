@@ -1,0 +1,41 @@
+{
+    "name": "Ockendon",
+    "position": [
+        -240,
+        13744
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 7,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Ockendon"
+        },
+        "westbound": {
+            "direction": 15,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Ockendon"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                16,
+                -8
+            ],
+            "text": "Ockendon",
+            "font": "Arial 10",
+            "anchor": "sw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 65,
+        "options": []
+    },
+    "shop": false
+}

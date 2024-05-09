@@ -1,0 +1,84 @@
+{
+    "colour": "magenta3",
+    "segments": [
+        [
+            192,
+            14472,
+            1336,
+            14472
+        ],
+        [
+            1336,
+            14472,
+            1400,
+            14440
+        ],
+        [
+            1400,
+            14440,
+            2224,
+            13616
+        ],
+        [
+            2576,
+            13440,
+            2224,
+            13616
+        ]
+    ],
+    "corners": [
+        [
+            1336,
+            14472,
+            3,
+            12
+        ],
+        [
+            1400,
+            14440,
+            2,
+            11
+        ],
+        [
+            2224,
+            13616,
+            3,
+            10
+        ],
+        [
+            2576,
+            13440,
+            4,
+            11,
+            "Shoeburyness"
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Ockendon"
+                ],
+                "not": [
+                    "EastAnglia/Purfleet"
+                ]
+            },
+            "corner": [
+                192,
+                14472,
+                4,
+                13,
+                "Ockendon"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Grays",
+        "Tilbury Town",
+        "East Tilbury",
+        "Stanford-le-Hope"
+    ]
+}

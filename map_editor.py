@@ -599,25 +599,52 @@ Control map text, passengers, and shop via the JSON.
         chances = []
         lines = []
         while True:
-            station = input('Station (mapname/name): ')
+            station = input('Station (mapname/name) (start with ; for a whole line - only works on current map): ')
             if station == '':
                 break
-            if '/' not in station:
-                station = map_name + '/' + station
-            stations.append(station)
+            if ';' not in station:
+                if '/' not in station:
+                    station = map_name + '/' + station
+                stations.append(station)
 
-            chance = int(input('Relative chance of appearing: '))
-            chances.append(chance)
+                chance = int(input('Relative chance of appearing: '))
+                chances.append(chance)
 
-            return_lines = []
-            while True:
-                line = input('This station is on line (mapname/line): ')
-                if line == '':
-                    break
-                if '/' not in line:
-                    line = map_name + '/' + line
-                return_lines.append(line)
-            lines.append(return_lines)
+                return_lines = []
+                while True:
+                    line = input('This station is on line (mapname/line): ')
+                    if line == '':
+                        break
+                    if '/' not in line:
+                        line = map_name + '/' + line
+                    return_lines.append(line)
+                lines.append(return_lines)
+            
+            else:
+                line = station.strip(';')
+                with open(f'map/{map_name}/lines/{line}.json','r') as f:
+                    station_names = loads(f.read().strip('\n'))['stations']
+
+                for name in station_names:
+                    print()
+                    name = f'{map_name}/{name}'
+                    if name in stations:
+                        continue
+                    print(name)
+                    stations.append(name)
+                    chance = int(input('Relative chance of appearing: '))
+                    chances.append(chance)
+                    return_lines = [f'{map_name}/{line}']
+                    while True:
+                        line = input('This station is on extra line (mapname/line): ')
+                        if line == '':
+                            break
+                        if '/' not in line:
+                            line = map_name + '/' + line
+                        return_lines.append(line)
+                    print()
+                    lines.append(return_lines)
+
 
         for start in range(len(stations)):
             for dest in range(len(stations)):

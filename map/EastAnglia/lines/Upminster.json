@@ -34,11 +34,62 @@
                 12,
                 "Basildon"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Ockendon"
+                ],
+                "not": [
+                    "EastAnglia/Basildon"
+                ]
+            },
+            "corner": [
+                -464,
+                13440,
+                5,
+                12,
+                "Ockendon"
+            ]
         }
     ],
     "stops": [],
     "conditional_stops": [],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Ockendon",
+                    "EastAnglia/Basildon"
+                ],
+                "not": []
+            },
+            "coords": [
+                -464,
+                13440
+            ],
+            "approach": {
+                "coords": [
+                    -712,
+                    13440
+                ],
+                "direction": 4,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Basildon",
+                "direction": 4
+            },
+            "right": {
+                "line": "Ockendon",
+                "direction": 5
+            }
+        }
+    ],
     "stations": [
         "Upminster"
     ]
