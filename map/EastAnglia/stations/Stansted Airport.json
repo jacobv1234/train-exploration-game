@@ -242,7 +242,7 @@
                     "EastAnglia/Stansted-N",
                     "EastAnglia/Stansted-S"
                 ],
-                "not": []
+                "not": ["EastAnglia/Stansted-Bypass"]
             },
             "unlock": [
                 "EastAnglia/Stansted-Bypass"
