@@ -1,36 +1,36 @@
 {
-    "name": "Tilbury Town",
+    "name": "Rainham",
     "position": [
-        984,
-        14472
+        -928,
+        14264
     ],
     "exits": {
         "eastbound": {
-            "direction": 4,
+            "direction": 7,
             "requirements": {
                 "unlocked": [],
                 "not": []
             },
-            "line": "Grays"
+            "line": "Purfleet"
         },
         "westbound": {
-            "direction": 12,
+            "direction": 15,
             "requirements": {
                 "unlocked": [],
                 "not": []
             },
-            "line": "Grays"
+            "line": "Purfleet"
         }
     },
     "map_text": [
         {
             "offset": [
-                0,
-                -24
+                16,
+                -8
             ],
-            "text": "Tilbury Town",
+            "text": "Rainham",
             "font": "Arial 10",
-            "anchor": "s"
+            "anchor": "sw"
         }
     ],
     "passengers": {
@@ -77,7 +77,7 @@
                 "reward": 1
             },
             {
-                "chance": 1,
+                "chance": 2,
                 "station": "EastAnglia/Chalkwell",
                 "line": [
                     "EastAnglia/"
@@ -117,6 +117,14 @@
                 "reward": 1
             },
             {
+                "chance": 2,
+                "station": "EastAnglia/Tilbury Town",
+                "line": [
+                    "EastAnglia/"
+                ],
+                "reward": 1
+            },
+            {
                 "chance": 1,
                 "station": "EastAnglia/East Tilbury",
                 "line": [
@@ -133,16 +141,16 @@
                 "reward": 1
             },
             {
-                "chance": 1,
-                "station": "EastAnglia/Ockendon",
+                "chance": 2,
+                "station": "EastAnglia/Dagenham Dock",
                 "line": [
-                    "EastAnglia/Ockendon"
+                    "EastAnglia/Purfleet"
                 ],
                 "reward": 1
             },
             {
-                "chance": 1,
-                "station": "EastAnglia/Chafford Hundred",
+                "chance": 2,
+                "station": "EastAnglia/Purfleet",
                 "line": [
                     "EastAnglia/"
                 ],
@@ -178,38 +186,6 @@
                 "line": [
                     "EastAnglia/Barking",
                     "EastAnglia/Barking-E"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "EastAnglia/Upminster",
-                "line": [
-                    "EastAnglia/Upminster"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "EastAnglia/Dagenham Dock",
-                "line": [
-                    "EastAnglia/Purfleet"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "EastAnglia/Rainham",
-                "line": [
-                    "EastAnglia/"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "EastAnglia/Purfleet",
-                "line": [
-                    "EastAnglia/"
                 ],
                 "reward": 1
             }
