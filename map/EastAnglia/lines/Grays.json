@@ -70,62 +70,11 @@
                 13,
                 "Ockendon"
             ]
-        },
-        {
-            "requirements": {
-                "unlocked": [
-                    "EastAnglia/Purfleet"
-                ],
-                "not": [
-                    "EastAnglia/Ockendon"
-                ]
-            },
-            "corner": [
-                192,
-                14472,
-                4,
-                12,
-                "Purfleet"
-            ]
         }
     ],
     "stops": [],
     "conditional_stops": [],
-    "junctions": [
-        {
-            "requirements": {
-                "unlocked": [
-                    "EastAnglia/Purfleet",
-                    "EastAnglia/Ockendon"
-                ],
-                "not": []
-            },
-            "coords": [
-                192,
-                14472
-            ],
-            "approach": {
-                "coords": [
-                    432,
-                    14472
-                ],
-                "direction": 12,
-                "options": [
-                    "straight",
-                    "right"
-                ],
-                "default": 0
-            },
-            "straight": {
-                "line": "Purfleet",
-                "direction": 12
-            },
-            "right": {
-                "line": "Ockendon",
-                "direction": 13
-            }
-        }
-    ],
+    "junctions": [],
     "stations": [
         "Grays",
         "Tilbury Town",

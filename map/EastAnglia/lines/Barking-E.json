@@ -41,23 +41,6 @@
                 12,
                 "Upminster"
             ]
-        },
-        {
-            "requirements": {
-                "unlocked": [
-                    "EastAnglia/Purfleet"
-                ],
-                "not": [
-                    "EastAnglia/Upminster"
-                ]
-            },
-            "corner": [
-                -1416,
-                13440,
-                5,
-                12,
-                "Purfleet"
-            ]
         }
     ],
     "stops": [],
@@ -76,42 +59,6 @@
             ]
         }
     ],
-    "junctions": [
-        {
-            "requirements": {
-                "unlocked": [
-                    "EastAnglia/Purfleet",
-                    "EastAnglia/Upminster"
-                ],
-                "not": []
-            },
-            "coords": [
-                -1416,
-                13440
-            ],
-            "approach": {
-                "coords": [
-                    -1600,
-                    13440
-                ],
-                "direction": 4,
-                "options": [
-                    "straight",
-                    "right"
-                ],
-                "default": 0
-            },
-            "straight": {
-                "line": "Upminster",
-                "direction": 4
-            },
-            "right": {
-                "line": "Purfleet",
-                "direction": 5
-            }
-        }
-    ],
-    "stations": [
-        "Barking"
-    ]
+    "junctions": [],
+    "stations": ["Barking"]
 }

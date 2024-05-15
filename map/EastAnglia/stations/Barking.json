@@ -231,30 +231,6 @@
                     "EastAnglia/"
                 ],
                 "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "EastAnglia/Dagenham Dock",
-                "line": [
-                    "EastAnglia/Purfleet"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "EastAnglia/Rainham",
-                "line": [
-                    "EastAnglia/"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "EastAnglia/Purfleet",
-                "line": [
-                    "EastAnglia/"
-                ],
-                "reward": 1
             }
         ]
     },
@@ -327,24 +303,6 @@
                 "EastAnglia/Shoeburyness"
             ],
             "unique_name": "EastAnglia/Barking/Shoeburyness via Ockendon"
-        },
-        "Shoeburyness via Purfleet": {
-            "cost": 1,
-            "requirements": {
-                "unlocked": [
-                    "EastAnglia/Shoeburyness"
-                ],
-                "not": [
-                    "EastAnglia/Purfleet"
-                ]
-            },
-            "unlock": [
-                "EastAnglia/Barking-E",
-                "EastAnglia/Purfleet",
-                "EastAnglia/Grays",
-                "EastAnglia/Shoeburyness"
-            ],
-            "unique_name": "EastAnglia/Barking/Shoeburyness via Purfleet"
         }
     }
 }

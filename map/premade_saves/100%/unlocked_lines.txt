@@ -78,4 +78,3 @@ EastAnglia/Basildon
 EastAnglia/Shoeburyness
 EastAnglia/Ockendon
 EastAnglia/Grays
-EastAnglia/Purfleet

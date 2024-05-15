@@ -221,30 +221,6 @@
                     "EastAnglia/"
                 ],
                 "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "EastAnglia/Dagenham Dock",
-                "line": [
-                    "EastAnglia/Purfleet"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "EastAnglia/Rainham",
-                "line": [
-                    "EastAnglia/"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "EastAnglia/Purfleet",
-                "line": [
-                    "EastAnglia/"
-                ],
-                "reward": 1
             }
         ]
     },
