@@ -1,6 +1,7 @@
 from json import loads
 from lib.line import Line
 from lib.decoline import DecoLine
+from lib.station_group import StationGroup
 from tkinter import *
 
 class Map():
@@ -45,6 +46,10 @@ class Map():
             for segment in self.lines[line].segments:
                 canvas.tag_lower(segment)
         canvas.tag_lower(self.water)
+
+        self.station_groups = {}
+        for group in manifest['station_groups']:
+            self.station_groups[group] = StationGroup(group, canvas, name, unlocked_lines)
 
 
     def check_corners(self, x, y, line):

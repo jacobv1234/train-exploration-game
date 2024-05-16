@@ -1,0 +1,15 @@
+{
+    "name": "Example",
+    "stations": [
+        "Station 1",
+        "Station 2"
+    ],
+    "connecting_lines": [
+        ["Station 1", "Station 2", 0,0,10,10]
+    ],
+
+    "station_lines": {
+        "Station 1": ["Line 1"],
+        "Station 2": ["Line 2A", "Line 2B"]
+    }
+}

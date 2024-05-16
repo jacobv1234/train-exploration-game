@@ -6,7 +6,7 @@ class StationDisplay:
     def __init__(self, window: Tk, screen_width:int, screen_height:int, station: Station, points: int, unlocked_lines: list, bought:list, skin: str):
         self.c = Canvas(window, width=screen_width, height=screen_height, bg='white')
         self.c.place(x=4,y=0)
-        self.c.create_text(20,10,fill='black', font='Arial 40', text=station.name, anchor='nw')
+        self.c.create_text(20,10,fill='black', font='Arial 40', text=station.name.replace('@', ' - '), anchor='nw')
         self.c.create_line(0,80,screen_width,80, fill='black')
         self.c.create_line(0,110,screen_width,110,fill='black')
         self.c.create_text(screen_width-25, 28, fill='black', font='Arial 24', text=f'Points: {points}', anchor='ne')
@@ -47,7 +47,7 @@ class StationDisplay:
         for i in range(len(self.station.exits.keys())):
             exit_name = list(self.station.exits.keys())[i]
             location = ((self.space / len(self.station.exits.keys())) * (i + 0.5)) + 110
-            self.page_contents.append(self.c.create_text((self.width/5)*4, location, fill='black', font='Arial 30', text=f'Exit {exit_name}', anchor='e'))
+            self.page_contents.append(self.c.create_text((self.width/5)*4, location, fill='black', font='Arial 30', text=exit_name.capitalise(), anchor='e'))
             self.possible_cursor_positions.append(location)
             self.options.append(exit_name)
         self.cursor = self.c.create_image(self.width/4, self.possible_cursor_positions[0], image = self.cursor_graphic, anchor='center')

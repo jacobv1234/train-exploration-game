@@ -24,7 +24,11 @@ class Passengers:
         else:
             return 3
 
-    def remove(self, station):
+    def remove(self, station: str):
+        if '@' in station:
+            index = station.index('@')
+            station = station[:index]
+
         for object in self.objects:
             self.c.delete(object)
         self.objects = []
