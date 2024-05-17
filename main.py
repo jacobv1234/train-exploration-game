@@ -282,6 +282,18 @@ while game_running:
             current_y = train.y
             train.x = station.pos[0]
             train.y = station.pos[1]
+
+            # special coords
+            if str(type(out)) != "<class 'int'>":
+                if len(out) >= 4:
+                    train.x = out[2]
+                    train.y = out[3]
+
+                    # map change
+                    if len(out) == 5:
+                        area.unload(c)
+                        area = Map(out[4],c,unlocked_lines)
+
             # camera
             scroll_x = train.x - current_x
             scroll_y = train.y - current_y
