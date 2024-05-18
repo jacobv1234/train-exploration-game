@@ -293,6 +293,8 @@ while game_running:
                     if len(out) == 5:
                         area.unload(c)
                         area = Map(out[4],c,unlocked_lines)
+                        mapnamedisplay = MapNameDisplay(area.name, area.size, window, screen_height)
+                        mapnamecounter = 45
 
             # camera
             scroll_x = train.x - current_x

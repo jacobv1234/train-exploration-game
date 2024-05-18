@@ -1,0 +1,14 @@
+{
+    "lines": [],
+    "loadingzones": [],
+    "display_name": "London Underground",
+    "fontsize": 20,
+    "water": [],
+    "scroll_bounds": {
+        "left": -3000,
+        "right": 3000,
+        "top": -3000,
+        "bottom": 3000
+    },
+    "station_groups":[]
+}
