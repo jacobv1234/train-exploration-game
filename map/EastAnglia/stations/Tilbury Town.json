@@ -48,7 +48,7 @@
                 "chance": 2,
                 "station": "EastAnglia/Southend Central",
                 "line": [
-                    "EastAnglia/"
+                    "EastAnglia/Shoeburyness"
                 ],
                 "reward": 1
             },
@@ -56,7 +56,7 @@
                 "chance": 2,
                 "station": "EastAnglia/Southend East",
                 "line": [
-                    "EastAnglia/"
+                    "EastAnglia/Shoeburyness"
                 ],
                 "reward": 1
             },
@@ -64,23 +64,23 @@
                 "chance": 1,
                 "station": "EastAnglia/Thorpe Bay",
                 "line": [
-                    "EastAnglia/"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "EastAnglia/Leigh-on-Sea",
-                "line": [
-                    "EastAnglia/"
+                    "EastAnglia/Shoeburyness"
                 ],
                 "reward": 1
             },
             {
                 "chance": 1,
+                "station": "EastAnglia/Leigh-on-Sea",
+                "line": [
+                    "EastAnglia/Shoeburyness"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
                 "station": "EastAnglia/Chalkwell",
                 "line": [
-                    "EastAnglia/"
+                    "EastAnglia/Shoeburyness"
                 ],
                 "reward": 1
             },
@@ -88,23 +88,23 @@
                 "chance": 1,
                 "station": "EastAnglia/Westcliff",
                 "line": [
-                    "EastAnglia/"
+                    "EastAnglia/Shoeburyness"
                 ],
                 "reward": 1
             },
             {
-                "chance": 1,
+                "chance": 2,
                 "station": "EastAnglia/Pitsea",
                 "line": [
-                    "EastAnglia/"
+                    "EastAnglia/Shoeburyness"
                 ],
                 "reward": 1
             },
             {
-                "chance": 1,
+                "chance": 2,
                 "station": "EastAnglia/Benfleet",
                 "line": [
-                    "EastAnglia/"
+                    "EastAnglia/Shoeburyness"
                 ],
                 "reward": 1
             },
@@ -120,7 +120,7 @@
                 "chance": 1,
                 "station": "EastAnglia/East Tilbury",
                 "line": [
-                    "EastAnglia/"
+                    "EastAnglia/Grays"
                 ],
                 "reward": 1
             },
@@ -128,12 +128,12 @@
                 "chance": 1,
                 "station": "EastAnglia/Stanford-le-Hope",
                 "line": [
-                    "EastAnglia/"
+                    "EastAnglia/Grays"
                 ],
                 "reward": 1
             },
             {
-                "chance": 1,
+                "chance": 2,
                 "station": "EastAnglia/Ockendon",
                 "line": [
                     "EastAnglia/Ockendon"
@@ -144,7 +144,7 @@
                 "chance": 1,
                 "station": "EastAnglia/Chafford Hundred",
                 "line": [
-                    "EastAnglia/"
+                    "EastAnglia/Ockendon"
                 ],
                 "reward": 1
             },
@@ -160,7 +160,7 @@
                 "chance": 1,
                 "station": "EastAnglia/Limehouse",
                 "line": [
-                    "EastAnglia/"
+                    "EastAnglia/Fenchurch St"
                 ],
                 "reward": 1
             },
@@ -168,7 +168,7 @@
                 "chance": 2,
                 "station": "EastAnglia/West Ham",
                 "line": [
-                    "EastAnglia/"
+                    "EastAnglia/Fenchurch St"
                 ],
                 "reward": 1
             },
@@ -186,6 +186,30 @@
                 "station": "EastAnglia/Upminster",
                 "line": [
                     "EastAnglia/Upminster"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Dagenham Dock",
+                "line": [
+                    "EastAnglia/Purfleet"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Rainham",
+                "line": [
+                    "EastAnglia/Purfleet"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Purfleet",
+                "line": [
+                    "EastAnglia/Purfleet"
                 ],
                 "reward": 1
             }

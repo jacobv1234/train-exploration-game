@@ -5,7 +5,7 @@
     "loadingzones": [],
     "display_name": "London Underground",
     "fontsize": 20,
-    "water": [],
+    "water": [-24000,-24000,-24000,24000,24000,24000,24000,-24000],
     "scroll_bounds": {
         "left": -3000,
         "right": 3000,

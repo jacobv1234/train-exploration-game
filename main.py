@@ -295,6 +295,7 @@ while game_running:
                         area = Map(out[4],c,unlocked_lines)
                         mapnamedisplay = MapNameDisplay(area.name, area.size, window, screen_height)
                         mapnamecounter = 45
+                        c.tag_raise(train.object)
 
             # camera
             scroll_x = train.x - current_x

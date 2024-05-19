@@ -674,12 +674,12 @@ Control map text, passengers, and shop via the JSON.
                     chances.append(chance)
                     return_lines = [f'{map_name}/{line}']
                     while True:
-                        line = input('This station is on extra line (mapname/line): ')
-                        if line == '':
+                        extra_line = input('This station is on extra line (mapname/line): ')
+                        if extra_line == '':
                             break
-                        if '/' not in line:
-                            line = map_name + '/' + line
-                        return_lines.append(line)
+                        if '/' not in extra_line:
+                            extra_line = map_name + '/' + extra_line
+                        return_lines.append(extra_line)
                     print()
                     lines.append(return_lines)
 
@@ -702,9 +702,14 @@ Control map text, passengers, and shop via the JSON.
                     with open(f'map/{path[0]}/stations/{path[1]}.json','r') as f:
                         data = loads(f.read())
                     if stations[dest] in [option['station'] for option in data['passengers']['options']]:
-                        print('Skipped over existing combination.')
-                        continue
-                    data['passengers']['options'].append(passenger)
+                        print('Overwritten existing combination.')
+                        existing = [option['station'] for option in data['passengers']['options']]
+                        existing_index = existing.index(stations[dest])
+                        data['passengers']['options'][existing_index] = passenger
+
+                    else:
+                        data['passengers']['options'].append(passenger)
+
                     with open(f'map/{path[0]}/stations/{path[1]}.json','w') as f:
                         f.write(dumps(data, indent=4))
                     print('Added.')
@@ -720,9 +725,14 @@ Control map text, passengers, and shop via the JSON.
                             with open(f'map/{path[0]}/stations/{file}','r') as f:
                                 data = loads(f.read())
                             if stations[dest] in [option['station'] for option in data['passengers']['options']]:
-                                print('Skipped over existing combination.')
-                                continue
-                            data['passengers']['options'].append(passenger)
+                                print('Overwritten existing combination.')
+                                existing = [option['station'] for option in data['passengers']['options']]
+                                existing_index = existing.index(stations[dest])
+                                data['passengers']['options'][existing_index] = passenger
+
+                            else:
+                                data['passengers']['options'].append(passenger)
+                                
                             with open(f'map/{path[0]}/stations/{file}','w') as f:
                                 f.write(dumps(data, indent=4))
                             print('Added to group.')

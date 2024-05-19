@@ -67,7 +67,7 @@
                 "chance": 1,
                 "station": "LondonUnderground/Aldgate",
                 "line": [
-                    "LondonUnderground/"
+                    "LondonUnderground/Circle-N"
                 ],
                 "reward": 1
             },
@@ -75,7 +75,7 @@
                 "chance": 2,
                 "station": "LondonUnderground/Tower Hill",
                 "line": [
-                    "LondonUnderground/"
+                    "LondonUnderground/Circle-N"
                 ],
                 "reward": 1
             },
@@ -83,7 +83,7 @@
                 "chance": 2,
                 "station": "LondonUnderground/Moorgate",
                 "line": [
-                    "LondonUnderground/"
+                    "LondonUnderground/Circle-N"
                 ],
                 "reward": 1
             },
@@ -91,7 +91,7 @@
                 "chance": 1,
                 "station": "LondonUnderground/Barbican",
                 "line": [
-                    "LondonUnderground/"
+                    "LondonUnderground/Circle-N"
                 ],
                 "reward": 1
             },
@@ -99,7 +99,7 @@
                 "chance": 2,
                 "station": "LondonUnderground/Farringdon",
                 "line": [
-                    "LondonUnderground/"
+                    "LondonUnderground/Circle-N"
                 ],
                 "reward": 1
             },
@@ -107,7 +107,7 @@
                 "chance": 2,
                 "station": "LondonUnderground/Baker Street",
                 "line": [
-                    "LondonUnderground/"
+                    "LondonUnderground/Circle-N"
                 ],
                 "reward": 1
             },
@@ -115,7 +115,7 @@
                 "chance": 1,
                 "station": "LondonUnderground/Great Portland Street",
                 "line": [
-                    "LondonUnderground/"
+                    "LondonUnderground/Circle-N"
                 ],
                 "reward": 1
             },
@@ -123,7 +123,7 @@
                 "chance": 2,
                 "station": "LondonUnderground/Euston Square",
                 "line": [
-                    "LondonUnderground/"
+                    "LondonUnderground/Circle-N"
                 ],
                 "reward": 1
             },
@@ -131,7 +131,7 @@
                 "chance": 3,
                 "station": "LondonUnderground/King's Cross",
                 "line": [
-                    "LondonUnderground/"
+                    "LondonUnderground/Circle-N"
                 ],
                 "reward": 1
             }

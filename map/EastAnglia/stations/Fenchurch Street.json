@@ -66,8 +66,8 @@
                 "chance": 2,
                 "station": "EastAnglia/Barking",
                 "line": [
-                    "EastAnglia/Barking-E",
-                    "EastAnglia/Barking"
+                    "EastAnglia/Barking",
+                    "EastAnglia/Barking-E"
                 ],
                 "reward": 1
             },
@@ -120,7 +120,7 @@
                 "reward": 1
             },
             {
-                "chance": 1,
+                "chance": 2,
                 "station": "EastAnglia/Pitsea",
                 "line": [
                     "EastAnglia/Shoeburyness"
@@ -128,7 +128,7 @@
                 "reward": 1
             },
             {
-                "chance": 1,
+                "chance": 2,
                 "station": "EastAnglia/Benfleet",
                 "line": [
                     "EastAnglia/Shoeburyness"
@@ -136,7 +136,7 @@
                 "reward": 1
             },
             {
-                "chance": 2,
+                "chance": 1,
                 "station": "EastAnglia/Leigh-on-Sea",
                 "line": [
                     "EastAnglia/Shoeburyness"
@@ -144,7 +144,7 @@
                 "reward": 1
             },
             {
-                "chance": 1,
+                "chance": 2,
                 "station": "EastAnglia/Chalkwell",
                 "line": [
                     "EastAnglia/Shoeburyness"
@@ -203,7 +203,7 @@
                 "chance": 2,
                 "station": "EastAnglia/Tilbury Town",
                 "line": [
-                    "EastAnglia/"
+                    "EastAnglia/Grays"
                 ],
                 "reward": 1
             },
@@ -211,7 +211,7 @@
                 "chance": 1,
                 "station": "EastAnglia/East Tilbury",
                 "line": [
-                    "EastAnglia/"
+                    "EastAnglia/Grays"
                 ],
                 "reward": 1
             },
@@ -219,12 +219,12 @@
                 "chance": 1,
                 "station": "EastAnglia/Stanford-le-Hope",
                 "line": [
-                    "EastAnglia/"
+                    "EastAnglia/Grays"
                 ],
                 "reward": 1
             },
             {
-                "chance": 1,
+                "chance": 2,
                 "station": "EastAnglia/Ockendon",
                 "line": [
                     "EastAnglia/Ockendon"
@@ -235,7 +235,31 @@
                 "chance": 1,
                 "station": "EastAnglia/Chafford Hundred",
                 "line": [
-                    "EastAnglia/"
+                    "EastAnglia/Ockendon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Dagenham Dock",
+                "line": [
+                    "EastAnglia/Purfleet"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "EastAnglia/Rainham",
+                "line": [
+                    "EastAnglia/Purfleet"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "EastAnglia/Purfleet",
+                "line": [
+                    "EastAnglia/Purfleet"
                 ],
                 "reward": 1
             }
