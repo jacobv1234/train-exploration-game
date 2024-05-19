@@ -1,0 +1,146 @@
+{
+    "name": "Tower Hill",
+    "position": [
+        864,
+        872
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "not": []
+            },
+            "line": "Circle-N"
+        },
+        "To National Rail": {
+            "direction": 3,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Fenchurch St"
+                ],
+                "not": []
+            },
+            "line": "Fenchurch St",
+            "new_map": "EastAnglia",
+            "new_coords": [
+                -3736,
+                14888
+            ]
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -24
+            ],
+            "text": "Tower Hill",
+            "font": "Arial 10",
+            "anchor": "se"
+        },
+        {
+            "offset": [
+                8,
+                -32
+            ],
+            "badge": "nationalrail",
+            "anchor": "w"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 75,
+        "options": [
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Liverpool Street",
+                "line": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Aldgate",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Moorgate",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Barbican",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Farringdon",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Baker Street",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Great Portland Street",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Euston Square",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/King's Cross",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": {
+        "To National Rail": {
+            "cost": 3,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Fenchurch St"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Fenchurch St",
+                "EastAnglia/Barking"
+            ],
+            "unique_name": "LondonUnderground/Tower Hill/To National Rail"
+        }
+    }
+}

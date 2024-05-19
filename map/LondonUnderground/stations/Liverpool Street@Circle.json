@@ -1,0 +1,158 @@
+{
+    "name": "Liverpool Street@Circle",
+    "position": [
+        840,
+        376
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "not": []
+            },
+            "line": "Circle-N"
+        },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "not": []
+            },
+            "line": "Circle-N"
+        },
+        "To National Rail": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [
+                    "EastAnglia/Liverpool St"
+                ],
+                "not": []
+            },
+            "line": "Liverpool St",
+            "new_map": "EastAnglia",
+            "new_coords": [
+                -3984,
+                14504
+            ]
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -8,
+                -24
+            ],
+            "text": "Liverpool Street",
+            "font": "Arial 10",
+            "anchor": "se"
+        },
+        {
+            "offset": [
+                8,
+                -32
+            ],
+            "badge": "nationalrail",
+            "anchor": "w"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 85,
+        "options": [
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Aldgate",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Tower Hill",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Moorgate",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Barbican",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Farringdon",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Baker Street",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Great Portland Street",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Euston Square",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/King's Cross",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": {
+        "To National Rail": {
+            "cost": 3,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Liverpool St"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Liverpool St",
+                "EastAnglia/Stratford",
+                "EastAnglia/Stratford-E",
+                "EastAnglia/Romford"
+            ],
+            "unique_name": "LondonUnderground/Liverpool Street@Circle/To National Rail"
+        }
+    }
+}

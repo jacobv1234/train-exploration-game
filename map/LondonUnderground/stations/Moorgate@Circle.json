@@ -1,0 +1,118 @@
+{
+    "name": "Moorgate",
+    "position": [
+        352,
+        376
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "not": []
+            },
+            "line": "Circle-N"
+        },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "not": []
+            },
+            "line": "Circle-N"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                24
+            ],
+            "text": "Moorgate",
+            "font": "Arial 10",
+            "anchor": "n"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 70,
+        "options": [
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Liverpool Street",
+                "line": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Aldgate",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Tower Hill",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Barbican",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Farringdon",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Baker Street",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Great Portland Street",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Euston Square",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/King's Cross",
+                "line": [
+                    "LondonUnderground/"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

@@ -1,0 +1,176 @@
+{
+    "colour": "#FFCD00",
+    "segments": [
+        [
+            288,
+            376,
+            1032,
+            376
+        ],
+        [
+            1032,
+            376,
+            1080,
+            400
+        ],
+        [
+            1080,
+            400,
+            1104,
+            448
+        ],
+        [
+            1104,
+            448,
+            1104,
+            800
+        ],
+        [
+            1104,
+            800,
+            1080,
+            848
+        ],
+        [
+            1080,
+            848,
+            1032,
+            872
+        ],
+        [
+            1032,
+            872,
+            864,
+            872
+        ],
+        [
+            288,
+            376,
+            240,
+            352
+        ],
+        [
+            240,
+            352,
+            -216,
+            -104
+        ],
+        [
+            -216,
+            -104,
+            -264,
+            -128
+        ],
+        [
+            -264,
+            -128,
+            -1768,
+            -128
+        ]
+    ],
+    "corners": [
+        [
+            1032,
+            376,
+            12,
+            5
+        ],
+        [
+            1080,
+            400,
+            7,
+            13
+        ],
+        [
+            1104,
+            448,
+            15,
+            8
+        ],
+        [
+            1104,
+            800,
+            0,
+            9
+        ],
+        [
+            1080,
+            848,
+            1,
+            11
+        ],
+        [
+            1032,
+            872,
+            3,
+            12
+        ],
+        [
+            288,
+            376,
+            13,
+            4
+        ],
+        [
+            240,
+            352,
+            5,
+            14
+        ],
+        [
+            -216,
+            -104,
+            6,
+            13
+        ],
+        [
+            -264,
+            -128,
+            5,
+            12
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/Circle-S"
+                ]
+            },
+            "stop": [
+                864,
+                872,
+                4
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/Circle-W"
+                ]
+            },
+            "stop": [
+                -1768,
+                -128,
+                4
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "Liverpool Street@Circle",
+        "Aldgate",
+        "Tower Hill",
+        "Moorgate@Circle",
+        "Barbican",
+        "Farringdon@Circle",
+        "Baker Street@Circle",
+        "Great Portland Street",
+        "Euston Square",
+        "King's Cross@Circle"
+    ]
+}

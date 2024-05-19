@@ -21,6 +21,10 @@ class Station:
                     self.exits[exit] = [exits[exit]['direction']]
                     if 'line' in list(exits[exit].keys()):
                         self.exits[exit].append(exits[exit]['line'])
+                        if 'new_coords' in list(exits[exit].keys()):
+                            self.exits[exit].extend(exits[exit]['new_coords'])
+                            if 'new_map' in list(exits[exit].keys()):
+                                self.exits[exit].append(exits[exit]['new_map'])
 
         self.shop = s['shop']
         self.col = 'white'

@@ -1,6 +1,7 @@
 from tkinter import *
 from json import loads,dumps
 from time import sleep
+from os import listdir
 
 from lib.map import Map
 
@@ -20,6 +21,7 @@ with open(f'map/{map_name}/manifest.json','r') as f:
     map_manifest = loads(f.read())
 
 window = Tk()
+window.title('Active Screen')
 screen_width = window.winfo_screenwidth() - 10
 screen_height = window.winfo_screenheight() - 75
 window.state('zoomed')
@@ -398,6 +400,16 @@ Choose object to add to {line}
                 'requirements': req,
                 'line': line
             }
+
+            if input('Change map? (y/n) ').lower() == 'y':
+                station_data['exits'][name]['new_map'] = input('New map: ')
+                station_data['exits'][name]['new_coords'] = []
+                print('Open this map in another instance of the editor and put the coords below:')
+                station_data['exits'][name]['new_coords'].append(int(input('New x coord: ')))
+                station_data['exits'][name]['new_coords'].append(int(input('New y coord: ')))
+            
+            elif input('Change coords? (y/n) ').lower() == 'y':
+                station_data['exits'][name]['new_coords'] = list(get_coordinates())
         
 
         line_name = input('Add to line: ')
@@ -439,6 +451,7 @@ Control map text, passengers, and shop via the JSON.
 2) Add text to the map
 3) Add a shop item
 4) Add a station badge
+5) Add a new exit
 >>> '''))
         match mode:
             case 1:
@@ -542,6 +555,27 @@ Control map text, passengers, and shop via the JSON.
                     "badge": badge,
                     "anchor": anchor
                 })
+            
+            case 5:
+                name = input('Exit name (eg. westbound): ')
+                dir = int(input('Direction: '))
+                req = choose_requirements()
+                line = input('Line: ')
+                station_data['exits'][name] = {
+                    'direction': dir,
+                    'requirements': req,
+                    'line': line
+                }
+
+                if input('Change map? (y/n) ').lower() == 'y':
+                    station_data['exits'][name]['new_map'] = input('New map: ')
+                    station_data['exits'][name]['new_coords'] = []
+                    print('Open this map in another instance of the editor and put the coords below:')
+                    station_data['exits'][name]['new_coords'].append(int(input('New x coord: ')))
+                    station_data['exits'][name]['new_coords'].append(int(input('New y coord: ')))
+                
+                elif input('Change coords? (y/n) ').lower() == 'y':
+                    station_data['exits'][name]['new_coords'] = list(get_coordinates()) 
 
         
         with open(f'map/{map_name}/stations/{station_data["name"]}.json','w') as f:
@@ -628,6 +662,10 @@ Control map text, passengers, and shop via the JSON.
                 for name in station_names:
                     print()
                     name = f'{map_name}/{name}'
+                    if '@' in name:
+                        index = name.index('@')
+                        name = name[:index]
+
                     if name in stations:
                         continue
                     print(name)
@@ -670,9 +708,24 @@ Control map text, passengers, and shop via the JSON.
                     with open(f'map/{path[0]}/stations/{path[1]}.json','w') as f:
                         f.write(dumps(data, indent=4))
                     print('Added.')
+                
+                # handling station groups
                 except FileNotFoundError:
-                    print('Station does not exist')
-                    continue
+                    files = listdir(f'./map/{path[0]}/stations/')
+                    if not any([f'{path[1]}@' in file for file in files]):
+                        print('Station does not exist')
+                        continue
+                    for file in files:
+                        if f'{path[1]}@' in file:
+                            with open(f'map/{path[0]}/stations/{file}','r') as f:
+                                data = loads(f.read())
+                            if stations[dest] in [option['station'] for option in data['passengers']['options']]:
+                                print('Skipped over existing combination.')
+                                continue
+                            data['passengers']['options'].append(passenger)
+                            with open(f'map/{path[0]}/stations/{file}','w') as f:
+                                f.write(dumps(data, indent=4))
+                            print('Added to group.')
         
         print('Finished.')
 
@@ -684,6 +737,7 @@ Control map text, passengers, and shop via the JSON.
 c.tag_raise(border_main)
 
 w1 = Tk()
+w1.title('Zoomed out map')
 c1 = Canvas(w1, width=screen_width,height=screen_height, bg='lightblue', xscrollincrement=1, yscrollincrement=1)
 c1.pack()
 

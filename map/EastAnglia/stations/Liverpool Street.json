@@ -12,6 +12,21 @@
                 "not": []
             },
             "line": "Liverpool St"
+        },
+        "To London Underground": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "not": []
+            },
+            "line": "Circle-N",
+            "new_map": "LondonUnderground",
+            "new_coords": [
+                840,
+                376
+            ]
         }
     },
     "map_text": [
@@ -403,6 +418,19 @@
                 "EastAnglia/_c2c-Liverpool St"
             ],
             "unique_name": "EastAnglia/Liverpool Street/To Barking (c2c)"
+        },
+        "To London Underground": {
+            "cost": 3,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/Circle-N"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/Circle-N"
+            ],
+            "unique_name": "EastAnglia/Liverpool Street/To London Underground"
         }
     }
 }

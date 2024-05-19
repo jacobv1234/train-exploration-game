@@ -14,6 +14,21 @@
                 "not": []
             },
             "line": "Fenchurch St"
+        },
+        "To London Underground": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "not": []
+            },
+            "line": "Circle-N",
+            "new_map": "LondonUnderground",
+            "new_coords": [
+                864,
+                872
+            ]
         }
     },
     "map_text": [
@@ -240,6 +255,19 @@
                 "EastAnglia/Barking"
             ],
             "unique_name": "EastAnglia/Fenchurch Street/To Barking"
+        },
+        "To London Underground": {
+            "cost": 3,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/Circle-N"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/Circle-N"
+            ],
+            "unique_name": "EastAnglia/Fenchurch Street/To London Underground"
         }
     }
 }
