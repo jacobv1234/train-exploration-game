@@ -130,7 +130,23 @@
             12
         ]
     ],
-    "conditional_corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "not": []
+            },
+            "corner": [
+                864,
+                872,
+                4,
+                12,
+                "Circle-S"
+            ]
+        }
+    ],
     "stops": [],
     "conditional_stops": [
         {

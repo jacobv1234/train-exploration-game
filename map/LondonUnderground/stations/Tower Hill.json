@@ -15,6 +15,16 @@
             },
             "line": "Circle-N"
         },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "not": []
+            },
+            "line": "Circle-S"
+        },
         "To National Rail": {
             "direction": 3,
             "requirements": {
