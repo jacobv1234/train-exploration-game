@@ -1,0 +1,45 @@
+{
+    "name": "Cannon Street",
+    "position": [
+        208,
+        928
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 2,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "not": []
+            },
+            "line": "Circle-S"
+        },
+        "westbound": {
+            "direction": 10,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "not": []
+            },
+            "line": "Circle-S"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -16,
+                -8
+            ],
+            "text": "Cannon Street",
+            "font": "Arial 10",
+            "anchor": "se"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 70,
+        "options": []
+    },
+    "shop": false
+}

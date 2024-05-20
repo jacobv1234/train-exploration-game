@@ -1,0 +1,35 @@
+{
+    "name": "South Kensington",
+    "position": [
+        -2264,
+        1376
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "not": []
+            },
+            "line": "Circle-S"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                24
+            ],
+            "text": "South Kensington",
+            "font": "Arial 10",
+            "anchor": "n"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 75,
+        "options": []
+    },
+    "shop": false
+}

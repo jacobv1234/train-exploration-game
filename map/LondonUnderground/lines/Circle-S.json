@@ -106,6 +106,12 @@
     ],
     "junctions": [],
     "stations": [
-        "Tower Hill"
+        "Tower Hill",
+        "Monument",
+        "Cannon Street",
+        "Mansion House",
+        "Blackfriars",
+        "Temple",
+        "South Kensington@Circle"
     ]
 }
