@@ -1,8 +1,8 @@
 {
-    "name": "Monument",
+    "name": "Victoria@Circle",
     "position": [
-        536,
-        872
+        -1776,
+        1376
     ],
     "exits": {
         "eastbound": {
@@ -29,12 +29,12 @@
     "map_text": [
         {
             "offset": [
-                0,
+                8,
                 -24
             ],
-            "text": "Monument",
+            "text": "Victoria",
             "font": "Arial 10",
-            "anchor": "sw"
+            "anchor": "se"
         }
     ],
     "passengers": {
@@ -46,6 +46,14 @@
                 "line": [
                     "LondonUnderground/Circle-S",
                     "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Monument",
+                "line": [
+                    "LondonUnderground/Circle-S"
                 ],
                 "reward": 1
             },
@@ -108,14 +116,6 @@
             {
                 "chance": 2,
                 "station": "LondonUnderground/Westminster",
-                "line": [
-                    "LondonUnderground/Circle-S"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Victoria",
                 "line": [
                     "LondonUnderground/Circle-S"
                 ],

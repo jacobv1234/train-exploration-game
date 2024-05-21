@@ -1,8 +1,8 @@
 {
-    "name": "Monument",
+    "name": "Westminster@Circle",
     "position": [
-        536,
-        872
+        -1216,
+        1376
     ],
     "exits": {
         "eastbound": {
@@ -30,15 +30,15 @@
         {
             "offset": [
                 0,
-                -24
+                24
             ],
-            "text": "Monument",
+            "text": "Westminster",
             "font": "Arial 10",
-            "anchor": "sw"
+            "anchor": "n"
         }
     ],
     "passengers": {
-        "chance_of_any": 80,
+        "chance_of_any": 75,
         "options": [
             {
                 "chance": 3,
@@ -46,6 +46,14 @@
                 "line": [
                     "LondonUnderground/Circle-S",
                     "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Monument",
+                "line": [
+                    "LondonUnderground/Circle-S"
                 ],
                 "reward": 1
             },
@@ -100,14 +108,6 @@
             {
                 "chance": 1,
                 "station": "LondonUnderground/St James's Park",
-                "line": [
-                    "LondonUnderground/Circle-S"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Westminster",
                 "line": [
                     "LondonUnderground/Circle-S"
                 ],

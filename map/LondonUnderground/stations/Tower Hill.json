@@ -134,6 +134,94 @@
                     "LondonUnderground/Circle-N"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Monument",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Cannon Street",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Mansion House",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Blackfriars",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Temple",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/South Kensington",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Embankment",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/St James's Park",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Westminster",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Victoria",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Sloane Square",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -151,6 +239,32 @@
                 "EastAnglia/Barking"
             ],
             "unique_name": "LondonUnderground/Tower Hill/To National Rail"
+        },
+        "South Kensington via Circle": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/Circle-S"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/Circle-S"
+            ],
+            "unique_name": "LondonUnderground/Tower Hill/South Kensington via Circle"
+        },
+        "Baker Street via Circle": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/Circle-N"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/Circle-N"
+            ],
+            "unique_name": "LondonUnderground/Tower Hill/Baker Street via Circle"
         }
     }
 }

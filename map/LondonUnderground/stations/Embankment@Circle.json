@@ -1,8 +1,8 @@
 {
-    "name": "Monument",
+    "name": "Embankment@Circle",
     "position": [
-        536,
-        872
+        -832,
+        1376
     ],
     "exits": {
         "eastbound": {
@@ -29,10 +29,10 @@
     "map_text": [
         {
             "offset": [
-                0,
+                -8,
                 -24
             ],
-            "text": "Monument",
+            "text": "Embankment",
             "font": "Arial 10",
             "anchor": "sw"
         }
@@ -46,6 +46,14 @@
                 "line": [
                     "LondonUnderground/Circle-S",
                     "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Monument",
+                "line": [
+                    "LondonUnderground/Circle-S"
                 ],
                 "reward": 1
             },
@@ -84,14 +92,6 @@
             {
                 "chance": 2,
                 "station": "LondonUnderground/South Kensington",
-                "line": [
-                    "LondonUnderground/Circle-S"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Embankment",
                 "line": [
                     "LondonUnderground/Circle-S"
                 ],

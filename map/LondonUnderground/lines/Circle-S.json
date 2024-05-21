@@ -112,6 +112,11 @@
         "Mansion House",
         "Blackfriars",
         "Temple",
-        "South Kensington@Circle"
+        "South Kensington@Circle",
+        "Embankment@Circle",
+        "St James's Park",
+        "Westminster@Circle",
+        "Victoria@Circle",
+        "Sloane Square"
     ]
 }

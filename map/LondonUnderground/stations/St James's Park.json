@@ -1,16 +1,14 @@
 {
-    "name": "Monument",
+    "name": "St James's Park",
     "position": [
-        536,
-        872
+        -1520,
+        1376
     ],
     "exits": {
         "eastbound": {
             "direction": 4,
             "requirements": {
-                "unlocked": [
-                    "LondonUnderground/Circle-S"
-                ],
+                "unlocked": [],
                 "not": []
             },
             "line": "Circle-S"
@@ -18,9 +16,7 @@
         "westbound": {
             "direction": 12,
             "requirements": {
-                "unlocked": [
-                    "LondonUnderground/Circle-S"
-                ],
+                "unlocked": [],
                 "not": []
             },
             "line": "Circle-S"
@@ -32,13 +28,13 @@
                 0,
                 -24
             ],
-            "text": "Monument",
+            "text": "St James's Park",
             "font": "Arial 10",
-            "anchor": "sw"
+            "anchor": "s"
         }
     ],
     "passengers": {
-        "chance_of_any": 80,
+        "chance_of_any": 75,
         "options": [
             {
                 "chance": 3,
@@ -46,6 +42,14 @@
                 "line": [
                     "LondonUnderground/Circle-S",
                     "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Monument",
+                "line": [
+                    "LondonUnderground/Circle-S"
                 ],
                 "reward": 1
             },
@@ -92,14 +96,6 @@
             {
                 "chance": 2,
                 "station": "LondonUnderground/Embankment",
-                "line": [
-                    "LondonUnderground/Circle-S"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/St James's Park",
                 "line": [
                     "LondonUnderground/Circle-S"
                 ],

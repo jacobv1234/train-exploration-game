@@ -53,9 +53,10 @@
                 "reward": 1
             },
             {
-                "chance": 2,
+                "chance": 3,
                 "station": "LondonUnderground/Tower Hill",
                 "line": [
+                    "LondonUnderground/Circle-S",
                     "LondonUnderground/Circle-N"
                 ],
                 "reward": 1
@@ -105,6 +106,94 @@
                 "station": "LondonUnderground/King's Cross",
                 "line": [
                     "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Monument",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Cannon Street",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Mansion House",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Blackfriars",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Temple",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/South Kensington",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Embankment",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/St James's Park",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Westminster",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Victoria",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Sloane Square",
+                "line": [
+                    "LondonUnderground/Circle-S"
                 ],
                 "reward": 1
             }
