@@ -93,7 +93,11 @@ class ZoomedMap:
         x,y = self.c.canvasx(event.x), self.c.canvasy(event.y)
         for station in self.stations:
             if int(x) in range(station[0]-12, station[0]+12) and int(y) in range(station[1]-12, station[1]+12):
-                self.c.itemconfig(self.station_name_popup, text=station[2])
+                message = station[2]
+                if '@' in message:
+                    index = message.index('@')
+                    message = message[:index]
+                self.c.itemconfig(self.station_name_popup, text=message)
                 break
             else:
                 self.c.itemconfig(self.station_name_popup, text='')

@@ -47,7 +47,8 @@ class StationDisplay:
         for i in range(len(self.station.exits.keys())):
             exit_name = list(self.station.exits.keys())[i]
             location = ((self.space / len(self.station.exits.keys())) * (i + 0.5)) + 110
-            self.page_contents.append(self.c.create_text((self.width/5)*4, location, fill='black', font='Arial 30', text=exit_name.capitalize(), anchor='e'))
+            self.page_contents.append(self.c.create_text((self.width/5)*4, location, fill='black', font='Arial 30', \
+                    text=' '.join([word.capitalize() for word in exit_name.split(' ')]), anchor='e'))
             self.possible_cursor_positions.append(location)
             self.options.append(exit_name)
         self.cursor = self.c.create_image(self.width/4, self.possible_cursor_positions[0], image = self.cursor_graphic, anchor='center')
