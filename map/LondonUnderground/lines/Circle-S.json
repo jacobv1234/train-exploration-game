@@ -73,6 +73,21 @@
                 12,
                 "Circle-N"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "not": []
+            },
+            "corner": [
+                -2264,
+                1376,
+                4,
+                12,
+                "Circle-C"
+            ]
         }
     ],
     "stops": [],

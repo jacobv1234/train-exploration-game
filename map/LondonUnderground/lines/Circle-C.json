@@ -1,0 +1,135 @@
+{
+    "colour": "#FFCD00",
+    "segments": [
+        [
+            -2264,
+            1376,
+            -2656,
+            1376
+        ],
+        [
+            -2656,
+            1376,
+            -2720,
+            1344
+        ],
+        [
+            -2720,
+            1344,
+            -2752,
+            1280
+        ],
+        [
+            -2752,
+            1280,
+            -2752,
+            120
+        ],
+        [
+            -2752,
+            120,
+            -2720,
+            56
+        ],
+        [
+            -2720,
+            56,
+            -2656,
+            24
+        ],
+        [
+            -2656,
+            24,
+            -2384,
+            24
+        ]
+    ],
+    "corners": [
+        [
+            -2720,
+            1344,
+            15,
+            5
+        ],
+        [
+            -2656,
+            1376,
+            4,
+            13
+        ],
+        [
+            -2752,
+            1280,
+            0,
+            7
+        ],
+        [
+            -2752,
+            120,
+            1,
+            8
+        ],
+        [
+            -2720,
+            56,
+            3,
+            9
+        ],
+        [
+            -2656,
+            24,
+            4,
+            11
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "not": []
+            },
+            "corner": [
+                -2264,
+                1376,
+                4,
+                12,
+                "Circle-S"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/Circle-S"
+                ]
+            },
+            "stop": [
+                -2264,
+                1376,
+                12
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/Circle-J3"
+                ]
+            },
+            "stop": [
+                -2384,
+                24,
+                12
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "Gloucester Road@Circle"
+    ]
+}

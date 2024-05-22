@@ -1,7 +1,8 @@
 {
     "lines": [
         "Circle-N",
-        "Circle-S"
+        "Circle-S",
+        "Circle-C"
     ],
     "loadingzones": [],
     "display_name": "London Underground",

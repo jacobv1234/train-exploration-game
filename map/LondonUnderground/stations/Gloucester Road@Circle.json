@@ -1,0 +1,45 @@
+{
+    "name": "Gloucester Road@Circle",
+    "position": [
+        -2440,
+        1376
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "not": []
+            },
+            "line": "Circle-C"
+        },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "not": []
+            },
+            "line": "Circle-C"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                24
+            ],
+            "text": "Gloucester Road",
+            "font": "Arial 10",
+            "anchor": "n"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 75,
+        "options": []
+    },
+    "shop": false
+}
