@@ -130,6 +130,12 @@
     ],
     "junctions": [],
     "stations": [
-        "Gloucester Road@Circle"
+        "Gloucester Road@Circle",
+        "Edgware Road@District",
+        "South Kensington@Circle",
+        "Bayswater",
+        "Paddington@District",
+        "Notting Hill Gate",
+        "High Street Kensington"
     ]
 }

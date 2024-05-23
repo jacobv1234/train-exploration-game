@@ -136,7 +136,7 @@
                 "reward": 1
             },
             {
-                "chance": 3,
+                "chance": 2,
                 "station": "LondonUnderground/Monument",
                 "line": [
                     "LondonUnderground/Circle-S"
@@ -179,6 +179,7 @@
                 "chance": 2,
                 "station": "LondonUnderground/South Kensington",
                 "line": [
+                    "LondonUnderground/Circle-C",
                     "LondonUnderground/Circle-S"
                 ],
                 "reward": 1
@@ -220,6 +221,54 @@
                 "station": "LondonUnderground/Sloane Square",
                 "line": [
                     "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Gloucester Road",
+                "line": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Edgware Road",
+                "line": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Bayswater",
+                "line": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Paddington",
+                "line": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Notting Hill Gate",
+                "line": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/High Street Kensington",
+                "line": [
+                    "LondonUnderground/Circle-C"
                 ],
                 "reward": 1
             }

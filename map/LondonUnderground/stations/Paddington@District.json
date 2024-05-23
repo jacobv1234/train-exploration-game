@@ -1,45 +1,94 @@
 {
-    "name": "Victoria@Circle",
+    "name": "Paddington@District",
     "position": [
-        -1776,
-        1376
+        -2752,
+        120
     ],
     "exits": {
         "eastbound": {
-            "direction": 4,
+            "direction": 1,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/Circle-S"
+                    "LondonUnderground/Circle-C"
                 ],
                 "not": []
             },
-            "line": "Circle-S"
+            "line": "Circle-C"
         },
-        "westbound": {
-            "direction": 12,
+        "southbound": {
+            "direction": 8,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/Circle-S"
+                    "LondonUnderground/Circle-C"
                 ],
                 "not": []
             },
-            "line": "Circle-S"
+            "line": "Circle-C"
         }
     },
     "map_text": [
         {
             "offset": [
-                8,
-                -24
+                -24,
+                0
             ],
-            "text": "Victoria",
+            "text": "Paddington",
             "font": "Arial 10",
-            "anchor": "se"
+            "anchor": "e"
         }
     ],
     "passengers": {
-        "chance_of_any": 80,
+        "chance_of_any": 85,
         "options": [
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Gloucester Road",
+                "line": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Edgware Road",
+                "line": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/South Kensington",
+                "line": [
+                    "LondonUnderground/Circle-C",
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Bayswater",
+                "line": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Notting Hill Gate",
+                "line": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/High Street Kensington",
+                "line": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "reward": 1
+            },
             {
                 "chance": 3,
                 "station": "LondonUnderground/Tower Hill",
@@ -91,15 +140,6 @@
             },
             {
                 "chance": 2,
-                "station": "LondonUnderground/South Kensington",
-                "line": [
-                    "LondonUnderground/Circle-C",
-                    "LondonUnderground/Circle-S"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
                 "station": "LondonUnderground/Embankment",
                 "line": [
                     "LondonUnderground/Circle-S"
@@ -117,6 +157,14 @@
             {
                 "chance": 2,
                 "station": "LondonUnderground/Westminster",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Victoria",
                 "line": [
                     "LondonUnderground/Circle-S"
                 ],
@@ -199,54 +247,6 @@
                 "station": "LondonUnderground/King's Cross",
                 "line": [
                     "LondonUnderground/Circle-N"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Gloucester Road",
-                "line": [
-                    "LondonUnderground/Circle-C"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Edgware Road",
-                "line": [
-                    "LondonUnderground/Circle-C"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Bayswater",
-                "line": [
-                    "LondonUnderground/Circle-C"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 3,
-                "station": "LondonUnderground/Paddington",
-                "line": [
-                    "LondonUnderground/Circle-C"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Notting Hill Gate",
-                "line": [
-                    "LondonUnderground/Circle-C"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/High Street Kensington",
-                "line": [
-                    "LondonUnderground/Circle-C"
                 ],
                 "reward": 1
             }
