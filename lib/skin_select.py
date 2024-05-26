@@ -8,7 +8,7 @@ class SkinSelect:
         with open('./skins.txt', 'r') as f:
             self.options = [skin[:-1] for skin in f.readlines()]
         self.pos = 0
-        self.display_text = self.c.create_text(width/2, 2*height/3, fill='black', font='Arial 20', text=f'{self.options[0]}>', anchor='center')
+        self.display_text = self.c.create_text(width/2, 2*height/3, fill='black', font='Arial 20', text=f'{self.options[0]} >', anchor='center')
         self.space_pressed = False
 
         self.c.create_text(width/2, height/4, fill='black', font='Arial 30', text='Choose your skin:', anchor='center')
@@ -30,10 +30,10 @@ class SkinSelect:
         if self.pos + 1 == len(self.options):
             ending = ''
         else:
-            ending = '>'
+            ending = ' >'
         
         self.c.itemconfig(self.display, image=self.images[self.pos])
-        self.c.itemconfig(self.display_text, text=f'<{self.options[self.pos]}{ending}')
+        self.c.itemconfig(self.display_text, text=f'< {self.options[self.pos]}{ending}')
 
     def scroll_left(self, event):
         if self.pos > 0:
@@ -42,10 +42,10 @@ class SkinSelect:
         if self.pos == 0:
             start = ''
         else:
-            start = '<'
+            start = '< '
         
         self.c.itemconfig(self.display, image=self.images[self.pos])
-        self.c.itemconfig(self.display_text, text=f'{start}{self.options[self.pos]}>')
+        self.c.itemconfig(self.display_text, text=f'{start}{self.options[self.pos]} >')
 
     def press_space(self, event):
         self.space_pressed = True
