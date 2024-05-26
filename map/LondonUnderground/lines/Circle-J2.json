@@ -1,0 +1,43 @@
+{
+    "colour": "#FFCD00",
+    "segments": [
+        [
+            -2184,
+            -128,
+            -2000,
+            -128
+        ]
+    ],
+    "corners": [
+        [
+            -2000,
+            -128,
+            4,
+            12,
+            "Circle-J1"
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-J3"
+                ],
+                "not": [
+                    "LondonUnderground/H+C"
+                ]
+            },
+            "corner": [
+                -2184,
+                -128,
+                4,
+                11,
+                "Circle-J3"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": []
+}

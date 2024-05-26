@@ -145,6 +145,21 @@
                 12,
                 "Circle-S"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-J1"
+                ],
+                "not": []
+            },
+            "corner": [
+                -1768,
+                -128,
+                4,
+                12,
+                "Circle-J1"
+            ]
         }
     ],
     "stops": [],

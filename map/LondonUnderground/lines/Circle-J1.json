@@ -1,0 +1,64 @@
+{
+    "colour": "#FFCD00",
+    "segments": [
+        [
+            -2000,
+            -128,
+            -1768,
+            -128
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-J2"
+                ],
+                "not": [
+                    "LondonUnderground/Metropolitan-Main"
+                ]
+            },
+            "corner": [
+                -2000,
+                -128,
+                4,
+                12,
+                "Circle-J2"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "not": []
+            },
+            "corner": [
+                -1768,
+                -128,
+                4,
+                12,
+                "Circle-N"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/Circle-N"
+                ]
+            },
+            "stop": [
+                -1768,
+                -128,
+                12
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": []
+}

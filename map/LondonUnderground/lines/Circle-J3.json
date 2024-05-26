@@ -1,0 +1,79 @@
+{
+    "colour": "#FFCD00",
+    "segments": [
+        [
+            -2384,
+            24,
+            -2336,
+            0
+        ],
+        [
+            -2336,
+            0,
+            -2232,
+            -104
+        ],
+        [
+            -2232,
+            -104,
+            -2184,
+            -128
+        ]
+    ],
+    "corners": [
+        [
+            -2336,
+            0,
+            2,
+            11
+        ],
+        [
+            -2232,
+            -104,
+            3,
+            10
+        ],
+        [
+            -2184,
+            -128,
+            4,
+            11,
+            "Circle-J2"
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "not": []
+            },
+            "corner": [
+                -2384,
+                24,
+                3,
+                12,
+                "Circle-J3"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/Circle-C"
+                ]
+            },
+            "stop": [
+                -2384,
+                24,
+                3
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": []
+}

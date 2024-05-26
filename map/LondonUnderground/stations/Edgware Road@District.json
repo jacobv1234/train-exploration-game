@@ -14,6 +14,16 @@
                 "not": []
             },
             "line": "Circle-C"
+        },
+        "eastbound": {
+            "direction": 3,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-J3"
+                ],
+                "not": []
+            },
+            "line": "Circle-J3"
         }
     },
     "map_text": [

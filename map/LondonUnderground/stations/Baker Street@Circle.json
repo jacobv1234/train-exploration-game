@@ -14,6 +14,16 @@
                 "not": []
             },
             "line": "Circle-N"
+        },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-J1"
+                ],
+                "not": []
+            },
+            "line": "Circle-J1"
         }
     },
     "map_text": [
@@ -242,5 +252,23 @@
             }
         ]
     },
-    "shop": false
+    "shop": {
+        "To Edgware Road (District)": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "not": [
+                    "LondonUnderground/Circle-J3"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/Circle-J3",
+                "LondonUnderground/Circle-J2",
+                "LondonUnderground/Circle-J1"
+            ],
+            "unique_name": "LondonUnderground/Baker Street@Circle/To Edgware Road (District)"
+        }
+    }
 }
