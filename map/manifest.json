@@ -8,6 +8,10 @@
         "Unlock Everything": {
             "path": "100%",
             "desc": "Start with all tracks unlocked. Explore as you like!"
+        },
+        "London Underground": {
+            "path": "London start",
+            "desc": "Start a new game from Liverpool Street, on the London Underground."
         }
     },
     "Parts": [

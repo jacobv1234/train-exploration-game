@@ -77,6 +77,19 @@
                 "EastAnglia/Norwich"
             ],
             "unique_name": "EastAnglia/Cromer/To Norwich"
+        },
+        "To Sheringham": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Sheringham-CromerJunc"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Sheringham-CromerJunc"
+            ],
+            "unique_name": "EastAnglia/Cromer/To Sheringham"
         }
     }
 }

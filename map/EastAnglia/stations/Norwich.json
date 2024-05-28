@@ -361,6 +361,21 @@
                 "EastAnglia/ElyNorth"
             ],
             "unique_name": "EastAnglia/Norwich/To Ely"
+        },
+        "To Cromer": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "EastAnglia/Cromer-Norwich"
+                ]
+            },
+            "unlock": [
+                "EastAnglia/Cromer-Norwich",
+                "EastAnglia/Cromer",
+                "EastAnglia/Norwich"
+            ],
+            "unique_name": "EastAnglia/Norwich/To Cromer"
         }
     }
 }
