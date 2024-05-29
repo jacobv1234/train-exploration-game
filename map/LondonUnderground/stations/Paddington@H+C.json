@@ -1,0 +1,59 @@
+{
+    "name": "Paddington@H+C",
+    "position": [
+        -2960,
+        -104
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 3,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/H+C"
+                ],
+                "not": []
+            },
+            "line": "H+C"
+        },
+        "southbound": {
+            "direction": 10,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/H+C"
+                ],
+                "not": []
+            },
+            "line": "H+C"
+        },
+        "District line": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "not": []
+            },
+            "line": "Circle-C",
+            "new_coords": [
+                -2752,
+                120
+            ]
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -24,
+                0
+            ],
+            "text": "Paddington",
+            "font": "Arial 10",
+            "anchor": "se"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 80,
+        "options": []
+    },
+    "shop": false
+}

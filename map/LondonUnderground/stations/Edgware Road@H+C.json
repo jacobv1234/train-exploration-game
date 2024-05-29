@@ -1,0 +1,59 @@
+{
+    "name": "Edgware Road@H+C",
+    "position": [
+        -2384,
+        -128
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/H+C"
+                ],
+                "not": []
+            },
+            "line": "H+C"
+        },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/H+C"
+                ],
+                "not": []
+            },
+            "line": "H+C"
+        },
+        "District line": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "not": []
+            },
+            "line": "Circle-C",
+            "new_coords": [
+                -2384,
+                24
+            ]
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -24
+            ],
+            "text": "Edgware Road",
+            "font": "Arial 10",
+            "anchor": "s"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 75,
+        "options": []
+    },
+    "shop": false
+}

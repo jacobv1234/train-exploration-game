@@ -34,10 +34,61 @@
                 11,
                 "Circle-J3"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/H+C"
+                ],
+                "not": [
+                    "LondonUnderground/Circle-J3"
+                ]
+            },
+            "corner": [
+                -2184,
+                -128,
+                4,
+                12,
+                "H+C"
+            ]
         }
     ],
     "stops": [],
     "conditional_stops": [],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/H+C",
+                    "LondonUnderground/Circle-J3"
+                ],
+                "not": []
+            },
+            "coords": [
+                -2184,
+                -128
+            ],
+            "approach": {
+                "coords": [
+                    -2008,
+                    -128
+                ],
+                "direction": 12,
+                "options": [
+                    "left",
+                    "straight"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Circle-J3",
+                "direction": 11
+            },
+            "straight": {
+                "line": "H+C",
+                "direction": 12
+            }
+        }
+    ],
     "stations": []
 }

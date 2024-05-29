@@ -24,6 +24,20 @@
                 "not": []
             },
             "line": "Circle-C"
+        },
+        "Hammersmith and City": {
+            "direction": 10,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/H+C"
+                ],
+                "not": []
+            },
+            "line": "H+C",
+            "new_coords": [
+                -2960,
+                -104
+            ]
         }
     },
     "map_text": [

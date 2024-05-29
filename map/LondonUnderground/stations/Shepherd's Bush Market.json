@@ -1,0 +1,50 @@
+{
+    "name": "Shepherd's Bush Market",
+    "position": [
+        -3528,
+        976
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "H+C"
+        },
+        "southbound": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "H+C"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -24,
+                0
+            ],
+            "text": "Shepherd's Bush",
+            "font": "Arial 10",
+            "anchor": "se"
+        },
+        {
+            "offset": [
+                -24,
+                0
+            ],
+            "text": "Market",
+            "font": "Arial 10",
+            "anchor": "ne"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 75,
+        "options": []
+    },
+    "shop": false
+}

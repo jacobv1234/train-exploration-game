@@ -1,0 +1,90 @@
+{
+    "colour": "#EC9BAD",
+    "segments": [
+        [
+            -2184,
+            -128,
+            -2912,
+            -128
+        ],
+        [
+            -2912,
+            -128,
+            -2960,
+            -104
+        ],
+        [
+            -2960,
+            -104,
+            -3504,
+            440
+        ],
+        [
+            -3504,
+            440,
+            -3528,
+            488
+        ],
+        [
+            -3528,
+            488,
+            -3528,
+            1208
+        ]
+    ],
+    "corners": [
+        [
+            -2184,
+            -128,
+            4,
+            12,
+            "Circle-J2"
+        ],
+        [
+            -2912,
+            -128,
+            4,
+            11
+        ],
+        [
+            -2960,
+            -104,
+            3,
+            10
+        ],
+        [
+            -3504,
+            440,
+            2,
+            9
+        ],
+        [
+            -3528,
+            488,
+            1,
+            8
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [
+        [
+            -3528,
+            1208,
+            0
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Edgware Road@H+C",
+        "Paddington@H+C",
+        "Latimer Road",
+        "Westbourne Park",
+        "Royal Oak",
+        "Ladbroke Grove",
+        "Hammersmith@H+C",
+        "Goldhawk Road",
+        "Shepherd's Bush Market",
+        "Wood Lane"
+    ]
+}

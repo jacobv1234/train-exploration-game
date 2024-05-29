@@ -1,0 +1,70 @@
+{
+    "colour": "#EC9BAD",
+    "requirements": {
+        "unlocked": [
+            "LondonUnderground/H+C",
+            "LondonUnderground/Circle-J1",
+            "LondonUnderground/Circle-J2",
+            "LondonUnderground/Circle-N"
+        ],
+        "not": []
+    },
+    "segments": [
+        [
+            -1768,
+            -136,
+            -260,
+            -136
+        ],
+        [
+            -260,
+            -136,
+            -212,
+            -112
+        ],
+        [
+            -212,
+            -112,
+            244,
+            344
+        ],
+        [
+            244,
+            344,
+            288,
+            366
+        ],
+        [
+            288,
+            368,
+            840,
+            368
+        ]
+    ],
+    "corners": [
+        [
+            -260,
+            -136,
+            3,
+            12
+        ],
+        [
+            -212,
+            -112,
+            6,
+            13
+        ],
+        [
+            244,
+            344,
+            5,
+            14
+        ],
+        [
+            288,
+            368,
+            4,
+            13
+        ]
+    ]
+}
