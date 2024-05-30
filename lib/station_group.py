@@ -10,13 +10,17 @@ class StationGroup:
             self.data = loads(f.read().strip('\n'))
 
         self.line_objects = []
+        self.created = []
         for line in self.data['connecting_lines']:
-            if any([val in unlocked_lines for val in self.data['station_lines'][line[0]]]) \
+            if any([val in self.data['station_lines'][line[0]] for val in unlocked_lines]) \
                 and \
-                any([val in unlocked_lines for val in self.data['station_lines'][line[1]]]):
+                any([val in self.data['station_lines'][line[1]] for val in unlocked_lines]):
 
                 self.line_objects.append(c.create_line(line[2],line[3],line[4],line[5],fill='black'))
+                self.created.append(line[2:])
 
+        for line in self.line_objects:
+            c.tag_lower(line)
     
     def unload(self, c: Canvas):
         for i in range(len(self.line_objects)-1, -1, -1):

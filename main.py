@@ -296,6 +296,7 @@ while game_running:
                         mapnamedisplay = MapNameDisplay(area.name, area.size, window, screen_height)
                         mapnamecounter = 45
                         c.tag_raise(train.object)
+                        passengers.remove('ALL')
 
             # camera
             scroll_x = train.x - current_x

@@ -14,12 +14,18 @@ class ZoomedMap:
         self.limits = scroll
 
 
+        for group_name in list(map.station_groups.keys()):
+            group = map.station_groups[group_name]
+            for line in group.created:
+                self.c.create_line(line[0]//4, line[1]//4, line[2]//4, line[3]//4, fill='black')
+
+
         for line_name in list(map.lines.keys()):
             line = map.lines[line_name]
             col = line.col
             for s in line.seg_coords:
                 s = [i / 4 for i in s]
-                obj = self.c.create_polygon(get_line_poly_coords(s, radius=1), fill=col)
+                obj = self.c.create_polygon(get_line_poly_coords(s, radius=1.5), fill=col)
                 self.c.tag_lower(obj)
             
             if line_name[0] != '_':

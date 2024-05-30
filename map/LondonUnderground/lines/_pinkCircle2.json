@@ -2,9 +2,6 @@
     "colour": "#EC9BAD",
     "requirements": {
         "unlocked": [
-            "LondonUnderground/H+C",
-            "LondonUnderground/Circle-J1",
-            "LondonUnderground/Circle-J2",
             "LondonUnderground/Circle-N"
         ],
         "not": []

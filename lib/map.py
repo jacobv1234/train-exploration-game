@@ -5,7 +5,7 @@ from lib.station_group import StationGroup
 from tkinter import *
 
 class Map():
-    def __init__(self, name: str, canvas: Canvas, unlocked_lines: list[str]):
+    def __init__(self, name: str, canvas: Canvas, unlocked_lines: list[str], mode = 'main'):
         # load the manifest file
         folder = 'map'
         with open(f'./{folder}/{name}/manifest.json', 'r') as f:
@@ -24,7 +24,7 @@ class Map():
             if f'{name}/{line}' in unlocked_lines:
                 # cosmetic line split
                 if line[0] != '_':
-                    line_object = Line(name, line, canvas, unlocked_lines, created_stations, folder)
+                    line_object = Line(name, line, canvas, unlocked_lines, created_stations, folder, mode)
                 else:
                     line_object = DecoLine(name, line, canvas, unlocked_lines, folder)
                     if line_object.name == 0:
@@ -45,12 +45,12 @@ class Map():
         for line in list(self.lines.keys()):
             for segment in self.lines[line].segments:
                 canvas.tag_lower(segment)
-        canvas.tag_lower(self.water)
 
         self.station_groups = {}
         for group in manifest['station_groups']:
             self.station_groups[group] = StationGroup(group, canvas, name, unlocked_lines)
 
+        canvas.tag_lower(self.water)
 
     def check_corners(self, x, y, line):
         return self.lines[line].check_corners(x,y)

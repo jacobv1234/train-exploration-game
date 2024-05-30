@@ -85,3 +85,7 @@ LondonUnderground/Circle-C
 LondonUnderground/Circle-J1
 LondonUnderground/Circle-J2
 LondonUnderground/Circle-J3
+LondonUnderground/H+C
+LondonUnderground/_pinkCircle
+LondonUnderground/_pinkCircle2
+LondonUnderground/_yellowHC

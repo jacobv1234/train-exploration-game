@@ -3,7 +3,7 @@ from lib.station import Station
 from lib.helper import test_requirements, get_line_poly_coords
 
 class Line():
-    def __init__(self, map_name, line_name, canvas, unlocked_lines, created_stations: dict, folder):
+    def __init__(self, map_name, line_name, canvas, unlocked_lines, created_stations: dict, folder, mode = 'main'):
         self.name = line_name
         
         with open(f'./{folder}/{map_name}/lines/{line_name}.json', 'r') as f:
@@ -45,7 +45,7 @@ class Line():
             if name in list(created_stations.keys()):
                 self.stations.append(created_stations[name])
             else:
-                created_stations[name] = Station(name, canvas, map_name, unlocked_lines)
+                created_stations[name] = Station(name, canvas, map_name, unlocked_lines, mode)
                 self.stations.append(created_stations[name])
 
     

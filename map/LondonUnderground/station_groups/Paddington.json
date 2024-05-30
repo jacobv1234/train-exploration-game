@@ -1,0 +1,17 @@
+{
+    "name": "Paddington",
+    "stations": [
+        "Paddington@H+C",
+        "Paddington@District"
+    ],
+    "connecting_lines": [
+        ["Paddington@H+C", "Paddington@District", -2960,-104,-2752,120]
+    ],
+
+    "station_lines": {
+        "Paddington@H+C": ["LondonUnderground/H+C"],
+        "Paddington@District": ["LondonUnderground/Circle-C"]
+    },
+
+    "text_priority": ["Paddington@H+C","Paddington@District"]
+}

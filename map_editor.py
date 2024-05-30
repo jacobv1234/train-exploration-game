@@ -29,7 +29,7 @@ window.state('zoomed')
 c = Canvas(window, width = screen_width, height = screen_height, bg = 'lightblue', xscrollincrement=1, yscrollincrement=1)
 c.place(x=4,y=0)
 
-area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']])
+area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']], mode='map_editor')
 border_main = c.create_rectangle(area.scroll_boundary['left']*4,
                                  area.scroll_boundary['top']*4,
                                  area.scroll_boundary['right']*4,
@@ -336,7 +336,7 @@ Choose object to add to {line}
         
         area.unload(c)
         del area
-        area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']])
+        area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']],mode='map_editor')
         print('done')
     
 
@@ -438,7 +438,7 @@ Control map text, passengers, and shop via the JSON.
 
         area.unload(c)
         del area
-        area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']])
+        area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']], mode='map_editor')
         print('done')
     
 
@@ -583,7 +583,7 @@ Control map text, passengers, and shop via the JSON.
 
         area.unload(c)
         del area
-        area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']])
+        area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']], mode='map_editor')
         print('done')
 
     elif int(add_to_existing_line) == 6:
@@ -606,7 +606,7 @@ Control map text, passengers, and shop via the JSON.
             f.write(dumps(map_manifest, indent=4))
         c1.delete(old_land)
         print('done')
-        area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']])
+        area = Map(map_name, c, [f'{map_name}/{name}' for name in map_manifest['lines']], mode='map_editor')
 
     elif int(add_to_existing_line) == 7:
         print('Top-Left:')
@@ -615,10 +615,10 @@ Control map text, passengers, and shop via the JSON.
         right,bottom = get_coordinates(screen = c1, div_value=1)
 
         map_manifest['scroll_bounds'] = {
-            'left':left,
-            'right':right,
-            'top':top,
-            'bottom':bottom
+            'left':left*2,
+            'right':right*2,
+            'top':top*2,
+            'bottom':bottom*2
         }
 
         with open(f'map/{map_name}/manifest.json','w') as f:

@@ -4,7 +4,7 @@ from random import randint, choice
 from lib.helper import test_requirements, get_badge
 
 class Station:
-    def __init__(self, name: str, c: Canvas, map_name: str, unlocked_lines: list):
+    def __init__(self, name: str, c: Canvas, map_name: str, unlocked_lines: list, mode: str = 'main'):
         with open(f'map/{map_name}/stations/{name}.json', 'r') as f:
             s = loads(f.read().strip('\n'))
         self.name = s['name']
@@ -35,13 +35,31 @@ class Station:
         self.texts = []
         self.badges = []
         self.passenger_rules = s['passengers']
-        for text in s['map_text']:
-            if 'text' in list(text.keys()):
-                self.texts.append(c.create_text(self.pos[0] + text['offset'][0], self.pos[1] + text['offset'][1], fill='black', font=text['font'], text=text['text'], anchor=text['anchor']))
-            else:
-                badge_img = get_badge(text['badge'])
-                self.badges.append(badge_img)
-                self.texts.append(c.create_image(self.pos[0] + text['offset'][0], self.pos[1] + text['offset'][1],image=self.badges[-1], anchor=text['anchor']))
+        if '@' not in name or mode == 'map_editor':
+            self.create_text(s,c)
+        
+        else:
+            group_name = name.split('@')[0]
+            try:
+                with open(f'map/{map_name}/station_groups/{group_name}.json', 'r') as f:
+                    data = loads(f.read().strip('\n'))
+            except FileNotFoundError:
+                self.create_text(s,c)
+                return
+
+            priority = data['text_priority']
+
+            if priority == []:
+                self.create_text(s,c)
+                return
+            
+            for station in priority:
+                if station == name:
+                    self.create_text(s,c)
+                    return
+                
+                if any([val in data['station_lines'][name] for val in unlocked_lines]):
+                    return
 
 
     def unload(self, c: Canvas):
@@ -87,3 +105,13 @@ class Station:
                     self.exits[exit] = [exits[exit]['direction']]
                     if 'line' in list(exits[exit].keys()):
                         self.exits[exit].append(exits[exit]['line'])
+    
+
+    def create_text(self,s,c):
+        for text in s['map_text']:
+            if 'text' in list(text.keys()):
+                self.texts.append(c.create_text(self.pos[0] + text['offset'][0], self.pos[1] + text['offset'][1], fill='black', font=text['font'], text=text['text'], anchor=text['anchor']))
+            else:
+                badge_img = get_badge(text['badge'])
+                self.badges.append(badge_img)
+                self.texts.append(c.create_image(self.pos[0] + text['offset'][0], self.pos[1] + text['offset'][1],image=self.badges[-1], anchor=text['anchor']))

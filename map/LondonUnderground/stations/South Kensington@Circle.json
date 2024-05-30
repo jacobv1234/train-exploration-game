@@ -44,13 +44,13 @@
                 "chance": 3,
                 "station": "LondonUnderground/Tower Hill",
                 "line": [
-                    "LondonUnderground/Circle-S",
-                    "LondonUnderground/Circle-N"
+                    "LondonUnderground/Circle-N",
+                    "LondonUnderground/Circle-S"
                 ],
                 "reward": 1
             },
             {
-                "chance": 3,
+                "chance": 2,
                 "station": "LondonUnderground/Monument",
                 "line": [
                     "LondonUnderground/Circle-S"
@@ -173,7 +173,8 @@
                 "chance": 2,
                 "station": "LondonUnderground/Baker Street",
                 "line": [
-                    "LondonUnderground/Circle-N"
+                    "LondonUnderground/Circle-N",
+                    "LondonUnderground/Circle-J1"
                 ],
                 "reward": 1
             },
@@ -213,7 +214,9 @@
                 "chance": 2,
                 "station": "LondonUnderground/Edgware Road",
                 "line": [
-                    "LondonUnderground/Circle-C"
+                    "LondonUnderground/H+C",
+                    "LondonUnderground/Circle-C",
+                    "LondonUnderground/Circle-J3"
                 ],
                 "reward": 1
             },
@@ -229,6 +232,7 @@
                 "chance": 3,
                 "station": "LondonUnderground/Paddington",
                 "line": [
+                    "LondonUnderground/H+C",
                     "LondonUnderground/Circle-C"
                 ],
                 "reward": 1
@@ -248,6 +252,70 @@
                     "LondonUnderground/Circle-C"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Latimer Road",
+                "line": [
+                    "LondonUnderground/H+C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Westbourne Park",
+                "line": [
+                    "LondonUnderground/H+C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Royal Oak",
+                "line": [
+                    "LondonUnderground/H+C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Ladbroke Grove",
+                "line": [
+                    "LondonUnderground/H+C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Hammersmith",
+                "line": [
+                    "LondonUnderground/H+C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Goldhawk Road",
+                "line": [
+                    "LondonUnderground/H+C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Shepherd's Bush Market",
+                "line": [
+                    "LondonUnderground/H+C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Wood Lane",
+                "line": [
+                    "LondonUnderground/H+C"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -265,7 +333,6 @@
             ],
             "unique_name": "LondonUnderground/South Kensington@Circle/Edgware Road via Circle"
         },
-
         "Tower Hill via Circle": {
             "cost": 2,
             "requirements": {
