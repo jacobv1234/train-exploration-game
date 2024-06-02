@@ -1,0 +1,7 @@
+ideas picked up from NGF
+
+- bus skin named 'replacement bus service'
+- compass on exit screen
+- have current train direction be the default exit option
+- bug involving pressing space after closing the map causes crash
+- somerleyton and oulton broad north have exits backward
