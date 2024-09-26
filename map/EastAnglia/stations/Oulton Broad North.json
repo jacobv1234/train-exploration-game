@@ -5,8 +5,8 @@
         5008
     ],
     "exits": {
-        "eastbound": 13,
-        "westbound": 5
+        "eastbound": 5,
+        "westbound": 13
     },
     "map_text": [
         {
