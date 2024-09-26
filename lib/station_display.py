@@ -1,5 +1,6 @@
 from tkinter import *
 from lib.station import Station
+from lib.helper import get_train_graphics
 
 class StationDisplay:
     tabs = ['Passengers', 'Exit']
@@ -38,6 +39,13 @@ class StationDisplay:
         self.c.bind_all('<Left>', self.switch_tab_left)
         self.c.bind_all('<Right>', self.switch_tab_right)
 
+        self.compass_graphic = PhotoImage(file='./compass.png').zoom(3).subsample(2)
+        self.pointer = None
+        possible_pointers = get_train_graphics(skin, zoom = 2)
+        self.pointer_graphics = [possible_pointers[dir] for dir in [
+           station.exits[exit] for exit in list(station.exits.keys())
+        ]]
+
         window.update()
 
         
@@ -52,6 +60,11 @@ class StationDisplay:
             self.possible_cursor_positions.append(location)
             self.options.append(exit_name)
         self.cursor = self.c.create_image(self.width/4, self.possible_cursor_positions[0], image = self.cursor_graphic, anchor='center')
+        
+        self.page_contents.append(self.c.create_image(self.width - 10, self.height - 10, image = self.compass_graphic, anchor = 'se'))
+        
+        self.pointer = self.c.create_image(self.width - 122.5, self.height - 122.5, image = self.pointer_graphics[0])
+
         self.c.bind_all('<Up>',self.move_cursor_up)
         self.c.bind_all('<Down>', self.move_cursor_down)
     
@@ -90,10 +103,14 @@ self.c.create_text(5*self.width/8, (5*(self.height-110)/6)+125, fill='black', fo
     def move_cursor_up(self, event):
         if self.cursor_pos > 0:
             self.cursor_pos -= 1
+        if self.pointer != None:
+            self.c.itemconfig(self.pointer, image = self.pointer_graphics[self.cursor_pos])
     
     def move_cursor_down(self, event):
         if self.cursor_pos + 1 < len(self.possible_cursor_positions):
             self.cursor_pos += 1
+        if self.pointer != None:
+            self.c.itemconfig(self.pointer, image = self.pointer_graphics[self.cursor_pos])
     
 
     def switch_tab_left(self, event):
@@ -127,6 +144,11 @@ self.c.create_text(5*self.width/8, (5*(self.height-110)/6)+125, fill='black', fo
         self.page_contents = []
         self.possible_cursor_positions = []
         self.options = []
+        try:
+            self.c.delete(self.pointer)
+        except:
+            pass
+        self.pointer = None
 
     def change_tab(self):
         if self.cursor:

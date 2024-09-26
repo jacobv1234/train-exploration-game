@@ -62,12 +62,12 @@ class Popup:
 
 
 # get the complete set of graphics for a skin
-def get_train_graphics(skin):
+def get_train_graphics(skin, zoom = 1):
     angles = [90, 63.5, 45, 26.5, 0, -26.5, -45, -63.5, -90, -113.5, -135, -153.5, 180, 153.5, 135, 113.5]
     results = []
     with Image.open(f'./skins/{skin}.png') as im:
         for angle in angles:
-            results.append(ImageTk.PhotoImage(im.rotate(angle, Image.Resampling.BILINEAR)))
+            results.append(ImageTk.PhotoImage(im.rotate(angle, Image.Resampling.BILINEAR).resize((im.width * zoom, im.height * zoom), resample= Image.Resampling.BOX)))
     
     return results
 

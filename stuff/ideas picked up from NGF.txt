@@ -1,7 +1,8 @@
 ideas picked up from NGF
 
-- bus skin named 'replacement bus service'
-- compass on exit screen
+- bus skin named 'replacement bus service' <- not doing
+- compass on exit screen <- DONE
 - have current train direction be the default exit option
 - bug involving pressing space after closing the map causes crash
 - somerleyton and oulton broad north have exits backward
+- game crashes if buying underground and going at the same time
