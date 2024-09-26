@@ -1,6 +1,6 @@
 from tkinter import *
 from lib.station import Station
-from lib.helper import get_train_graphics
+from lib.helper import get_train_graphics, get_exit_directions
 
 class StationDisplay:
     tabs = ['Passengers', 'Exit']
@@ -42,9 +42,7 @@ class StationDisplay:
         self.compass_graphic = PhotoImage(file='./compass.png').zoom(3).subsample(2)
         self.pointer = None
         possible_pointers = get_train_graphics(skin, zoom = 2)
-        self.pointer_graphics = [possible_pointers[dir] for dir in [
-           station.exits[exit] for exit in list(station.exits.keys())
-        ]]
+        self.pointer_graphics = [possible_pointers[dir] for dir in get_exit_directions(station)]
 
         window.update()
 
