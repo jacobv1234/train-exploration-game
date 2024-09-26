@@ -350,15 +350,21 @@ while game_running:
                 [unlocked_lines.append(section) for section in purchase['unlock'] if section not in unlocked_lines]
                 station.reload_exits(unlocked_lines)
                 
-                # reload map and station screen
+                # reload map and close station screen - originally reloaded but doesn't anymore to fix the Amelia Underground Crash
                 area.unload(c)
                 area = Map(area.internal_name, c, unlocked_lines)
 
                 in_station.close()
-                in_station = ShopStation(window, screen_width, screen_height, station, points, unlocked_lines, bought, skin)
+                del in_station
+                in_station = False
+                train.enable_speed_controls(c)
+                c.bind_all('<m>', openMap)
                 
                 # train layering
                 c.tag_raise(train.object)
+
+                # success popup
+                popup = Popup(window, screen_width, f'Track built!', f'Route Unlocked', 150)
 
 
 

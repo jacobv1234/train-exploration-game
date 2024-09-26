@@ -5,4 +5,4 @@ ideas picked up from NGF
 - have current train direction be the default exit option
 - bug involving pressing space after closing the map causes crash
 - somerleyton and oulton broad north have exits backward <- FIXED
-- game crashes if buying underground and going to underground at the same time
+- game crashes if buying underground and going to underground at the same time (the Amelia Underground Crash) <- FIXED
