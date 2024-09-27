@@ -93,3 +93,5 @@ LondonUnderground/SouthKen-EarlsCourt
 LondonUnderground/EarlsCourt-E
 LondonUnderground/_greenCircleC
 LondonUnderground/_greenCircleS
+LondonUnderground/_greenCircleCN
+LondonUnderground/HSKen-EarlsCourt

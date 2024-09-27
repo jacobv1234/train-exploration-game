@@ -74,6 +74,12 @@
             24,
             4,
             11
+        ],
+        [
+            -2656,
+            1376,
+            4,
+            13
         ]
     ],
     "conditional_corners": [
@@ -160,7 +166,7 @@
                 "not": []
             },
             "coords": [
-                -2656,
+                -2640,
                 1376
             ],
             "approach": {
@@ -181,7 +187,39 @@
             },
             "right": {
                 "line": "Circle-C",
-                "direction": 13
+                "direction": 12
+            }
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/HSKen-EarlsCourt"
+                ],
+                "not": []
+            },
+            "coords": [
+                -2752,
+                1264
+            ],
+            "approach": {
+                "coords": [
+                    -2752,
+                    1096
+                ],
+                "direction": 8,
+                "options": [
+                    "left",
+                    "right"
+                ],
+                "default": 0
+            },
+            "left": {
+                "line": "Circle-C",
+                "direction": 8
+            },
+            "right": {
+                "line": "HSKen-EarlsCourt",
+                "direction": 9
             }
         }
     ],

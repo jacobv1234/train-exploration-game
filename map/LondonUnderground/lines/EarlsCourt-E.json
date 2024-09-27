@@ -26,6 +26,23 @@
                 12,
                 "SouthKen-EarlsCourt"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/HSKen-EarlsCourt"
+                ],
+                "not": [
+                    "LondonUnderground/SouthKen-EarlsCourt"
+                ]
+            },
+            "corner": [
+                -2848,
+                1376,
+                3,
+                12,
+                "HSKen-EarlsCourt"
+            ]
         }
     ],
     "stops": [],
@@ -44,7 +61,41 @@
             ]
         }
     ],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/HSKen-EarlsCourt",
+                    "LondonUnderground/SouthKen-EarlsCourt"
+                ],
+                "not": []
+            },
+            "coords": [
+                -2848,
+                1376
+            ],
+            "approach": {
+                "coords": [
+                    -2952,
+                    1376
+                ],
+                "direction": 4,
+                "options": [
+                    "left",
+                    "straight"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "HSKen-EarlsCourt",
+                "direction": 3
+            },
+            "straight": {
+                "line": "SouthKen-EarlsCourt",
+                "direction": 4
+            }
+        }
+    ],
     "stations": [
         "Earl's Court@District"
     ]

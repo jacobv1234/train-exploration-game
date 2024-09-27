@@ -101,8 +101,8 @@
                 "chance": 2,
                 "station": "LondonUnderground/South Kensington",
                 "line": [
-                    "LondonUnderground/Circle-S",
-                    "LondonUnderground/Circle-C"
+                    "LondonUnderground/Circle-C",
+                    "LondonUnderground/Circle-S"
                 ],
                 "reward": 1
             },
@@ -145,8 +145,84 @@
                     "LondonUnderground/Circle-S"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Edgware Road",
+                "line": [
+                    "LondonUnderground/Circle-C",
+                    "LondonUnderground/Circle-J3"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Bayswater",
+                "line": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Paddington",
+                "line": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Notting Hill Gate",
+                "line": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/High Street Kensington",
+                "line": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "reward": 1
             }
         ]
     },
-    "shop": false
+    "shop": {
+        "To South Kensington": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "not": [
+                    "LondonUnderground/SouthKen-EarlsCourt"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/SouthKen-EarlsCourt",
+                "LondonUnderground/_greenCircleC",
+                "LondonUnderground/_greenCircleS"
+            ],
+            "unique_name": "LondonUnderground/Earl's Court@District/To South Kensington"
+        },
+        "To Edgware Road": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "not": [
+                    "LondonUnderground/HSKen-EarlsCourt"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/HSKen-EarlsCourt",
+                "LondonUnderground/EarlsCourt-E",
+                "LondonUnderground/_greenCircleCN"
+            ],
+            "unique_name": "LondonUnderground/Earl's Court@District/To Edgware Road"
+        }
+    }
 }

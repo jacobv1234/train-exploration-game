@@ -214,7 +214,6 @@
                 "chance": 2,
                 "station": "LondonUnderground/Edgware Road",
                 "line": [
-                    "LondonUnderground/H+C",
                     "LondonUnderground/Circle-C",
                     "LondonUnderground/Circle-J3"
                 ],
@@ -232,7 +231,6 @@
                 "chance": 3,
                 "station": "LondonUnderground/Paddington",
                 "line": [
-                    "LondonUnderground/H+C",
                     "LondonUnderground/Circle-C"
                 ],
                 "reward": 1

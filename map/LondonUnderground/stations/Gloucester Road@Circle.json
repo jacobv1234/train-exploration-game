@@ -44,7 +44,6 @@
                 "chance": 2,
                 "station": "LondonUnderground/Edgware Road",
                 "line": [
-                    "LondonUnderground/H+C",
                     "LondonUnderground/Circle-C",
                     "LondonUnderground/Circle-J3"
                 ],
@@ -54,8 +53,8 @@
                 "chance": 2,
                 "station": "LondonUnderground/South Kensington",
                 "line": [
-                    "LondonUnderground/Circle-S",
-                    "LondonUnderground/Circle-C"
+                    "LondonUnderground/Circle-C",
+                    "LondonUnderground/Circle-S"
                 ],
                 "reward": 1
             },
@@ -71,7 +70,6 @@
                 "chance": 3,
                 "station": "LondonUnderground/Paddington",
                 "line": [
-                    "LondonUnderground/H+C",
                     "LondonUnderground/Circle-C"
                 ],
                 "reward": 1

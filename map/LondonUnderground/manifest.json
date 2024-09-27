@@ -14,7 +14,9 @@
         "SouthKen-EarlsCourt",
         "EarlsCourt-E",
         "_greenCircleC",
-        "_greenCircleS"
+        "_greenCircleS",
+        "HSKen-EarlsCourt",
+        "_greenCircleCN"
     ],
     "loadingzones": [],
     "display_name": "London Underground",

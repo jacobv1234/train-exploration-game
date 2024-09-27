@@ -406,3 +406,5 @@ while game_running:
     diff = end - start
     if diff < 0.017:
         sleep(0.017 - diff)
+
+    print(train.line)
