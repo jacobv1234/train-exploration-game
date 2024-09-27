@@ -1,0 +1,31 @@
+{
+    "colour": "#00793b",
+    "requirements": {
+        "unlocked": [
+            "LondonUnderground/Circle-C"
+        ],
+        "not": []
+    },
+    "segments": [
+        [
+            -2676,
+            1376,
+            -2660,
+            1384
+        ],
+        [
+            -2660,
+            1384,
+            -2264,
+            1384
+        ]
+    ],
+    "corners": [
+        [
+            -2660,
+            1384,
+            13,
+            4
+        ]
+    ]
+}

@@ -89,3 +89,7 @@ LondonUnderground/H+C
 LondonUnderground/_pinkCircle
 LondonUnderground/_pinkCircle2
 LondonUnderground/_yellowHC
+LondonUnderground/SouthKen-EarlsCourt
+LondonUnderground/EarlsCourt-E
+LondonUnderground/_greenCircleC
+LondonUnderground/_greenCircleS

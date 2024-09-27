@@ -1,0 +1,152 @@
+{
+    "name": "Earl's Court@District",
+    "position": [
+        -2984,
+        1376
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/EarlsCourt-E"
+                ],
+                "not": []
+            },
+            "line": "EarlsCourt-E"
+        },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/EarlsCourt-W"
+                ],
+                "not": []
+            },
+            "line": "EarlsCourt-W"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -24
+            ],
+            "text": "Earl's Court",
+            "font": "Arial 10",
+            "anchor": "s"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 78,
+        "options": [
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Gloucester Road",
+                "line": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Tower Hill",
+                "line": [
+                    "LondonUnderground/Circle-S",
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Monument",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Cannon Street",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Mansion House",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Blackfriars",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Temple",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/South Kensington",
+                "line": [
+                    "LondonUnderground/Circle-S",
+                    "LondonUnderground/Circle-C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Embankment",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/St James's Park",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Westminster",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Victoria",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Sloane Square",
+                "line": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

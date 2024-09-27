@@ -1,0 +1,32 @@
+{
+    "colour": "#00793b",
+    "segments": [
+        [
+            -2656,
+            1376,
+            -2848,
+            1376
+        ]
+    ],
+    "corners": [
+        [
+            -2656,
+            1376,
+            4,
+            12,
+            "Circle-C"
+        ],
+        [
+            -2848,
+            1376,
+            4,
+            12,
+            "EarlsCourt-E"
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": []
+}

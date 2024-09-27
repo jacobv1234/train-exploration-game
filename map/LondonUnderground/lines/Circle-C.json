@@ -52,12 +52,6 @@
             5
         ],
         [
-            -2656,
-            1376,
-            4,
-            13
-        ],
-        [
             -2752,
             1280,
             0,
@@ -112,6 +106,20 @@
                 12,
                 "Circle-J3"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/SouthKen-EarlsCourt"
+                ]
+            },
+            "corner": [
+                -2656,
+                1376,
+                4,
+                13
+            ]
         }
     ],
     "stops": [],
@@ -143,7 +151,40 @@
             ]
         }
     ],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/SouthKen-EarlsCourt"
+                ],
+                "not": []
+            },
+            "coords": [
+                -2656,
+                1376
+            ],
+            "approach": {
+                "coords": [
+                    -2480,
+                    1376
+                ],
+                "direction": 12,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "SouthKen-EarlsCourt",
+                "direction": 12
+            },
+            "right": {
+                "line": "Circle-C",
+                "direction": 13
+            }
+        }
+    ],
     "stations": [
         "Gloucester Road@Circle",
         "Edgware Road@District",

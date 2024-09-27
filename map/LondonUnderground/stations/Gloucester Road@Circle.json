@@ -51,7 +51,7 @@
                 "reward": 1
             },
             {
-                "chance": 1,
+                "chance": 2,
                 "station": "LondonUnderground/South Kensington",
                 "line": [
                     "LondonUnderground/Circle-S",
@@ -96,8 +96,8 @@
                 "chance": 3,
                 "station": "LondonUnderground/Tower Hill",
                 "line": [
-                    "LondonUnderground/Circle-N",
-                    "LondonUnderground/Circle-S"
+                    "LondonUnderground/Circle-S",
+                    "LondonUnderground/Circle-N"
                 ],
                 "reward": 1
             },
@@ -118,7 +118,7 @@
                 "reward": 1
             },
             {
-                "chance": 1,
+                "chance": 2,
                 "station": "LondonUnderground/Mansion House",
                 "line": [
                     "LondonUnderground/Circle-S"
@@ -150,7 +150,7 @@
                 "reward": 1
             },
             {
-                "chance": 1,
+                "chance": 2,
                 "station": "LondonUnderground/St James's Park",
                 "line": [
                     "LondonUnderground/Circle-S"
@@ -315,6 +315,15 @@
                 "station": "LondonUnderground/Wood Lane",
                 "line": [
                     "LondonUnderground/H+C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Earl's Court",
+                "line": [
+                    "LondonUnderground/EarlsCourt-E",
+                    "LondonUnderground/EarlsCourt-W"
                 ],
                 "reward": 1
             }

@@ -44,8 +44,8 @@
                 "chance": 3,
                 "station": "LondonUnderground/Tower Hill",
                 "line": [
-                    "LondonUnderground/Circle-N",
-                    "LondonUnderground/Circle-S"
+                    "LondonUnderground/Circle-S",
+                    "LondonUnderground/Circle-N"
                 ],
                 "reward": 1
             },
@@ -316,6 +316,15 @@
                     "LondonUnderground/H+C"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Earl's Court",
+                "line": [
+                    "LondonUnderground/EarlsCourt-E",
+                    "LondonUnderground/EarlsCourt-W"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -345,6 +354,24 @@
                 "LondonUnderground/Circle-S"
             ],
             "unique_name": "LondonUnderground/South Kensington@Circle/Tower Hill via Circle"
+        },
+        "To Earl's Court": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-C"
+                ],
+                "not": [
+                    "LondonUnderground/SouthKen-EarlsCourt"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/SouthKen-EarlsCourt",
+                "LondonUnderground/EarlsCourt-E",
+                "LondonUnderground/_greenCircleC",
+                "LondonUnderground/_greenCircleS"
+            ],
+            "unique_name": "LondonUnderground/South Kensington@Circle/To Earl's Court"
         }
     }
 }
