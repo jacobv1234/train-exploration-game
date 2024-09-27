@@ -9,3 +9,4 @@ ideas picked up from NGF
 
 other things to do
 - change how popups are made so only one can exist at a time <- DONE
+- Show passenger destinations on minimap
