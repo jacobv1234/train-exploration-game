@@ -8,4 +8,4 @@ ideas picked up from NGF
 - game crashes if buying underground and going to underground at the same time (the Amelia Underground Crash) <- FIXED
 
 other things to do
-- change how popups are made so only one can exist at a time
+- change how popups are made so only one can exist at a time <- DONE

@@ -260,6 +260,9 @@ while game_running:
                 in_station = StationDisplay(window, screen_width, screen_height, station, points, unlocked_lines, bought, skin) 
             
             if points_obtained > 0:
+                if popup:
+                    popup.remove()
+                    popup = False
                 popup = Popup(window, screen_width, f'Passenger{plural} Delivered!', f'You got {points_obtained} point{plural}!', 100)
 
     
@@ -335,10 +338,9 @@ while game_running:
         elif result[0] == 'Shop':
             purchase = in_station.station.shop[result[1]]
             if purchase['cost'] > points:
-                try:
-                    popup.c.destroy()
-                except:
-                    pass
+                if popup:
+                    popup.remove()
+                    popup = False
                 popup = Popup(window, screen_width, f'Too expensive!', f'You can\'t afford that...', 100)
             
             else:
@@ -364,7 +366,10 @@ while game_running:
                 c.tag_raise(train.object)
 
                 # success popup
-                popup = Popup(window, screen_width, f'Track built!', f'Route Unlocked', 150)
+                if popup:
+                    popup.remove()
+                    popup = False
+                popup = Popup(window, screen_width, f'Route Unlocked!', f'New track has been built.', 150)
 
 
 

@@ -59,6 +59,9 @@ class Popup:
         if self.timeout == 0:
             self.c.destroy()
         return self.timeout
+    
+    def remove(self):
+        self.c.destroy()
 
 
 # get the complete set of graphics for a skin
