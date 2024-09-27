@@ -142,7 +142,7 @@ def get_line_poly_coords(segment, radius = 4):
             x2-x_offset, y2-y_offset, x2+x_offset, y2+y_offset]
 
 # returns a list of all possible exit directions at a station
-def get_exit_directions(station: Station):
+def get_exit_directions(station):
     exits = station.exits
     dirs = []
     for exit in list(exits.keys()):
