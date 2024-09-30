@@ -132,6 +132,7 @@ if game_running:
     mapnamedisplay = False
     popup = False
     zoomed_map = False
+    force_space = False
 
 
     # passenger display
@@ -365,11 +366,26 @@ while game_running:
                 # train layering
                 c.tag_raise(train.object)
 
+                # force a space input to re-open the station window - effectively a reload
+                force_space = True
+
+
                 # success popup
                 if popup:
                     popup.remove()
                     popup = False
                 popup = Popup(window, screen_width, f'Route Unlocked!', f'New track has been built.', 150)
+
+                # save
+                with open('savedata/bought.txt', 'w') as f:
+                    [f.write(f'{obj}\n') for obj in bought]
+
+                with open('savedata/unlocked_lines.txt', 'w') as f:
+                    [f.write(f'{obj}\n') for obj in unlocked_lines]
+
+                save_pos(train.x,train.y,train.direction,area.internal_name,train.line,points)
+
+                passengers.save()
 
 
 
@@ -397,6 +413,11 @@ while game_running:
         timer = popup.countdown()
         if timer == 0:
             popup = False
+
+    # forced space input
+    if force_space:
+        space_pressed = True
+        force_space = False
 
 
     HandleMapNameCounter()
