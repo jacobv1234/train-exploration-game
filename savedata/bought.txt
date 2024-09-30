@@ -1,6 +1,0 @@
-EastAnglia/Cromer/To Norwich
-EastAnglia/Norwich/To Ipswich
-EastAnglia/Ipswich/To Colchester
-EastAnglia/Colchester/To Shenfield
-EastAnglia/Shenfield/To Liverpool Street
-EastAnglia/Liverpool Street/To London Underground
