@@ -1,0 +1,45 @@
+{
+    "name": "Chiswick Park",
+    "position": [
+        -4632,
+        1376
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/EalingBroadwayDistrict"
+                ],
+                "not": []
+            },
+            "line": "EalingBroadwayDistrict"
+        },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/EalingBroadwayDistrict"
+                ],
+                "not": []
+            },
+            "line": "EalingBroadwayDistrict"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -24
+            ],
+            "text": "Chiswick Park",
+            "font": "Arial 10",
+            "anchor": "s"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 70,
+        "options": []
+    },
+    "shop": false
+}

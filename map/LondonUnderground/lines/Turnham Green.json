@@ -1,0 +1,43 @@
+{
+    "colour": "#00793b",
+    "segments": [
+        [
+            -3136,
+            1376,
+            -4464,
+            1376
+        ]
+    ],
+    "corners": [
+        [
+            -3136,
+            1376,
+            4,
+            12,
+            "EarlsCourt-W"
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/EalingBroadwayDistrict"
+                ],
+                "not": [
+                    "LondonUnderground/RichmondDistrict"
+                ]
+            },
+            "corner": [
+                -4464,
+                1376,
+                12,
+                4,
+                "EalingBroadwayDistrict"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": []
+}

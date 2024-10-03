@@ -1,0 +1,54 @@
+{
+    "name": "Ealing Common@District",
+    "position": [
+        -5056,
+        1080
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/EalingBroadwayDistrict"
+                ],
+                "not": []
+            },
+            "line": "EalingBroadwayDistrict"
+        },
+        "southbound": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/EalingBroadwayDistrict"
+                ],
+                "not": []
+            },
+            "line": "EalingBroadwayDistrict"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -24,
+                0
+            ],
+            "text": "Ealing",
+            "font": "Arial 10",
+            "anchor": "se"
+        },
+        {
+            "offset": [
+                -24,
+                0
+            ],
+            "text": "Common",
+            "font": "Arial 10",
+            "anchor": "ne"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 70,
+        "options": []
+    },
+    "shop": false
+}

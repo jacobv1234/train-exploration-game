@@ -1,0 +1,65 @@
+{
+    "colour": "#00793b",
+    "segments": [
+        [
+            -2984,
+            1376,
+            -3136,
+            1376
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/EarlsCourt-E"
+                ],
+                "not": []
+            },
+            "corner": [
+                -2984,
+                1376,
+                4,
+                12,
+                "EarlsCourt-E"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Turnham Green"
+                ],
+                "not": [
+                    "LondonUnderground/KenOlympia",
+                    "LondonUnderground/Wimbledon"
+                ]
+            },
+            "corner": [
+                -3136,
+                1376,
+                4,
+                12,
+                "Turnham Green"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/EarlsCourt-E"
+                ]
+            },
+            "stop": [
+                -2984,
+                1376,
+                12
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": []
+}

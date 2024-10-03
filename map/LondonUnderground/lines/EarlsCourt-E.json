@@ -43,6 +43,21 @@
                 12,
                 "HSKen-EarlsCourt"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/EarlsCourt-W"
+                ],
+                "not": []
+            },
+            "corner": [
+                -2984,
+                1376,
+                4,
+                12,
+                "EarlsCourt-W"
+            ]
         }
     ],
     "stops": [],

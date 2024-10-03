@@ -1,0 +1,44 @@
+{
+    "name": "Ealing Broadway@District",
+    "position": [
+        -5320,
+        880
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/EalingBroadwayDistrict"
+                ],
+                "not": []
+            },
+            "line": "EalingBroadwayDistrict"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -24,
+                0
+            ],
+            "text": "Ealing",
+            "font": "Arial 10",
+            "anchor": "se"
+        },
+        {
+            "offset": [
+                -24,
+                0
+            ],
+            "text": "Broadway",
+            "font": "Arial 10",
+            "anchor": "ne"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 85,
+        "options": []
+    },
+    "shop": false
+}
