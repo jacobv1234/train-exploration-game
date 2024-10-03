@@ -1,0 +1,45 @@
+{
+    "name": "Turnham Green@District",
+    "position": [
+        -4256,
+        1376
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Turnham Green"
+                ],
+                "not": []
+            },
+            "line": "Turnham Green"
+        },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Turnham Green"
+                ],
+                "not": []
+            },
+            "line": "Turnham Green"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                24
+            ],
+            "text": "Turnham Green",
+            "font": "Arial 10",
+            "anchor": "n"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 75,
+        "options": []
+    },
+    "shop": false
+}

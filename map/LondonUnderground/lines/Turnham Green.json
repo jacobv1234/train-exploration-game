@@ -39,5 +39,12 @@
     "stops": [],
     "conditional_stops": [],
     "junctions": [],
-    "stations": []
+    "stations": [
+        "Hammersmith@District",
+        "Barons Court@District",
+        "West Kensington",
+        "Turnham Green@District",
+        "Stamford Brook",
+        "Ravenscourt Park"
+    ]
 }

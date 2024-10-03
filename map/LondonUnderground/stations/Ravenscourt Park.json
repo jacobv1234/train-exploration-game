@@ -1,0 +1,45 @@
+{
+    "name": "Ravenscourt Park",
+    "position": [
+        -3776,
+        1376
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Turnham Green"
+                ],
+                "not": []
+            },
+            "line": "Turnham Green"
+        },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Turnham Green"
+                ],
+                "not": []
+            },
+            "line": "Turnham Green"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -24
+            ],
+            "text": "Ravenscourt Park",
+            "font": "Arial 10",
+            "anchor": "s"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 65,
+        "options": []
+    },
+    "shop": false
+}

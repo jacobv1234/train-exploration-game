@@ -1,0 +1,17 @@
+{
+    "name": "Hammersmith",
+    "stations": [
+        "Hammersmith@H+C",
+        "Hammersmith@District"
+    ],
+    "connecting_lines": [
+        ["Hammersmith@H+C", "Hammersmith@District", -3528,1376,-3528,1208]
+    ],
+
+    "station_lines": {
+        "Hammersmith@H+C": ["LondonUnderground/H+C"],
+        "Hammersmith@District": ["LondonUnderground/Turnham Green"]
+    },
+
+    "text_priority": ["Hammersmith@District","Hammersmith@H+C"]
+}

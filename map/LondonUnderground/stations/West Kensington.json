@@ -1,0 +1,54 @@
+{
+    "name": "West Kensington",
+    "position": [
+        -3264,
+        1376
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Turnham Green"
+                ],
+                "not": []
+            },
+            "line": "Turnham Green"
+        },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Turnham Green"
+                ],
+                "not": []
+            },
+            "line": "Turnham Green"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -8,
+                -16
+            ],
+            "text": "Kensington",
+            "font": "Arial 10",
+            "anchor": "se"
+        },
+        {
+            "offset": [
+                -16,
+                -32
+            ],
+            "text": "West",
+            "font": "Arial 10",
+            "anchor": "se"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 60,
+        "options": []
+    },
+    "shop": false
+}
