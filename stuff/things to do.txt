@@ -5,11 +5,11 @@ SOLVED / SCRAPPED
 - game crashes if buying underground and going to underground at the same time (the Amelia Underground Crash) <- FIXED
 - change how popups are made so only one can exist at a time <- DONE
 - station group text priority isn't taking into account whether a station has been unlocked <- FIXED
+- back button on premade save selection is below the screen <- FIXED
 
 
 BUGS
 - bug involving pressing space after closing the map causes crash
-- back button on premade save selection is below the screen
 
 NEW FEATURE IDEAS
 - Show passenger destinations on minimap
