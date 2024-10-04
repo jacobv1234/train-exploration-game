@@ -53,13 +53,21 @@ class Station:
                 self.create_text(s,c)
                 return
             
+            # station priority calculations
+            # iterate through the priority list
             for station in priority:
+                # check if it's this station
                 if station == name:
                     self.create_text(s,c)
                     return
                 
-                if any([val in data['station_lines'][name] for val in unlocked_lines]):
-                    return
+                # check if the station is unlocked
+                station_lines = data['station_lines'][station]
+                if station_lines == []:
+                    continue
+                for line in station_lines:
+                    if line in unlocked_lines:
+                        return
 
 
     def unload(self, c: Canvas):

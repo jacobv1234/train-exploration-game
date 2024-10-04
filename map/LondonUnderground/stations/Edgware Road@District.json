@@ -425,7 +425,8 @@
             },
             "unlock": [
                 "LondonUnderground/HSKen-EarlsCourt",
-                "LondonUnderground/_greenCircleCN"
+                "LondonUnderground/_greenCircleCN",
+                "LondonUnderground/EarlsCourt-E"
             ],
             "unique_name": "LondonUnderground/Edgware Road@District/To Earl's Court"
         }

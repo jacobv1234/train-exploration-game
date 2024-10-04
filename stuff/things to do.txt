@@ -4,11 +4,11 @@ SOLVED / SCRAPPED
 - somerleyton and oulton broad north have exits backward <- FIXED
 - game crashes if buying underground and going to underground at the same time (the Amelia Underground Crash) <- FIXED
 - change how popups are made so only one can exist at a time <- DONE
+- station group text priority isn't taking into account whether a station has been unlocked <- FIXED
 
 
 BUGS
 - bug involving pressing space after closing the map causes crash
-- station group text priority isn't taking into account whether a station has been unlocked
 
 NEW FEATURE IDEAS
 - Show passenger destinations on minimap
