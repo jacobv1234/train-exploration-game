@@ -133,6 +133,7 @@ if game_running:
     popup = False
     zoomed_map = False
     force_space = False
+    chooser = False
 
 
     # passenger display
@@ -168,7 +169,8 @@ def closeMap(event):
     train.enable_speed_controls(c)
     c.unbind_all('<m>')
     c.bind_all('<m>', openMap)
-    c.bind_all('<space>', pressed_space)
+    if chooser:
+        chooser.re_enable_controls()
 
 if game_running:
     c.bind_all('<m>', openMap)
@@ -191,7 +193,7 @@ while game_running:
                 train.junction(junc, chooser.options[chooser.choice])
                 junc = False
                 chooser.close()
-                del chooser
+                chooser = False
         
         stop = area.check_stops(train.x,train.y,train.line)
         if stop != 0 and not zoomed_map:

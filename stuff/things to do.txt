@@ -6,10 +6,11 @@ SOLVED / SCRAPPED
 - change how popups are made so only one can exist at a time <- DONE
 - station group text priority isn't taking into account whether a station has been unlocked <- FIXED
 - back button on premade save selection is below the screen <- FIXED
+- bug involving pressing space after closing the map causes crash <- FIXED
 
 
 BUGS
-- bug involving pressing space after closing the map causes crash
+- No known bugs currently
 
 NEW FEATURE IDEAS
 - Show passenger destinations on minimap

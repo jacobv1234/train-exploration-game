@@ -63,3 +63,8 @@ class JunctionChoice:
         self.canvas.unbind_all('<Left>')
         self.canvas.unbind_all('<Right>')
         self.canvas.destroy()
+
+    # used since opening the minimap unbinds them and they need to be rebound when closed
+    def re_enable_controls(self):
+        self.canvas.bind_all('<Left>', self.move_left)
+        self.canvas.bind_all('<Right>', self.move_right)
