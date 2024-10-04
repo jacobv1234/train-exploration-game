@@ -59,7 +59,7 @@ class Homepage:
                 option_desc = ''
                 self.options.append('Back')
             
-            pos = (((height-60)/(len(names)+2)) + 60) * (i + 1)
+            pos = (((height-60)/(len(names)*2)) + 60) * (i + 1)
             self.cursor_positions.append(pos)
             
             self.c.create_text(width/2, pos, fill='black', font='Arial 20', text=option_name, anchor='center')
