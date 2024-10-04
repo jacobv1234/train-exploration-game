@@ -157,7 +157,7 @@ def openMap(event):
     global zoomed_map
     train.disable_speed_controls(c)
     train.speed = 0
-    zoomed_map = ZoomedMap(window, screen_width, screen_height, area, train.x, train.y, area.water_coords, area.scroll_boundary)
+    zoomed_map = ZoomedMap(window, screen_width, screen_height, area, train.x, train.y, area.water_coords, area.scroll_boundary, passengers)
     c.unbind_all('<m>')
     c.bind_all('<m>', closeMap)
     c.unbind_all('<space>')

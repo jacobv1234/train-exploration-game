@@ -1,10 +1,12 @@
 from tkinter import *
 from lib.map import Map
 from lib.helper import get_line_poly_coords
+from lib.passengers import Passengers
+from json import loads
 
 
 class ZoomedMap:
-    def __init__(self, window: Tk, width: int, height: int, map: Map, train_x: int, train_y: int, water_coords: list, scroll: dict):
+    def __init__(self, window: Tk, width: int, height: int, map: Map, train_x: int, train_y: int, water_coords: list, scroll: dict, passengers = False):
         self.c = Canvas(window, width=width, height=height, bg='lightblue', xscrollincrement=1, yscrollincrement=1)
         self.c.place(x=4,y=0)
         water_coords = [coord // 4 for coord in water_coords]
@@ -32,8 +34,22 @@ class ZoomedMap:
                 for s in line.stations:
                     self.stations.append([s.pos[0]//4,s.pos[1]//4, s.name])
                     self.c.create_oval(s.pos[0]//4 - 5, s.pos[1]//4 - 5, s.pos[0]//4 + 5, s.pos[1]//4 + 5, outline='black', fill='white')
+
+
+        # create markers for passengers
+        if passengers:
+            for passenger in passengers.passengers:
+                station_map, name = tuple(passenger['station'].split('/'))
+                if station_map == map.internal_name:
+                    with open(f'./map/{station_map}/stations/{name}.json', 'r') as f:
+                        station_coords = loads(f.read())['position']
+                        x = station_coords[0] // 4
+                        y = station_coords[1] // 4
+                        self.c.create_oval(x - 10, y - 10, x + 10, y + 10, fill = '', outline = '#2eebaf', width = 2)
         
-        self.c.create_oval(train_x//4 - 10,train_y//4 - 10,train_x//4 + 10,train_y//4 + 10,fill='', outline='red')
+        
+        self.c.create_oval(train_x//4 - 12,train_y//4 - 12,train_x//4 + 12,train_y//4 + 12,fill='', outline='red', width = 2)
+        self.c.create_oval(train_x//4 - 8,train_y//4 - 8,train_x//4 + 8,train_y//4 + 8,fill='', outline='red', width = 2)
         
         self.c.bind_all('<Left>', self.scroll_left)
         self.c.bind_all('<Right>', self.scroll_right)
