@@ -49,7 +49,7 @@
                 "reward": 1
             },
             {
-                "chance": 3,
+                "chance": 2,
                 "station": "LondonUnderground/Tower Hill",
                 "line": [
                     "LondonUnderground/Circle-S",
@@ -164,7 +164,7 @@
                 "reward": 1
             },
             {
-                "chance": 3,
+                "chance": 2,
                 "station": "LondonUnderground/Paddington",
                 "line": [
                     "LondonUnderground/Circle-C"
@@ -184,6 +184,86 @@
                 "station": "LondonUnderground/High Street Kensington",
                 "line": [
                     "LondonUnderground/Circle-C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Ealing Broadway",
+                "line": [
+                    "LondonUnderground/EalingBroadwayDistrict"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Ealing Common",
+                "line": [
+                    "LondonUnderground/EalingBroadwayDistrict"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Acton Town",
+                "line": [
+                    "LondonUnderground/EalingBroadwayDistrict"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Chiswick Park",
+                "line": [
+                    "LondonUnderground/EalingBroadwayDistrict"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Hammersmith",
+                "line": [
+                    "LondonUnderground/Turnham Green"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Barons Court",
+                "line": [
+                    "LondonUnderground/Turnham Green"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/West Kensington",
+                "line": [
+                    "LondonUnderground/Turnham Green"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Turnham Green",
+                "line": [
+                    "LondonUnderground/Turnham Green"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Stamford Brook",
+                "line": [
+                    "LondonUnderground/Turnham Green"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Ravenscourt Park",
+                "line": [
+                    "LondonUnderground/Turnham Green"
                 ],
                 "reward": 1
             }
@@ -223,6 +303,21 @@
                 "LondonUnderground/_greenCircleCN"
             ],
             "unique_name": "LondonUnderground/Earl's Court@District/To Edgware Road"
+        },
+        "To Ealing Broadway": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/EalingBroadwayDistrict"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/EalingBroadwayDistrict",
+                "LondonUnderground/Turnham Green",
+                "LondonUnderground/EarlsCourt-W"
+            ],
+            "unique_name": "LondonUnderground/Earl's Court@District/To Ealing Broadway"
         }
     }
 }

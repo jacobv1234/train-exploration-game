@@ -41,7 +41,7 @@
         "chance_of_any": 75,
         "options": [
             {
-                "chance": 3,
+                "chance": 2,
                 "station": "LondonUnderground/Tower Hill",
                 "line": [
                     "LondonUnderground/Circle-S",
@@ -93,8 +93,8 @@
                 "chance": 2,
                 "station": "LondonUnderground/South Kensington",
                 "line": [
-                    "LondonUnderground/Circle-S",
-                    "LondonUnderground/Circle-C"
+                    "LondonUnderground/Circle-C",
+                    "LondonUnderground/Circle-S"
                 ],
                 "reward": 1
             },
@@ -215,7 +215,6 @@
                 "chance": 2,
                 "station": "LondonUnderground/Edgware Road",
                 "line": [
-                    "LondonUnderground/H+C",
                     "LondonUnderground/Circle-C",
                     "LondonUnderground/Circle-J3"
                 ],
@@ -230,10 +229,9 @@
                 "reward": 1
             },
             {
-                "chance": 3,
+                "chance": 2,
                 "station": "LondonUnderground/Paddington",
                 "line": [
-                    "LondonUnderground/H+C",
                     "LondonUnderground/Circle-C"
                 ],
                 "reward": 1
@@ -290,7 +288,7 @@
                 "chance": 2,
                 "station": "LondonUnderground/Hammersmith",
                 "line": [
-                    "LondonUnderground/H+C"
+                    "LondonUnderground/Turnham Green"
                 ],
                 "reward": 1
             },
@@ -324,6 +322,78 @@
                 "line": [
                     "LondonUnderground/EarlsCourt-E",
                     "LondonUnderground/EarlsCourt-W"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Ealing Broadway",
+                "line": [
+                    "LondonUnderground/EalingBroadwayDistrict"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Ealing Common",
+                "line": [
+                    "LondonUnderground/EalingBroadwayDistrict"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Acton Town",
+                "line": [
+                    "LondonUnderground/EalingBroadwayDistrict"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Chiswick Park",
+                "line": [
+                    "LondonUnderground/EalingBroadwayDistrict"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Barons Court",
+                "line": [
+                    "LondonUnderground/Turnham Green"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/West Kensington",
+                "line": [
+                    "LondonUnderground/Turnham Green"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Turnham Green",
+                "line": [
+                    "LondonUnderground/Turnham Green"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Stamford Brook",
+                "line": [
+                    "LondonUnderground/Turnham Green"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Ravenscourt Park",
+                "line": [
+                    "LondonUnderground/Turnham Green"
                 ],
                 "reward": 1
             }
