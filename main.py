@@ -3,16 +3,17 @@ from time import sleep, perf_counter
 
 
 # third party modules
-# try-except no longer needed due to pyinstaller
+# try-except no longer needed due to nuitka
 # keep it in anyway for development purposes
 try:
     from PIL import Image
+    from pygame import mixer
 except ModuleNotFoundError:
     print('You are missing required third-party Python extensions needed for the game to run.')
     choice = input('Install? (y/n) ')
     if choice == 'y':
         from os import system
-        system('python -m pip install pillow')
+        system('python -m pip install pillow pygame')
     else:
         exit()
 
@@ -53,6 +54,12 @@ map_manifest = get_map_manifest()
 
 
 skin = 'Classic - Yellow'
+
+# audio setup
+print('Sounds licensed for free from zapsplat.com')
+mixer.init()
+mixer.music.load('./audio/test_song.mp3')
+mixer.music.play(loops = -1)
 
 # homepage
 save_path = 'savedata'
