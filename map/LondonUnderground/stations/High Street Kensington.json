@@ -401,6 +401,14 @@
                     "LondonUnderground/Turnham Green"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Kensington (Olympia)",
+                "line": [
+                    "LondonUnderground/KenOlympia"
+                ],
+                "reward": 1
             }
         ]
     },

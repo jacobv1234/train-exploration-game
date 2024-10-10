@@ -171,6 +171,8 @@ def closeMap(event):
     c.bind_all('<m>', openMap)
     if chooser:
         chooser.re_enable_controls()
+    if press_space:
+        c.bind_all('<space>', pressed_space)
 
 if game_running:
     c.bind_all('<m>', openMap)

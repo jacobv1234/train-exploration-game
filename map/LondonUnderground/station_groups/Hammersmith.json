@@ -13,5 +13,5 @@
         "Hammersmith@District": ["LondonUnderground/Turnham Green"]
     },
 
-    "text_priority": ["Hammersmith@District","Hammersmith@H+C"]
+    "text_priority": ["Hammersmith@H+C", "Hammersmith@District"]
 }

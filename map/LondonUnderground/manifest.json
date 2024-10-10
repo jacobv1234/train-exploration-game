@@ -19,7 +19,8 @@
         "_greenCircleCN",
         "EarlsCourt-W",
         "Turnham Green",
-        "EalingBroadwayDistrict"
+        "EalingBroadwayDistrict",
+        "KenOlympia"
     ],
     "loadingzones": [],
     "display_name": "London Underground",
@@ -82,6 +83,7 @@
     },
     "station_groups": [
         "Paddington",
-        "Edgware Road"
+        "Edgware Road",
+        "Hammersmith"
     ]
 }

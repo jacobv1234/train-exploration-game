@@ -266,6 +266,14 @@
                     "LondonUnderground/Turnham Green"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Kensington (Olympia)",
+                "line": [
+                    "LondonUnderground/KenOlympia"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -318,6 +326,20 @@
                 "LondonUnderground/EarlsCourt-W"
             ],
             "unique_name": "LondonUnderground/Earl's Court@District/To Ealing Broadway"
+        },
+        "Kensington (Olympia)": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/KenOlympia"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/KenOlympia",
+                "LondonUnderground/EarlsCourt-W"
+            ],
+            "unique_name": "LondonUnderground/Earl's Court@District/Kensington (Olympia)"
         }
     }
 }

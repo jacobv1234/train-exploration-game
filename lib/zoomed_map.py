@@ -41,11 +41,14 @@ class ZoomedMap:
             for passenger in passengers.passengers:
                 station_map, name = tuple(passenger['station'].split('/'))
                 if station_map == map.internal_name:
-                    with open(f'./map/{station_map}/stations/{name}.json', 'r') as f:
-                        station_coords = loads(f.read())['position']
-                        x = station_coords[0] // 4
-                        y = station_coords[1] // 4
-                        self.c.create_oval(x - 10, y - 10, x + 10, y + 10, fill = '', outline = '#2eebaf', width = 2)
+                    try:
+                        self.create_passenger_marker(station_map, name)
+                    except FileNotFoundError:
+                        stations = []
+                        with open(f'./map/{station_map}/station_groups/{name}.json', 'r') as f:
+                            stations = loads(f.read())['stations']
+                        for station in stations:
+                            self.create_passenger_marker(station_map, station)
         
         
         self.c.create_oval(train_x//4 - 12,train_y//4 - 12,train_x//4 + 12,train_y//4 + 12,fill='', outline='red', width = 2)
@@ -153,3 +156,11 @@ class ZoomedMap:
             self.c.move(self.station_name_popup,0,difference)
             self.screen_top += difference
             self.screen_bottom += difference
+
+
+    def create_passenger_marker(self, station_map, name):
+        with open(f'./map/{station_map}/stations/{name}.json', 'r') as f:
+            station_coords = loads(f.read())['position']
+            x = station_coords[0] // 4
+            y = station_coords[1] // 4
+            self.c.create_oval(x - 10, y - 10, x + 10, y + 10, fill = '', outline = '#2eebaf', width = 2)

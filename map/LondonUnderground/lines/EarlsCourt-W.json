@@ -42,6 +42,24 @@
                 12,
                 "Turnham Green"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/KenOlympia"
+                ],
+                "not": [
+                    "LondonUnderground/Turnham Green",
+                    "LondonUnderground/Wimbledon"
+                ]
+            },
+            "corner": [
+                -3136,
+                1376,
+                4,
+                13,
+                "KenOlympia"
+            ]
         }
     ],
     "stops": [],
@@ -60,7 +78,43 @@
             ]
         }
     ],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/KenOlympia",
+                    "LondonUnderground/Turnham Green"
+                ],
+                "not": [
+                    "LondonUnderground/Wimbledon"
+                ]
+            },
+            "coords": [
+                -3136,
+                1376
+            ],
+            "approach": {
+                "coords": [
+                    -3024,
+                    1376
+                ],
+                "direction": 12,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Turnham Green",
+                "direction": 12
+            },
+            "right": {
+                "line": "KenOlympia",
+                "direction": 13
+            }
+        }
+    ],
     "stations": [
         "Earl's Court@District"
     ]

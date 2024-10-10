@@ -447,7 +447,7 @@ Control map text, passengers, and shop via the JSON.
         with open(f'map/{map_name}/stations/{station_name}.json', 'r') as f:
             station_data = loads(f.read())
         mode = int(input('''Pick one:
-1) Add passengers to this station
+1) Add passengers to this station (DEPRECATED)
 2) Add text to the map
 3) Add a shop item
 4) Add a station badge

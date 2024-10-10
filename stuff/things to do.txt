@@ -15,3 +15,6 @@ BUGS
 
 NEW FEATURE IDEAS
 - have current train direction be the default exit option
+
+MAP EDITOR
+- station-specific passengers doesn't like station groups
