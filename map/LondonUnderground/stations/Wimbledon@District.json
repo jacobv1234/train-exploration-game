@@ -1,0 +1,35 @@
+{
+    "name": "Wimbledon@District",
+    "position": [
+        -3184,
+        3224
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Wimbledon"
+                ],
+                "not": []
+            },
+            "line": "Wimbledon"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -24,
+                0
+            ],
+            "text": "Wimbledon",
+            "font": "Arial 10",
+            "anchor": "e"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 70,
+        "options": []
+    },
+    "shop": false
+}

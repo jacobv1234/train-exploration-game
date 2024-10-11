@@ -60,6 +60,24 @@
                 13,
                 "KenOlympia"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Wimbledon"
+                ],
+                "not": [
+                    "LondonUnderground/KenOlympia",
+                    "LondonUnderground/Turnham Green"
+                ]
+            },
+            "corner": [
+                -3136,
+                1376,
+                11,
+                4,
+                "Wimbledon"
+            ]
         }
     ],
     "stops": [],
@@ -104,6 +122,115 @@
                     "right"
                 ],
                 "default": 0
+            },
+            "straight": {
+                "line": "Turnham Green",
+                "direction": 12
+            },
+            "right": {
+                "line": "KenOlympia",
+                "direction": 13
+            }
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/KenOlympia",
+                    "LondonUnderground/Wimbledon"
+                ],
+                "not": [
+                    "LondonUnderground/Turnham Green"
+                ]
+            },
+            "coords": [
+                -3136,
+                1376
+            ],
+            "approach": {
+                "coords": [
+                    -3032,
+                    1376
+                ],
+                "direction": 12,
+                "options": [
+                    "left",
+                    "right"
+                ],
+                "default": 0
+            },
+            "left": {
+                "line": "Wimbledon",
+                "direction": 11
+            },
+            "right": {
+                "line": "KenOlympia",
+                "direction": 13
+            }
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Wimbledon",
+                    "LondonUnderground/Turnham Green"
+                ],
+                "not": [
+                    "LondonUnderground/KenOlympia"
+                ]
+            },
+            "coords": [
+                -3136,
+                1376
+            ],
+            "approach": {
+                "coords": [
+                    -3032,
+                    1376
+                ],
+                "direction": 12,
+                "options": [
+                    "left",
+                    "straight"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Wimbledon",
+                "direction": 11
+            },
+            "straight": {
+                "line": "Turnham Green",
+                "direction": 12
+            }
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Wimbledon",
+                    "LondonUnderground/KenOlympia",
+                    "LondonUnderground/Turnham Green"
+                ],
+                "not": []
+            },
+            "coords": [
+                -3136,
+                1376
+            ],
+            "approach": {
+                "coords": [
+                    -3032,
+                    1376
+                ],
+                "direction": 12,
+                "options": [
+                    "left",
+                    "straight",
+                    "right"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Wimbledon",
+                "direction": 11
             },
             "straight": {
                 "line": "Turnham Green",

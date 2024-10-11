@@ -1,0 +1,64 @@
+{
+    "colour": "#00793b",
+    "segments": [
+        [
+            -3136,
+            1376,
+            -3168,
+            1392
+        ],
+        [
+            -3168,
+            1392,
+            -3184,
+            1424
+        ],
+        [
+            -3184,
+            1424,
+            -3184,
+            3224
+        ]
+    ],
+    "corners": [
+        [
+            -3136,
+            1376,
+            11,
+            4,
+            "EarlsCourt-W"
+        ],
+        [
+            -3168,
+            1392,
+            3,
+            9
+        ],
+        [
+            -3184,
+            1424,
+            1,
+            8
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [
+        [
+            -3184,
+            3224,
+            0
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Wimbledon@District",
+        "Wimbledon Park",
+        "Southfields",
+        "East Putney",
+        "West Brompton@District",
+        "Fulham Broadway",
+        "Parsons Green",
+        "Putney Bridge"
+    ]
+}
