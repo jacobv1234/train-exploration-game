@@ -32,6 +32,7 @@ from lib.station_shop import ShopStation
 from lib.homepage import Homepage
 from lib.skin_select import SkinSelect
 from lib.zoomed_map import ZoomedMap
+from lib.audio import AudioHandler
 
 
 window = Tk()
@@ -57,9 +58,8 @@ skin = 'Classic - Yellow'
 
 # audio setup
 print('Sounds licensed for free from zapsplat.com')
-mixer.init()
-mixer.music.load('./audio/test_song.mp3')
-mixer.music.play(loops = -1)
+audiohandler = AudioHandler()
+audiohandler.next_bg_music()
 
 # homepage
 save_path = 'savedata'
