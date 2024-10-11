@@ -433,6 +433,9 @@ while game_running:
 
     HandleMapNameCounter()
     window.update()
+
+    if not audiohandler.is_playing():
+        audiohandler.next_bg_music()
     
     end = perf_counter()
     diff = end - start
