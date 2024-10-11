@@ -68,6 +68,8 @@ choice = ''
 while game_running:
     sleep(0.017)
     window.update()
+    if not audiohandler.is_playing():
+        audiohandler.next_bg_music()
     if choice != 'How to Play':
         homepage.update_cursor()
     if homepage.space_pressed:
