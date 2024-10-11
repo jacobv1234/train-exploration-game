@@ -115,3 +115,6 @@ class Homepage:
 
         self.options = ['Back']
         self.selected = 0
+
+        self.c.unbind_all('<Up>')
+        self.c.unbind_all('<Down>')
