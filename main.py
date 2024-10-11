@@ -63,7 +63,7 @@ audiohandler.next_bg_music()
 
 # homepage
 save_path = 'savedata'
-homepage = Homepage(window, screen_width, screen_height, skin)
+homepage = Homepage(window, screen_width, screen_height, skin, audiohandler)
 choice = ''
 while game_running:
     sleep(0.017)
@@ -86,7 +86,7 @@ while game_running:
         elif choice == 'Back':
             homepage.remove()
             del homepage
-            homepage = Homepage(window, screen_width, screen_height, skin)
+            homepage = Homepage(window, screen_width, screen_height, skin, audiohandler)
         elif choice == 'How to Play':
             homepage.go_to_how_to_play()
         else:
@@ -97,7 +97,7 @@ del homepage
 
 
 # skin selection
-skin_selector = SkinSelect(window, screen_width, screen_height)
+skin_selector = SkinSelect(window, screen_width, screen_height, audiohandler)
 while game_running:
     sleep(0.017)
     window.update()
@@ -153,6 +153,7 @@ if game_running:
 def pressed_space(event):
     global space_pressed
     space_pressed = True
+    audiohandler.play_sound_effect('select')
 
 def HandleMapNameCounter():
     global mapnamecounter, mapnamedisplay
@@ -170,6 +171,7 @@ def openMap(event):
     c.unbind_all('<m>')
     c.bind_all('<m>', closeMap)
     c.unbind_all('<space>')
+    audiohandler.play_sound_effect('open_map')
 
 def closeMap(event):
     global zoomed_map
@@ -182,6 +184,7 @@ def closeMap(event):
         chooser.re_enable_controls()
     if press_space:
         c.bind_all('<space>', pressed_space)
+    audiohandler.play_sound_effect('close_map')
 
 if game_running:
     c.bind_all('<m>', openMap)
@@ -212,7 +215,8 @@ while game_running:
 
         junction = area.check_j_approach(train.x,train.y,train.direction, train.line)
         if junction != 0:
-            chooser = JunctionChoice(junction,window,screen_width)
+            audiohandler.play_sound_effect('junction_popup')
+            chooser = JunctionChoice(junction,window,screen_width, audiohandler)
             junc = junction
 
         # loading zones
@@ -269,15 +273,16 @@ while game_running:
                     plural = ''
 
             if station.shop:
-                in_station = ShopStation(window, screen_width, screen_height, station, points, unlocked_lines, bought, skin)
+                in_station = ShopStation(window, screen_width, screen_height, station, points, unlocked_lines, bought, skin, audiohandler)
             else:
-                in_station = StationDisplay(window, screen_width, screen_height, station, points, unlocked_lines, bought, skin) 
+                in_station = StationDisplay(window, screen_width, screen_height, station, points, unlocked_lines, bought, skin, audiohandler) 
             
             if points_obtained > 0:
                 if popup:
                     popup.remove()
                     popup = False
                 popup = Popup(window, screen_width, f'Passenger{plural} Delivered!', f'You got {points_obtained} point{plural}!', 100)
+                audiohandler.play_sound_effect('success')
 
     
     # handle station choices
@@ -443,3 +448,5 @@ while game_running:
     diff = end - start
     if diff < 0.017:
         sleep(0.017 - diff)
+
+mixer.quit()

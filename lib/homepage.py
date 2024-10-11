@@ -2,24 +2,29 @@ from tkinter import *
 from json import loads
 from lib.map import Map
 from PIL import Image, ImageTk
+from lib.audio import AudioHandler
 
 class Homepage:
-    def __init__(self, window, width, height, skin):
+    def __init__(self, window, width, height, skin, audio: AudioHandler):
         self.c = Canvas(window, width=width, height=height, bg='white')
         self.c.place(x=4,y=0)
         self.create_homepage(width,height,skin)
         self.width = width
         self.height = height
+        self.audio = audio
 
     def press_space(self, event):
+        self.audio.play_sound_effect('select')
         self.space_pressed = True
 
     def move_cursor_up(self, event):
         if self.selected > 0:
+            self.audio.play_sound_effect('scroll')
             self.selected -= 1
     
     def move_cursor_down(self, event):
         if self.selected + 1 < len(self.cursor_positions):
+            self.audio.play_sound_effect('scroll')
             self.selected += 1
 
     def update_cursor(self):

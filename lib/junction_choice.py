@@ -1,7 +1,8 @@
 from tkinter import *
+from lib.audio import AudioHandler
 
 class JunctionChoice:
-    def __init__(self, junction, window, width):
+    def __init__(self, junction, window, width, audio: AudioHandler):
         self.options = junction['approach']['options']
         self.num_options = len(self.options)
         self.canvas = Canvas(window, width = 80*self.num_options, height=80, bg='white')
@@ -30,6 +31,8 @@ class JunctionChoice:
 
         self.canvas.bind_all('<Left>', self.move_left)
         self.canvas.bind_all('<Right>', self.move_right)
+
+        self.audio = audio
     
     def create_left_arrow(self, pos):
         x = (pos * 80) + 40
@@ -46,10 +49,13 @@ class JunctionChoice:
     def move_left(self, event):
         if self.choice > 0:
             self.choice -= 1
+            self.audio.play_sound_effect('scroll')
+
     
     def move_right(self, event):
         if self.choice < self.num_options - 1:
             self.choice += 1
+            self.audio.play_sound_effect('scroll')
     
     def update(self):
         if self.pos < self.choice * 80:

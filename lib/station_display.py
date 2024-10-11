@@ -1,10 +1,11 @@
 from tkinter import *
 from lib.station import Station
 from lib.helper import get_train_graphics, get_exit_directions
+from lib.audio import AudioHandler
 
 class StationDisplay:
     tabs = ['Passengers', 'Exit']
-    def __init__(self, window: Tk, screen_width:int, screen_height:int, station: Station, points: int, unlocked_lines: list, bought:list, skin: str):
+    def __init__(self, window: Tk, screen_width:int, screen_height:int, station: Station, points: int, unlocked_lines: list, bought:list, skin: str, audio: AudioHandler):
         self.c = Canvas(window, width=screen_width, height=screen_height, bg='white')
         self.c.place(x=4,y=0)
         self.c.create_text(20,10,fill='black', font='Arial 40', text=station.name.replace('@', ' - '), anchor='nw')
@@ -45,6 +46,8 @@ class StationDisplay:
         self.pointer_graphics = [possible_pointers[dir] for dir in get_exit_directions(station)]
 
         window.update()
+
+        self.audio = audio
 
         
 
@@ -101,12 +104,14 @@ self.c.create_text(5*self.width/8, (5*(self.height-110)/6)+125, fill='black', fo
     def move_cursor_up(self, event):
         if self.cursor_pos > 0:
             self.cursor_pos -= 1
+            self.audio.play_sound_effect('scroll')
         if self.pointer != None:
             self.c.itemconfig(self.pointer, image = self.pointer_graphics[self.cursor_pos])
     
     def move_cursor_down(self, event):
         if self.cursor_pos + 1 < len(self.possible_cursor_positions):
             self.cursor_pos += 1
+            self.audio.play_sound_effect('scroll')
         if self.pointer != None:
             self.c.itemconfig(self.pointer, image = self.pointer_graphics[self.cursor_pos])
     
@@ -116,12 +121,14 @@ self.c.create_text(5*self.width/8, (5*(self.height-110)/6)+125, fill='black', fo
             self.c.itemconfig(self.tab_text[self.page], fill='black')
             self.page -= 1
             self.change_tab()
+            self.audio.play_sound_effect('scroll')
     
     def switch_tab_right(self, event):
         if self.page + 1 < len(self.tabs):
             self.c.itemconfig(self.tab_text[self.page], fill='black')
             self.page += 1
             self.change_tab()
+            self.audio.play_sound_effect('scroll')
 
 
     def update_cursor(self):

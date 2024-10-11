@@ -1,8 +1,9 @@
 from tkinter import *
+from lib.audio import AudioHandler
 
 # skin selection window
 class SkinSelect:
-    def __init__(self, window, width, height):
+    def __init__(self, window, width, height, audio: AudioHandler):
         self.c = Canvas(window, width=width, height=height, bg='white')
         self.c.place(x=4,y=0)
         with open('./skins.txt', 'r') as f:
@@ -22,10 +23,13 @@ class SkinSelect:
         self.c.bind_all('<Left>', self.scroll_left)
         self.c.bind_all('<Right>', self.scroll_right)
         self.c.bind_all('<space>', self.press_space)
+
+        self.audio = audio
     
     def scroll_right(self, event):
         if self.pos + 1 < len(self.options):
             self.pos += 1
+            self.audio.play_sound_effect('scroll')
         
         if self.pos + 1 == len(self.options):
             ending = ''
@@ -38,6 +42,7 @@ class SkinSelect:
     def scroll_left(self, event):
         if self.pos > 0:
             self.pos -= 1
+            self.audio.play_sound_effect('scroll')
         
         if self.pos == 0:
             start = ''
@@ -48,6 +53,7 @@ class SkinSelect:
         self.c.itemconfig(self.display_text, text=f'{start}{self.options[self.pos]} >')
 
     def press_space(self, event):
+        self.audio.play_sound_effect('select')
         self.space_pressed = True
 
     def get_selected(self):
