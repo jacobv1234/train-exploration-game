@@ -3,10 +3,11 @@ from lib.map import Map
 from lib.helper import get_line_poly_coords
 from lib.passengers import Passengers
 from json import loads
+from lib.audio import AudioHandler
 
 
 class ZoomedMap:
-    def __init__(self, window: Tk, width: int, height: int, map: Map, train_x: int, train_y: int, water_coords: list, scroll: dict, passengers = False):
+    def __init__(self, window: Tk, width: int, height: int, map: Map, train_x: int, train_y: int, water_coords: list, scroll: dict, passengers = False, audio: AudioHandler = None):
         self.c = Canvas(window, width=width, height=height, bg='lightblue', xscrollincrement=1, yscrollincrement=1)
         self.c.place(x=4,y=0)
         water_coords = [coord // 4 for coord in water_coords]
@@ -14,6 +15,8 @@ class ZoomedMap:
         self.station_name_popup = self.c.create_text(width/2,50,fill='black', font='Arial 25', text='', anchor='n')
         self.stations = []
         self.limits = scroll
+        self.audio = audio
+        self.played_click = False
 
 
         for group_name in list(map.station_groups.keys()):
@@ -118,14 +121,19 @@ class ZoomedMap:
         x,y = self.c.canvasx(event.x), self.c.canvasy(event.y)
         for station in self.stations:
             if int(x) in range(station[0]-12, station[0]+12) and int(y) in range(station[1]-12, station[1]+12):
+
+                if self.played_click == False:
+                    self.played_click = True
+                    self.audio.play_sound_effect('select')
+
                 message = station[2]
                 if '@' in message:
                     index = message.index('@')
                     message = message[:index]
                 self.c.itemconfig(self.station_name_popup, text=message)
-                break
-            else:
-                self.c.itemconfig(self.station_name_popup, text='')
+                return
+        self.c.itemconfig(self.station_name_popup, text='')
+        self.played_click = False
     
     def scroll_into_bounds(self):
         if self.screen_left < self.limits['left']:
