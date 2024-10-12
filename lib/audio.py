@@ -21,11 +21,13 @@ class AudioHandler:
             while True:
                 next_song = choice(self.bg_songs)
                 if next_song != self.playing:
+                    self.playing = next_song
                     break
         else:
             self.playing = choice(self.bg_songs)
-            mixer.music.load(f'./audio/{self.playing}.mp3')
-            mixer.music.play()
+        
+        mixer.music.load(f'./audio/{self.playing}.mp3')
+        mixer.music.play()
 
     def play_sound_effect(self, name: str):
         sound = mixer.Sound(f'./audio/{name}.mp3')
