@@ -151,3 +151,42 @@ def get_exit_directions(station):
         except TypeError:
             dirs.append(exits[exit])
     return dirs
+
+# create the coordinate set for a short 50-pixel line that originates from a point and goes in a direction
+# the returned value can then be used in canvas.create_polygon to make the line
+def short_line_coord_generator(x: int, y: int, dir: int):
+    coords = [x,y]
+    match dir:
+        case 0:
+            coords.extend([x, y-50])
+        case 1:
+            coords.extend([x+22.36, y-44.72])
+        case 2:
+            coords.extend([x+35.355, y-35.355])
+        case 3:
+            coords.extend([x+44.72, y-22.36])
+        case 4:
+            coords.extend([x+50, y])
+        case 5:
+            coords.extend([x+44.72, y+22.36])
+        case 6:
+            coords.extend([x+35.355, y+35.355])
+        case 7:
+            coords.extend([x+22.36, y+44.72])
+        case 8:
+            coords.extend([x, y+50])
+        case 9:
+            coords.extend([x-22.36, y+44.72])
+        case 10:
+            coords.extend([x-35.355, y+35.355])
+        case 11:
+            coords.extend([x-44.72, y+22.36])
+        case 12:
+            coords.extend([x-50, y])
+        case 13:
+            coords.extend([x-44.72, y-22.36])
+        case 14:
+            coords.extend([x-35.355, y-35.355])
+        case 15:
+            coords.extend([x-22.36, y-44.72])
+    return tuple(coords)

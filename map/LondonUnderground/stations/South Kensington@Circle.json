@@ -220,7 +220,7 @@
                 "reward": 1
             },
             {
-                "chance": 1,
+                "chance": 2,
                 "station": "LondonUnderground/Bayswater",
                 "line": [
                     "LondonUnderground/Circle-C"
@@ -393,6 +393,70 @@
                 "station": "LondonUnderground/Ravenscourt Park",
                 "line": [
                     "LondonUnderground/Turnham Green"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Wimbledon",
+                "line": [
+                    "LondonUnderground/Wimbledon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Wimbledon Park",
+                "line": [
+                    "LondonUnderground/Wimbledon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Southfields",
+                "line": [
+                    "LondonUnderground/Wimbledon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/East Putney",
+                "line": [
+                    "LondonUnderground/Wimbledon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/West Brompton",
+                "line": [
+                    "LondonUnderground/Wimbledon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Fulham Broadway",
+                "line": [
+                    "LondonUnderground/Wimbledon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Parsons Green",
+                "line": [
+                    "LondonUnderground/Wimbledon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Putney Bridge",
+                "line": [
+                    "LondonUnderground/Wimbledon"
                 ],
                 "reward": 1
             }

@@ -216,7 +216,7 @@ while game_running:
         junction = area.check_j_approach(train.x,train.y,train.direction, train.line)
         if junction != 0:
             audiohandler.play_sound_effect('junction_popup')
-            chooser = JunctionChoice(junction,window,screen_width, audiohandler)
+            chooser = JunctionChoice(junction,window,screen_width, audiohandler, c)
             junc = junction
 
         # loading zones
@@ -448,5 +448,7 @@ while game_running:
     diff = end - start
     if diff < 0.017:
         sleep(0.017 - diff)
+
+    print(train.line)
 
 mixer.quit()

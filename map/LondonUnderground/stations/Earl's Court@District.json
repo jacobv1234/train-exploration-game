@@ -156,7 +156,7 @@
                 "reward": 1
             },
             {
-                "chance": 1,
+                "chance": 2,
                 "station": "LondonUnderground/Bayswater",
                 "line": [
                     "LondonUnderground/Circle-C"
@@ -274,6 +274,70 @@
                     "LondonUnderground/KenOlympia"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Wimbledon",
+                "line": [
+                    "LondonUnderground/Wimbledon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Wimbledon Park",
+                "line": [
+                    "LondonUnderground/Wimbledon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Southfields",
+                "line": [
+                    "LondonUnderground/Wimbledon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/East Putney",
+                "line": [
+                    "LondonUnderground/Wimbledon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/West Brompton",
+                "line": [
+                    "LondonUnderground/Wimbledon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Fulham Broadway",
+                "line": [
+                    "LondonUnderground/Wimbledon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Parsons Green",
+                "line": [
+                    "LondonUnderground/Wimbledon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Putney Bridge",
+                "line": [
+                    "LondonUnderground/Wimbledon"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -340,6 +404,20 @@
                 "LondonUnderground/EarlsCourt-W"
             ],
             "unique_name": "LondonUnderground/Earl's Court@District/Kensington (Olympia)"
+        },
+        "To Wimbledon": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/Wimbledon"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/Wimbledon",
+                "LondonUnderground/EarlsCourt-W"
+            ],
+            "unique_name": "LondonUnderground/Earl's Court@District/To Wimbledon"
         }
     }
 }

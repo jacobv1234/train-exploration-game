@@ -99,3 +99,4 @@ LondonUnderground/EarlsCourt-W
 LondonUnderground/Turnham Green
 LondonUnderground/EalingBroadwayDistrict
 LondonUnderground/KenOlympia
+LondonUnderground/Wimbledon
