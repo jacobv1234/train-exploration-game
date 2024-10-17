@@ -449,6 +449,4 @@ while game_running:
     if diff < 0.017:
         sleep(0.017 - diff)
 
-    print(train.line)
-
 mixer.quit()
