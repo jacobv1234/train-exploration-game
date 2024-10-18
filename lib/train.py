@@ -1,5 +1,6 @@
 from tkinter import PhotoImage
 from lib.helper import opp_dir, get_train_graphics
+from lib.audio import AudioHandler
 
 # create train
 class Train():
@@ -40,17 +41,21 @@ class Train():
     def speed_up(self, event):
         if self.speed == 0:
             self.speed = 1
+
         elif self.speed == 1:
             # done differently to ensure stay on grid
             self.speedup_1 = True
+
         elif self.speed == 2:
             self.speedup_2 = True
     
     def slow_down(self, event):
         if self.speed == 4:
             self.speed = 2
+
         elif self.speed == 2:
             self.speed = 1
+
         elif self.speed == 1:
             self.speed = 0
 

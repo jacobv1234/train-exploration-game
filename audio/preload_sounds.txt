@@ -1,0 +1,3 @@
+train_fast
+train_medium
+train_slow

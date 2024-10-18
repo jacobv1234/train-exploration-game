@@ -13,7 +13,15 @@ class AudioHandler:
         mixer.init()
         mixer.music.set_volume(0.8)
 
+        # preloaded sound effects
+        # these ones are preloaded as they are longer and would cause a massive lag spike if loaded live
+        self.preloaded_sound_effects = {}
+        with open('./audio/preload_sounds.txt', 'r') as f:
+            for sound in [line[:-1] for line in f.readlines()]:
+                self.preloaded_sound_effects[sound] = mixer.Sound(f'./audio/{sound}.mp3')
+
         self.playing = False
+        self.loop_sound = False
 
     def next_bg_music(self):
         if self.playing:
@@ -30,8 +38,23 @@ class AudioHandler:
         mixer.music.play()
 
     def play_sound_effect(self, name: str):
-        sound = mixer.Sound(f'./audio/{name}.mp3')
+        if name in list(self.preloaded_sound_effects.keys()):
+            sound = self.preloaded_sound_effects[name]
+        else:
+            sound = mixer.Sound(f'./audio/{name}.mp3')
         sound.play()
 
     def is_playing(self):
         return mixer.music.get_busy()
+    
+    def stop_looping_sound(self):
+        if self.loop_sound:
+            self.loop_sound.fadeout(100)
+
+    def loop_sound_effect(self, name: str):
+        self.stop_looping_sound()
+        if name in list(self.preloaded_sound_effects.keys()):
+            self.loop_sound = self.preloaded_sound_effects[name]
+        else:
+            self.loop_sound = mixer.Sound(f'./audio/{name}.mp3')
+        self.loop_sound.play(loops=-1)

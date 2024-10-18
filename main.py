@@ -143,6 +143,7 @@ if game_running:
     zoomed_map = False
     force_space = False
     chooser = False
+    old_speed = 0
 
 
     # passenger display
@@ -190,7 +191,7 @@ if game_running:
     c.bind_all('<m>', openMap)
 
 
-# loop
+# main loop
 while game_running:
     start = perf_counter()
     if not in_station:
@@ -443,6 +444,22 @@ while game_running:
 
     if not audiohandler.is_playing():
         audiohandler.next_bg_music()
+
+    # train noises
+    if old_speed != train.speed:
+        old_speed = train.speed
+        match train.speed:
+            case 0:
+                audiohandler.stop_looping_sound()
+                audiohandler.play_sound_effect('train_stop')
+            case 1:
+                audiohandler.loop_sound_effect('train_slow')
+            case 2:
+                audiohandler.loop_sound_effect('train_medium')
+            case 4:
+                audiohandler.loop_sound_effect('train_fast')
+
+
     
     end = perf_counter()
     diff = end - start
