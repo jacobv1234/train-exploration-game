@@ -12,6 +12,7 @@ class Homepage:
         self.width = width
         self.height = height
         self.audio = audio
+        self.allow_cursor = True
 
     def press_space(self, event):
         self.audio.play_sound_effect('select')
@@ -28,7 +29,8 @@ class Homepage:
             self.selected += 1
 
     def update_cursor(self):
-        self.c.coords(self.cursor, self.c.coords(self.cursor)[0], self.cursor_positions[self.selected])
+        if self.allow_cursor:
+            self.c.coords(self.cursor, self.c.coords(self.cursor)[0], self.cursor_positions[self.selected])
     
     def get_choice(self):
         return self.options[self.selected]
@@ -89,10 +91,11 @@ class Homepage:
         self.newgame = self.c.create_text((width/2)-15, (2*height/3)-15, fill='black', font='Arial 20', text='New Game', anchor='w')
         self.cont_text = self.c.create_text((width/2)-15, (2*height/3)+10, fill='black', font='Arial 20', text='Continue', anchor='w')
         self.howtoplay = self.c.create_text((width/2)-15, (2*height/3)+35, fill='black', font='Arial 20', text='How to Play', anchor='w')
+        self.audio_settings = self.c.create_text((width/2)-15, (2*height/3)+60, fill='black', font='Arial 20', text='Audio Settings', anchor='w')
 
-        self.cursor_positions = [(2*height/3)-15, (2*height/3)+10, (2*height/3)+35]
+        self.cursor_positions = [(2*height/3)-15, (2*height/3)+10, (2*height/3)+35, (2*height/3)+60]
         self.selected = 0
-        self.options = ['New Game', 'Continue', 'How to Play']
+        self.options = ['New Game', 'Continue', 'How to Play', 'Audio Settings']
 
         self.space_pressed = False
         self.c.bind_all('<space>', self.press_space)
@@ -104,7 +107,7 @@ class Homepage:
 
     
     def go_to_how_to_play(self):
-        self.c.delete(self.logo, self.newgame, self.cont_text, self.cursor, self.howtoplay)
+        self.c.delete(self.logo, self.newgame, self.cont_text, self.cursor, self.howtoplay, self.audio_settings)
 
         self.c.create_text(self.width/2, 10, fill='black', font='Arial 25', text='How to Play',anchor='n')
 
@@ -118,3 +121,32 @@ class Homepage:
 
         self.c.unbind_all('<Up>')
         self.c.unbind_all('<Down>')
+        self.allow_cursor = False
+
+    def open_audio_settings(self, window:Tk, music_volume,sound_volume,train_volume):
+        self.c.delete(self.logo, self.newgame, self.cont_text, self.cursor, self.howtoplay, self.audio_settings)
+
+        self.music_slider = Scale(window, from_= 0, to = 100, orient='horizontal')
+        self.music_slider.place(relx=0.4, rely=0.3, relwidth=0.4, relheight=0.05, anchor = 'w')
+        self.music_slider.set(music_volume*100)
+        self.c.create_text(self.width * 0.35, self.height * 0.3, fill = 'black', font = 'Arial 15', text = 'Music:', anchor = 'e')
+
+        self.sound_slider = Scale(window, from_= 0, to = 100, orient='horizontal')
+        self.sound_slider.place(relx=0.4, rely=0.45, relwidth=0.4, relheight=0.05, anchor = 'w')
+        self.sound_slider.set(sound_volume*100)
+        self.c.create_text(self.width * 0.35, self.height * 0.45, fill = 'black', font = 'Arial 15', text = 'Sounds:', anchor = 'e')
+
+        self.train_slider = Scale(window, from_= 0, to = 100, orient='horizontal')
+        self.train_slider.place(relx=0.4, rely=0.6, relwidth=0.4, relheight=0.05, anchor = 'w')
+        self.train_slider.set(train_volume*100)
+        self.c.create_text(self.width * 0.35, self.height * 0.6, fill = 'black', font = 'Arial 15', text = 'Train rumbles:', anchor = 'e')
+
+        self.c.create_text(self.width * 0.48, self.height * 0.75, fill = 'black', font = 'Arial 15', text = 'SAVE AND CLOSE', anchor = 'w')
+        self.c.create_image(self.width * 0.47, self.height * 0.75, image = self.cursor_image, anchor = 'e')
+
+
+        self.options = ['Close Audio Settings']
+        self.selected = 0
+        self.c.unbind_all('<Up>')
+        self.c.unbind_all('<Down>')
+        self.allow_cursor = False

@@ -4,14 +4,18 @@ from pygame import mixer
 from random import choice
 
 class AudioHandler:
-    def __init__(self):
+    def __init__(self, music_vol, sound_vol, loop_vol):
         # load the background song list
         self.bg_songs = []
         with open('./audio/bg_songs.txt', 'r') as f:
             self.bg_songs = [line[:-1] for line in f.readlines()]
 
+        self.music_vol = music_vol
+        self.sound_vol = sound_vol
+        self.loop_vol = loop_vol
+
         mixer.init()
-        mixer.music.set_volume(0.8)
+        mixer.music.set_volume(music_vol)
 
         # preloaded sound effects
         # these ones are preloaded as they are longer and would cause a massive lag spike if loaded live
@@ -42,6 +46,7 @@ class AudioHandler:
             sound = self.preloaded_sound_effects[name]
         else:
             sound = mixer.Sound(f'./audio/{name}.mp3')
+        sound.set_volume(self.sound_vol)
         sound.play()
 
     def is_playing(self):
@@ -57,4 +62,11 @@ class AudioHandler:
             self.loop_sound = self.preloaded_sound_effects[name]
         else:
             self.loop_sound = mixer.Sound(f'./audio/{name}.mp3')
+        self.loop_sound.set_volume(self.loop_vol)
         self.loop_sound.play(loops=-1)
+
+    def update_volumes(self, music_vol, sound_vol, loop_vol):
+        self.music_vol = music_vol
+        self.sound_vol = sound_vol
+        self.loop_vol = loop_vol
+        mixer.music.set_volume(music_vol)

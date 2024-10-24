@@ -1,5 +1,6 @@
 __pycache__
-savedata
 *.spec
 build
 dist
+main.onefile-build
+*.exe

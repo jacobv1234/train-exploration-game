@@ -56,9 +56,21 @@ map_manifest = get_map_manifest()
 
 skin = 'Classic - Yellow'
 
+# load volume settings
+music_volume = 0.8
+sound_volume = 0.8
+train_volume = 0.8
+try:
+    with open('./savedata/audio_settings.txt', 'r') as f:
+        music_volume, sound_volume, train_volume = tuple([float(val) for val in f.read().split(',')])
+except FileNotFoundError:
+    with open('./savedata/audio_settings.txt', 'w') as f:
+        f.write('0.8,0.8,0.8')
+
+
 # audio setup
 print('Sounds licensed for free from zapsplat.com')
-audiohandler = AudioHandler()
+audiohandler = AudioHandler(music_volume, sound_volume, train_volume)
 audiohandler.next_bg_music()
 
 # homepage
@@ -89,6 +101,18 @@ while game_running:
             homepage = Homepage(window, screen_width, screen_height, skin, audiohandler)
         elif choice == 'How to Play':
             homepage.go_to_how_to_play()
+        elif choice == 'Audio Settings':
+            homepage.open_audio_settings(window, music_volume,sound_volume,train_volume)
+        elif choice == 'Close Audio Settings':
+            music_volume = homepage.music_slider.get() / 100
+            sound_volume = homepage.sound_slider.get() / 100
+            train_volume = homepage.train_slider.get() / 100
+            audiohandler.update_volumes(music_volume,sound_volume,train_volume)
+            with open('./savedata/audio_settings.txt', 'w') as f:
+                f.write(f'{music_volume},{sound_volume},{train_volume}')
+            homepage.remove()
+            del homepage
+            homepage = Homepage(window, screen_width, screen_height, skin, audiohandler)
         else:
             save_path = f'map/premade_saves/{choice}'
             break
