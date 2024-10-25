@@ -16,7 +16,18 @@ BUGS
 
 NEW FEATURE IDEAS
 - have current train direction be the default exit option
-- click controls for speed / junctions
+
+MOUSE REVOLUTION <- SUCCESS! HELL YEAH
+- homepage mouse controls (inc. save select, how to play, audio settings)               DONE
+- skin select mouse controls                                                            DONE
+- open / close map button                                                               DONE
+- station menuing mouse controls                                                        DONE
+- click 'Press space to enter' button to enter the station (change text accordingly)    DONE
+- click speed controls to change                                                        DONE
+- click junction controls to change                                                     DONE
+- hover mouse near edge of screen to scroll zoomed map                                  DONE
+- update how to play text                                                               DONE
+- add sounds to mouse controls                                                          DONE
 
 MAP EDITOR
 - station-specific passengers doesn't like station groups

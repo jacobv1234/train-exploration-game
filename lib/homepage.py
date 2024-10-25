@@ -13,6 +13,7 @@ class Homepage:
         self.height = height
         self.audio = audio
         self.allow_cursor = True
+        self.music_slider = False
 
     def press_space(self, event):
         self.audio.play_sound_effect('select')
@@ -40,15 +41,18 @@ class Homepage:
         self.c.unbind_all('<Up>')
         self.c.unbind_all('<Down>')
         self.c.unbind_all('<space>')
+        self.c.unbind_all('<Button-1>')
+        self.c.unbind_all('<Motion>')
         self.c.destroy()
 
     
     def save_selection(self, map_manifest, width, height):
-        self.c.delete(self.logo, self.newgame, self.cont_text, self.cursor, self.howtoplay)
+        self.c.delete(self.logo, self.newgame, self.cont_text, self.cursor, self.howtoplay, self.audio_settings)
 
         names = list(map_manifest['Saves'].keys())
 
         self.cursor_positions = []
+        self.mouse_positions = []
         self.selected = 0
         self.options = []
 
@@ -74,6 +78,9 @@ class Homepage:
         
         self.cursor_image.zoom(2)
         self.cursor = self.c.create_image((width/4), self.cursor_positions[0], anchor='center', image=self.cursor_image)
+
+        mouse_offset = (self.cursor_positions[1] - self.cursor_positions[0]) / 2
+        self.mouse_positions = [val + mouse_offset for val in self.cursor_positions]
     
     def create_homepage(self, width, height, skin):
         # background
@@ -99,11 +106,15 @@ class Homepage:
 
         self.space_pressed = False
         self.c.bind_all('<space>', self.press_space)
+        self.c.bind_all('<Button-1>', self.press_space)
 
         self.cursor_image = PhotoImage(file=f'./skins/{skin}.png')
         self.cursor = self.c.create_image((width/2)-35, (2*height/3)-15, anchor='e', image=self.cursor_image)
         self.c.bind_all('<Up>', self.move_cursor_up)
         self.c.bind_all('<Down>', self.move_cursor_down)
+
+        self.c.bind_all('<Motion>', self.track_mouse)
+        self.mouse_positions = [val + 10 for val in self.cursor_positions]
 
     
     def go_to_how_to_play(self):
@@ -150,3 +161,24 @@ class Homepage:
         self.c.unbind_all('<Up>')
         self.c.unbind_all('<Down>')
         self.allow_cursor = False
+    
+    def track_mouse(self, event: Event):
+        y = self.c.canvasy(event.y)
+
+        if self.music_slider:
+            if y > self.height * 0.65:
+                self.c.bind_all('<Button-1>', self.press_space)
+            else:
+                self.c.unbind_all('<Button-1>')
+            return
+
+        selected = len(self.options) - 1
+        for i in range(len(self.mouse_positions)):
+            if y > self.mouse_positions[i]:
+                continue
+            selected = i
+            break
+        if self.selected != selected:
+            self.selected = selected
+            self.audio.play_sound_effect('scroll')
+

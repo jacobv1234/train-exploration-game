@@ -27,6 +27,12 @@ self.c.create_text(self.width*3/4, pos, fill='black', font='Arial 14', text=shop
             self.c.bind_all('<Up>',self.move_cursor_up)
             self.c.bind_all('<Down>', self.move_cursor_down)
         
+            if len(self.possible_cursor_positions) > 1:
+                mouse_offset = (self.possible_cursor_positions[1] - self.possible_cursor_positions[0])/2
+                self.mouse_positions = [val + mouse_offset for val in self.possible_cursor_positions]
+            else:
+                self.mouse_positions = []
+        
         else:
             self.page_contents.append(
                 self.c.create_text(self.width/2, ((self.height-110)/2)+110, fill='black', font='Arial 18', text='There\'s nothing currently available in this shop!', anchor='center')

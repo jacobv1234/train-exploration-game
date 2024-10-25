@@ -17,6 +17,8 @@ class ZoomedMap:
         self.limits = scroll
         self.audio = audio
         self.played_click = False
+        self.width = width
+        self.height = height
 
 
         for group_name in list(map.station_groups.keys()):
@@ -119,6 +121,20 @@ class ZoomedMap:
 
     def track_motion(self, event: Event):
         x,y = self.c.canvasx(event.x), self.c.canvasy(event.y)
+
+        if event.x < 20:
+            self.scroll_left(None)
+            return
+        if event.x > self.width - 20:
+            self.scroll_right(None)
+            return
+        if event.y < 20:
+            self.scroll_up(None)
+            return
+        if event.y > self.height - 20:
+            self.scroll_down(None)
+            return
+
         for station in self.stations:
             if int(x) in range(station[0]-12, station[0]+12) and int(y) in range(station[1]-12, station[1]+12):
 

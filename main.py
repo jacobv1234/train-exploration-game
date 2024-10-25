@@ -132,6 +132,37 @@ while game_running:
 skin_selector.remove()
 del skin_selector
 
+def openMap(event):
+    global zoomed_map
+    if not in_station:
+        train.disable_speed_controls(c)
+        train.speed = 0
+        zoomed_map = ZoomedMap(window, screen_width, screen_height, area, train.x, train.y, area.water_coords, area.scroll_boundary, passengers, audiohandler)
+        c.unbind_all('<m>')
+        c.bind_all('<m>', closeMap)
+        c.unbind_all('<space>')
+        audiohandler.play_sound_effect('open_map')
+        map_button.lift()
+
+def closeMap(event):
+    global zoomed_map
+    zoomed_map.close()
+    zoomed_map = False
+    train.enable_speed_controls(c)
+    c.unbind_all('<m>')
+    c.bind_all('<m>', openMap)
+    if chooser:
+        chooser.re_enable_controls()
+    if press_space:
+        c.bind_all('<space>', pressed_space)
+    audiohandler.play_sound_effect('close_map')
+
+def toggleMap():
+    if zoomed_map:
+        closeMap(None)
+    else:
+        openMap(None)
+
 # within if to avoid crash when closed
 if game_running:
     c = Canvas(window, width = screen_width, height = screen_height, bg = 'lightblue', xscrollincrement=1, yscrollincrement=1)
@@ -150,7 +181,7 @@ if game_running:
     speedtracker = SpeedTracker(window,screen_width,screen_height)
 
     # train
-    train = Train(int(startx), int(starty), int(startdir), start_line, c, skin)
+    train = Train(int(startx), int(starty), int(startdir), start_line, c, skin, screen_width, screen_height)
 
     # center on screen
     c.xview_scroll(int(startx) - (round(screen_width / 2)), 'units')
@@ -173,6 +204,11 @@ if game_running:
     # passenger display
     passengers = Passengers(window, screen_height, save_path)
 
+    # map button
+    map_image = PhotoImage(file = './map_icon.png')
+    map_button = Button(window, text = 'Map (m)', border=5, command=toggleMap, font='Arial 10', image = map_image, background='white')
+    map_button.place(width = 80, height = 80, relx = 0, rely = 1, anchor = 'sw')
+
 
 # functions that work better in main than in lib.helper
 def pressed_space(event):
@@ -188,28 +224,6 @@ def HandleMapNameCounter():
             mapnamedisplay.remove()
             mapnamedisplay = False
 
-def openMap(event):
-    global zoomed_map
-    train.disable_speed_controls(c)
-    train.speed = 0
-    zoomed_map = ZoomedMap(window, screen_width, screen_height, area, train.x, train.y, area.water_coords, area.scroll_boundary, passengers, audiohandler)
-    c.unbind_all('<m>')
-    c.bind_all('<m>', closeMap)
-    c.unbind_all('<space>')
-    audiohandler.play_sound_effect('open_map')
-
-def closeMap(event):
-    global zoomed_map
-    zoomed_map.close()
-    zoomed_map = False
-    train.enable_speed_controls(c)
-    c.unbind_all('<m>')
-    c.bind_all('<m>', openMap)
-    if chooser:
-        chooser.re_enable_controls()
-    if press_space:
-        c.bind_all('<space>', pressed_space)
-    audiohandler.play_sound_effect('close_map')
 
 if game_running:
     c.bind_all('<m>', openMap)
@@ -276,7 +290,7 @@ while game_running:
         # station entry
         station = area.check_stations(train.x, train.y, train.line)
         if station != 0 and train.speed == 0 and not press_space and not zoomed_map:
-            press_space = PressSpaceToEnter(window, screen_width, screen_height)
+            press_space = PressSpaceToEnter(window, screen_width, screen_height, pressed_space)
             c.bind_all('<space>', pressed_space)
         elif train.speed != 0 and press_space:
             press_space.remove()
@@ -298,9 +312,9 @@ while game_running:
                     plural = ''
 
             if station.shop:
-                in_station = ShopStation(window, screen_width, screen_height, station, points, unlocked_lines, bought, skin, audiohandler)
+                in_station = ShopStation(window, screen_width, screen_height, station, points, unlocked_lines, bought, skin, audiohandler, pressed_space)
             else:
-                in_station = StationDisplay(window, screen_width, screen_height, station, points, unlocked_lines, bought, skin, audiohandler) 
+                in_station = StationDisplay(window, screen_width, screen_height, station, points, unlocked_lines, bought, skin, audiohandler, pressed_space) 
             
             if points_obtained > 0:
                 if popup:

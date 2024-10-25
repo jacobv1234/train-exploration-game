@@ -1,6 +1,6 @@
-from tkinter import PhotoImage
+from tkinter import PhotoImage, Event, Canvas
 from lib.helper import opp_dir, get_train_graphics
-from lib.audio import AudioHandler
+from lib.speedtracker import SpeedTracker
 
 # create train
 class Train():
@@ -23,19 +23,22 @@ class Train():
     (-1,-2) #15 up-up-left
     )
 
-    def __init__(self, startx, starty, startdir, start_line, c, skin):
+    def __init__(self, startx, starty, startdir, start_line, c: Canvas, skin, screen_width, screen_height):
         self.x = startx
         self.y = starty
         self.direction = startdir
         self.speed = 0
         self.speedup_1 = False
         self.speedup_2 = False
+        self.controls_enabled = True
         self.line = start_line
+        self.screen_width = screen_width
+        self.screen_height = screen_height
         self.graphics = get_train_graphics(skin)
         self.object = c.create_image(startx, starty, image = self.graphics[startdir], anchor = 'center')
         c.bind_all('<Up>', self.speed_up)
         c.bind_all('<Down>', self.slow_down)
-
+        c.bind_all('<Button-1>', self.mouse_set_speed)
         
     
     def speed_up(self, event):
@@ -58,9 +61,23 @@ class Train():
 
         elif self.speed == 1:
             self.speed = 0
+    
+    def mouse_set_speed(self, event: Event):
+        x, y = event.x_root, event.y_root
+        if x > self.screen_width - 80 and y > self.screen_height/2 -160 and y < self.screen_height/2 +160 and self.controls_enabled:
+            selected =  3 - ((y - (self.screen_height/2 - 160)) // 80)
+            match selected:
+                case 0:
+                    self.speed = 0
+                case 1:
+                    self.speed = 1
+                case 2:
+                    self.speedup_1 = True
+                case 3:
+                    self.speedup_2 = True
 
 
-    def move_train(self, c):
+    def move_train(self, c: Canvas):
         dir_vect = self.directions[self.direction]
 
         # handle speeding up in a way that maintains grid alignment
@@ -88,7 +105,7 @@ class Train():
         if len(corner) == 5:
             self.line = corner[4]
     
-    def stop(self, stop, c):
+    def stop(self, stop, c: Canvas):
         if self.direction != stop[2]:
             self.speed = 0
             self.speedup_1 = False
@@ -97,13 +114,16 @@ class Train():
         else:
             self.enable_speed_controls(c)
     
-    def disable_speed_controls(self, c):
+    def disable_speed_controls(self, c: Canvas):
         c.unbind_all('<Up>')
         c.unbind_all('<Down>')
+        self.controls_enabled = False
+
     
-    def enable_speed_controls(self, c):
+    def enable_speed_controls(self, c: Canvas):
         c.bind_all('<Up>', self.speed_up)
         c.bind_all('<Down>', self.slow_down)
+        self.controls_enabled = True
 
     
     def junction(self, junction, choice):

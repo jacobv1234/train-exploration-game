@@ -32,11 +32,13 @@ class JunctionChoice:
 
         self.canvas.bind_all('<Left>', self.move_left)
         self.canvas.bind_all('<Right>', self.move_right)
+        self.canvas.bind_all('<Button-1>', self.mouse_set_choice, add = True)
 
         self.audio = audio
 
         self.line_indicator = Junction_Indicator(junction, master_canvas)
         self.junction = junction
+        self.width = width
     
     def create_left_arrow(self, pos):
         x = (pos * 80) + 40
@@ -64,6 +66,16 @@ class JunctionChoice:
             self.audio.play_sound_effect('scroll')
             new_direction = self.junction[self.options[self.choice]]['direction']
             self.line_indicator.update(new_direction)
+
+    def mouse_set_choice(self, event: Event):
+        x_offset = self.num_options * 40
+        x, y = event.x_root, event.y_root
+        if y < 80 and x > self.width/2 - x_offset and x < self.width/2 + x_offset:
+            self.choice = (x - (self.width/2 - x_offset)) // 80
+            self.audio.play_sound_effect('scroll')
+            new_direction = self.junction[self.options[self.choice]]['direction']
+            self.line_indicator.update(new_direction)
+
     
     def update(self):
         if self.pos < self.choice * 80:

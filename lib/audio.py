@@ -4,7 +4,7 @@ from pygame import mixer
 from random import choice
 
 class AudioHandler:
-    def __init__(self, music_vol, sound_vol, loop_vol):
+    def __init__(self, music_vol: float = 1, sound_vol: float = 1, loop_vol: float = 1):
         # load the background song list
         self.bg_songs = []
         with open('./audio/bg_songs.txt', 'r') as f:
