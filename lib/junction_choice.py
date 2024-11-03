@@ -71,7 +71,7 @@ class JunctionChoice:
         x_offset = self.num_options * 40
         x, y = event.x_root, event.y_root
         if y < 80 and x > self.width/2 - x_offset and x < self.width/2 + x_offset:
-            self.choice = (x - (self.width/2 - x_offset)) // 80
+            self.choice = int((x - (self.width/2 - x_offset)) // 80)
             self.audio.play_sound_effect('scroll')
             new_direction = self.junction[self.options[self.choice]]['direction']
             self.line_indicator.update(new_direction)

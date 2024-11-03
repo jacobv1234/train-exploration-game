@@ -34,11 +34,62 @@
                 4,
                 "EalingBroadwayDistrict"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/RichmondDistrict"
+                ],
+                "not": [
+                    "LondonUnderground/EalingBroadwayDistrict"
+                ]
+            },
+            "corner": [
+                -4464,
+                1376,
+                4,
+                11,
+                "RichmondDistrict"
+            ]
         }
     ],
     "stops": [],
     "conditional_stops": [],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/RichmondDistrict",
+                    "LondonUnderground/EalingBroadwayDistrict"
+                ],
+                "not": []
+            },
+            "coords": [
+                -4464,
+                1376
+            ],
+            "approach": {
+                "coords": [
+                    -4304,
+                    1376
+                ],
+                "direction": 12,
+                "options": [
+                    "left",
+                    "straight"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "RichmondDistrict",
+                "direction": 11
+            },
+            "straight": {
+                "line": "EalingBroadwayDistrict",
+                "direction": 12
+            }
+        }
+    ],
     "stations": [
         "Hammersmith@District",
         "Barons Court@District",

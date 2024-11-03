@@ -229,7 +229,7 @@
                 "reward": 1
             },
             {
-                "chance": 2,
+                "chance": 3,
                 "station": "LondonUnderground/Paddington",
                 "line": [
                     "LondonUnderground/Circle-C"
@@ -366,7 +366,7 @@
                 "reward": 1
             },
             {
-                "chance": 1,
+                "chance": 2,
                 "station": "LondonUnderground/West Kensington",
                 "line": [
                     "LondonUnderground/Turnham Green"
@@ -390,7 +390,7 @@
                 "reward": 1
             },
             {
-                "chance": 1,
+                "chance": 2,
                 "station": "LondonUnderground/Ravenscourt Park",
                 "line": [
                     "LondonUnderground/Turnham Green"
@@ -458,6 +458,30 @@
                 "station": "LondonUnderground/Putney Bridge",
                 "line": [
                     "LondonUnderground/Wimbledon"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Richmond",
+                "line": [
+                    "LondonUnderground/RichmondDistrict"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Kew Gardens",
+                "line": [
+                    "LondonUnderground/RichmondDistrict"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Gunnersbury",
+                "line": [
+                    "LondonUnderground/RichmondDistrict"
                 ],
                 "reward": 1
             }

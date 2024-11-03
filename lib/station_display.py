@@ -204,6 +204,8 @@ self.c.create_text(5*self.width/8, (5*(self.height-110)/6)+125, fill='black', fo
             if self.cursor_pos != selected:
                 self.audio.play_sound_effect('scroll')
                 self.cursor_pos = selected
+                if self.pointer != None:
+                    self.c.itemconfig(self.pointer, image = self.pointer_graphics[self.cursor_pos])
     
     def mouse_click(self, event: Event):
         x, y = event.x_root, event.y_root

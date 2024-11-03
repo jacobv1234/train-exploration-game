@@ -1,80 +1,68 @@
 {
-    "name": "Barons Court@District",
+    "name": "Gunnersbury",
     "position": [
-        -3384,
-        1376
+        -4680,
+        1872
     ],
     "exits": {
-        "eastbound": {
-            "direction": 4,
+        "northbound": {
+            "direction": 0,
             "requirements": {
-                "unlocked": [
-                    "LondonUnderground/Turnham Green"
-                ],
+                "unlocked": [],
                 "not": []
             },
-            "line": "Turnham Green"
+            "line": "RichmondDistrict"
         },
-        "westbound": {
-            "direction": 12,
+        "southbound": {
+            "direction": 8,
             "requirements": {
-                "unlocked": [
-                    "LondonUnderground/Turnham Green"
-                ],
+                "unlocked": [],
                 "not": []
             },
-            "line": "Turnham Green"
+            "line": "RichmondDistrict"
         }
     },
     "map_text": [
         {
             "offset": [
-                0,
-                24
+                -24,
+                0
             ],
-            "text": "Barons Court",
+            "text": "Gunnersbury",
             "font": "Arial 10",
-            "anchor": "n"
+            "anchor": "e"
         }
     ],
     "passengers": {
         "chance_of_any": 75,
         "options": [
             {
-                "chance": 3,
-                "station": "LondonUnderground/Ealing Broadway",
+                "chance": 2,
+                "station": "LondonUnderground/Richmond",
                 "line": [
-                    "LondonUnderground/EalingBroadwayDistrict"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Ealing Common",
-                "line": [
-                    "LondonUnderground/EalingBroadwayDistrict"
+                    "LondonUnderground/RichmondDistrict"
                 ],
                 "reward": 1
             },
             {
                 "chance": 2,
-                "station": "LondonUnderground/Acton Town",
+                "station": "LondonUnderground/Kew Gardens",
                 "line": [
-                    "LondonUnderground/EalingBroadwayDistrict"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Chiswick Park",
-                "line": [
-                    "LondonUnderground/EalingBroadwayDistrict"
+                    "LondonUnderground/RichmondDistrict"
                 ],
                 "reward": 1
             },
             {
                 "chance": 2,
                 "station": "LondonUnderground/Hammersmith",
+                "line": [
+                    "LondonUnderground/Turnham Green"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Barons Court",
                 "line": [
                     "LondonUnderground/Turnham Green"
                 ],
@@ -265,30 +253,6 @@
                 "station": "LondonUnderground/Sloane Square",
                 "line": [
                     "LondonUnderground/Circle-S"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Richmond",
-                "line": [
-                    "LondonUnderground/RichmondDistrict"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Kew Gardens",
-                "line": [
-                    "LondonUnderground/RichmondDistrict"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Gunnersbury",
-                "line": [
-                    "LondonUnderground/RichmondDistrict"
                 ],
                 "reward": 1
             }
