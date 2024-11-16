@@ -639,9 +639,11 @@ Control map text, passengers, and shop via the JSON.
             if ';' not in station:
                 if '/' not in station:
                     station = map_name + '/' + station
-                stations.append(station)
 
-                chance = int(input('Relative chance of appearing: '))
+                chance = int(input('Relative chance of appearing (enter 0 to skip): '))
+                if chance == 0:
+                    continue 
+                stations.append(station)
                 chances.append(chance)
 
                 return_lines = []
@@ -669,8 +671,10 @@ Control map text, passengers, and shop via the JSON.
                     if name in stations:
                         continue
                     print(name)
+                    chance = int(input('Relative chance of appearing (enter 0 to skip): '))
+                    if chance == 0:
+                        continue
                     stations.append(name)
-                    chance = int(input('Relative chance of appearing: '))
                     chances.append(chance)
                     return_lines = [f'{map_name}/{line}']
                     while True:

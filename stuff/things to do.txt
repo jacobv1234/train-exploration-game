@@ -12,10 +12,11 @@ SOLVED / SCRAPPED
 
 
 BUGS
-- No known bugs currently
+- Clicking anywhere while stopped at a station opens the station window
 
 NEW FEATURE IDEAS
 - have current train direction be the default exit option
+- junction selector arrows match colour of resulting line
 
 MOUSE REVOLUTION <- SUCCESS! HELL YEAH
 - homepage mouse controls (inc. save select, how to play, audio settings)               DONE

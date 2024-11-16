@@ -191,7 +191,72 @@
             ]
         }
     ],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "not": []
+            },
+            "coords": [
+                1032,
+                872
+            ],
+            "approach": {
+                "coords": [
+                    904,
+                    872
+                ],
+                "direction": 4,
+                "options": [
+                    "left",
+                    "straight"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Circle-N",
+                "direction": 3
+            },
+            "straight": {
+                "line": "Whitechapel",
+                "direction": 4
+            }
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/H+C-Aldgate"
+                ],
+                "not": []
+            },
+            "coords": [
+                1104,
+                536
+            ],
+            "approach": {
+                "coords": [
+                    968,
+                    376
+                ],
+                "direction": 4,
+                "options": [
+                    "left",
+                    "straight"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "H+C-Aldgate",
+                "direction": 7
+            },
+            "straight": {
+                "line": "Circle-N",
+                "direction": 8
+            }
+        }
+    ],
     "stations": [
         "Liverpool Street@Circle",
         "Aldgate",

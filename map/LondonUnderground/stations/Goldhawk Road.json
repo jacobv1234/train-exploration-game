@@ -91,7 +91,8 @@
                 "chance": 2,
                 "station": "LondonUnderground/Hammersmith",
                 "line": [
-                    "LondonUnderground/H+C"
+                    "LondonUnderground/H+C",
+                    "LondonUnderground/Turnham Green"
                 ],
                 "reward": 1
             },
@@ -178,7 +179,7 @@
                 "reward": 1
             },
             {
-                "chance": 2,
+                "chance": 1,
                 "station": "LondonUnderground/Euston Square",
                 "line": [
                     "LondonUnderground/Circle-N"
@@ -311,6 +312,95 @@
                 "station": "LondonUnderground/High Street Kensington",
                 "line": [
                     "LondonUnderground/Circle-C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Aldgate East",
+                "line": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Whitechapel",
+                "line": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Barking",
+                "line": [
+                    "LondonUnderground/Whitechapel",
+                    "LondonUnderground/Upminster"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/East Ham",
+                "line": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Stepney Green",
+                "line": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Mile End",
+                "line": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Upton Park",
+                "line": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Plaistow",
+                "line": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Bow Road",
+                "line": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Bromley-By-Bow",
+                "line": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/West Ham",
+                "line": [
+                    "LondonUnderground/Whitechapel"
                 ],
                 "reward": 1
             }

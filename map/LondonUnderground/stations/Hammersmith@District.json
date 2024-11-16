@@ -147,6 +147,7 @@
                 "chance": 2,
                 "station": "LondonUnderground/Edgware Road",
                 "line": [
+                    "LondonUnderground/H+C",
                     "LondonUnderground/Circle-C",
                     "LondonUnderground/Circle-J3"
                 ],
@@ -173,6 +174,7 @@
                 "chance": 3,
                 "station": "LondonUnderground/Paddington",
                 "line": [
+                    "LondonUnderground/H+C",
                     "LondonUnderground/Circle-C"
                 ],
                 "reward": 1
@@ -303,6 +305,216 @@
                 "station": "LondonUnderground/Gunnersbury",
                 "line": [
                     "LondonUnderground/RichmondDistrict"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Aldgate East",
+                "line": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Whitechapel",
+                "line": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Barking",
+                "line": [
+                    "LondonUnderground/Whitechapel",
+                    "LondonUnderground/Upminster"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/East Ham",
+                "line": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Stepney Green",
+                "line": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Mile End",
+                "line": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Upton Park",
+                "line": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Plaistow",
+                "line": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Bow Road",
+                "line": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Bromley-By-Bow",
+                "line": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/West Ham",
+                "line": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Liverpool Street",
+                "line": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Moorgate",
+                "line": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Barbican",
+                "line": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Farringdon",
+                "line": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Baker Street",
+                "line": [
+                    "LondonUnderground/Circle-N",
+                    "LondonUnderground/Circle-J1"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Great Portland Street",
+                "line": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Euston Square",
+                "line": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/King's Cross",
+                "line": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Latimer Road",
+                "line": [
+                    "LondonUnderground/H+C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Westbourne Park",
+                "line": [
+                    "LondonUnderground/H+C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Royal Oak",
+                "line": [
+                    "LondonUnderground/H+C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Ladbroke Grove",
+                "line": [
+                    "LondonUnderground/H+C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Goldhawk Road",
+                "line": [
+                    "LondonUnderground/H+C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Shepherd's Bush Market",
+                "line": [
+                    "LondonUnderground/H+C"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Wood Lane",
+                "line": [
+                    "LondonUnderground/H+C"
                 ],
                 "reward": 1
             }

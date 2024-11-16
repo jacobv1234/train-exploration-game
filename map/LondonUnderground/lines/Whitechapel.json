@@ -1,0 +1,178 @@
+{
+    "colour": "#00793b",
+    "segments": [
+        [
+            864,
+            880,
+            1032,
+            880
+        ],
+        [
+            1032,
+            880,
+            1224,
+            784
+        ],
+        [
+            1224,
+            784,
+            1944,
+            64
+        ],
+        [
+            1944,
+            64,
+            2024,
+            24
+        ],
+        [
+            2024,
+            24,
+            4168,
+            24
+        ],
+        [
+            4168,
+            24,
+            4264,
+            -24
+        ],
+        [
+            4264,
+            -24,
+            4472,
+            -232
+        ]
+    ],
+    "corners": [
+        [
+            1032,
+            880,
+            3,
+            12
+        ],
+        [
+            1224,
+            784,
+            2,
+            11
+        ],
+        [
+            1944,
+            64,
+            3,
+            10
+        ],
+        [
+            2024,
+            24,
+            4,
+            11
+        ],
+        [
+            4168,
+            24,
+            3,
+            12
+        ],
+        [
+            4264,
+            -24,
+            2,
+            11
+        ],
+        [
+            1048,
+            872,
+            3,
+            12
+        ],
+        [
+            1024,
+            872,
+            4,
+            12,
+            "Circle-N"
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Upminster"
+                ],
+                "not": []
+            },
+            "corner": [
+                4472,
+                -232,
+                2,
+                10,
+                "Upminster"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/Upminster"
+                ]
+            },
+            "stop": [
+                4472,
+                -232,
+                10
+            ]
+        }
+    ],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/H+C-Aldgate"
+                ],
+                "not": []
+            },
+            "coords": [
+                1392,
+                616
+            ],
+            "approach": {
+                "coords": [
+                    1472,
+                    536
+                ],
+                "direction": 10,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Whitechapel",
+                "direction": 10
+            },
+            "right": {
+                "line": "H+C-Aldgate",
+                "direction": 11
+            }
+        }
+    ],
+    "stations": [
+        "Aldgate East",
+        "Whitechapel",
+        "Barking",
+        "East Ham",
+        "Stepney Green",
+        "Mile End@District",
+        "Upton Park",
+        "Plaistow",
+        "Bow Road",
+        "Bromley-By-Bow",
+        "West Ham@District"
+    ]
+}

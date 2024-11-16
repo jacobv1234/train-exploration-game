@@ -101,3 +101,8 @@ LondonUnderground/EalingBroadwayDistrict
 LondonUnderground/KenOlympia
 LondonUnderground/Wimbledon
 LondonUnderground/RichmondDistrict
+LondonUnderground/Whitechapel
+LondonUnderground/Upminster
+LondonUnderground/H+C-Aldgate
+LondonUnderground/_pinkCircleEast
+LondonUnderground/_pinkDistrict

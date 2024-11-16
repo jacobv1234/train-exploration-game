@@ -22,7 +22,12 @@
         "EalingBroadwayDistrict",
         "KenOlympia",
         "Wimbledon",
-        "RichmondDistrict"
+        "RichmondDistrict",
+        "Whitechapel",
+        "Upminster",
+        "H+C-Aldgate",
+        "_pinkCircleEast",
+        "_pinkDistrict"
     ],
     "loadingzones": [],
     "display_name": "London Underground",
@@ -134,10 +139,10 @@
         -7392
     ],
     "scroll_bounds": {
-        "left": -1720,
-        "right": 560,
-        "top": -316,
-        "bottom": 1162
+        "left": -1788,
+        "right": 1722,
+        "top": -900,
+        "bottom": 1262
     },
     "station_groups": [
         "Paddington",

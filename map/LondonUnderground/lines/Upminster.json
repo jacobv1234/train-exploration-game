@@ -1,0 +1,63 @@
+{
+    "colour": "#00793b",
+    "segments": [
+        [
+            4472,
+            -232,
+            5752,
+            -1512
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "not": []
+            },
+            "corner": [
+                4472,
+                -232,
+                2,
+                10,
+                "Whitechapel"
+            ]
+        }
+    ],
+    "stops": [
+        [
+            5752,
+            -1512,
+            10
+        ]
+    ],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/Whitechapel"
+                ]
+            },
+            "stop": [
+                4472,
+                -232,
+                2
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "Upminster",
+        "Dagenham East",
+        "Becontree",
+        "Upney",
+        "Dagenham Heathway",
+        "Hornchurch",
+        "Elm Park",
+        "Upminster Bridge",
+        "Barking"
+    ]
+}
