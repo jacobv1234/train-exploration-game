@@ -12,7 +12,7 @@ SOLVED / SCRAPPED
 
 
 BUGS
-- Clicking anywhere while stopped at a station opens the station window
+- Clicking anywhere while stopped at a station opens the station window <- FIXED
 
 NEW FEATURE IDEAS
 - have current train direction be the default exit option

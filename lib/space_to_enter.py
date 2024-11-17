@@ -14,7 +14,7 @@ class PressSpaceToEnter:
     def mouse_click(self, event: Event):
         x, y = (event.x_root, event.y_root)
         screen_x_center = self.screen_width / 2
-        if (y > self.screen_height - 40) and (x > screen_x_center - 150) and (x < screen_x_center + 150):
+        if y > self.screen_height - 40 and x > screen_x_center - 75 and x < screen_x_center + 75:
             self.space_function(None)
     
     def remove(self):

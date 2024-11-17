@@ -41,7 +41,7 @@ class StationDisplay:
         self.c.bind_all('<Left>', self.switch_tab_left)
         self.c.bind_all('<Right>', self.switch_tab_right)
         self.c.bind_all('<Motion>', self.mouse_motion)
-        self.c.bind_all('<Button-1>', self.mouse_click, add = True)
+        self.click = self.c.bind('<Button-1>', self.mouse_click, add = True)
 
         self.compass_graphic = PhotoImage(file='./compass.png').zoom(3).subsample(2)
         self.pointer = None
@@ -160,6 +160,7 @@ self.c.create_text(5*self.width/8, (5*(self.height-110)/6)+125, fill='black', fo
     
     def close(self):
         self.c.unbind_all('<Motion>')
+        self.c.unbind('<Button-1>', self.click)
         self.c.destroy()
 
     def unload_page(self):

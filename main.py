@@ -213,8 +213,9 @@ if game_running:
 # functions that work better in main than in lib.helper
 def pressed_space(event):
     global space_pressed
-    space_pressed = True
-    audiohandler.play_sound_effect('select')
+    if not zoomed_map:
+        space_pressed = True
+        audiohandler.play_sound_effect('select')
 
 def HandleMapNameCounter():
     global mapnamecounter, mapnamedisplay
