@@ -1,9 +1,11 @@
 from json import loads
 from lib.station import Station
 from lib.helper import test_requirements, get_line_poly_coords
+from tkinter import *
 
 class Line():
-    def __init__(self, map_name, line_name, canvas, unlocked_lines, created_stations: dict, folder, mode = 'main'):
+    def __init__(self, map_name, line_name, canvas: Canvas, unlocked_lines, created_stations: dict, folder, mode = 'main'):
+        self.junction_graphic = PhotoImage(file = 'junction.png')
         self.name = line_name
         
         with open(f'./{folder}/{map_name}/lines/{line_name}.json', 'r') as f:
@@ -39,6 +41,11 @@ class Line():
                 self.stops.append(stop['stop'])
 
         self.junctions = [junc for junc in line_data['junctions'] if test_requirements(junc['requirements'], unlocked_lines)]
+        
+        self.junction_symbols = []
+        for junction in self.junctions:
+            x, y = tuple(junction['approach']['coords'])
+            self.junction_symbols.append(canvas.create_image(x, y, image = self.junction_graphic, anchor = 'center'))
 
         self.stations = []
         for name in line_data['stations']:
@@ -79,3 +86,5 @@ class Line():
             c.delete(self.segments[i])
         for i in range(len(self.stations)-1,-1,-1):
             self.stations[i].unload(c)
+        for i in range(len(self.junction_symbols)-1,-1,-1):
+            c.delete(self.junction_symbols[i])

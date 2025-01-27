@@ -9,6 +9,7 @@ SOLVED / SCRAPPED
 - bug involving pressing space after closing the map causes crash <- FIXED
 - Show passenger destinations on minimap <- DONE
 - volume settings <- DONE
+- marker on map to show junction choice points <- DONE
 
 
 BUGS
