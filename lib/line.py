@@ -44,7 +44,7 @@ class Line():
         
         self.junction_symbols = []
         for junction in self.junctions:
-            x, y = tuple(junction['approach']['coords'])
+            x, y = tuple(junction['coords'])
             self.junction_symbols.append(canvas.create_image(x, y, image = self.junction_graphic, anchor = 'center'))
 
         self.stations = []
