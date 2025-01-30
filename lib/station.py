@@ -36,7 +36,7 @@ class Station:
         self.badges = []
         self.passenger_rules = s['passengers']
         if '@' not in name or mode == 'map_editor':
-            self.create_text(s,c)
+            self.create_text(s,c, unlocked_lines)
         
         else:
             group_name = name.split('@')[0]
@@ -44,13 +44,13 @@ class Station:
                 with open(f'map/{map_name}/station_groups/{group_name}.json', 'r') as f:
                     data = loads(f.read().strip('\n'))
             except FileNotFoundError:
-                self.create_text(s,c)
+                self.create_text(s,c, unlocked_lines)
                 return
 
             priority = data['text_priority']
 
             if priority == []:
-                self.create_text(s,c)
+                self.create_text(s,c, unlocked_lines)
                 return
             
             # station priority calculations
@@ -58,7 +58,7 @@ class Station:
             for station in priority:
                 # check if it's this station
                 if station == name:
-                    self.create_text(s,c)
+                    self.create_text(s,c, unlocked_lines)
                     return
                 
                 # check if the station is unlocked
@@ -115,8 +115,11 @@ class Station:
                         self.exits[exit].append(exits[exit]['line'])
     
 
-    def create_text(self,s,c):
+    def create_text(self,s,c, unlocked_lines):
         for text in s['map_text']:
+            if 'TUTORIAL' in list(text.keys()):
+                if 'EastAnglia/Norwich-Brundall' in unlocked_lines or 'EastAnglia/NorwichSouth' in unlocked_lines:
+                    continue
             if 'text' in list(text.keys()):
                 self.texts.append(c.create_text(self.pos[0] + text['offset'][0], self.pos[1] + text['offset'][1], fill='black', font=text['font'], text=text['text'], anchor=text['anchor']))
             else:

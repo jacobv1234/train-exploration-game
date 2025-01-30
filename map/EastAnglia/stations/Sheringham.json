@@ -24,7 +24,8 @@
             ],
             "text": "Press UP and DOWN to control your speed",
             "font": "Arial 20",
-            "anchor": "w"
+            "anchor": "w",
+            "TUTORIAL": true
         }
     ],
     "passengers": {

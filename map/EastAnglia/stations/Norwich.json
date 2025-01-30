@@ -24,7 +24,8 @@
             ],
             "text": "Press M to open the map",
             "font": "Arial 20",
-            "anchor": "center"
+            "anchor": "center",
+            "TUTORIAL": true
         }
     ],
     "passengers": {

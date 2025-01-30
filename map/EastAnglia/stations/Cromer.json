@@ -24,7 +24,8 @@
             ],
             "text": "Press SPACE when stopped at a station to:",
             "font": "Arial 20",
-            "anchor": "center"
+            "anchor": "center",
+            "TUTORIAL": true
         },
         {
             "offset": [
@@ -33,7 +34,8 @@
             ],
             "text": "Pick up / drop off passengers",
             "font": "Arial 15",
-            "anchor": "e"
+            "anchor": "e",
+            "TUTORIAL": true
         },
         {
             "offset": [
@@ -42,7 +44,8 @@
             ],
             "text": "Spend points on new routes",
             "font": "Arial 15",
-            "anchor": "e"
+            "anchor": "e",
+            "TUTORIAL": true
         },
         {
             "offset": [
@@ -51,7 +54,8 @@
             ],
             "text": "Change direction",
             "font": "Arial 15",
-            "anchor": "e"
+            "anchor": "e",
+            "TUTORIAL": true
         }
     ],
     "passengers": {
