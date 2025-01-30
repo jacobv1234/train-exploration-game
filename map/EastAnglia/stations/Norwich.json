@@ -16,6 +16,15 @@
             "text": "Norwich",
             "font": "Arial 10",
             "anchor": "center"
+        },
+        {
+            "offset": [
+                0,
+                104
+            ],
+            "text": "Press M to open the map",
+            "font": "Arial 20",
+            "anchor": "center"
         }
     ],
     "passengers": {

@@ -16,6 +16,15 @@
             "text": "Sheringham",
             "font": "Arial 10",
             "anchor": "center"
+        },
+        {
+            "offset": [
+                -392,
+                96
+            ],
+            "text": "Press UP and DOWN to control your speed",
+            "font": "Arial 20",
+            "anchor": "w"
         }
     ],
     "passengers": {

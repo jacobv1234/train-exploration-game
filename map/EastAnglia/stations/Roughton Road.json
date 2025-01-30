@@ -17,6 +17,15 @@
             "text": "Roughton Rd",
             "font": "Arial 10",
             "anchor": "w"
+        },
+        {
+            "offset": [
+                48,
+                -160
+            ],
+            "text": "Press LEFT or RIGHT when approaching a junction to change direction",
+            "font": "Arial 20",
+            "anchor": "nw"
         }
     ],
     "passengers": {

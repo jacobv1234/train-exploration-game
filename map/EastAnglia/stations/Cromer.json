@@ -16,6 +16,42 @@
             "text": "Cromer",
             "font": "Arial 10",
             "anchor": "center"
+        },
+        {
+            "offset": [
+                0,
+                -200
+            ],
+            "text": "Press SPACE when stopped at a station to:",
+            "font": "Arial 20",
+            "anchor": "center"
+        },
+        {
+            "offset": [
+                264,
+                -168
+            ],
+            "text": "Pick up / drop off passengers",
+            "font": "Arial 15",
+            "anchor": "e"
+        },
+        {
+            "offset": [
+                264,
+                -144
+            ],
+            "text": "Spend points on new routes",
+            "font": "Arial 15",
+            "anchor": "e"
+        },
+        {
+            "offset": [
+                264,
+                -120
+            ],
+            "text": "Change direction",
+            "font": "Arial 15",
+            "anchor": "e"
         }
     ],
     "passengers": {
