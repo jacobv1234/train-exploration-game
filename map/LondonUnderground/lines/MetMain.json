@@ -1,0 +1,25 @@
+{
+    "colour": "#9b0058",
+    "segments": [
+        [
+            -2000,
+            -128,
+            -2064,
+            -192
+        ]
+    ],
+    "corners": [
+        [
+            -2000,
+            -128,
+            14,
+            4,
+            "Circle-N"
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": []
+}

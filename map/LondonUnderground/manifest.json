@@ -27,7 +27,9 @@
         "Upminster",
         "H+C-Aldgate",
         "_pinkCircleEast",
-        "_pinkDistrict"
+        "_pinkDistrict",
+        "MetMain",
+        "_metCircle"
     ],
     "loadingzones": [],
     "display_name": "London Underground",
