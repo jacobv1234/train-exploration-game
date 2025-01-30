@@ -1,0 +1,148 @@
+{
+    "name": "Preston Road",
+    "position": [
+        -3256,
+        -1440
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "MetMain"
+        },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "MetMain"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -24
+            ],
+            "text": "Preston Road",
+            "font": "Arial 10",
+            "anchor": "s"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 60,
+        "options": [
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Harrow-On-The-Hill",
+                "line": [
+                    "LondonUnderground/MetMain",
+                    "LondonUnderground/Harrow"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Northwick Park",
+                "line": [
+                    "LondonUnderground/MetMain"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Wembley Park",
+                "line": [
+                    "LondonUnderground/MetMain"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Finchley Road",
+                "line": [
+                    "LondonUnderground/MetMain"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Liverpool Street",
+                "line": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Aldgate",
+                "line": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Moorgate",
+                "line": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Barbican",
+                "line": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Farringdon",
+                "line": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Baker Street",
+                "line": [
+                    "LondonUnderground/Circle-N",
+                    "LondonUnderground/Circle-J1"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Great Portland Street",
+                "line": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Euston Square",
+                "line": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/King's Cross",
+                "line": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

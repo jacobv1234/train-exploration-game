@@ -122,7 +122,7 @@
                 "reward": 1
             },
             {
-                "chance": 1,
+                "chance": 2,
                 "station": "LondonUnderground/Euston Square",
                 "line": [
                     "LondonUnderground/Circle-N"
@@ -428,6 +428,47 @@
                 "station": "LondonUnderground/West Ham",
                 "line": [
                     "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Harrow-On-The-Hill",
+                "line": [
+                    "LondonUnderground/MetMain",
+                    "LondonUnderground/Harrow"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Preston Road",
+                "line": [
+                    "LondonUnderground/MetMain"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Northwick Park",
+                "line": [
+                    "LondonUnderground/MetMain"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Wembley Park",
+                "line": [
+                    "LondonUnderground/MetMain"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Finchley Road",
+                "line": [
+                    "LondonUnderground/MetMain"
                 ],
                 "reward": 1
             }

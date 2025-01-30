@@ -16,7 +16,7 @@
                     "LondonUnderground/Circle-J2"
                 ],
                 "not": [
-                    "LondonUnderground/Metropolitan-Main"
+                    "LondonUnderground/MetMain"
                 ]
             },
             "corner": [
@@ -59,6 +59,42 @@
             ]
         }
     ],
-    "junctions": [],
-    "stations": ["Baker Street@Circle"]
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-J2",
+                    "LondonUnderground/MetMain"
+                ],
+                "not": []
+            },
+            "coords": [
+                -2000,
+                -128
+            ],
+            "approach": {
+                "coords": [
+                    -1808,
+                    -128
+                ],
+                "direction": 12,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Circle-J2",
+                "direction": 12
+            },
+            "right": {
+                "line": "MetMain",
+                "direction": 14
+            }
+        }
+    ],
+    "stations": [
+        "Baker Street@Circle"
+    ]
 }

@@ -6,6 +6,42 @@
             -128,
             -2064,
             -192
+        ],
+        [
+            -2064,
+            -192,
+            -2080,
+            -224
+        ],
+        [
+            -2080,
+            -224,
+            -2080,
+            -352
+        ],
+        [
+            -2080,
+            -352,
+            -2096,
+            -384
+        ],
+        [
+            -2096,
+            -384,
+            -3136,
+            -1424
+        ],
+        [
+            -3136,
+            -1424,
+            -3168,
+            -1440
+        ],
+        [
+            -3168,
+            -1440,
+            -4240,
+            -1440
         ]
     ],
     "corners": [
@@ -14,12 +50,68 @@
             -128,
             14,
             4,
-            "Circle-N"
+            "Circle-J1"
+        ],
+        [
+            -2064,
+            -192,
+            15,
+            6
+        ],
+        [
+            -2080,
+            -224,
+            0,
+            7
+        ],
+        [
+            -2080,
+            -352,
+            15,
+            8
+        ],
+        [
+            -2096,
+            -384,
+            14,
+            7
+        ],
+        [
+            -3136,
+            -1424,
+            6,
+            13
+        ],
+        [
+            -3168,
+            -1440,
+            5,
+            12
         ]
     ],
     "conditional_corners": [],
     "stops": [],
-    "conditional_stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/Harrow"
+                ]
+            },
+            "stop": [
+                -4240,
+                -1440,
+                4
+            ]
+        }
+    ],
     "junctions": [],
-    "stations": []
+    "stations": [
+        "Harrow-On-The-Hill",
+        "Preston Road",
+        "Northwick Park",
+        "Wembley Park@Metropolitan",
+        "Finchley Road@Metropolitan"
+    ]
 }

@@ -98,7 +98,7 @@
                 "reward": 1
             },
             {
-                "chance": 1,
+                "chance": 2,
                 "station": "LondonUnderground/Euston Square",
                 "line": [
                     "LondonUnderground/Circle-N"
@@ -406,6 +406,47 @@
                     "LondonUnderground/Whitechapel"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Harrow-On-The-Hill",
+                "line": [
+                    "LondonUnderground/MetMain",
+                    "LondonUnderground/Harrow"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Preston Road",
+                "line": [
+                    "LondonUnderground/MetMain"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Northwick Park",
+                "line": [
+                    "LondonUnderground/MetMain"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Wembley Park",
+                "line": [
+                    "LondonUnderground/MetMain"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Finchley Road",
+                "line": [
+                    "LondonUnderground/MetMain"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -444,6 +485,22 @@
                 "LondonUnderground/_pinkCircle2"
             ],
             "unique_name": "LondonUnderground/Baker Street@Circle/Hammersmith"
+        },
+        "Metropolitan line to Harrow": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-J1"
+                ],
+                "not": [
+                    "LondonUnderground/MetMain"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/MetMain",
+                "LondonUnderground/_metCircle"
+            ],
+            "unique_name": "LondonUnderground/Baker Street@Circle/Metropolitan line to Harrow"
         }
     }
 }
