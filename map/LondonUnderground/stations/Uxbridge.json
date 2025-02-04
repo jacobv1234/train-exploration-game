@@ -1,0 +1,33 @@
+{
+    "name": "Uxbridge",
+    "position": [
+        -6912,
+        -2024
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Uxbridge"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -24
+            ],
+            "text": "Uxbridge",
+            "font": "Arial 10",
+            "anchor": "s"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 80,
+        "options": []
+    },
+    "shop": false
+}

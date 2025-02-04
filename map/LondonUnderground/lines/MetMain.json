@@ -89,7 +89,23 @@
             12
         ]
     ],
-    "conditional_corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Harrow"
+                ],
+                "not": []
+            },
+            "corner": [
+                -4240,
+                -1440,
+                4,
+                12,
+                "Harrow"
+            ]
+        }
+    ],
     "stops": [],
     "conditional_stops": [
         {

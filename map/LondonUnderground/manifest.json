@@ -29,7 +29,10 @@
         "_pinkCircleEast",
         "_pinkDistrict",
         "MetMain",
-        "_metCircle"
+        "_metCircle",
+        "Harrow",
+        "WestHarrow",
+        "Uxbridge"
     ],
     "loadingzones": [],
     "display_name": "London Underground",

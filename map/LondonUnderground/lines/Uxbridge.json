@@ -1,0 +1,74 @@
+{
+    "colour": "#9b0058",
+    "segments": [
+        [
+            -4928,
+            -1472,
+            -5448,
+            -1992
+        ],
+        [
+            -5448,
+            -1992,
+            -5512,
+            -2024
+        ],
+        [
+            -5512,
+            -2024,
+            -6912,
+            -2024
+        ]
+    ],
+    "corners": [
+        [
+            -5448,
+            -1992,
+            6,
+            13
+        ],
+        [
+            -5512,
+            -2024,
+            5,
+            12
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/WestHarrow"
+                ],
+                "not": [
+                    "LondonUnderground/Alperton"
+                ]
+            },
+            "corner": [
+                -4928,
+                -1472,
+                5,
+                14,
+                "WestHarrow"
+            ]
+        }
+    ],
+    "stops": [
+        [
+            -6912,
+            -2024,
+            4
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Uxbridge",
+        "Ruislip",
+        "Ickenham",
+        "Hillingdon",
+        "Ruislip Manor",
+        "Eastcote",
+        "Rayners Lane"
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "name": "Ruislip Manor",
+    "position": [
+        -5400,
+        -1944
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 6,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Uxbridge"
+        },
+        "westbound": {
+            "direction": 14,
+            "requirements": {
+                "unlocked": [],
+                "not": []
+            },
+            "line": "Uxbridge"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                16,
+                -8
+            ],
+            "text": "Ruislip Manor",
+            "font": "Arial 10",
+            "anchor": "sw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 65,
+        "options": []
+    },
+    "shop": false
+}

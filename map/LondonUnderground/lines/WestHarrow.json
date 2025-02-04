@@ -1,0 +1,46 @@
+{
+    "colour": "#9b0058",
+    "segments": [
+        [
+            -4448,
+            -1440,
+            -4864,
+            -1440
+        ],
+        [
+            -4864,
+            -1440,
+            -4928,
+            -1472
+        ]
+    ],
+    "corners": [
+        [
+            -4448,
+            -1440,
+            4,
+            12,
+            "Harrow"
+        ],
+        [
+            -4864,
+            -1440,
+            13,
+            4
+        ],
+        [
+            -4928,
+            -1472,
+            5,
+            14,
+            "Uxbridge"
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "West Harrow"
+    ]
+}

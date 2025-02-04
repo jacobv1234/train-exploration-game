@@ -1,0 +1,43 @@
+{
+    "colour": "#9b0058",
+    "segments": [
+        [
+            -4240,
+            -1440,
+            -4448,
+            -1440
+        ]
+    ],
+    "corners": [
+        [
+            -4240,
+            -1440,
+            4,
+            12,
+            "MetMain"
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/WestHarrow"
+                ],
+                "not": [
+                    "LondonUnderground/Pinner"
+                ]
+            },
+            "corner": [
+                -4448,
+                -1440,
+                4,
+                12,
+                "WestHarrow"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": ["Harrow-On-The-Hill"]
+}
