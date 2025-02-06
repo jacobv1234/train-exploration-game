@@ -426,7 +426,7 @@
                 "reward": 1
             },
             {
-                "chance": 2,
+                "chance": 1,
                 "station": "LondonUnderground/Northwick Park",
                 "line": [
                     "LondonUnderground/MetMain"
@@ -446,6 +446,70 @@
                 "station": "LondonUnderground/Finchley Road",
                 "line": [
                     "LondonUnderground/MetMain"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Uxbridge",
+                "line": [
+                    "LondonUnderground/Uxbridge"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Ruislip",
+                "line": [
+                    "LondonUnderground/Uxbridge"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Ickenham",
+                "line": [
+                    "LondonUnderground/Uxbridge"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Hillingdon",
+                "line": [
+                    "LondonUnderground/Uxbridge"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Ruislip Manor",
+                "line": [
+                    "LondonUnderground/Uxbridge"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Eastcote",
+                "line": [
+                    "LondonUnderground/Uxbridge"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Rayners Lane",
+                "line": [
+                    "LondonUnderground/Uxbridge"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/West Harrow",
+                "line": [
+                    "LondonUnderground/WestHarrow"
                 ],
                 "reward": 1
             }

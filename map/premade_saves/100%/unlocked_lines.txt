@@ -108,3 +108,6 @@ LondonUnderground/_pinkCircleEast
 LondonUnderground/_pinkDistrict
 LondonUnderground/MetMain
 LondonUnderground/_metCircle
+LondonUnderground/Harrow
+LondonUnderground/WestHarrow
+LondonUnderground/Uxbridge
