@@ -512,6 +512,78 @@
                     "LondonUnderground/WestHarrow"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Amersham",
+                "line": [
+                    "LondonUnderground/Amersham"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Rickmansworth",
+                "line": [
+                    "LondonUnderground/Chorleywood"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Chorleywood",
+                "line": [
+                    "LondonUnderground/Chorleywood"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Chalfont & Latimer",
+                "line": [
+                    "LondonUnderground/Chorleywood"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Northwood Hills",
+                "line": [
+                    "LondonUnderground/Pinner"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Pinner",
+                "line": [
+                    "LondonUnderground/Pinner"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/North Harrow",
+                "line": [
+                    "LondonUnderground/Pinner"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Northwood",
+                "line": [
+                    "LondonUnderground/Pinner"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Moor Park",
+                "line": [
+                    "LondonUnderground/Pinner"
+                ],
+                "reward": 1
             }
         ]
     },

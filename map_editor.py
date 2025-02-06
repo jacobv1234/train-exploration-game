@@ -686,6 +686,8 @@ Control map text, passengers, and shop via the JSON.
                         return_lines.append(extra_line)
                     print()
                     lines.append(return_lines)
+            
+        skip = input('Skip existing pairs? (y/n) ')
 
 
         for start in range(len(stations)):
@@ -706,6 +708,9 @@ Control map text, passengers, and shop via the JSON.
                     with open(f'map/{path[0]}/stations/{path[1]}.json','r') as f:
                         data = loads(f.read())
                     if stations[dest] in [option['station'] for option in data['passengers']['options']]:
+                        if skip == 'y':
+                            print('Skipped existing combination.')
+                            continue
                         print('Overwritten existing combination.')
                         existing = [option['station'] for option in data['passengers']['options']]
                         existing_index = existing.index(stations[dest])
@@ -729,6 +734,9 @@ Control map text, passengers, and shop via the JSON.
                             with open(f'map/{path[0]}/stations/{file}','r') as f:
                                 data = loads(f.read())
                             if stations[dest] in [option['station'] for option in data['passengers']['options']]:
+                                if skip == 'y':
+                                    print('Skipped existing combination.')
+                                    continue
                                 print('Overwritten existing combination.')
                                 existing = [option['station'] for option in data['passengers']['options']]
                                 existing_index = existing.index(stations[dest])

@@ -608,6 +608,23 @@
                 "LondonUnderground/EarlsCourt-E"
             ],
             "unique_name": "LondonUnderground/Edgware Road@District/To Earl's Court"
+        },
+        "To Baker Street": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "not": [
+                    "LondonUnderground/Circle-J3"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/Circle-J3",
+                "LondonUnderground/Circle-J2",
+                "LondonUnderground/Circle-J1"
+            ],
+            "unique_name": "LondonUnderground/Edgware Road@District/To Baker Street"
         }
     }
 }

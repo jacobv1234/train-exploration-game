@@ -32,7 +32,10 @@
         "_metCircle",
         "Harrow",
         "WestHarrow",
-        "Uxbridge"
+        "Uxbridge",
+        "Pinner",
+        "Chorleywood",
+        "Amersham"
     ],
     "loadingzones": [],
     "display_name": "London Underground",
@@ -144,9 +147,9 @@
         -7392
     ],
     "scroll_bounds": {
-        "left": -1788,
-        "right": 1722,
-        "top": -900,
+        "left": -1870,
+        "right": 1720,
+        "top": -896,
         "bottom": 1262
     },
     "station_groups": [

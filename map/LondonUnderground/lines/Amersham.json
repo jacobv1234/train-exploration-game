@@ -1,0 +1,33 @@
+{
+    "colour": "#9b0058",
+    "segments": [
+        [
+            -6672,
+            -2736,
+            -7104,
+            -2736
+        ]
+    ],
+    "corners": [
+        [
+            -6672,
+            -2736,
+            4,
+            12,
+            "Chorleywood"
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [
+        [
+            -7104,
+            -2736,
+            4
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Amersham"
+    ]
+}

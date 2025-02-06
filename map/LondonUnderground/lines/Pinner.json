@@ -1,0 +1,61 @@
+{
+    "colour": "#9b0058",
+    "segments": [
+        [
+            -4448,
+            -1440,
+            -4512,
+            -1472
+        ],
+        [
+            -4512,
+            -1472,
+            -5368,
+            -2328
+        ]
+    ],
+    "corners": [
+        [
+            -4448,
+            -1440,
+            4,
+            13,
+            "Harrow"
+        ],
+        [
+            -4512,
+            -1472,
+            14,
+            5
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Chorleywood"
+                ],
+                "not": [
+                    "LondonUnderground/Watford"
+                ]
+            },
+            "corner": [
+                -5368,
+                -2328,
+                6,
+                14,
+                "Chorleywood"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Northwood Hills",
+        "Pinner",
+        "North Harrow",
+        "Northwood",
+        "Moor Park"
+    ]
+}

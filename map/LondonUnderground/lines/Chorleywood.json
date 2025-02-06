@@ -1,0 +1,71 @@
+{
+    "colour": "#9b0058",
+    "segments": [
+        [
+            -5368,
+            -2328,
+            -5736,
+            -2696
+        ],
+        [
+            -5736,
+            -2696,
+            -5816,
+            -2736
+        ],
+        [
+            -5816,
+            -2736,
+            -6672,
+            -2736
+        ]
+    ],
+    "corners": [
+        [
+            -5368,
+            -2328,
+            6,
+            14,
+            "Pinner"
+        ],
+        [
+            -5736,
+            -2696,
+            13,
+            6
+        ],
+        [
+            -5816,
+            -2736,
+            12,
+            5
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Amersham"
+                ],
+                "not": [
+                    "LondonUnderground/Chesham"
+                ]
+            },
+            "corner": [
+                -6672,
+                -2736,
+                4,
+                12,
+                "Amersham"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Rickmansworth",
+        "Chorleywood",
+        "Chalfont & Latimer"
+    ]
+}

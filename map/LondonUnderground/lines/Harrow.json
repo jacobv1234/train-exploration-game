@@ -34,10 +34,63 @@
                 12,
                 "WestHarrow"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Pinner"
+                ],
+                "not": [
+                    "LondonUnderground/WestHarrow"
+                ]
+            },
+            "corner": [
+                -4448,
+                -1440,
+                13,
+                4,
+                "Pinner"
+            ]
         }
     ],
     "stops": [],
     "conditional_stops": [],
-    "junctions": [],
-    "stations": ["Harrow-On-The-Hill"]
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Pinner",
+                    "LondonUnderground/WestHarrow"
+                ],
+                "not": []
+            },
+            "coords": [
+                -4448,
+                -1440
+            ],
+            "approach": {
+                "coords": [
+                    -4288,
+                    -1440
+                ],
+                "direction": 12,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "WestHarrow",
+                "direction": 12
+            },
+            "right": {
+                "line": "Pinner",
+                "direction": 13
+            }
+        }
+    ],
+    "stations": [
+        "Harrow-On-The-Hill"
+    ]
 }
