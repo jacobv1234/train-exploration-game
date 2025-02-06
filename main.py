@@ -316,13 +316,16 @@ while game_running:
                 in_station = ShopStation(window, screen_width, screen_height, station, points, unlocked_lines, bought, skin, audiohandler, pressed_space)
             else:
                 in_station = StationDisplay(window, screen_width, screen_height, station, points, unlocked_lines, bought, skin, audiohandler, pressed_space) 
-            
+
             if points_obtained > 0:
                 if popup:
                     popup.remove()
                     popup = False
                 popup = Popup(window, screen_width, f'Passenger{plural} Delivered!', f'You got {points_obtained} point{plural}!', 100)
                 audiohandler.play_sound_effect('success')
+            
+            if passengers.c:
+                window.call('raise', passengers.c, in_station.c)
 
     
     # handle station choices
