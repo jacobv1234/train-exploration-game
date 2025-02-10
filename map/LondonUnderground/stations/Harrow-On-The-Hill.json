@@ -296,6 +296,14 @@
                     "LondonUnderground/Watford"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Chesham",
+                "line": [
+                    "LondonUnderground/Chesham"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -345,6 +353,21 @@
                 "LondonUnderground/Harrow"
             ],
             "unique_name": "LondonUnderground/Harrow-On-The-Hill/To Watford"
+        },
+        "To Chesham": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Amersham"
+                ],
+                "not": [
+                    "LondonUnderground/Chesham"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/Chesham"
+            ],
+            "unique_name": "LondonUnderground/Harrow-On-The-Hill/To Chesham"
         }
     }
 }

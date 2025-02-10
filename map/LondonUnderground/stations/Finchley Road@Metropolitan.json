@@ -297,6 +297,14 @@
                     "LondonUnderground/Watford"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Chesham",
+                "line": [
+                    "LondonUnderground/Chesham"
+                ],
+                "reward": 1
             }
         ]
     },

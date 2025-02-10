@@ -1,8 +1,8 @@
 {
-    "name": "Chorleywood",
+    "name": "Chesham",
     "position": [
-        -5704,
-        -2664
+        -7264,
+        -3296
     ],
     "exits": {
         "eastbound": {
@@ -11,42 +11,34 @@
                 "unlocked": [],
                 "not": []
             },
-            "line": "Chorleywood"
-        },
-        "westbound": {
-            "direction": 14,
-            "requirements": {
-                "unlocked": [],
-                "not": []
-            },
-            "line": "Chorleywood"
+            "line": "Chesham"
         }
     },
     "map_text": [
         {
             "offset": [
-                -16,
-                8
+                0,
+                -24
             ],
-            "text": "Chorleywood",
+            "text": "Chesham",
             "font": "Arial 10",
-            "anchor": "ne"
+            "anchor": "s"
         }
     ],
     "passengers": {
-        "chance_of_any": 65,
+        "chance_of_any": 70,
         "options": [
             {
                 "chance": 2,
-                "station": "LondonUnderground/Amersham",
+                "station": "LondonUnderground/Rickmansworth",
                 "line": [
-                    "LondonUnderground/Amersham"
+                    "LondonUnderground/Chorleywood"
                 ],
                 "reward": 1
             },
             {
-                "chance": 2,
-                "station": "LondonUnderground/Rickmansworth",
+                "chance": 1,
+                "station": "LondonUnderground/Chorleywood",
                 "line": [
                     "LondonUnderground/Chorleywood"
                 ],
@@ -93,7 +85,7 @@
                 "reward": 1
             },
             {
-                "chance": 1,
+                "chance": 2,
                 "station": "LondonUnderground/Moor Park",
                 "line": [
                     "LondonUnderground/Pinner"
@@ -211,14 +203,6 @@
                 "station": "LondonUnderground/King's Cross",
                 "line": [
                     "LondonUnderground/Circle-N"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Chesham",
-                "line": [
-                    "LondonUnderground/Chesham"
                 ],
                 "reward": 1
             }

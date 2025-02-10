@@ -58,11 +58,62 @@
                 12,
                 "Amersham"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Chesham"
+                ],
+                "not": [
+                    "LondonUnderground/Amersham"
+                ]
+            },
+            "corner": [
+                -6672,
+                -2736,
+                13,
+                4,
+                "Chesham"
+            ]
         }
     ],
     "stops": [],
     "conditional_stops": [],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Chesham",
+                    "LondonUnderground/Amersham"
+                ],
+                "not": []
+            },
+            "coords": [
+                -6672,
+                -2736
+            ],
+            "approach": {
+                "coords": [
+                    -6368,
+                    -2736
+                ],
+                "direction": 12,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Amersham",
+                "direction": 12
+            },
+            "right": {
+                "line": "Chesham",
+                "direction": 13
+            }
+        }
+    ],
     "stations": [
         "Rickmansworth",
         "Chorleywood",
