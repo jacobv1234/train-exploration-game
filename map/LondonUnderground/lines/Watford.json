@@ -1,0 +1,46 @@
+{
+    "colour": "#9b0058",
+    "segments": [
+        [
+            -5368,
+            -2328,
+            -5400,
+            -2392
+        ],
+        [
+            -5400,
+            -2392,
+            -5400,
+            -3136
+        ]
+    ],
+    "corners": [
+        [
+            -5368,
+            -2328,
+            15,
+            6,
+            "Pinner"
+        ],
+        [
+            -5400,
+            -2392,
+            7,
+            0
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [
+        [
+            -5400,
+            -3136,
+            8
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Watford",
+        "Croxley"
+    ]
+}

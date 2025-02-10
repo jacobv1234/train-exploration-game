@@ -46,11 +46,62 @@
                 14,
                 "Chorleywood"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Watford"
+                ],
+                "not": [
+                    "LondonUnderground/Chorleywood"
+                ]
+            },
+            "corner": [
+                -5368,
+                -2328,
+                15,
+                6,
+                "Watford"
+            ]
         }
     ],
     "stops": [],
     "conditional_stops": [],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Watford",
+                    "LondonUnderground/Chorleywood"
+                ],
+                "not": []
+            },
+            "coords": [
+                -5368,
+                -2328
+            ],
+            "approach": {
+                "coords": [
+                    -5256,
+                    -2216
+                ],
+                "direction": 14,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Chorleywood",
+                "direction": 14
+            },
+            "right": {
+                "line": "Watford",
+                "direction": 15
+            }
+        }
+    ],
     "stations": [
         "Northwood Hills",
         "Pinner",

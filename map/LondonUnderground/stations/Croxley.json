@@ -1,70 +1,46 @@
 {
-    "name": "Northwood",
+    "name": "Croxley",
     "position": [
-        -5064,
-        -2024
+        -5400,
+        -2792
     ],
     "exits": {
-        "eastbound": {
-            "direction": 6,
+        "northbound": {
+            "direction": 0,
             "requirements": {
                 "unlocked": [],
                 "not": []
             },
-            "line": "Pinner"
+            "line": "Watford"
         },
-        "westbound": {
-            "direction": 14,
+        "southbound": {
+            "direction": 8,
             "requirements": {
                 "unlocked": [],
                 "not": []
             },
-            "line": "Pinner"
+            "line": "Watford"
         }
     },
     "map_text": [
         {
             "offset": [
-                16,
-                -8
+                24,
+                0
             ],
-            "text": "Northwood",
+            "text": "Croxley",
             "font": "Arial 10",
-            "anchor": "sw"
+            "anchor": "w"
         }
     ],
     "passengers": {
-        "chance_of_any": 65,
+        "chance_of_any": 75,
         "options": [
             {
                 "chance": 2,
-                "station": "LondonUnderground/Amersham",
+                "station": "LondonUnderground/Watford",
                 "line": [
-                    "LondonUnderground/Amersham"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Rickmansworth",
-                "line": [
-                    "LondonUnderground/Chorleywood"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Chorleywood",
-                "line": [
-                    "LondonUnderground/Chorleywood"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Chalfont & Latimer",
-                "line": [
-                    "LondonUnderground/Chorleywood"
+                    "LondonUnderground/Watford"
                 ],
                 "reward": 1
             },
@@ -94,6 +70,14 @@
             },
             {
                 "chance": 1,
+                "station": "LondonUnderground/Northwood",
+                "line": [
+                    "LondonUnderground/Pinner"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
                 "station": "LondonUnderground/Moor Park",
                 "line": [
                     "LondonUnderground/Pinner"
@@ -211,22 +195,6 @@
                 "station": "LondonUnderground/King's Cross",
                 "line": [
                     "LondonUnderground/Circle-N"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Watford",
-                "line": [
-                    "LondonUnderground/Watford"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Croxley",
-                "line": [
-                    "LondonUnderground/Watford"
                 ],
                 "reward": 1
             }

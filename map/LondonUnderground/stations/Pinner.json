@@ -213,6 +213,22 @@
                     "LondonUnderground/Circle-N"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Watford",
+                "line": [
+                    "LondonUnderground/Watford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Croxley",
+                "line": [
+                    "LondonUnderground/Watford"
+                ],
+                "reward": 1
             }
         ]
     },

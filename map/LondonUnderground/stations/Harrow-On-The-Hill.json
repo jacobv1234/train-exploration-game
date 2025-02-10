@@ -280,6 +280,22 @@
                     "LondonUnderground/Pinner"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Watford",
+                "line": [
+                    "LondonUnderground/Watford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Croxley",
+                "line": [
+                    "LondonUnderground/Watford"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -314,6 +330,21 @@
                 "LondonUnderground/Harrow"
             ],
             "unique_name": "LondonUnderground/Harrow-On-The-Hill/To Amersham"
+        },
+        "To Watford": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/Watford"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/Watford",
+                "LondonUnderground/Pinner",
+                "LondonUnderground/Harrow"
+            ],
+            "unique_name": "LondonUnderground/Harrow-On-The-Hill/To Watford"
         }
     }
 }
