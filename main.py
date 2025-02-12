@@ -14,6 +14,7 @@ except ModuleNotFoundError:
     if choice == 'y':
         from os import system
         system('python -m pip install pillow pygame')
+        from pygame import mixer
     else:
         exit()
 
@@ -313,9 +314,9 @@ while game_running:
                     plural = ''
 
             if station.shop:
-                in_station = ShopStation(window, screen_width, screen_height, station, points, unlocked_lines, bought, skin, audiohandler, pressed_space)
+                in_station = ShopStation(window, screen_width, screen_height, station, points, unlocked_lines, bought, skin, audiohandler, pressed_space, train.direction)
             else:
-                in_station = StationDisplay(window, screen_width, screen_height, station, points, unlocked_lines, bought, skin, audiohandler, pressed_space) 
+                in_station = StationDisplay(window, screen_width, screen_height, station, points, unlocked_lines, bought, skin, audiohandler, pressed_space, train.direction) 
 
             if points_obtained > 0:
                 if popup:

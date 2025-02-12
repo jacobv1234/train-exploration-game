@@ -10,13 +10,14 @@ SOLVED / SCRAPPED
 - Show passenger destinations on minimap <- DONE
 - volume settings <- DONE
 - marker on map to show junction choice points <- DONE
+- Clicking anywhere while stopped at a station opens the station window <- FIXED
+- have current train direction be the default exit option <- DONE AT LAST!!!
 
 
 BUGS
-- Clicking anywhere while stopped at a station opens the station window <- FIXED
+- no known bugs :)
 
 NEW FEATURE IDEAS
-- have current train direction be the default exit option
 - junction selector arrows match colour of resulting line
 
 MOUSE REVOLUTION <- SUCCESS! HELL YEAH

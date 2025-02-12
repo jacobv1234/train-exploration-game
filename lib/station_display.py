@@ -5,7 +5,7 @@ from lib.audio import AudioHandler
 
 class StationDisplay:
     tabs = ['Passengers', 'Exit']
-    def __init__(self, window: Tk, screen_width:int, screen_height:int, station: Station, points: int, unlocked_lines: list, bought:list, skin: str, audio: AudioHandler, space_function):
+    def __init__(self, window: Tk, screen_width:int, screen_height:int, station: Station, points: int, unlocked_lines: list, bought:list, skin: str, audio: AudioHandler, space_function, train_dir: int):
         self.c = Canvas(window, width=screen_width, height=screen_height, bg='white')
         self.c.place(x=4,y=0)
         self.c.create_text(20,10,fill='black', font='Arial 40', text=station.name.replace('@', ' - '), anchor='nw')
@@ -52,12 +52,41 @@ class StationDisplay:
 
         self.audio = audio
         self.space_function = space_function
+
+
+        # reorder the exits according to train direction
+        self.exit_order = []
+        change_map = []
+        change_coords = []
+        try:
+            change_map = [exit for exit in list(self.station.exits.keys()) if 'new_map' in list(self.station.exits[exit].keys())]
+            change_coords = [exit for exit in list(self.station.exits.keys()) if 'new_coords' in list(self.station.exits[exit].keys()) and exit not in change_map]
+            just_rotate = [exit for exit in list(self.station.exits.keys()) if exit not in change_map and exit not in change_coords]
+            difference_from_current = [-1*abs(-1*abs(self.station.exits[exit]['direction'] - train_dir) + 8) + 8 for exit in just_rotate]
+        except AttributeError:
+            just_rotate = list(self.station.exits.keys())
+            difference_from_current = [-1*abs(-1*abs(self.station.exits[exit] - train_dir) + 8) + 8 for exit in just_rotate]
+
+        
+
+        while just_rotate != []:
+            lowest_index = 0
+            lowest_value = 16
+            for i in range(len(difference_from_current)):
+                if difference_from_current[i] < lowest_value:
+                    lowest_index = i
+                    lowest_value = difference_from_current[i]
+            self.exit_order.append(just_rotate.pop(lowest_index))
+            difference_from_current.pop(lowest_index)
+        self.exit_order.extend(change_coords)
+        self.exit_order.extend(change_map)
+
         
 
 
     def assemble_exit_page(self):
         for i in range(len(self.station.exits.keys())):
-            exit_name = list(self.station.exits.keys())[i]
+            exit_name = self.exit_order[i]
             location = ((self.space / len(self.station.exits.keys())) * (i + 0.5)) + 110
             self.page_contents.append(self.c.create_text((self.width/5)*4, location, fill='black', font='Arial 30', \
                     text=' '.join([word.capitalize() for word in exit_name.split(' ')]), anchor='e'))
