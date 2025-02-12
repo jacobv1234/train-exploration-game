@@ -71,6 +71,7 @@ class StationDisplay:
 
         self.c.bind_all('<Up>',self.move_cursor_up)
         self.c.bind_all('<Down>', self.move_cursor_down)
+        self.c.bind_all('<Motion>', self.mouse_motion)
 
         if len(self.possible_cursor_positions) > 1:
             mouse_offset = (self.possible_cursor_positions[1] - self.possible_cursor_positions[0])/2

@@ -26,6 +26,7 @@ self.c.create_text(self.width*3/4, pos, fill='black', font='Arial 14', text=shop
             self.cursor = self.c.create_image(self.width/4, self.possible_cursor_positions[0], image = self.cursor_graphic, anchor='center')
             self.c.bind_all('<Up>',self.move_cursor_up)
             self.c.bind_all('<Down>', self.move_cursor_down)
+            self.c.bind_all('<Motion>', self.mouse_motion)
         
             if len(self.possible_cursor_positions) > 1:
                 mouse_offset = (self.possible_cursor_positions[1] - self.possible_cursor_positions[0])/2
