@@ -3,6 +3,8 @@ Classic - Red
 Classic - Purple
 Classic - Green
 Classic - White
+Diesel - Yellow
+Diesel - Green
 TFL - Standard
 TFL - Overground
 TFL - DLR
