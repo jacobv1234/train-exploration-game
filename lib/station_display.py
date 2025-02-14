@@ -43,10 +43,6 @@ class StationDisplay:
         self.c.bind_all('<Motion>', self.mouse_motion)
         self.click = self.c.bind('<Button-1>', self.mouse_click, add = True)
 
-        self.compass_graphic = PhotoImage(file='./compass.png').zoom(3).subsample(2)
-        self.pointer = None
-        possible_pointers = get_train_graphics(skin, zoom = 2)
-        self.pointer_graphics = [possible_pointers[dir] for dir in get_exit_directions(station)]
 
         window.update()
 
@@ -59,15 +55,13 @@ class StationDisplay:
         change_map = []
         change_coords = []
         try:
-            change_map = [exit for exit in list(self.station.exits.keys()) if 'new_map' in list(self.station.exits[exit].keys())]
-            change_coords = [exit for exit in list(self.station.exits.keys()) if 'new_coords' in list(self.station.exits[exit].keys()) and exit not in change_map]
+            change_map = [exit for exit in list(self.station.exits.keys()) if len(self.station.exits[exit]) == 4]
+            change_coords = [exit for exit in list(self.station.exits.keys()) if len(self.station.exits[exit]) == 3]
             just_rotate = [exit for exit in list(self.station.exits.keys()) if exit not in change_map and exit not in change_coords]
-            difference_from_current = [-1*abs(-1*abs(self.station.exits[exit]['direction'] - train_dir) + 8) + 8 for exit in just_rotate]
-        except AttributeError:
+            difference_from_current = [-1*abs(-1*abs(self.station.exits[exit][0] - train_dir) + 8) + 8 for exit in just_rotate]
+        except TypeError as e:
             just_rotate = list(self.station.exits.keys())
             difference_from_current = [-1*abs(-1*abs(self.station.exits[exit] - train_dir) + 8) + 8 for exit in just_rotate]
-
-        
 
         while just_rotate != []:
             lowest_index = 0
@@ -82,6 +76,13 @@ class StationDisplay:
         self.exit_order.extend(change_map)
 
         
+        self.compass_graphic = PhotoImage(file='./compass.png').zoom(3).subsample(2)
+        self.pointer = None
+        possible_pointers = get_train_graphics(skin, zoom = 2)
+        try:
+            self.pointer_graphics = [possible_pointers[self.station.exits[exit][0]] for exit in self.exit_order]
+        except TypeError:
+            self.pointer_graphics = [possible_pointers[self.station.exits[exit]] for exit in self.exit_order]
 
 
     def assemble_exit_page(self):
