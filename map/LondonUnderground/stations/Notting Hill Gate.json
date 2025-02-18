@@ -5,7 +5,7 @@
         856
     ],
     "exits": {
-        "northbound": {
+        "northbound (Circle)": {
             "direction": 0,
             "requirements": {
                 "unlocked": [
@@ -15,7 +15,7 @@
             },
             "line": "Circle-C"
         },
-        "southbound": {
+        "southbound (Circle)": {
             "direction": 8,
             "requirements": {
                 "unlocked": [
@@ -24,6 +24,26 @@
                 "not": []
             },
             "line": "Circle-C"
+        },
+        "eastbound (Central)": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/CentralC"
+                ],
+                "not": []
+            },
+            "line": "CentralC"
+        },
+        "westbound (Central)": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/CentralC"
+                ],
+                "not": []
+            },
+            "line": "CentralC"
         }
     },
     "map_text": [

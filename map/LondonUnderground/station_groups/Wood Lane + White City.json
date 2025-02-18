@@ -1,0 +1,17 @@
+{
+    "name": "Wood Lane + White City",
+    "stations": [
+        "Wood Lane",
+        "White City"
+    ],
+    "connecting_lines": [
+        ["Wood Lane", "White City", -3528,864,-3640,752]
+    ],
+
+    "station_lines": {
+        "Wood Lane": ["LondonUnderground/H+C"],
+        "White City": ["LondonUnderground/CentralC","LondonUnderground/CentralW"]
+    },
+
+    "text_priority": []
+}

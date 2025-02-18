@@ -1,0 +1,49 @@
+{
+    "name": "White City",
+    "position": [
+        -3640,
+        752
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/CentralC"
+                ],
+                "not": []
+            },
+            "line": "CentralC"
+        },
+        "Wood Lane": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/H+C"
+                ],
+                "not": []
+            },
+            "line": "H+C",
+            "new_coords": [
+                -3528,
+                864
+            ]
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -24
+            ],
+            "text": "White City",
+            "font": "Arial 10",
+            "anchor": "s"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 78,
+        "options": []
+    },
+    "shop": false
+}

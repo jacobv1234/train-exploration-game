@@ -1,0 +1,45 @@
+{
+    "name": "Shepherd's Bush@Central",
+    "position": [
+        -3216,
+        752
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 5,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/CentralC"
+                ],
+                "not": []
+            },
+            "line": "CentralC"
+        },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/CentralC"
+                ],
+                "not": []
+            },
+            "line": "CentralC"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                8,
+                -16
+            ],
+            "text": "Shepherd's Bush",
+            "font": "Arial 10",
+            "anchor": "sw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 80,
+        "options": []
+    },
+    "shop": false
+}

@@ -22,6 +22,20 @@
                 "not": []
             },
             "line": "H+C"
+        },
+        "White City": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/CentralC"
+                ],
+                "not": []
+            },
+            "line": "CentralC",
+            "new_coords": [
+                -3640,
+                752
+            ]
         }
     },
     "map_text": [

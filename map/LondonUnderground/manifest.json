@@ -37,7 +37,8 @@
         "Chorleywood",
         "Amersham",
         "Watford",
-        "Chesham"
+        "Chesham",
+        "CentralC"
     ],
     "loadingzones": [],
     "display_name": "London Underground",
@@ -157,6 +158,7 @@
     "station_groups": [
         "Paddington",
         "Edgware Road",
-        "Hammersmith"
+        "Hammersmith",
+        "Wood Lane + White City"
     ]
 }

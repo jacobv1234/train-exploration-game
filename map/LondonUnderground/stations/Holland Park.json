@@ -1,0 +1,45 @@
+{
+    "name": "Holland Park",
+    "position": [
+        -3008,
+        856
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/CentralC"
+                ],
+                "not": []
+            },
+            "line": "CentralC"
+        },
+        "westbound": {
+            "direction": 13,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/CentralC"
+                ],
+                "not": []
+            },
+            "line": "CentralC"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -8,
+                16
+            ],
+            "text": "Holland Park",
+            "font": "Arial 10",
+            "anchor": "ne"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 70,
+        "options": []
+    },
+    "shop": false
+}
