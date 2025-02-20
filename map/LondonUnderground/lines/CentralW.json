@@ -1,0 +1,95 @@
+{
+    "colour": "#dc241f",
+    "segments": [
+        [
+            -3640,
+            752,
+            -3776,
+            752
+        ],
+        [
+            -3776,
+            752,
+            -3808,
+            736
+        ],
+        [
+            -3808,
+            736,
+            -3984,
+            560
+        ],
+        [
+            -3984,
+            560,
+            -4016,
+            544
+        ],
+        [
+            -4016,
+            544,
+            -4624,
+            544
+        ]
+    ],
+    "corners": [
+        [
+            -3640,
+            752,
+            4,
+            12,
+            "CentralC"
+        ],
+        [
+            -3776,
+            752,
+            4,
+            13
+        ],
+        [
+            -3808,
+            736,
+            14,
+            5
+        ],
+        [
+            -3984,
+            560,
+            6,
+            13
+        ],
+        [
+            -4016,
+            544,
+            5,
+            12
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Acton"
+                ],
+                "not": [
+                    "LondonUnderground/Northolt"
+                ]
+            },
+            "corner": [
+                -4624,
+                544,
+                4,
+                11,
+                "Acton"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "White City",
+        "East Acton",
+        "North Acton"
+    ]
+}

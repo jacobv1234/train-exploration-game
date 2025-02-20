@@ -157,6 +157,38 @@
                     "LondonUnderground/CentralC"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Ealing Broadway",
+                "line": [
+                    "LondonUnderground/Acton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/West Acton",
+                "line": [
+                    "LondonUnderground/Acton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/East Acton",
+                "line": [
+                    "LondonUnderground/CentralW"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/North Acton",
+                "line": [
+                    "LondonUnderground/CentralW"
+                ],
+                "reward": 1
             }
         ]
     },

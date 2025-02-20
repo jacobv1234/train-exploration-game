@@ -1,59 +1,88 @@
 {
-    "name": "Tottenham Court Road@Central",
+    "name": "Ealing Broadway@Central",
     "position": [
-        -976,
-        552
+        -5320,
+        808
     ],
     "exits": {
         "eastbound": {
             "direction": 4,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/CentralC"
+                    "LondonUnderground/Acton"
                 ],
                 "not": []
             },
-            "line": "CentralC"
+            "line": "Acton"
         },
-        "westbound": {
-            "direction": 12,
+        "District line": {
+            "direction": 4,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/CentralC"
+                    "LondonUnderground/EalingBroadwayDistrict"
                 ],
                 "not": []
             },
-            "line": "CentralC"
+            "line": "EalingBroadwayDistrict",
+            "new_coords": [
+                -5320,
+                880
+            ]
         }
     },
     "map_text": [
         {
             "offset": [
-                0,
-                24
+                -24,
+                0
             ],
-            "text": "Tottenham",
+            "text": "Ealing",
             "font": "Arial 10",
-            "anchor": "n"
+            "anchor": "se"
         },
         {
             "offset": [
-                0,
-                40
+                -24,
+                0
             ],
-            "text": "Court Road",
+            "text": "Broadway",
             "font": "Arial 10",
-            "anchor": "n"
+            "anchor": "ne"
         }
     ],
     "passengers": {
-        "chance_of_any": 90,
+        "chance_of_any": 75,
         "options": [
+            {
+                "chance": 1,
+                "station": "LondonUnderground/West Acton",
+                "line": [
+                    "LondonUnderground/Acton"
+                ],
+                "reward": 1
+            },
             {
                 "chance": 2,
                 "station": "LondonUnderground/White City",
                 "line": [
+                    "LondonUnderground/CentralW",
                     "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/East Acton",
+                "line": [
+                    "LondonUnderground/CentralW"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/North Acton",
+                "line": [
+                    "LondonUnderground/CentralW"
                 ],
                 "reward": 1
             },
@@ -92,7 +121,7 @@
                 "reward": 1
             },
             {
-                "chance": 3,
+                "chance": 2,
                 "station": "LondonUnderground/Bank",
                 "line": [
                     "LondonUnderground/CentralC"
@@ -149,6 +178,14 @@
             },
             {
                 "chance": 2,
+                "station": "LondonUnderground/Tottenham Court Road",
+                "line": [
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
                 "station": "LondonUnderground/Oxford Circus",
                 "line": [
                     "LondonUnderground/CentralC"
@@ -160,38 +197,6 @@
                 "station": "LondonUnderground/Bond Street",
                 "line": [
                     "LondonUnderground/CentralC"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Ealing Broadway",
-                "line": [
-                    "LondonUnderground/Acton"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/West Acton",
-                "line": [
-                    "LondonUnderground/Acton"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/East Acton",
-                "line": [
-                    "LondonUnderground/CentralW"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/North Acton",
-                "line": [
-                    "LondonUnderground/CentralW"
                 ],
                 "reward": 1
             }

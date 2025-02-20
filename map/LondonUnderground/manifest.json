@@ -38,7 +38,9 @@
         "Amersham",
         "Watford",
         "Chesham",
-        "CentralC"
+        "CentralC",
+        "CentralW",
+        "Acton"
     ],
     "loadingzones": [],
     "display_name": "London Underground",
@@ -160,6 +162,7 @@
         "Edgware Road",
         "Hammersmith",
         "Wood Lane + White City",
-        "Bank"
+        "Bank",
+        "Ealing Broadway"
     ]
 }

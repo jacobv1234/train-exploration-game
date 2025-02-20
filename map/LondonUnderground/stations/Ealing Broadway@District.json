@@ -14,6 +14,20 @@
                 "not": []
             },
             "line": "EalingBroadwayDistrict"
+        },
+        "Central Line": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Acton"
+                ],
+                "not": []
+            },
+            "line": "Acton",
+            "new_coords": [
+                -5320,
+                808
+            ]
         }
     },
     "map_text": [
@@ -264,6 +278,144 @@
                 "station": "LondonUnderground/Sloane Square",
                 "line": [
                     "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/West Acton",
+                "line": [
+                    "LondonUnderground/Acton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/White City",
+                "line": [
+                    "LondonUnderground/CentralW",
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/East Acton",
+                "line": [
+                    "LondonUnderground/CentralW"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/North Acton",
+                "line": [
+                    "LondonUnderground/CentralW"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Shepherd's Bush",
+                "line": [
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Holland Park",
+                "line": [
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Liverpool Street",
+                "line": [
+                    "LondonUnderground/CentralC",
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Bank",
+                "line": [
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/St Paul's",
+                "line": [
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Chancery Lane",
+                "line": [
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Holborn",
+                "line": [
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Queensway",
+                "line": [
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Lancaster Gate",
+                "line": [
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Marble Arch",
+                "line": [
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Tottenham Court Road",
+                "line": [
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Oxford Circus",
+                "line": [
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Bond Street",
+                "line": [
+                    "LondonUnderground/CentralC"
                 ],
                 "reward": 1
             }

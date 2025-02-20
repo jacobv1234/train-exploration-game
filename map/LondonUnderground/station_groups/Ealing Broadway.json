@@ -1,0 +1,17 @@
+{
+    "name": "Ealing Broadway",
+    "stations": [
+        "Ealing Broadway@Central",
+        "Ealing Broadway@District"
+    ],
+    "connecting_lines": [
+        ["Ealing Broadway@Central", "Ealing Broadway@District", -5320,880,-5320,808]
+    ],
+
+    "station_lines": {
+        "Ealing Broadway@Central": ["LondonUnderground/Acton"],
+        "Ealing Broadway@District": ["LondonUnderground/EalingBroadwayDistrict"]
+    },
+
+    "text_priority": ["Ealing Broadway@Central", "Ealing Broadway@District"]
+}

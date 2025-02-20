@@ -154,7 +154,23 @@
             11
         ]
     ],
-    "conditional_corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/CentralW"
+                ],
+                "not": []
+            },
+            "corner": [
+                -3640,
+                752,
+                4,
+                12,
+                "CentralW"
+            ]
+        }
+    ],
     "stops": [],
     "conditional_stops": [
         {
