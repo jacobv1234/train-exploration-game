@@ -1,12 +1,12 @@
 {
-    "name": "White City",
+    "name": "Marble Arch",
     "position": [
-        -3640,
-        752
+        -2200,
+        648
     ],
     "exits": {
         "eastbound": {
-            "direction": 4,
+            "direction": 2,
             "requirements": {
                 "unlocked": [
                     "LondonUnderground/CentralC"
@@ -15,35 +15,39 @@
             },
             "line": "CentralC"
         },
-        "Wood Lane": {
-            "direction": 0,
+        "westbound": {
+            "direction": 10,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/H+C"
+                    "LondonUnderground/CentralC"
                 ],
                 "not": []
             },
-            "line": "H+C",
-            "new_coords": [
-                -3528,
-                864
-            ]
+            "line": "CentralC"
         }
     },
     "map_text": [
         {
             "offset": [
-                0,
-                -24
+                -16,
+                -8
             ],
-            "text": "White City",
+            "text": "Marble Arch",
             "font": "Arial 10",
-            "anchor": "s"
+            "anchor": "se"
         }
     ],
     "passengers": {
-        "chance_of_any": 78,
+        "chance_of_any": 75,
         "options": [
+            {
+                "chance": 2,
+                "station": "LondonUnderground/White City",
+                "line": [
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
             {
                 "chance": 1,
                 "station": "LondonUnderground/Shepherd's Bush",
@@ -121,14 +125,6 @@
             {
                 "chance": 1,
                 "station": "LondonUnderground/Lancaster Gate",
-                "line": [
-                    "LondonUnderground/CentralC"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Marble Arch",
                 "line": [
                     "LondonUnderground/CentralC"
                 ],

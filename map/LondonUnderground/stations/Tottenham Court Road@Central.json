@@ -1,8 +1,8 @@
 {
-    "name": "White City",
+    "name": "Tottenham Court Road@Central",
     "position": [
-        -3640,
-        752
+        -976,
+        552
     ],
     "exits": {
         "eastbound": {
@@ -15,35 +15,48 @@
             },
             "line": "CentralC"
         },
-        "Wood Lane": {
-            "direction": 0,
+        "westbound": {
+            "direction": 12,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/H+C"
+                    "LondonUnderground/CentralC"
                 ],
                 "not": []
             },
-            "line": "H+C",
-            "new_coords": [
-                -3528,
-                864
-            ]
+            "line": "CentralC"
         }
     },
     "map_text": [
         {
             "offset": [
                 0,
-                -24
+                24
             ],
-            "text": "White City",
+            "text": "Tottenham",
             "font": "Arial 10",
-            "anchor": "s"
+            "anchor": "n"
+        },
+        {
+            "offset": [
+                0,
+                40
+            ],
+            "text": "Court Road",
+            "font": "Arial 10",
+            "anchor": "n"
         }
     ],
     "passengers": {
-        "chance_of_any": 78,
+        "chance_of_any": 90,
         "options": [
+            {
+                "chance": 2,
+                "station": "LondonUnderground/White City",
+                "line": [
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
             {
                 "chance": 1,
                 "station": "LondonUnderground/Shepherd's Bush",
@@ -129,14 +142,6 @@
             {
                 "chance": 1,
                 "station": "LondonUnderground/Marble Arch",
-                "line": [
-                    "LondonUnderground/CentralC"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Tottenham Court Road",
                 "line": [
                     "LondonUnderground/CentralC"
                 ],

@@ -1,8 +1,8 @@
 {
-    "name": "White City",
+    "name": "Bank@Central",
     "position": [
-        -3640,
-        752
+        392,
+        728
     ],
     "exits": {
         "eastbound": {
@@ -15,18 +15,28 @@
             },
             "line": "CentralC"
         },
-        "Wood Lane": {
-            "direction": 0,
+        "westbound": {
+            "direction": 12,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/H+C"
+                    "LondonUnderground/CentralC"
                 ],
                 "not": []
             },
-            "line": "H+C",
+            "line": "CentralC"
+        },
+        "Monument": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "not": []
+            },
+            "line": "Circle-S",
             "new_coords": [
-                -3528,
-                864
+                536,
+                872
             ]
         }
     },
@@ -36,14 +46,22 @@
                 0,
                 -24
             ],
-            "text": "White City",
+            "text": "Bank",
             "font": "Arial 10",
             "anchor": "s"
         }
     ],
     "passengers": {
-        "chance_of_any": 78,
+        "chance_of_any": 90,
         "options": [
+            {
+                "chance": 2,
+                "station": "LondonUnderground/White City",
+                "line": [
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
             {
                 "chance": 1,
                 "station": "LondonUnderground/Shepherd's Bush",
@@ -75,14 +93,6 @@
                 "line": [
                     "LondonUnderground/CentralC",
                     "LondonUnderground/Circle-N"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 3,
-                "station": "LondonUnderground/Bank",
-                "line": [
-                    "LondonUnderground/CentralC"
                 ],
                 "reward": 1
             },

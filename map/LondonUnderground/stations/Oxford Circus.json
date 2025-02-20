@@ -1,8 +1,8 @@
 {
-    "name": "White City",
+    "name": "Oxford Circus",
     "position": [
-        -3640,
-        752
+        -1496,
+        552
     ],
     "exits": {
         "eastbound": {
@@ -15,35 +15,39 @@
             },
             "line": "CentralC"
         },
-        "Wood Lane": {
-            "direction": 0,
+        "westbound": {
+            "direction": 12,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/H+C"
+                    "LondonUnderground/CentralC"
                 ],
                 "not": []
             },
-            "line": "H+C",
-            "new_coords": [
-                -3528,
-                864
-            ]
+            "line": "CentralC"
         }
     },
     "map_text": [
         {
             "offset": [
-                0,
-                -24
+                8,
+                16
             ],
-            "text": "White City",
+            "text": "Oxford Circus",
             "font": "Arial 10",
-            "anchor": "s"
+            "anchor": "nw"
         }
     ],
     "passengers": {
-        "chance_of_any": 78,
+        "chance_of_any": 80,
         "options": [
+            {
+                "chance": 2,
+                "station": "LondonUnderground/White City",
+                "line": [
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
             {
                 "chance": 1,
                 "station": "LondonUnderground/Shepherd's Bush",
@@ -137,14 +141,6 @@
             {
                 "chance": 2,
                 "station": "LondonUnderground/Tottenham Court Road",
-                "line": [
-                    "LondonUnderground/CentralC"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Oxford Circus",
                 "line": [
                     "LondonUnderground/CentralC"
                 ],

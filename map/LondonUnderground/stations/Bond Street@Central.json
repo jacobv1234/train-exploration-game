@@ -1,8 +1,8 @@
 {
-    "name": "White City",
+    "name": "Bond Street@Central",
     "position": [
-        -3640,
-        752
+        -1816,
+        552
     ],
     "exits": {
         "eastbound": {
@@ -15,35 +15,39 @@
             },
             "line": "CentralC"
         },
-        "Wood Lane": {
-            "direction": 0,
+        "westbound": {
+            "direction": 12,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/H+C"
+                    "LondonUnderground/CentralC"
                 ],
                 "not": []
             },
-            "line": "H+C",
-            "new_coords": [
-                -3528,
-                864
-            ]
+            "line": "CentralC"
         }
     },
     "map_text": [
         {
             "offset": [
                 0,
-                -24
+                24
             ],
-            "text": "White City",
+            "text": "Bond Street",
             "font": "Arial 10",
-            "anchor": "s"
+            "anchor": "n"
         }
     ],
     "passengers": {
-        "chance_of_any": 78,
+        "chance_of_any": 80,
         "options": [
+            {
+                "chance": 2,
+                "station": "LondonUnderground/White City",
+                "line": [
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
             {
                 "chance": 1,
                 "station": "LondonUnderground/Shepherd's Bush",
@@ -145,14 +149,6 @@
             {
                 "chance": 2,
                 "station": "LondonUnderground/Oxford Circus",
-                "line": [
-                    "LondonUnderground/CentralC"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Bond Street",
                 "line": [
                     "LondonUnderground/CentralC"
                 ],

@@ -1,12 +1,12 @@
 {
-    "name": "White City",
+    "name": "Holborn",
     "position": [
-        -3640,
-        752
+        -496,
+        648
     ],
     "exits": {
         "eastbound": {
-            "direction": 4,
+            "direction": 6,
             "requirements": {
                 "unlocked": [
                     "LondonUnderground/CentralC"
@@ -15,35 +15,39 @@
             },
             "line": "CentralC"
         },
-        "Wood Lane": {
-            "direction": 0,
+        "westbound": {
+            "direction": 14,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/H+C"
+                    "LondonUnderground/CentralC"
                 ],
                 "not": []
             },
-            "line": "H+C",
-            "new_coords": [
-                -3528,
-                864
-            ]
+            "line": "CentralC"
         }
     },
     "map_text": [
         {
             "offset": [
-                0,
-                -24
+                -24,
+                0
             ],
-            "text": "White City",
+            "text": "Holborn",
             "font": "Arial 10",
-            "anchor": "s"
+            "anchor": "e"
         }
     ],
     "passengers": {
-        "chance_of_any": 78,
+        "chance_of_any": 80,
         "options": [
+            {
+                "chance": 2,
+                "station": "LondonUnderground/White City",
+                "line": [
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
             {
                 "chance": 1,
                 "station": "LondonUnderground/Shepherd's Bush",
@@ -97,14 +101,6 @@
             {
                 "chance": 1,
                 "station": "LondonUnderground/Chancery Lane",
-                "line": [
-                    "LondonUnderground/CentralC"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Holborn",
                 "line": [
                     "LondonUnderground/CentralC"
                 ],

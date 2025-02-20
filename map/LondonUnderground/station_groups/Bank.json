@@ -1,0 +1,17 @@
+{
+    "name": "Bank",
+    "stations": [
+        "Bank@Central",
+        "Monument"
+    ],
+    "connecting_lines": [
+        ["Bank@Central", "Monument", 392,728,536,872]
+    ],
+
+    "station_lines": {
+        "Bank@Central": ["LondonUnderground/CentralC"],
+        "Monument": ["LondonUnderground/Circle-S"]
+    },
+
+    "text_priority": ["Bank@Central"]
+}

@@ -1,8 +1,8 @@
 {
-    "name": "White City",
+    "name": "Queensway",
     "position": [
-        -3640,
-        752
+        -2512,
+        856
     ],
     "exits": {
         "eastbound": {
@@ -15,35 +15,39 @@
             },
             "line": "CentralC"
         },
-        "Wood Lane": {
-            "direction": 0,
+        "westbound": {
+            "direction": 12,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/H+C"
+                    "LondonUnderground/CentralC"
                 ],
                 "not": []
             },
-            "line": "H+C",
-            "new_coords": [
-                -3528,
-                864
-            ]
+            "line": "CentralC"
         }
     },
     "map_text": [
         {
             "offset": [
                 0,
-                -24
+                24
             ],
-            "text": "White City",
+            "text": "Queensway",
             "font": "Arial 10",
-            "anchor": "s"
+            "anchor": "n"
         }
     ],
     "passengers": {
-        "chance_of_any": 78,
+        "chance_of_any": 75,
         "options": [
+            {
+                "chance": 2,
+                "station": "LondonUnderground/White City",
+                "line": [
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
             {
                 "chance": 1,
                 "station": "LondonUnderground/Shepherd's Bush",
@@ -105,14 +109,6 @@
             {
                 "chance": 2,
                 "station": "LondonUnderground/Holborn",
-                "line": [
-                    "LondonUnderground/CentralC"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Queensway",
                 "line": [
                     "LondonUnderground/CentralC"
                 ],

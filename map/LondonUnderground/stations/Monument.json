@@ -24,6 +24,20 @@
                 "not": []
             },
             "line": "Circle-S"
+        },
+        "Bank (Central)": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/CentralC"
+                ],
+                "not": []
+            },
+            "line": "CentralC",
+            "new_coords": [
+                392,
+                728
+            ]
         }
     },
     "map_text": [

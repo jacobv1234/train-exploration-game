@@ -49,7 +49,7 @@ class Station:
 
             priority = data['text_priority']
 
-            if priority == []:
+            if name not in priority:
                 self.create_text(s,c, unlocked_lines)
                 return
             

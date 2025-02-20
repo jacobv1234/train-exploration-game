@@ -1,12 +1,12 @@
 {
-    "name": "White City",
+    "name": "Lancaster Gate",
     "position": [
-        -3640,
-        752
+        -2336,
+        784
     ],
     "exits": {
         "eastbound": {
-            "direction": 4,
+            "direction": 2,
             "requirements": {
                 "unlocked": [
                     "LondonUnderground/CentralC"
@@ -15,35 +15,39 @@
             },
             "line": "CentralC"
         },
-        "Wood Lane": {
-            "direction": 0,
+        "westbound": {
+            "direction": 10,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/H+C"
+                    "LondonUnderground/CentralC"
                 ],
                 "not": []
             },
-            "line": "H+C",
-            "new_coords": [
-                -3528,
-                864
-            ]
+            "line": "CentralC"
         }
     },
     "map_text": [
         {
             "offset": [
-                0,
-                -24
+                -16,
+                -8
             ],
-            "text": "White City",
+            "text": "Lancaster Gate",
             "font": "Arial 10",
-            "anchor": "s"
+            "anchor": "se"
         }
     ],
     "passengers": {
-        "chance_of_any": 78,
+        "chance_of_any": 75,
         "options": [
+            {
+                "chance": 2,
+                "station": "LondonUnderground/White City",
+                "line": [
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
             {
                 "chance": 1,
                 "station": "LondonUnderground/Shepherd's Bush",
@@ -113,14 +117,6 @@
             {
                 "chance": 1,
                 "station": "LondonUnderground/Queensway",
-                "line": [
-                    "LondonUnderground/CentralC"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Lancaster Gate",
                 "line": [
                     "LondonUnderground/CentralC"
                 ],

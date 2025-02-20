@@ -1,8 +1,8 @@
 {
-    "name": "White City",
+    "name": "Chancery Lane",
     "position": [
-        -3640,
-        752
+        -224,
+        728
     ],
     "exits": {
         "eastbound": {
@@ -15,19 +15,15 @@
             },
             "line": "CentralC"
         },
-        "Wood Lane": {
-            "direction": 0,
+        "westbound": {
+            "direction": 12,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/H+C"
+                    "LondonUnderground/CentralC"
                 ],
                 "not": []
             },
-            "line": "H+C",
-            "new_coords": [
-                -3528,
-                864
-            ]
+            "line": "CentralC"
         }
     },
     "map_text": [
@@ -36,14 +32,22 @@
                 0,
                 -24
             ],
-            "text": "White City",
+            "text": "Chancery Lane",
             "font": "Arial 10",
             "anchor": "s"
         }
     ],
     "passengers": {
-        "chance_of_any": 78,
+        "chance_of_any": 75,
         "options": [
+            {
+                "chance": 2,
+                "station": "LondonUnderground/White City",
+                "line": [
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
             {
                 "chance": 1,
                 "station": "LondonUnderground/Shepherd's Bush",
@@ -89,14 +93,6 @@
             {
                 "chance": 1,
                 "station": "LondonUnderground/St Paul's",
-                "line": [
-                    "LondonUnderground/CentralC"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Chancery Lane",
                 "line": [
                     "LondonUnderground/CentralC"
                 ],
