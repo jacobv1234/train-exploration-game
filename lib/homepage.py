@@ -100,6 +100,8 @@ class Homepage:
         self.howtoplay = self.c.create_text((width/2)-15, (2*height/3)+35, fill='black', font='Arial 20', text='How to Play', anchor='w')
         self.audio_settings = self.c.create_text((width/2)-15, (2*height/3)+60, fill='black', font='Arial 20', text='Audio Settings', anchor='w')
 
+        self.sound_license = self.c.create_text(10, height - 10, fill='black', font = 'Arial 8', text = 'Sounds licensed for free from zapsplat.com', anchor='sw')
+
         self.cursor_positions = [(2*height/3)-15, (2*height/3)+10, (2*height/3)+35, (2*height/3)+60]
         self.selected = 0
         self.options = ['New Game', 'Continue', 'How to Play', 'Audio Settings']
@@ -118,7 +120,7 @@ class Homepage:
 
     
     def go_to_how_to_play(self):
-        self.c.delete(self.logo, self.newgame, self.cont_text, self.cursor, self.howtoplay, self.audio_settings)
+        self.c.delete(self.logo, self.newgame, self.cont_text, self.cursor, self.howtoplay, self.audio_settings, self.sound_license)
 
         self.c.create_text(self.width/2, 10, fill='black', font='Arial 25', text='How to Play',anchor='n')
 
@@ -135,7 +137,7 @@ class Homepage:
         self.allow_cursor = False
 
     def open_audio_settings(self, window:Tk, music_volume,sound_volume,train_volume):
-        self.c.delete(self.logo, self.newgame, self.cont_text, self.cursor, self.howtoplay, self.audio_settings)
+        self.c.delete(self.logo, self.newgame, self.cont_text, self.cursor, self.howtoplay, self.audio_settings, self.sound_license)
 
         self.music_slider = Scale(window, from_= 0, to = 100, orient='horizontal')
         self.music_slider.place(relx=0.4, rely=0.3, relwidth=0.4, relheight=0.05, anchor = 'w')

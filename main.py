@@ -1,6 +1,10 @@
 from tkinter import *
 from time import sleep, perf_counter
 
+# disable pygame welcome message
+import os
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hidden"
+
 
 # third party modules
 # try-except no longer needed due to nuitka
@@ -70,7 +74,6 @@ except FileNotFoundError:
 
 
 # audio setup
-print('Sounds licensed for free from zapsplat.com')
 audiohandler = AudioHandler(music_volume, sound_volume, train_volume)
 audiohandler.next_bg_music()
 
