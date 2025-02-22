@@ -185,6 +185,62 @@
                     "LondonUnderground/CentralW"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Hanger Lane",
+                "line": [
+                    "LondonUnderground/Northolt"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Perivale",
+                "line": [
+                    "LondonUnderground/Northolt"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Greenford",
+                "line": [
+                    "LondonUnderground/Northolt"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/West Ruislip",
+                "line": [
+                    "LondonUnderground/Northolt"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Ruislip Gardens",
+                "line": [
+                    "LondonUnderground/Northolt"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/South Ruislip",
+                "line": [
+                    "LondonUnderground/Northolt"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Northolt",
+                "line": [
+                    "LondonUnderground/Northolt"
+                ],
+                "reward": 1
             }
         ]
     },

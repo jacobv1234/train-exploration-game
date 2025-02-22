@@ -1,58 +1,90 @@
 {
-    "name": "North Acton",
+    "name": "Ruislip Gardens",
     "position": [
-        -4328,
-        544
+        -6184,
+        -1896
     ],
     "exits": {
-        "eastbound": {
-            "direction": 4,
+        "northbound": {
+            "direction": 0,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/CentralW"
+                    "LondonUnderground/Northolt"
                 ],
                 "not": []
             },
-            "line": "CentralW"
+            "line": "Northolt"
         },
-        "westbound": {
-            "direction": 12,
+        "southbound": {
+            "direction": 8,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/CentralW"
+                    "LondonUnderground/Northolt"
                 ],
                 "not": []
             },
-            "line": "CentralW"
+            "line": "Northolt"
         }
     },
     "map_text": [
         {
             "offset": [
-                0,
-                -24
+                -24,
+                0
             ],
-            "text": "North Acton",
+            "text": "Ruislip Gardens",
             "font": "Arial 10",
-            "anchor": "s"
+            "anchor": "e"
         }
     ],
     "passengers": {
-        "chance_of_any": 75,
+        "chance_of_any": 70,
         "options": [
             {
-                "chance": 2,
-                "station": "LondonUnderground/Ealing Broadway",
+                "chance": 1,
+                "station": "LondonUnderground/Hanger Lane",
                 "line": [
-                    "LondonUnderground/Acton"
+                    "LondonUnderground/Northolt"
                 ],
                 "reward": 1
             },
             {
                 "chance": 1,
-                "station": "LondonUnderground/West Acton",
+                "station": "LondonUnderground/Perivale",
                 "line": [
-                    "LondonUnderground/Acton"
+                    "LondonUnderground/Northolt"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Greenford",
+                "line": [
+                    "LondonUnderground/Northolt"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/West Ruislip",
+                "line": [
+                    "LondonUnderground/Northolt"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/South Ruislip",
+                "line": [
+                    "LondonUnderground/Northolt"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Northolt",
+                "line": [
+                    "LondonUnderground/Northolt"
                 ],
                 "reward": 1
             },
@@ -68,6 +100,14 @@
             {
                 "chance": 1,
                 "station": "LondonUnderground/East Acton",
+                "line": [
+                    "LondonUnderground/CentralW"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/North Acton",
                 "line": [
                     "LondonUnderground/CentralW"
                 ],
@@ -102,13 +142,12 @@
                 "chance": 3,
                 "station": "LondonUnderground/Liverpool Street",
                 "line": [
-                    "LondonUnderground/CentralC",
-                    "LondonUnderground/Circle-N"
+                    "LondonUnderground/CentralC"
                 ],
                 "reward": 1
             },
             {
-                "chance": 2,
+                "chance": 3,
                 "station": "LondonUnderground/Bank",
                 "line": [
                     "LondonUnderground/CentralC"
@@ -184,62 +223,6 @@
                 "station": "LondonUnderground/Bond Street",
                 "line": [
                     "LondonUnderground/CentralC"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Hanger Lane",
-                "line": [
-                    "LondonUnderground/Northolt"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Perivale",
-                "line": [
-                    "LondonUnderground/Northolt"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Greenford",
-                "line": [
-                    "LondonUnderground/Northolt"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/West Ruislip",
-                "line": [
-                    "LondonUnderground/Northolt"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Ruislip Gardens",
-                "line": [
-                    "LondonUnderground/Northolt"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/South Ruislip",
-                "line": [
-                    "LondonUnderground/Northolt"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Northolt",
-                "line": [
-                    "LondonUnderground/Northolt"
                 ],
                 "reward": 1
             }

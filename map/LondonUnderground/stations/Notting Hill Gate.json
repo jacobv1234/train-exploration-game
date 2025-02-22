@@ -633,6 +633,62 @@
                     "LondonUnderground/CentralW"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Hanger Lane",
+                "line": [
+                    "LondonUnderground/Northolt"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Perivale",
+                "line": [
+                    "LondonUnderground/Northolt"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Greenford",
+                "line": [
+                    "LondonUnderground/Northolt"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/West Ruislip",
+                "line": [
+                    "LondonUnderground/Northolt"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Ruislip Gardens",
+                "line": [
+                    "LondonUnderground/Northolt"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/South Ruislip",
+                "line": [
+                    "LondonUnderground/Northolt"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Northolt",
+                "line": [
+                    "LondonUnderground/Northolt"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -662,6 +718,38 @@
                 "LondonUnderground/Circle-C"
             ],
             "unique_name": "LondonUnderground/Notting Hill Gate/Edgware Road to South Kensington (Circle)"
+        },
+        "Central line to Ealing Broadway": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/CentralC"
+                ],
+                "not": [
+                    "LondonUnderground/Acton"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/CentralW",
+                "LondonUnderground/Acton"
+            ],
+            "unique_name": "LondonUnderground/Notting Hill Gate/Central line to Ealing Broadway"
+        },
+        "Central Line to Ruislip": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/CentralC"
+                ],
+                "not": [
+                    "LondonUnderground/Northolt"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/CentralW",
+                "LondonUnderground/Northolt"
+            ],
+            "unique_name": "LondonUnderground/Notting Hill Gate/Central Line to Ruislip"
         }
     }
 }

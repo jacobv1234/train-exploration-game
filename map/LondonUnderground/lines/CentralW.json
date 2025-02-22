@@ -82,11 +82,62 @@
                 11,
                 "Acton"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Northolt"
+                ],
+                "not": [
+                    "LondonUnderground/Acton"
+                ]
+            },
+            "corner": [
+                -4624,
+                544,
+                4,
+                12,
+                "Northolt"
+            ]
         }
     ],
     "stops": [],
     "conditional_stops": [],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Northolt",
+                    "LondonUnderground/Acton"
+                ],
+                "not": []
+            },
+            "coords": [
+                -4624,
+                544
+            ],
+            "approach": {
+                "coords": [
+                    -4376,
+                    544
+                ],
+                "direction": 12,
+                "options": [
+                    "left",
+                    "straight"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Acton",
+                "direction": 11
+            },
+            "straight": {
+                "line": "Northolt",
+                "direction": 12
+            }
+        }
+    ],
     "stations": [
         "White City",
         "East Acton",
