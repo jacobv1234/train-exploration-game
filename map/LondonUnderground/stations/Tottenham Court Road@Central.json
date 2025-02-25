@@ -250,6 +250,30 @@
                     "LondonUnderground/Northolt"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Mile End",
+                "line": [
+                    "LondonUnderground/CentralE"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Bethnal Green",
+                "line": [
+                    "LondonUnderground/CentralE"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Stratford",
+                "line": [
+                    "LondonUnderground/CentralE"
+                ],
+                "reward": 1
             }
         ]
     },

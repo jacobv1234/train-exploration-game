@@ -1,0 +1,113 @@
+{
+    "colour": "#dc241f",
+    "segments": [
+        [
+            840,
+            376,
+            1320,
+            -104
+        ],
+        [
+            1320,
+            -104,
+            1352,
+            -120
+        ],
+        [
+            1352,
+            -120,
+            2528,
+            -120
+        ],
+        [
+            2528,
+            -120,
+            2560,
+            -136
+        ],
+        [
+            2560,
+            -136,
+            3208,
+            -784
+        ]
+    ],
+    "corners": [
+        [
+            1320,
+            -104,
+            3,
+            10
+        ],
+        [
+            1352,
+            -120,
+            4,
+            11
+        ],
+        [
+            2528,
+            -120,
+            3,
+            12
+        ],
+        [
+            2560,
+            -136,
+            2,
+            11
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/CentralC"
+                ],
+                "not": []
+            },
+            "corner": [
+                840,
+                376,
+                2,
+                10,
+                "CentralC"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/CentralC"
+                ]
+            },
+            "stop": [
+                840,
+                376,
+                2
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/Leyton"
+                ]
+            },
+            "stop": [
+                3208,
+                -784,
+                10
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "Mile End@Central",
+        "Bethnal Green@Central",
+        "Stratford@Central"
+    ]
+}

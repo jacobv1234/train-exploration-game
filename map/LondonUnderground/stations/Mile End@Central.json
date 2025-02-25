@@ -1,29 +1,43 @@
 {
-    "name": "North Acton",
+    "name": "Mile End@Central",
     "position": [
-        -4328,
-        544
+        2392,
+        -120
     ],
     "exits": {
         "eastbound": {
             "direction": 4,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/CentralW"
+                    "LondonUnderground/CentralE"
                 ],
                 "not": []
             },
-            "line": "CentralW"
+            "line": "CentralE"
         },
         "westbound": {
             "direction": 12,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/CentralW"
+                    "LondonUnderground/CentralE"
                 ],
                 "not": []
             },
-            "line": "CentralW"
+            "line": "CentralE"
+        },
+        "District line": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Whitechapel"
+                ],
+                "not": []
+            },
+            "line": "Whitechapel",
+            "new_coords": [
+                2392,
+                24
+            ]
         }
     },
     "map_text": [
@@ -32,7 +46,7 @@
                 0,
                 -24
             ],
-            "text": "North Acton",
+            "text": "Mile End",
             "font": "Arial 10",
             "anchor": "s"
         }
@@ -41,18 +55,18 @@
         "chance_of_any": 75,
         "options": [
             {
-                "chance": 2,
-                "station": "LondonUnderground/Ealing Broadway",
+                "chance": 1,
+                "station": "LondonUnderground/Bethnal Green",
                 "line": [
-                    "LondonUnderground/Acton"
+                    "LondonUnderground/CentralE"
                 ],
                 "reward": 1
             },
             {
-                "chance": 1,
-                "station": "LondonUnderground/West Acton",
+                "chance": 3,
+                "station": "LondonUnderground/Stratford",
                 "line": [
-                    "LondonUnderground/Acton"
+                    "LondonUnderground/CentralE"
                 ],
                 "reward": 1
             },
@@ -60,16 +74,7 @@
                 "chance": 2,
                 "station": "LondonUnderground/White City",
                 "line": [
-                    "LondonUnderground/CentralW",
                     "LondonUnderground/CentralC"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/East Acton",
-                "line": [
-                    "LondonUnderground/CentralW"
                 ],
                 "reward": 1
             },
@@ -189,81 +194,17 @@
             },
             {
                 "chance": 1,
-                "station": "LondonUnderground/Hanger Lane",
+                "station": "LondonUnderground/East Acton",
                 "line": [
-                    "LondonUnderground/Northolt"
+                    "LondonUnderground/CentralW"
                 ],
                 "reward": 1
             },
             {
                 "chance": 1,
-                "station": "LondonUnderground/Perivale",
+                "station": "LondonUnderground/North Acton",
                 "line": [
-                    "LondonUnderground/Northolt"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Greenford",
-                "line": [
-                    "LondonUnderground/Northolt"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/West Ruislip",
-                "line": [
-                    "LondonUnderground/Northolt"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Ruislip Gardens",
-                "line": [
-                    "LondonUnderground/Northolt"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/South Ruislip",
-                "line": [
-                    "LondonUnderground/Northolt"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Northolt",
-                "line": [
-                    "LondonUnderground/Northolt"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Mile End",
-                "line": [
-                    "LondonUnderground/CentralE"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Bethnal Green",
-                "line": [
-                    "LondonUnderground/CentralE"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 3,
-                "station": "LondonUnderground/Stratford",
-                "line": [
-                    "LondonUnderground/CentralE"
+                    "LondonUnderground/CentralW"
                 ],
                 "reward": 1
             }

@@ -41,7 +41,8 @@
         "CentralC",
         "CentralW",
         "Acton",
-        "Northolt"
+        "Northolt",
+        "CentralE"
     ],
     "loadingzones": [],
     "display_name": "London Underground",
@@ -164,6 +165,7 @@
         "Hammersmith",
         "Wood Lane + White City",
         "Bank",
-        "Ealing Broadway"
+        "Ealing Broadway",
+        "Mile End"
     ]
 }

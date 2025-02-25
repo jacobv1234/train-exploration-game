@@ -1,0 +1,17 @@
+{
+    "name": "Mile End",
+    "stations": [
+        "Mile End@Central",
+        "Mile End@District"
+    ],
+    "connecting_lines": [
+        ["Mile End@Central", "Mile End@District", 2392,-120,2392,24]
+    ],
+
+    "station_lines": {
+        "Mile End@Central": ["LondonUnderground/CentralE"],
+        "Mile End@District": ["LondonUnderground/Whitechapel"]
+    },
+
+    "text_priority": ["Mile End@Central", "Mile End@District"]
+}

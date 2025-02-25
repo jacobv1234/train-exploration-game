@@ -169,6 +169,21 @@
                 12,
                 "CentralW"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/CentralE"
+                ],
+                "not": []
+            },
+            "corner": [
+                840,
+                376,
+                2,
+                10,
+                "CentralE"
+            ]
         }
     ],
     "stops": [],

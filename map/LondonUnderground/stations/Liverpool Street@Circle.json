@@ -49,6 +49,16 @@
                 "not": []
             },
             "line": "CentralC"
+        },
+        "eastbound (Central)": {
+            "direction": 2,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/CentralE"
+                ],
+                "not": []
+            },
+            "line": "CentralE"
         }
     },
     "map_text": [
@@ -63,7 +73,7 @@
         },
         {
             "offset": [
-                8,
+                -4,
                 -32
             ],
             "badge": "nationalrail",
@@ -834,6 +844,22 @@
                     "LondonUnderground/Northolt"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Bethnal Green",
+                "line": [
+                    "LondonUnderground/CentralE"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Stratford",
+                "line": [
+                    "LondonUnderground/CentralE"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -884,6 +910,19 @@
                 "LondonUnderground/CentralC"
             ],
             "unique_name": "LondonUnderground/Liverpool Street@Circle/Central Line Core"
+        },
+        "To Stratford via Central line": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/CentralE"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/CentralE"
+            ],
+            "unique_name": "LondonUnderground/Liverpool Street@Circle/To Stratford via Central line"
         }
     }
 }
