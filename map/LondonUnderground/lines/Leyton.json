@@ -66,6 +66,23 @@
                 8,
                 "Woodford"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Hainault"
+                ],
+                "not": [
+                    "LondonUnderground/Woodford"
+                ]
+            },
+            "corner": [
+                3512,
+                -1656,
+                1,
+                8,
+                "Hainault"
+            ]
         }
     ],
     "stops": [],
@@ -84,7 +101,41 @@
             ]
         }
     ],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Hainault",
+                    "LondonUnderground/Woodford"
+                ],
+                "not": []
+            },
+            "coords": [
+                3512,
+                -1656
+            ],
+            "approach": {
+                "coords": [
+                    3512,
+                    -1520
+                ],
+                "direction": 0,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Woodford",
+                "direction": 0
+            },
+            "right": {
+                "line": "Hainault",
+                "direction": 1
+            }
+        }
+    ],
     "stations": [
         "Leyton",
         "Leytonstone",

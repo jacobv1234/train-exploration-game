@@ -292,6 +292,86 @@
                     "LondonUnderground/Acton"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Wanstead",
+                "line": [
+                    "LondonUnderground/Hainault"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Redbridge",
+                "line": [
+                    "LondonUnderground/Hainault"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Gants Hill",
+                "line": [
+                    "LondonUnderground/Hainault"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Newbury Park",
+                "line": [
+                    "LondonUnderground/Hainault"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Barkingside",
+                "line": [
+                    "LondonUnderground/Hainault"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Fairlop",
+                "line": [
+                    "LondonUnderground/Hainault"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Hainault",
+                "line": [
+                    "LondonUnderground/Hainault"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Grange Hill",
+                "line": [
+                    "LondonUnderground/Hainault"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Chigwell",
+                "line": [
+                    "LondonUnderground/Hainault"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Roding Valley",
+                "line": [
+                    "LondonUnderground/Hainault"
+                ],
+                "reward": 1
             }
         ]
     },
@@ -310,6 +390,23 @@
                 "LondonUnderground/Epping"
             ],
             "unique_name": "LondonUnderground/Stratford@Central/To Epping"
+        },
+        "To Hainault": {
+            "cost": 1,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Woodford"
+                ],
+                "not": [
+                    "LondonUnderground/Hainault"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/Leyton",
+                "LondonUnderground/Woodford",
+                "LondonUnderground/Hainault"
+            ],
+            "unique_name": "LondonUnderground/Stratford@Central/To Hainault"
         }
     }
 }

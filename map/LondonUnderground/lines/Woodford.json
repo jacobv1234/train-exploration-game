@@ -34,11 +34,62 @@
                 8,
                 "Epping"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Hainault"
+                ],
+                "not": [
+                    "LondonUnderground/Epping"
+                ]
+            },
+            "corner": [
+                3512,
+                -2784,
+                1,
+                8,
+                "Hainault"
+            ]
         }
     ],
     "stops": [],
     "conditional_stops": [],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Hainault",
+                    "LondonUnderground/Epping"
+                ],
+                "not": []
+            },
+            "coords": [
+                3512,
+                -2784
+            ],
+            "approach": {
+                "coords": [
+                    3512,
+                    -2592
+                ],
+                "direction": 0,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Epping",
+                "direction": 0
+            },
+            "right": {
+                "line": "Hainault",
+                "direction": 1
+            }
+        }
+    ],
     "stations": [
         "Snaresbrook",
         "South Woodford",
