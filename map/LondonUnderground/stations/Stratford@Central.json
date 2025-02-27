@@ -14,6 +14,16 @@
                 "not": []
             },
             "line": "CentralE"
+        },
+        "northbound (Central)": {
+            "direction": 2,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Leyton"
+                ],
+                "not": []
+            },
+            "line": "Leyton"
         }
     },
     "map_text": [
@@ -34,7 +44,8 @@
                 "chance": 2,
                 "station": "LondonUnderground/Mile End",
                 "line": [
-                    "LondonUnderground/CentralE"
+                    "LondonUnderground/CentralE",
+                    "LondonUnderground/Whitechapel"
                 ],
                 "reward": 1
             },
@@ -50,7 +61,8 @@
                 "chance": 2,
                 "station": "LondonUnderground/White City",
                 "line": [
-                    "LondonUnderground/CentralC"
+                    "LondonUnderground/CentralC",
+                    "LondonUnderground/CentralW"
                 ],
                 "reward": 1
             },
@@ -83,8 +95,9 @@
                 "chance": 3,
                 "station": "LondonUnderground/Liverpool Street",
                 "line": [
-                    "LondonUnderground/CentralC",
-                    "LondonUnderground/Circle-N"
+                    "LondonUnderground/CentralE",
+                    "LondonUnderground/Circle-N",
+                    "LondonUnderground/CentralC"
                 ],
                 "reward": 1
             },
@@ -183,8 +196,120 @@
                     "LondonUnderground/CentralW"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Buckhurst Hill",
+                "line": [
+                    "LondonUnderground/Epping"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Loughton",
+                "line": [
+                    "LondonUnderground/Epping"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Debden",
+                "line": [
+                    "LondonUnderground/Epping"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Theydon Bois",
+                "line": [
+                    "LondonUnderground/Epping"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Epping",
+                "line": [
+                    "LondonUnderground/Epping"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Snaresbrook",
+                "line": [
+                    "LondonUnderground/Woodford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/South Woodford",
+                "line": [
+                    "LondonUnderground/Woodford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Woodford",
+                "line": [
+                    "LondonUnderground/Woodford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Leyton",
+                "line": [
+                    "LondonUnderground/Leyton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Leytonstone",
+                "line": [
+                    "LondonUnderground/Leyton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Ealing Broadway",
+                "line": [
+                    "LondonUnderground/Acton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/West Acton",
+                "line": [
+                    "LondonUnderground/Acton"
+                ],
+                "reward": 1
             }
         ]
     },
-    "shop": false
+    "shop": {
+        "To Epping": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/Epping"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/Leyton",
+                "LondonUnderground/Woodford",
+                "LondonUnderground/Epping"
+            ],
+            "unique_name": "LondonUnderground/Stratford@Central/To Epping"
+        }
+    }
 }

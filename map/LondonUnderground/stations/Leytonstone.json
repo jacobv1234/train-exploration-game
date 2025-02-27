@@ -1,33 +1,29 @@
 {
-    "name": "Ealing Broadway@Central",
+    "name": "Leytonstone",
     "position": [
-        -5320,
-        808
+        3512,
+        -1480
     ],
     "exits": {
-        "eastbound": {
-            "direction": 4,
+        "northbound": {
+            "direction": 0,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/Acton"
+                    "LondonUnderground/Leyton"
                 ],
                 "not": []
             },
-            "line": "Acton"
+            "line": "Leyton"
         },
-        "District line": {
-            "direction": 4,
+        "southbound": {
+            "direction": 8,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/EalingBroadwayDistrict"
+                    "LondonUnderground/Leyton"
                 ],
                 "not": []
             },
-            "line": "EalingBroadwayDistrict",
-            "new_coords": [
-                -5320,
-                880
-            ]
+            "line": "Leyton"
         }
     },
     "map_text": [
@@ -36,18 +32,9 @@
                 -24,
                 0
             ],
-            "text": "Ealing",
+            "text": "Leytonstone",
             "font": "Arial 10",
-            "anchor": "se"
-        },
-        {
-            "offset": [
-                -24,
-                0
-            ],
-            "text": "Broadway",
-            "font": "Arial 10",
-            "anchor": "ne"
+            "anchor": "e"
         }
     ],
     "passengers": {
@@ -55,9 +42,109 @@
         "options": [
             {
                 "chance": 1,
-                "station": "LondonUnderground/West Acton",
+                "station": "LondonUnderground/Buckhurst Hill",
                 "line": [
-                    "LondonUnderground/Acton"
+                    "LondonUnderground/Epping"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Loughton",
+                "line": [
+                    "LondonUnderground/Epping"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Debden",
+                "line": [
+                    "LondonUnderground/Epping"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Theydon Bois",
+                "line": [
+                    "LondonUnderground/Epping"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Epping",
+                "line": [
+                    "LondonUnderground/Epping"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Snaresbrook",
+                "line": [
+                    "LondonUnderground/Woodford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/South Woodford",
+                "line": [
+                    "LondonUnderground/Woodford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Woodford",
+                "line": [
+                    "LondonUnderground/Woodford"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Leyton",
+                "line": [
+                    "LondonUnderground/Leyton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Stratford",
+                "line": [
+                    "LondonUnderground/Leyton",
+                    "LondonUnderground/CentralE"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Mile End",
+                "line": [
+                    "LondonUnderground/CentralE",
+                    "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Bethnal Green",
+                "line": [
+                    "LondonUnderground/CentralE"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Liverpool Street",
+                "line": [
+                    "LondonUnderground/CentralE",
+                    "LondonUnderground/Circle-N",
+                    "LondonUnderground/CentralC"
                 ],
                 "reward": 1
             },
@@ -66,22 +153,6 @@
                 "station": "LondonUnderground/White City",
                 "line": [
                     "LondonUnderground/CentralC",
-                    "LondonUnderground/CentralW"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/East Acton",
-                "line": [
-                    "LondonUnderground/CentralW"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/North Acton",
-                "line": [
                     "LondonUnderground/CentralW"
                 ],
                 "reward": 1
@@ -108,16 +179,6 @@
                 "line": [
                     "LondonUnderground/CentralC",
                     "LondonUnderground/Circle-C"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 3,
-                "station": "LondonUnderground/Liverpool Street",
-                "line": [
-                    "LondonUnderground/CentralE",
-                    "LondonUnderground/Circle-N",
-                    "LondonUnderground/CentralC"
                 ],
                 "reward": 1
             },
@@ -203,107 +264,33 @@
             },
             {
                 "chance": 1,
-                "station": "LondonUnderground/Buckhurst Hill",
+                "station": "LondonUnderground/East Acton",
                 "line": [
-                    "LondonUnderground/Epping"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Loughton",
-                "line": [
-                    "LondonUnderground/Epping"
+                    "LondonUnderground/CentralW"
                 ],
                 "reward": 1
             },
             {
                 "chance": 1,
-                "station": "LondonUnderground/Debden",
+                "station": "LondonUnderground/North Acton",
                 "line": [
-                    "LondonUnderground/Epping"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Theydon Bois",
-                "line": [
-                    "LondonUnderground/Epping"
+                    "LondonUnderground/CentralW"
                 ],
                 "reward": 1
             },
             {
                 "chance": 2,
-                "station": "LondonUnderground/Epping",
+                "station": "LondonUnderground/Ealing Broadway",
                 "line": [
-                    "LondonUnderground/Epping"
+                    "LondonUnderground/Acton"
                 ],
                 "reward": 1
             },
             {
                 "chance": 1,
-                "station": "LondonUnderground/Snaresbrook",
+                "station": "LondonUnderground/West Acton",
                 "line": [
-                    "LondonUnderground/Woodford"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/South Woodford",
-                "line": [
-                    "LondonUnderground/Woodford"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Woodford",
-                "line": [
-                    "LondonUnderground/Woodford"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Leyton",
-                "line": [
-                    "LondonUnderground/Leyton"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Leytonstone",
-                "line": [
-                    "LondonUnderground/Leyton"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Stratford",
-                "line": [
-                    "LondonUnderground/Leyton",
-                    "LondonUnderground/CentralE"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Mile End",
-                "line": [
-                    "LondonUnderground/CentralE",
-                    "LondonUnderground/Whitechapel"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Bethnal Green",
-                "line": [
-                    "LondonUnderground/CentralE"
+                    "LondonUnderground/Acton"
                 ],
                 "reward": 1
             }

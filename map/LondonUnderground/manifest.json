@@ -42,7 +42,10 @@
         "CentralW",
         "Acton",
         "Northolt",
-        "CentralE"
+        "CentralE",
+        "Leyton",
+        "Woodford",
+        "Epping"
     ],
     "loadingzones": [],
     "display_name": "London Underground",

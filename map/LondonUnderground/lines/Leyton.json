@@ -1,0 +1,93 @@
+{
+    "colour": "#dc241f",
+    "segments": [
+        [
+            3208,
+            -784,
+            3496,
+            -1072
+        ],
+        [
+            3496,
+            -1072,
+            3512,
+            -1104
+        ],
+        [
+            3512,
+            -1104,
+            3512,
+            -1656
+        ]
+    ],
+    "corners": [
+        [
+            3496,
+            -1072,
+            1,
+            10
+        ],
+        [
+            3512,
+            -1104,
+            0,
+            9
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/CentralE"
+                ],
+                "not": []
+            },
+            "corner": [
+                3208,
+                -784,
+                2,
+                10,
+                "CentralE"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Woodford"
+                ],
+                "not": [
+                    "LondonUnderground/Hainault"
+                ]
+            },
+            "corner": [
+                3512,
+                -1656,
+                0,
+                8,
+                "Woodford"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/CentralE"
+                ]
+            },
+            "stop": [
+                3208,
+                -784,
+                2
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "Leyton",
+        "Leytonstone",
+        "Stratford@Central"
+    ]
+}

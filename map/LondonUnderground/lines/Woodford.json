@@ -1,0 +1,47 @@
+{
+    "colour": "#dc241f",
+    "segments": [
+        [
+            3512,
+            -1656,
+            3512,
+            -2784
+        ]
+    ],
+    "corners": [
+        [
+            3512,
+            -1656,
+            0,
+            8,
+            "Leyton"
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Epping"
+                ],
+                "not": [
+                    "LondonUnderground/Hainault"
+                ]
+            },
+            "corner": [
+                3512,
+                -2784,
+                0,
+                8,
+                "Epping"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Snaresbrook",
+        "South Woodford",
+        "Woodford"
+    ]
+}

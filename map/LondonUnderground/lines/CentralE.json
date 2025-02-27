@@ -73,6 +73,21 @@
                 10,
                 "CentralC"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Leyton"
+                ],
+                "not": []
+            },
+            "corner": [
+                3208,
+                -784,
+                2,
+                10,
+                "Leyton"
+            ]
         }
     ],
     "stops": [],
@@ -108,6 +123,7 @@
     "stations": [
         "Mile End@Central",
         "Bethnal Green@Central",
-        "Stratford@Central"
+        "Stratford@Central",
+        "Liverpool Street@Circle"
     ]
 }
