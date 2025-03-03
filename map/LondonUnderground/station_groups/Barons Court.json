@@ -1,0 +1,17 @@
+{
+    "name": "Barons Court",
+    "stations": [
+        "Barons Court@Piccadilly",
+        "Barons Court@District"
+    ],
+    "connecting_lines": [
+        ["Barons Court@Piccadilly", "Barons Court@District", -3384,1296,-3384,1376]
+    ],
+
+    "station_lines": {
+        "Barons Court@Piccadilly": ["LondonUnderground/PiccadillyC"],
+        "Barons Court@District": ["LondonUnderground/Turnham Green"]
+    },
+
+    "text_priority": ["Barons Court@Piccadilly","Barons Court@District"]
+}

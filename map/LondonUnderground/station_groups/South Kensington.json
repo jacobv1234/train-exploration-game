@@ -1,0 +1,17 @@
+{
+    "name": "South Kensington",
+    "stations": [
+        "South Kensington@Piccadilly",
+        "South Kensington@Circle"
+    ],
+    "connecting_lines": [
+        ["South Kensington@Piccadilly", "South Kensington@Circle", -2264,1296,-2264,1376]
+    ],
+
+    "station_lines": {
+        "South Kensington@Piccadilly": ["LondonUnderground/PiccadillyC"],
+        "South Kensington@Circle": ["LondonUnderground/Circle-C", "LondonUnderground/Circle-S"]
+    },
+
+    "text_priority": ["South Kensington@Circle","South Kensington@Piccadilly"]
+}

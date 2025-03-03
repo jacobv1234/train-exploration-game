@@ -1,0 +1,17 @@
+{
+    "name": "King's Cross",
+    "stations": [
+        "King's Cross@Piccadilly",
+        "King's Cross@Circle"
+    ],
+    "connecting_lines": [
+        ["King's Cross@Piccadilly", "King's Cross@Circle", -512,-128,-424,-216]
+    ],
+
+    "station_lines": {
+        "King's Cross@Piccadilly": ["LondonUnderground/PiccadillyC"],
+        "King's Cross@Circle": ["LondonUnderground/Circle-N"]
+    },
+
+    "text_priority": ["King's Cross@Circle","King's Cross@Piccadilly"]
+}

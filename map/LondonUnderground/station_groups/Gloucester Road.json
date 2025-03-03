@@ -1,0 +1,17 @@
+{
+    "name": "Gloucester Road",
+    "stations": [
+        "Gloucester Road@Piccadilly",
+        "Gloucester Road@Circle"
+    ],
+    "connecting_lines": [
+        ["Gloucester Road@Piccadilly", "Gloucester Road@Circle", -2440,1296,-2440,1376]
+    ],
+
+    "station_lines": {
+        "Gloucester Road@Piccadilly": ["LondonUnderground/PiccadillyC"],
+        "Gloucester Road@Circle": ["LondonUnderground/Circle-C"]
+    },
+
+    "text_priority": ["Gloucester Road@Circle","Gloucester Road@Piccadilly"]
+}

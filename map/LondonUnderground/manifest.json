@@ -46,7 +46,8 @@
         "Leyton",
         "Woodford",
         "Epping",
-        "Hainault"
+        "Hainault",
+        "PiccadillyC"
     ],
     "loadingzones": [],
     "display_name": "London Underground",
@@ -170,6 +171,11 @@
         "Wood Lane + White City",
         "Bank",
         "Ealing Broadway",
-        "Mile End"
+        "Mile End",
+        "Barons Court",
+        "Earl's Court",
+        "Gloucester Road",
+        "South Kensington",
+        "King's Cross"
     ]
 }

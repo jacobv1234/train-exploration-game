@@ -2,16 +2,20 @@
     "name": "Hammersmith",
     "stations": [
         "Hammersmith@H+C",
-        "Hammersmith@District"
+        "Hammersmith@District",
+        "Hammersmith@Piccadilly"
     ],
     "connecting_lines": [
-        ["Hammersmith@H+C", "Hammersmith@District", -3528,1376,-3528,1208]
+        ["Hammersmith@H+C", "Hammersmith@District", -3528,1376,-3528,1208],
+        ["Hammersmith@District", "Hammersmith@Piccadilly",-3528,1376,-3528,1296],
+        ["Hammersmith@H+C", "Hammersmith@Piccadilly",-3528,1208,-3528,1296]
     ],
 
     "station_lines": {
         "Hammersmith@H+C": ["LondonUnderground/H+C"],
-        "Hammersmith@District": ["LondonUnderground/Turnham Green"]
+        "Hammersmith@District": ["LondonUnderground/Turnham Green"],
+        "Hammersmith@Piccadilly": ["LondonUnderground/PiccadillyC"]
     },
 
-    "text_priority": ["Hammersmith@H+C", "Hammersmith@District"]
+    "text_priority": ["Hammersmith@District", "Hammersmith@H+C", "Hammersmith@Piccadilly"]
 }

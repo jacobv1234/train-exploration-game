@@ -1,0 +1,156 @@
+{
+    "colour": "#0019a8",
+    "segments": [
+        [
+            -3528,
+            1296,
+            -2224,
+            1296
+        ],
+        [
+            -2224,
+            1296,
+            -2192,
+            1280
+        ],
+        [
+            -2192,
+            1280,
+            -1800,
+            888
+        ],
+        [
+            -1800,
+            888,
+            -1768,
+            872
+        ],
+        [
+            -1768,
+            872,
+            -736,
+            872
+        ],
+        [
+            -440,
+            592,
+            -704,
+            856
+        ],
+        [
+            -704,
+            856,
+            -736,
+            872
+        ],
+        [
+            -440,
+            592,
+            -424,
+            560
+        ],
+        [
+            -424,
+            560,
+            -424,
+            -216
+        ]
+    ],
+    "corners": [
+        [
+            -2224,
+            1296,
+            3,
+            12
+        ],
+        [
+            -2192,
+            1280,
+            2,
+            11
+        ],
+        [
+            -1800,
+            888,
+            3,
+            10
+        ],
+        [
+            -1768,
+            872,
+            4,
+            11
+        ],
+        [
+            -736,
+            872,
+            3,
+            12
+        ],
+        [
+            -704,
+            856,
+            2,
+            11
+        ],
+        [
+            -440,
+            592,
+            1,
+            10
+        ],
+        [
+            -424,
+            560,
+            0,
+            9
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/PiccadillyW"
+                ]
+            },
+            "stop": [
+                -3528,
+                1296,
+                4
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/PiccadillyN"
+                ]
+            },
+            "stop": [
+                -424,
+                -216,
+                8
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "Holborn",
+        "Hammersmith@Piccadilly",
+        "Barons Court@Piccadilly",
+        "Earl's Court@Piccadilly",
+        "Gloucester Road@Piccadilly",
+        "South Kensington@Piccadilly",
+        "Knightsbridge",
+        "Hyde Park Corner",
+        "Green Park@Piccadilly",
+        "Piccadilly Circus",
+        "Leicester Square",
+        "Covent Garden",
+        "Russel Square",
+        "King's Cross@Piccadilly"
+    ]
+}

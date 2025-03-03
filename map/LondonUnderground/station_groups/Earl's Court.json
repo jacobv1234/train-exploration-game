@@ -1,0 +1,17 @@
+{
+    "name": "Earl's Court",
+    "stations": [
+        "Earl's Court@Piccadilly",
+        "Earl's Court@District"
+    ],
+    "connecting_lines": [
+        ["Earl's Court@Piccadilly", "Earl's Court@District", -2984,1296,-2984,1376]
+    ],
+
+    "station_lines": {
+        "Earl's Court@Piccadilly": ["LondonUnderground/PiccadillyC"],
+        "Earl's Court@District": ["LondonUnderground/EarlsCourt-E", "LondonUnderground/EarlsCourt-W"]
+    },
+
+    "text_priority": ["Earl's Court@Piccadilly","Earl's Court@District"]
+}

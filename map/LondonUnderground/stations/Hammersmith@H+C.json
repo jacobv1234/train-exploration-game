@@ -28,6 +28,20 @@
                 -3528,
                 1376
             ]
+        },
+        "Piccadilly Line": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "not": []
+            },
+            "line": "PiccadillyC",
+            "new_coords": [
+                -3528,
+                1296
+            ]
         }
     },
     "map_text": [
@@ -197,7 +211,7 @@
                 "chance": 3,
                 "station": "LondonUnderground/King's Cross",
                 "line": [
-                    "LondonUnderground/Circle-N"
+                    "LondonUnderground/PiccadillyC"
                 ],
                 "reward": 1
             },
@@ -245,8 +259,7 @@
                 "chance": 2,
                 "station": "LondonUnderground/South Kensington",
                 "line": [
-                    "LondonUnderground/Circle-C",
-                    "LondonUnderground/Circle-S"
+                    "LondonUnderground/PiccadillyC"
                 ],
                 "reward": 1
             },
@@ -294,7 +307,7 @@
                 "chance": 1,
                 "station": "LondonUnderground/Gloucester Road",
                 "line": [
-                    "LondonUnderground/Circle-C"
+                    "LondonUnderground/PiccadillyC"
                 ],
                 "reward": 1
             },
@@ -358,7 +371,7 @@
                 "chance": 1,
                 "station": "LondonUnderground/Barons Court",
                 "line": [
-                    "LondonUnderground/Turnham Green"
+                    "LondonUnderground/PiccadillyC"
                 ],
                 "reward": 1
             },
@@ -398,8 +411,7 @@
                 "chance": 2,
                 "station": "LondonUnderground/Earl's Court",
                 "line": [
-                    "LondonUnderground/EarlsCourt-E",
-                    "LondonUnderground/EarlsCourt-W"
+                    "LondonUnderground/PiccadillyC"
                 ],
                 "reward": 1
             },
@@ -513,6 +525,71 @@
                 "station": "LondonUnderground/West Ham",
                 "line": [
                     "LondonUnderground/Whitechapel"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Holborn",
+                "line": [
+                    "LondonUnderground/PiccadillyC",
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Knightsbridge",
+                "line": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Hyde Park Corner",
+                "line": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Green Park",
+                "line": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Piccadilly Circus",
+                "line": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Leicester Square",
+                "line": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Covent Garden",
+                "line": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Russel Square",
+                "line": [
+                    "LondonUnderground/PiccadillyC"
                 ],
                 "reward": 1
             }
