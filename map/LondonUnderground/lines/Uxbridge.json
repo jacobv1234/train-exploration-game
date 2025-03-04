@@ -51,6 +51,23 @@
                 14,
                 "WestHarrow"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Alperton"
+                ],
+                "not": [
+                    "LondonUnderground/WestHarrow"
+                ]
+            },
+            "corner": [
+                -4928,
+                -1472,
+                14,
+                8,
+                "Alperton"
+            ]
         }
     ],
     "stops": [
@@ -61,7 +78,41 @@
         ]
     ],
     "conditional_stops": [],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/WestHarrow",
+                    "LondonUnderground/Alperton"
+                ],
+                "not": []
+            },
+            "coords": [
+                -4928,
+                -1472
+            ],
+            "approach": {
+                "coords": [
+                    -5056,
+                    -1600
+                ],
+                "direction": 6,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "WestHarrow",
+                "direction": 5
+            },
+            "right": {
+                "line": "Alperton",
+                "direction": 8
+            }
+        }
+    ],
     "stations": [
         "Uxbridge",
         "Ruislip",

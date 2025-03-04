@@ -1,0 +1,68 @@
+{
+    "colour": "#0019a8",
+    "segments": [
+        [
+            -3528,
+            1296,
+            -4856,
+            1296
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "not": []
+            },
+            "corner": [
+                -3528,
+                1296,
+                4,
+                12,
+                "PiccadillyC"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Alperton"
+                ],
+                "not": [
+                    "LondonUnderground/Hounslow"
+                ]
+            },
+            "corner": [
+                -4856,
+                1296,
+                4,
+                13,
+                "Alperton"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/PiccadillyC"
+                ]
+            },
+            "stop": [
+                -3528,
+                1296,
+                12
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "Hammersmith@Piccadilly",
+        "Turnham Green@Piccadilly",
+        "Acton Town@Piccadilly"
+    ]
+}

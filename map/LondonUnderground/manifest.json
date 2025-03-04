@@ -47,7 +47,10 @@
         "Woodford",
         "Epping",
         "Hainault",
-        "PiccadillyC"
+        "PiccadillyC",
+        "PiccadillyW",
+        "Alperton",
+        "_blueUxbridge"
     ],
     "loadingzones": [],
     "display_name": "London Underground",
@@ -176,6 +179,8 @@
         "Earl's Court",
         "Gloucester Road",
         "South Kensington",
-        "King's Cross"
+        "King's Cross",
+        "Turnham Green",
+        "Acton Town"
     ]
 }

@@ -1,0 +1,59 @@
+{
+    "name": "Turnham Green@Piccadilly",
+    "position": [
+        -4256,
+        1296
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/PiccadillyW"
+                ],
+                "not": []
+            },
+            "line": "PiccadillyW"
+        },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/PiccadillyW"
+                ],
+                "not": []
+            },
+            "line": "PiccadillyW"
+        },
+        "District Line": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Turnham Green"
+                ],
+                "not": []
+            },
+            "line": "Turnham Green",
+            "new_coords": [
+                -4256,
+                1376
+            ]
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -24
+            ],
+            "text": "Turnham Green",
+            "font": "Arial 10",
+            "anchor": "s"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 75,
+        "options": []
+    },
+    "shop": false
+}

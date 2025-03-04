@@ -24,6 +24,20 @@
                 "not": []
             },
             "line": "Turnham Green"
+        },
+        "Piccadilly Line": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/PiccadillyW"
+                ],
+                "not": []
+            },
+            "line": "PiccadillyW",
+            "new_coords": [
+                -4256,
+                1296
+            ]
         }
     },
     "map_text": [

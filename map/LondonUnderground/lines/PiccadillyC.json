@@ -106,7 +106,23 @@
             9
         ]
     ],
-    "conditional_corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/PiccadillyW"
+                ],
+                "not": []
+            },
+            "corner": [
+                -3528,
+                1296,
+                4,
+                12,
+                "PiccadillyW"
+            ]
+        }
+    ],
     "stops": [],
     "conditional_stops": [
         {

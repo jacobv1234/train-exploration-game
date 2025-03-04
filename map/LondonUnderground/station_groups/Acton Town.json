@@ -1,0 +1,17 @@
+{
+    "name": "Acton Town",
+    "stations": [
+        "Acton Town@Piccadilly",
+        "Acton Town@District"
+    ],
+    "connecting_lines": [
+        ["Acton Town@Piccadilly", "Acton Town@District", -4704,1296,-4784,1376]
+    ],
+
+    "station_lines": {
+        "Acton Town@Piccadilly": ["LondonUnderground/PiccadillyW"],
+        "Acton Town@District": ["LondonUnderground/EalingBroadwayDistrict"]
+    },
+
+    "text_priority": ["Acton Town@District", "Acton Town@Piccadilly"]
+}

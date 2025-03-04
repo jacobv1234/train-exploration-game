@@ -1,0 +1,17 @@
+{
+    "name": "Turnham Green",
+    "stations": [
+        "Turnham Green@Piccadilly",
+        "Turnham Green@District"
+    ],
+    "connecting_lines": [
+        ["Turnham Green@Piccadilly", "Turnham Green@District", -4256,1296,-4256,1376]
+    ],
+
+    "station_lines": {
+        "Turnham Green@Piccadilly": ["LondonUnderground/PiccadillyW"],
+        "Turnham Green@District": ["LondonUnderground/Turnham Green"]
+    },
+
+    "text_priority": ["Turnham Green@District", "Turnham Green@Piccadilly"]
+}

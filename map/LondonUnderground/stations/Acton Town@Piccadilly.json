@@ -1,0 +1,59 @@
+{
+    "name": "Acton Town@Piccadilly",
+    "position": [
+        -4704,
+        1296
+    ],
+    "exits": {
+        "eastbound": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/PiccadillyW"
+                ],
+                "not": []
+            },
+            "line": "PiccadillyW"
+        },
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/PiccadillyW"
+                ],
+                "not": []
+            },
+            "line": "PiccadillyW"
+        },
+        "District Line": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/EalingBroadwayDistrict"
+                ],
+                "not": []
+            },
+            "line": "EalingBroadwayDistrict",
+            "new_coords": [
+                -4784,
+                1376
+            ]
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -24
+            ],
+            "text": "Acton Town",
+            "font": "Arial 10",
+            "anchor": "s"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 75,
+        "options": []
+    },
+    "shop": false
+}
