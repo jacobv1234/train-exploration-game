@@ -70,5 +70,13 @@
     "stops": [],
     "conditional_stops": [],
     "junctions": [],
-    "stations": []
+    "stations": [
+        "Ealing Common@Piccadilly",
+        "North Ealing",
+        "Park Royal",
+        "Alperton",
+        "Sudbury Town",
+        "Sudbury Hill",
+        "South Harrow"
+    ]
 }

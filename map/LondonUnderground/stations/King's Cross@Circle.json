@@ -710,6 +710,78 @@
                     "LondonUnderground/PiccadillyC"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Ealing Common",
+                "line": [
+                    "LondonUnderground/Alperton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/North Ealing",
+                "line": [
+                    "LondonUnderground/Alperton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Park Royal",
+                "line": [
+                    "LondonUnderground/Alperton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Alperton",
+                "line": [
+                    "LondonUnderground/Alperton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Sudbury Town",
+                "line": [
+                    "LondonUnderground/Alperton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Sudbury Hill",
+                "line": [
+                    "LondonUnderground/Alperton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/South Harrow",
+                "line": [
+                    "LondonUnderground/Alperton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Turnham Green",
+                "line": [
+                    "LondonUnderground/PiccadillyW"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Acton Town",
+                "line": [
+                    "LondonUnderground/PiccadillyW"
+                ],
+                "reward": 1
             }
         ]
     },

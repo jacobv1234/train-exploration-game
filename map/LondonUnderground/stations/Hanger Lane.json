@@ -24,6 +24,20 @@
                 "not": []
             },
             "line": "Northolt"
+        },
+        "Piccadilly Line": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Alperton"
+                ],
+                "not": []
+            },
+            "line": "Alperton",
+            "new_coords": [
+                -4904,
+                376
+            ]
         }
     },
     "map_text": [

@@ -1,36 +1,40 @@
 {
-    "name": "Ickenham",
+    "name": "South Harrow",
     "position": [
-        -6384,
-        -2024
+        -4904,
+        -1176
     ],
     "exits": {
-        "eastbound": {
-            "direction": 4,
+        "northbound": {
+            "direction": 0,
             "requirements": {
-                "unlocked": [],
+                "unlocked": [
+                    "LondonUnderground/Alperton"
+                ],
                 "not": []
             },
-            "line": "Uxbridge"
+            "line": "Alperton"
         },
-        "westbound": {
-            "direction": 12,
+        "southbound": {
+            "direction": 8,
             "requirements": {
-                "unlocked": [],
+                "unlocked": [
+                    "LondonUnderground/Alperton"
+                ],
                 "not": []
             },
-            "line": "Uxbridge"
+            "line": "Alperton"
         }
     },
     "map_text": [
         {
             "offset": [
-                0,
-                -24
+                -24,
+                0
             ],
-            "text": "Ickenham",
+            "text": "South Harrow",
             "font": "Arial 10",
-            "anchor": "s"
+            "anchor": "e"
         }
     ],
     "passengers": {
@@ -47,6 +51,14 @@
             {
                 "chance": 2,
                 "station": "LondonUnderground/Ruislip",
+                "line": [
+                    "LondonUnderground/Uxbridge"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Ickenham",
                 "line": [
                     "LondonUnderground/Uxbridge"
                 ],
@@ -81,128 +93,6 @@
                 "station": "LondonUnderground/Rayners Lane",
                 "line": [
                     "LondonUnderground/Uxbridge"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/West Harrow",
-                "line": [
-                    "LondonUnderground/WestHarrow"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Harrow-On-The-Hill",
-                "line": [
-                    "LondonUnderground/MetMain",
-                    "LondonUnderground/Harrow"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Preston Road",
-                "line": [
-                    "LondonUnderground/MetMain"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Northwick Park",
-                "line": [
-                    "LondonUnderground/MetMain"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Wembley Park",
-                "line": [
-                    "LondonUnderground/MetMain"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Finchley Road",
-                "line": [
-                    "LondonUnderground/MetMain"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 3,
-                "station": "LondonUnderground/Liverpool Street",
-                "line": [
-                    "LondonUnderground/Circle-N"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Aldgate",
-                "line": [
-                    "LondonUnderground/Circle-N"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Moorgate",
-                "line": [
-                    "LondonUnderground/Circle-N"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Barbican",
-                "line": [
-                    "LondonUnderground/Circle-N"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Farringdon",
-                "line": [
-                    "LondonUnderground/Circle-N"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Baker Street",
-                "line": [
-                    "LondonUnderground/Circle-N",
-                    "LondonUnderground/Circle-J1"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Great Portland Street",
-                "line": [
-                    "LondonUnderground/Circle-N"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Euston Square",
-                "line": [
-                    "LondonUnderground/Circle-N"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 3,
-                "station": "LondonUnderground/King's Cross",
-                "line": [
-                    "LondonUnderground/Circle-N"
                 ],
                 "reward": 1
             },
@@ -249,14 +139,6 @@
             {
                 "chance": 1,
                 "station": "LondonUnderground/Sudbury Hill",
-                "line": [
-                    "LondonUnderground/Alperton"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/South Harrow",
                 "line": [
                     "LondonUnderground/Alperton"
                 ],
@@ -379,6 +261,14 @@
             {
                 "chance": 1,
                 "station": "LondonUnderground/Russel Square",
+                "line": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/King's Cross",
                 "line": [
                     "LondonUnderground/PiccadillyC"
                 ],

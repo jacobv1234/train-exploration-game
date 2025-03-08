@@ -1,0 +1,17 @@
+{
+    "name": "Acton Town",
+    "stations": [
+        "Hanger Lane",
+        "Park Royal"
+    ],
+    "connecting_lines": [
+        ["Hanger Lane", "Park Royal", -5096,376,-4904,376]
+    ],
+
+    "station_lines": {
+        "Hanger Lane": ["LondonUnderground/Northolt"],
+        "Park Royal": ["LondonUnderground/Alperton"]
+    },
+
+    "text_priority": []
+}

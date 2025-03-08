@@ -1,0 +1,17 @@
+{
+    "name": "Ealing Common",
+    "stations": [
+        "Ealing Common@Piccadilly",
+        "Ealing Common@District"
+    ],
+    "connecting_lines": [
+        ["Ealing Common@Piccadilly", "Ealing Common@District", -4904,1080,-5056,1080]
+    ],
+
+    "station_lines": {
+        "Ealing Common@Piccadilly": ["LondonUnderground/Alperton"],
+        "Ealing Common@District": ["LondonUnderground/EalingBroadwayDistrict"]
+    },
+
+    "text_priority": ["Ealing Common@District", "Ealing Common@Piccadilly"]
+}

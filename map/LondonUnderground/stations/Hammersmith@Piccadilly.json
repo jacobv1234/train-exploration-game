@@ -162,8 +162,154 @@
                     "LondonUnderground/PiccadillyC"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Uxbridge",
+                "line": [
+                    "LondonUnderground/Uxbridge"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Ruislip",
+                "line": [
+                    "LondonUnderground/Uxbridge"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Ickenham",
+                "line": [
+                    "LondonUnderground/Uxbridge"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Hillingdon",
+                "line": [
+                    "LondonUnderground/Uxbridge"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Ruislip Manor",
+                "line": [
+                    "LondonUnderground/Uxbridge"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Eastcote",
+                "line": [
+                    "LondonUnderground/Uxbridge"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Rayners Lane",
+                "line": [
+                    "LondonUnderground/Uxbridge"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Ealing Common",
+                "line": [
+                    "LondonUnderground/Alperton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/North Ealing",
+                "line": [
+                    "LondonUnderground/Alperton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Park Royal",
+                "line": [
+                    "LondonUnderground/Alperton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Alperton",
+                "line": [
+                    "LondonUnderground/Alperton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Sudbury Town",
+                "line": [
+                    "LondonUnderground/Alperton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Sudbury Hill",
+                "line": [
+                    "LondonUnderground/Alperton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/South Harrow",
+                "line": [
+                    "LondonUnderground/Alperton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Turnham Green",
+                "line": [
+                    "LondonUnderground/PiccadillyW"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Acton Town",
+                "line": [
+                    "LondonUnderground/PiccadillyW"
+                ],
+                "reward": 1
             }
         ]
     },
-    "shop": false
+    "shop": {
+        "Piccadilly Line to Uxbridge": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Uxbridge"
+                ],
+                "not": [
+                    "LondonUnderground/Alperton"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/PiccadillyW",
+                "LondonUnderground/Alperton",
+                "LondonUnderground/_blueUxbridge"
+            ],
+            "unique_name": "LondonUnderground/Hammersmith@Piccadilly/Piccadilly Line to Uxbridge"
+        }
+    }
 }
