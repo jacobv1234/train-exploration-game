@@ -1,0 +1,262 @@
+{
+    "name": "Heathrow Terminal 4",
+    "position": [
+        -6616,
+        3240
+    ],
+    "exits": {
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Heathrow4"
+                ],
+                "not": []
+            },
+            "line": "Heathrow4"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                8,
+                24
+            ],
+            "text": "Heathrow",
+            "font": "Arial 10",
+            "anchor": "ne"
+        },
+        {
+            "offset": [
+                8,
+                40
+            ],
+            "text": "Terminal 4",
+            "font": "Arial 10",
+            "anchor": "ne"
+        },
+        {
+            "offset": [
+                16,
+                40
+            ],
+            "badge": "airport",
+            "anchor": "w"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 90,
+        "options": [
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Heathrow Terminals 2&3",
+                "line": [
+                    "LondonUnderground/Heathrow123"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Heathrow Terminal 5",
+                "line": [
+                    "LondonUnderground/Heathrow5"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/South Ealing",
+                "line": [
+                    "LondonUnderground/Hounslow"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Hounslow East",
+                "line": [
+                    "LondonUnderground/Hounslow"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Boston Manor",
+                "line": [
+                    "LondonUnderground/Hounslow"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Northfields",
+                "line": [
+                    "LondonUnderground/Hounslow"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Osterley",
+                "line": [
+                    "LondonUnderground/Hounslow"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Hatton Cross",
+                "line": [
+                    "LondonUnderground/Hounslow"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Hounslow Central",
+                "line": [
+                    "LondonUnderground/Hounslow"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Hounslow West",
+                "line": [
+                    "LondonUnderground/Hounslow"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Hammersmith",
+                "line": [
+                    "LondonUnderground/PiccadillyW",
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Turnham Green",
+                "line": [
+                    "LondonUnderground/PiccadillyW"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Acton Town",
+                "line": [
+                    "LondonUnderground/PiccadillyW"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Holborn",
+                "line": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Barons Court",
+                "line": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Earl's Court",
+                "line": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Gloucester Road",
+                "line": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/South Kensington",
+                "line": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Knightsbridge",
+                "line": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Hyde Park Corner",
+                "line": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Green Park",
+                "line": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Piccadilly Circus",
+                "line": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Leicester Square",
+                "line": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Covent Garden",
+                "line": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Russel Square",
+                "line": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/King's Cross",
+                "line": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

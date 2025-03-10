@@ -1,0 +1,34 @@
+{
+    "colour": "#0019a8",
+    "segments": [
+        [
+            -6328,
+            2528,
+            -6896,
+            3096
+        ]
+    ],
+    "corners": [
+        [
+            -6328,
+            2528,
+            2,
+            10,
+            "Hounslow"
+        ],
+        [
+            -6896,
+            3096,
+            2,
+            10,
+            "Heathrow5"
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Heathrow Terminals 2&3@Piccadilly"
+    ]
+}

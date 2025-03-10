@@ -50,7 +50,11 @@
         "PiccadillyC",
         "PiccadillyW",
         "Alperton",
-        "_blueUxbridge"
+        "_blueUxbridge",
+        "Hounslow",
+        "Heathrow123",
+        "Heathrow5",
+        "Heathrow4"
     ],
     "loadingzones": [],
     "display_name": "London Underground",

@@ -1,0 +1,127 @@
+{
+    "colour": "#0019a8",
+    "segments": [
+        [
+            -4856,
+            1296,
+            -5080,
+            1296
+        ],
+        [
+            -5080,
+            1296,
+            -5112,
+            1312
+        ],
+        [
+            -5112,
+            1312,
+            -6328,
+            2528
+        ]
+    ],
+    "corners": [
+        [
+            -4856,
+            1296,
+            4,
+            12,
+            "PiccadillyW"
+        ],
+        [
+            -5080,
+            1296,
+            4,
+            11
+        ],
+        [
+            -5112,
+            1312,
+            3,
+            10
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Heathrow123"
+                ],
+                "not": [
+                    "LondonUnderground/Heathrow4"
+                ]
+            },
+            "corner": [
+                -6328,
+                2528,
+                2,
+                10,
+                "Heathrow123"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Heathrow4"
+                ],
+                "not": [
+                    "LondonUnderground/Heathrow123"
+                ]
+            },
+            "corner": [
+                -6328,
+                2528,
+                9,
+                2,
+                "Heathrow4"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Heathrow4",
+                    "LondonUnderground/Heathrow123"
+                ],
+                "not": []
+            },
+            "coords": [
+                -6328,
+                2528
+            ],
+            "approach": {
+                "coords": [
+                    -6216,
+                    2416
+                ],
+                "direction": 10,
+                "options": [
+                    "left",
+                    "straight"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "Heathrow4",
+                "direction": 9
+            },
+            "straight": {
+                "line": "Heathrow123",
+                "direction": 10
+            }
+        }
+    ],
+    "stations": [
+        "South Ealing",
+        "Hounslow East",
+        "Boston Manor",
+        "Northfields",
+        "Osterley",
+        "Hatton Cross",
+        "Hounslow Central",
+        "Hounslow West"
+    ]
+}

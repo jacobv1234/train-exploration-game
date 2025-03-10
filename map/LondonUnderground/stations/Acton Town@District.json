@@ -458,6 +458,94 @@
                     "LondonUnderground/PiccadillyC"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Heathrow Terminals 2&3",
+                "line": [
+                    "LondonUnderground/Heathrow123"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Heathrow Terminal 4",
+                "line": [
+                    "LondonUnderground/Heathrow4"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Heathrow Terminal 5",
+                "line": [
+                    "LondonUnderground/Heathrow5"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/South Ealing",
+                "line": [
+                    "LondonUnderground/Hounslow"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Hounslow East",
+                "line": [
+                    "LondonUnderground/Hounslow"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Boston Manor",
+                "line": [
+                    "LondonUnderground/Hounslow"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Northfields",
+                "line": [
+                    "LondonUnderground/Hounslow"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Osterley",
+                "line": [
+                    "LondonUnderground/Hounslow"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Hatton Cross",
+                "line": [
+                    "LondonUnderground/Hounslow"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Hounslow Central",
+                "line": [
+                    "LondonUnderground/Hounslow"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Hounslow West",
+                "line": [
+                    "LondonUnderground/Hounslow"
+                ],
+                "reward": 1
             }
         ]
     },

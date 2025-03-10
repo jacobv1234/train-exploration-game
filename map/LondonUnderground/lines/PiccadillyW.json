@@ -41,6 +41,23 @@
                 13,
                 "Alperton"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Hounslow"
+                ],
+                "not": [
+                    "LondonUnderground/Alperton"
+                ]
+            },
+            "corner": [
+                -4856,
+                1296,
+                4,
+                12,
+                "Hounslow"
+            ]
         }
     ],
     "stops": [],
