@@ -4,3 +4,7 @@ build
 dist
 main.onefile-build
 *.exe
+savedata/bought.txt
+savedata/passengers.json
+savedata/pos.txt
+savedata/unlocked_lines.txt
