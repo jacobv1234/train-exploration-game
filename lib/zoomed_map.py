@@ -50,10 +50,21 @@ class ZoomedMap:
                         self.create_passenger_marker(station_map, name)
                     except FileNotFoundError:
                         stations = []
-                        with open(f'./map/{station_map}/station_groups/{name}.json', 'r') as f:
-                            stations = loads(f.read())['stations']
-                        for station in stations:
-                            self.create_passenger_marker(station_map, station)
+                        try:
+                            with open(f'./map/{station_map}/station_groups/{name}.json', 'r') as f:
+                                stations = loads(f.read())['stations']
+                            for station in stations:
+                                self.create_passenger_marker(station_map, station)
+                        except FileNotFoundError:
+                            # station is part of group that does not exist yet
+                            # find the missing suffix
+                            lines = passenger['line']
+                            for line in lines:
+                                stations_on_line = map.lines[line.split('/')[1]].stations
+                                for station in stations:
+                                    if station.split('@')[0] == name:
+                                        self.create_passenger_marker(station_map, station)
+
         
         
         self.c.create_oval(train_x//4 - 12,train_y//4 - 12,train_x//4 + 12,train_y//4 + 12,fill='', outline='red', width = 2)
