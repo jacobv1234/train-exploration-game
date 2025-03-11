@@ -152,41 +152,7 @@
             ]
         }
     ],
-    "junctions": [
-        {
-            "requirements": {
-                "unlocked": [
-                    "LondonUnderground/Hounslow",
-                    "LondonUnderground/Alperton"
-                ],
-                "not": []
-            },
-            "coords": [
-                -4856,
-                1296
-            ],
-            "approach": {
-                "coords": [
-                    -4744,
-                    1296
-                ],
-                "direction": 12,
-                "options": [
-                    "straight",
-                    "right"
-                ],
-                "default": 0
-            },
-            "straight": {
-                "line": "Hounslow",
-                "direction": 12
-            },
-            "right": {
-                "line": "Alperton",
-                "direction": 13
-            }
-        }
-    ],
+    "junctions": [],
     "stations": [
         "Holborn",
         "Hammersmith@Piccadilly",

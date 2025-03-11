@@ -76,7 +76,41 @@
             ]
         }
     ],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Hounslow",
+                    "LondonUnderground/Alperton"
+                ],
+                "not": []
+            },
+            "coords": [
+                -4856,
+                1296
+            ],
+            "approach": {
+                "coords": [
+                    -4752,
+                    1296
+                ],
+                "direction": 12,
+                "options": [
+                    "straight",
+                    "right"
+                ],
+                "default": 0
+            },
+            "straight": {
+                "line": "Hounslow",
+                "direction": 12
+            },
+            "right": {
+                "line": "Alperton",
+                "direction": 13
+            }
+        }
+    ],
     "stations": [
         "Hammersmith@Piccadilly",
         "Turnham Green@Piccadilly",

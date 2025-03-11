@@ -258,7 +258,7 @@ while game_running:
             train.stop(stop, c)
 
         junction = area.check_j_approach(train.x,train.y,train.direction, train.line)
-        if junction != 0:
+        if junction != 0 and chooser == False:
             audiohandler.play_sound_effect('junction_popup')
             chooser = JunctionChoice(junction,window,screen_width, audiohandler, c)
             junc = junction
