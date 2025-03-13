@@ -121,6 +121,21 @@
                 12,
                 "PiccadillyW"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/PiccadillyN"
+                ],
+                "not": []
+            },
+            "corner": [
+                -424,
+                -216,
+                0,
+                8,
+                "PiccadillyN"
+            ]
         }
     ],
     "stops": [],

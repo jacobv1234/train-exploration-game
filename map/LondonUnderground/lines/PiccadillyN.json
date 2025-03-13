@@ -1,0 +1,116 @@
+{
+    "colour": "#0019a8",
+    "segments": [
+        [
+            -424,
+            -216,
+            -424,
+            -320
+        ],
+        [
+            -424,
+            -320,
+            -408,
+            -352
+        ],
+        [
+            -408,
+            -352,
+            928,
+            -1688
+        ],
+        [
+            928,
+            -1688,
+            944,
+            -1720
+        ],
+        [
+            944,
+            -1720,
+            944,
+            -3400
+        ]
+    ],
+    "corners": [
+        [
+            -424,
+            -320,
+            1,
+            8
+        ],
+        [
+            -408,
+            -352,
+            2,
+            9
+        ],
+        [
+            928,
+            -1688,
+            1,
+            10
+        ],
+        [
+            944,
+            -1720,
+            0,
+            9
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "not": []
+            },
+            "corner": [
+                -424,
+                -216,
+                0,
+                8,
+                "PiccadillyC"
+            ]
+        }
+    ],
+    "stops": [
+        [
+            944,
+            -3400,
+            8
+        ]
+    ],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/PiccadillyC"
+                ]
+            },
+            "stop": [
+                -424,
+                -216,
+                0
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "King's Cross@Piccadilly",
+        "Cockfosters",
+        "Finsbury Park@Piccadilly",
+        "Caledonian Road",
+        "Arsenal",
+        "Holloway Road",
+        "Manor House",
+        "Turnpike Lane",
+        "Arnos Grove",
+        "Southgate",
+        "Oakwood",
+        "Wood Green",
+        "Bounds Green"
+    ]
+}

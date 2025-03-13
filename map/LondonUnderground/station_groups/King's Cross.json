@@ -9,7 +9,7 @@
     ],
 
     "station_lines": {
-        "King's Cross@Piccadilly": ["LondonUnderground/PiccadillyC"],
+        "King's Cross@Piccadilly": ["LondonUnderground/PiccadillyC", "LondonUnderground/PiccadillyN"],
         "King's Cross@Circle": ["LondonUnderground/Circle-N"]
     },
 
