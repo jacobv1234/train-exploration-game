@@ -24,6 +24,20 @@
                 "not": []
             },
             "line": "Circle-N"
+        },
+        "Northern Line": {
+            "direction": 1,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "not": []
+            },
+            "line": "NorthernX",
+            "new_coords": [
+                -896,
+                -280
+            ]
         }
     },
     "map_text": [

@@ -1,0 +1,129 @@
+{
+    "name": "Waterloo@Northern",
+    "position": [
+        -896,
+        1792
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "not": []
+            },
+            "line": "NorthernX"
+        },
+        "southbound": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "not": []
+            },
+            "line": "NorthernX"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                24,
+                0
+            ],
+            "text": "Waterloo",
+            "font": "Arial 10",
+            "anchor": "w"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 85,
+        "options": [
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Leicester Square",
+                "line": [
+                    "LondonUnderground/NorthernX",
+                    "LondonUnderground/PiccadillyC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Embankment",
+                "line": [
+                    "LondonUnderground/NorthernX",
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Charing Cross",
+                "line": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Tottenham Court Road",
+                "line": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Warren Street",
+                "line": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Goodge Street",
+                "line": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Euston",
+                "line": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Mornington Crescent",
+                "line": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Kennington",
+                "line": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Camden Town",
+                "line": [
+                    "LondonUnderground/CamdenS",
+                    "LondonUnderground/CamdenN"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

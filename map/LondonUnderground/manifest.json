@@ -55,7 +55,9 @@
         "Heathrow123",
         "Heathrow5",
         "Heathrow4",
-        "PiccadillyN"
+        "PiccadillyN",
+        "NorthernX",
+        "CamdenS"
     ],
     "loadingzones": [],
     "display_name": "London Underground",
@@ -188,6 +190,8 @@
         "Turnham Green",
         "Acton Town",
         "Ealing Common",
-        "Hanger Lane + Park Royal"
+        "Hanger Lane + Park Royal",
+        "Embankment",
+        "Euston"
     ]
 }

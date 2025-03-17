@@ -5,7 +5,7 @@
         872
     ],
     "exits": {
-        "eastbound": {
+        "eastbound (Piccadilly)": {
             "direction": 4,
             "requirements": {
                 "unlocked": [
@@ -15,7 +15,7 @@
             },
             "line": "PiccadillyC"
         },
-        "westbound": {
+        "westbound (Piccadilly)": {
             "direction": 12,
             "requirements": {
                 "unlocked": [
@@ -24,6 +24,26 @@
                 "not": []
             },
             "line": "PiccadillyC"
+        },
+        "northbound (Northern)": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "not": []
+            },
+            "line": "NorthernX"
+        },
+        "southbound (Northern)": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "not": []
+            },
+            "line": "NorthernX"
         }
     },
     "map_text": [
@@ -454,6 +474,88 @@
                 "station": "LondonUnderground/Bounds Green",
                 "line": [
                     "LondonUnderground/PiccadillyN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Embankment",
+                "line": [
+                    "LondonUnderground/NorthernX",
+                    "LondonUnderground/Circle-S"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Charing Cross",
+                "line": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Tottenham Court Road",
+                "line": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Warren Street",
+                "line": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Goodge Street",
+                "line": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Euston",
+                "line": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Mornington Crescent",
+                "line": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Waterloo",
+                "line": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Kennington",
+                "line": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Camden Town",
+                "line": [
+                    "LondonUnderground/CamdenS",
+                    "LondonUnderground/CamdenN"
                 ],
                 "reward": 1
             }

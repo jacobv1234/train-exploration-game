@@ -1,0 +1,110 @@
+{
+    "colour": "#000000",
+    "segments": [
+        [
+            -896,
+            2120,
+            -896,
+            -280
+        ],
+        [
+            -896,
+            -280,
+            -848,
+            -376
+        ],
+        [
+            -848,
+            -376,
+            -848,
+            -504
+        ],
+        [
+            -848,
+            -504,
+            -800,
+            -600
+        ],
+        [
+            -896,
+            2120,
+            -912,
+            2152
+        ],
+        [
+            -912,
+            2152,
+            -968,
+            2208
+        ]
+    ],
+    "corners": [
+        [
+            -896,
+            -280,
+            1,
+            8
+        ],
+        [
+            -848,
+            -376,
+            0,
+            9
+        ],
+        [
+            -848,
+            -504,
+            1,
+            8
+        ],
+        [
+            -800,
+            -600,
+            0,
+            9,
+            "CamdenS"
+        ],
+        [
+            -896,
+            2120,
+            0,
+            9
+        ],
+        [
+            -912,
+            2152,
+            1,
+            10
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/KenningtonN"
+                ]
+            },
+            "stop": [
+                -968,
+                2208,
+                2
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "Leicester Square",
+        "Embankment@Northern",
+        "Charing Cross",
+        "Tottenham Court Road@Northern",
+        "Warren Street",
+        "Goodge Street",
+        "Euston@Northern",
+        "Mornington Crescent",
+        "Waterloo@Northern",
+        "Kennington@Charing Cross Branch"
+    ]
+}

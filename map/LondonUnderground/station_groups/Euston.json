@@ -1,0 +1,17 @@
+{
+    "name": "Euston",
+    "stations": [
+        "Euston@Northern",
+        "Euston Square"
+    ],
+    "connecting_lines": [
+        ["Euston@Northern", "Euston Square", -1128,-128,-896,-280]
+    ],
+
+    "station_lines": {
+        "Euston@Northern": ["LondonUnderground/NorthernX"],
+        "Euston Square": ["LondonUnderground/Circle-N"]
+    },
+
+    "text_priority": ["Euston@Northern"]
+}

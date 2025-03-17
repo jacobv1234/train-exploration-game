@@ -1,0 +1,17 @@
+{
+    "name": "Embankment",
+    "stations": [
+        "Embankment@Northern",
+        "Embankment@Circle"
+    ],
+    "connecting_lines": [
+        ["Embankment@Northern", "Embankment@Circle", -832,1376,-896,1312]
+    ],
+
+    "station_lines": {
+        "Embankment@Northern": ["LondonUnderground/NorthernX"],
+        "Embankment@Circle": ["LondonUnderground/Circle-S"]
+    },
+
+    "text_priority": ["Embankment@Northern","Embankment@Circle"]
+}

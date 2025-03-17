@@ -1,0 +1,17 @@
+{
+    "name": "Tottenham Court Road",
+    "stations": [
+        "Tottenham Court Road@Central",
+        "Tottenham Court Road@Northern"
+    ],
+    "connecting_lines": [
+        ["Tottenham Court Road@Central", "Tottenham Court Road@Northern", -976,552,-896,472]
+    ],
+
+    "station_lines": {
+        "Tottenham Court Road@Central": ["LondonUnderground/CentralC"],
+        "Tottenham Court Road@Northern": ["LondonUnderground/NorthernX"]
+    },
+
+    "text_priority": ["Tottenham Court Road@Central", "Tottenham Court Road@Northern"]
+}

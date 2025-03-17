@@ -1,0 +1,51 @@
+{
+    "colour": "#000000",
+    "segments": [
+        [
+            -800,
+            -600,
+            -800,
+            -728
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "not": [
+                    "LondonUnderground/NorthernY"
+                ]
+            },
+            "corner": [
+                -800,
+                -600,
+                0,
+                9,
+                "NorthernX"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/CamdenN"
+                ]
+            },
+            "stop": [
+                -800,
+                -728,
+                8
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "Camden Town"
+    ]
+}
