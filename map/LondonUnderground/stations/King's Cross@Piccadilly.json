@@ -5,7 +5,7 @@
         -216
     ],
     "exits": {
-        "southbound": {
+        "Southbound (Piccadilly)": {
             "direction": 8,
             "requirements": {
                 "unlocked": [
@@ -38,6 +38,26 @@
                 "not": []
             },
             "line": "PiccadillyN"
+        },
+        "Eastbound (Northern)": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernY"
+                ],
+                "not": []
+            },
+            "line": "NorthernY"
+        },
+        "Westbound (Northern)": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernY"
+                ],
+                "not": []
+            },
+            "line": "NorthernY"
         }
     },
     "map_text": [

@@ -1,8 +1,8 @@
 {
-    "name": "Euston Square",
+    "name": "Moorgate",
     "position": [
-        -1128,
-        -128
+        352,
+        376
     ],
     "exits": {
         "eastbound": {
@@ -26,21 +26,7 @@
             "line": "Circle-N"
         },
         "Northern Line": {
-            "direction": 1,
-            "requirements": {
-                "unlocked": [
-                    "LondonUnderground/NorthernX"
-                ],
-                "not": []
-            },
-            "line": "NorthernX",
-            "new_coords": [
-                -896,
-                -280
-            ]
-        },
-        "Northern Line via Bank": {
-            "direction": 8,
+            "direction": 0,
             "requirements": {
                 "unlocked": [
                     "LondonUnderground/NorthernY"
@@ -49,24 +35,24 @@
             },
             "line": "NorthernY",
             "new_coords": [
-                -752,
-                -280
+                464,
+                264
             ]
         }
     },
     "map_text": [
         {
             "offset": [
-                -8,
+                0,
                 24
             ],
-            "text": "Euston Square",
+            "text": "Moorgate",
             "font": "Arial 10",
             "anchor": "n"
         }
     ],
     "passengers": {
-        "chance_of_any": 75,
+        "chance_of_any": 70,
         "options": [
             {
                 "chance": 3,
@@ -90,14 +76,6 @@
                 "line": [
                     "LondonUnderground/Circle-N",
                     "LondonUnderground/Circle-S"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Moorgate",
-                "line": [
-                    "LondonUnderground/Circle-N"
                 ],
                 "reward": 1
             },
@@ -129,6 +107,14 @@
             {
                 "chance": 1,
                 "station": "LondonUnderground/Great Portland Street",
+                "line": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Euston Square",
                 "line": [
                     "LondonUnderground/Circle-N"
                 ],

@@ -1,0 +1,73 @@
+{
+    "name": "Bank@Northern",
+    "position": [
+        464,
+        800
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernY"
+                ],
+                "not": []
+            },
+            "line": "NorthernY"
+        },
+        "southbound": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernY"
+                ],
+                "not": []
+            },
+            "line": "NorthernY"
+        },
+        "Central Line": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/CentralC"
+                ],
+                "not": []
+            },
+            "line": "CentralC",
+            "new_coords": [
+                392,
+                728
+            ]
+        },
+        "Circle Line": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-S"
+                ],
+                "not": []
+            },
+            "line": "Circle-S",
+            "new_coords": [
+                536,
+                872
+            ]
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                16,
+                -16
+            ],
+            "text": "Bank",
+            "font": "Arial 10",
+            "anchor": "sw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 80,
+        "options": []
+    },
+    "shop": false
+}

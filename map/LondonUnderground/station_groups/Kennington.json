@@ -1,0 +1,17 @@
+{
+    "name": "Kennington",
+    "stations": [
+        "Kennington@Charing Cross Branch",
+        "Kennington@Bank Branch"
+    ],
+    "connecting_lines": [
+        ["Kennington@Charing Cross Branch", "Kennington@Bank Branch", -968,2208,-888,2288]
+    ],
+
+    "station_lines": {
+        "Kennington@Charing Cross Branch": ["LondonUnderground/NorthernX", "LondonUnderground/KenningtonN"],
+        "Kennington@Bank Branch": ["LondonUnderground/NorthernY", "LondonUnderground/KenningtonS"]
+    },
+
+    "text_priority": ["Kennington@Charing Cross Branch","Kennington@Bank Branch"]
+}

@@ -2,16 +2,20 @@
     "name": "Bank",
     "stations": [
         "Bank@Central",
+        "Bank@Northern",
         "Monument"
     ],
     "connecting_lines": [
-        ["Bank@Central", "Monument", 392,728,536,872]
+        ["Bank@Central", "Monument", 392,728,536,872],
+        ["Bank@Northern", "Bank@Central", 464,800,392,728],
+        ["Bank@Northern","Monument",464,800,536,872]
     ],
 
     "station_lines": {
         "Bank@Central": ["LondonUnderground/CentralC"],
-        "Monument": ["LondonUnderground/Circle-S"]
+        "Monument": ["LondonUnderground/Circle-S"],
+        "Bank@Northern": ["LondonUnderground/NorthernY"]
     },
 
-    "text_priority": ["Bank@Central"]
+    "text_priority": ["Bank@Northern","Bank@Central"]
 }

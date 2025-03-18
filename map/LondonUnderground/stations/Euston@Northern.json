@@ -38,6 +38,20 @@
                 -1128,
                 -128
             ]
+        },
+        "Northern Line via Bank": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernY"
+                ],
+                "not": []
+            },
+            "line": "NorthernY",
+            "new_coords": [
+                -752,
+                -280
+            ]
         }
     },
     "map_text": [

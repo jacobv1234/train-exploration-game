@@ -1,0 +1,45 @@
+{
+    "name": "London Bridge",
+    "position": [
+        464,
+        1448
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernY"
+                ],
+                "not": []
+            },
+            "line": "NorthernY"
+        },
+        "southbound": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernY"
+                ],
+                "not": []
+            },
+            "line": "NorthernY"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                16,
+                -16
+            ],
+            "text": "London Bridge",
+            "font": "Arial 10",
+            "anchor": "sw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 75,
+        "options": []
+    },
+    "shop": false
+}

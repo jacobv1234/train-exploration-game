@@ -24,6 +24,20 @@
                 "not": []
             },
             "line": "KenningtonN"
+        },
+        "Northern Line via Bank": {
+            "direction": 2,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernY"
+                ],
+                "not": []
+            },
+            "line": "NorthernY",
+            "new_coords": [
+                -888,
+                2288
+            ]
         }
     },
     "map_text": [

@@ -1,0 +1,59 @@
+{
+    "name": "Kennington@Bank Branch",
+    "position": [
+        -888,
+        2288
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 2,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernY"
+                ],
+                "not": []
+            },
+            "line": "NorthernY"
+        },
+        "southbound": {
+            "direction": 10,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/KenningtonS"
+                ],
+                "not": []
+            },
+            "line": "KenningtonS"
+        },
+        "Northern Line via Charing Cross": {
+            "direction": 2,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "not": []
+            },
+            "line": "NorthernX",
+            "new_coords": [
+                -968,
+                2208
+            ]
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -16,
+                -8
+            ],
+            "text": "Kennington",
+            "font": "Arial 10",
+            "anchor": "se"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 80,
+        "options": []
+    },
+    "shop": false
+}

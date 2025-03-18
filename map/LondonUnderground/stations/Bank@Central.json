@@ -38,6 +38,20 @@
                 536,
                 872
             ]
+        },
+        "Northern Line": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernY"
+                ],
+                "not": []
+            },
+            "line": "NorthernY",
+            "new_coords": [
+                464,
+                800
+            ]
         }
     },
     "map_text": [

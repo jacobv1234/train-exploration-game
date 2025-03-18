@@ -26,6 +26,23 @@
                 9,
                 "NorthernX"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernY"
+                ],
+                "not": [
+                    "LondonUnderground/NorthernX"
+                ]
+            },
+            "corner": [
+                -800,
+                -600,
+                0,
+                7,
+                "NorthernY"
+            ]
         }
     ],
     "stops": [],
@@ -44,7 +61,41 @@
             ]
         }
     ],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernY",
+                    "LondonUnderground/NorthernX"
+                ],
+                "not": []
+            },
+            "coords": [
+                -800,
+                -600
+            ],
+            "approach": {
+                "coords": [
+                    -800,
+                    -696
+                ],
+                "direction": 8,
+                "options": [
+                    "left",
+                    "right"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "NorthernY",
+                "direction": 7
+            },
+            "right": {
+                "line": "NorthernX",
+                "direction": 9
+            }
+        }
+    ],
     "stations": [
         "Camden Town"
     ]

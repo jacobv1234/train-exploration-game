@@ -57,7 +57,9 @@
         "Heathrow4",
         "PiccadillyN",
         "NorthernX",
-        "CamdenS"
+        "CamdenS",
+        "NorthernY",
+        "_white"
     ],
     "loadingzones": [],
     "display_name": "London Underground",

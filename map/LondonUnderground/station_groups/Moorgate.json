@@ -1,0 +1,17 @@
+{
+    "name": "Moorgate",
+    "stations": [
+        "Moorgate@Northern",
+        "Moorgate@Circle"
+    ],
+    "connecting_lines": [
+        ["Moorgate@Northern", "Moorgate@Circle", 464,264,352,376]
+    ],
+
+    "station_lines": {
+        "Moorgate@Northern": ["LondonUnderground/NorthernY"],
+        "Moorgate@Circle": ["LondonUnderground/Circle-N"]
+    },
+
+    "text_priority": ["Moorgate@Northern","Moorgate@Circle"]
+}

@@ -2,16 +2,20 @@
     "name": "Euston",
     "stations": [
         "Euston@Northern",
-        "Euston Square"
+        "Euston Square",
+        "Euston@Victoria"
     ],
     "connecting_lines": [
-        ["Euston@Northern", "Euston Square", -1128,-128,-896,-280]
+        ["Euston@Northern", "Euston Square", -1128,-128,-896,-280],
+        ["Euston@Victoria", "Euston@Northern", -752,-280,-896,-280],
+        ["Euston@Victoria", "Euston Square", -1128, -128, -752, -280]
     ],
 
     "station_lines": {
         "Euston@Northern": ["LondonUnderground/NorthernX"],
-        "Euston Square": ["LondonUnderground/Circle-N"]
+        "Euston Square": ["LondonUnderground/Circle-N"],
+        "Euston@Victoria": ["LondonUnderground/NorthernY"]
     },
 
-    "text_priority": ["Euston@Northern"]
+    "text_priority": ["Euston@Northern", "Euston@Victoria"]
 }
