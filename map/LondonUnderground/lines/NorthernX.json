@@ -77,7 +77,23 @@
             10
         ]
     ],
-    "conditional_corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/KenningtonN"
+                ],
+                "not": []
+            },
+            "corner": [
+                -968,
+                2208,
+                2,
+                10,
+                "KenningtonN"
+            ]
+        }
+    ],
     "stops": [],
     "conditional_stops": [
         {

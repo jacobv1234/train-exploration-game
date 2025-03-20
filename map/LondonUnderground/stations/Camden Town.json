@@ -103,6 +103,7 @@
                 "chance": 2,
                 "station": "LondonUnderground/Euston",
                 "line": [
+                    "LondonUnderground/NorthernY",
                     "LondonUnderground/NorthernX"
                 ],
                 "reward": 1
@@ -127,11 +128,99 @@
                 "chance": 2,
                 "station": "LondonUnderground/Kennington",
                 "line": [
-                    "LondonUnderground/NorthernX"
+                    "LondonUnderground/NorthernY",
+                    "LondonUnderground/NorthernX",
+                    "LondonUnderground/KenningtonN",
+                    "LondonUnderground/KenningtonS"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/King's Cross",
+                "line": [
+                    "LondonUnderground/NorthernY",
+                    "LondonUnderground/PiccadillyC",
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Angel",
+                "line": [
+                    "LondonUnderground/NorthernY"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Old Street",
+                "line": [
+                    "LondonUnderground/NorthernY"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Moorgate",
+                "line": [
+                    "LondonUnderground/NorthernY",
+                    "LondonUnderground/Circle-N"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Bank",
+                "line": [
+                    "LondonUnderground/NorthernY",
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/London Bridge",
+                "line": [
+                    "LondonUnderground/NorthernY"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Borough",
+                "line": [
+                    "LondonUnderground/NorthernY"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Elephant and Castle",
+                "line": [
+                    "LondonUnderground/NorthernY"
                 ],
                 "reward": 1
             }
         ]
     },
-    "shop": false
+    "shop": {
+        "Northern Line via Bank": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "not": [
+                    "LondonUnderground/NorthernY"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/NorthernY",
+                "LondonUnderground/CamdenS"
+            ],
+            "unique_name": "LondonUnderground/Camden Town/Northern Line via Bank"
+        }
+    }
 }

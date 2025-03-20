@@ -1,51 +1,57 @@
 {
-    "name": "Charing Cross",
+    "name": "Battersea Power Station",
     "position": [
-        -896,
-        1208
+        -2328,
+        2176
     ],
     "exits": {
-        "northbound": {
-            "direction": 0,
+        "eastbound": {
+            "direction": 4,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/NorthernX"
+                    "LondonUnderground/Battersea"
                 ],
                 "not": []
             },
-            "line": "NorthernX"
-        },
-        "southbound": {
-            "direction": 8,
-            "requirements": {
-                "unlocked": [
-                    "LondonUnderground/NorthernX"
-                ],
-                "not": []
-            },
-            "line": "NorthernX"
+            "line": "Battersea"
         }
     },
     "map_text": [
         {
             "offset": [
-                16,
-                -16
+                0,
+                -24
             ],
-            "text": "Charing Cross",
+            "text": "Power Station",
             "font": "Arial 10",
-            "anchor": "sw"
+            "anchor": "s"
+        },
+        {
+            "offset": [
+                0,
+                -40
+            ],
+            "text": "Battersea",
+            "font": "Arial 10",
+            "anchor": "s"
         }
     ],
     "passengers": {
-        "chance_of_any": 90,
+        "chance_of_any": 80,
         "options": [
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Nine Elms",
+                "line": [
+                    "LondonUnderground/Battersea"
+                ],
+                "reward": 1
+            },
             {
                 "chance": 2,
                 "station": "LondonUnderground/Leicester Square",
                 "line": [
-                    "LondonUnderground/NorthernX",
-                    "LondonUnderground/PiccadillyC"
+                    "LondonUnderground/NorthernX"
                 ],
                 "reward": 1
             },
@@ -53,8 +59,15 @@
                 "chance": 2,
                 "station": "LondonUnderground/Embankment",
                 "line": [
-                    "LondonUnderground/NorthernX",
-                    "LondonUnderground/Circle-S"
+                    "LondonUnderground/NorthernX"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Charing Cross",
+                "line": [
+                    "LondonUnderground/NorthernX"
                 ],
                 "reward": 1
             },
@@ -99,7 +112,7 @@
                 "reward": 1
             },
             {
-                "chance": 3,
+                "chance": 2,
                 "station": "LondonUnderground/Waterloo",
                 "line": [
                     "LondonUnderground/NorthernX"
@@ -111,31 +124,6 @@
                 "station": "LondonUnderground/Kennington",
                 "line": [
                     "LondonUnderground/NorthernX"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Camden Town",
-                "line": [
-                    "LondonUnderground/CamdenS",
-                    "LondonUnderground/CamdenN"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Nine Elms",
-                "line": [
-                    "LondonUnderground/Battersea"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Battersea Power Station",
-                "line": [
-                    "LondonUnderground/Battersea"
                 ],
                 "reward": 1
             }

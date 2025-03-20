@@ -535,6 +535,22 @@
                     "LondonUnderground/CamdenN"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Nine Elms",
+                "line": [
+                    "LondonUnderground/Battersea"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Battersea Power Station",
+                "line": [
+                    "LondonUnderground/Battersea"
+                ],
+                "reward": 1
             }
         ]
     },

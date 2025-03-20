@@ -1,0 +1,66 @@
+{
+    "colour": "#000000",
+    "segments": [
+        [
+            -968,
+            2208,
+            -1096,
+            2336
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "not": []
+            },
+            "corner": [
+                -968,
+                2208,
+                2,
+                10,
+                "NorthernX"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Battersea"
+                ],
+                "not": [
+                    "LondonUnderground/KenningtonW"
+                ]
+            },
+            "corner": [
+                -1096,
+                2336,
+                2,
+                11,
+                "Battersea"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/NorthernX"
+                ]
+            },
+            "stop": [
+                -968,
+                2208,
+                10
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "Kennington@Charing Cross Branch"
+    ]
+}

@@ -1,29 +1,29 @@
 {
-    "name": "Angel",
+    "name": "Nine Elms",
     "position": [
-        152,
-        -216
+        -1832,
+        2176
     ],
     "exits": {
         "eastbound": {
             "direction": 4,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/NorthernY"
+                    "LondonUnderground/Battersea"
                 ],
                 "not": []
             },
-            "line": "NorthernY"
+            "line": "Battersea"
         },
         "westbound": {
             "direction": 12,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/NorthernY"
+                    "LondonUnderground/Battersea"
                 ],
                 "not": []
             },
-            "line": "NorthernY"
+            "line": "Battersea"
         }
     },
     "map_text": [
@@ -32,30 +32,67 @@
                 0,
                 -24
             ],
-            "text": "Angel",
+            "text": "Nine Elms",
             "font": "Arial 10",
             "anchor": "s"
         }
     ],
     "passengers": {
-        "chance_of_any": 70,
+        "chance_of_any": 80,
         "options": [
             {
                 "chance": 2,
-                "station": "LondonUnderground/Camden Town",
+                "station": "LondonUnderground/Battersea Power Station",
                 "line": [
-                    "LondonUnderground/CamdenS",
-                    "LondonUnderground/CamdenN"
+                    "LondonUnderground/Battersea"
                 ],
                 "reward": 1
             },
             {
-                "chance": 3,
-                "station": "LondonUnderground/King's Cross",
+                "chance": 2,
+                "station": "LondonUnderground/Leicester Square",
                 "line": [
-                    "LondonUnderground/NorthernY",
-                    "LondonUnderground/PiccadillyC",
-                    "LondonUnderground/Circle-N"
+                    "LondonUnderground/NorthernX"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Embankment",
+                "line": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Charing Cross",
+                "line": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Tottenham Court Road",
+                "line": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Warren Street",
+                "line": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Goodge Street",
+                "line": [
+                    "LondonUnderground/NorthernX"
                 ],
                 "reward": 1
             },
@@ -63,58 +100,23 @@
                 "chance": 2,
                 "station": "LondonUnderground/Euston",
                 "line": [
-                    "LondonUnderground/NorthernY",
                     "LondonUnderground/NorthernX"
                 ],
                 "reward": 1
             },
             {
                 "chance": 1,
-                "station": "LondonUnderground/Old Street",
+                "station": "LondonUnderground/Mornington Crescent",
                 "line": [
-                    "LondonUnderground/NorthernY"
+                    "LondonUnderground/NorthernX"
                 ],
                 "reward": 1
             },
             {
                 "chance": 2,
-                "station": "LondonUnderground/Moorgate",
+                "station": "LondonUnderground/Waterloo",
                 "line": [
-                    "LondonUnderground/NorthernY",
-                    "LondonUnderground/Circle-N"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Bank",
-                "line": [
-                    "LondonUnderground/NorthernY",
-                    "LondonUnderground/CentralC"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/London Bridge",
-                "line": [
-                    "LondonUnderground/NorthernY"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Borough",
-                "line": [
-                    "LondonUnderground/NorthernY"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Elephant and Castle",
-                "line": [
-                    "LondonUnderground/NorthernY"
+                    "LondonUnderground/NorthernX"
                 ],
                 "reward": 1
             },
@@ -122,10 +124,7 @@
                 "chance": 2,
                 "station": "LondonUnderground/Kennington",
                 "line": [
-                    "LondonUnderground/NorthernY",
-                    "LondonUnderground/NorthernX",
-                    "LondonUnderground/KenningtonN",
-                    "LondonUnderground/KenningtonS"
+                    "LondonUnderground/NorthernX"
                 ],
                 "reward": 1
             }
