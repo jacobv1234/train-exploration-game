@@ -327,7 +327,7 @@
             "cost": 1,
             "requirements": {
                 "unlocked": [
-                    "EastAnglia/Billericay"
+                    "EastAnglia/Wickford"
                 ],
                 "not": [
                     "EastAnglia/Southminster"

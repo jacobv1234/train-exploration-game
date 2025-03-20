@@ -51,6 +51,7 @@ class Map():
             self.station_groups[group] = StationGroup(group, canvas, name, unlocked_lines)
 
         canvas.tag_lower(self.water)
+        self.manifest = manifest
 
     def check_corners(self, x, y, line):
         return self.lines[line].check_corners(x,y)

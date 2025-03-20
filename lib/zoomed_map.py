@@ -1,6 +1,6 @@
 from tkinter import *
 from lib.map import Map
-from lib.helper import get_line_poly_coords
+from lib.helper import get_line_poly_coords, get_complete_percent
 from lib.passengers import Passengers
 from json import loads
 from lib.audio import AudioHandler
@@ -13,6 +13,11 @@ class ZoomedMap:
         water_coords = [coord // 4 for coord in water_coords]
         self.water = self.c.create_polygon(water_coords, fill='white', outline='')
         self.station_name_popup = self.c.create_text(width/2,50,fill='black', font='Arial 25', text='', anchor='n')
+
+        # get the maximum number of lines in a map
+        complete_percent = get_complete_percent(map)
+        self.complete_message = self.c.create_text(width - 50, height - 50, fill='black', font = 'Arial 20', text = f'Routes unlocked in this area: {complete_percent}%', anchor = 'se')
+        
         self.stations = []
         self.limits = scroll
         self.audio = audio
@@ -82,6 +87,8 @@ class ZoomedMap:
         self.c.yview_scroll(train_y//4, 'units')
         self.c.move(self.station_name_popup,-width//2,-height//2)
         self.c.move(self.station_name_popup,train_x//4,train_y//4)
+        self.c.move(self.complete_message,-width//2,-height//2)
+        self.c.move(self.complete_message,train_x//4,train_y//4)
 
         self.screen_left = (train_x // 4) - (width//2)
         self.screen_right = (train_x // 4) + (width//2)
@@ -92,12 +99,15 @@ class ZoomedMap:
         self.scroll_into_bounds()
 
         self.c.tag_raise(self.station_name_popup)
+        self.c.tag_raise(self.complete_message)
         self.c.tag_lower(self.water)
+
     
     def scroll_left(self,event):
         if self.screen_left > self.limits['left']:
             self.c.xview_scroll(-40, 'units')
             self.c.move(self.station_name_popup,-40,0)
+            self.c.move(self.complete_message, -40,0)
             self.screen_left -= 40
             self.screen_right -= 40
         
@@ -105,6 +115,7 @@ class ZoomedMap:
         if self.screen_right < self.limits['right']:
             self.c.xview_scroll(40,'units')
             self.c.move(self.station_name_popup,40,0)
+            self.c.move(self.complete_message, 40,0)
             self.screen_left += 40
             self.screen_right += 40
 
@@ -112,6 +123,7 @@ class ZoomedMap:
         if self.screen_top > self.limits['top']:
             self.c.yview_scroll(-40, 'units')
             self.c.move(self.station_name_popup,0,-40)
+            self.c.move(self.complete_message, 0, -40)
             self.screen_top -= 40
             self.screen_bottom -= 40
     
@@ -119,6 +131,7 @@ class ZoomedMap:
         if self.screen_bottom < self.limits['bottom']:
             self.c.yview_scroll(40,'units')
             self.c.move(self.station_name_popup,0,40)
+            self.c.move(self.complete_message, 0, 40)
             self.screen_top += 40
             self.screen_bottom += 40
     
@@ -167,6 +180,7 @@ class ZoomedMap:
             difference = self.limits['left'] - self.screen_left 
             self.c.xview_scroll(difference, 'units')
             self.c.move(self.station_name_popup,difference,0)
+            self.c.move(self.complete_message, difference,0)
             self.screen_left += difference
             self.screen_right += difference
 
@@ -174,6 +188,7 @@ class ZoomedMap:
             difference = self.limits['right'] - self.screen_right
             self.c.xview_scroll(difference, 'units')
             self.c.move(self.station_name_popup,difference,0)
+            self.c.move(self.complete_message, difference,0)
             self.screen_left += difference
             self.screen_right += difference
         
@@ -182,6 +197,7 @@ class ZoomedMap:
             difference = self.limits['bottom'] - self.screen_bottom
             self.c.yview_scroll(difference,'units')
             self.c.move(self.station_name_popup,0,difference)
+            self.c.move(self.complete_message,0,difference)
             self.screen_top += difference
             self.screen_bottom += difference
 
@@ -189,6 +205,7 @@ class ZoomedMap:
             difference = self.limits['top'] - self.screen_top
             self.c.yview_scroll(difference,'units')
             self.c.move(self.station_name_popup,0,difference)
+            self.c.move(self.complete_message,0,difference)
             self.screen_top += difference
             self.screen_bottom += difference
 

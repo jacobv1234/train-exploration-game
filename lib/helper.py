@@ -2,6 +2,7 @@
 
 from tkinter import *
 from json import loads
+from math import floor
 
 from PIL import Image, ImageTk
 
@@ -190,3 +191,14 @@ def short_line_coord_generator(x: int, y: int, dir: int):
         case 15:
             coords.extend([x-22.36, y-44.72])
     return tuple(coords)
+
+
+# get the completion % for a map
+def get_complete_percent(area):
+    lines = area.manifest['lines']
+    unlocked = 0
+    for line in list(area.lines.keys()):
+        if line in lines:
+            unlocked += 1
+    # the -1 comes from the test line
+    return floor((unlocked/(len(lines)-1))*100)
