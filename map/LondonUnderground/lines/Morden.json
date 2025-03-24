@@ -1,0 +1,104 @@
+{
+    "colour": "#000000",
+    "segments": [
+        [
+            -1128,
+            2448,
+            -2760,
+            4080
+        ]
+    ],
+    "corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/KenningtonW"
+                ],
+                "not": [
+                    "LondonUnderground/KenningtonS"
+                ]
+            },
+            "corner": [
+                -1128,
+                2448,
+                1,
+                10,
+                "KenningtonW"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/KenningtonS"
+                ],
+                "not": [
+                    "LondonUnderground/KenningtonW"
+                ]
+            },
+            "corner": [
+                -1128,
+                2448,
+                3,
+                10,
+                "KenningtonS"
+            ]
+        }
+    ],
+    "stops": [
+        [
+            -2760,
+            4080,
+            2
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/KenningtonS",
+                    "LondonUnderground/KenningtonW"
+                ],
+                "not": []
+            },
+            "coords": [
+                -1128,
+                2448
+            ],
+            "approach": {
+                "coords": [
+                    -1232,
+                    2552
+                ],
+                "direction": 2,
+                "options": [
+                    "left",
+                    "right"
+                ],
+                "default": 0
+            },
+            "left": {
+                "line": "KenningtonW",
+                "direction": 1
+            },
+            "right": {
+                "line": "KenningtonS",
+                "direction": 3
+            }
+        }
+    ],
+    "stations": [
+        "Oval",
+        "Morden",
+        "Stockwell",
+        "South Wimbledon",
+        "Balham",
+        "Clapham Common",
+        "Clapham South",
+        "Clapham North",
+        "Tooting Broadway",
+        "Tooting Bec",
+        "Colliers Wood"
+    ]
+}

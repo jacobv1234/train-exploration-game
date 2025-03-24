@@ -1,0 +1,45 @@
+{
+    "name": "Stockwell",
+    "position": [
+        -1384,
+        2704
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 2,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Morden"
+                ],
+                "not": []
+            },
+            "line": "Morden"
+        },
+        "southbound": {
+            "direction": 10,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Morden"
+                ],
+                "not": []
+            },
+            "line": "Morden"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -24,
+                0
+            ],
+            "text": "Stockwell",
+            "font": "Arial 10",
+            "anchor": "e"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 75,
+        "options": []
+    },
+    "shop": false
+}

@@ -61,7 +61,10 @@
         "NorthernY",
         "_white",
         "KenningtonN",
-        "Battersea"
+        "Battersea",
+        "KenningtonW",
+        "KenningtonS",
+        "Morden"
     ],
     "loadingzones": [],
     "display_name": "London Underground",
@@ -227,6 +230,7 @@
         "Hanger Lane + Park Royal",
         "Embankment",
         "Euston",
-        "Kennington"
+        "Kennington",
+        "Tottenham Court Road"
     ]
 }

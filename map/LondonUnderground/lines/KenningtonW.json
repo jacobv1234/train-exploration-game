@@ -1,0 +1,25 @@
+{
+    "colour": "#000000",
+    "segments": [
+        [
+            -1096,
+            2336,
+            -1112,
+            2368
+        ]
+    ],
+    "corners": [
+        [
+            -1096,
+            2336,
+            2,
+            9,
+            "KenningtonN"
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": []
+}

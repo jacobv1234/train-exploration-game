@@ -6,9 +6,34 @@
             2208,
             -1096,
             2336
+        ],
+        [
+            -1112,
+            2368,
+            -1112,
+            2416
+        ],
+        [
+            -1112,
+            2416,
+            -1128,
+            2448
         ]
     ],
-    "corners": [],
+    "corners": [
+        [
+            -1112,
+            2368,
+            1,
+            8
+        ],
+        [
+            -1112,
+            2416,
+            0,
+            9
+        ]
+    ],
     "conditional_corners": [
         {
             "requirements": {
@@ -41,6 +66,23 @@
                 11,
                 "Battersea"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/KenningtonW"
+                ],
+                "not": [
+                    "LondonUnderground/Battersea"
+                ]
+            },
+            "corner": [
+                -1096,
+                2336,
+                2,
+                9,
+                "KenningtonW"
+            ]
         }
     ],
     "stops": [],
@@ -59,7 +101,41 @@
             ]
         }
     ],
-    "junctions": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/KenningtonW",
+                    "LondonUnderground/Battersea"
+                ],
+                "not": []
+            },
+            "coords": [
+                -1096,
+                2336
+            ],
+            "approach": {
+                "coords": [
+                    -992,
+                    2232
+                ],
+                "direction": 10,
+                "options": [
+                    "left",
+                    "right"
+                ],
+                "default": 0
+            },
+            "left": {
+                "line": "KenningtonW",
+                "direction": 9
+            },
+            "right": {
+                "line": "Battersea",
+                "direction": 11
+            }
+        }
+    ],
     "stations": [
         "Kennington@Charing Cross Branch"
     ]

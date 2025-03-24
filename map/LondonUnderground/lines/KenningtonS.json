@@ -1,0 +1,86 @@
+{
+    "colour": "#000000",
+    "segments": [
+        [
+            -888,
+            2288,
+            -1016,
+            2416
+        ],
+        [
+            -1016,
+            2416,
+            -1048,
+            2432
+        ],
+        [
+            -1048,
+            2432,
+            -1096,
+            2432
+        ],
+        [
+            -1096,
+            2432,
+            -1128,
+            2448
+        ]
+    ],
+    "corners": [
+        [
+            -1016,
+            2416,
+            2,
+            11
+        ],
+        [
+            -1048,
+            2432,
+            3,
+            12
+        ],
+        [
+            -1096,
+            2432,
+            4,
+            11
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernY"
+                ],
+                "not": []
+            },
+            "corner": [
+                -888,
+                2288,
+                2,
+                10,
+                "NorthernY"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/NorthernY"
+                ]
+            },
+            "stop": [
+                -888,
+                2288,
+                10
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "Kennington@Bank Branch"
+    ]
+}

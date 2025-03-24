@@ -1,0 +1,45 @@
+{
+    "name": "Balham",
+    "position": [
+        -2016,
+        3336
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 2,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Morden"
+                ],
+                "not": []
+            },
+            "line": "Morden"
+        },
+        "southbound": {
+            "direction": 10,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Morden"
+                ],
+                "not": []
+            },
+            "line": "Morden"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -16,
+                -8
+            ],
+            "text": "Balham",
+            "font": "Arial 10",
+            "anchor": "se"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 70,
+        "options": []
+    },
+    "shop": false
+}

@@ -1,0 +1,45 @@
+{
+    "name": "South Wimbledon",
+    "position": [
+        -2552,
+        3872
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 2,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Morden"
+                ],
+                "not": []
+            },
+            "line": "Morden"
+        },
+        "southbound": {
+            "direction": 10,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Morden"
+                ],
+                "not": []
+            },
+            "line": "Morden"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                -16,
+                -8
+            ],
+            "text": "South Wimbledon",
+            "font": "Arial 10",
+            "anchor": "se"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 65,
+        "options": []
+    },
+    "shop": false
+}
