@@ -140,3 +140,6 @@ LondonUnderground/_white
 LondonUnderground/NorthernY
 LondonUnderground/KenningtonN
 LondonUnderground/Battersea
+LondonUnderground/KenningtonS
+LondonUnderground/KenningtonW
+LondonUnderground/Morden

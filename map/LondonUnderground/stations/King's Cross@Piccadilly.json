@@ -577,6 +577,94 @@
                     "LondonUnderground/KenningtonS"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Oval",
+                "line": [
+                    "LondonUnderground/Morden"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Morden",
+                "line": [
+                    "LondonUnderground/Morden"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Stockwell",
+                "line": [
+                    "LondonUnderground/Morden"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/South Wimbledon",
+                "line": [
+                    "LondonUnderground/Morden"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Balham",
+                "line": [
+                    "LondonUnderground/Morden"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Clapham Common",
+                "line": [
+                    "LondonUnderground/Morden"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Clapham South",
+                "line": [
+                    "LondonUnderground/Morden"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Clapham North",
+                "line": [
+                    "LondonUnderground/Morden"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Tooting Broadway",
+                "line": [
+                    "LondonUnderground/Morden"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Tooting Bec",
+                "line": [
+                    "LondonUnderground/Morden"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Colliers Wood",
+                "line": [
+                    "LondonUnderground/Morden"
+                ],
+                "reward": 1
             }
         ]
     },
