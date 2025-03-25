@@ -65,10 +65,15 @@ class ZoomedMap:
                             # find the missing suffix
                             lines = passenger['line']
                             for line in lines:
-                                stations_on_line = map.lines[line.split('/')[1]].stations
-                                for station in stations:
-                                    if station.split('@')[0] == name:
-                                        self.create_passenger_marker(station_map, station)
+                                if '/' in line and line.split('/')[1] in list(map.lines.keys()):
+                                    stations_on_line = map.lines[line.split('/')[1]].stations
+                                elif line in list(map.lines.keys()):
+                                    stations_on_line = map.lines[line].stations
+                                else:
+                                    stations_on_line = []
+                                for station in stations_on_line:
+                                    if station.name.split('@')[0] == name:
+                                        self.create_passenger_marker(station_map, station.name)
 
         
         
