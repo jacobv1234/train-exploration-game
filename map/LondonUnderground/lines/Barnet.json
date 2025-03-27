@@ -1,0 +1,36 @@
+{
+    "colour": "#000000",
+    "segments": [
+        [
+            -488,
+            -2608,
+            -488,
+            -3312
+        ]
+    ],
+    "corners": [
+        [
+            -488,
+            -2608,
+            0,
+            8,
+            "Highgate"
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [
+        [
+            -488,
+            -3312,
+            8
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "West Finchley",
+        "Woodside Park",
+        "Totteridge & Whetstone",
+        "High Barnet"
+    ]
+}

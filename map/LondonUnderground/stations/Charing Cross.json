@@ -62,7 +62,8 @@
                 "chance": 2,
                 "station": "LondonUnderground/Tottenham Court Road",
                 "line": [
-                    "LondonUnderground/NorthernX"
+                    "LondonUnderground/NorthernX",
+                    "LondonUnderground/CentralC"
                 ],
                 "reward": 1
             },
@@ -86,7 +87,8 @@
                 "chance": 2,
                 "station": "LondonUnderground/Euston",
                 "line": [
-                    "LondonUnderground/NorthernX"
+                    "LondonUnderground/NorthernX",
+                    "LondonUnderground/NorthernY"
                 ],
                 "reward": 1
             },
@@ -99,7 +101,7 @@
                 "reward": 1
             },
             {
-                "chance": 3,
+                "chance": 2,
                 "station": "LondonUnderground/Waterloo",
                 "line": [
                     "LondonUnderground/NorthernX"
@@ -110,7 +112,10 @@
                 "chance": 2,
                 "station": "LondonUnderground/Kennington",
                 "line": [
-                    "LondonUnderground/NorthernX"
+                    "LondonUnderground/NorthernX",
+                    "LondonUnderground/NorthernY",
+                    "LondonUnderground/KenningtonN",
+                    "LondonUnderground/KenningtonS"
                 ],
                 "reward": 1
             },
@@ -118,13 +123,13 @@
                 "chance": 2,
                 "station": "LondonUnderground/Camden Town",
                 "line": [
-                    "LondonUnderground/CamdenS",
-                    "LondonUnderground/CamdenN"
+                    "LondonUnderground/CamdenN",
+                    "LondonUnderground/CamdenS"
                 ],
                 "reward": 1
             },
             {
-                "chance": 2,
+                "chance": 1,
                 "station": "LondonUnderground/Nine Elms",
                 "line": [
                     "LondonUnderground/Battersea"
@@ -224,6 +229,158 @@
                 "station": "LondonUnderground/Colliers Wood",
                 "line": [
                     "LondonUnderground/Morden"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/West Finchley",
+                "line": [
+                    "LondonUnderground/Barnet"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Woodside Park",
+                "line": [
+                    "LondonUnderground/Barnet"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Totteridge & Whetstone",
+                "line": [
+                    "LondonUnderground/Barnet"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/High Barnet",
+                "line": [
+                    "LondonUnderground/Barnet"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Kentish Town",
+                "line": [
+                    "LondonUnderground/Highgate"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Tufnell Park",
+                "line": [
+                    "LondonUnderground/Highgate"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Archway",
+                "line": [
+                    "LondonUnderground/Highgate"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Highgate",
+                "line": [
+                    "LondonUnderground/Highgate"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/East Finchley",
+                "line": [
+                    "LondonUnderground/Highgate"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Finchley Central",
+                "line": [
+                    "LondonUnderground/Highgate"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Chalk Farm",
+                "line": [
+                    "LondonUnderground/Edgware"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Belsize Park",
+                "line": [
+                    "LondonUnderground/Edgware"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Hampstead",
+                "line": [
+                    "LondonUnderground/Edgware"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Golders Green",
+                "line": [
+                    "LondonUnderground/Edgware"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Brent Cross",
+                "line": [
+                    "LondonUnderground/Edgware"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Hendon Central",
+                "line": [
+                    "LondonUnderground/Edgware"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Edgware",
+                "line": [
+                    "LondonUnderground/Edgware"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Burnt Oak",
+                "line": [
+                    "LondonUnderground/Edgware"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Colindale",
+                "line": [
+                    "LondonUnderground/Edgware"
                 ],
                 "reward": 1
             }

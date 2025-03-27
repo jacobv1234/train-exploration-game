@@ -1,0 +1,45 @@
+{
+    "colour": "#000000",
+    "segments": [
+        [
+            -488,
+            -2608,
+            -504,
+            -2640
+        ],
+        [
+            -504,
+            -2640,
+            -664,
+            -2800
+        ]
+    ],
+    "corners": [
+        [
+            -488,
+            -2608,
+            15,
+            8,
+            "Highgate"
+        ],
+        [
+            -504,
+            -2640,
+            14,
+            7
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [
+        [
+            -664,
+            -2800,
+            6
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Mill Hill East"
+    ]
+}

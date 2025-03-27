@@ -64,7 +64,12 @@
         "Battersea",
         "KenningtonW",
         "KenningtonS",
-        "Morden"
+        "Morden",
+        "CamdenN",
+        "Highgate",
+        "Barnet",
+        "MillHillEast",
+        "Edgware"
     ],
     "loadingzones": [],
     "display_name": "London Underground",

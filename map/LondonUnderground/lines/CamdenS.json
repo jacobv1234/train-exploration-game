@@ -43,6 +43,21 @@
                 7,
                 "NorthernY"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/CamdenN"
+                ],
+                "not": []
+            },
+            "corner": [
+                -800,
+                -728,
+                0,
+                8,
+                "CamdenN"
+            ]
         }
     ],
     "stops": [],

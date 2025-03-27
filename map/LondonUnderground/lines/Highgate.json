@@ -1,0 +1,137 @@
+{
+    "colour": "#000000",
+    "segments": [
+        [
+            -800,
+            -880,
+            -784,
+            -912
+        ],
+        [
+            -784,
+            -912,
+            -504,
+            -1192
+        ],
+        [
+            -504,
+            -1192,
+            -488,
+            -1224
+        ],
+        [
+            -488,
+            -1224,
+            -488,
+            -2608
+        ]
+    ],
+    "corners": [
+        [
+            -800,
+            -880,
+            1,
+            8,
+            "CamdenN"
+        ],
+        [
+            -784,
+            -912,
+            2,
+            9
+        ],
+        [
+            -504,
+            -1192,
+            1,
+            10
+        ],
+        [
+            -488,
+            -1224,
+            0,
+            9
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Barnet"
+                ],
+                "not": [
+                    "LondonUnderground/MillHillEast"
+                ]
+            },
+            "corner": [
+                -488,
+                -2608,
+                0,
+                8,
+                "Barnet"
+            ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/MillHillEast"
+                ],
+                "not": [
+                    "LondonUnderground/Barnet"
+                ]
+            },
+            "corner": [
+                -488,
+                -2608,
+                15,
+                8,
+                "MillHillEast"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [],
+    "junctions": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/MillHillEast",
+                    "LondonUnderground/Barnet"
+                ],
+                "not": []
+            },
+            "coords": [
+                -488,
+                -2608
+            ],
+            "approach": {
+                "coords": [
+                    -488,
+                    -2464
+                ],
+                "direction": 0,
+                "options": [
+                    "left",
+                    "straight"
+                ],
+                "default": 1
+            },
+            "left": {
+                "line": "MillHillEast",
+                "direction": 15
+            },
+            "straight": {
+                "line": "Barnet",
+                "direction": 0
+            }
+        }
+    ],
+    "stations": [
+        "Kentish Town",
+        "Tufnell Park",
+        "Archway",
+        "Highgate",
+        "East Finchley",
+        "Finchley Central"
+    ]
+}

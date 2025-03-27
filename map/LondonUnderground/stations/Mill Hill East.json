@@ -1,0 +1,93 @@
+{
+    "name": "Mill Hill East",
+    "position": [
+        -664,
+        -2800
+    ],
+    "exits": {
+        "southbound": {
+            "direction": 6,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/MillHillEast"
+                ],
+                "not": []
+            },
+            "line": "MillHillEast"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                0,
+                -24
+            ],
+            "text": "Mill Hill East",
+            "font": "Arial 10",
+            "anchor": "s"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 20,
+        "options": [
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Kentish Town",
+                "line": [
+                    "LondonUnderground/Highgate"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Tufnell Park",
+                "line": [
+                    "LondonUnderground/Highgate"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Archway",
+                "line": [
+                    "LondonUnderground/Highgate"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Highgate",
+                "line": [
+                    "LondonUnderground/Highgate"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/East Finchley",
+                "line": [
+                    "LondonUnderground/Highgate"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Finchley Central",
+                "line": [
+                    "LondonUnderground/Highgate"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Camden Town",
+                "line": [
+                    "LondonUnderground/CamdenS",
+                    "LondonUnderground/CamdenN"
+                ],
+                "reward": 1
+            }
+        ]
+    },
+    "shop": false
+}

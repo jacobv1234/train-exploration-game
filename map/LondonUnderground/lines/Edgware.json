@@ -1,0 +1,53 @@
+{
+    "colour": "#000000",
+    "segments": [
+        [
+            -800,
+            -880,
+            -816,
+            -912
+        ],
+        [
+            -816,
+            -912,
+            -2800,
+            -2896
+        ]
+    ],
+    "corners": [
+        [
+            -800,
+            -880,
+            15,
+            8,
+            "CamdenN"
+        ],
+        [
+            -816,
+            -912,
+            14,
+            7
+        ]
+    ],
+    "conditional_corners": [],
+    "stops": [
+        [
+            -2800,
+            -2896,
+            6
+        ]
+    ],
+    "conditional_stops": [],
+    "junctions": [],
+    "stations": [
+        "Chalk Farm",
+        "Belsize Park",
+        "Hampstead",
+        "Golders Green",
+        "Brent Cross",
+        "Hendon Central",
+        "Edgware",
+        "Burnt Oak",
+        "Colindale"
+    ]
+}
