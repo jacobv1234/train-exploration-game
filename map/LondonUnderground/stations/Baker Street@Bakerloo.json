@@ -1,0 +1,59 @@
+{
+    "name": "Baker Street@Bakerloo",
+    "position": [
+        -1944,
+        48
+    ],
+    "exits": {
+        "northbound (Bakerloo)": {
+            "direction": 14,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/BakerlooC"
+                ],
+                "not": []
+            },
+            "line": "BakerlooC"
+        },
+        "southbound (Bakerloo)": {
+            "direction": 6,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/BakerlooC"
+                ],
+                "not": []
+            },
+            "line": "BakerlooC"
+        },
+        "Circle Line": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Circle-N"
+                ],
+                "not": []
+            },
+            "line": "Circle-N",
+            "new_coords": [
+                -1768,
+                -128
+            ]
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                24,
+                0
+            ],
+            "text": "Baker Street",
+            "font": "Arial 10",
+            "anchor": "w"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 75,
+        "options": []
+    },
+    "shop": false
+}

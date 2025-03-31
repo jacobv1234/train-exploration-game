@@ -10,7 +10,7 @@
 
     "station_lines": {
         "Embankment@Northern": ["LondonUnderground/NorthernX"],
-        "Embankment@Circle": ["LondonUnderground/Circle-S"]
+        "Embankment@Circle": ["LondonUnderground/Circle-S", "LondonUnderground/BakerlooC"]
     },
 
     "text_priority": ["Embankment@Northern","Embankment@Circle"]

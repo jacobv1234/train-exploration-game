@@ -24,6 +24,20 @@
                 "not": []
             },
             "line": "NorthernX"
+        },
+        "Bakerloo Line": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/BakerlooC"
+                ],
+                "not": []
+            },
+            "line": "BakerlooC",
+            "new_coords": [
+                -832,
+                1792
+            ]
         }
     },
     "map_text": [

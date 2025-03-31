@@ -1,0 +1,45 @@
+{
+    "name": "Regent's Park",
+    "position": [
+        -1720,
+        272
+    ],
+    "exits": {
+        "northbound": {
+            "direction": 14,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/BakerlooC"
+                ],
+                "not": []
+            },
+            "line": "BakerlooC"
+        },
+        "southbound": {
+            "direction": 6,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/BakerlooC"
+                ],
+                "not": []
+            },
+            "line": "BakerlooC"
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                16,
+                -8
+            ],
+            "text": "Regent's Park",
+            "font": "Arial 10",
+            "anchor": "sw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 70,
+        "options": []
+    },
+    "shop": false
+}

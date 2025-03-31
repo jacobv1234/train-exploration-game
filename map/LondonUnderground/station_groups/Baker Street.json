@@ -1,0 +1,17 @@
+{
+    "name": "Baker Street",
+    "stations": [
+        "Baker Street@Circle",
+        "Baker Street@Bakerloo"
+    ],
+    "connecting_lines": [
+        ["Baker Street@Circle", "Baker Street@Bakerloo", -1944,48,-1768,-128]
+    ],
+
+    "station_lines": {
+        "Baker Street@Circle": ["LondonUnderground/Circle-N", "LondonUnderground/Circle-J1"],
+        "Baker Street@Bakerloo": ["LondonUnderground/BakerlooC"]
+    },
+
+    "text_priority": ["Baker Street@Circle", "Baker Street@Bakerloo"]
+}

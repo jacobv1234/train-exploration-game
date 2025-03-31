@@ -1,0 +1,17 @@
+{
+    "name": "Waterloo",
+    "stations": [
+        "Waterloo@Northern",
+        "Waterloo@Bakerloo"
+    ],
+    "connecting_lines": [
+        ["Waterloo@Northern", "Waterloo@Bakerloo", -904,1792,-832,1792]
+    ],
+
+    "station_lines": {
+        "Waterloo@Northern": ["LondonUnderground/NorthernX"],
+        "Waterloo@Bakerloo": ["LondonUnderground/BakerlooC"]
+    },
+
+    "text_priority": ["Waterloo@Bakerloo", "Waterloo@Northern"]
+}

@@ -1,0 +1,59 @@
+{
+    "name": "Waterloo@Bakerloo",
+    "position": [
+        -832,
+        1792
+    ],
+    "exits": {
+        "northbound (Bakerloo)": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/BakerlooC"
+                ],
+                "not": []
+            },
+            "line": "BakerlooC"
+        },
+        "southbound (Bakerloo)": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/BakerlooC"
+                ],
+                "not": []
+            },
+            "line": "BakerlooC"
+        },
+        "Northern line": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/NorthernX"
+                ],
+                "not": []
+            },
+            "line": "NorthernX",
+            "new_coords": [
+                -896,
+                1792
+            ]
+        }
+    },
+    "map_text": [
+        {
+            "offset": [
+                16,
+                -16
+            ],
+            "text": "Waterloo",
+            "font": "Arial 10",
+            "anchor": "sw"
+        }
+    ],
+    "passengers": {
+        "chance_of_any": 80,
+        "options": []
+    },
+    "shop": false
+}

@@ -5,7 +5,7 @@
         872
     ],
     "exits": {
-        "eastbound": {
+        "eastbound (Piccadilly)": {
             "direction": 4,
             "requirements": {
                 "unlocked": [
@@ -15,7 +15,7 @@
             },
             "line": "PiccadillyC"
         },
-        "westbound": {
+        "westbound (Piccadilly)": {
             "direction": 12,
             "requirements": {
                 "unlocked": [
@@ -24,6 +24,26 @@
                 "not": []
             },
             "line": "PiccadillyC"
+        },
+        "northbound (Bakerloo)": {
+            "direction": 14,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/BakerlooC"
+                ],
+                "not": []
+            },
+            "line": "BakerlooC"
+        },
+        "southbound (Bakerloo)": {
+            "direction": 6,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/BakerlooC"
+                ],
+                "not": []
+            },
+            "line": "BakerlooC"
         }
     },
     "map_text": [

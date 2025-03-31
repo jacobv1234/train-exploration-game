@@ -5,7 +5,7 @@
         1376
     ],
     "exits": {
-        "eastbound": {
+        "eastbound (Circle)": {
             "direction": 4,
             "requirements": {
                 "unlocked": [
@@ -15,7 +15,7 @@
             },
             "line": "Circle-S"
         },
-        "westbound": {
+        "westbound (Circle)": {
             "direction": 12,
             "requirements": {
                 "unlocked": [
@@ -38,6 +38,26 @@
                 -896,
                 1312
             ]
+        },
+        "Northbound (Bakerloo)": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/BakerlooC"
+                ],
+                "not": []
+            },
+            "line": "BakerlooC"
+        },
+        "southbound (Bakerloo)": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/BakerlooC"
+                ],
+                "not": []
+            },
+            "line": "BakerlooC"
         }
     },
     "map_text": [

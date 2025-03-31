@@ -69,7 +69,8 @@
         "Highgate",
         "Barnet",
         "MillHillEast",
-        "Edgware"
+        "Edgware",
+        "BakerlooC"
     ],
     "loadingzones": [],
     "display_name": "London Underground",
@@ -236,6 +237,9 @@
         "Embankment",
         "Euston",
         "Kennington",
-        "Tottenham Court Road"
+        "Tottenham Court Road",
+        "Waterloo",
+        "Moorgate",
+        "Baker Street"
     ]
 }
