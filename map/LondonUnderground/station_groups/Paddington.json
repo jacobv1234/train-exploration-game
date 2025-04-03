@@ -2,16 +2,20 @@
     "name": "Paddington",
     "stations": [
         "Paddington@H+C",
-        "Paddington@District"
+        "Paddington@District",
+        "Paddington@Bakerloo"
     ],
     "connecting_lines": [
-        ["Paddington@H+C", "Paddington@District", -2960,-104,-2752,120]
+        ["Paddington@H+C", "Paddington@District", -2960,-104,-2752,120],
+        ["Paddington@Bakerloo", "Paddington@H+C", -3064,-208,-2960,-104],
+        ["Paddington@Bakerloo", "Paddington@District", -3064,-208,-2752,120]
     ],
 
     "station_lines": {
         "Paddington@H+C": ["LondonUnderground/H+C"],
-        "Paddington@District": ["LondonUnderground/Circle-C"]
+        "Paddington@District": ["LondonUnderground/Circle-C"],
+        "Paddington@Bakerloo": ["LondonUnderground/BakerlooN"]
     },
 
-    "text_priority": ["Paddington@H+C","Paddington@District"]
+    "text_priority": ["Paddington@Bakerloo","Paddington@H+C","Paddington@District"]
 }

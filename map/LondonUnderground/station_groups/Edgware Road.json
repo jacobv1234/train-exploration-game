@@ -2,7 +2,8 @@
     "name": "Edgware Road",
     "stations": [
         "Edgware Road@H+C",
-        "Edgware Road@District"
+        "Edgware Road@District",
+        "Edgware Road@Bakerloo"
     ],
     "connecting_lines": [
         ["Edgware Road@H+C", "Edgware Road@District", -2384,-128,-2384,24]
@@ -10,7 +11,8 @@
 
     "station_lines": {
         "Edgware Road@H+C": ["LondonUnderground/H+C"],
-        "Edgware Road@District": ["LondonUnderground/Circle-C", "LondonUnderground/Circle-J3"]
+        "Edgware Road@District": ["LondonUnderground/Circle-C", "LondonUnderground/Circle-J3"],
+        "Edgware Road@Bakerloo": ["LondonUnderground/BakerlooN"]
     },
 
     "text_priority": ["Edgware Road@H+C","Edgware Road@District"]

@@ -148,3 +148,6 @@ LondonUnderground/Highgate
 LondonUnderground/Barnet
 LondonUnderground/MillHillEast
 LondonUnderground/Edgware
+LondonUnderground/BakerlooC
+LondonUnderground/BakerlooN
+LondonUnderground/Kenton

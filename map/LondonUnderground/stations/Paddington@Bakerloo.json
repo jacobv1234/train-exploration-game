@@ -1,54 +1,68 @@
 {
-    "name": "Waterloo@Bakerloo",
+    "name": "Paddington@Bakerloo",
     "position": [
-        -832,
-        1792
+        -3064,
+        -208
     ],
     "exits": {
-        "northbound (Bakerloo)": {
-            "direction": 0,
+        "eastbound": {
+            "direction": 4,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/BakerlooC"
+                    "LondonUnderground/BakerlooN"
                 ],
                 "not": []
             },
-            "line": "BakerlooC"
+            "line": "BakerlooN"
         },
-        "southbound (Bakerloo)": {
+        "westbound": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/BakerlooN"
+                ],
+                "not": []
+            },
+            "line": "BakerlooN"
+        },
+        "Hammersmith and City": {
+            "direction": 10,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/H+C"
+                ],
+                "not": []
+            },
+            "line": "H+C",
+            "new_coords": [
+                -2960,
+                -104
+            ]
+        },
+        "District Line": {
             "direction": 8,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/BakerlooC"
+                    "LondonUnderground/Circle-C"
                 ],
                 "not": []
             },
-            "line": "BakerlooC"
-        },
-        "Northern line": {
-            "direction": 0,
-            "requirements": {
-                "unlocked": [
-                    "LondonUnderground/NorthernX"
-                ],
-                "not": []
-            },
-            "line": "NorthernX",
+            "line": "Circle-C",
             "new_coords": [
-                -896,
-                1792
+                -2752,
+                120
             ]
         }
     },
     "map_text": [
         {
             "offset": [
-                16,
-                -16
+                0,
+                -24
             ],
-            "text": "Waterloo",
+            "text": "Paddington",
             "font": "Arial 10",
-            "anchor": "sw"
+            "anchor": "s"
         }
     ],
     "passengers": {
@@ -152,14 +166,6 @@
                 "reward": 1
             },
             {
-                "chance": 3,
-                "station": "LondonUnderground/Paddington",
-                "line": [
-                    "LondonUnderground/BakerlooN"
-                ],
-                "reward": 1
-            },
-            {
                 "chance": 1,
                 "station": "LondonUnderground/Warwick Avenue",
                 "line": [
@@ -218,6 +224,14 @@
             {
                 "chance": 1,
                 "station": "LondonUnderground/Lambeth North",
+                "line": [
+                    "LondonUnderground/BakerlooC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Waterloo",
                 "line": [
                     "LondonUnderground/BakerlooC"
                 ],

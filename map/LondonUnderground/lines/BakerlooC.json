@@ -130,7 +130,23 @@
             5
         ]
     ],
-    "conditional_corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/BakerlooN"
+                ],
+                "not": []
+            },
+            "corner": [
+                -2384,
+                -312,
+                4,
+                12,
+                "BakerlooN"
+            ]
+        }
+    ],
     "stops": [
         [
             -616,

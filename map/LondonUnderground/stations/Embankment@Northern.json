@@ -396,6 +396,175 @@
                     "LondonUnderground/Edgware"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Queen's Park",
+                "line": [
+                    "LondonUnderground/Kenton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Stonebridge Park",
+                "line": [
+                    "LondonUnderground/Kenton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Willesden Junction",
+                "line": [
+                    "LondonUnderground/Kenton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Kensal Green",
+                "line": [
+                    "LondonUnderground/Kenton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Harlesden",
+                "line": [
+                    "LondonUnderground/Kenton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/North Wembley",
+                "line": [
+                    "LondonUnderground/Kenton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Wembley Central",
+                "line": [
+                    "LondonUnderground/Kenton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/South Kenton",
+                "line": [
+                    "LondonUnderground/Kenton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Kenton",
+                "line": [
+                    "LondonUnderground/Kenton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Harrow & Wealdstone",
+                "line": [
+                    "LondonUnderground/Kenton"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Marylebone",
+                "line": [
+                    "LondonUnderground/BakerlooN",
+                    "LondonUnderground/BakerlooC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Edgware Road",
+                "line": [
+                    "LondonUnderground/BakerlooN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Paddington",
+                "line": [
+                    "LondonUnderground/BakerlooN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Warwick Avenue",
+                "line": [
+                    "LondonUnderground/BakerlooN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Maida Vale",
+                "line": [
+                    "LondonUnderground/BakerlooN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Kilburn Park",
+                "line": [
+                    "LondonUnderground/BakerlooN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Elephant and Castle",
+                "line": [
+                    "LondonUnderground/BakerlooC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Piccadilly Circus",
+                "line": [
+                    "LondonUnderground/BakerlooC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Lambeth North",
+                "line": [
+                    "LondonUnderground/BakerlooC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Regent's Park",
+                "line": [
+                    "LondonUnderground/BakerlooC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Baker Street",
+                "line": [
+                    "LondonUnderground/BakerlooC"
+                ],
+                "reward": 1
             }
         ]
     },

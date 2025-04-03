@@ -70,7 +70,9 @@
         "Barnet",
         "MillHillEast",
         "Edgware",
-        "BakerlooC"
+        "BakerlooC",
+        "BakerlooN",
+        "Kenton"
     ],
     "loadingzones": [],
     "display_name": "London Underground",
@@ -240,6 +242,7 @@
         "Tottenham Court Road",
         "Waterloo",
         "Moorgate",
-        "Baker Street"
+        "Baker Street",
+        "Kenton + Northwick Park"
     ]
 }

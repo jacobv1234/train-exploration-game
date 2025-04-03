@@ -1,0 +1,17 @@
+{
+    "name": "Kenton + Northwick Park",
+    "stations": [
+        "Kenton",
+        "Northwick Park"
+    ],
+    "connecting_lines": [
+        ["Kenton", "Northwick Park", -3664,-1600,-3824,-1440]
+    ],
+
+    "station_lines": {
+        "Kenton": ["LondonUnderground/Kenton"],
+        "Northwick Park": ["LondonUnderground/MetMain"]
+    },
+
+    "text_priority": []
+}

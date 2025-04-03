@@ -1,0 +1,85 @@
+{
+    "colour": "#b26300",
+    "segments": [
+        [
+            -3520,
+            -344,
+            -3648,
+            -472
+        ],
+        [
+            -3648,
+            -472,
+            -3664,
+            -504
+        ],
+        [
+            -3664,
+            -504,
+            -3664,
+            -1816
+        ]
+    ],
+    "corners": [
+        [
+            -3648,
+            -472,
+            15,
+            6
+        ],
+        [
+            -3664,
+            -504,
+            0,
+            7
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/BakerlooN"
+                ],
+                "not": [
+                    "LondonUnderground/Kilburn"
+                ]
+            },
+            "corner": [
+                -3520,
+                -344,
+                14,
+                6,
+                "BakerlooN"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/Bushey"
+                ]
+            },
+            "stop": [
+                -3664,
+                -1816,
+                8
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "Queen's Park",
+        "Stonebridge Park",
+        "Willesden Junction",
+        "Kensal Green",
+        "Harlesden",
+        "North Wembley",
+        "Wembley Central",
+        "South Kenton",
+        "Kenton",
+        "Harrow & Wealdstone"
+    ]
+}

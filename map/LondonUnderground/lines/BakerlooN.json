@@ -1,0 +1,134 @@
+{
+    "colour": "#b26300",
+    "segments": [
+        [
+            -2384,
+            -312,
+            -2616,
+            -312
+        ],
+        [
+            -2616,
+            -312,
+            -2648,
+            -296
+        ],
+        [
+            -2648,
+            -296,
+            -2720,
+            -224
+        ],
+        [
+            -2720,
+            -224,
+            -2752,
+            -208
+        ],
+        [
+            -2752,
+            -208,
+            -3368,
+            -208
+        ],
+        [
+            -3368,
+            -208,
+            -3400,
+            -224
+        ],
+        [
+            -3400,
+            -224,
+            -3520,
+            -344
+        ]
+    ],
+    "corners": [
+        [
+            -2616,
+            -312,
+            4,
+            11
+        ],
+        [
+            -2648,
+            -296,
+            3,
+            10
+        ],
+        [
+            -2720,
+            -224,
+            2,
+            11
+        ],
+        [
+            -2752,
+            -208,
+            3,
+            12
+        ],
+        [
+            -3368,
+            -208,
+            4,
+            13
+        ],
+        [
+            -3400,
+            -224,
+            5,
+            14
+        ],
+        [
+            -3520,
+            -344,
+            14,
+            6,
+            "Kenton"
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/BakerlooC"
+                ],
+                "not": []
+            },
+            "corner": [
+                -2384,
+                -312,
+                4,
+                12,
+                "BakerlooC"
+            ]
+        }
+    ],
+    "stops": [],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/BakerlooC"
+                ]
+            },
+            "stop": [
+                -2384,
+                -312,
+                12
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "Marylebone",
+        "Edgware Road@Bakerloo",
+        "Paddington@Bakerloo",
+        "Warwick Avenue",
+        "Maida Vale",
+        "Kilburn Park"
+    ]
+}

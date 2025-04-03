@@ -20,6 +20,20 @@
                 "not": []
             },
             "line": "MetMain"
+        },
+        "Bakerloo Line": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/Kenton"
+                ],
+                "not": []
+            },
+            "line": "Kenton",
+            "new_coords": [
+                -3664,
+                -1600
+            ]
         }
     },
     "map_text": [
