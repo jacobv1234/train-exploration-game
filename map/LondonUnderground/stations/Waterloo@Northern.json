@@ -566,6 +566,15 @@
                     "LondonUnderground/BakerlooC"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Bank",
+                "line": [
+                    "LondonUnderground/WaterlooCity",
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
             }
         ]
     },

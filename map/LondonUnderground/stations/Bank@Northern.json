@@ -396,6 +396,15 @@
                     "LondonUnderground/Edgware"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Waterloo",
+                "line": [
+                    "LondonUnderground/WaterlooCity",
+                    "LondonUnderground/BakerlooC"
+                ],
+                "reward": 1
             }
         ]
     },

@@ -38,6 +38,16 @@
                 -896,
                 1792
             ]
+        },
+        "Waterloo and City": {
+            "direction": 4,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/WaterlooCity"
+                ],
+                "not": []
+            },
+            "line": "WaterlooCity"
         }
     },
     "map_text": [
@@ -238,8 +248,31 @@
                     "LondonUnderground/BakerlooC"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Bank",
+                "line": [
+                    "LondonUnderground/WaterlooCity",
+                    "LondonUnderground/CentralC"
+                ],
+                "reward": 1
             }
         ]
     },
-    "shop": false
+    "shop": {
+        "Waterloo and City line": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/CentralC"
+                ],
+                "not": []
+            },
+            "unlock": [
+                "LondonUnderground/WaterlooCity"
+            ],
+            "unique_name": "LondonUnderground/Waterloo@Bakerloo/Waterloo and City line"
+        }
+    }
 }

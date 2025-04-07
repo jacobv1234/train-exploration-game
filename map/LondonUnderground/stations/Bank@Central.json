@@ -5,7 +5,7 @@
         728
     ],
     "exits": {
-        "eastbound": {
+        "eastbound (Central)": {
             "direction": 4,
             "requirements": {
                 "unlocked": [
@@ -15,7 +15,7 @@
             },
             "line": "CentralC"
         },
-        "westbound": {
+        "westbound (Central)": {
             "direction": 12,
             "requirements": {
                 "unlocked": [
@@ -52,6 +52,16 @@
                 464,
                 800
             ]
+        },
+        "Waterloo and City": {
+            "direction": 8,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/WaterlooCity"
+                ],
+                "not": []
+            },
+            "line": "WaterlooCity"
         }
     },
     "map_text": [
@@ -786,8 +796,31 @@
                     "LondonUnderground/Edgware"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Waterloo",
+                "line": [
+                    "LondonUnderground/WaterlooCity",
+                    "LondonUnderground/BakerlooC"
+                ],
+                "reward": 1
             }
         ]
     },
-    "shop": false
+    "shop": {
+        "Waterloo and City line": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/BakerlooC"
+                ],
+                "not": []
+            },
+            "unlock": [
+                "LondonUnderground/WaterlooCity"
+            ],
+            "unique_name": "LondonUnderground/Bank@Central/Waterloo and City line"
+        }
+    }
 }
