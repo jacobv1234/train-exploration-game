@@ -44,6 +44,26 @@
                 "not": []
             },
             "line": "BakerlooC"
+        },
+        "northbound (Victoria)": {
+            "direction": 2,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "not": []
+            },
+            "line": "VictoriaC"
+        },
+        "southbound (Victoria)": {
+            "direction": 10,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "not": []
+            },
+            "line": "VictoriaC"
         }
     },
     "map_text": [

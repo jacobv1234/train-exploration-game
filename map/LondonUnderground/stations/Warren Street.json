@@ -5,7 +5,7 @@
         -48
     ],
     "exits": {
-        "northbound": {
+        "northbound (Northern)": {
             "direction": 0,
             "requirements": {
                 "unlocked": [
@@ -15,7 +15,7 @@
             },
             "line": "NorthernX"
         },
-        "southbound": {
+        "southbound (Northern)": {
             "direction": 8,
             "requirements": {
                 "unlocked": [
@@ -24,6 +24,26 @@
                 "not": []
             },
             "line": "NorthernX"
+        },
+        "northbound (Victoria)": {
+            "direction": 2,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "not": []
+            },
+            "line": "VictoriaC"
+        },
+        "southbound (Victoria)": {
+            "direction": 10,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "not": []
+            },
+            "line": "VictoriaC"
         }
     },
     "map_text": [
