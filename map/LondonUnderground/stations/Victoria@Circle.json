@@ -24,6 +24,20 @@
                 "not": []
             },
             "line": "Circle-S"
+        },
+        "Victoria": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "not": []
+            },
+            "line": "VictoriaC",
+            "new_coords": [
+                -1656,
+                1256
+            ]
         }
     },
     "map_text": [
@@ -199,7 +213,7 @@
                 "chance": 3,
                 "station": "LondonUnderground/King's Cross",
                 "line": [
-                    "LondonUnderground/Circle-N"
+                    "LondonUnderground/VictoriaC"
                 ],
                 "reward": 1
             },
@@ -637,8 +651,86 @@
                     "LondonUnderground/Whitechapel"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Euston",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Warren Street",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Oxford Circus",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Green Park",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Brixton",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Vauxhall",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Pimlico",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Stockwell",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
             }
         ]
     },
-    "shop": false
+    "shop": {
+        "Victoria Line": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/VictoriaC"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/VictoriaC"
+            ],
+            "unique_name": "LondonUnderground/Victoria@Circle/Victoria Line"
+        }
+    }
 }

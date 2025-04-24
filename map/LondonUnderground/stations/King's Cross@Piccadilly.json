@@ -58,6 +58,20 @@
                 "not": []
             },
             "line": "NorthernY"
+        },
+        "Victoria Line": {
+            "direction": 12,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "not": []
+            },
+            "line": "VictoriaC",
+            "new_coords": [
+                -320,
+                -320
+            ]
         }
     },
     "map_text": [
@@ -143,7 +157,7 @@
                 "chance": 2,
                 "station": "LondonUnderground/Green Park",
                 "line": [
-                    "LondonUnderground/PiccadillyC"
+                    "LondonUnderground/VictoriaC"
                 ],
                 "reward": 1
             },
@@ -501,11 +515,10 @@
                 "reward": 1
             },
             {
-                "chance": 3,
+                "chance": 2,
                 "station": "LondonUnderground/Euston",
                 "line": [
-                    "LondonUnderground/NorthernY",
-                    "LondonUnderground/NorthernX"
+                    "LondonUnderground/VictoriaC"
                 ],
                 "reward": 1
             },
@@ -598,7 +611,7 @@
                 "chance": 2,
                 "station": "LondonUnderground/Stockwell",
                 "line": [
-                    "LondonUnderground/Morden"
+                    "LondonUnderground/VictoriaC"
                 ],
                 "reward": 1
             },
@@ -815,6 +828,54 @@
                 "station": "LondonUnderground/Colindale",
                 "line": [
                     "LondonUnderground/Edgware"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Warren Street",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Oxford Circus",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Brixton",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Vauxhall",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Pimlico",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Victoria",
+                "line": [
+                    "LondonUnderground/VictoriaC"
                 ],
                 "reward": 1
             }

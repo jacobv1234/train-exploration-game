@@ -60,6 +60,24 @@
             672,
             -1640,
             696
+        ],
+        [
+            -1656,
+            872,
+            -1656,
+            2416
+        ],
+        [
+            -1656,
+            2416,
+            -1640,
+            2448
+        ],
+        [
+            -1640,
+            2448,
+            -1064,
+            3024
         ]
     ],
     "corners": [
@@ -110,10 +128,28 @@
             696,
             2,
             9
+        ],
+        [
+            -1656,
+            2416,
+            0,
+            7
+        ],
+        [
+            -1640,
+            2448,
+            15,
+            6
         ]
     ],
     "conditional_corners": [],
-    "stops": [],
+    "stops": [
+        [
+            -1064,
+            3024,
+            14
+        ]
+    ],
     "conditional_stops": [
         {
             "requirements": {
@@ -133,6 +169,13 @@
     "stations": [
         "Euston@Victoria",
         "Warren Street",
-        "Oxford Circus"
+        "Oxford Circus",
+        "Green Park@Piccadilly",
+        "Brixton",
+        "Vauxhall",
+        "Pimlico",
+        "Victoria@Victoria",
+        "King's Cross@Victoria",
+        "Stockwell"
     ]
 }

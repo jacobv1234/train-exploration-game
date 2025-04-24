@@ -1,0 +1,17 @@
+{
+    "name": "Victoria",
+    "stations": [
+        "Victoria@Victoria",
+        "Victoria@Circle"
+    ],
+    "connecting_lines": [
+        ["Victoria@Victoria", "Victoria@Circle", -1776,1376,-1656,1256]
+    ],
+
+    "station_lines": {
+        "Victoria@Victoria": ["LondonUnderground/VictoriaC"],
+        "Victoria@Circle": ["LondonUnderground/Circle-S"]
+    },
+
+    "text_priority": ["Victoria@Circle","Victoria@Victoria"]
+}

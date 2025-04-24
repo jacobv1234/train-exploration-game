@@ -5,7 +5,7 @@
         2704
     ],
     "exits": {
-        "northbound": {
+        "northbound (Northern)": {
             "direction": 2,
             "requirements": {
                 "unlocked": [
@@ -15,7 +15,7 @@
             },
             "line": "Morden"
         },
-        "southbound": {
+        "southbound (Northern)": {
             "direction": 10,
             "requirements": {
                 "unlocked": [
@@ -24,6 +24,26 @@
                 "not": []
             },
             "line": "Morden"
+        },
+        "northbound (Victoria)": {
+            "direction": 14,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "not": []
+            },
+            "line": "VictoriaC"
+        },
+        "southbound (Victoria)": {
+            "direction": 6,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "not": []
+            },
+            "line": "VictoriaC"
         }
     },
     "map_text": [
@@ -156,7 +176,7 @@
                 "chance": 1,
                 "station": "LondonUnderground/Warren Street",
                 "line": [
-                    "LondonUnderground/NorthernX"
+                    "LondonUnderground/VictoriaC"
                 ],
                 "reward": 1
             },
@@ -169,11 +189,10 @@
                 "reward": 1
             },
             {
-                "chance": 3,
+                "chance": 2,
                 "station": "LondonUnderground/Euston",
                 "line": [
-                    "LondonUnderground/NorthernY",
-                    "LondonUnderground/NorthernX"
+                    "LondonUnderground/VictoriaC"
                 ],
                 "reward": 1
             },
@@ -217,10 +236,7 @@
                 "chance": 3,
                 "station": "LondonUnderground/King's Cross",
                 "line": [
-                    "LondonUnderground/NorthernY",
-                    "LondonUnderground/Circle-N",
-                    "LondonUnderground/PiccadillyC",
-                    "LondonUnderground/PiccadillyN"
+                    "LondonUnderground/VictoriaC"
                 ],
                 "reward": 1
             },
@@ -431,6 +447,54 @@
                 "station": "LondonUnderground/Colindale",
                 "line": [
                     "LondonUnderground/Edgware"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Oxford Circus",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Green Park",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Brixton",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Vauxhall",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Pimlico",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Victoria",
+                "line": [
+                    "LondonUnderground/VictoriaC"
                 ],
                 "reward": 1
             }

@@ -2,16 +2,20 @@
     "name": "King's Cross",
     "stations": [
         "King's Cross@Piccadilly",
-        "King's Cross@Circle"
+        "King's Cross@Circle",
+        "King's Cross@Victoria"
     ],
     "connecting_lines": [
-        ["King's Cross@Piccadilly", "King's Cross@Circle", -512,-128,-424,-216]
+        ["King's Cross@Piccadilly", "King's Cross@Circle", -512,-128,-424,-216],
+        ["King's Cross@Victoria", "King's Cross@Circle", -512,-128,-320,-320],
+        ["King's Cross@Piccadilly", "King's Cross@Victoria", -320,-320,-424,-216]
     ],
 
     "station_lines": {
-        "King's Cross@Piccadilly": ["LondonUnderground/PiccadillyC", "LondonUnderground/PiccadillyN"],
-        "King's Cross@Circle": ["LondonUnderground/Circle-N"]
+        "King's Cross@Piccadilly": ["LondonUnderground/PiccadillyC", "LondonUnderground/PiccadillyN", "LondonUnderground/NorthernY"],
+        "King's Cross@Circle": ["LondonUnderground/Circle-N"],
+        "King's Cross@Victoria": ["LondonUnderground/VictoriaC", "LondonUnderground/VictoriaN"]
     },
 
-    "text_priority": ["King's Cross@Circle","King's Cross@Piccadilly"]
+    "text_priority": ["King's Cross@Circle","King's Cross@Piccadilly", "King's Cross@Victoria"]
 }
