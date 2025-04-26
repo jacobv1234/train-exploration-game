@@ -1,0 +1,17 @@
+{
+    "name": "Finsbury Park",
+    "stations": [
+        "Finsbury Park@Victoria",
+        "Finsbury Park@Piccadilly"
+    ],
+    "connecting_lines": [
+        ["Finsbury Park@Victoria", "Finsbury Park@Piccadilly", 840,-1440,760,-1520]
+    ],
+
+    "station_lines": {
+        "Finsbury Park@Victoria": ["LondonUnderground/VictoriaN"],
+        "Finsbury Park@Piccadilly": ["LondonUnderground/PiccadillyN"]
+    },
+
+    "text_priority": ["Finsbury Park@Piccadilly","Finsbury Park@Victoria"]
+}

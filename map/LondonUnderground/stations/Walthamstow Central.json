@@ -1,40 +1,39 @@
 {
-    "name": "Vauxhall",
+    "name": "Walthamstow Central",
     "position": [
-        -1656,
-        2344
+        2768,
+        -1632
     ],
     "exits": {
-        "northbound": {
-            "direction": 0,
+        "westbound": {
+            "direction": 12,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/VictoriaC"
+                    "LondonUnderground/VictoriaN"
                 ],
                 "not": []
             },
-            "line": "VictoriaC"
-        },
-        "southbound": {
-            "direction": 8,
-            "requirements": {
-                "unlocked": [
-                    "LondonUnderground/VictoriaC"
-                ],
-                "not": []
-            },
-            "line": "VictoriaC"
+            "line": "VictoriaN"
         }
     },
     "map_text": [
         {
             "offset": [
-                -24,
+                24,
                 0
             ],
-            "text": "Vauxhall",
+            "text": "Walthamstow",
             "font": "Arial 10",
-            "anchor": "e"
+            "anchor": "sw"
+        },
+        {
+            "offset": [
+                24,
+                0
+            ],
+            "text": "Central",
+            "font": "Arial 10",
+            "anchor": "nw"
         }
     ],
     "passengers": {
@@ -75,6 +74,14 @@
             {
                 "chance": 1,
                 "station": "LondonUnderground/Brixton",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Vauxhall",
                 "line": [
                     "LondonUnderground/VictoriaC"
                 ],
@@ -123,14 +130,6 @@
             {
                 "chance": 2,
                 "station": "LondonUnderground/Finsbury Park",
-                "line": [
-                    "LondonUnderground/VictoriaN"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Walthamstow Central",
                 "line": [
                     "LondonUnderground/VictoriaN"
                 ],

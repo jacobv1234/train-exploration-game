@@ -1,44 +1,58 @@
 {
-    "name": "Vauxhall",
+    "name": "Finsbury Park@Victoria",
     "position": [
-        -1656,
-        2344
+        840,
+        -1440
     ],
     "exits": {
-        "northbound": {
-            "direction": 0,
+        "eastbound": {
+            "direction": 2,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/VictoriaC"
+                    "LondonUnderground/VictoriaN"
                 ],
                 "not": []
             },
-            "line": "VictoriaC"
+            "line": "VictoriaN"
         },
         "southbound": {
-            "direction": 8,
+            "direction": 10,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/VictoriaC"
+                    "LondonUnderground/VictoriaN"
                 ],
                 "not": []
             },
-            "line": "VictoriaC"
+            "line": "VictoriaN"
+        },
+        "Piccadilly line": {
+            "direction": 2,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/PiccadillyN"
+                ],
+                "not": []
+            },
+            "line": "PiccadillyN",
+            "new_coords": [
+                760,
+                -1520
+            ]
         }
     },
     "map_text": [
         {
             "offset": [
-                -24,
-                0
+                -16,
+                -8
             ],
-            "text": "Vauxhall",
+            "text": "Finsbury Park",
             "font": "Arial 10",
-            "anchor": "e"
+            "anchor": "se"
         }
     ],
     "passengers": {
-        "chance_of_any": 75,
+        "chance_of_any": 80,
         "options": [
             {
                 "chance": 2,
@@ -82,6 +96,14 @@
             },
             {
                 "chance": 1,
+                "station": "LondonUnderground/Vauxhall",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
                 "station": "LondonUnderground/Pimlico",
                 "line": [
                     "LondonUnderground/VictoriaC"
@@ -115,14 +137,6 @@
             {
                 "chance": 2,
                 "station": "LondonUnderground/Highbury and Islington",
-                "line": [
-                    "LondonUnderground/VictoriaN"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Finsbury Park",
                 "line": [
                     "LondonUnderground/VictoriaN"
                 ],

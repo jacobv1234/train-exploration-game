@@ -24,6 +24,20 @@
                 "not": []
             },
             "line": "PiccadillyN"
+        },
+        "Victoria Line": {
+            "direction": 2,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/VictoriaN"
+                ],
+                "not": []
+            },
+            "line": "VictoriaN",
+            "new_coords": [
+                840,
+                -1440
+            ]
         }
     },
     "map_text": [
@@ -44,9 +58,7 @@
                 "chance": 3,
                 "station": "LondonUnderground/King's Cross",
                 "line": [
-                    "LondonUnderground/PiccadillyN",
-                    "LondonUnderground/PiccadillyC",
-                    "LondonUnderground/Circle-N"
+                    "LondonUnderground/VictoriaC"
                 ],
                 "reward": 1
             },
@@ -208,7 +220,7 @@
                 "chance": 2,
                 "station": "LondonUnderground/Green Park",
                 "line": [
-                    "LondonUnderground/PiccadillyC"
+                    "LondonUnderground/VictoriaC"
                 ],
                 "reward": 1
             },
@@ -345,6 +357,110 @@
                 "station": "LondonUnderground/Heathrow Terminal 5",
                 "line": [
                     "LondonUnderground/Heathrow5"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Euston",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Warren Street",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Oxford Circus",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Brixton",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Vauxhall",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Pimlico",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Victoria",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Stockwell",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Highbury and Islington",
+                "line": [
+                    "LondonUnderground/VictoriaN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Walthamstow Central",
+                "line": [
+                    "LondonUnderground/VictoriaN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Seven Sisters",
+                "line": [
+                    "LondonUnderground/VictoriaN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Tottenham Hale",
+                "line": [
+                    "LondonUnderground/VictoriaN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Blackhorse Road",
+                "line": [
+                    "LondonUnderground/VictoriaN"
                 ],
                 "reward": 1
             }

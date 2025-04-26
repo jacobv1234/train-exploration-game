@@ -1,44 +1,44 @@
 {
-    "name": "Vauxhall",
+    "name": "Tottenham Hale",
     "position": [
-        -1656,
-        2344
+        1904,
+        -1632
     ],
     "exits": {
-        "northbound": {
-            "direction": 0,
+        "eastbound": {
+            "direction": 4,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/VictoriaC"
+                    "LondonUnderground/VictoriaN"
                 ],
                 "not": []
             },
-            "line": "VictoriaC"
+            "line": "VictoriaN"
         },
-        "southbound": {
-            "direction": 8,
+        "westbound": {
+            "direction": 12,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/VictoriaC"
+                    "LondonUnderground/VictoriaN"
                 ],
                 "not": []
             },
-            "line": "VictoriaC"
+            "line": "VictoriaN"
         }
     },
     "map_text": [
         {
             "offset": [
-                -24,
-                0
+                0,
+                -24
             ],
-            "text": "Vauxhall",
+            "text": "Tottenham Hale",
             "font": "Arial 10",
-            "anchor": "e"
+            "anchor": "s"
         }
     ],
     "passengers": {
-        "chance_of_any": 75,
+        "chance_of_any": 80,
         "options": [
             {
                 "chance": 2,
@@ -75,6 +75,14 @@
             {
                 "chance": 1,
                 "station": "LondonUnderground/Brixton",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Vauxhall",
                 "line": [
                     "LondonUnderground/VictoriaC"
                 ],
@@ -139,14 +147,6 @@
             {
                 "chance": 2,
                 "station": "LondonUnderground/Seven Sisters",
-                "line": [
-                    "LondonUnderground/VictoriaN"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Tottenham Hale",
                 "line": [
                     "LondonUnderground/VictoriaN"
                 ],

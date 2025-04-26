@@ -1,40 +1,49 @@
 {
-    "name": "Vauxhall",
+    "name": "Highbury and Islington@Victoria",
     "position": [
-        -1656,
-        2344
+        672,
+        -760
     ],
     "exits": {
         "northbound": {
             "direction": 0,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/VictoriaC"
+                    "LondonUnderground/VictoriaN"
                 ],
                 "not": []
             },
-            "line": "VictoriaC"
+            "line": "VictoriaN"
         },
         "southbound": {
             "direction": 8,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/VictoriaC"
+                    "LondonUnderground/VictoriaN"
                 ],
                 "not": []
             },
-            "line": "VictoriaC"
+            "line": "VictoriaN"
         }
     },
     "map_text": [
         {
             "offset": [
-                -24,
-                0
+                -16,
+                -16
             ],
-            "text": "Vauxhall",
+            "text": "& Islington",
             "font": "Arial 10",
-            "anchor": "e"
+            "anchor": "se"
+        },
+        {
+            "offset": [
+                -16,
+                -32
+            ],
+            "text": "Highbury",
+            "font": "Arial 10",
+            "anchor": "se"
         }
     ],
     "passengers": {
@@ -82,6 +91,14 @@
             },
             {
                 "chance": 1,
+                "station": "LondonUnderground/Vauxhall",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
                 "station": "LondonUnderground/Pimlico",
                 "line": [
                     "LondonUnderground/VictoriaC"
@@ -109,14 +126,6 @@
                 "station": "LondonUnderground/Stockwell",
                 "line": [
                     "LondonUnderground/VictoriaC"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Highbury and Islington",
-                "line": [
-                    "LondonUnderground/VictoriaN"
                 ],
                 "reward": 1
             },

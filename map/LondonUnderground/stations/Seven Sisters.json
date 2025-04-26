@@ -1,44 +1,53 @@
 {
-    "name": "Vauxhall",
+    "name": "Seven Sisters",
     "position": [
-        -1656,
-        2344
+        1544,
+        -1632
     ],
     "exits": {
-        "northbound": {
-            "direction": 0,
+        "eastbound": {
+            "direction": 4,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/VictoriaC"
+                    "LondonUnderground/VictoriaN"
                 ],
                 "not": []
             },
-            "line": "VictoriaC"
+            "line": "VictoriaN"
         },
-        "southbound": {
-            "direction": 8,
+        "westbound": {
+            "direction": 12,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/VictoriaC"
+                    "LondonUnderground/VictoriaN"
                 ],
                 "not": []
             },
-            "line": "VictoriaC"
+            "line": "VictoriaN"
         }
     },
     "map_text": [
         {
             "offset": [
-                -24,
-                0
+                -8,
+                -16
             ],
-            "text": "Vauxhall",
+            "text": "Sisters",
             "font": "Arial 10",
-            "anchor": "e"
+            "anchor": "se"
+        },
+        {
+            "offset": [
+                -8,
+                -32
+            ],
+            "text": "Seven",
+            "font": "Arial 10",
+            "anchor": "se"
         }
     ],
     "passengers": {
-        "chance_of_any": 75,
+        "chance_of_any": 80,
         "options": [
             {
                 "chance": 2,
@@ -75,6 +84,14 @@
             {
                 "chance": 1,
                 "station": "LondonUnderground/Brixton",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Vauxhall",
                 "line": [
                     "LondonUnderground/VictoriaC"
                 ],
@@ -131,14 +148,6 @@
             {
                 "chance": 2,
                 "station": "LondonUnderground/Walthamstow Central",
-                "line": [
-                    "LondonUnderground/VictoriaN"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Seven Sisters",
                 "line": [
                     "LondonUnderground/VictoriaN"
                 ],

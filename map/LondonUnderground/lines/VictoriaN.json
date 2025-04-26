@@ -1,0 +1,158 @@
+{
+    "colour": "#039be5",
+    "segments": [
+        [
+            -320,
+            -320,
+            392,
+            -320
+        ],
+        [
+            672,
+            -1256,
+            672,
+            -600
+        ],
+        [
+            672,
+            -600,
+            656,
+            -568
+        ],
+        [
+            656,
+            -568,
+            424,
+            -336
+        ],
+        [
+            392,
+            -320,
+            424,
+            -336
+        ],
+        [
+            672,
+            -1256,
+            688,
+            -1288
+        ],
+        [
+            688,
+            -1288,
+            1016,
+            -1616
+        ],
+        [
+            1016,
+            -1616,
+            1048,
+            -1632
+        ],
+        [
+            1048,
+            -1632,
+            2768,
+            -1632
+        ]
+    ],
+    "corners": [
+        [
+            672,
+            -600,
+            0,
+            9
+        ],
+        [
+            656,
+            -568,
+            1,
+            10
+        ],
+        [
+            392,
+            -320,
+            3,
+            12
+        ],
+        [
+            424,
+            -336,
+            2,
+            11
+        ],
+        [
+            672,
+            -1256,
+            1,
+            8
+        ],
+        [
+            688,
+            -1288,
+            2,
+            9
+        ],
+        [
+            1016,
+            -1616,
+            3,
+            10
+        ],
+        [
+            1048,
+            -1632,
+            4,
+            11
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "not": []
+            },
+            "corner": [
+                -320,
+                -320,
+                4,
+                12,
+                "VictoriaC"
+            ]
+        }
+    ],
+    "stops": [
+        [
+            2768,
+            -1632,
+            12
+        ]
+    ],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/VictoriaC"
+                ]
+            },
+            "stop": [
+                -320,
+                -320,
+                4
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "King's Cross@Victoria",
+        "Highbury and Islington@Victoria",
+        "Finsbury Park@Victoria",
+        "Walthamstow Central",
+        "Seven Sisters",
+        "Tottenham Hale",
+        "Blackhorse Road"
+    ]
+}

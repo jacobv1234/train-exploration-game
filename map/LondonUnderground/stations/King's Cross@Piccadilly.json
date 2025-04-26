@@ -421,7 +421,7 @@
                 "chance": 2,
                 "station": "LondonUnderground/Finsbury Park",
                 "line": [
-                    "LondonUnderground/PiccadillyN"
+                    "LondonUnderground/VictoriaN"
                 ],
                 "reward": 1
             },
@@ -848,7 +848,7 @@
                 "reward": 1
             },
             {
-                "chance": 2,
+                "chance": 1,
                 "station": "LondonUnderground/Brixton",
                 "line": [
                     "LondonUnderground/VictoriaC"
@@ -856,7 +856,7 @@
                 "reward": 1
             },
             {
-                "chance": 2,
+                "chance": 1,
                 "station": "LondonUnderground/Vauxhall",
                 "line": [
                     "LondonUnderground/VictoriaC"
@@ -876,6 +876,46 @@
                 "station": "LondonUnderground/Victoria",
                 "line": [
                     "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Highbury and Islington",
+                "line": [
+                    "LondonUnderground/VictoriaN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Walthamstow Central",
+                "line": [
+                    "LondonUnderground/VictoriaN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Seven Sisters",
+                "line": [
+                    "LondonUnderground/VictoriaN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Tottenham Hale",
+                "line": [
+                    "LondonUnderground/VictoriaN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Blackhorse Road",
+                "line": [
+                    "LondonUnderground/VictoriaN"
                 ],
                 "reward": 1
             }

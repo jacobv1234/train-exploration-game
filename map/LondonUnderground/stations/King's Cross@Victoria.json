@@ -101,7 +101,7 @@
                 "reward": 1
             },
             {
-                "chance": 2,
+                "chance": 1,
                 "station": "LondonUnderground/Brixton",
                 "line": [
                     "LondonUnderground/VictoriaC"
@@ -109,7 +109,7 @@
                 "reward": 1
             },
             {
-                "chance": 2,
+                "chance": 1,
                 "station": "LondonUnderground/Vauxhall",
                 "line": [
                     "LondonUnderground/VictoriaC"
@@ -139,8 +139,70 @@
                     "LondonUnderground/VictoriaC"
                 ],
                 "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Highbury and Islington",
+                "line": [
+                    "LondonUnderground/VictoriaN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Finsbury Park",
+                "line": [
+                    "LondonUnderground/VictoriaN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Walthamstow Central",
+                "line": [
+                    "LondonUnderground/VictoriaN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Seven Sisters",
+                "line": [
+                    "LondonUnderground/VictoriaN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Tottenham Hale",
+                "line": [
+                    "LondonUnderground/VictoriaN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Blackhorse Road",
+                "line": [
+                    "LondonUnderground/VictoriaN"
+                ],
+                "reward": 1
             }
         ]
     },
-    "shop": false
+    "shop": {
+        "Victoria Line to Walthamstow": {
+            "cost": 2,
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/VictoriaN"
+                ]
+            },
+            "unlock": [
+                "LondonUnderground/VictoriaN"
+            ],
+            "unique_name": "LondonUnderground/King's Cross@Victoria/Victoria Line to Walthamstow"
+        }
+    }
 }

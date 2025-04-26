@@ -1,44 +1,44 @@
 {
-    "name": "Vauxhall",
+    "name": "Blackhorse Road",
     "position": [
-        -1656,
-        2344
+        2328,
+        -1632
     ],
     "exits": {
-        "northbound": {
-            "direction": 0,
+        "eastbound": {
+            "direction": 4,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/VictoriaC"
+                    "LondonUnderground/VictoriaN"
                 ],
                 "not": []
             },
-            "line": "VictoriaC"
+            "line": "VictoriaN"
         },
-        "southbound": {
-            "direction": 8,
+        "westbound": {
+            "direction": 12,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/VictoriaC"
+                    "LondonUnderground/VictoriaN"
                 ],
                 "not": []
             },
-            "line": "VictoriaC"
+            "line": "VictoriaN"
         }
     },
     "map_text": [
         {
             "offset": [
-                -24,
-                0
+                8,
+                -16
             ],
-            "text": "Vauxhall",
+            "text": "Blackhorse Road",
             "font": "Arial 10",
-            "anchor": "e"
+            "anchor": "sw"
         }
     ],
     "passengers": {
-        "chance_of_any": 75,
+        "chance_of_any": 70,
         "options": [
             {
                 "chance": 2,
@@ -75,6 +75,14 @@
             {
                 "chance": 1,
                 "station": "LondonUnderground/Brixton",
+                "line": [
+                    "LondonUnderground/VictoriaC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Vauxhall",
                 "line": [
                     "LondonUnderground/VictoriaC"
                 ],
@@ -147,14 +155,6 @@
             {
                 "chance": 1,
                 "station": "LondonUnderground/Tottenham Hale",
-                "line": [
-                    "LondonUnderground/VictoriaN"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Blackhorse Road",
                 "line": [
                     "LondonUnderground/VictoriaN"
                 ],
