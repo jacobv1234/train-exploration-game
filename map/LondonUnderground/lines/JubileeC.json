@@ -124,7 +124,23 @@
             13
         ]
     ],
-    "conditional_corners": [],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/JubileeN"
+                ],
+                "not": []
+            },
+            "corner": [
+                -2040,
+                -496,
+                6,
+                14,
+                "JubileeN"
+            ]
+        }
+    ],
     "stops": [],
     "conditional_stops": [
         {

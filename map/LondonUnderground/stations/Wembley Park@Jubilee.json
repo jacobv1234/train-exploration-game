@@ -1,54 +1,54 @@
 {
-    "name": "Green Park@Jubilee",
+    "name": "Wembley Park@Jubilee",
     "position": [
-        -1616,
-        824
+        -3000,
+        -1456
     ],
     "exits": {
         "northbound": {
             "direction": 14,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/JubileeC"
+                    "LondonUnderground/JubileeN"
                 ],
                 "not": []
             },
-            "line": "JubileeC"
+            "line": "JubileeN"
         },
         "southbound": {
             "direction": 6,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/JubileeC"
+                    "LondonUnderground/JubileeN"
                 ],
                 "not": []
             },
-            "line": "JubileeC"
+            "line": "JubileeN"
         },
-        "Piccadilly Line": {
-            "direction": 12,
+        "Metropolitan Line": {
+            "direction": 14,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/PiccadillyC"
+                    "LondonUnderground/MetMain"
                 ],
                 "not": []
             },
-            "line": "PiccadillyC",
+            "line": "MetMain",
             "new_coords": [
-                -1656,
-                872
+                -3080,
+                -1368
             ]
         }
     },
     "map_text": [
         {
             "offset": [
-                16,
-                -16
+                24,
+                0
             ],
-            "text": "Green Park",
+            "text": "Wembley Park",
             "font": "Arial 10",
-            "anchor": "sw"
+            "anchor": "w"
         }
     ],
     "passengers": {
@@ -73,6 +73,14 @@
             {
                 "chance": 2,
                 "station": "LondonUnderground/Westminster",
+                "line": [
+                    "LondonUnderground/JubileeC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Green Park",
                 "line": [
                     "LondonUnderground/JubileeC"
                 ],
@@ -114,15 +122,6 @@
             {
                 "chance": 2,
                 "station": "LondonUnderground/Finchley Road",
-                "line": [
-                    "LondonUnderground/JubileeN",
-                    "LondonUnderground/MetMain"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Wembley Park",
                 "line": [
                     "LondonUnderground/JubileeN",
                     "LondonUnderground/MetMain"

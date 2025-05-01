@@ -1,0 +1,17 @@
+{
+    "name": "Wembley Park",
+    "stations": [
+        "Wembley Park@Jubilee",
+        "Wembley Park@Metropolitan"
+    ],
+    "connecting_lines": [
+        ["Wembley Park@Jubilee", "Wembley Park@Metropolitan",-3000,-1456,-3080,-1368]
+    ],
+
+    "station_lines": {
+        "Wembley Park@Jubilee": ["LondonUnderground/JubileeN"],
+        "Wembley Park@Metropolitan": ["LondonUnderground/MetMain"]
+    },
+
+    "text_priority": ["Wembley Park@Jubilee","Wembley Park@Metropolitan"]
+}

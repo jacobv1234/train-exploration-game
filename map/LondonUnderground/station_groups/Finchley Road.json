@@ -1,0 +1,17 @@
+{
+    "name": "Finchley Road",
+    "stations": [
+        "Finchley Road@Jubilee",
+        "Finchley Road@Metropolitan"
+    ],
+    "connecting_lines": [
+        ["Finchley Road@Jubilee", "Finchley Road@Metropolitan",-2192,-648,-2272,-560]
+    ],
+
+    "station_lines": {
+        "Finchley Road@Jubilee": ["LondonUnderground/JubileeN"],
+        "Finchley Road@Metropolitan": ["LondonUnderground/MetMain"]
+    },
+
+    "text_priority": ["Finchley Road@Jubilee","Finchley Road@Metropolitan"]
+}

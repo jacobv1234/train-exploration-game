@@ -1,0 +1,91 @@
+{
+    "colour": "#838d93",
+    "segments": [
+        [
+            -2040,
+            -496,
+            -3040,
+            -1496
+        ],
+        [
+            -3040,
+            -1496,
+            -3056,
+            -1528
+        ],
+        [
+            -3056,
+            -1528,
+            -3056,
+            -2224
+        ]
+    ],
+    "corners": [
+        [
+            -3040,
+            -1496,
+            6,
+            15
+        ],
+        [
+            -3056,
+            -1528,
+            0,
+            7
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/JubileeC"
+                ],
+                "not": []
+            },
+            "corner": [
+                -2040,
+                -496,
+                6,
+                14,
+                "JubileeC"
+            ]
+        }
+    ],
+    "stops": [
+        [
+            -3056,
+            -2224,
+            8
+        ]
+    ],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/JubileeC"
+                ]
+            },
+            "stop": [
+                -2040,
+                -496,
+                14
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "Finchley Road@Jubilee",
+        "Wembley Park@Jubilee",
+        "West Hampstead@Jubilee",
+        "Kilburn",
+        "Willesden Green",
+        "Dollis Hill",
+        "Neasden",
+        "Kingsbury",
+        "Queensbury",
+        "Canons Park",
+        "Swiss Cottage",
+        "Stanmore"
+    ]
+}

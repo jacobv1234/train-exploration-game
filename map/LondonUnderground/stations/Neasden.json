@@ -1,58 +1,44 @@
 {
-    "name": "Green Park@Jubilee",
+    "name": "Neasden",
     "position": [
-        -1616,
-        824
+        -2888,
+        -1344
     ],
     "exits": {
         "northbound": {
             "direction": 14,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/JubileeC"
+                    "LondonUnderground/JubileeN"
                 ],
                 "not": []
             },
-            "line": "JubileeC"
+            "line": "JubileeN"
         },
         "southbound": {
             "direction": 6,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/JubileeC"
+                    "LondonUnderground/JubileeN"
                 ],
                 "not": []
             },
-            "line": "JubileeC"
-        },
-        "Piccadilly Line": {
-            "direction": 12,
-            "requirements": {
-                "unlocked": [
-                    "LondonUnderground/PiccadillyC"
-                ],
-                "not": []
-            },
-            "line": "PiccadillyC",
-            "new_coords": [
-                -1656,
-                872
-            ]
+            "line": "JubileeN"
         }
     },
     "map_text": [
         {
             "offset": [
-                16,
-                -16
+                24,
+                0
             ],
-            "text": "Green Park",
+            "text": "Neasden",
             "font": "Arial 10",
-            "anchor": "sw"
+            "anchor": "w"
         }
     ],
     "passengers": {
-        "chance_of_any": 75,
+        "chance_of_any": 65,
         "options": [
             {
                 "chance": 2,
@@ -73,6 +59,14 @@
             {
                 "chance": 2,
                 "station": "LondonUnderground/Westminster",
+                "line": [
+                    "LondonUnderground/JubileeC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Green Park",
                 "line": [
                     "LondonUnderground/JubileeC"
                 ],
@@ -156,14 +150,6 @@
             {
                 "chance": 1,
                 "station": "LondonUnderground/Dollis Hill",
-                "line": [
-                    "LondonUnderground/JubileeN"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Neasden",
                 "line": [
                     "LondonUnderground/JubileeN"
                 ],

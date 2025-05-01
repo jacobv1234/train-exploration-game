@@ -76,7 +76,8 @@
         "WaterlooCity",
         "VictoriaC",
         "VictoriaN",
-        "JubileeC"
+        "JubileeC",
+        "JubileeN"
     ],
     "loadingzones": [],
     "display_name": "London Underground",
@@ -252,6 +253,8 @@
         "Finsbury Park",
         "Westminster",
         "Green Park",
-        "Bond Street"
+        "Bond Street",
+        "Finchley Road",
+        "Wembley Park"
     ]
 }

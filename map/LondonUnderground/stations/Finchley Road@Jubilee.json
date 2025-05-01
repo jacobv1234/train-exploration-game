@@ -1,54 +1,54 @@
 {
-    "name": "Green Park@Jubilee",
+    "name": "Finchley Road@Jubilee",
     "position": [
-        -1616,
-        824
+        -2192,
+        -648
     ],
     "exits": {
         "northbound": {
             "direction": 14,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/JubileeC"
+                    "LondonUnderground/JubileeN"
                 ],
                 "not": []
             },
-            "line": "JubileeC"
+            "line": "JubileeN"
         },
         "southbound": {
             "direction": 6,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/JubileeC"
+                    "LondonUnderground/JubileeN"
                 ],
                 "not": []
             },
-            "line": "JubileeC"
+            "line": "JubileeN"
         },
-        "Piccadilly Line": {
-            "direction": 12,
+        "Metropolitan Line": {
+            "direction": 14,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/PiccadillyC"
+                    "LondonUnderground/MetMain"
                 ],
                 "not": []
             },
-            "line": "PiccadillyC",
+            "line": "MetMain",
             "new_coords": [
-                -1656,
-                872
+                -2272,
+                -560
             ]
         }
     },
     "map_text": [
         {
             "offset": [
-                16,
-                -16
+                24,
+                0
             ],
-            "text": "Green Park",
+            "text": "Finchley Road",
             "font": "Arial 10",
-            "anchor": "sw"
+            "anchor": "w"
         }
     ],
     "passengers": {
@@ -73,6 +73,14 @@
             {
                 "chance": 2,
                 "station": "LondonUnderground/Westminster",
+                "line": [
+                    "LondonUnderground/JubileeC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Green Park",
                 "line": [
                     "LondonUnderground/JubileeC"
                 ],
@@ -108,15 +116,6 @@
                 "line": [
                     "LondonUnderground/JubileeC",
                     "LondonUnderground/JubileeN"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Finchley Road",
-                "line": [
-                    "LondonUnderground/JubileeN",
-                    "LondonUnderground/MetMain"
                 ],
                 "reward": 1
             },

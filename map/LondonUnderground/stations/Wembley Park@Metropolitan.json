@@ -24,6 +24,20 @@
                 "not": []
             },
             "line": "MetMain"
+        },
+        "Jubilee Line": {
+            "direction": 14,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/JubileeN"
+                ],
+                "not": []
+            },
+            "line": "JubileeN",
+            "new_coords": [
+                -3000,
+                -1456
+            ]
         }
     },
     "map_text": [
@@ -66,9 +80,10 @@
                 "reward": 1
             },
             {
-                "chance": 1,
+                "chance": 2,
                 "station": "LondonUnderground/Finchley Road",
                 "line": [
+                    "LondonUnderground/JubileeN",
                     "LondonUnderground/MetMain"
                 ],
                 "reward": 1
@@ -117,8 +132,7 @@
                 "chance": 2,
                 "station": "LondonUnderground/Baker Street",
                 "line": [
-                    "LondonUnderground/Circle-N",
-                    "LondonUnderground/Circle-J1"
+                    "LondonUnderground/JubileeC"
                 ],
                 "reward": 1
             },
@@ -303,6 +317,135 @@
                 "station": "LondonUnderground/Chesham",
                 "line": [
                     "LondonUnderground/Chesham"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Southwark",
+                "line": [
+                    "LondonUnderground/JubileeC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Waterloo",
+                "line": [
+                    "LondonUnderground/JubileeC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Westminster",
+                "line": [
+                    "LondonUnderground/JubileeC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Green Park",
+                "line": [
+                    "LondonUnderground/JubileeC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Bond Street",
+                "line": [
+                    "LondonUnderground/JubileeC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/St John's Wood",
+                "line": [
+                    "LondonUnderground/JubileeC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Swiss Cottage",
+                "line": [
+                    "LondonUnderground/JubileeC",
+                    "LondonUnderground/JubileeN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/West Hampstead",
+                "line": [
+                    "LondonUnderground/JubileeN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Kilburn",
+                "line": [
+                    "LondonUnderground/JubileeN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Willesden Green",
+                "line": [
+                    "LondonUnderground/JubileeN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Dollis Hill",
+                "line": [
+                    "LondonUnderground/JubileeN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Neasden",
+                "line": [
+                    "LondonUnderground/JubileeN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Kingsbury",
+                "line": [
+                    "LondonUnderground/JubileeN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Queensbury",
+                "line": [
+                    "LondonUnderground/JubileeN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Canons Park",
+                "line": [
+                    "LondonUnderground/JubileeN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Stanmore",
+                "line": [
+                    "LondonUnderground/JubileeN"
                 ],
                 "reward": 1
             }
