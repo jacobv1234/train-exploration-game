@@ -48,6 +48,20 @@
                 "not": []
             },
             "line": "WaterlooCity"
+        },
+        "Jubilee Line": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/JubileeC"
+                ],
+                "not": []
+            },
+            "line": "JubileeC",
+            "new_coords": [
+                -960,
+                1792
+            ]
         }
     },
     "map_text": [
@@ -245,7 +259,7 @@
                 "chance": 2,
                 "station": "LondonUnderground/Baker Street",
                 "line": [
-                    "LondonUnderground/BakerlooC"
+                    "LondonUnderground/JubileeC"
                 ],
                 "reward": 1
             },
@@ -255,6 +269,54 @@
                 "line": [
                     "LondonUnderground/WaterlooCity",
                     "LondonUnderground/CentralC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Southwark",
+                "line": [
+                    "LondonUnderground/JubileeC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Westminster",
+                "line": [
+                    "LondonUnderground/JubileeC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Green Park",
+                "line": [
+                    "LondonUnderground/JubileeC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Bond Street",
+                "line": [
+                    "LondonUnderground/JubileeC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/St John's Wood",
+                "line": [
+                    "LondonUnderground/JubileeC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Swiss Cottage",
+                "line": [
+                    "LondonUnderground/JubileeC"
                 ],
                 "reward": 1
             }

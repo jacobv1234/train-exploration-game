@@ -1,0 +1,17 @@
+{
+    "name": "Green Park",
+    "stations": [
+        "Green Park@Jubilee",
+        "Green Park@Piccadilly"
+    ],
+    "connecting_lines": [
+        ["Green Park@Jubilee", "Green Park@Piccadilly",-1616,824,-1656,872]
+    ],
+
+    "station_lines": {
+        "Green Park@Jubilee": ["LondonUnderground/JubileeC"],
+        "Green Park@Piccadilly": ["LondonUnderground/PiccadillyC"]
+    },
+
+    "text_priority": ["Green Park@Piccadilly","Green Park@Jubilee"]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Westminster",
+    "stations": [
+        "Westminster@Jubilee",
+        "Westminster@Circle"
+    ],
+    "connecting_lines": [
+        ["Westminster@Jubilee", "Westminster@Circle", -1144,1296,-1216,1376]
+    ],
+
+    "station_lines": {
+        "Westminster@Jubilee": ["LondonUnderground/JubileeC"],
+        "Westminster@Circle": ["LondonUnderground/Circle-S"]
+    },
+
+    "text_priority": ["Westminster@Circle","Westminster@Jubilee"]
+}

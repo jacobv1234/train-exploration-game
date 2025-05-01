@@ -1,0 +1,17 @@
+{
+    "name": "Bond Street",
+    "stations": [
+        "Bond Street@Jubilee",
+        "Bond Street@Central"
+    ],
+    "connecting_lines": [
+        ["Bond Street@Jubilee", "Bond Street@Central",-1944,424,-1816,552]
+    ],
+
+    "station_lines": {
+        "Bond Street@Jubilee": ["LondonUnderground/JubileeC"],
+        "Bond Street@Central": ["LondonUnderground/CentralC"]
+    },
+
+    "text_priority": ["Bond Street@Jubilee","Bond Street@Central"]
+}

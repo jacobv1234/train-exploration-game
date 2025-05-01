@@ -2,16 +2,20 @@
     "name": "Waterloo",
     "stations": [
         "Waterloo@Northern",
-        "Waterloo@Bakerloo"
+        "Waterloo@Bakerloo",
+        "Waterloo@Jubilee"
     ],
     "connecting_lines": [
-        ["Waterloo@Northern", "Waterloo@Bakerloo", -904,1792,-832,1792]
+        ["Waterloo@Northern", "Waterloo@Bakerloo", -896,1792,-832,1792],
+        ["Waterloo@Northern", "Waterloo@Jubilee", -896,1792,-960,1792],
+        ["Waterloo@Bakerloo", "Waterloo@Jubilee", -832,1792,-960,1792]
     ],
 
     "station_lines": {
         "Waterloo@Northern": ["LondonUnderground/NorthernX"],
-        "Waterloo@Bakerloo": ["LondonUnderground/BakerlooC"]
+        "Waterloo@Bakerloo": ["LondonUnderground/BakerlooC"],
+        "Waterloo@Jubilee": ["LondonUnderground/JubileeC"]
     },
 
-    "text_priority": ["Waterloo@Bakerloo", "Waterloo@Northern"]
+    "text_priority": ["Waterloo@Bakerloo", "Waterloo@Northern", "Waterloo@Jubilee"]
 }
