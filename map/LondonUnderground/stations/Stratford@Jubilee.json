@@ -1,42 +1,32 @@
 {
-    "name": "Finchley Road@Jubilee",
+    "name": "Stratford@Jubilee",
     "position": [
-        -2192,
-        -648
+        3408,
+        -784
     ],
     "exits": {
-        "northbound": {
-            "direction": 14,
-            "requirements": {
-                "unlocked": [
-                    "LondonUnderground/JubileeN"
-                ],
-                "not": []
-            },
-            "line": "JubileeN"
-        },
         "southbound": {
-            "direction": 6,
+            "direction": 8,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/JubileeN"
+                    "LondonUnderground/JubileeE"
                 ],
                 "not": []
             },
-            "line": "JubileeN"
+            "line": "JubileeE"
         },
-        "Metropolitan Line": {
-            "direction": 14,
+        "Central Line": {
+            "direction": 10,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/MetMain"
+                    "LondonUnderground/CentralE"
                 ],
                 "not": []
             },
-            "line": "MetMain",
+            "line": "CentralE",
             "new_coords": [
-                -2272,
-                -560
+                3208,
+                -784
             ]
         }
     },
@@ -46,13 +36,13 @@
                 24,
                 0
             ],
-            "text": "Finchley Road",
+            "text": "Stratford",
             "font": "Arial 10",
             "anchor": "w"
         }
     ],
     "passengers": {
-        "chance_of_any": 75,
+        "chance_of_any": 80,
         "options": [
             {
                 "chance": 2,
@@ -60,6 +50,62 @@
                 "line": [
                     "LondonUnderground/JubileeE",
                     "LondonUnderground/JubileeC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/London Bridge",
+                "line": [
+                    "LondonUnderground/JubileeE"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Bermondsey",
+                "line": [
+                    "LondonUnderground/JubileeE"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Canada Water",
+                "line": [
+                    "LondonUnderground/JubileeE"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Canary Wharf",
+                "line": [
+                    "LondonUnderground/JubileeE"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/North Greenwich",
+                "line": [
+                    "LondonUnderground/JubileeE"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Canning Town",
+                "line": [
+                    "LondonUnderground/JubileeE"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/West Ham",
+                "line": [
+                    "LondonUnderground/JubileeE"
                 ],
                 "reward": 1
             },
@@ -116,6 +162,14 @@
                 "station": "LondonUnderground/Swiss Cottage",
                 "line": [
                     "LondonUnderground/JubileeC",
+                    "LondonUnderground/JubileeN"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Finchley Road",
+                "line": [
                     "LondonUnderground/JubileeN"
                 ],
                 "reward": 1
@@ -197,70 +251,6 @@
                 "station": "LondonUnderground/Stanmore",
                 "line": [
                     "LondonUnderground/JubileeN"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/London Bridge",
-                "line": [
-                    "LondonUnderground/JubileeE"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Bermondsey",
-                "line": [
-                    "LondonUnderground/JubileeE"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Canada Water",
-                "line": [
-                    "LondonUnderground/JubileeE"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 3,
-                "station": "LondonUnderground/Canary Wharf",
-                "line": [
-                    "LondonUnderground/JubileeE"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/North Greenwich",
-                "line": [
-                    "LondonUnderground/JubileeE"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Canning Town",
-                "line": [
-                    "LondonUnderground/JubileeE"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/West Ham",
-                "line": [
-                    "LondonUnderground/JubileeE"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Stratford",
-                "line": [
-                    "LondonUnderground/JubileeE"
                 ],
                 "reward": 1
             }

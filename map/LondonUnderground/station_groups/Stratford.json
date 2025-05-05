@@ -1,0 +1,17 @@
+{
+    "name": "Stratford",
+    "stations": [
+        "Stratford@Jubilee",
+        "Stratford@Central"
+    ],
+    "connecting_lines": [
+        ["Stratford@Jubilee", "Stratford@Central",3208,-784,3408,-784]
+    ],
+
+    "station_lines": {
+        "Stratford@Jubilee": ["LondonUnderground/JubileeE"],
+        "Stratford@Central": ["LondonUnderground/CentralE", "LondonUnderground/Leyton"]
+    },
+
+    "text_priority": ["Stratford@Central","Stratford@Jubilee"]
+}

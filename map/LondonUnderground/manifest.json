@@ -77,7 +77,8 @@
         "VictoriaC",
         "VictoriaN",
         "JubileeC",
-        "JubileeN"
+        "JubileeN",
+        "JubileeE"
     ],
     "loadingzones": [],
     "display_name": "London Underground",
@@ -255,6 +256,8 @@
         "Green Park",
         "Bond Street",
         "Finchley Road",
-        "Wembley Park"
+        "Wembley Park",
+        "West Ham",
+        "Stratford"
     ]
 }

@@ -1,40 +1,40 @@
 {
-    "name": "Swiss Cottage",
+    "name": "Bermondsey",
     "position": [
-        -2040,
-        -496
+        1048,
+        1464
     ],
     "exits": {
-        "northbound": {
-            "direction": 14,
+        "eastbound": {
+            "direction": 4,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/JubileeN"
+                    "LondonUnderground/JubileeE"
                 ],
                 "not": []
             },
-            "line": "JubileeN"
+            "line": "JubileeE"
         },
-        "southbound": {
-            "direction": 6,
+        "westbound": {
+            "direction": 12,
             "requirements": {
                 "unlocked": [
-                    "LondonUnderground/JubileeC"
+                    "LondonUnderground/JubileeE"
                 ],
                 "not": []
             },
-            "line": "JubileeC"
+            "line": "JubileeE"
         }
     },
     "map_text": [
         {
             "offset": [
-                16,
-                -8
+                0,
+                -24
             ],
-            "text": "Swiss Cottage",
+            "text": "Bermondsey",
             "font": "Arial 10",
-            "anchor": "sw"
+            "anchor": "s"
         }
     ],
     "passengers": {
@@ -46,6 +46,62 @@
                 "line": [
                     "LondonUnderground/JubileeE",
                     "LondonUnderground/JubileeC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/London Bridge",
+                "line": [
+                    "LondonUnderground/JubileeE"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 1,
+                "station": "LondonUnderground/Canada Water",
+                "line": [
+                    "LondonUnderground/JubileeE"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 3,
+                "station": "LondonUnderground/Canary Wharf",
+                "line": [
+                    "LondonUnderground/JubileeE"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/North Greenwich",
+                "line": [
+                    "LondonUnderground/JubileeE"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Canning Town",
+                "line": [
+                    "LondonUnderground/JubileeE"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/West Ham",
+                "line": [
+                    "LondonUnderground/JubileeE"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Stratford",
+                "line": [
+                    "LondonUnderground/JubileeE"
                 ],
                 "reward": 1
             },
@@ -94,6 +150,15 @@
                 "station": "LondonUnderground/St John's Wood",
                 "line": [
                     "LondonUnderground/JubileeC"
+                ],
+                "reward": 1
+            },
+            {
+                "chance": 2,
+                "station": "LondonUnderground/Swiss Cottage",
+                "line": [
+                    "LondonUnderground/JubileeC",
+                    "LondonUnderground/JubileeN"
                 ],
                 "reward": 1
             },
@@ -184,86 +249,8 @@
                     "LondonUnderground/JubileeN"
                 ],
                 "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/London Bridge",
-                "line": [
-                    "LondonUnderground/JubileeE"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Bermondsey",
-                "line": [
-                    "LondonUnderground/JubileeE"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 1,
-                "station": "LondonUnderground/Canada Water",
-                "line": [
-                    "LondonUnderground/JubileeE"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 3,
-                "station": "LondonUnderground/Canary Wharf",
-                "line": [
-                    "LondonUnderground/JubileeE"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/North Greenwich",
-                "line": [
-                    "LondonUnderground/JubileeE"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Canning Town",
-                "line": [
-                    "LondonUnderground/JubileeE"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/West Ham",
-                "line": [
-                    "LondonUnderground/JubileeE"
-                ],
-                "reward": 1
-            },
-            {
-                "chance": 2,
-                "station": "LondonUnderground/Stratford",
-                "line": [
-                    "LondonUnderground/JubileeE"
-                ],
-                "reward": 1
             }
         ]
     },
-    "shop": {
-        "Jubilee Line to Stanmore": {
-            "cost": 2,
-            "requirements": {
-                "unlocked": [],
-                "not": [
-                    "LondonUnderground/JubileeN"
-                ]
-            },
-            "unlock": [
-                "LondonUnderground/JubileeN"
-            ],
-            "unique_name": "LondonUnderground/Swiss Cottage/Jubilee Line to Stanmore"
-        }
-    }
+    "shop": false
 }

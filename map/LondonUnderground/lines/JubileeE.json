@@ -1,0 +1,172 @@
+{
+    "colour": "#838d93",
+    "segments": [
+        [
+            3408,
+            -784,
+            3408,
+            1368
+        ],
+        [
+            3408,
+            1368,
+            3376,
+            1432
+        ],
+        [
+            3376,
+            1432,
+            3312,
+            1464
+        ],
+        [
+            3312,
+            1464,
+            912,
+            1464
+        ],
+        [
+            912,
+            1464,
+            880,
+            1448
+        ],
+        [
+            880,
+            1448,
+            352,
+            1448
+        ],
+        [
+            352,
+            1448,
+            320,
+            1464
+        ],
+        [
+            320,
+            1464,
+            -64,
+            1848
+        ],
+        [
+            -64,
+            1848,
+            -96,
+            1864
+        ],
+        [
+            -96,
+            1864,
+            -504,
+            1864
+        ]
+    ],
+    "corners": [
+        [
+            3408,
+            1368,
+            0,
+            9
+        ],
+        [
+            3376,
+            1432,
+            1,
+            11
+        ],
+        [
+            3312,
+            1464,
+            3,
+            12
+        ],
+        [
+            912,
+            1464,
+            13,
+            4
+        ],
+        [
+            880,
+            1448,
+            5,
+            12
+        ],
+        [
+            352,
+            1448,
+            4,
+            11
+        ],
+        [
+            320,
+            1464,
+            3,
+            10
+        ],
+        [
+            -64,
+            1848,
+            2,
+            11
+        ],
+        [
+            -96,
+            1864,
+            3,
+            12
+        ]
+    ],
+    "conditional_corners": [
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/JubileeC"
+                ],
+                "not": []
+            },
+            "corner": [
+                -504,
+                1864,
+                4,
+                12,
+                "JubileeC"
+            ]
+        }
+    ],
+    "stops": [
+        [
+            3408,
+            -784,
+            8
+        ]
+    ],
+    "conditional_stops": [
+        {
+            "requirements": {
+                "unlocked": [],
+                "not": [
+                    "LondonUnderground/JubileeC"
+                ]
+            },
+            "stop": [
+                -504,
+                1864,
+                4
+            ]
+        }
+    ],
+    "junctions": [],
+    "stations": [
+        "Southwark",
+        "London Bridge",
+        "Bermondsey",
+        "Canada Water",
+        "Canary Wharf@Jubilee",
+        "North Greenwich",
+        "Canning Town@Jubilee",
+        "West Ham@Jubilee",
+        "Stratford@Jubilee"
+    ]
+}

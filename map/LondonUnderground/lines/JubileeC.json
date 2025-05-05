@@ -139,6 +139,21 @@
                 14,
                 "JubileeN"
             ]
+        },
+        {
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/JubileeE"
+                ],
+                "not": []
+            },
+            "corner": [
+                -504,
+                1864,
+                4,
+                12,
+                "JubileeE"
+            ]
         }
     ],
     "stops": [],

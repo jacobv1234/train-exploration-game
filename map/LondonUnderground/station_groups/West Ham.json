@@ -1,0 +1,17 @@
+{
+    "name": "West Ham",
+    "stations": [
+        "West Ham@Jubilee",
+        "West Ham@District"
+    ],
+    "connecting_lines": [
+        ["West Ham@Jubilee", "West Ham@District", 3496,24,3408,-64]
+    ],
+
+    "station_lines": {
+        "West Ham@Jubilee": ["LondonUnderground/JubileeC"],
+        "West Ham@District": ["LondonUnderground/Whitechapel"]
+    },
+
+    "text_priority": ["West Ham@Jubilee","West Ham@District"]
+}
