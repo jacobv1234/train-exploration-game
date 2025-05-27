@@ -134,9 +134,9 @@ self.c.create_text(self.width/2, ((self.height-110)/2)+95, fill='black', font='A
 self.c.create_text(self.width/2, ((self.height-110)/2)+125, fill='black', font='Arial 18', text=f'Points:  {reward}', anchor='center'),
 self.c.create_text(self.width/2, (5*(self.height-110)/6)+60, fill='black', font='Arial 18', text=f'Do you accept?', anchor='center'),
 self.c.create_text(5*self.width/8, (5*(self.height-110)/6)+95, fill='black', font='Arial 25', text='Yes', anchor='center'),
-self.c.create_text(5*self.width/8, (5*(self.height-110)/6)+125, fill='black', font='Arial 25', text='No', anchor='center')
+self.c.create_text(5*self.width/8, (5*(self.height-110)/6)+145, fill='black', font='Arial 25', text='No', anchor='center')
             ])
-            self.possible_cursor_positions = [(5*(self.height-110)/6)+95, (5*(self.height-110)/6)+125]
+            self.possible_cursor_positions = [(5*(self.height-110)/6)+95, (5*(self.height-110)/6)+145]
             self.cursor = self.c.create_image(3*self.width/8, self.possible_cursor_positions[0], image = self.cursor_graphic, anchor='center')
             self.c.bind_all('<Up>',self.move_cursor_up)
             self.c.bind_all('<Down>', self.move_cursor_down)
@@ -144,7 +144,7 @@ self.c.create_text(5*self.width/8, (5*(self.height-110)/6)+125, fill='black', fo
             self.options = [self.passenger, 0]
 
             if len(self.possible_cursor_positions) > 1:
-                mouse_offset = (self.possible_cursor_positions[1] - self.possible_cursor_positions[0])/2
+                mouse_offset = (self.possible_cursor_positions[1] - self.possible_cursor_positions[0])
                 self.mouse_positions = [val + mouse_offset for val in self.possible_cursor_positions]
             else:
                 self.mouse_positions = []
