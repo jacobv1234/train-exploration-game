@@ -24,6 +24,20 @@
                 "not": []
             },
             "line": "CentralC"
+        },
+        "Jubilee Line": {
+            "direction": 0,
+            "requirements": {
+                "unlocked": [
+                    "LondonUnderground/JubileeC"
+                ],
+                "not": []
+            },
+            "line": "JubileeC",
+            "new_coords": [
+                -1944,
+                424
+            ]
         }
     },
     "map_text": [

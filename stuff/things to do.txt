@@ -17,6 +17,7 @@ SOLVED / SCRAPPED
 BUGS
 - passengers don't appear properly on the minimap if part of a station group that doesn't exist yet
     - theoretically this bug isn't a problem as every needed station group will eventually be made
+- missing jubilee line exit at bond street central
 
 NEW FEATURE IDEAS
 - junction selector arrows match colour of resulting line
