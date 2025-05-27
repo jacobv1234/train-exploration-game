@@ -25,6 +25,9 @@ class ZoomedMap:
         self.width = width
         self.height = height
 
+        self.mousex = width / 2
+        self.mousey = height / 2
+
 
         for group_name in list(map.station_groups.keys()):
             group = map.station_groups[group_name]
@@ -108,37 +111,37 @@ class ZoomedMap:
         self.c.tag_lower(self.water)
 
     
-    def scroll_left(self,event):
+    def scroll_left(self,event, scale = 40):
         if self.screen_left > self.limits['left']:
-            self.c.xview_scroll(-40, 'units')
-            self.c.move(self.station_name_popup,-40,0)
-            self.c.move(self.complete_message, -40,0)
-            self.screen_left -= 40
-            self.screen_right -= 40
+            self.c.xview_scroll(-scale, 'units')
+            self.c.move(self.station_name_popup,-scale,0)
+            self.c.move(self.complete_message, -scale,0)
+            self.screen_left -= scale
+            self.screen_right -= scale
         
-    def scroll_right(self,event):
+    def scroll_right(self,event, scale = 40):
         if self.screen_right < self.limits['right']:
-            self.c.xview_scroll(40,'units')
-            self.c.move(self.station_name_popup,40,0)
-            self.c.move(self.complete_message, 40,0)
-            self.screen_left += 40
-            self.screen_right += 40
+            self.c.xview_scroll(scale,'units')
+            self.c.move(self.station_name_popup,scale,0)
+            self.c.move(self.complete_message, scale,0)
+            self.screen_left += scale
+            self.screen_right += scale
 
-    def scroll_up(self,event):
+    def scroll_up(self,event, scale = 40):
         if self.screen_top > self.limits['top']:
-            self.c.yview_scroll(-40, 'units')
-            self.c.move(self.station_name_popup,0,-40)
-            self.c.move(self.complete_message, 0, -40)
-            self.screen_top -= 40
-            self.screen_bottom -= 40
+            self.c.yview_scroll(-scale, 'units')
+            self.c.move(self.station_name_popup,0,-scale)
+            self.c.move(self.complete_message, 0, -scale)
+            self.screen_top -= scale
+            self.screen_bottom -= scale
     
-    def scroll_down(self,event):
+    def scroll_down(self,event, scale = 40):
         if self.screen_bottom < self.limits['bottom']:
-            self.c.yview_scroll(40,'units')
-            self.c.move(self.station_name_popup,0,40)
-            self.c.move(self.complete_message, 0, 40)
-            self.screen_top += 40
-            self.screen_bottom += 40
+            self.c.yview_scroll(scale,'units')
+            self.c.move(self.station_name_popup,0,scale)
+            self.c.move(self.complete_message, 0, scale)
+            self.screen_top += scale
+            self.screen_bottom += scale
     
     def close(self):
         self.c.unbind_all('<Left>')
@@ -149,36 +152,8 @@ class ZoomedMap:
         self.c.destroy()
 
     def track_motion(self, event: Event):
-        x,y = self.c.canvasx(event.x), self.c.canvasy(event.y)
-
-        if event.x < 20:
-            self.scroll_left(None)
-            return
-        if event.x > self.width - 20:
-            self.scroll_right(None)
-            return
-        if event.y < 20:
-            self.scroll_up(None)
-            return
-        if event.y > self.height - 20:
-            self.scroll_down(None)
-            return
-
-        for station in self.stations:
-            if int(x) in range(station[0]-12, station[0]+12) and int(y) in range(station[1]-12, station[1]+12):
-
-                if self.played_click == False:
-                    self.played_click = True
-                    self.audio.play_sound_effect('select')
-
-                message = station[2]
-                if '@' in message:
-                    index = message.index('@')
-                    message = message[:index]
-                self.c.itemconfig(self.station_name_popup, text=message)
-                return
-        self.c.itemconfig(self.station_name_popup, text='')
-        self.played_click = False
+        self.mousex = event.x
+        self.mousey = event.y
     
     def scroll_into_bounds(self):
         if self.screen_left < self.limits['left']:
@@ -221,3 +196,37 @@ class ZoomedMap:
             x = station_coords[0] // 4
             y = station_coords[1] // 4
             self.c.create_oval(x - 10, y - 10, x + 10, y + 10, fill = '', outline = '#2eebaf', width = 2)
+
+    
+    def scroll_from_mouse(self):
+        if self.mousex < 50:
+            self.scroll_left(None, 10)
+            return
+        if self.mousex > self.width - 50:
+            self.scroll_right(None, 10)
+            return
+        if self.mousey < 50:
+            self.scroll_up(None, 10)
+            return
+        if self.mousey > self.height - 50:
+            self.scroll_down(None, 10)
+            return
+        
+        x = self.c.canvasx(self.mousex)
+        y = self.c.canvasy(self.mousey)
+
+        for station in self.stations:
+            if int(x) in range(station[0]-12, station[0]+12) and int(y) in range(station[1]-12, station[1]+12):
+
+                if self.played_click == False:
+                    self.played_click = True
+                    self.audio.play_sound_effect('select')
+
+                message = station[2]
+                if '@' in message:
+                    index = message.index('@')
+                    message = message[:index]
+                self.c.itemconfig(self.station_name_popup, text=message)
+                return
+        self.c.itemconfig(self.station_name_popup, text='')
+        self.played_click = False

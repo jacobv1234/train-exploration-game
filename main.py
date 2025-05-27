@@ -488,6 +488,9 @@ while game_running:
     HandleMapNameCounter()
     window.update()
 
+    if zoomed_map:
+        zoomed_map.scroll_from_mouse()
+
     if not audiohandler.is_playing():
         audiohandler.next_bg_music()
 
