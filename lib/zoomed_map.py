@@ -227,6 +227,28 @@ class ZoomedMap:
                     index = message.index('@')
                     message = message[:index] + ' - ' + message[index+1:]
                 self.c.itemconfig(self.station_name_popup, text=message)
+
+                # move the text box to be relative to the mouse
+                if self.mousey > 100:
+                    anchor = 's'
+                    self.c.coords(self.station_name_popup, x, y-10)
+                else:
+                    anchor = 'n'
+                    self.c.coords(self.station_name_popup, x, y+20)
+                
+                if self.mousex < self.width / 4:
+                    anchor += 'w'
+                    if self.mousex >= 100:
+                        self.c.move(self.station_name_popup, -80,0)
+
+                elif self.mousex > 3* self.width / 4:
+                    anchor += 'e'
+                    if self.mousex <= self.width - 100:
+                        self.c.move(self.station_name_popup, 80,0)
+                
+                self.c.itemconfig(self.station_name_popup, anchor = anchor)
+
+
                 return
         self.c.itemconfig(self.station_name_popup, text='')
         self.played_click = False
