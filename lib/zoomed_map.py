@@ -225,7 +225,7 @@ class ZoomedMap:
                 message = station[2]
                 if '@' in message:
                     index = message.index('@')
-                    message = message[:index]
+                    message = message[:index] + ' - ' + message[index+1:]
                 self.c.itemconfig(self.station_name_popup, text=message)
                 return
         self.c.itemconfig(self.station_name_popup, text='')
