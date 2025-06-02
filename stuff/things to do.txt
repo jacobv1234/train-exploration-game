@@ -36,3 +36,13 @@ MOUSE REVOLUTION <- SUCCESS! HELL YEAH
 
 MAP EDITOR
 - station-specific passengers doesn't like station groups
+
+
+IDEAS FROM NGF25
+- Workshop stations allowing purchase of train upgrades?
+    - passenger capacity
+    - reverse gear
+- Add WASD controls
+- Bug involving something to do with using mouse controls for junctions resulting in the white line being permanently drawn
+- Missing conditional corner south of colchester
+- Missing shop at kings cross piccadilly>
